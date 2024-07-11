@@ -1,0 +1,5 @@
+- in nested for loop ()
+
+    ** if i++ then i <=
+
+    ** if i-- then i >=

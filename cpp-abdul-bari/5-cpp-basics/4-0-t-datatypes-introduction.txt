@@ -1,0 +1,10 @@
+- datatypes in c++ is classified into 2 
+
+    1) NUMERIC: i.e numbers.... this is further classified into 
+
+        i) integer: whole numbers without decimal
+        ii) float: numbers with decimal values 
+
+    2) CHARACTER/ALPHABETICAL: i.e alphabetical character, or mix of alphabets and numbers.... or a collection of alphabets (strings)
+
+** 1 byte can only store 256 numbers i.e from 0 to 255.... so to use values greater than 255.... we need to use more than 1 byte

@@ -1,0 +1,19 @@
+- NESTED LOOP: consists of 2 for loop.... one is parent for loop and another is child for loop inside the parent 
+
+  - SYNTAX: 
+
+      for(int i = 0; i < <row>; i++) {
+
+        for(int j = 0; j < <column>; j++) {
+          codes
+        }
+
+      }
+
+          ** the parent for loop i is used to drive the row 
+
+          ** the child for loop j is used to drive the column
+
+** nested for loop is used to make pattern and shapes
+
+***** refer extras folder to see pattern programs 

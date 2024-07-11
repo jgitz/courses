@@ -1,0 +1,76 @@
+- different operators used in c++ are 
+
+    1) ARITHEMATIC operators: 
+        - +: addition
+        - -: subtraction
+        - *: multiplication
+        - /: division
+        - %: mod 
+
+            ** mod operator can be used with only CHAR and INT 
+
+            ** mod operator CANNOT be used with float 
+
+    2) RELATIONAL operators: >, <, <=, >=, ==
+
+    3) LOGICAL operators: &&, ||, !
+
+        ** used with boolean expressions to get boolean outputs 
+
+        ** mainly used for shortcircuiting
+
+    4) BITWISE operators: 
+
+        - &: and 
+
+        - |: or 
+
+        - ~: NOT 
+
+        - ^: XOR : EXCLUSIVE OR only shows output 1 when both inputs are DIFFERENT i.e the input should be 0 and 1 to display output as 1.... if both the inputs are SAME, then the output is 0
+
+        - << : left shift : means shifting places of a value by "i" bits to the left.... this is equivalent to 
+
+            if x << i (means value of x is shifted by i places to the left), then the result is 
+
+              x * 2^i
+
+        - >> : right shift : means shifting places of a value by "i" bits to the right.... this is equivalent to....
+
+            if x >> i (means value of x is shifted by i places to the right)....then the result is 
+
+              x / (2^i)
+
+        ** mainly used with INTEGERS to do BIT LEVEL OPERATIONS and OUTPUTS INTEGERS
+
+        ** refer video 26 of this folder
+
+    5) INCREMENT/DECREMENT operators : 
+
+        - <variable>++ : post increment
+        - <variable>-- : post decrement 
+        - ++<variable> : pre increment 
+        - --<variable> : post decrement 
+
+          ** pre and post does the same thing when operator is used alone in a variable... but the behavior changes for pre and post operators when in an expression where more than 2 operators comes into play
+
+          ** refer video 22 of this folder
+
+    6) ASSIGNMENT operator: = 
+
+    7) COMPOUND ASSIGNMENT OPERATORS:
+
+        - +=
+        - -=
+        - *=
+        - /=
+        - %= 
+
+        - &=
+        - |=
+        - <<=
+        - >>=
+
+          ** we'll learn later.... see video 20 of this folder
+
+

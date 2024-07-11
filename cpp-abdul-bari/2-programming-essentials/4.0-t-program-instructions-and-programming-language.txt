@@ -1,0 +1,14 @@
+- What is a program?
+
+    - a program is a set of DATA and INSTRUCTION which say what to do with the DATA 
+
+- What is the need for programming languages?
+
+    - computer only understands MACHINE LANGUAGE (binary language)
+
+    - human uses NATURAL LANGUAGE (eg english)
+
+    - so for humans to make a program that can be used by computer.... we need to give data and instructions in binary language.... but, it is difficult for humans to handle binary language.... so we've created an INTERMIDIATE language called PROGRAMMING LANGUAGES which can be both understood by humans as well as computers....
+
+
+    - so humans write programs in programming language..... then the programming language is translated to machine code by COMPILER or INTERPRETER....

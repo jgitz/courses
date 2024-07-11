@@ -1,0 +1,11 @@
+- link: https://www.geeksforgeeks.org/endl-vs-n-in-cpp/
+
+- "/n" can be used in c and c++
+
+- endl only works with c++ and NOT c 
+
+- "/n" is good for competitive programming
+
+- endl DON'T occupies memory 
+
+- "/n" OCCUPIES 1 BYTE memory 

@@ -1,0 +1,9 @@
+- () - bracket has the highest operator precedence value of 3 
+
+- *, /, %: multiplication, division and mod has the SECOND highest operator precedence of value 2 
+
+- +, - : addition and subtraction has the least operator precedence value of 1 
+
+** ASSOCIATIVITY: if 2 operator of same precedence value comes in an expression... the LEFT most operator has the HIGHEST PRIORITY and gets executed first....
+
+** always use BRACKETS to group operands in the expression to get correct answers

@@ -1,0 +1,21 @@
+- short circuiting: is a method used with LOGICAL AND and OR operators to play with 2 conditons 
+
+- AND SHORT CIRCUITING: 
+
+    - syntax: 
+
+        condition 1 && condition 2 
+
+          ** if condition 1 is FALSE.... then condition 2 is NOT CHECKED 
+
+          ** if condition 1 is TRUE... then only CONDITION 2 IS CHECKED
+
+- OR SHORT CIRCUITING: 
+
+    - syntax: 
+
+        condition 1 || condition 2 
+
+          ** if condition 1 is TRUE.... then condtion 2 is NOT CHECKED 
+
+          ** if condition 1 is FALSE.... then conly CONDITION 2 IS CHECKED

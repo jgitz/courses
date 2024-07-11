@@ -1,0 +1,10 @@
+... DIVISION between 2 INTEGER will give you only an INTEGER.... even if the quotient  is a float..... even if the variable where we store the value is float.... so to get the answer of 2 integer division as a float.. we employ TYPECASTING like this 
+
+    int a, b;
+
+    c = (float) a/b; 
+
+
+** any variable can be typecasted to another by specifying the datatype inside ()
+
+** TYPECASTING: is the process of converting a datatype into another

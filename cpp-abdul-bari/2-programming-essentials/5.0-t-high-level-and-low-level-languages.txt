@@ -1,0 +1,13 @@
+- LOW LEVEL languages: are languages used for system and os level programming.. mainly 2 languages are called low level languages 
+
+    1) ASSEMBLY LANGUAGE 
+
+    2) MACHINE LANGUAGE (binary)
+
+- HIGH LEVEL languages: are languages that can easily be understood using natural language of human... eg: js, java, c++, c etx
+
+    - high level languages can further be classified into...
+
+        1) compiler based languages: eg c, c++
+        2) interpreter based languages: eg js, python
+        3) hybrid languages: eg java, c#

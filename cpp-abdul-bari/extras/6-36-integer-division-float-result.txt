@@ -1,0 +1,3 @@
+.... usually an arithematic division of 2 int type operators won't give a float value... so do this 
+
+  float c = (float) a / (float) b

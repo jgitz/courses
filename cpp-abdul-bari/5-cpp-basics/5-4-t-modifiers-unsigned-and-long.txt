@@ -1,0 +1,31 @@
+- MODIFIERS: are keywords used to extend the range and size of certain datatypes for various requirements 
+
+- 2 most commonly used modifiers are 
+
+    1) UNSIGNED: 
+
+        - can only be used with INT and CHAR 
+
+        - unsigned int: 
+
+            - the -ve range of int is converted to +ve range.... hence an unsigned int can store double the positive values with no -ve value 
+
+            - RANGE: 0 to 65535 (for 2 byte int)
+
+        - unsigned char: 
+
+            - the -ve range of char is converted to +ve range.... hence an unsigned int can store double the positive values with no -ve value 
+
+            - 0 - 255
+  
+    2) LONG: 
+
+        - can only be used with INT and DOUBLE to extend the SIZE of the datatypes 
+
+        - long int: 
+
+            - size: 4 or 8 bytes 
+
+        - long double:
+
+            - size: 10 bytes

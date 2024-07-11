@@ -1,0 +1,17 @@
+- nested if : if as well as else blocks can accomodate more if and else statements inside 
+
+- else if: 
+
+    - syntax: 
+
+        if (<condtion>) {
+          codes
+        } else if (<condition>) {
+          codes
+        } else {
+          codes
+        }
+
+          ** else if is a syntax which avoids congestion of nested if and else inside if and else blocks 
+
+          ** ELSE IF LADDER: is usage of multiple else if..... between first if statement and last else statement 

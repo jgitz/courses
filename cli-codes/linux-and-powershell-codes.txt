@@ -1,0 +1,29 @@
+- to LIST content of folder
+
+	linux: ls 
+
+	windows: dir
+
+- to find CURRENT/PRESENT WORKING DIRECTORY 
+
+	linux: pwd
+
+	windows: cd
+
+- to ENTER a FOLDER 
+
+	linux: cd <folder path>
+
+	windows: cd <folder path>
+
+- to CLEAR SCREEN 
+
+	linux: clear
+
+	windows: cls
+
+- to goto root directory 
+
+	linux: cd / 
+
+	windows: cd /

@@ -1,0 +1,17 @@
+- logical operators in c++ are 
+
+    - && (logical AND) : only shows true when BOTH statements are true
+
+    - || (logical OR) : shows true WHENEVER ONE statement is TRUE
+    - ! : if statement is true.... then it become false and vice versa
+
+
+    ** mostly used to set RANGE in if else condition 
+
+        - use of LOGICAL AND : we need to check condition whether a number is between range 10 and 20.... then we set condition via logical AND operator like this....
+
+            (x >= 10 && x <= 20)
+
+        - use of LOGICAL OR: if we need to check a condition outside a range... for eg we need to  check if a number is NOT between 10 and 20... then we use logical OR operator like this....
+
+            (x < 10 || x > 20)

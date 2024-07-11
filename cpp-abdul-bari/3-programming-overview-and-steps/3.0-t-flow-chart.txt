@@ -1,0 +1,5 @@
+- flow chart: used to pictorially represent the algorithm 
+
+    - used in early days of monolithic programming
+
+    - now not widely used 

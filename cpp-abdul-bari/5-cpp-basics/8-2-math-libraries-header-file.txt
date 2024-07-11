@@ -1,0 +1,7 @@
+- to use math functions inside your C++ file like sqt for square root and pow for powers.... include EITHER OF THE TWO below header files..
+
+    - cmath
+
+    - math.h 
+
+        ** math.h can be used in both C AND C++

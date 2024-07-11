@@ -1,0 +1,54 @@
+- There are 5 steps involved in creation execution of a program file in COMPILER BASED programming language
+
+    1) EDITING: 
+
+          - the program code is written in programming language and necessary code for implementing the business logic of the program is written..... when it is saved.... a program file is created inside the hard disk
+          
+
+    2) COMPILING: 
+
+        - the written program file is converted to machine code using a compiler.... The compiler then creates an EXECUTABLE FILE (.exe) which is of the from of MACHINE CODE.
+        
+        ** EXECUTABLE FILE is a SEPARATE file other than PROGRAM file created inside the HARD disk
+         
+
+    3) LINKING LIBRARY/HEADER FILE:
+
+          - readymade codes written inside your programming file for various operations are obtained from separate library file..... for eg.... #include<iostream> includes iostream library files so that commands like cout would work..... if you want math function..... math library is included....
+
+          ** header files are provided by the COMPILER.... it comes with the compiler when it is installed on your computer
+
+          ** LINKING of header file means the HEADER FILE is NOT linked to the program file.... instead the WHOLE CODE from the HEADER FILE would be COPIED to the EXECUTABLE FILE at time of compilation
+
+    4) LOADING:
+
+          - to run the program.... the EXECUTABLE FILE is LOADED to the MAIN MEMORY
+
+          - the MAIN MEMORY is divided into 3 SECTIONS
+
+              i) STACK: where variables are stored 
+
+              ii) HEAP: used for dynamic memory allocation 
+
+              iii) CODE SECTION: space where the codes from EXECUTABLE file is stored.
+
+    5) EXECUTION: 
+
+          - if an EXECUTABLE file is loaded to the MAIN MEMORY.... it's the CPU that EXECUTES the coded which is inside the CODE SECTION of the MAIN MEMORY.... 
+
+** IDE (Integrated Development Environment): is a program that does the above 5 steps
+
+    - some IDE's have built in compiler.... while in some others.... we have to download it separately
+
+    - example for ide's for c/c++
+
+        - Turbo C++
+        - Devcpp
+        - Xcode
+        - CodeBlocks
+        - Eclipse 
+        - Visual Studio
+
+
+
+      

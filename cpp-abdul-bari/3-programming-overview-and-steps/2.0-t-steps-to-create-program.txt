@@ -1,0 +1,7 @@
+- steps to create a program:
+
+    1) create algorithm for the program: algorithm is step by step description for solving a problem 
+
+    2) create a pseudocode: is a rough program written in natural language and symbols which realises your algorithm 
+
+    3) write program in programming language: convert the idea written in pseudo code into programming language code

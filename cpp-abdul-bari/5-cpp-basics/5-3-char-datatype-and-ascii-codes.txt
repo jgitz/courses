@@ -1,0 +1,16 @@
+- char datatype is of integer datatype because alphabets and numbers are stored in the form of ASCII codes.
+
+- ASCII codes for various characters are given below.... 
+
+    - A = 65.. B = 66..... Z = 90
+
+    - a = 97.. b = 98...... z = 122
+
+    - 0 = 48... 1 = 49..... 9 = 57
+
+      ** always know the  range of above.... other symbols also have ascii codes
+
+
+** char datatype can take alphabets as well as ascii code numerals as value during a char variable assignment...
+
+** char datatype can also be subjected to arithematic operations.

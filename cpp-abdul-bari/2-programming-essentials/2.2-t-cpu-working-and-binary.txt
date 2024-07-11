@@ -1,0 +1,19 @@
+- BINARY NUMBER & CPU: 
+
+    - binary numbers has only 2 states 0 and 1
+
+    - cpu can only take instructions in form of binary numbers.... cpu takes 0's and 1's in the form on LOW LEVEL and HIGH LEVEL voltages....
+
+    - 1 BIT can hold a 0 or 1
+
+    - 8 bits form 1 byte 
+
+    - CPU takes instruction of length 8 BIT or 1 byte.... i.e an instruction is of size 8 BIT or 1 BYTE 
+
+    - an 8 BIT can convey 2^8 combinations of different instructions..... i.e a cpu can take 256 different instructions....
+
+    - program files inside main memory has lines of instructions with 8 bit sizes/line.... cpu executes each instruction line by line
+
+    - the instruction combination for arithematic and logical operation is already pre coded into the cpu
+
+    ** ANALOGY: 1 light, 2 light and 3 light communication

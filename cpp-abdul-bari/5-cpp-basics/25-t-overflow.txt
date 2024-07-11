@@ -1,0 +1,3 @@
+- every datatype in C++ has a range..... if some calculations in the program makes the datatype value exceed its range.... then the datatype will assume value from the -ve limit of the range and vice versa 
+
+    - for eg: a variable with char char has positive limit of 127.... if it is incremented then the value will be -128... i.e the -ve limit of the char

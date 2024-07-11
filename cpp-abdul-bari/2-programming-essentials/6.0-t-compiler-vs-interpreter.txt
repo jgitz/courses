@@ -1,0 +1,51 @@
+- what is the function of COMPILER/INTERPRETER?
+
+    - there are 3 functions for compiler/interpreter 
+
+        1) check for errors in the code 
+        2) translate the highlevel language (source code) to machine code (binary)
+        3) execute the machine code line by line 
+
+- COMPILER and its features:
+
+    - compiler first checks errors in source code which is written in highlevel language 
+
+    - compiler then converts high level source code into machine code and generates EXECUTABLE FILE (exe file)
+
+        ** only generates an exe file if and only if there is no error in the source code 
+
+    - the machine code in executable file is then run by cpu line by line 
+
+    - compiler based languages are INDEPENDENT.... THAT IS.... after compilation and generation of executable file.... the source code and compiler is NOT needed for running the EXECUTABLE FILE.... 
+
+    - compiler based languages are FASTER.... because the executable file is made in machine code which is easly executed by the cpu 
+
+    - DIFFICULT to debug errors in compiler based language.... because the executable file is only compiled if and only if the source code is error free
+
+    - translation happens only ONCE.... once translation happens.... an executable file is generated and we can use executable file as many times as we wants.... because executable file is in machine code (binary).... hence it don't need further translation
+    
+    - eg: c, c++
+
+- INTERPRETER and features: 
+
+    - interpreter takes the source code line by line and TRANSLATES and EXECUTES the code WITHOUT generating an executable file 
+
+    - interpreter based languages are NOT INDEPENDENT..... because it always need an interpreter to do line by line translation and execution 
+
+    - interpreter based languages are slower..... because it translates and executes simultaneously  
+
+    - EASIER DEBUGGING of errors in interpreter based language.... because the interpreter executes all error free coded and only stops at the line where there is error..... hence error can be pin pointed 
+
+    - translation happens EVERYTIME the source code is run inside interpreter..... because there is no executable file is generated..... everytime the source code is run inside interpreter..... line by line translation and execution takes place
+
+    - eg: js.... js file can only be run inside a browser which acts as an interpreter
+
+- HYBRID LANGUAGES and features 
+
+    - hybrid language uses both compiler and interpreter to run a program....eg java and c#
+
+    - for eg: in java.... first compiler is used to check error and generates BYTE CODE.... then interpreter named JVM (Java virtual machine) is used to translate byte code into machine code and executes simultaneously
+
+
+** ANALOGY: chinese dish cook translation
+

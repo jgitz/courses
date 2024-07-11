@@ -1,0 +1,22 @@
+- download and install vscode
+
+
+- open vscode and install the following extensions 
+
+    - c/c++.... developed by microsoft
+
+    - code runner.... developed by jun han
+
+    
+
+- close vscode and open it again 
+
+- to configure vscode terminal to take inputs....
+
+        - on vscode..... click file.... click preferences....settings....on left pane click extensions ....
+
+        - on left pane....click "run code configuration"
+
+        - scroll down and chech the "run in terminal box"
+
+        - to save the configuration.... press ctl + s

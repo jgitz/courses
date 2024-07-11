@@ -1,0 +1,44 @@
+- there are 4 types of LOOP/ITERATIVE statements used in c++
+
+      1) WHILE LOOP: 
+
+          - SYNTAX: 
+
+                while(<condition>) {
+                  codes
+                }
+
+      2) DO WHILE LOOP: 
+
+          - SYNTAX: 
+
+              do {
+                codes 
+              }
+
+              while (<condition>);
+
+                ** the difference between while and do while is that.... do while loop executes one time even if the condition is FALSE.
+
+                ** while using a counter variable.... if NO UPDATION of counter variable value is done.... then the loop will become INFINITE loop
+
+                ***** DON'T forget to put ; after while condition in DO WHILE LOOP
+
+        3) FOR LOOP: 
+
+            - SYNTAX: 
+
+                for (<counter initialisation>; <condition>; <counter updation>) {
+                  codes 
+                }
+
+                  ** used when we know the number of counts we want to execute the loop 
+
+                  ** most commonly used loop in programming 
+
+                  ** more readable than while loop
+
+                  ** INFINITE LOOP: if NO UPDATION of counter variable is done... then the for loop will become INFINITE LOOP 
+
+        4) FOR EACH LOOP: used for array elements iteration
+

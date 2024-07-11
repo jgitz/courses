@@ -1,0 +1,31 @@
+- what is a programming paradigm?
+
+    - it is the style of organising source code.
+
+- the major programing paradigms are 
+
+    1) Monolithic programming: every source code is written inside a single file with repeating codes 
+
+        - both data and instructions are written in the same file on multiple lines
+
+        - older style of programming 
+
+        - eg BASIC programming language
+
+    2) Modular/Procedural programming: 
+
+          - repetitive codes are grouped together to form functions and these functions are called when needed
+
+          - data needed are stored inside structure block 
+
+          - repetitive codes are divided into multiple functions 
+
+          - and functions and data structure are called inside the MAIN funciton 
+
+    3) Objected oriented programming: 
+
+          - here data and function needed for a specific operation is grouped into a class 
+
+          - then inside the main function.... an object from the class is made.... this object is used to invoke the functions....
+
+          

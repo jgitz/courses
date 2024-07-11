@@ -1,0 +1,13 @@
+- if else: is used to check whether a condition is TRUE or FALSE and then execute blocks of code 
+
+- SYNTAX 
+
+    if (<condition>) {
+      codes 
+    } else {
+      codes 
+    }
+
+        ** condtion can be RELATIONAL OPERATORS or LOGICAL OPERATORS as well as any integer and boolean (true and false)
+
+        ** in c++ false = 0 .... and true = <any integer (positive or negative)>..... for standard true = 1 

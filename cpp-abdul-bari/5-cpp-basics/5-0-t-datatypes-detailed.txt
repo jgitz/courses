@@ -1,0 +1,35 @@
+- datatypes are classified into 3 
+
+    1) PRIMITIVE DATATYPES: these are datatypes that comes with the compiler 
+
+      - it is further classified into 
+
+          i) integral: integer numbers 
+
+                a) int 
+
+                2) char: each character is also a number as alphabets as well as numbers are stored as ascii codes 
+
+          ii) bool: boolean values 
+
+          iii) floating point: numbers with decimals 
+
+                a) float 
+
+                b) double 
+
+      2) USER DEFINED DATATYPES: these are datatypes defined by the user 
+
+         i) enum
+         ii) structure 
+         iii) union 
+         iv) class 
+
+      3) DERIVED DATATYPES: 
+
+          i) array
+          ii) pointer 
+          iii) reference 
+
+
+

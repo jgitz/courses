@@ -1,0 +1,25 @@
+- in C++ variable should be declared first with their datatype before using it like this 
+
+    :: int RollNo;
+
+- variable can also be declared and assigned an initial value in a single line like this 
+
+    :: int RollNo = 0;
+
+- CHAR variable values should be enclosed in SINGLE QUOTES... for eg
+
+    :: char name = 'Teddy'
+
+- it is a GOOD PRACTICE to add an "f" at the end of a float point value during assigning.... because else the compiler will assume the float to be double 
+
+    :: float price = 8.88f 
+
+- VARIABLE naming convention:
+
+    - variable name SHOULD NOT start with a number 
+
+    - variable name SHOULD NOT have space between the characters 
+
+    - it is best practice to use PASCAL TYPE ( eg: RollNo) in c++ to name variables with multiple words 
+
+    - give meaningful names are variable names.... eg price, RollNO... etcv

@@ -1,0 +1,12 @@
+- what is an operating system?
+
+    - operating system is a MASTER PROGRAM which is used to manage computer resources and give service to the user 
+
+    - operating system is an executable file (machine code) stored in the HARD DISK 
+
+    - whenever computer is started.... operating system is LOADED into MAIN MEMORY.... from then on.... every other programs are managed and run on top of operating system 
+
+    - SYSTEM CALLS (or API CALLS): whenever a program file requires computer resources during its execution.... the message request for the resource is given by program to the os using system calls/ api calls 
+
+
+** ANALOGY: OS is librarian inside a library

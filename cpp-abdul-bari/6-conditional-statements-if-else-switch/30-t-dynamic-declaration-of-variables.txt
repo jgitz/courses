@@ -1,0 +1,32 @@
+.... the DRAWBACK of C LANGUAGE was that all the variables which we use in a C program has to be declared at the very BEGINNING of the MAIN FUNCTION..... and all the variables will occupy STACK MEMORY (ACTIVATION RECORD: set of stack memory space allocated for declared variables) as long as the program runs....
+
+..... in C++.... this is overcome using DYNAMIC DECLARATION.... so variables can be SCOPED to functions, if blocks as well as if/for conditions
+
+- DYNAMIC DECLARATION: in C++...we can DECLARE variables ANYWHERE..... we need NOT declare all variables at the beginning of main function.... instead it can be SCOPED and declared in side if blocks, functions, if/for conditons such that.... the variables only take space in activation record of stack memory untill the end of scope on which it runs 
+
+- eg: if block dynamic declaration 
+
+      if (condition ) {
+        int <variable>
+      }
+
+- eg: if condition dynamic declaration 
+
+      if (int <variable> = value ; condition) {
+        codes
+      }
+
+- eg: another if conditon dynamic declaration using an expression with global variables
+
+      if (int c = a + b; c > 0) {
+        codes
+      }
+
+        ** here a and b are global variables declared at the beginning of the main function
+
+- eg: for condition dynamic declaraiton 
+
+      for (int <i> = 0; i < <10>; i++)
+
+
+***** the scoped variable CANNOT be used or printed outside its scope

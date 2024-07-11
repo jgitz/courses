@@ -1,0 +1,11 @@
+- different number systems exists to represent numbers..... most commonly used number systems are:
+
+    1) BINARY system: uses 2 numbers 0 and 1 to represent numbers
+
+    2) OCTAL system: uses 0 to 7 numerals to represent numbers..... here after 7 the binary of the next number is written and the last 3 digits of the binary is represented in octal
+
+        - for eg: decimal 8 in binary is 1000.... in octal, last 3 digit of binary of 8, i.e 000 is represented as 0 and the first digit of the binary 8 is kept as it is.... hence octal of decimal 8 is 10
+
+    3) DECIMAL system: uses numerals 0 to 9 to represent numbers 
+
+    4) HEXA DECIMAL: here numerals 0 to 9 and ALPHABETS A to F is used to represent 0 to 15 decimal numbers 

@@ -1,0 +1,23 @@
+..... the problem of if else ladder is it is very lengthy to code.... so SWITCH CASE statement is introduced....
+
+- SYNTAX: 
+
+    switch (<variable> or <expression>) {
+      case <value 1>: codes;
+          break;
+
+      case <value 2>: codes;
+          break;
+
+      default: codes;
+
+    }
+
+    ** the  values of CASE STATEMENT can ONLY be INTEGER or CHAR ('a', 'b'... etc)... and NOT STRING 
+
+    ** a case statement can have another switch statements 
+
+    ** if default statement is placed IN BETWEEN case statements.... INSTEAD of placed at END.... then break; should be added inside the default statement 
+
+    ** switch case USE CASE: used for MENU/OPTION driven programs where each options are given a number
+

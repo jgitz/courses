@@ -1,0 +1,123 @@
+- installing mingw
+
+    - download from site mingw-64.org.... click and  msys2 for windows.... click github.... click on download link....download starts 
+
+    - open installation file and install
+
+    - msys2 terminal opens (internet needed)
+
+        - type command to update the packages
+
+                :: pacman -Syu :: 
+
+        - click y... click y.... terminal windows closes automatically
+
+    - from start menu.... search for application named "msys2 msys"..... open it and a terminal opens
+
+        - type command 
+
+                :: pacman -Su ::
+
+        - press y 
+
+        - close the terminal after installation 
+
+
+    - from start menu.... open application named "msys2 mingw 64 bit"..... a terminal opens
+
+        - we need to install a package named gcc.... we first need to search for it using command 
+
+            - :: pacman -Ss gcc :: 
+
+            - search for package named 
+
+                - mingw64/mingw-w64-x86_64-gcc 12.2.0-6 (mingw-w64-x86_64-toolchain)
+                 GNU Compiler Collection (C,C++,OpenMP) for MinGW-w64
+
+                - from the package.... copy the name starting from / to the start of version number.... i.e copy....."mingw-w64-x86_64-gcc"
+
+            - use package installation command with the copied package name 
+
+                :: pacman -S mingw-w64-x86_64-gcc ::
+
+            - installation starts.... and click y when asked 
+
+            - after installation.... to check if the package is installed.... use command 
+
+                    - :: gcc --version
+
+                        - should see gcc.exe with version number as output
+
+            - close the terminal 
+
+    - now to install a debugger.... from start menu.... open application named "msys2 mingw 64 bit"..... a terminal opens....
+
+            - to search for a debugger package named gdb.... use command....
+  
+                    - :: pacman -Ss gdb ::
+
+            - search for package named 
+
+                - mingw64/mingw-w64-x86_64-gdb 12.  1-5 (mingw-w64-x86_64-toolchain)
+                    GNU Debugger (mingw-w64)
+
+                - from the package.... copy the name starting from / to the start of version number.... i.e copy..... "mingw-w64-x86_64-gdb"
+
+                - use package installation command with the copied package name 
+
+                    :: pacman -S mingw-w64-x86_64-gdb ::
+
+                - installation starts.... and click y when asked
+
+                - after installation.... to check if the package is installed.... use command 
+
+                    - :: gdb --version
+
+                        - should see gdb.exe with version number as output
+
+                - close the terminal 
+
+    - now we need to set path environmental variable....
+
+        - open command prompt by pressing windows + R and typing cmd inside the box 
+
+        - type command 
+
+            - :: gcc --version ::
+
+                ** if the version number is shown as output.... everything is ok
+
+                ***** if you get error message like this..... "'gcc' is not recognized as an internal or external command,
+                operable program or batch file."..... we need to configure one more thing..... follow the steps to configure it 
+
+                     - open the location where we installed msys64.... open the msys64 folder..... open minggw64 folder.... open bin folder..... copy the path from the navbar for eg.... "C:\msys64\mingw64\bin".....
+
+                     - on start menu search.... serch for "environment variables"..... click the application named "edit the system environment variables"
+
+                     - in the new window..... click on environment variables
+
+                            - under system variables.... click on path..... click on edit.... click new.... paste the path we copied (C:\msys64\mingw64\bin).click ok....click ok.... click ok....
+
+                    - now again run the following commands on command prompt
+
+                        - :: gcc --version ::
+
+                        - :: g++ --version ::
+
+                        - :: gdb --version ::
+
+                            ** all the above will give version number as output
+
+                        
+
+                        
+
+
+        
+
+                
+
+    
+
+
+

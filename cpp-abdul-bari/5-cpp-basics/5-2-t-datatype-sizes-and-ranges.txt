@@ -1,0 +1,36 @@
+various values in different datatypes takes up several bytes to store data 
+
+-** INT: takes 2 or 4 bytes of space.... it is based on the compiler.... most modern compiler uses 4 bytes.... but old compiler like turbo c++ uses only 2 bytes 
+
+    - ** it stores values of RANGE -32768 to 32767
+
+-** CHAR:
+
+    - size: 1 byte 
+
+    - range: -128 to 127
+
+- FLOAT: 
+
+   - size: 4 bytes
+   - range: -3.4 * 10^-38 to 3.4 * 10^38
+
+- DOUBLE: 
+
+    - size: 8 bytes
+    - range: -1.7 * 10^-308 to 1.7 * 10 ^308
+
+- BOOL:
+
+    -size: undefined/1 byte
+
+    - value: true/false 
+
+        ** boolean value occupies 1byte intead of 1 bit... because.. computer can only retrieve values in bytes and not bits....
+
+** 
+
+** study range and size of int and char
+
+**** watch to know more about how to calculate the values 
+    
