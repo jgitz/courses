@@ -1,0 +1,31 @@
+.bg-success {
+  background: #25d365ac;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.485);
+}
+
+.bg-danger {
+  background: #dc38488a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.485);
+}
+
+.bg-info {
+  background: #17a3b89d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.485);
+}
+
+.text-success {
+
+  color: #3f8759;
+}
+
+.text-danger {
+
+  color: #8043498a;
+
+}
+
+.text-info {
+
+  color: #43919d;
+}

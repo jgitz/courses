@@ -1,0 +1,20 @@
+- make all the component extension name from js to jsx in vite.... else error
+
+- if rfce snippet is not working 
+
+    - click ctl + , to open settings 
+
+    - search emmet 
+
+    - under add languages... add new item with 
+
+        key = "javascript"
+        value = "javascriptreact"
+
+- setLike() is a function and every action should be written inside its () and NOT LIKE setLike = action
+
+- always wrap props PARAMS of a component function in {}.... else eroor
+
+- attributes suchas ONCLICK DON'T work with COMPONENT TAG..... you have to set onclick inside the COMPONENT FUNCTION ..... and then pass the onclick value as PROP from the component tag
+
+        

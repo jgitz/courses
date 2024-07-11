@@ -1,0 +1,3 @@
+- height: fit-content >> height will fit the content 
+
+- fill: "red" >> fills the color of the icon to red
