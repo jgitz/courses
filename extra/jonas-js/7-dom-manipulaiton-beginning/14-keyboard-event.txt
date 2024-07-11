@@ -1,0 +1,15 @@
+- EVENT LISTNER for KEYBOARD
+
+    - unlike click event, event listner has following 3 event values
+
+      1) keydown : a single press of a key 
+
+      2) keypress : continous pressing of key without taking off 
+
+      3) keyup : taking hand off the key 
+
+    - the event handler function of a keyboard event takes an EVENT PARAMETER which holds detail of the key pressed at
+
+      <event parameter>.key
+
+- example

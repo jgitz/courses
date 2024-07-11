@@ -1,0 +1,36 @@
+- make project folder
+
+- got project folder
+
+  - open terminal from project folder
+
+    - initiate node using command
+
+      :: npm init --yes
+
+    - install express using command
+
+      :: npm i express
+
+- goto project folder
+
+  - make new file named index.js
+
+    - set require variable for express
+
+    - assign express() to variable named app
+
+    - make a hello world get request using route and route handler
+
+    - to display the server on browser add listen command using
+
+      app.listen(3000, () => console.log("listening to port 3000"))
+
+    - to run deploy app on browser
+
+      :: node index.js
+
+      ** goto localhost:3001 in browser to see the hello world get message
+
+  
+

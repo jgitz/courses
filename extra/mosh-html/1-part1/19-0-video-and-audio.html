@@ -1,0 +1,46 @@
+<!-- 
+
+  ** video file should be descriptive for SEO optimization
+
+  ** for css ONLY set WIDTH attribute.... height will be computed automatically based on the aspect ratio of the video
+
+  - video tag: used to set video using src attribute
+
+      <video>fallback text</video>
+  
+      - controls attribute: inside video tag.... add plain "controls" attribute to add control buttons for the video
+
+      - autoplay attribute: inside video tag.... add plain "autoplay" attribute to automatically play video
+
+        **** ? NOT WORKING on FIREFOX
+
+      - loop attribute: inside video tag.... add plain "loop" attribute to make video to loop without stopping
+
+      - FALLBACK TEXT: between the opening and closing video tags... text can be written... this text will be displayed on browsers that DON'T support VIDEO TAG like OPERA MINI 
+
+  - audio tag: same structure and attribute of video tag
+  
+
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    video {
+      width: 400px;
+    }
+  </style>
+ </head>
+ <body>
+
+  <video controls autoplay loop src="./19-1-v.mp4">Your browser does not support video</video>
+  
+ </body>
+ </html>

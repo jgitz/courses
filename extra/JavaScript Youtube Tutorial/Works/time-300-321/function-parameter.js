@@ -1,0 +1,1 @@
+/* a function parameter can be STRING, VARIABLE, OBJECT */

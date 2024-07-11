@@ -1,0 +1,9 @@
+- to do an action when a button is clicked
+
+    <button class="button_class"> text </button>
+
+    document.querySelector("button_class").addEventListner("click", () => {
+      action code
+    })
+
+    ** we don't need to call/ invoke the event handler function.... the js engine invoke it automatically when the event happens

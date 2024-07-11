@@ -1,0 +1,5 @@
+- mongoose COUNT method: is used to return the NUMBER OF DOCUMENTS returned by the FIND QUERY....
+
+    ** syntax 
+
+        .find().count()

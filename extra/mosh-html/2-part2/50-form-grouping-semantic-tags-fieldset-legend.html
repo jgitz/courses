@@ -1,0 +1,56 @@
+<!-- 
+  ... when form input fileds are numerous in BIG FORMS.... we need to GROUP the input fields with SEPARATE HEADINGS..... for this we use FIELDSET TAG and LEGEND TAG
+
+  - FIELDSET TAG: is a container wrapper to wrap/GROUP similar input fields into LOGICAL GROUPS 
+
+    ** takes input tags and a LEGEND TAG as children
+
+  - LEGEND TAG: is used to give a HEADING to a FIELDSET GROUP
+
+    ** ONLY USE ONE LEGEND TAG per FIELDSET WRAPPER
+
+***** we can use section tag and h2 tags for fieldset and legend tags respectively..... but section-h2 pair looks BORING....
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+  <fieldset>
+
+    <legend>Delivery Address</legend>
+
+    <div class="form-group">
+      <label for="address">Address</label><br>
+      <input type="text" name="" id="address"><br>
+      <input type="text" name="" id="address"><br>
+      <input type="text" name="" id="address"><br>
+    </div >
+
+    <div class="form-group">
+      <label for="pincode">Pincode</label><br>
+      <input type="number" name="" id="pincode">
+    </div >
+
+  </fieldset>
+
+  <fieldset>
+
+    <legend>Payment Details</legend>
+
+    <div class="form-group">
+      <label for="credit_card">Credit Card Number</label><br>
+      <input type="number" maxlength="11">
+    </div>
+    
+  </fieldset>
+
+  
+ </body>
+ </html>

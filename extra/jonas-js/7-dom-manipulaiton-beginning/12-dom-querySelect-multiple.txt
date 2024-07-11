@@ -1,0 +1,5 @@
+- to query select all tags with same class name 
+
+    document.querySelectorAll(".class") 
+
+** stores each element in a node list (like array) with starting index 0

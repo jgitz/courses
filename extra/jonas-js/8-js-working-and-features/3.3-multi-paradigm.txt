@@ -1,0 +1,24 @@
+- js is a language that supports multiple paradigms
+
+- PARADIGM: an approach of strutcturing a code with multiple style.
+
+    - there are 3 paradigms
+
+        1) PROCEDURAL Programming : organising code in linear way with some functions in between
+
+        2) FUNCTIONAL Programming :
+
+        3) OBJECT ORIENTED Programming
+
+        ** js supports all the above 3 
+
+
+    - another classification of paradigms are
+
+      1) IMPERATIVE : we need to describe every instruction to attain an output..... eg for loop in js 
+
+      2) DECLARATIVE : we only need to specify what output we want..... steps which produce the output is abstracted..... eg: array map, reduce methods
+
+
+
+     

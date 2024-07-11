@@ -1,0 +1,22 @@
+- what is typescript 
+
+    - opensource programming language maintained by microsoft 
+
+    - is a typed superscript of javascript 
+
+    - typescript codes are compiled back to plain javascript file (TRANSPILING).... and we have to run this js file
+
+    - typescript is not a new language.... .js file still works if the file name is changed to .ts
+
+
+- javascript vs typescript 
+
+    ** javascript is a DYNAMICALLY TYPED language.... i.e the type of the variables are only added at the RUN TIME....hence ERRORS are found late in a js program 
+
+        * typescript enables to add types to variables.... hence errors can be found earlier before the run time of the program (static type checking) as we type the code or at the compilation time of a typescript program  
+
+            - it is optional to add type to variables in typescript.... if we don't add a type to typescript file.... the typescript will still automatically assigns a type (TYPE INFERENCE) and STILL POINTS OUT the ERRORS befroe runtime 
+
+
+  
+

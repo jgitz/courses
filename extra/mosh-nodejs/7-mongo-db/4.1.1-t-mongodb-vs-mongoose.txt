@@ -1,0 +1,9 @@
+- mondodb is a non relational database which stores data in documents in BSON format 
+
+- mongoose is a  LIBRARY used inside NODE app to connect the server to a mongo database....
+
+    ** mongoose library provides addtional features which are ABSENT in mongodb SUCH AS 
+
+        - schema 
+        - validation 
+        - etc

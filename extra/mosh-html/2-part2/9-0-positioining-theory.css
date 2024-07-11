@@ -1,0 +1,39 @@
+/* 
+
+ELEMENT POSITIONING USING CSS....
+
+- POSITION CSS PROPERTY.... values are as follows 
+
+    1) static (default)
+
+        ** can't add css values for top, bottom, left or right 
+
+    2) relative (relative to its original position)
+
+        ** now the element can be specified top, bottom, left or right
+
+        ** DOESN'T affect the positioning of other elements in the container
+
+    3) absolute (relative to the subject element's parent element)
+
+        ** to implement this... first the PARENT ELEMENT should be given 
+
+            position: relative 
+
+        ** now then set the position: absolute; to the subject element 
+
+        ** now we can add top, bottom, left and right value to the subject element..... and the element is positioned relative to the parent element 
+
+        ** AFFECTS the position of other elements of the parent element 
+
+    4) fixed (relative to the view port )
+
+        ** used for nav bar
+
+** z-index is used to set the position of the element in z-axis.... more positive number value means more close to the screen
+
+    
+
+
+*/
+

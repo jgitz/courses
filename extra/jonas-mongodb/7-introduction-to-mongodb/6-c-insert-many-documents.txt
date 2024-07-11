@@ -1,0 +1,16 @@
+.... to insert MORE THAN ONE documents inside a collection... we use insertMany command with each document object given inside an ARRAY separated by COMMA 
+
+- to add many documents inside a collection 
+
+      - open mongosh in powershell 
+
+          - use use command to switch to database 
+
+              :: use <database name> :: 
+
+          - add multiple documents to a collection like this 
+
+           
+              :: db.<collection name>.insertMany([{key: "value"}, {key: "value"}, {"key": "value"}])
+
+                  ***** DON'T forget to WRAP multiple document objects inside [].... else error

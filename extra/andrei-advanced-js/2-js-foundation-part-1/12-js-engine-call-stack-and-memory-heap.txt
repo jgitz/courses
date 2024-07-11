@@ -1,0 +1,12 @@
+- js engine is composed of mainly interpreter, compiler, call stack and memory heap
+
+- memory heap: memory which is used to write and store data
+
+- call stack: keep track of code and execute the code in order. it follows LIFO
+
+    ** each execution context in call stack is called stack frame 
+
+** simple primitive datatypes are stored in call stacks
+
+** non primitive datatypes are stored inside memory heap
+

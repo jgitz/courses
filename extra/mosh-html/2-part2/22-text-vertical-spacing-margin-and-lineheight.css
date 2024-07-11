@@ -1,0 +1,34 @@
+/* 
+
+..... controlling of vertical spacing of text is by changing 
+
+  - margin 
+  - line-heignt
+
+1) margin: should FOLLOW the LAW OF PROXIMITY.... i.e HEADING and its TEXT should be CLOSER.... and the heading and the content of the previous heading should be FARTHER.... we achieve this by 
+
+    - on heading tag... apply MARGIN-TOP to be a GREATER value AND the MARGIN-BOTTOM should be SMALLER like this 
+
+      h1 {
+        margin: 3rem 0 1rem
+      }
+
+        ** greater top margin 
+
+        ** smalled bottom margin
+
+2) line-height: is the space between 2 lines of text.... we control this by setting LINE-HEIGHT ATTRIBUTE in BODY..... 
+
+    - line height can be set in REM AS WELL as in numberals (x times the FONT-SIZE ** preffered )
+
+    ** BEST PRACTICE : LINE HEIGHT = 1.5 times FONT-SIZE 
+
+      body {
+        font-size: 2rem;
+        line-height: 1.5
+      }
+
+    ** BEST PRACTICE is to set the line-heignt unit in relative to the font-size and NOT REM.... and if you are using rem.... CHANGE BOTH font-size and line-height to obey 1.5 times rule
+      
+
+*/

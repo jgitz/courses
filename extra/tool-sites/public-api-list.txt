@@ -1,0 +1,7 @@
+- to get all the public api.... visit the below git repository
+
+	- https://github.com/public-apis/public-apis
+
+		** always select the api's with CORS set to YES
+
+- omdb api.... for MOVIE DATABASE

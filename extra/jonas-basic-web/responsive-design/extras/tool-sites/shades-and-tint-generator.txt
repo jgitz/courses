@@ -1,0 +1,1 @@
+- use maketintsandshades site to obtain tints of for font color and background color

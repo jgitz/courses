@@ -1,0 +1,5 @@
+- js is a single threaded language 
+
+- js can only do one process at a time 
+
+- single threaded language has a single call stack and multithreaded languages has multiple call stacks

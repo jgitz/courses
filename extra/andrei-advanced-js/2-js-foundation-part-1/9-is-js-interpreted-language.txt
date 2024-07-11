@@ -1,0 +1,8 @@
+- earlier js was interpreted language
+
+- now the js engines inside the browser uses both interpreter and compiler (JIT COMPILER (Just In Time))
+
+- engine like v8 interprets js into bytecode and more uses compiler for optimese the code 
+
+- so today's js is both interpreted and compiled 
+

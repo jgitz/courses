@@ -1,0 +1,61 @@
+*- step 1) document.createElement("<element eg:div>") : used to create any new element.... but it won't be displayed in the dom 
+
+    const <message> = document.createElement("div")
+
+*- step 2) .classList.add("<class>") : chain this to a new create element variable to add class to the created element
+
+    const <message> = document.createElement("div")
+    .classList
+    .add("class-message")
+
+*- step 3) .innerHTML: chain this to add child elements to the newly created element variable 
+
+    <message>.innerHTML = `<button>click Me</button>`
+
+*- step 4) .append / .prepend / .before / .after : chain this to place the created element as a child inside another parent element 
+
+    ** <parent_variable>.append(<message>)
+
+          ** places the child at END of parent element
+
+          ** no "" inside the brackets
+
+    ** <parent_variable>.prepend(<message>)
+
+          ** places the child at the START of parent element 
+
+    **  <parent_variable>.before(<message>)
+
+            ** places the element as SIBLING BEFORE the start of the parent element 
+
+    ** <parent_variable>.after(<message>)
+
+            ** places the element as SIBLING AFTER the end of the parent element 
+
+
+***** .append and .prepend and .before and .after can only be used ONCE on a created element 
+
+    ** - step5) .cloneNode(true) : is used to clone a created element WITH ITS CHILDREN to make use of .append/.prepend/.before/.after/ multiple times
+
+        <parent_variable>
+        .prepend(<message>.cloneNode(true))
+
+* - step 6) .remove : chain it to remove an element 
+
+        <querySelector_variable>
+        .remove()
+
+
+          ** older code 
+
+              <query_select_variable>
+              .<parent_element_variable>
+              .removeChild(query_select_variable)
+
+
+
+
+
+
+
+      

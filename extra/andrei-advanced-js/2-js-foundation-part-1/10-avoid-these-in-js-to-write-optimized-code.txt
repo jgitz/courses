@@ -1,0 +1,8 @@
+- to help js engine to compile optimized code AVOID THE FOLLOWING
+
+  1) eval() method
+  2) arguments if functions
+  3) for in : to loop on objects
+  4) with keyword
+  5) delete
+

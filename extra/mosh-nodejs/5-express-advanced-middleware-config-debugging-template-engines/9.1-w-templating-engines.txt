@@ -1,0 +1,14 @@
+- watch
+
+.... till now the responses that we sent from the server to the client is a json object.....
+
+.... templating engines allows us to sent html to the client from server side.....
+
+.... popular templating engine libraries are....
+
+  - pug
+  - moustache
+
+  .. etc
+
+    ** we use pug library to send html by using res.render() method

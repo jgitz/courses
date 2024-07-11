@@ -1,0 +1,15 @@
+- var is function scope 
+
+    ** const and let is block scope 
+
+- var has value undefined on creation phase 
+
+    ** const and let are uninitialized and stored inside tdz(TEMPORAL DEAD ZONE)
+
+- HOISTED function expressions/arrow functions defined with VAR returns TYPE ERROR 
+
+    ** HOISTED function expressions/arrow functions defined with const and let returns REFERENCE ERROR
+
+- VARIABLES defined with VAR are stored as PROPERTY inside WINDOW OBJECT 
+
+  ** CONST and LET variables are not stored inside WINDOW OBJECT

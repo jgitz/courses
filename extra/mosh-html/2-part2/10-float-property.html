@@ -1,0 +1,72 @@
+<!-- 
+
+  - FLOAT: is a css property used to position an element such that other elements flow around it.... its values 
+
+      - LEFT: floats the subject element to the left 
+
+      - right: floats the subject elemtent to the right 
+
+
+  - CLEAR: is a css property used to make an element to NOT WRAP a FLOATING element... instead makes the element to start on NEW LINE.... most COMMONLY USED value is 
+
+      - clear: both;
+
+***** PARENT COLLAPSE: this is a PROBLEM when we use a FLOATing child inside a PARENT ELEMENT 
+
+    - the PARENT ELEMENT resized to smaller size beyond the size of floated element with removal of parent content... this is not desirable.... so to avoid this....
+
+      ** we make a CUSTOM CLASS like this with following property... BASIC PRACTICE 
+
+          .clearfix::after {
+            content:'';
+            display: block;
+            clear: both;
+          }
+
+           ** this class is then ADDED to the PARENT ELEMENT.... now the PARENT ELEMENT WILL NOT COLLAPSE with change in content
+
+**** use of floats have reduced these days AFTER INTRODUCTION of FLEXBOX (next lesson)
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .clearboth {
+      clear: both;
+    }
+
+    .parent {
+      border: 2px solid black;
+    }
+
+    .avatar {
+      width: 10rem;
+      height: 10rem;
+      background: gold;
+      float: left;
+    }
+  </style>
+ </head>
+ <body>
+
+  <div class="parent clearfix">
+    <div class="avatar">this is avatar element with FLOAT: LEFT</div>
+    <p>this paragraph flows around float .... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate necessitatibus eligendi? Cum quas velit nesciunt voluptatem, ratione odio repudiandae!</p>
+
+    <p class="clearboth">this paragraph SHOULD START IN NEW LINE....so we apply CLEAR: BOTH on this P TAG </p>
+  </div>
+  
+ </body>
+ </html>

@@ -1,0 +1,24 @@
+>17>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- old way of setting up redux is now changed with introduction of redux toolkit
+
+- problems of old redux
+
+	- too much boilerplate code suchas 
+		
+		- action
+		- action object
+		- action creator
+		- switch statement in reducer
+
+	- many packages are needed to be installed such as thunk and immer
+
+- REDUX toolkit: abstracts much of redux components
+
+
+
+
+
+
+
+	

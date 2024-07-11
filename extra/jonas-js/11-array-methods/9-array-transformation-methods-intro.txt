@@ -1,0 +1,9 @@
+- ARRAY TRANSFORMATION METHODS: are methods used to transform the contents of an array and allows to store the RETURN VALUES of these methods...
+
+    ** the 3 main array transformation methods are 
+
+        1) MAP method: to apply an operation individually to all elements of an array and store it in a variable as a new array
+
+        2) FILTER: to filter out some elements and store it inside a variable as a new array  according to some conditions 
+
+        3) REDUCE: to do operation such that the output of the array is a single value 

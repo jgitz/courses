@@ -1,0 +1,5 @@
+- scope chain : in case of nested functions.... the inner function will always look for variables and arguments in outer functions if they can't find them in their scope.... 
+
+  ** in short scope has access to the outer scopes but outer scope has no access to inner scopes 
+
+  ** i.e the variables that a function have ACCESS

@@ -1,0 +1,23 @@
+** PSEUDO ELEMENT is used IN CSS to STYLE a PART of an element or ADD NEW ELEMENT which are not PART OF DOM (::before, ::after)
+
+** PSEUDO ELEMENTS examples:
+
+      - ::before (to add an element before another element with a content)
+
+      - ::after (to add an element after a another element)
+
+      - ::first-letter (to select the first letter of another element like paragraph)
+
+      - ::first-line (to select the first line of another element like paragraph)
+      
+      - ::selection (to select the text selection using mouse)
+
+      - ::placeholder (to add styles to placehoder text used in input tags)
+
+** css syntax of ::before and ::after
+
+      <>::<before/after> {
+        content: "<content you want to add>";
+
+        display: <block/inline>;
+      }

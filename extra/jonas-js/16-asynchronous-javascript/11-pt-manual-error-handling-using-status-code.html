@@ -1,0 +1,90 @@
+<!-- 
+
+- how do we know if an API FETCH has REJECTED by the api endpoint? 
+
+  - .... when we give a fetch call to an endpoint.... the endpoint will ALWAYS give a RESPONSE as a an object with ITEMS such as HEADERS, BODY etc....
+
+    ** if the PROMISE is rejected.... then among the ITEMS of the RESPONSE OBJECT.... "OK" ITEM will have value set to FALSE.... the STATUS code will be inside the "STATUS" item.... so
+
+        - ok flag value can be found in 
+
+            <response>.ok
+
+        - status code can be found in 
+
+            <response>.status 
+
+** .... it is IMPORTANT to handle REJECTED PROMISES and to show error message with STATUS CODE..... these errors can be due to client making an invalid entry to the api...
+
+    ** to handle error.... 
+
+        ** inside the .then callback block always throw error using 
+
+          throw new Error(<message>)
+
+            ** use it inside if condition with <response>.status code to handle error due to REJECTED PROMISE
+
+        ** CHAIN .CATCH at the end of the chain 
+
+          ** .CATCH will intercept and handle any error found in the chain
+
+** if any .then has a throw error line.... if the error is EXECUTED.... the .then promise will be REJECTED.... and it will be collected by the .catch
+
+***** error due to REJECTED PROMISE from the api WILL NOT be intercepted by the .CATCH AUTOMATICALLY ( when there is network error... .catch intercepts the error automatically ).... that is the reason we have to MANUALLY throw the ERROR using the response OK flag and STATUS CODE
+
+
+
+
+ -->
+
+ <!-- practice
+
+    - do a call to this endpoint: https://jsonplaceholder.typicode.com/posts/101
+
+    - the endpoint will reject because the endpoint only has 100 posts to display
+
+    - handle the rejection.... by throwing an error.... using the <response>.ok flag.... 
+
+    - to show the error.... use alert box to display error message AND THE STATUS CODE
+
+
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      fetch('https://jsonplaceholder.typicode.com/posts/101')
+      .then(response =>{ 
+        
+        
+        console.log(response)
+
+        // manual error throwing based on ok flag
+
+        if (response.ok == false) {
+          throw new Error(`no post found ${response.status}`)
+        }
+
+        
+      
+      }).catch((error) => {
+        console.error(error.message)
+        alert(error.message) /* o/p
+          - inside vp....alert with "no post found 404"
+
+          - inside console "no post found 404
+
+
+        */
+      })
+
+    </script>
+  </body>
+  </html>

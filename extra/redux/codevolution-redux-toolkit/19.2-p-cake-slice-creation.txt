@@ -1,0 +1,44 @@
+in redux-toolkit the actions and reducers of a feature is stored inside a single js file with file name format 
+
+  <featureName>Slice.js
+
+
+- goto projectFolder/features/cake folder
+
+  - create new js file named cakeSlice.js
+
+      ** this file will hold actions and reducers of the cake feature
+
+  - goto cakeSlice.js
+
+      - import createSlice method from @reduxjs/toolkit
+
+      - set initial state object of cake with number of cake set as 10
+
+      - make cakeSlice variable to store slice properties suchas name, initial state and reducer using the method createSlice({})
+
+      - inside cakeSlice variable
+          - make an object 
+
+          - inside the object set slice properties
+
+            - name
+            - initial state
+            - reducer
+
+          - inside the reducer property
+
+            - each action type name is set as key
+
+            - the value of action type key is an arrow functio with state and action as props 
+
+            - there is no return for arrow function.... just write the logic
+
+      - use 2 module.exports
+
+        - one default export to export for slice reducers
+
+        - one named export to export slice actions
+
+***** inside cakeSlice.... check the spelling of key reducers and not reducer
+

@@ -1,0 +1,17 @@
+- every file in a node application is a module
+
+- variables used in a file/module is private to that module/file
+
+- to access a private variable of a module to another module, we have to export it.
+
+- every node application has a main module
+
+- Module object: 
+
+  - this is an object which is accessible to all files of a server.
+
+    ** but Module object is not global
+
+  - it has various properties like id, export object, parent, file namd, loaded, children, paths
+
+  - we can access module object using console.log(module)

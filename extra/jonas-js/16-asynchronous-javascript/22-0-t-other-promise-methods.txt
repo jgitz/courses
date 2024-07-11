@@ -1,0 +1,37 @@
+- Promise.race([]): like Promise.all([])... race is a method that 
+
+    - takes an array of async function calls which return promises.... and runs them in parallel
+
+    - and race method RETURNS the FIRST PROMISE that gets SETTLED.... i.e first promise that gets FULLFILLED/REJECTED
+
+    ** some use case of race is to run a fetch function and setTimeout in PARALLEL.... so fetch request is TIMED OUT after a certain SECONDS 
+
+- Promise.allSettled([]) : 
+
+    - new feature added in es2020
+
+    - Promise.allSettled takes
+
+        - an array of asynchronous function calls which return promises.... and runs them in PARALLEL
+
+        - Promise.allSettled([]) returns an ARRAY of all the SETTLED PROMISE RESPONSES..... i.e the array will have both response values of FULFILLED and REJECTED promises 
+
+    ** difference between Promise.all and Promise.allSettled is that 
+
+        ** Promise.all SHORT CIRCUITS and return error/catch method if ONE of the async function call is REJECTED 
+
+          * Promise.allSettled will return array of all RESPONSE values of FULFILLED and REJECTED async call
+
+- Promise.any([]): 
+
+    -  Promise.any takes
+
+        - an array of asynchronous function calls which return promises.... and runs them in PARALLEL
+
+        - Promise.any returns the FIRST FULFILLED promise response value AND won't consider any rejected values 
+
+    ** difference between Promise.race and Promise.any is that 
+
+        ** Promise.race returns the first SETTLED response value EITHER FULFILLED or REJECTED 
+
+            * Promise.any only considers FULFILLED response values and DON'T CONSIDER any REJECTED responses.... it ONLY returns a REJECTED VALUE if all the async calls gets rejected response values

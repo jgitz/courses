@@ -1,0 +1,9 @@
+** youtube link: https://www.youtube.com/watch?v=kxUNQtheCxM
+
+- SORT METHOD: is an array method used to sort array element... there are 3 types of usage of sort
+
+    1) sort method to sort STRINGS 
+    2) sort method to sort NUMBERS with help of comparison function
+    3) sort method to sort based on CONDITIONS with help of comparison operator
+
+**** sort method ALWAYS MUTATES the original array

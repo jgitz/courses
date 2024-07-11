@@ -1,0 +1,4 @@
+.... there is an event called scroll event which fires everytime we scroll the page
+
+
+***** DON'T USE scroll event to manipulate the page as IT IS INEFFICIENT....

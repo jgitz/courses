@@ -1,0 +1,8 @@
+- earlier we used to make a server using http module commands but it has disadvantages
+
+- disadvantages of http module
+
+    - we need to hardcode endpoints routes using req.url properties inside if statements 
+
+- express is a fast and lightweight framework to make web applications inside server using node
+

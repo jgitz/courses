@@ -1,0 +1,3 @@
+.. to make gradient color for backgroundImage css attribute of any thing
+
+- link: https://cssgradient.io/

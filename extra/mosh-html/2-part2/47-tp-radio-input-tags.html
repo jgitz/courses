@@ -1,0 +1,54 @@
+<!-- 
+  .... to select multiple options either DROPDOWN LIST (with multiple attribue) or CHECKBOX can be used.... but to select a SINGLE item from various option RADIO INPUT TAGS are used 
+
+    - attribtes 
+
+        - name="" : should have the same value for all options from which you want to select a single one
+
+        - checked: is a boolean attribute to check a default option
+
+            ***** only works if autocomplete="off" is done on the input tag
+
+***** standard
+
+    - use label after input tag
+
+    - wrap input-label tag pair in a div.... else input tag and label tags will be laid HORIZONTALLY as BOTH are INLINE ELEMENTS
+
+    - use same name attribute values on the options
+
+    - use autocomplete="off" to preselect an option using checked boolean attribute.... else checked attribute won't work
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+    <div class="form-group">
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label>
+    </div >
+
+    <div class="form-group">
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label>
+    </div >
+
+    <div class="form-group">
+      <input type="radio" name="gender" id="others">
+      <label for="others">Others</label>
+    </div >
+    <div class="form-group">
+      <input autocomplete="off" type="radio" name="gender" id="none" checked>
+      <label for="none">None</label>
+    </div>
+ </body>
+ </html>
+

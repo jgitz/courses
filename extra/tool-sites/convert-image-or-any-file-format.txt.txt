@@ -1,0 +1,3 @@
+- to convert a jpeg image to webp... use the site: https://cloudconvert.com/
+
+  ** you can convert any type of files

@@ -1,0 +1,7 @@
+- press windows + x 
+
+	- press U
+
+		- for shutdown - press U 
+		
+		- for restart - press R

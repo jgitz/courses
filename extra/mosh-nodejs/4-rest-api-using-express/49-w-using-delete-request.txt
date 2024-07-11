@@ -1,0 +1,3 @@
+- watch
+
+.... http delete request is used to delete a particular resource data in the backend

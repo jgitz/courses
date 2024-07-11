@@ -1,0 +1,9 @@
+== : compares only the value
+
+      ** for e.g:
+
+          "10" == 10 ; o/p true
+
+            here the string 10 is type converted to number value and then compared with number 10
+
+=== : compares both value and type

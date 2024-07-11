@@ -1,0 +1,98 @@
+.... in .ts file we need to assign a type to all the variables during VARIABLE DECLARATION 
+
+- the basic types used in typescript are 
+
+    1) boolean 
+    2) number 
+    3) string 
+    4) null
+    5) undefined
+    6) array
+    7) enum (user defined datatypes)
+    8) any : used when we expect any type of value.... commonly used when you expect a return value from a library or user input
+
+        ** the problem of any type is that the variable name with an any type can be used as a function call with () or used an object method with . etc and NO ERROR will be thrown by ts..... to tackle this UNKNOWN type is introduced in ts
+
+    9) unknown: similar to any type.... it can accept any datatype as value... but it cannot be called like a function with () or used as an object wmethod with . etc.....  it will throw ERRORS in IDE in such cases
+
+        ** null and boolean are known as SUBTYPES.... i.e they can be assigned as VALUES to any variable with OTHER DATATYPES such as STRING, NUMBER, BOOLEAN etc
+
+
+- syntax to declare variables with types 
+
+    let name: string = "Emmanuel";
+
+    let age: number = 19;
+
+    let isMarried: boolean = false;
+
+    let x: null = null;
+
+    let y: undefined = undefined;
+
+- syntax to declare array with items of ONE DATATYPE in ts
+
+    syntax 1:
+
+    let list1: number[] = [1, 2, 3] ;
+
+    syntax2: 
+
+    let list1: Array<number> = [1, 2, 3]
+
+- syntax to declare array with items of mixed datatypes 
+
+    let list1: [number, string] = [1, 'Emmanuel']
+
+        ** here only 2 items of a number datatype and string datatype can be added as data.... NO THIRD ITEM can be added
+
+        ** the order of the datatype assignment and the data assignment matter....
+
+- enum datatype usage in ts: 
+
+    - enum is used to assign a userfriendly names to a numerical values 
+
+    - syntax :
+
+        enum Color {Red, Green, Blue }
+
+        let c: Color = Color.Green 
+
+        console.log(c) // 1 
+
+            ** the values of the enum items will be NUMERICAL values starting from 0.... here value of Color.Red = 0.... Color.Green = 1.... Color.Blue = 2....
+
+            ** if you want the values to start from 2 do 
+
+                enum Color {Red=2, Green, Blue}
+
+                    ** here value of Color.Red = 2.... Color.Green = 3.... Color.Blue = 4....
+
+- using of any type: allows the variable with any datatype to have any datatype values.... 
+
+    let randomValue: any = 10 ;
+
+    randomValue = true; // no error
+
+    randomValue = "Emmanuel" // no error
+
+        ** any type is used mainly when we store the result of an API or a data from HTML INPUT
+
+- TYPE assertion in UNKNOWN type variables: unknown type throws error in cases like.... if we try to chain a string method to an unknown type variable with number value.... we can bypass it using the following syntax 
+
+    let numberVariable: any = 10;
+
+    numberVariable.toUppercase() // error
+
+    (numberVariable as string).toUppercase(); // no error
+
+        ** the above is type assertion... i.e we converted the number 10 to a string value.... and now we applied a string variable
+
+
+
+- ADVANTAGES of assigning types to variables 
+
+    1) STATIC TYPE CHECKING: this means.... .ts file only allows the value of the variable of a type from the type assigned to the variable..... for eg.... in the above example the ts only allows the name variable to take only string data.... else it'll show error in IDE..     
+
+
+    2) INTELLI SENSE: whenever we type a dot (.) after a variable.... the IDE displays only the methods related to the assigned type of the variable....

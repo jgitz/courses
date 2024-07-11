@@ -1,0 +1,16 @@
+we are going to make a demo project to practice redux-toolkit
+
+- make a project folder named redux-toolkit-demo
+
+- goto project folder and open terminal
+
+  - to initialise package.json file type command
+
+     :: npm init --yes
+
+  - to install redux toolkit
+
+      :: npm i @reduxjs/toolkit
+
+  - to write codes create a file named index.js
+

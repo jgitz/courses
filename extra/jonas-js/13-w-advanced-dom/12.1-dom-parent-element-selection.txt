@@ -1,0 +1,13 @@
+- to select DIRECT PARENT of a child
+
+      <query_selector_child_variable>
+      .parentElement
+
+- to select a INDIRECT PARENT with a particular CLASS or ID 
+
+      <query_selector_child_variable>
+      .closest(".<class> / #<id>")
+
+          ** o/p: selects the closest indirect parent with particular class or id
+
+          ** make note of dot . and # used 

@@ -1,0 +1,26 @@
+... badge component is where we add tags...
+
+.... in the design we have badges of 2 colors 
+
+  - primary color 
+
+  - secondary color 
+
+.... also we have badge of small size 
+
+
+** use of BEM to design badge variations 
+
+    - BLOCK of the badge is created with css styles for basic structure with class name badge 
+
+      ** SPAN ELEMENT is used to MAKE STRUCTURE of a badge
+
+    - modifiers: 
+
+        - modifier class "badge--primary" and badge--secondary" is used to create color variations of badge 
+
+        - modifier class "badge--small" is used to make smaller version of the badge .... use FONT SIZE to make size vairations 
+
+** white-space:nowrap: badge elements MUST NOT WRAP its content to NEXT LINE.... badge contents SHOULD BE IN A SINGLE LINE 
+
+** to adjust size of the badges....  VARY FONT SIZE instead of paddings

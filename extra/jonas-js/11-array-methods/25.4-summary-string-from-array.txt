@@ -1,0 +1,3 @@
+- METHOD TO MAKE STRING FROM ARRAY 
+
+    1) JOIN (based on separator string 

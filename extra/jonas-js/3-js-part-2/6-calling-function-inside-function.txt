@@ -1,0 +1,1 @@
+- always make functions for repeating codes inside a function and use it.... this will prevent bugs

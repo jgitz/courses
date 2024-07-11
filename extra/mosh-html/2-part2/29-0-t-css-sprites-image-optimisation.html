@@ -1,0 +1,37 @@
+<!-- 
+..... when a website with multiple image tags is loaded by the website.... the browser gives out SEPARATE http requests to fetch these images.... this is NOT OPTIMAL.... so we use a OPTIMISATION TRICK using CSS SPRITES to solve this.....
+
+- CSS SPRITES: is a method to combine all the small images used inside a website to a SINGLE PNG file.... and use some CSS CLASS CODES to clip required image from this SINGLE file and DISPLAY it inside the HTML USING SPAN ELEMENTS
+
+    ** now the browser only need to fetch one single image file to load images
+
+    ** images generated using css sprite is DISPLAYED USING SPAN TAG and NOT IMAGE TAG 
+
+    **** only use css sprite to combine small images like LOGOS and ICONS.... DON'T combine big images which you need resizing in future
+
+- CSS SPRITE PROCEDURE 
+
+    - goto google and type css sprite generator....
+
+    - select any css sprite generator site 
+
+    - upload your small images that you want to combine to one file 
+
+    - set a common class name like "logo-" or "bg-" or "icon-" etc
+
+    - click generate to download zip file 
+
+    - from the zip copy the combined image file and paste it in you PROJECT FOLDER 
+
+    - from the zip copy the css codes for combined image file and paste it inside your project css file 
+
+        - inside the pasted css codes... edit the  path to the combined image file
+
+        ** also edit the display property to..
+            
+              display: inline-block; 
+
+    - to use the image use SPAN TAG inside html AND use CSS SPRITE CLASSES to DISPLAY your image of your choice
+
+      
+ -->

@@ -1,0 +1,1 @@
+- if we implement a recursion (function calling itself), the call stack gets filled to maximum and consoles error.... This is known as STACK OVERFLOW

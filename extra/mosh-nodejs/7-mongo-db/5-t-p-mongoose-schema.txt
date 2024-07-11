@@ -1,0 +1,27 @@
+.... mongoose library allows you to structure a schema to your mongoDb database from INSIDE of your NODE APP.....
+
+- SCHEMA: defines the fields and the datatypes of values of to be entered in each fields 
+
+      ** mongoose supports following datatypes in schema 
+
+          1) String 
+          2) Number 
+          3) Boolean
+          4) Date 
+          5) Buffer (something related to memory location)
+          6) Array
+          7) ObjectID (to assign unique id's)
+
+- syntax to define schema (inside node app's index.js)
+
+    const <schema_name> = new mongoose.Schema({
+      name: String,
+      rollNo: Number,
+      tags: [String] 
+      date: {type: Date, default: Date.now}
+    })
+
+        ** schema of each field can also be put defined as an object {} with properties like
+
+          - type: to define datatype 
+          - default: to define date value

@@ -1,0 +1,7 @@
+- this is a keyword that allows to attach or point an object to a function or method 
+
+- object attached to this depends on the type of function (later)
+
+- this. helps to add new properties onto an object from a function execution.
+
+- this prevents hardcoding object properties inside a function an helps to satisfy DRY principle

@@ -1,0 +1,179 @@
+<!-- 
+  - GRID: is a utility in css that allows us to arrange items in BOTH X-AXIS and Y-AXIS
+  
+    ** mostly used to make photo collage and SITE LAYOUT with header, sidebar, content, and footer
+
+  - display:grid; >> is the property used to enable grid in the CONTAINER 
+
+  - MEASURING UNITS for grid structure
+
+      - for fixed constant size (absolute size) use px unit 
+
+      - use fr unit which takes space on % of available space....
+
+      - auto: use auto for dynamic space when resizing screen
+
+  - METHODS to construct GRID STRUCTURES 
+
+      ...to build a GRID structure with 3 rows and 2 columns of 100px
+
+
+        1) METHOD 1: 
+        
+            .container {
+              grid-template-rows: repeat(3, 100px);
+
+              grid-template-columns: repeat(2, 100px)
+            }
+
+        2) METHOD 2: ** most preferred shorthand
+
+            .container {
+              grid-tmeplate: repeat(3, 100px) / repeat(2, 100px)
+            }
+
+        3) METHOD 3: demonstrating mixed use of units like px, fr and auto 
+
+            .container {
+              grid-template: 100px auto 100px / 30fr 70fr;
+            }
+
+  - PROPERTIES to add GAP between rows and column OF GRID STRUCTURE
+
+      - METHOD 1: 
+
+          .container {
+            row-gap: 10px;
+            column-gap: 20px;
+          }
+
+      - METHOD 2: ** shorthand .... for 10px row gap and 20 px column gap
+
+          .container {
+            gap : 10px 20px;
+          }
+
+  - PROPERTIES to position GRID ITEMS inside its indivisual CELL STRUCTURE
+
+       ** these properties are applied to THE CONTAINER and not to the ITEMS
+
+
+       - justify-items: to align items in the X-AXIS.... values 
+
+          - stretch (DEFAULT): item fills entire width of the GRID CELL 
+
+              ** ONLY happens if we've NOT set WIDTH of the item 
+
+
+          - start  
+          - end 
+          - center
+
+          ** items move RELATIVE to the respective CELL STRUCTURE
+          
+      - align-items: to align the items in the Y-AXIS.... values 
+
+            - stretch (DEFAULT): item fills entire width of the GRID CELL 
+
+              ** ONLY happens if we've NOT set HEIGHT of the item 
+
+            - start 
+            - end 
+            - center
+
+      
+          ** items move RELATIVE to the respective CELL STRUCTURE
+
+  - PROPERTIES to position GRID STRUCTURE... RELATIVE to the GRID CONTAINER borders
+
+      ** the below properties are given to the CONTAINER and NOT to the ITEMS
+
+      - justify-content: to position entire grid structure in X-axis with respect to the container.... values 
+      
+          - start 
+          - end
+          - center 
+
+      - align-content: to position entire grid structure in Y-axis with respect to the container.... values 
+      
+          - start 
+          - end
+          - center 
+
+  - GRID ITEM properties: these properties are assigned to the individual ITEMS and NOT the container
+
+      ** these properties are used to MOVE AROUND the items in PREFERRED CELLS, skip cells, and span across multiple cells...
+
+          **** EXCEPTION 4TH method when using NAMED GRID AREAS.... here we use both container and items
+
+      ** each cell is identified by 2 ways 
+
+          1) row or column number... 1, 2, 3 etc
+
+          2) column and row lines 
+
+              1 - means FIRST LINE 
+
+              -1 - means LAST LINE
+
+      ** different METHODS used are 
+
+          1) to make 1st item to span across beginning and end of column lines
+          
+              .item-one {
+                  grid-column: 1 / -1
+              }
+
+          2) to make the 1st item to span across 2 columns 
+
+              .item-one {
+                grid-column: 1 / span 2
+              }
+
+          3) to make the 1st item to move to the 2nd row and span 2 rows 
+
+              .item-one {
+                grid-row: 2 / span 2
+              }
+
+          4) **** PROCEDURE for using GRID AREA METHOD of moving around items
+
+              - step 1:...INSIDE CONTAINERS set names to the cell using grid template areas
+
+                  .container {
+                    display: grid;
+                    grid-template: 100px auto 100px / 30fr 70fr;
+
+                    grid-template-areas: 
+                    "header header"
+                     "sidebar main" 
+                     "footer footer";
+                  }
+
+                    ** here we are giving names of our choice to the individual CELLS of the GRID STRCTURE
+
+                    ** if we want to omit a cell WITHOUT name.... leave a DOT (.)
+
+              - step 2: moving around the items to the NAMED AREAS 
+
+                  .item-one {
+                    grid-column: 1/span 2
+                    grid-area: header;
+                  }
+
+                    
+
+
+                    **** no need for "" for grid-area value
+                   
+
+
+
+
+
+
+      
+        
+
+                
+ -->

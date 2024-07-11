@@ -1,0 +1,122 @@
+<!-- 
+
+- table tag: is wrapper tag to start a table 
+
+    ** its children is tr tags
+
+- tr tag: to create a table row 
+
+      ** children of tr tag can be 
+
+          - th tag: to specify header cells in a row 
+
+          - td tag: to specify ordinary cells in a row 
+
+              ** th text style is different that of ordinary td text style
+
+                  - th text is bold and aligned to center 
+
+                  - th text is normal and aligned to left
+
+          - colspan attribute: used to specify number to which a table cell should span
+
+- TABLE SEMANTICS TAG: to divide table content to different sections for SEO purposer... we can use TABLE semantic tags INSIDE TABLE TAG... commonly used tags are 
+
+    - thead tag: to wrap headers
+
+    - tbody tag: to wrap table body 
+
+    - tfoot tag: to wrap table footer
+
+- table css: 
+
+    table, td, th {
+      border: "1px solid black";
+
+      border-collapse: collapse; >>>> to collapse 2 borders of neighbouring cells to one 
+
+      padding: 5px
+
+
+    }
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- table styles -->
+  <style>
+    table, tr, td, th {
+
+     border: 2px solid black;
+     border-collapse: collapse;
+     padding: 5px;
+     text-align: center;
+      
+    }
+  </style>
+ </head>
+ <body>
+
+    <table>
+      <!-- table headers start -->
+      <thead>
+        <tr>
+          <th colspan="2">RECEIPT</th>
+        </tr>
+        <tr>
+          <th>Items</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+
+      <!-- table headers end -->
+
+      <!-- table body start -->
+
+      <tbody>
+        <tr>
+          <td>Orange</td>
+          <td>$1</td>
+        </tr>
+  
+        <tr>
+          <td>Apple</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+
+      <!-- table body end -->
+
+
+      <!--table footer start  -->
+
+      <tfoot >
+        <tr>
+          <th>Total</th>
+          <th>$3</th>
+        </tr>
+      </tfoot >
+
+      <!--table footer end  -->
+      
+
+
+
+
+
+
+
+    </table>
+
+    
+  
+ </body>
+ </html>

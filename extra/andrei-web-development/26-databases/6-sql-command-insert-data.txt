@@ -1,0 +1,19 @@
+- after a table is created with columns, we can insert data into the column using 
+
+	:: INSERT INTO <table name> (<column name>, <column name>, <column name>) VALUES ("<text>", <0>, <dd-mm-yy>);
+
+		eg INSERT INTO users (name, age, birthday) VALUES ("Teddy", 22, "25-9-1999");
+
+- to view the inserted data inside cli
+
+
+	:: SELECT * FROM <table name>;
+
+		eg: SELECT * FROM users;
+
+			** to selectively see column data
+
+
+				:: SELECT (<column name>, <column name>) FROM <table name>;
+				
+					eg: SELECT (name, age) FROM users;

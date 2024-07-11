@@ -1,0 +1,38 @@
+- type conversion: how we can convert types from one type to another in js
+
+- in js there are two types of type conversion
+
+    1) implicit type conversion/type coercion: js automatically converts the type.
+
+    2) explicit type conversion: we manually change the type.
+
+1) IMPLICIT TYPE CONVERSION
+
+    - number + string = string
+
+    - boolean + string = string
+
+    - if the operand in the above two cases is -, * or / then the output will be NUMBER or NAN
+
+      ** eg "abc" - "efg"; o/p: NaN same for *, /
+
+      ** "5" - true = 4 (number) 
+
+            ** true = 1
+
+      ** "5" - false = 5 (number)
+
+            ** false = 0
+
+      ** "5" - null = 5 (number)
+
+            ** null = 0
+
+      ** num/boolean/null + undefined = NaN
+
+
+2
+
+
+
+

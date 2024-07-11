@@ -1,0 +1,53 @@
+- npm i node-sass --save-dev
+
+    ** --save-dev means this is not really a part of the end product... instead it is a helper tool
+
+    ** for all other installations use --save
+
+- goto package.json file
+
+    - inside scripts line...
+
+        - delete the test line
+
+        - add this line 
+
+            "compile:sass": "node-sass <location of main.scss file> <location of style.css> -w"
+
+              ** main.scss file is the file we write sass codes.... it should be created by the user
+
+              ** style.css file is the file where compiled sass code is outputted as css codes
+
+- install live server globally
+
+    :: npm install live-server -g ::
+
+      **** if error do
+
+          :: sudo npm install live-server
+
+      ** globally installed packages is not seen inside dependencies of package.json
+
+
+      
+      ** to open the live server... goto project folder and type 
+
+        :: live-server
+
+          ** index.html opens in default browser
+
+what is the need for package.json
+
+  inorder to easily identify the modules installed in the product in case you want to recreate it somewhere else
+
+  if you want to share project to someone.... just share the folders except node modules folder
+
+  the reciever upon using command....
+
+    :: npm install :: will install all the dependencies from package.json file automatically
+
+- to uninstall a dependency
+
+  :: npm uninstall <package name> --save
+
+      ** --save to update package.json

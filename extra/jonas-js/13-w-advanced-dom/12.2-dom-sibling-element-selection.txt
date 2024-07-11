@@ -1,0 +1,22 @@
+** in js only DIRECT siblings can be accessed i.e previous sibling and the next sibling
+
+
+- to get the previous sibling 
+
+      <query_selector_variable>
+      .previousElementSibling
+
+- to get the next sibling 
+
+      <query_selector_variable>
+      .nextElementSibling
+
+- to get all the siblings of an element (no direct method.... instead go to the direct parent and select the direct children)
+
+      <query_selector_variable>
+      .parentElement
+      .children
+
+          ** o/p: is an html collection with index number of sibling elements
+
+          ** we can make an array using spread operator and use forEach to loop over and manipulate siblings if required

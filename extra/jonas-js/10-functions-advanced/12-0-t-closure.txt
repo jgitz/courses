@@ -1,0 +1,14 @@
+- CLOSURE: is a background process in js by which the variables of an EXECUTED function PERSISTS in the MEMORY even after its execution.
+
+  ** closures happens automatically to a parent-child nested function in background whenever the js file is run 
+
+
+  ** closure persists both VARIABLES and ARGUMENTS defined inside a parent function when a child function is called OUTSIDE its PARENT FUNCTION 
+
+    **** for the creation of closure..... the CHILD FUNCTION should USE a VARIABLE from the PARENT SCOPE
+
+  ** in SCOPE LOOK UP.... the CLOSURE VARIABLE ENVIRONMENT has MORE preference than GLOBAL SCOPE VARIABLE
+
+  ** the VARIABLE VALUE PERSISTS because CLOSURE is STORED inside MEMORY HEAP
+
+**** you DON'T need a function to be RETURNED from inside of ANOTHER FUNCTION to see WORKING of scope chain (examples in next notes)

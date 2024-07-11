@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      .... in css SOME PROPERTIES gets INHERITED from PARENT to CHILD element automatically....
+
+        ** most commonly inherited properties are TYPOGRAPHY PROPERTIES like font-size, color etc
+
+        ** property like BORDER DON'T gets inherited
+
+      - CSS PROPERTY inheritance: any property can be given inheritance by giving the following as the VALUES 
+
+          - inherit: inherits the value from the parent 
+
+          - initial: takes explicit css value that we define
+    
+    */
+
+    article {
+      color: violet;
+      border: 2px solid black;
+     }
+
+     p {
+      color: initial;
+     }
+
+     h2 {
+      border: inherit;
+     }
+
+
+
+  </style>
+</head>
+<body>
+  <article>
+    <h1>inherits pink color from parent article tag automatically </h1>
+
+    <h2>forcibly made to inherit border property from parent article tag using css value.... border: inherit</h2>
+
+
+    <p>does not inherit pink color from parent article tag forcibly using css value.... color:initial</p>
+  </article>
+</body>
+</html>

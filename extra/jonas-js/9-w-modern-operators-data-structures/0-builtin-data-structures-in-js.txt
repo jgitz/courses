@@ -1,0 +1,6 @@
+- there are 4 built in datastructures in js
+
+  1) ARRAY
+  2) OBJECT
+  3) SET
+  4) MAP

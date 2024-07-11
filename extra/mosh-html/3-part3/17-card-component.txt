@@ -1,0 +1,40 @@
+.... consider the light blue card component with $14 plan.... it has the following components inside it 
+
+    - plan name text 
+
+    - plan cost text
+
+    - a badge component of 10% off 
+
+    - a list component with tick bullet points 
+
+    - a block button of outline variation
+
+
+** only first make SKELETON of the card component which has the following classes 
+
+  ** BLOCK CLASS "card" for outer container 
+
+      - should have rounded corners
+      - should have box shadow
+
+  ** ELEMENT CLASS "card__header" for hosting header details 
+
+  ** ELEMENT CLASS "card__body" for hosting body details 
+
+  ** MODIFIER CLASS "card--primary" for cards with header of primary color 
+    
+    - background color of primary color 
+    - text color = white
+
+  ** MODIFIER CLASS "card--secondary" for cards with hader of secondary color 
+
+    - background color of secondary color 
+    - text color = white
+
+**** DON'T ADD height and width to CARD class.... let it stretch entirely and be flexible.... to make it viewable of a required dimension.... WRAP the CARD in ANOTHER DIV and give that div an INLINE DIMENSION (for testing)
+
+**** overflow: hidden; when you add BACKGROUND color to an element with BORDER RADIUS... the border radius will DISAPPEAR.... to BRING BACK BORDER RADIUS... we add overflow: hidden; to the element... here it is given to CARD class
+
+** add other components which are children of the card later 
+

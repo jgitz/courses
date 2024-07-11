@@ -1,0 +1,8 @@
+- to change / assign a value in an html input element
+
+    <input type="text class="input__class">
+
+    document.querySelector(".input__class").value = "new value"
+
+
+**** NUMBER inputs from the frontend is always a STRING.... so when you want to store it as a variable in script..... use Number() method over it

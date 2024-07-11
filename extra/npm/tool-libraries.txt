@@ -1,0 +1,1 @@
+- jsint - is a static analysis tool for js which analyses your js code for error and syntax errors

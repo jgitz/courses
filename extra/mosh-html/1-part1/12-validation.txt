@@ -1,0 +1,9 @@
+- use validator websites to check for any errors or omitions in your HTML and CSS CODE 
+
+- upload your html pages to validator.we.org website to get validation outputs and suggestions
+
+- upload your css files to 
+
+    jigsaw.w3.org/css-validator
+
+      to validate css files

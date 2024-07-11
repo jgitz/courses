@@ -1,0 +1,3 @@
+- lexical scope: the scope is determined by the placement of functions..... in case of nested functions.... the inner functions has access to the outer functions.... and NOT vice versa
+
+ ** i.e the place where the variable is DEFINED 

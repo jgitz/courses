@@ -1,0 +1,8 @@
+- js is a single threaded and non blocking language 
+
+- single threaded means only on task at a time 
+
+- despite being a single threaded language.... js achieves non blocking via use of CALL BACK QUEUE and EVENT LOOP 
+
+- CONCURRENCY MODEL: runs multiple tasks at the same time
+

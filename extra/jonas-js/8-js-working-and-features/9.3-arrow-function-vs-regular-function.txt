@@ -1,0 +1,11 @@
+- regular function has THIS object and it depends on the type of function invocation 
+
+    ** arrow function has NO THIS object of its own.... it borrows it from the nearest PARENT SCOPE 
+
+- regular function has ARGUMENTS variables.... arguments variable can be accessed from inside of the regular function and RETURNS ARRAY with ARGUMENTS (**** i.e.... if we console.log(arguments) inside a function.... it'll display arguments of that function as an array )
+
+    ** arrow function has no argument variable to store arguments
+
+- regular functions can be used as a CONSTRUCTOR FUNCTION.... and objects/instances can be made from it using NEW keyword
+
+    ** arrow function cannot be used as a CONSTRUCTOR function and hence NEW keyword CANNOT be used on it

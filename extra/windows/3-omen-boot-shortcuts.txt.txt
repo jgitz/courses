@@ -1,0 +1,10 @@
+- to get bios
+
+	- at startup press f10
+
+- to reboot into startup repair modes 
+
+	- at login screen
+
+		- press shift and click restart button 
+

@@ -1,0 +1,1 @@
+css properties related to text gets inherited from the parent element

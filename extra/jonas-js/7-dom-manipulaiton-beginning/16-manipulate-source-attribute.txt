@@ -1,0 +1,4 @@
+- to change source attribute such as image
+
+    document.querySelector("element")
+    .src = `path here`

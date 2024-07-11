@@ -1,0 +1,54 @@
+<!-- 
+  - css selectors: are used inside css file to select the elements according to various combination.... selectors are of types 
+
+      1) basic selectors
+
+      2) relational selectors
+      
+      3) pseudo class selectors
+
+  ** this file only consists of BASIC SELECTOS 
+
+  ** even if there are too many basic selectors.... most commonly used ones are class and id selectors
+
+  
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {} /* select body element */
+
+    .class_name {} /* select elements with this class name named class_name */
+
+    
+
+        
+
+    .#id {} /* selects elements with this uniqe id named id */
+
+    a[target] {} /* selects all anchor tags with target attribute */
+
+    a[href="path"] {} /* selects all the a tags with this href path value */
+
+    a[href*="google"] {} /* selects all the anchor tags with href with word "google" */
+
+    a[href^="https"] {} /* selects all the anchor tags with href STARTING with "https" */
+
+    a[href$=".com"] {} /* selects all the anchor tags with href ENDING with ".com" */
+
+    a[href^="https"] [href$='.com'] /* selects all anchor tags with href starting with https and ending with .com */
+
+
+  </style>
+ </head>
+ <body>
+  
+ </body>
+ </html>

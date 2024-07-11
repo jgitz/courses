@@ -1,0 +1,24 @@
+- hoisted functions return function values
+
+- hoisted function EXPRESSIONS return reference error if key word used is CONST or LET 
+
+    ** if VAR then TYPE ERROR (because we can't invoke a value undefined)
+
+- hoisted arrow functions express reference error error if key word used is CONST or LET 
+
+    ** if VAR then TYPE ERROR  ( because we can't invoke a value undefined )
+
+
+**** best practices 
+
+      ** use const instead of var 
+
+      ** declare variables at the top 
+
+      ** declare functions after the variables
+
+      ** only invoke functions after its declaration 
+
+      ** DON'T use arrow function as a method inside objects
+
+      ** use arrow function INSIDE a METHOD of an OBJECT  

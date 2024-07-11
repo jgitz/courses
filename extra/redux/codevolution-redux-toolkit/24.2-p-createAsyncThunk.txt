@@ -1,0 +1,111 @@
+to practice the asynch thunk in toolkit.... fetch user data from the api endpoints
+
+  https://jsonplaceholder.typicode.com/users
+
+.... make a feature named user with following 3 states
+
+    - loading: <boolean> .... flag for loading circles 
+
+    - users: <empty array> .... to store user id's fetched
+
+    - error: <empty string> .... to store the error message if not connected to the api endpoints
+
+
+- goto projctFolder/features
+
+  - make a new folder named user
+
+  - goto user folder
+
+    - create new file named userSlice.js
+
+- open projectFolder/features/user/userSlice.js
+
+  - install axios to send get request to endpoints
+
+      :: npm i axios
+
+  - require createAsyncThunk from @reduxjs/toolkit
+
+  - require axios
+
+  - require createSlice
+
+  - set initialState object as
+
+        const initialState = {
+          loading: false,
+          users: [],
+          error: ""
+        }
+
+  - set a variable named fetchUsers to use createAsyncThunk() to get users data from axios........ like this
+
+      const fetchUsers = createAsyncThunk("user/fetchUsers", () => { /* 24.2 */
+        axios.get("https://jsonplaceholder.typicode.com/users").then((response) => response.data.map(user => user.id)) /* 24.2 */
+      })
+
+  - create userSlice variable with createSlice({})...
+
+    - inside createSlice {} write logic for pending, fulfilled and rejected action type using multiple builder arrow functions like this
+
+        const userSlice = createSlice({
+          name: "user",
+          initialState,
+          extraReducers: builder => {
+            builder.addCase(fetchUsers.pending, (state) => {
+              state.loading = true
+            })
+
+            builder.addCase(fetchUsers.fulfilled, (state, action) =>{
+              state.loading = false
+              state.users = action.payload /* ***** axios fetched data is inside action.payload */
+              state.error = ''
+            })
+
+            builder.addCase(fetchUsers.rejected, (state, action) => {
+              state.loading = false
+              state.users = []
+              state.error = action.error.message
+            })
+          }
+        })
+
+    - default export the reducer and name export the createAsyncThunk() variable
+   
+        module.exports = userSlice.reducer
+        module.exports.fetchUsers = fetchUser
+
+- to test the asynch user feature
+
+  - goto store.js
+
+    - require userReducer from userSlice.js
+
+    - inside configure reducer object
+
+      - add the userReducer
+
+  - goto index.js
+
+    - require named export fetchUsers from the userSlice.js
+
+    - to reduce noise.... comment out cake and icecreams dispatches....
+
+    - dispatch fetchUsers using code
+
+        store.dispatch(fetchUsers())
+
+
+
+    - to run the app use
+
+        :: node index.js
+
+
+ ** axios fetched data is inside action.payload
+
+ ** axios error message is stored inside axios.error.message
+
+**** always inside the createAsyncThunk arrow function.... use return keyword.... else error
+

@@ -1,0 +1,8 @@
+- to get multiple cursor : ctl + alt + up/down arrow
+
+
+- to get cursor at repeating words
+
+	- select one instance of the repeating word
+
+	- press ctl + shift + L

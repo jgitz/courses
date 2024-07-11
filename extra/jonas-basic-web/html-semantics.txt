@@ -1,0 +1,9 @@
+semantics are tags that have meanings. eg strong, em, header, nav, footer, article..... p tag can also be called semantic tag 
+
+- section tag is used for any generic part of a website
+
+reasons for using semantics
+
+- for seo purposes
+
+- accessibility and screen readers

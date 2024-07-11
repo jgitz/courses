@@ -1,0 +1,47 @@
+..... mongoose model is a CLASS which is built around the defined schema to CREATE many DOCUMENTS with SCHEMA structure 
+
+- to define a model and make document instances
+
+    - inside the index.js 
+
+        - define the schema using mongoose.Schema 
+
+        - to create a MODEL follow SYNTAX 
+
+            const <Model_variable> = mongoose.model('<Model_display_name>', <schema_variable>)
+
+                ** Model variable name is in PASCAL CASE and SINGULAR
+
+                ** Model DISPLAY name is in PASCAL CASE and SINGULAR 
+
+                ** ideally model variable name and display name should be SAME SINGULAR name
+
+                ***** m is LOWERCASE in mongoose.model command..... else error
+
+          - to create DOCUMENTS from the model SYNTAX 
+
+              const <docment_variable> = new <Model_variable>({
+                data with fields and values 
+              })
+
+          - to SAVE the document inside the mongodb 
+
+              const <data> = await <document_variable>.save()
+
+                ** await used because....save() returns back a promise with saved DOCUMENT as data....
+
+                **** if a variable is using AWAIT you should wrap it inside an ASYNC function
+
+            - run the application using command 
+
+                :: node index.js 
+
+
+                  **** don't use nodemon because.... it'll rerun the app on every change..... hence creating multiple documents
+
+
+**** mongoose model refers to COLLECTIONS in the mongo SERVER (compass or atlas)
+
+**** if a variable is using AWAIT you should wrap it inside an ASYNC function
+
+**** don't use nodemon because.... it'll rerun the app on every change..... hence creating multiple documents

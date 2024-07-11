@@ -1,0 +1,61 @@
+<!-- 
+
+- input text attributes:
+
+    - autofocus: autofocus the input field on page load
+
+    - autocomplete="off": prevents autocomplete options popped up by the browser
+
+    - maxlength = <> : allows only input characters upto the maxlength 
+
+    - value = "" : prepopulates the value of input to something 
+
+    - placeholder= "": adds placeholder text
+
+    - readonly : the field is only read only....the field CAN BE SELECTED.... but its value WILL BE SENT TO SERVER on submit
+
+    - disabled: the field is disabled... the field CANNOT BE SELECTED.... its value WILL NOT BE SENT TO SERVER on submit
+
+- text area tag:
+
+    - syntax: <textarea></textarea>
+
+    ** to prepopulate value inside text area.... write the value IN BETWEEN THE TAGS and DONOT use VALUE ATTRIBUTE 
+
+    - attributes 
+        - rows= : maximum number of rows
+        - cols= : maximum characters in a row
+
+    - css used
+
+        ** resize: none; >> to disappear resize option
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    textarea{
+      resize:none;
+    } /* ****** */
+  </style>
+
+</head>
+<body>
+
+  <input type="text" value="value">
+  <input type="text" autofocus placeholder="this field is autofocussed on page load">
+  <input type="text" maxlength="5" placeholder="maximum lenght is 5">
+  <input type="text" value="readonly" readonly>
+  <input type="text" value="disableddf" disabled>
+
+  <textarea name="" id="" cols="30" rows="5" >prepopulated value written in between the tags as VALUE ATTRIBUTE WON'T WORK</textarea>
+  
+</body>
+</html>

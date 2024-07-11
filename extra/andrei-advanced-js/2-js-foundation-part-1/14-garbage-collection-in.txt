@@ -1,0 +1,7 @@
+- GARBAGE COLLECTION: means the language automatically releases memory spaces after use 
+
+- js is a garbage collected language 
+
+- MARK AND SWEEP ALGORITHM:  algorithm used by  js for garbage collection.
+
+- in low level language like C.... the programmer needs to do the garbage collection..... that results in optimised code 

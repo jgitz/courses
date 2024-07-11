@@ -1,0 +1,3 @@
+- to generate dummy json data 
+
+	https://www.mockaroo.com/

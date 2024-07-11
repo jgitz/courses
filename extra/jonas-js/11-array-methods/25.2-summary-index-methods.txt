@@ -1,0 +1,5 @@
+- ARRAY METHODS THAT OPERATES ON INDEX 
+
+      1) INDEX OF (index of an element)
+
+      2) FIND INDEX OF (index element that satisfies condition)

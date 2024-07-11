@@ -1,0 +1,32 @@
+- MAPS and OBJECTS are preferred when you want to give a KEY to describe the VALUES
+
+
+- OBJECT FEATURES
+
+    - use to structure data using simple key value pairs
+
+    - easy to access values using . and [] notation
+
+    - cannot be directly used in LOOP (iterated)
+
+
+- MAP FEATURES
+
+    - keys can be any datatypes
+
+    - properties can be looped (iterated)
+
+    - better performance than object 
+
+    - easy to compute size using size method
+
+- WHEN to use OBJECTS?
+
+    - if the incoming data is in JSON format
+
+
+    - if you want FUNCTION as values (METHODS)
+
+- WHEN to use MAPS?
+
+    - when you need KEYS that are NOT STRINGS

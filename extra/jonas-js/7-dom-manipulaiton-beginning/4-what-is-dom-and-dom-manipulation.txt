@@ -1,0 +1,19 @@
+- what is dom?
+
+    structured representation of an html document as which allows js to manipulate the element and styles.
+
+    dom is the connection point of js engine and the html document 
+
+    elements are stored in a tree elements with document object as the first node.. next comes the html tag as root node... head and body tags are child of html tag
+
+
+
+- what is dom manipulation?
+
+  process of manipulating dom object using js is known as dom manipulation.
+
+** dom is not part of js 
+
+** dom methods and properties are part of browser web api's.
+
+    

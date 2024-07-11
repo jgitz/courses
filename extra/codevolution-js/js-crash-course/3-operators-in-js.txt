@@ -1,0 +1,17 @@
+1) assignment operator: =
+
+2) arithematic operators: +, -, *, /, %, ++, --
+
+3) comparison operators: ==, != , ===, !==, >, >=, <, <=
+
+4) logical operators:  &&, ||, !
+
+5) string operators: 
+
+      1) + operator: 
+
+        "string1" + "string2"; 
+        
+          o/p: string1string2
+
+6) ternary operator: (condition) ? < codes>: <codes>

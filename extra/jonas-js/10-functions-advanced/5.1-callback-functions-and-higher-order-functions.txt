@@ -1,0 +1,21 @@
+- HIGHER ORDER FUNCTION: is a PARENT FUNCTION inside which another FUNCTIONS are PASSED IN as ARGUMENTS or RETURNED 
+
+- CALLBACK FUNCTION: is the FUNCTION that is PASSED in as an ARGUMENT into a FUNCTION
+
+
+- EXAMPLE
+
+    function PARENT(callback_function) {
+
+    }
+
+        ** here parent function is a HIGHER order function as it takes function as an argument 
+
+        ** here CALLBACK_function is a CALL BACK function since it is passed as an argument into another function
+
+
+- ADVANTAGES OF USE OF CALLBACKs and HIGHER ORDER FUNCTIONS 
+
+    1) It breaks the code into REUSABLE functional units 
+
+    2) It provides ABSTRACTIONS because a bigger task is done calling smaller function tasks

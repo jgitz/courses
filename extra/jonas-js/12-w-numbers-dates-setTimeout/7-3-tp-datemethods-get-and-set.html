@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 
+      ** DATE GET METHODS: are used to get FULL YEAR, MONTH, DATE, DAY, HOURS, MINUTES, SECONDS etc from a DATE VARIABLE 
+    */
+
+      let date_variable = new Date()
+    
+    // to get year use <>.getFullYear
+    // ***** DON'T USE getYear.... it'll return SOMETHING ELSE??
+
+      console.log(date_variable.getFullYear()) // 2023
+
+    // to get month use <>.getMonth()
+    // ** ONLY MONTH INDEX VALUE is obtained.... 0 = January and 11 = December
+
+      console.log(date_variable.getMonth()) // 2 ** means MARCH
+
+    // to get DAY OF THE MONTH use <>.getDate()
+    // **** DON'T USE getDay.... it is used to get DAY OF THE WEEK
+
+      console.log(date_variable.getDate()) // 8 ** i.e 8th day of the month 
+
+    // to get DAY OF THE WEEK use <>.getDay()
+    // only month index value is obtained.... 0 = Sunday and 6 = Saturday
+
+      console.log(date_variable.getDay()) // 3 ** means wednesday
+
+    // to get HOURS use <>.getHours()
+    // output is of 24 hours format
+    // **** check spelling.... there is "s" is Hours
+
+      console.log(date_variable.getHours()) // 16 ** means 4 Pm
+
+    // to get Minutes.... use <>.getMinutes()
+    // **** check spelling.... there is "s" is Minutes
+      
+      console.log(date_variable.getMinutes()) // 53
+      
+    // to get seconds.... use <>.getSeconds()
+    // **** check spelling.... there is "s" is Seconds 
+
+      console.log(date_variable.getSeconds()) // 27
+
+/* 
+
+** for all the ABOVE GET METHODS.... there are SET METHODS to set EVERYTHING OF our choice to a date variable 
+
+      - <>.setFullYear(<>)
+      - <>.setMonth(<>)
+      - <>.setDate(<>)
+      - <>.setDay(<>)
+      - <>.setHours(<>)
+      - <>.setMinutes(<>)
+      - <>.setSeconds(<>)
+
+*/
+
+// eg setFullYear method 
+
+date_variable.setFullYear(2024)
+console.log(date_variable.getFullYear()) // 2024
+
+
+    
+     
+  </script>
+</body>
+</html>

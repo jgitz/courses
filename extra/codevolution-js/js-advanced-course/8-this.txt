@@ -1,0 +1,33 @@
+- this is an object that is made inside global execution context creation as well as in function execution context. (refer note 0)
+
+- using this keyword in a function refers to the object the function belongs to.
+
+- this enables to reuse a function with different objects
+
+- BUT this object is determined entirely on how a function is CALLED/INVOKED..
+
+  ** there are 4 ways in which a function is called
+
+    1) implicit binding: function is defined inside an object.
+
+    2) explicit binding: function and object is defined separately.
+
+    3) new binding: a single function can be reused to make different copies of instance of same function with the new key word.
+
+        ** the function defined after new keyword is known as constructor function and the practice is to have constructor function name to start with UPPER CASE.
+
+    4) default binding: 
+
+    **** ORDER OF PRECENDENCE OF BINDING:
+
+          ** trick: NE ID 
+
+              - New binding
+
+              - Explicit binding 
+
+              - Implicit binding 
+
+              - Default binding 
+
+              

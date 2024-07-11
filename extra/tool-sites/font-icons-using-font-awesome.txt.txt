@@ -1,0 +1,21 @@
+steps to use font awesome 
+
+    - create account in font awesome 
+
+    - create font icon kit and add icons you want to use inside it 
+
+    - copy the script tag of font awesome and paste it inside the html head AFTER style.css link tag 
+
+    - to use the icon as font 
+
+        - create a PARENT SPAN TAG with class named <icon> or anything of your choice 
+
+        - inside the span parent... add ANOTHER SPAN as CHILD 
+
+        - on CHILD SPAN/i tag
+
+            - add fontawesome readymade classes in CLASS ATTRIBUTE
+
+            ** we get an i tag from font awesome.... but standard is to use SPAN to display fonts as I TAG is DEPRECATED
+
+        - to CHANGE COLOR AND SIZE of the icon.... change the CSS of the PARENT SPAN TAG

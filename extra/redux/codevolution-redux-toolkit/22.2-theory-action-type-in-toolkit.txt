@@ -1,0 +1,30 @@
+ in redux tool kit we don't have to hard code action type in an action creator....
+
+ .... instead the action type is automatically made by the redux from the createSlice({})....
+ 
+ .... the action.type syntax is
+
+    <name>/<reducer key>
+
+
+..... for eg consider the cake slice
+
+      const cakeSlice = createSlice({ 
+    name: "cake", 
+    initialState, 
+    reducers: { 
+      ordered: (state) => { 
+        state.noOfCakes--
+      },
+
+      restocked: (state, action) => { 
+        state.noOfCakes += action.payload
+      }
+    } 
+
+  }) 
+
+      ** the action type of cake features are
+          - cake/ordered
+
+          - cake/restocked

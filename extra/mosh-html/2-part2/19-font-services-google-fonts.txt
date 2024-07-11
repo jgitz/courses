@@ -1,0 +1,21 @@
+... easiest way to attach fonts to your project is to use online FONT SERVICES....
+
+.... popular font service is google 
+
+- goto google fonts site 
+
+- type font name
+
+- select multiple fonts 
+
+- click top right icon 
+
+- copy link tags 
+
+- goto your project html file 
+
+    - inside the head tag 
+
+        ** paste the copied LINKS TAG.... RIGHT AFTER the TITLE TAG.... and BEFORE THE normalise.css and style.css link tags 
+
+** now you can use the downloaded font names in font-family attribute in your project css files

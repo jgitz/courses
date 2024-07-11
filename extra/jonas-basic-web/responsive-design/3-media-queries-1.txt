@@ -1,0 +1,42 @@
+- in desktop first approach, we use max-width
+
+- in mobile first approach, we use min-width
+
+- media query example
+    - @media (max-width: 600px)  {
+
+    }
+
+        ** means styles gets applied on any screen sizes between 0 and 600px (including 600px)
+
+- in case of conflicting media query screen sizes... query with less pixel gets applied
+
+
+- selecting breakpoints methods
+
+    1) select ranges of view port width for different devices
+
+
+        - 300px-500px : for phones
+
+        - 600px-900px : for tablets
+
+        - 900-1100px : for landscape tablets
+
+        - >1200px : for computer screens
+
+    2) ignore device screen size and set breakpoints where the design breakpoints
+
+- don't use pixels in media queries because pixels won't work with zoom level and browser font sizes.... we use em (not rem)
+
+- even if we set font-size: 62.5% for html.... 1rem = 10px don't work for media queries.... and 1 rem depends on default browser font size
+i.e
+    1rem = 1em = 16px
+
+- in media queries use em as the unit
+
+- but inside the media-query code block { } width units used is rem and there 1rem = 10px
+
+- don't add too many media quedies
+
+    

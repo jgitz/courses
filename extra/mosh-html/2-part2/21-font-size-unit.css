@@ -1,0 +1,36 @@
+/* 
+** BEST PRACTICE 
+*/
+
+html {
+  font-size: 62.5%
+}
+
+/* 
+
+** BEST PRACITCE: set font families of different headings inside one block .... and set another block for setting FONT-SIZE for individual headings... like the below 
+
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif'
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+/*
+** now set font values in elements in REM
+
+    **** DON'T use PX unit for fonts... because based on SCREEN RESOLUTIONS of various devices.... the font sizes in px will change 
+
+** now  1rem = 10 px 
+
+** also use type-scale.com to see the rem and px equivalent for font headings
+
+*/

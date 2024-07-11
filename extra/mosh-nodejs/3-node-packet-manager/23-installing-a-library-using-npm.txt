@@ -1,0 +1,13 @@
+- search for package in npm site 
+
+- goto project folder.... open terminal... type
+
+  :: npm i <package name>
+
+    ** now package.json file updates.... and the newly installed library is listed under dependencies object....
+
+    ** the package files are installed inside folder named node_modules
+
+
+    **** no need of --save flag in new version of npm
+

@@ -1,0 +1,38 @@
+- IDENTIFIERS : the variable names given at variable declaration is known as IDENTIFIERS 
+
+  eg let <person> = {
+  }
+
+    ** here person is the identifier
+
+    ** identifier points to memory address where value is stored 
+
+
+
+- MEMORY in JS ENGINE: both CALLSTACK and MEMORY HEAP has addresses where we can store data 
+
+
+- PRIMITIVE datatypes STORAGE:
+
+    ** primitive datatypes store their IDENTIFIERS and VALUE inside CALL STACK (execution context) addresses
+
+    ** the identifier points to the CALL STACK address where value is stored and not the VALUE itself.. i.e it stores memory address and not value
+    
+    ** a clone of value of an identifier with new value is stored in NEW ADDRESS and old value remains in the old address
+
+- NON PRIMITIVE datatypes STORAGE: 
+
+    ** non primitive datatypes store 
+
+        ** object data inside the MEMORY HEAP address 
+
+        ** identifiers of nonprimitive datatypes are stored inside  callstack
+        
+        ** identifiers are stored in an address inside the call stack and the value of the address is the MEMORY HEAP ADDRESS 
+
+
+**** don't confuse 
+
+        ** identifiers always points to a CALL STACK ADDRESS 
+
+        ** VARIABLES always holds a value (value itself in case of primitive dt and adress of MEMORY HEAP in case of non primitive dt)

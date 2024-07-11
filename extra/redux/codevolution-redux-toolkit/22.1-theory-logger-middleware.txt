@@ -1,0 +1,14 @@
+- we can use the middlewares such as logger middleware with the redux-toolkit
+
+  ** logger middleware is a redux middleware library that displays the previous and new state changes in the console.... it works only if we've used subscribe(listner) method.... the listner should be set to an empty arrow function
+
+- middleware is specified as a separate key after reducer inside the configureStore().... the value is an arrow function with an argument getDefault and inside the arrow function body.... we've to concatinate the new middleware to the getDefaultMiddleware
+
+      configureStore({
+      reducer: {},
+      middleware: (getDefault) => {
+        getDefaultMiddleware().concat(<middleware package>)
+      }
+    })
+
+      **  getDefaultMiddleware() is concatinated with new middleware because there are some default middlewares setup by configureStore()

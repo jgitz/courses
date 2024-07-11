@@ -1,0 +1,645 @@
+max-width: use max width instead of width
+            - width adapts to the window width to values less than max width.... and above the value... it won't expand..... so no scroll bar appears
+
+- * {
+  padding: 0
+  margin: 0
+  box-sizing:border-box
+}
+
+- html {
+
+    font-size: 62.5%
+}
+
+- to remove the blue outline around the elements when you press tab and replace blue outline with other style
+
+  *:focus {
+    outline: none
+    box-shadow: 0 0 0 0.8rem color with opacity
+  }
+
+            
+
+
+use rem for lengths instead of pixel.... 1 rem = 16px
+
+  ** letter-spacing in px because it is very small size that cannot be expressid in rem
+
+  ** button radius in px
+
+  ** border in px
+
+
+use body font-size = 62.5%.... so 1 rem = 10px
+
+- enclose image in div
+
+  - image width: 100%
+
+    ** no div for logo image in nav bar
+
+
+- generic container 
+
+    .container{
+      max-width: 120rem
+      margin: 0 auto
+      padding: 0 3.2rem
+    }
+
+
+- centering elements in a container
+    margin: 0 auto
+
+- padding of sections should have enough white space before beginning of next section...so
+  padding: 9.6rem 0;
+
+- gap of grid
+  gap: 9.6 rem ** this should be same as top and bottom padding
+
+- generic grid 
+  
+  .grid {
+    display: grid
+    column-gap: 6.4rem
+    row-gap: 9.6rem
+    margin-bottom: 9.6rem
+
+  }
+
+-heading font ( inside hero section )
+  - font size: 5.2 rem
+  - font weight: 700 or 700
+  - line height: 1.05 
+  - letter-spacing: -0.5px
+
+- secondary heading (inside sections)
+  - font-size: 4.4rem
+  - line-height: 1.2
+  - margin-bottom: 9.6rem
+
+- tertiary heading 
+  - font-size: 3.6rem
+  - line-height: 1.2
+  - margin-bottom: 3.2rem
+
+- sub heading
+  - display: block
+  - font-size: 2rem
+  - font-weight: 500
+  - color:
+  - text-transform: uppercase
+  - margin-bottom: 1.6rem
+  - letter-spacing: 0.75px
+
+
+ 
+
+- description font 
+
+  - font size: 2rem
+  - line-height: 1.6rem
+  - margin-bottom: 4.8rem
+  
+  ** if there is a button coming... ideal margin bottom of the heading div is 4.8rem
+
+- unimportant small text 
+
+    - font size: 1.8rem
+    - font weight: 600
+
+- use maketintsandshades site to obtain tints of for font color and background color
+
+- button 
+
+  .btn, .btn:link, .btn:visited {
+    display: inline-block
+
+    background color: primary color
+
+    font size: 2rem 
+
+    padding: 1.6rem 3.2rem ** left and right padding of button should be double of top and bottom
+
+    border radius: 9px
+
+    transition: all 0.3s
+
+      ** add the transition of styles during hover over 1sec.... we can also specify it in ms 1sec = 1000ms..... instead of background-color....we can add "all"
+
+    border: none ** only necessary for .btn class 
+
+    cursor: pointer ** only necessary for .btn class
+
+    font-family: inherit
+
+
+  }
+
+  .btn:hover, .btn:active {
+    background-color: darker shade of primary color
+  }
+
+
+  **** don't add a border around a button instead use this (else contents become shaky)
+
+    .btn:hover, .btn:active {
+      box-shadow: inset 0 0 0 3px colorCode;
+    } 
+
+      ** inset keyword add the shadow to inside of the button
+
+  ***** for margin b/w two adjacent buttons.... don't add margin-right on the original button.... instead define a HELPER CLASS... with 
+    .margin-right-sm{
+      margin-right: 1.6 rem !important
+    }
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- in case of a group of img tags (small images)..... make it inside a single div with display flex... with image attributes
+
+  - height: 4.8rem
+  - width: 4.8rem  
+  - border-radius: 50%
+
+    ** flex container margin-top: 8rem
+                    - gap: 1.6rem
+                    - align-items: center
+
+
+- use website: coolors.co to check the contrast between the text color and background color
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- nav bar has 2 part
+    - a header semantic tag
+        -logo image inside header tag without wrapped inside a div
+
+        - nav semantic tag
+
+    - header tag css
+        - display: flex
+        - justify-content: space-between
+        - align-items: center
+        - background-color
+        - height: 9.6rem ** fixed height used because we make it sticky
+
+        - padding: 0 4.8rem
+
+    - nav tag should be unordered list with a tags.... the ul tag css
+        - list-style: none
+        - display: flex
+        - gap: 3.2rem 
+
+    - nav a tag css
+
+        .nav-link:link, nav-link:visited{
+
+          text-decoration: none
+          color:
+          font-weight: 500
+          font-size: 1.8 rem
+          transition: all 0.3s
+        }
+
+        .nav-link:hover, nav-link:visited {
+          color: 
+        } 
+
+    - call to action button ?? video 111 9 minute mark
+
+
+- every part between excluding header tag containing nav and footer should be enclosed inside main semantic tag 
+
+
+- logo image
+    - height:2.4rem
+
+- always give padding on left and right of hero element
+  - padding: 0 3.2rem
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- next section tag inside the main tag
+
+  - padding: 9.6rem 0
+
+
+- how to create a reusable grid... video 112 6 minute mark 
+
+- to center an image inside a div..... use flex on div
+
+  - justify-content: center
+  - align-items: center
+
+- to center a set of content inside a div which has grid...
+
+  .div{
+    display: grid
+    align-items: center
+  }
+  
+  ** or else we've to set align-self to each grid items.
+
+
+- use ::before or ::after pseudo element inside css to add some irrelevant design elements... for eg to make a circle background to an image box
+
+  .image-box::before {
+    content: ""
+    display: block
+    width: 60%
+    padding-bottom: 60% 
+      ** trick to make a square is to use padding-bottom instead of height
+
+    border-radius: 50% 
+      ** to make it a circle
+
+      position: absolute
+      top: 50%
+      bottom: 50%
+      transform: translate(-50%, -50%)
+
+      z-index: -1
+        ** to push the circle to back of the image
+  }
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+  >>> video 115
+
+  - to make a set of colorful logos into grayscale or saturated etc, use filter css propety.... to make images in equal tint of gray color
+
+    .logo img {
+      height: 3.2rem
+      filter: brigtness(0)
+        ** makes the image black
+
+      opacity: 50%
+        ** makes the black image grey
+    }
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>> video 116
+
+- to make a card
+
+  - make div with class container and grid and grid column classes
+
+  - add image in img tag with no div
+      - make img width = 100%
+
+  - rest text details should be an unordered list
+
+    - make unordered list a flex element
+
+  *** don't make card container flex... only make unordered list element flex
+
+
+- use website ionicons: to get icons
+
+    - for a single icons you can use website heroicons
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>> video 117
+
+- to give a color to icons from ion icons website use css color attribute
+
+- the image part of the card won't inherit the border radius given to the card container.... because the image overflows she container.... so to display border curve.... don
+
+  overflow: hidden
+
+  ** overflow hidden should be applied on the parent element
+
+- card shadow 
+
+  - box shadow: 0 2.4rem 4.8rem rgba(0, 0, 0.075)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>> video 118
+
+- to make a underline on the link attribute......... don't depend on the link decoration underline.... instead use border bottom
+
+  link:link,
+  link:visited {
+    display: inline block
+    color
+    text-decoration: none
+    border-bottom: 1px solid currentColor
+    padding-bottom: 2px
+    transition: all 0.3s
+  }
+
+- to make border the same color as the text color of the container
+
+  border: 1px solid currentColor;
+
+- to make border invisible... for eg for a link attribute.... the border should become invisible of active an hover.... if we add class to remove the border on active and hover... it'll shake the page.... so make border transparent instead
+
+  border: 1px solid transparent; 
+
+
+- if you want to align some text to center.... don't add text align to generic components..... instead create a helper class and use it 
+
+  .center-text {
+    text-align: center
+  }
+
+- you can use hover pseudo class on other containers.... eg on card
+
+  .card:: hover {
+    transform: translateY (-1.2rem)
+      
+      ** makes card to move up
+
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06) 
+
+      ** to make animation realistic, we should change shadow from original state
+
+  }
+
+  .card {
+    transition: all 0.4s 
+  }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 119 testimonial
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 120
+
+- to make an image gallery 
+
+  .gallery {
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1.6rem
+
+    align-items: center
+
+     ** else grid gap increases on screen size
+
+    transition: all 0.4s
+  }
+
+  .gallery-item img {
+    display: block
+      ** to remove white space around the image
+
+    width: 100%
+
+  }
+
+  .gallery-item img::hover {
+    transform: scale(1.1)
+
+  }
+
+  .gallery-item {
+    overflow: hidden
+
+      ** else on animation the image overflows the container
+
+  }
+
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  video 121 pricing section
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  video 122 pricing and ribbon design and feature
+
+  - always use % in top bottom while absolute positioning
+
+  - to apply a special grid property to all generic grid except one.... for eg we want margin on all grid except to grid which is a last child....
+
+    .grid:not(:last-child){
+      margin-bottom: 9.6rem
+    }
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video-123 features
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video- 124 call to action ( is a form component )
+
+- to add gradient we use
+
+    - background-image: linear-gradient(degree/direction(prefix to), color1, color2)
+
+        for eg background-image: linear-gradient(to right bottom, color1, color2)
+
+- use this css properties to place an image in a div
+
+  .image-box {
+    background-image: url("<image path>")
+
+    background-size: cover
+      ** image will fit the entire image box
+
+    background-position: center/left/right/bottom
+    }
+
+
+- to add gradient to image
+
+    image-box {
+      background-image: linear-gradient(
+        to right bottom,
+        color1 with opacity,
+        color2 with opacity
+
+      ),
+      url("<image-path>")
+    }
+
+    ***** when we add a gradient to an image... the screen readers would no longer read it as an image.... hence to solve that....do this
+
+      - on the image-box div html tag..... add attributes
+
+        <div role="img", aria-label="<woman enjoying food>">
+          
+          ** this will read it as an image and aria-label is a substitute for alt
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 125 - call to action form element
+
+- form 
+  <form class="" action="<url to backend>">
+    label with for attribute
+     
+    input with type text and with same name and id attributes 
+
+    label
+    input type email
+
+    select with id and name attribute
+      options with value
+
+    button
+  </form>
+
+- value the for attribute of a <label> element should be = to value of the id attribute of the input element you want to link
+
+- form grid style
+
+    cta-form {
+      display: grid
+      grid-template-columns: 1fr 1fr
+      column-gap: 3.2rem
+      row-gap: 2.4rem
+    }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 126 - form elements styling
+
+- form styling
+
+    .cta-form label {
+      display: block
+      font-size: 1.6rem
+      font-weight: 500
+      margin-bottom: 1.2fdm
+    }
+
+
+    .cta-form input, cta-form select {
+      width: 100%
+      padding: 1.2rem
+      font-size: 1.8rem
+      
+      font-family: inherit
+      color: inherit
+
+        ** because placeholder font and color of input text won't get inherited to our body font
+
+      border: none
+
+        ** to remove the default border
+
+      border-radius: 9px
+
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+
+    }
+
+    ***** to change the color of the placeholder....we use pseudo element ::placeholder 
+
+      .cta-form input::placeholder {
+        color: 
+      }
+
+    .btn--form {
+      background-color: black shade
+      color: white shade
+      align-self: end
+
+        ** only if form button is a grid item
+
+      padding: 1.2rem
+    } 
+
+    .btn--form:hover {
+      background-color: another shade of white
+      color: another shade of black
+    }
+
+    **** we've already defined a focus state outline style..... if you want to change outline color inside the form.... do
+
+      .cta *:focus {
+        outline: none
+        box-shadow: 0 0 0 0.8rem another color with opacity
+      }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 127 - footer
+
+- use anchor tags to give in phone number and email.... with phone number and email given inside the <a> tag href attribute
+
+  - <a href="tel:0484-233-333">0484-233-333</a> <br />
+  - <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+
+- for footer nav..... use anchor tags in unordered list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+video 128 - footer styling
+
+- footer styling
+
+  .footer {
+    padding: 12.8rem 0
+    border-top: 1px solid grey color 
+  }
+
+  .footer-heading {
+    font-size: 1.8rem
+    font-weight: 500
+    margin-bottom: 4rem
+  }
+
+  .footer-nav {
+    list-style: none
+    display: flex
+    flex-direction: column 
+    gap: 2.4rem
+  }
+
+
+  .footer-link:link, 
+  .footer-link:visited {
+    text-decoration: none
+
+    font-size: 1.6rem
+
+    color: some grey
+
+    transition: all 0.3s
+  }
+
+  .footer-link:hover,
+  .footer-link:active {
+    color: another grey 
+  }
+
+  .social-links-container {
+    list-style: none
+    display: flex
+    gap: 2.4rem 
+  }
+
+- to push anything to the bottom end of the container do
+
+  .container {
+    margin-top: auto
+  }
+
+
+
+
+
+
+
+      
+
+
+
+
+

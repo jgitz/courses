@@ -1,0 +1,24 @@
+... for easy styling with readymade style classe we can use css frameworks like
+
+  - bootstrap (popular)
+  - semantic ui
+  - foundation
+  - milligram (used in our course)
+
+** some common bootstrap classes 
+
+    - form-label: class applied to label tag 
+
+    - form-control: class applied to input tags 
+
+    - form-group: added to div wrapper that wraps a label-input tag pair 
+
+    - mb-3: margin bottom of 3 units
+
+    - btn: class applied to button tag 
+
+    - btn-success: add green color to buttons
+
+    - w-50: makes a container to occupy 50% of vw
+
+***** we use milligram framework on our course as it is lightweight

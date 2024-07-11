@@ -1,0 +1,24 @@
+** <img
+      src =
+      alt =
+      data-version-number = "3.0"
+   >
+
+      ** any attribute starting with keyword data and the rest separated by - is called data attribute 
+
+      ** this is used to STORE DATA inside the UI
+
+- to access a DATA ATTRIBUTE 
+
+    <query_select_variable>
+    .dataset.<versionNumber>
+
+      ** dataset is NOT camelcase 
+
+      ** data keyword is ommitted
+
+      ** the dashed words in html is CAMEL CASE in dom 
+
+          eg: in html : version-number 
+
+              in dom : versionNumber

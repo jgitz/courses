@@ -1,0 +1,25 @@
+.... in web designs buttons can be implemented in 2 ways 
+
+  1) using BUTTON TAG 
+
+
+  2) using ANCHOR TAG and using classes to make it look like a button 
+
+    ** ANCHOR TAG as button is USED WHEN we need to ROUTE to ANOTHER PAGE on button click
+
+
+*** css styles that you should take care when button is designed using ANCHOR TAG 
+
+  - display: inline-block: because anchor tag is INLINE BY DEFAULT.... inline elements DON'T allow setting of WIDTH.... but for button we need to set width property in many scenarios 
+
+  - *, *::before, *::after {
+    box-sizing:border-box;
+  } : this line is IMPORTANT FOR ANCHOR BUTTONS BECAUSE 
+
+    ** anchor tags use CONTENT-BOX box sizing by default.... and hence all the borders given to it is added on OUTSIDE the content
+
+    ** BUTTON ELEMENT tag has box sizing to BORDER-BOX by DEFAULT.... so there is no effect of this css style on button tags 
+
+  - text-align: center : because when anchor tag become button.... the text inside it is ALIGNED LEFT by default 
+
+    ** in BUTTON ELEMENT TAGS.... the alignment of text is CENTER BY DEFAULT 

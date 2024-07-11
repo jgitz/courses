@@ -1,0 +1,93 @@
+
+- what is js? 
+     
+    - js is a 
+
+        - single threaded 
+
+        - asynchronous 
+
+        - non blocking 
+
+        - concurrent 
+
+        programming language
+
+- synchronous language: programming language that executes lines in order/sequence 
+
+- asynchronous language: programming language that executes lines in a non sequential manner 
+
+** javascript is made asynchronous by making an architecture using 
+
+      - CALL STACK: takes in all the normal function and executes it 
+
+          ** its a stack.... so it executes function is LIFO 
+
+      - WEB API
+
+      - CALLBACK QUEUE: handles callback functions of web api higher order functions
+
+      - JOB/MICRO TASK QUEUE: handles promises
+
+      - EVENT LOOP 
+
+
+- SYNCHRONOUS FUNCTIONS in JS: are NORMAL FUNCTIONS wiritten inside a js file 
+
+- ASYNCHRONOUS FUNCTIONS in js: there are mainly THREE main triggers that calls for ASYNCHRONOUS functionality of js 
+
+        1) FETCHING call to BACKEND SERVER 
+
+        2) WEB API Methods with CALLBACKS: dom methods, timers, fetch api methods... like
+
+            - setTimeout() method 
+
+            - setIntervel() method
+
+            - <image_query>.src: asynchronously set the src attribute of an image in the background 
+
+            - EVENT LISTNERs: certain events like LOAD EVENT are asynchronous.... load event is triggered when the entire webpage with DATA is loaded...
+
+
+
+                ** NOT all event listeners are asynchronous.... click event is NOT ASYNCHRONOUS 
+
+                ** even if the events are NOT ASYNCHRONOUS LIKE CLICK EVENT.... it's callback is still handled by the WEB API and is PUSHED to CALLBACK QUEUE
+
+            ** <image_query>.src method is an asynchronous method.... here while the src of the image is set....the rest of the code is allowed to run 
+
+            
+
+
+        3) PROMISES: is a placeholder object which gets filled with a value which is the result of an asynchronous operation.
+
+
+- FUNCTIONING OF JS ARCHITECTURE:
+
+    ***** the JS ENGINE don't handle the asynchronous code... it's the RUNTIME ARCHITECTURE with web api, callback queue, JOB/MICRO TASK queue and event loop that handles asynchronous code
+
+        ** js engine is single threaded and has only ONE CALLSTACK to handle codes
+
+        ** the js RUNTIME ARCHITECTURE helps the JS ENGINE to handle the asynchronous code hence renders NON BLOCKIN feature to the js code
+
+    1) all the normal functions are executed inside the CALL STACK IN LIFO manner 
+
+    2) when a WEB API function is found..... it is send to web api block..... while normal execution of the other functions continue....
+
+        - the callback fucntion of the web api method is send into CALL BACK QUEUE 
+
+        - the event loop checks if there the call stack is empty.... if empty.... the callback function from the callback queue is pushed into the callstack and is executed 
+
+    3) when a PROMISE is found..... the PROMISE EXECUTOR function (function inside .then) is send to the JOB/MICRO TASK QUEUE..... 
+    
+
+        - - the event loop checks if there the call stack is empty.... if empty.... JOB/MICRO TASK queue function from the JOB/MICRO TASK queue is pushed into the callstack and is executed
+
+    4) if there are FUNCTIONS inside JOB/MICRO TASK QUEUE and CALL BACK QUEUE at the SAME TIME:
+
+      ** EVENT LOOP checks if CALL STACK is EMPTY..... and gives priority to JOB/MICRO TASK QUEUE function.... then when it is finished the CALL BACK QUEUE function is executed if the call stack is empty
+
+    **** the above process takes some time.... hence the setTimeout() function will take more time than its specified time argument if there are many callbacks inside the callback or microtask queue
+
+    **** STARVATION: if there are many FUNCTIONS in MICRO TASK QUEUE..... then FUNCTIONS inside CALLBACK QUEUE have to WAIT for its execution..... this process is known as STARVATION....
+       

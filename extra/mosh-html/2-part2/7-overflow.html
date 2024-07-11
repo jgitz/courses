@@ -1,0 +1,83 @@
+<!-- 
+  - OVERFLOW: if more content is added inside the content box such that it exceeds the dimensions of the content box hence the contents spill out of the content box 
+
+    ***** overflow happens only on elements with width and height properties.... else the element size will increase with the size of the content
+
+    
+    - overflow can happen in both x and y directions 
+
+    - to contros the overflow.... we use overflow css property
+
+      - values 
+
+          - hidden: hides the extra overflow 
+
+          - scroll: enables the box to contain the overflow of contents by providing HORIZONTAL and VERTICAL SCROLL BARS 
+
+          - auto: sets the scroll automatically
+
+      ** we can selectively control horizontal and vertical overflow using the properties 
+
+          - overflow-x:
+          
+          - overflow-y:
+          
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  div {
+    width:100px;
+    height:100px;
+    border: 2px solid red;
+    margin: 100px;
+  }
+
+  .second {
+    overflow: hidden;
+  }
+
+  .third {
+    overflow: scroll;
+  }
+
+  .fourth {
+    overflow: auto;
+  }
+
+
+
+  </style>
+ </head>
+ <body>
+
+  <div class="first">
+
+    <h2>overflowing div</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  </div>
+
+  <div class="second">
+    <h2>overflow: hidden</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, illum. Esse ad cumque reprehenderit illum consequatur eligendi in, et, blanditiis temporibus ullam exercitationem mollitia, facilis rem tempore voluptatibus debitis minima eius quasi dolorem repellendus quas quod officiis? Maxime dolores laudantium eos eaque, repellat nesciunt, accusamus obcaecati esse beatae necessitatibus sed fugiat exercitationem reprehenderit tempora alias optio veniam nemo illo cumque.</p>
+  </div>
+
+  <div class="third">
+    <h2>overflow:scroll</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat, explicabo nisi tempore architecto maxime tempora similique maiores culpa delectus velit eaque hic quibusdam blanditiis exercitationem adipisci tenetur consequatur quam. Dolor esse dicta labore explicabo quasi! Consequatur quos magni deleniti distinctio dicta. Facere amet eius sequi sit, qui, velit officia quo id minima omnis perspiciatis autem voluptas quod nobis pariatur?</p>
+  </div>
+
+  <div class="fourth">
+    <h2>overflow:auto</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat, explicabo nisi tempore architecto maxime tempora similique maiores culpa delectus velit eaque hic quibusdam blanditiis exercitationem adipisci tenetur consequatur quam. Dolor esse dicta labore explicabo quasi! Consequatur quos magni deleniti distinctio dicta. Facere amet eius sequi sit, qui, velit officia quo id minima omnis perspiciatis autem voluptas quod nobis pariatur?</p>
+  </div>
+  
+ </body>
+ </html>

@@ -1,0 +1,127 @@
+<!-- 
+
+- use of various css values
+
+    - line-height: 1.5; >> used on body tag.... to add readability
+
+    - display: block; >> used on all labels to make the input fields on adjacent lines..... else DIFFERENT input fields will look IRREGULAR vertially
+
+    - outline: 0; >> used on INPUT TAGS and BUTTONS on FOCUS state to HIDE DEFAULT BLUE OUTLINE given by browsers
+
+    - border: 0; >> used on BUTTONS to REMOVE DEFAULT border applied by the browser
+
+    - margin-bottom: 1rem; >> used on form-group class to comply LAW OF PROXIMITY.... i.e add space between 2 distinct input-label pairs
+
+    - transitions css are added to initial element.... 
+
+    - font-family is added to body tag
+
+    - border color of text field should be GREY like #ccc
+
+    - use button:active pseudo class and add background color to dark to see button clicking effect on clicking it
+
+    - add tags and its pseudo class ADJECENT to each other
+
+
+
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    form {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      
+    }
+
+    label {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 0.5rem 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: 0;
+      border-color: rgb(13, 110, 5);
+      box-shadow: 0 0 0px 4px rgba(30, 226, 12, 0.573);
+    }
+
+    button[type="submit"],
+    button[type="reset"] {
+      color: #fff;
+      background: rgb(24, 110, 239);
+      padding: 0.5rem 0.7rem;
+      border: 0;
+      border-radius: 5px;
+      transition: box-shadow 0.5s
+    }
+
+
+    button[type="submit"]:hover,
+    button[type="reset"]:hover {
+      box-shadow: 0 0 0 3px rgba(24, 110, 239, 0.466);
+    }
+
+    button[type="submit"]:active,
+    button[type="reset"]:active {
+      background: rgb(18, 82, 178);
+    } 
+
+    
+
+     
+
+    
+
+    
+
+  </style>
+ </head>
+ <body>
+  <form action="">
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" id="username">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="" id="password">
+    </div>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+ </body>
+ </html>

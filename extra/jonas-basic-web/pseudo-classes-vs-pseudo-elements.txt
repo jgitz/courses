@@ -1,0 +1,46 @@
+pseudo classes
+    :first-child
+
+    :last-child
+
+    :nth-child(<n>)
+        n can be : number, odd, even
+
+    a:link {} : target all a tag elements 
+
+    a:visited{}
+
+    a:hover 
+
+    a:active : link when it is clicked
+
+    :root {} - pseudo class is same as html {} but :root has higher spacificity.... usually css variables that are needed for the project is stored here 
+
+
+pseudo elements 
+
+    elements not present in the html but can be styled with css.
+
+        ::first-letter
+
+        ::first-line
+
+        ::after : creates an element with content after the selected element
+
+             syntax
+
+                <>::after{
+                    content: "<element text>";
+                    display: inline-block
+                    ...css styles
+                }
+        
+        ::before : create an element with content before the selected element....
+                
+            syntax: same as ::after
+
+                
+        
+
+
+

@@ -1,0 +1,3 @@
+- currying is a process in which we make a function with multiple arguments is made into a sequence of nested closure functions such that it takes arguments one at a time.
+
+  ** i.e function f(a,b,c) is transformed into f(a)(b)(c)

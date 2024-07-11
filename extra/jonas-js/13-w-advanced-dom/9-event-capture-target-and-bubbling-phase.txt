@@ -1,0 +1,16 @@
+- when an event occurs in an element (TARGET ELEMENT) it undergoes 3 phase 
+
+    1) CAPTURING PHASE: the event is created at DOCUMENT ELEMENT and then the event travels from document element through all the PARENT ELEMENTS of the target element.... and FINALLY to the TARGET ELEMENT 
+
+    2) TARGET PHASE: once the event reaches the TARGET ELEMENT.... the event can be HANDLED using EVENT LISTENER
+
+    3) BUBBLING PHASE: after reaching the target element.... the event then TRAVELS BACK to the DOCUMENT ELEMENT through ALL its PARENT ELEMENTS...
+
+        ** so the event can be handled on PARENT ELEMENTS as well using event listner.
+
+
+**** some events can be handled at parent elements at capturing phase also..
+
+**** but NOT ALL events can be handled on PARENT ELEMENTS during capturing and bubbling phase
+
+**** some events can ONLY BE handled at TARGET ELEMENT

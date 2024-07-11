@@ -1,0 +1,23 @@
+- nested function: means functions defined inside another function block.
+
+    - main function is called parent function
+
+    - inner function is called the child function
+
+
+- LEXICAL scope: scope inside a nested function
+
+    - when a nested function is invoked:
+
+        - first the inner function searches variables its own function scope.
+
+        - then the inner function searches variables inside the parent scope.
+
+        - then the inner function searches for variables inside the global scope.
+
+        ** child function can access the parent function variables.
+
+        ** parent function CANNOT access the child function variables.
+
+
+

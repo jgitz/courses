@@ -1,0 +1,11 @@
+- download and install nodejs from internet 
+
+- to install typescript globally.... inside the terminal type 
+
+    :: npm i -g typescript ::
+
+      ** to check if typescript is installed... inside the terminal type command..
+
+          :: tsc -v 
+
+              ** a version number should be shown if the installation is success 

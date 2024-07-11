@@ -1,0 +1,42 @@
+.... comparison operators are object properties that can be set INSIDE FIND method as argument to set CONDITIONS FOR QUERYING 
+
+- MONGOOSE COMPARISON OPERATORS and SYNTAX 
+
+      1) $eq : equal to 
+
+          ** SYNTAX 
+
+              .find({<field name>: {$eq: <value>}})
+
+      2) $ne : not equal 
+
+            ** syntax similar replace $eq with $ne
+
+      3) $gt : greater than 
+
+            ** syntax similar replace $eq with $gt 
+
+      4) $gte : greater than or equal 
+
+      5) $lt : less than 
+
+            ** syntax similar
+
+      6) $lte : less than or equal 
+
+            ** syntax similar 
+
+      7) $in : returns the ducoments that contains any of the given in values in the in array 
+
+            ** SYNTAX 
+
+                  .find({ <field>: {$in: [<value1>, <value2>, <value3>] } })
+
+      8) $nin : returns documents that don't contain the given in values in nin array 
+
+            ** syntax same as $in 
+
+**** we can also write more than one comparison operator..... for eg.... to find a documents between an upper limit and lower limit 
+
+    .find({ <field>: {$gt: <lower value>, $lt: upper value} })
+

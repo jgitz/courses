@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      .... in css SHADOWS are of 2 TYPES 
+
+        1) box-shadow: to give shadow to containers
+
+        2) text-shadow to give shadow to text
+
+        
+    
+    */
+    body {
+      background: gold;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      background: gold;
+      margin: 50px;
+    }
+
+    /* box shadow start */
+
+    .box1 {
+      box-shadow: -5px -10px purple; /* 
+
+        - first argument: shadow on X AXIS (horizontal shadow)
+
+            ** positive value means shadow MOVES RIGHT 
+
+            ** NEGATIVE VALUE means shadow MOVES LEFT
+
+        -second argument: shadow on Y AXIS (vertical shadow)
+
+            ** POSITIVE VALUE means shadow MOVES TO BOTTOM 
+
+            ** NEGATIVE VALUE means shadow MOVES TO TOP
+
+        - third argument: color of the shadow 
+
+            ** default is BLACK COLOR
+
+      */
+    }
+
+    .box2{
+      box-shadow: 10px 5px 30px purple ;
+    } /* 
+
+      ** here THIRD ARGUMENT gives SHADOW BLUR
+    
+    */
+
+    .box3{
+      box-shadow: 0 0 30px grey;/* 
+        to give a WELL CENTERED SHADOW with shadow on all sides
+
+          ** give vertical and horizontal shadows as ZERO
+
+          ** give GREY COLOR to the shadow
+      */
+      
+    }
+
+    /* box shadow end */
+
+    .text1{
+      text-shadow: 5px 5px greenyellow ;
+    }
+
+    .text2{
+      text-shadow:3px 3px 5px rgba(128, 128, 128, 0.653); /* 
+        BEST PRACTICE
+
+          ** give BLUR to TEXT SHADOW
+
+          ** give ALPHA RGB color to shadow WITH AN OPACITY VALUE
+      */
+    }
+
+/* 
+**** ANOTHER px value can be added AFTER BLUR to add SPREAD(WIDTH) to the shadow .... usually used in form input field shadow like this 
+
+    box-shadoe: 0 0 0 4px rgba()
+
+    ** the DIFFERENCE between BLUR (3rd value) and SPREAD (4th value) is that.... BLUR defines the SOFTNESS of the SHADOW.... and SPREAD defines the WIDTH of the shadow
+*/
+    
+  </style>
+</head>
+<body>
+
+  <div class="box1">simple box shadow</div>
+  <div class="box2">box shadow with blur</div>
+  <div class="box3">BEST PRACTICE: box shadow on all sides</div>
+  <h1 class="text1">simple text shadow</h1>
+
+  <h1 class="text2">BEST PRACTICE: blending text shadow with tranlucent shadow</h1>
+  
+</body>
+</html>

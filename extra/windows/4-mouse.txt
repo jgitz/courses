@@ -1,0 +1,3 @@
+msdt.exe -id DeviceDiagnostic
+
+c:\SWSetup\SP142381

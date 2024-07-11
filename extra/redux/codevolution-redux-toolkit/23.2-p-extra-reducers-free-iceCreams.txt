@@ -1,0 +1,24 @@
+... to practice extra reducer....let the shopkeeper give a free icecream with purchase of a cake..... implement a case in iceCream slice such that when one cake is purchased the icecream number reduce by 1
+
+- goto iceCreamSlice.js
+
+  - require cakeActions from cakeSlice.js
+
+  - inside iceCreamSlice createSlice({})
+
+    - make extraReducers object and implement logic with builder arrow function like this
+
+      extraReducers: (builder) => { /* 23.2 */
+        builder.addCase(cakeActions.ordered, (state) => {
+          state.noOfIceCreams--
+      })
+
+
+  - test it by running command
+
+    :: node index.js
+
+**** named import of cakeActions is like this
+
+        const cakeActions = require("../cake/cakeSlice.js").cakeActions    
+

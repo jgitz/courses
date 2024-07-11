@@ -1,0 +1,157 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> video 140
+
+conventions in js file
+
+- always use const to make a variable and store the element we want to use via using query selector.... for eg
+
+  const btnEl = document.querySelector(".btn-class")
+
+    - to track a click on the above button
+
+        btnEl.addEventListner("click", function() {
+          write what we want to do
+        })
+
+    - to add a class to an element.... use .ClassList property.. eg
+
+      - <headerEl>.classList.toggle("<new-class>")
+
+        ** new class name don't need dot .
+
+        ** toggle helps to add as well as remove a class (ie if there is presence of a class, it will remove.... it there is no class.... then toggle will add important)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 141 - implement scroll
+
+- to scroll to a section when clicked on a button
+
+  - make the button a link
+
+     - inside the link href put value as the id of the section we want to scroll on button click... for eg....
+
+      href = "#<id-here>"
+
+- to add animation to scroll in firefox and chrome.... use scroll-behavior property inside the html tag like this....
+
+    html {
+      scroll-behavior: smooth
+    }
+
+      ** don't work in safari and edge??.... so need to write 
+
+
+- using js forEach to html elements example
+
+    - we want to select all anchor elements with href
+
+        const allLinksEl = document.querySelectorAll("a:link")
+
+          ** now all the links with href are selected but they are not a single element.... but, a list of elements
+
+      - now to add a certain property to all links, we have to select each links... for that we use forEach
+
+          allLinksEl.forEach(function(<link>) {
+            properties here 
+          })
+
+- parameter given inside the function of addEventListner will have all the properties of that element.... for eg
+
+
+      <btnEl>.addEventListner("click", function(e) {
+
+        - console.log(e)
+
+          ** will list all properties of the button 
+          
+        - const href = btn.getAttribute("href")
+
+          console.log(href)
+
+            ** will show href value of the button
+
+
+      })
+
+- to scroll to top of the page.... implement the code....
+
+    window.scrollTo({
+      top: 0
+      behavior: smooth
+    })
+
+    ** don't work in safari
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 142 - sticky nav
+
+
+- to make navigation bar sticky.... use fixed position attribute....
+
+  .sticky {
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 100%
+    background-color:
+    z-index: 999
+
+    height: 8rem
+    padding-top: 0
+    padding-bottom: 0
+
+    box-shadow: 0 1.2rem 3.2rem color with opacity
+  }
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 144 - lighthouse testing
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 145 - favicon and meta description
+
+ - meta description is a short summary of your website that helps in google search
+
+    <meta name="description" content= "<a long description about your page... this description appears on google search>">
+
+- favicon is the icon you want to display on the tab along with the title in the tab bar of the browser .... default icon is a globe
+
+    <link rel="icon" href= "<path to the image>" >
+
+	**** when you replace an existing favicon with new one.... it won't load.... so do
+
+		- clear the browser cache
+		
+		- add a query selector ?v=2 at the end of fav icon link like this
+
+			<link rel="icon" href= "<path to the image?v=2>" >
+
+
+  - to add website to favorites in mobile
+
+    - for apple device... add this head
+
+       <link rel= "apple-touch-icon" href= "image path">
+
+    - for android devices
+
+        - inside the project folder.... make a new file named manifest.webmanifest
+
+        - open manifest.webmanifest file.... and paste the codes given in video
+
+        - add the link in head 
+
+          <link rel= "manifest" href = "manifest.webmanifest" />
+
+
+
+
+   
+
+
+

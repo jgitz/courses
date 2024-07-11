@@ -1,0 +1,35 @@
+..... now that we know js implement OOP using PROTOTYPAL INHERITANCE.... there is following questions 
+
+    1) how can we CREATE a PROTOTYPE CLASS with methods and properties?
+
+    2) how can we LINK OBJECTS/INSTANCES to PROTOTYPE CLASS?
+
+    3) how can we make new OBJECT/INSTANCE in js WITHOUT the CONCEPT OF CLASSES in js?
+
+    
+    **** the answer to all the above questions is implementation of OOP in js using any of FOLLOWING THREE techniques 
+
+        1) CONSTRUCTOR FUNCTIONS: 
+
+              ** technique to create OBJECTS from functions 
+
+              ** "new" keyword is used
+
+              ** js BUILT-IN OBJECTS like Arrays, Sets and Maps are made using CONSTRUCTOR functions
+
+        2) ES6 CLASSES
+
+              ** modern es6 ALTERNATIVE to CONSTRUCTOR functions 
+
+              ** abstracted syntax to replace constructor functions
+
+              ** it is a SYNTACTIC SUGAR that works like constructor functions in the background 
+
+              **** ES6 classes DON'T behave like classes of TRADITIONAL CLASSICAL OOP
+
+        3) Object.create() function:
+
+              ** DIRECT way to LINK an OBJECT/INSTANCE to a PROTOTYPE OBJECT 
+
+
+

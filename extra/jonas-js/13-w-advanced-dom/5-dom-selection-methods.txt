@@ -1,0 +1,33 @@
+-* document.documentElement: used to select whole html document to do activities like applying css to whole document 
+
+-* document.head: to select head tag 
+
+-* document.body : to select body tag 
+
+-* document.querySelector("#<id>"): to select an element with id
+
+-* document.querySelector(".<class>"): to select an element with class name (selects the first element with class name in the DOM tree)
+
+-* document.querySelectorAll(".<class>") : to select ALL elements with the class name 
+
+    ** all elements are stored in NODE LIST 
+
+    ** no array method chaining EXCEPT forEach works on a NODE LIST 
+
+    ** deletion of an element is DOES NOT change or get UPDATED in a previously created node list 
+
+-* document.getElementById("<id>"): selects the element with id 
+
+    **no use of #prefix
+
+-* document.getElementsBytagName("<element name eg: button>) : selects all elements with the ELEMENT name
+
+    ** all elements are stored inside a HTML COLLECTION
+
+    ** HTML COLLECTION UPDATES the elements stored inside its variable if an ELEMENT is DELETED 
+
+-* document.getElementsByClassName("<class>"): selects all element with the class name 
+
+    ** all elements are stored inside an HTML COLLECTION
+
+    ** HTML COLLECTION UPDATES the elements stored inside its variable if an ELEMENT is DELETED 

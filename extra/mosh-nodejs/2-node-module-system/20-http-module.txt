@@ -1,0 +1,17 @@
+- HTTP module:
+
+    - http module in node helps to
+    
+      - setup a web server using .createServer() method
+      - assign a port to web server using .listen(<port number>)
+
+      - to notify termial that an even has happened.... and to signal that connection is running on browser...
+         .on("connection", (socket) => {
+          message
+         })
+
+         **** but the above is obsolete syntax and dont display anything inside browser.... instead avoid the above line and 
+
+          - use req, res arrow function inside .createServer() like this
+
+    - http module uses all methods of class EventEmitter.... so .on and .emit methods works

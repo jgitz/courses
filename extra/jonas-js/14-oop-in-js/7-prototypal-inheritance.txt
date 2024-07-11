@@ -1,0 +1,5 @@
+- PROTOTYPAL INHERITANCE/DELEGATION: is a process in which an OBJECT looks for a METHOD called on it INSIDE its PROTOTYPE if it's not find inside the object
+
+- ADVANTAGE OF PROTOTYPE FUNCTION
+
+    ** memory efficient: i.e a commonly used method is not needed to be copied into all the objects/instances created from a constructor function.... instead you only need to store it inside the prototype property object of the constructor function.... and the instances/objects can directly access and use it.

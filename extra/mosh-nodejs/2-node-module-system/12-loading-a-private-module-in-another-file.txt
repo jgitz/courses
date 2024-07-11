@@ -1,0 +1,9 @@
+- if we have an exported private variables/functions in a file and we need to load it inside another file.... do
+
+  - goto another file
+
+    - use require keyword
+
+        const <any name> = require(<path of exported file>)
+
+        ** now we can access variables and functions using dot . 

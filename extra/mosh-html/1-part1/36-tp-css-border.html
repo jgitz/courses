@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    
+    - there are many properties to set the boders.... see the further written css
+    
+    */
+
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1 {
+      border: 5px solid red;
+    } /* shorthand to specify width.... border type and border color */ 
+    /* border STYLE values can be solid, dashed, dotted */
+
+    .box2 {
+      border-style: dashed;
+      border-color: green;
+      border-width: 5px 10px 15px 20px; /* 
+       gives individual border width to TOP, RIGHT, BOTTOM and LEFT RESPECTIVELY
+      */
+    }
+
+    .box3 {
+      border: 5px dotted blue;
+      border-radius: 100%; /* give radius of 100% or 50% to turn a SQUARE BORDER into a CIRCLE
+      
+      **** CHECK INTERNET for more BORDER SHAPES
+
+      */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">border shorthand </div>
+  <div class="box2">border width shorthand</div>
+  <div class="box3">circle with border radius</div>
+  
+</body>
+</html>

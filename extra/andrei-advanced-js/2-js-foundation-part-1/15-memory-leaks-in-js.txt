@@ -1,0 +1,9 @@
+- MEMORY LEAK : happens when the memory HEAP gets filled up due to bad implementation of code
+
+- 3 COMMON REASONS FOR MEMORY LEAK 
+
+    1) use of GLOBAL VARIABLES : fills up the memory heap and won't get removed 
+
+    2) NOT removing EVENT LISTNERS 
+
+    3) NOT removing SET INTERVAL function 

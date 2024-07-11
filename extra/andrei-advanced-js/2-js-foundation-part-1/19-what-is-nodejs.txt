@@ -1,0 +1,14 @@
+- nodejs is a JS RUNTIME ENVIRONMENT for servers 
+
+- nodejs is a .exe program created using c++
+
+- COMPONENTS OF NODEJS RUNTIME 
+
+    - V8 JS ENGINE
+
+    - LIB UV C++ library which handles asynchronous code
+
+- GLOBAL OBJECT is the entry point for js language to access methods to manipulate your operating system
+
+
+

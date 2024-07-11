@@ -1,0 +1,12 @@
+.... when your browser downloads your installed fonts..... the fonts will flash from default font to your installed font.... this is not undesirable.... to prevent this 
+
+- got your main css file 
+
+- under the font css codes for your installed  fonts.... add the following css property 
+
+      font-display: fallback;
+
+          - other values 
+
+              - swap
+              - optional

@@ -1,0 +1,43 @@
+<!-- 
+
+- suggestion list: is an input where when we type in the input field.... a list of suggestion appears
+
+    ** difference between suggestion list and dropdown is that.... you can only select the options only available in dropdown list... while we can type any option of our choice outside of the option available in the suggestion list
+
+- implementation (look the html code)
+
+    ** INPUT TAG ATTRIBUTE LIST value and the DATALIST TAG ID VALUE should be the SAME
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="">
+
+    <input type="text" list="bricks" autocomplete="off">
+    
+    <datalist id="bricks" placeholder="Enter a bricks country or any other country ">
+      <option data-value="0">Brazil</option>
+      <option data-value="1">Russia</option>
+      <option data-value="2">India</option>
+      <option data-value="3">China</option>
+      <option data-value="4">South Africa</option>
+    </datalist>
+
+    <!-- 
+      - data-<value> attribute: is used to attach a value to the options so it can be used in database for some computations/manipulations
+
+      **** css styling of datalist and option tags WON'T work as the browser applies default styles.... to add style to suggestion list involves some procedures
+     -->
+
+  </form>
+  
+</body>
+</html>

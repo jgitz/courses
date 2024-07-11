@@ -1,0 +1,17 @@
+redux toolkit follows another folder structure
+
+- goto project folder
+
+  - create a new folder named app
+
+  - goto projectFolder/app folder
+
+    - create file named store.js.... to hold store codes
+
+  - create a folder namde features.... this folder will hold each feature inside sub folders.. and these subfolders hold actions and reducers of the corresponding features in a single js file
+
+  - goto projectFolder/features
+
+    - make folder named cake
+
+    - make folder named iceCream

@@ -1,0 +1,5 @@
+- DOM allows JS to interact with HTML ELEMENTS inside a browser
+
+- DOM makes a DOM tree from an HTML DOCUMENTS 
+
+- DOM is an API which has METHODS and PROPERTIES to interact with DOM TREE

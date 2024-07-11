@@ -1,0 +1,9 @@
+..... in the design.... we have NO STANDALONE INPUT COMPONENT.... instead we have a MIX OF INPUT BUTTON AND SEARCH BUTTON....
+
+** when combining TWO COMPONENTS.... WRAP THE COMPONENTS inside a DIV with a CLASS NAME "GROUP"..... here we use the WRAPPER CLASS NAME as "INPUT GROUP"
+
+** now to STYLE the components of a GROUP WRAPPER.... DON'T CHANGE THE style of STAND ALONE COMPONENT.... INSTEAD use NESTED CLASS SELECTORS to target and style the components inside the group
+
+** flex-grow: is used on a FLEX ITEM to TAKE UP MAXIMUM AVAILABLE SPACE in the flex container
+
+** always measure the shadow from photoshop.... SPREAD = shadow SPREAD..... SIZE shadow BLUR .... HORIZONTAL OFFSET is calculated according to FORMULA using photoshop angle AND is set in DEG unit   (DIDN'T WORK)..... and VERTICAL OFFSET = DISTANCE given in photoshop drop shadow

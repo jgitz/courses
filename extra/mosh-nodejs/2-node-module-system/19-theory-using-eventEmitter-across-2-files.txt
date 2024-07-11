@@ -1,0 +1,31 @@
+- in practice, the event emitting and listning don't happen inside same file.... it happens across different files.... so for an event listner to act on an event emit signal from another file, we need to follow these steps
+
+
+steps
+
+- in side the emitting file
+
+  - load EventEmmitter module
+
+  - create a new class with extends EventEmmitter
+
+  - create a function in which the emmitter should be set
+
+  - set the emmitter INSIDE the function with this.emit()
+
+  - export the entire class using exports.module =
+
+
+- in the listening file
+
+  - load the emmitting file as class
+
+  - create a new instance of  the class
+
+  - using the new instance... write the listner with .on methods
+
+  - **** always call the function defined in class of the other file to make this work
+
+  - import
+
+

@@ -1,0 +1,178 @@
+- check for presence head meta tag
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+- make separate css file for media queries
+
+
+
+- set console to 1500px with scale 50%
+
+    - first set scale to 50%.... start decereasing screen size from 1500px.... if there is a design break, fix it
+
+    - then set scale to 100%.... check if the page contents are too big.... if too big..... reduce the size of the whole content by using (screen size around 1200px for tablets)
+
+        @media (max-width: 75em) {
+            html {
+                font-size: 56.25% 
+            }
+        }
+
+    - now set to ipad tablet with scale 75%...... check if it is ok
+
+        - mostly check for large paddings and decrease it
+
+        - change grid columns with 3 columns to 2 columns if necessary
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- now to jump to mobile screens.... set console width 900px and scale 50%
+
+    @media (max-width: 59em (59 * 16px = 944 px) ) {
+
+        html {
+            font-size: 50px
+        }
+
+        ** changes
+
+            -  change grids to one column 
+
+                ** or you can do trial and error on column fractions
+            
+            - reduce image widths
+
+            - center the images and other elements with
+
+                - text-align: center or if flex box justify-content: center
+
+            - increase the left and right paddings of the text contents 
+
+            - decrease the vertical spaces using 
+
+                - margin-top decrease
+
+                - gap decrease in flex box
+
+            - decrease the image sizes by decreasing 
+
+                - height
+
+            - decrease font-size
+
+            - decrease all paddings in cards if necessary
+
+            - in gallery, increase number of columns... and decrease number of columns of grid
+
+            - if you want to increase size of certain elements.... don't change width or height.... instead
+
+                - add line-height.... to the element contents
+
+            - make form grid into one column
+
+            - add margin-top to button to increase space if necessary
+
+            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+            video 135 - mobile navigation buttons for menu
+
+            - styling css using html name attribute value....
+
+                .class_name[name = "name attribute value of the element in html"] {
+
+                }
+
+            - steps to make a mobile navigation and shift the navbar items into it
+
+                - create two icons as buttons one to open mobile navigation.... other to close
+
+                - at the vp width greater than mobile navigation.... hide these buttons using
+                    display: none
+
+                - at the vp width where the mobile screen dimension starts....make the open nav button display as...
+
+                    display: block
+
+                - make the position of nav bar absolute and it's parent relative..... give a background colour to see what we are doing
+
+                - rest watch the video
+
+                    - ** we don't always use display:none..... as it prevents animation in the element... instead we can use
+                        - opacity: 0
+
+                            ** to do the inverse 
+                                - opacity: 1
+
+                    - on elements which is set opacity: 0 ..... the elements are still accessible to key presses and clicks as well as hide it from screen reader.... to prevent that... do
+
+                       - pointer-events: none
+                       - visibility: hidden
+
+                            ** to do the inverse
+
+                                -pointer-events: auto
+
+                                - visbility: visible
+
+
+
+
+            
+    }
+
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    video 136 - small tablets (700px)
+
+    @media (max-width: 44em (704px)) {
+
+        - reduce grid columns
+
+        - reduce vertical spaces
+
+            - margin-bottom reduce 
+
+        
+    }
+
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    video 137 - small phones (550px)
+
+    @media (max-width: 34em (544px) ) {
+
+        - make all grid columns one column
+
+        - decrease vertical gaps
+
+            - row-gap decrease
+
+            - reduce top and bottom paddings
+
+        - reduce left and right paddings
+
+        - make buttons big by
+
+            - increasing button top and bottom padding
+
+            - halving the buttom left and right padding
+
+            - if both above affects the nearby element.... then use
+
+                transform: translateY(2.4px)
+                    
+                    ** translate won't affect other elements
+
+        - increase width of images
+
+        - if needed decrease size of images by decreasing its height
+
+            - height decrease of images
+
+        - for gallery of images.... if needed increase columns and reduce gap
+    }
+
+
+
+

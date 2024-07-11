@@ -1,0 +1,26 @@
+..... some times a event handler function written outside the event listner as a function would have arguments to be put in.....
+
+.... but the putting the argument inside the by specifying the arguments inside the handler of event listner method like BELOW WON'T WORK 
+
+    <query_selector_variable>
+    .addEventListner("<event>", event_handler(argument1, argument2))
+
+
+    **** this WON'T WORK
+
+            ** solution is to PUT the arguments INSIDE BIND METHOD like this
+            
+                <query_selector_variable>
+                .addEventListner("<event>", event_handler.bind(argument1, argument2))
+
+                     **** the original handler functio should have only ONE ARGUMENT and that is e (event)....
+
+                     **** any other argument passed through bind is accessed via THIS keyword 
+
+                     ***** if multiple have to be passed.... pass it as an array in the bind () 
+
+
+**** this is because the add event listner by its syntax ONLY ALLOWS handler function and NOT a function call 
+
+**** bind method creates a copy of the function and enables to do actions on it 
+

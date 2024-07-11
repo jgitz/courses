@@ -1,0 +1,9 @@
+** js DON'T have concept of CLASS 
+
+- CLASS: in traditional oop CLASS is a BLUEPRINT from which OBJECTS can be gererated based on the RULES specified inside the class 
+
+    ** class is NOT an OBJECT 
+
+- INSTANCES : many variants of OBJECT with data and methods CREATED FROM the CLASS is known as INSTANCES
+
+**** ANALOGY: class is BLUEPRINT....and instances are many HOUSES built with SAME BLUEPRINT 

@@ -1,0 +1,42 @@
+... images are of 2 types 
+
+    1) RASTER IMAGES: defined by pixels.... formats are 
+        - jpg: mostly used...
+
+            - supports 16 million colors 
+        
+            - but not used when cases need transparency and animation 
+
+            
+
+        - gif:
+
+            - only supports 256 colors 
+
+            - can be used for transparency and animation 
+
+        - png: 
+
+            - supports 16 million colors 
+
+            - can be used for transparency and animation 
+
+        - webp: 
+
+            - newer low size format 
+
+            - always check browser support using caniuse.com 
+
+        ** most commonly used is .jpg 
+
+        ** when animation and transparancy case comes.... png or webp is used 
+
+        ** images for animation is used only if the animation is few seconds long.... else videos are used
+
+    2) VECTOR images: these are images created using graphics using lines and shapes 
+
+        ** sharper than raster images 
+
+        ** scalable than raster images 
+
+        ** format used is SVG (Scalable Vector Graphics) 

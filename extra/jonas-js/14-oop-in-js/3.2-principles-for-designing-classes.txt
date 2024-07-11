@@ -1,0 +1,23 @@
+- there are 4 PRINCIPLES to be followed to design a GOOD CLASS 
+
+    1) ABSTRACTION : hiding and ignoring irrelevant details and only expose an overview.
+
+        ** most low level working of methods and functions in js is hidden
+
+    2) ENCAPSULATION: method of keeping methods and properties of class PRIVATE, PREVENTING access/manipulation of it from OUTSIDE the class
+
+        ** methods of a class can be exposed to outside elements of class using PUBLIC API's
+
+        ** private keyword DON'T EXIST is js
+
+    3) INHERITANCE: two similar functioning classes can be designed just by INHERITING properties from one class inside the other INSTEAD of COPYING the entire common properties....
+
+        ** the class where PROPERTIES are SPECIFIED is known as PARENT CLASS 
+
+        ** class which inherit properties from parent class is known as CHILD CLASS
+
+        ** CHILD class can have ITS OWN unique properties too apart from inherited properties
+
+        ** INHERITANCE helps in creating REUSABLE LOGICS
+
+    4) POLYMORPHISM: concept where a CHILD class can OVERWRITE a METHOD it INHERITED from the PARENT class

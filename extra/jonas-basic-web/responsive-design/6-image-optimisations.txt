@@ -1,0 +1,38 @@
+- actual image size of the image file should be double of the size displayed on screen.
+
+  - because high def screens require 2px of image to display 1px design
+
+  - in console hover over the image tag to see its size details
+
+    - intrinsic size = actual size
+
+    - rendered size = size displayed on screen
+
+    - rule is select image dimensions such that
+
+        intrinsic size width = 2 * rendered size width
+
+    - steps:
+
+        - use large pixel raw image in your html... say it has actual width of 1000px
+
+        - goto console and check its rendered width.... say 188 px.... round it to 200px
+
+        - now double 200px... so 400px...
+
+        - take the original raw image which has width of 1000px and resize it to width of 400px...
+
+- we need to compress images to reduce its size.... so we use the website.... sqoosh
+
+    - don't compress and save it to jpeg.... because... jpeg cannot display transparency.... use webp..... play around.... with all the options
+        - toggle off reduce palette
+
+        - effort - max
+
+        - quality - 91
+
+    - ideal size is 200kB
+
+    ***** but webp won't be displayed on all browsers
+
+        - solution is in video 146 around 14 minutes.... by using picture and source html tags

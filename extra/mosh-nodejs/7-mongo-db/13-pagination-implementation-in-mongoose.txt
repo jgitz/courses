@@ -1,0 +1,19 @@
+- PAGINATION: is a sequence of connected pages with similar content in a website
+
+.... in real world application.... the page operation in backend is achieved by recieving 2 VALUES from the QUERY END POINT 
+
+      1) page number : number of the page 
+      2) page size : number of documents you want to display per page
+
+
+        ** the endpoint query will be of the format 
+
+          /api/<students>?pageNumber=2&pageSize=10
+
+
+- implementation SYNTAX of PAGINATION in mongoose.... for an endpoint syntax of the form /api/<students>?pageNumber=2&pageSize=10
+
+      .find()
+      .skip((pageNumber - 1) * pageSize)
+      .limit(pageSize)
+

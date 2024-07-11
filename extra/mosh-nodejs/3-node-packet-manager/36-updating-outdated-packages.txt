@@ -1,0 +1,48 @@
+- command to list outdated packages
+
+  :: npm outdated
+
+- command to list outdated global packages
+
+  :: npm outdated -g
+
+- command to update to latest minor and patch releases
+
+  :: npm update
+
+  ** only update to latest minor and patch version under same major version.. to update to another latest major version
+
+    - install npm-check-updates package globally
+
+        :: npm i -g npm-check-updates
+
+          ** npm-check-updates is a separate cli tool
+
+    -  now use npm-check-updates to see outdated local and global packages and get the npm install codes
+
+        - command to see outdated local packages
+
+          :: ncu
+
+            ** you'll get install npm code for latest major version
+
+                - to update package.json file of all outdated local packages to the next major version
+
+                  :: ncu -u
+
+                    ** this only updates the package.json details... to install the package.... type
+
+                      :: npm i
+
+            
+
+        - command to see outdated global packages
+
+          :: ncu -g
+
+            ** you'll get install npm code for latest major version.... use this to install the latest major version globally
+
+        
+          
+        
+

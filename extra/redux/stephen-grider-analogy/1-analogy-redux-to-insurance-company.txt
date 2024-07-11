@@ -1,0 +1,101 @@
+REDUX CYCLE:
+
+  ACTION CREATOR ==> ACTION ==> DISPATCH ==> REDUCERS ==> STATE
+
+analogy:
+
+ insurancy company
+  
+  - client comes to insurance company with either of 3 types of forms
+    1) policy - form to subscribe to insurance.... it hold details..
+ 
+      - name 
+      - policy amount
+
+    2) claim - form to claim money from insurance company in case of accident...it holds details..
+
+      - name
+      - claim amount
+
+    3) delete policy - to unsubscribe the policy.... it holds details..
+
+      - name
+
+  - form structure: form has 2 parts 
+
+      1) type : whether claim / policy
+      2) payload: details such as name and amount
+
+    
+
+  - departments of insurance company: insurance company has 3 departments
+
+    1) CLAIMS HISTORY DEPARTMENT: stores list of all claims made
+
+    2) POLICIES DEPARTMENT: stores list of all policy subscribers of the insurance company
+
+    3) ACCOUNTING DEPARTMENT: collect money from policy subscribers and give money to claimers 
+
+    4) All DEPARTMENT DATA STORE : here all databases of the claims, policies and accounting departments gets stored
+
+    5) FORM RECIEVER: man at the counter who recieves policy/claim forms and forwards it to ALL departments
+
+
+  - WORKING
+
+    - Client comes to form receiver counter and submits policy/claim form
+
+    - form receiver recieves and forwards the forms to EVERY department irrespective of the form type.... 
+
+    - when claims/policy/accounting department recieves a form.... it obtains a copy of all database from all department data store.... and compares the form with the existing database 
+
+      - claim department working: when a form comes to claims department.... it pulls whole database of claims from store..... checks if the form type is for claim.... if no.... the whole database is forwarded to the all data store........ if the form is of claim, it checks the payload for name..... adds it to db and update db and forwards new db to all data store
+
+
+      - policy department working: when a form comes to policy department....it pulls policy db from all db store..... it check the form type is of policy.... if the type is create policy...... pulls the name from payload.... updates the db with new name..... forwards the updated db to all data store.... if the form type is not policy..... it forwards the unchanged db into the all data store
+
+
+      - accounting department: the all data store of accounting department has amount of money the insurance company has.... when a form comes to accounting department....
+
+        - it pulls account money db from all db store
+
+        - checks if form type is claim/policy.... if claim.... deduce the amount from form payload from the all db store amount.... forward the updated db to all data store..
+
+        - if the form is not claim
+
+            - it checks if the form type is policy..
+
+              - if yes... it checks payload amount.... add the amount to all db store money..... update the db.... sends to all data store
+
+              - if no.... the unchanged all db store amount db is sent to the all data store 
+
+  
+- INSURANCE COMPANY FORM CYCLE:
+
+  CLIENT ==> FORM ==> FORM RECEIVER ==> DEPARTMENT ==> COMPILED DEPARTMENT DATA
+
+
+- REDUX CYCYLE
+
+  ACTION CREATOR ==> ACTION ==> DISPATCH ==> REDUCER ==> STATE
+
+  1) ACTION CREATOR (client) : an action creator (client) is a function that try to initiate a change of data which is inside REDUX state (all data store)
+
+  2) ACTION (form) : action (form) has a type and payload... and it is used to decide how to change the data in REDUX state (all data store)..
+
+  3) DISPATCH (form receiver) : is a function that delivers the action copies to every reducers (departments)..
+
+  4) REDUCERS (departments): the different reducers (departments) take in most recent data from store (all data store).... also take in actions (forms) from action creator (form receiver).... makes change to state (db) from state (all data store)....
+
+  5) STATE (all data store) : combined data of reducers inside the state (all data store)
+
+
+  6) OTHER REDUX TOOLS 
+
+      1) combineReducers: is a redux method to combine all the reducers (departments)
+
+      2) createStore : is a redux method to combine all actions (forms), dispatch(form receiver) and combinedReducers(combined departments) and state (all data store) to create the insurance company
+
+
+
+- now we are going to create an insurance company using redux in the next notes

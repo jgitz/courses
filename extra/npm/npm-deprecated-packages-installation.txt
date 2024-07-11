@@ -1,0 +1,9 @@
+if you want to reuse a project with outdated package.... you need to update the packages to latest version an then install them..... follow the following steps
+
+- open the project folder that has package.json file
+
+  - :: npm install -g npm-check-updates
+
+  - :: ncu -u --packageFile package.json
+
+  - :: npm install

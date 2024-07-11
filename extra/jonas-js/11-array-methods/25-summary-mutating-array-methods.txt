@@ -1,0 +1,19 @@
+- METHODS MUTATING ORIGINAL ARRAY
+
+    ** ADD TO ORIGINAL ARRAY  
+
+        1) push (to end)
+        2) unshift (to start)
+
+    ** REMOVE FROM ORIGINAL ARRAY
+
+        1) pop (from end)
+        2) shift (from start)
+        3) splice (remove from any position)
+
+    ** OTHER MUTATING ARRAY METHODS 
+
+        1) FILL 
+        2) SORT 
+        3) REVERSE 
+

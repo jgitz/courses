@@ -1,0 +1,21 @@
+- to set store using tool kit
+
+  - we use configureStore method from toolkit
+
+  - import configureStore
+
+  - import reducers from slice file
+
+  - to create store
+
+    - make store variable and assign configureStore() method to it 
+
+    - configureStore({}) method take in an object in which reducers are specified inside an object like this
+
+            const store = configureStore({ 
+        reducer: { 
+          cake: cakeReducer 
+        }
+        })
+
+    - use node default export to export the store

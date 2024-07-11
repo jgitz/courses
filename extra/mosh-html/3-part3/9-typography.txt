@@ -1,0 +1,71 @@
+- from the project MOBILE DEVICE design find 
+
+    - the fonts used in headings, body and other elements
+
+    - find the font weights of each font 
+
+- set the fonts in the project 
+
+    - use google font service to select the required font with their font weights 
+
+    - inside the index.html 
+
+        - inside the head tag
+
+            - BEFORE NORMALIZE.CSS link.... paste the google font link
+
+    ** start taking fonts from mobile device design.... and later define DESKTOP design typography properties in MEDIA QUERIES
+
+    ** the more the font.... the less the performance
+
+    ** fonts used in the project are Inter(regular, medium, semibold, bold) and Montserrate (semibold.... for testimonial component)
+
+- font css 
+
+    - inside the html selector.... set font-size to 62.5%
+
+    - inside body selector... define font family with the 
+
+      - PROJECT DESIGN FONTS 
+
+      - fallback font
+
+      ** use 2 font-familys to desfine inter and montserrate fonts 
+
+    - inside body selector.... define line-height to 1.5 times the font size
+
+    - inside body selector.... set the font color to the COLOR BODY VARIABLE 
+
+    - inside body selector.... set the font-size of body from the design 
+
+    - inside h1, h2, h3 selector 
+
+        - set the font color to COLOR HEADINGS VARIABLE 
+
+        - set the MARGIN-BOTTOM according to the design
+
+        ** sometimes the css font we use will have a default PADDING.... so DECREASE THE MARGIN BOTTOM accordingly.... so it is near the measurement of the design margin
+
+    - inside p selector 
+
+        - set the MARGIN-TOP to zero to PREVENT MARGIN COLLAPSE ISSUE and to obey law of proximity on MARGIN between HEADINGS and PARAGRAPHS 
+
+    - inside h1 selector:
+
+        - set the font-size from the design 
+
+    - inside h2 selector: 
+
+        - set font-size from the design 
+
+    - inside h3 selector: 
+
+        - set the font-size from the design
+
+    - media queries for FONT SIZE for desktop for body, h1, and h2 is measured from desigh and implemented 
+
+      - desktop min-width is taken as 1024px
+
+      
+
+    

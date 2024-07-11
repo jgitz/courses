@@ -1,0 +1,50 @@
+.... there are many mouse events....
+
+** link: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_mouseenter_mouseover
+
+** link: ht=tps://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_mouseleave_mouseout
+
+
+- mouseeover event: is an event that triggers every time when 
+
+    ** mouse pointer enters the element
+
+    ** mouse pointer enters the child elemtnes
+
+    **** this event bubbles the event 
+
+- mouseenter event: is an event that triggers everytime
+
+    ** mouse pointer enters the element
+
+    ** NO EVENT TRIGGERED if mouse enters CHILD elements
+
+    **** this event DON'T bubble 
+
+- mouseout event : is an event that triggers every time when 
+
+      ** mouse pointer leaves the element 
+
+      ** mouse pointer leaves the child elements 
+
+      **** this event bubbles 
+
+- mouseleave event: is an event that triggers every time when
+
+      ** mouse pointer leaves the element
+
+      ** NO EVENT TRIGGERED if mouse leaves the CHILD ELEMENT 
+
+      **** this event DON'T bubbles 
+
+
+- mousemove event: is an event that triggers every time when
+
+      ** mouse pointer is continously moved over the element
+
+      **** this event DON'T BUBBLE 
+
+
+**** if mouseover event is used.... then mouseout event should be used to neutralize 
+
+**** if mouseenter event is used.... then mouseleave event should be used to neutralize 

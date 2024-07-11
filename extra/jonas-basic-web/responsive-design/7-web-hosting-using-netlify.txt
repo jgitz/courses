@@ -1,0 +1,20 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 147 - netlify hosting
+
+- sign up
+
+- drag and drop whole project folder to the netlify
+
+- on site settings.... you can change the site name
+
+- if you want .com domain.... you can purchase it and point it to your netlify hosting
+
+- again run lighthouse test
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+video 148 - netlify forms to aid form submissions in your website
+
+- for authentication....netlify has a separate paid feature

@@ -1,0 +1,6 @@
+** by default event handling at CAPTURING PHASE is disabled as it of no much use 
+
+** to use EVENT HANDLING of TARGET ELEMENT at capturing phase add TRUE ARGUMENT as 3rd ARGUMENT inside the ADD EVENT LISTNER METHOD like this
+
+    <query_select_variable>
+    .addEventListner("<event>", function_variable, true)

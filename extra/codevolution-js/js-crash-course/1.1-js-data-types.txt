@@ -1,0 +1,33 @@
+- js datatypes are classified into two
+
+	1) primitive 
+	2) non primitive
+
+
+		- 1) PRIMITIVE DATATYPES 
+
+			- trick: SNUB-SNB
+
+				- String, Number, Undefined, Boolean, Symbol, Null, Bigint
+
+					** big int can hold greater integer values that number datatype can't hold
+
+					** symbol datatype can store value that is unique and unchangable
+
+					
+		- 2) NON-PRIMITIVE DATATYPES: enables to store a collection of datatypes 
+			1) Object
+			2) Array
+
+				1) Object
+
+					- holds data as key value pairs
+
+							** key = property
+
+							** datatype of key is SYMBOL or STRING datatype
+
+							** value can be any datatype
+
+				2) Array : collection of datatypes stored inside [] with index values starting from 0
+

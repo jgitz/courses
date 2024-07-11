@@ -1,0 +1,6 @@
+to wrap some content inside a tag
+
+
+- select the content
+
+- press alt + w

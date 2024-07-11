@@ -1,0 +1,40 @@
+- FIND METHOD: is a method that can be chained to MODEL CLASS to retrieve all documents from the collection 
+
+    ** SYNTAX:
+
+        const <data> = await <Model_variable>.find()
+
+
+            ** find method returns a promise... hence AWAIT is used.... so this line should be WRAPPED inside an ASYNC FUNCTION 
+
+            ** more methods can be chained to the result such as 
+
+                - limit method: to set maximum number of documents to display 
+
+                    limit(<number of documents>)
+
+                - skip method: to skip n number of documents and display the rest 
+
+                    skip(<number of documents>)
+
+                - sort: to sort the result in ascending or descending 
+
+                    sort({<field>: <1 or -1>})
+
+                        ** 1 to sort in ascending order 
+
+                        ** -1 to sort in descending order
+
+                - select: to select the only fields you want to display as output from the documents 
+
+                    select({<field>: <1 or 0>, <field>: <1 or 0>})
+
+                        ** 1 to display the field and value 
+
+                        ** 0 to omit the field and value 
+
+                        **** by default _id field will always be displayed automatically.... unless we explicitely set _id: 0 inside the select object
+
+
+                
+

@@ -1,0 +1,44 @@
+- What is mongodb?
+
+    - mongodb is a open source... NON RELATIONAL/NoSQL database.... which is used to store data in BSON FORMAT (JSON with types) inside documents
+
+- What is BSON format?
+
+    - BSON (Binary JS object notation) is a json like format in which we can add datatypes like date, string, boolean etc to the property values
+
+    - each property and value pair is known as FIELD-VALUE PAIR 
+
+- How is data stored in MONGODB?
+
+    - A database in mongoDb consists of many COLLECTIONS (~tables in sql)
+
+    - a SINGLE collection has MANY DOCUMENTS (~rows in a table)
+
+    - data is written inside a document in BSON format
+
+        ** each document will have a _id property added automatically by the mongodb 
+
+        ** _id of a document acts as the PRIMARY KEY of the document
+
+
+    
+- FEATURES OF MONGODB 
+
+    - non relational database
+    
+    - DOCUMENT BASED: i.e stores data in document as field-value pairs in BSON format
+
+    - scalable: i.e as your database requirement grows, it is easy to scale up mongodb  
+
+    - flexible: no schema is needed to define a document.... so each document in a collection can have different number and type of fields 
+
+- ADVANTAGES of mongodb OVER SQL databases 
+
+    - in MONGO.... a single field can hold multiple values using ARRAYS 
+
+        * in sql.... a single field(column) CANNOT hold multiple values 
+
+    - in mongo db.... we can EMBED documents (EMBEDDING/DE-NORMALIZING) inside another document
+
+        * in sql.... we CANNOT put a table inside field of another table.... instead we make a new table and link them to the field  
+

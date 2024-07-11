@@ -1,0 +1,36 @@
+....to use a typescript file.... these steps have to be followed 
+
+step1: create a .ts file with any name 
+
+step2: inside the .ts file 
+
+        - add first line as 
+
+            export {} 
+
+              ** means this file export nothing.... this line makes the .ts file a module file... instead of script file 
+
+        - add the codes for your program 
+
+step3: .... now the typescript file should be compiled to a .js file.... to do that.... inside the terminal... run the command....
+
+        :: tsc <file.ts>
+
+          ** now a new file named file.js will be created 
+
+step4:.... the new .js file is the one that we ACTUALLY RUN using NODE..... to run the program and get output....inside the terminal.... type the command ....
+
+    :: node <file.js>
+
+        ** now the desired output is obtained inside the terminal 
+
+step5:.... now if we want to update the code in .ts file.... and to AUTOMATICALLY CHANGE the .JS file code....BEFORE the MODIFICATION of code.... inside the terminal... type the command 
+
+    :: tsc <file.js> --watch
+
+
+**** even if we write the codes in .ts file.... the file we are running is .js file
+
+
+** check the practice folde to see the HELLO WORLD .ts program 
+

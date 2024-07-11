@@ -1,0 +1,340 @@
+- redux is a predictable state management tool library for js applications
+
+- redux is not tied to react.... it can be used with any js framework including vanilla js
+>1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- redux is a state container which stores states shared by all components of that application
+
+	- state is an object/ARRAY which stores data relating to that component.
+
+- redux is predictable
+
+	- all changes made in state is predictable
+
+- what is redux toolkit
+
+	- it is a toolset needed to set redux in your application
+
+	- redux toolkit helps to overcoming the shortcoming of redux such as
+
+		- complicated configuring of redux
+
+		- additional installation of packages
+
+		- too much repeated boilerplate code
+
+- what is react-redux
+
+	- react and redux are two independent libraries and react-redux is redux ui binding library
+	
+	- react-redux has functions to connect react and redux and use it in the application
+
+>2>>>>>>>>>>>>>>>>>>>>>>>>
+
+>3>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- components of redux
+
+	1) STORE: holds states of your application
+
+	2) ACTION: describes what happened in the application
+	
+	3) REDUCER: haldles the action and decides how to update the state
+
+>4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- principles of redux
+
+	1) the GLOBAL STATE of your app is stored as a SINGLE object/ARRAY inside a SINGLE store
+ 
+
+	2) only way to change the state is to DISPATCH an ACTION.... you cannot change the state of
+	   of the application directly.
+
+		- action is an object with type and payload
+
+	3) the business logic to change the state for a dispatched action is written in reducers
+
+		- a recucer is a function that take a previous State and an action as parameters
+		  and a new state object is returned
+
+- redux functioning
+
+	- there is your js app
+
+	- js app is always subscribed to the redux store for state
+
+	- but the app cannot directly change the state
+
+	- to change the state... the js app dispatches action
+
+	- action triggers the business logic written inside the reducer
+
+	- the reducers sends a new changed state to the redux store
+
+>5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- action creation
+
+	- make a constant file which store all the type string as constant variable
+
+	- action is an object with a type and a payload
+
+- action creator
+
+	- is a function that RETURNS an action
+
+>6>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- reducer: determines how the state changes when an action is dispatched
+
+	- reducer is a function that accepts previous state and an action as parameter and
+	  returns new state to the store
+
+>7>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- responsibilities of a store
+
+	1) holds application state
+
+	2) allows to accesss state via method named getState()
+
+	3) allows state to be updated via method named dispatch(action)
+
+	4) subscribe(listner) method: this allows the app to set listner function to track the 
+						state change. so whenever state change the listner funci
+						on is triggered
+	
+	5) unregister the listners via the function returned by subscribe method
+
+- there is only one store for an js application
+
+
+- createStore method: store is created using method store = createStore(reducer) which accepts reducer as argument
+
+				- this is how the store holds application state
+
+- getState method: store.getState() will give the state of the application as output.
+
+- dispatch method: store.dispatch(<action creator function()> dispatches the action to the reducer
+
+- subscribe method: store.subscribe(<listner arrow function>) 
+
+- unsubscribe method: const unsubscribe = store.subscribe(listner())
+				
+				an at the end of all the codes use 
+				
+					unsubscribe() to unsubscribe the code
+
+				- subscribe method was never assigned to a variable
+				
+				- whenever the subscribe method is assigned to a variable, then
+				  it will can be unsubscribed by calling variable_name() function
+ 
+				- the arrow function codes get executed when the state changes.
+
+- redux pattern cycle:
+
+	create INITIAL STATE and REDUCER ==>
+
+      set CONSTANTS, ACTION and ACTION CREATOR ==> 
+
+	write REDUCER LOGIC for ACTION ==>
+
+	CREATE STORE using REDUCER ==> 
+
+	SUBSCRIBE to store ==>
+
+	DISPATCH ACTIONS ==>
+
+ 	UNSUBSCRIBE at the end
+
+>8>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- creating cake store
+
+>9>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- bind action creators : to prevent multiple store.dispatch(action creator) we can bind the all the action creators and store.dispatch using
+
+			
+					const bindActionCreators = redux.bindActionCreators
+
+
+					const actions = bindActionCreators({all action creators with 
+
+					comma }, store.dispatch)
+
+					** now to dispatch an action use
+
+						actions.<action creator()>
+
+**** not really used now
+
+>10>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- multiple reducer analogy
+
+	shop - store
+
+	order cake and order icecreams - 2 actions
+
+	cake counter and ice cream counter - 2 reducers
+
+
+
+>11>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- keeping one reducer is ok. But handle large number of states in a single reducer is a cumbersome process. So we've to use multiple reducers for different states
+
+
+- steps
+
+	- make a separate initial state for the next state
+
+		const <newState> = { initial state }
+
+	- make a new reducer function for the new state
+
+		const <newReducer> = (state = <newState>, action) => { switch case statements}
+
+>12>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- combineReducers method : a store.createStore(reducer) can only take one reducer. So, in 
+				   case of multiple reducers we need to use combinReducers({indi
+				   vidual reducers with comma}) inside the createStore() method 
+				   like this
+
+					const combineReducers = redux.combineReducers
+
+					const rootReducer = combineReducers({
+
+									reducer1: reducer1_variable,
+									reducer2: reducer2_variable
+									
+									})
+ 					
+					const store = createStore(rootReducer)
+
+					** now to access state of reducer1, we've to use
+
+						state.reducer1.<state_variable>
+					
+					** now when we dispatch an action, both the reducer gets 
+					   that action, but only one acts on it
+
+>13>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- usually the initial state object will be having nested objects and updating the nested
+  objects is pretty hard to define inside a reducer block as we have to spread each objects
+  inside the state
+
+- IMMER library: helps to handle nested objects
+
+- IMMER usage steps
+
+	- npm i immer
+
+	- const produce = require("immer").produce
+
+	- goto reducer file... inside the case statement
+
+		- erase all the return
+
+		- substitute the return with the following
+
+			return produce(state, (draft) => {
+				draft.<address>.<stree> = action.payload
+			}
+
+>14>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- MIDDLEWARE : allows to add custom functionality and features to a library
+
+- MIDDLEWARE USES:
+
+	- logging
+
+	- to perform async tasks
+
+	- crash reporting etc
+
+- MIDDLEWARE in REDUX :  allows us to provide an extension point between ACTION DISPATCH,and the REDUCER
+
+- steps to use a logger library as middleware in redux... logger middleware console logs when
+  there is a state change
+
+	
+
+	- npm i redux-logger
+
+	- const reduxLogger = require("redux-logger")   
+
+	- const logger = reduxLogger.createLogger()
+
+	- const applyMiddleware = redux.applyMiddleware
+
+	- const store = createStore(rootReducer, applyMiddleware(logger))
+					
+	
+	** now the console prints the state whenever there is a state change 
+
+>15>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- async actions: usually in application we've data for frontend should be fetched from the backend, so we need to do asynchronous actions
+
+>16>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- libraries used to create async actions are
+
+	1) axios: to send requests to api endpoints
+
+	2) redux-thunk: a middleware to make asynchronous action creators
+
+- ASYNCHRONOUS ACTION CREATORS: usual action creator is a function which returns an object with type and payload. But, an ASYNCHRONOUS ACTION CREATOR is a FUNCTION that RETURNS another FUNCTION which take DISPATCH METHOD as ARGUMENT.
+
+						- the returned function is NOT PURE function i.e  it
+						  can result in side effects such as async api calls
+						
+						- this returned function is able to DISPATCH actions
+						  because it takes DISPATCH METHOD as ARGUMENT.
+
+						- usual content of the returned function is
+							
+							- axios request to the backend to obtain data
+							  from the backend.
+
+							- use dispatch(action) dispatch other actions
+							  to make state change in the store according
+							  to the data obtained from axios request.
+					        
+				            
+						- now we can DISPATCH this ASYNC ACTION CREATOR in 
+						  appropriate places in our application.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+**** in 2022 we use redux toolkit version to write redux codes
+							
+							  
+
+
+						
+	
+		
+
+
+
+
+				 
+
+
+
+
+
+
+	
+
+	
+

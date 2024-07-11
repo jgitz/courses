@@ -1,0 +1,24 @@
+- BEM fullform : Block Element Modifier
+
+- block: components that can stand alone and are reusable
+
+  - bem css format
+
+    .block {}
+
+- element: element that is related to block and cannot stand alone....
+
+  - bem css format
+
+      .block__element {}
+
+- modifier: different version of block or element
+
+    -bem css format
+
+      - .block__element--modifier {}
+
+      - .block--modifier {}
+
+
+

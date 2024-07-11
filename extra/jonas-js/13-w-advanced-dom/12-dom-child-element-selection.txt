@@ -1,0 +1,24 @@
+- to select all DIRECT and DEEP child elements of a parent element
+
+    <query_select_parent_variable>
+    .querySelectorAll(".<class name for child>")
+
+        ** o/p : NODE LIST of all child elements of parent direct as well as deep child elements which can be accessed through INDEX NUMBERS
+
+
+- to select only DIRECT CHILD ELEMENTS of a parent 
+
+    <query_select_parent_variable>
+    .children
+
+        ** o/p : HTML COLLECTION (live updates happen on element change) of only direct children which can be accessed through INDEX NUMBERS
+
+- to select only FIRST CHILD ELEMENT 
+
+    <query_select_parent_variable>
+    .firstElementChild
+
+- to select only LAST CHILD ELEMENTS
+
+    <query_select_parent_variable>
+    .lastElementChild

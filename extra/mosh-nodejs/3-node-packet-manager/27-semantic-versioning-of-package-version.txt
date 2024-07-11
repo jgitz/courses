@@ -1,0 +1,41 @@
+- inside package.json... the dependencies object lists all the dependencies with version number
+
+
+- the version number format is called semantic versioning or semver
+
+- semantic versioning format : MAJOR.MINOR.PATCH  .... for eg in package.json dependency mongoose package is displayed as
+
+  - "mongoose": "^1.8.3"
+
+    ** 1 is the major version
+
+    ** 8 is the minor version
+
+    ** 3 is the PATCH
+
+    ** ^ symbol says to npm that we are ready to install any version that starts with major version number if we recreate the project elsewhere.... so here the package.json says that our app is ready to take any updated version that starts with version number 1 
+
+      ** another format instead of ^ is
+           1.x
+
+      ** if we want to fix major and minor version use
+
+        ~1.8.3 or 1.8.x
+
+          ** i.e any version that start with 1.8
+
+      ** to run an exact version
+
+          - remove ^ or ~ and use the exact version number... here 1.8.3
+
+
+
+- patch version number increases when a bug is resolver
+
+- minor version number increases when new features are added without breaking the existing api.
+
+- major version number increases when newly added feature breaks the existing application
+
+
+
+    

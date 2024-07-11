@@ -1,0 +1,3 @@
+- when 3rd party packages are installed... these package has other sub dependencies... these sub dependencies are installed outside the pakcage folder... because many packages uses same dependencies.... so this prevents them from installing multiple times within many other packages
+
+- now if a package uses another version of an existing sub dependency.... that dependency is stored inside the /node_modules/<package folder>/node_modules

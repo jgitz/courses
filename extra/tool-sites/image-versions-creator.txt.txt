@@ -1,0 +1,14 @@
+- for making different image versions... use the site: https://www.responsivebreakpoints.com/
+
+
+  - set resolution from 200px to 1400px: to cover the minimum and maximum screen widhts you want
+
+  - set the size step to 50KB: i.e each image version will be 50KB bigger than the other 
+
+  - set the maximum images to 5: to create 5 versions of the image
+    
+  - upload the image of high quality and high resolution that you want to make different versions of 
+
+  ** now different version of the image is generated
+
+  ** there is also img tag code with src set attribue... 

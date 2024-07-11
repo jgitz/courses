@@ -1,0 +1,45 @@
+/* 
+
+- relational css selectors: are used to select elements based on reference of other elements 
+
+***** relational selectors has the following problems 
+
+    - not fast as basic selectors 
+
+    - fragile because moving position of elements affects the css 
+
+** only use relational selectors if the html code is no going to change..... else use basic id and class selectors
+
+*/
+
+parent child {}
+
+/* descendant selector: selects ALL the child elements of the parent.... including the ones inside OTHER CHILDREN ELEMENTS of the PARENT*/
+
+parent>child {}
+
+/* DIRECT child selector: selects ONLY the next DIRECT CHILDREN elements of the parent */
+
+element+sibling {}
+
+/* DIRECT sibling selector: selects ONLY the DIRECT SIBLINGS (multiple elements) of the element  */
+
+element~sibling {}
+
+/* all sibling selector: selects ALL the siblings of the element... including elements inside CHILDREN ELEMENTS  */
+
+p.class_name {}
+
+/* selects every p tags with class name named class_name
+
+      ** not preferred as it is not flexible
+    
+    */
+
+parent .class_name {}
+
+/* selects EVERY child with class name namee class_name */
+
+.class1.class2 {}
+
+/* applies the CSS to ELEMENT with CLASSes BOTH CLASS1 and CLASS2 */

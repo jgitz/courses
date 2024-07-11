@@ -1,0 +1,24 @@
+- conditional statement
+
+    - if
+
+    - if else 
+
+    - if elseif else
+
+        ** else if (space in between)
+
+    - switch
+
+        ** syntax
+
+            switch(condition) {
+              case <>: 
+                codes
+                return / break
+
+              default:
+
+                codes
+                return / break
+            }

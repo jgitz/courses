@@ -1,0 +1,16 @@
+- typescript encourages to use LET and CONST keywords to declare variables.... 
+
+    **let and const DOESN'T allow to REDECLARE the same variable with different value within the SAME SCOPE by using let and const key word i.e... 
+
+        let x = 30 
+        let x = 20 // error
+
+          ** the above won't be allowed
+
+- LET should be used to variables whose values can get changed in the future 
+
+    ** variable with let keyword can be declared without assigning a value 
+
+- CONST should be used to variables whose values won't change 
+
+    ** variable with a const keyword CANNOT be declared without an assigned value.... else error

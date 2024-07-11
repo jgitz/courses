@@ -1,0 +1,38 @@
+<!-- 
+
+  .... to upload SINGLE/MULTIPLE FILES.... we use input tag of TYPE FILE 
+
+  - TYPE FILE INPUT TAG: used to upload single/multiple file 
+
+    - attributes 
+
+        - multiple: boolean attribute that allows you to select multiple files 
+
+        - accept="<file format>": is used to accept file formats in various syntaxes
+
+          - values syntaxes 
+
+             - accept=".jpg, .png": only allows you to select jpg and png files 
+
+             - accept="image/*": only allows you to select IMAGE FILES 
+
+             - accept="video/*": only allows you to select AUDIO FILES
+
+             - accept="audio/*" only allows you to select VIDEO FILES
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+   <label for="image">Select 3 image file</label><br>
+  <input type="file" multiple accept="image/*" id="image">
+ </body>
+ </html>

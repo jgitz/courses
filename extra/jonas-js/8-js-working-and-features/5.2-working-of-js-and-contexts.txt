@@ -1,0 +1,130 @@
+- source link :
+
+    https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+SUMMARY:
+
+- what happens when a js file is run?
+
+    1)first it creates creates a GLOBAL EXECUTION context.... explain later
+
+    2) if the interpreter encounters a FUNCTION INVOCATION during GLOBAL EXECUTION PHASE, it creates a FUNCTION EXECUTION CONTEXT..... explain later
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what happens in a GLOBAL EXECUTION CONTEXT?
+
+    - things happens in 2 phase
+
+        1) CREATION phase:
+
+            - creates global object (window for browser, global for node)
+
+            - creates object called THIS and assigns global/window object to it 
+
+            - sets up memory spaces for variables and functions 
+
+            - assign value UNDEFINED to variables defined in VAR (const and let are stored in temporal dead zone)
+
+            - store whole FUNCTION declaration in MEMORY 
+
+          2) EXECUTION PHASE:
+
+              ** here is when js runs your code line by line 
+
+              - adds the real values of the variables to the memory 
+
+              - jumps to function execution context when encounter function invocation.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>              
+
+- what is hoisting?
+
+  assigning variable values as undefined and storing function declaration at the creation phase of global execution context is known as hoisting.
+
+  ** a hoisted variable returns undefined/REFERENCE ERROR  (because uninitialized)
+
+      **** undefined for VAR keyword (and is function scoped) 
+
+      **** ininitialized TDZ for LET and CONST key word (block scoped)
+
+  ** a hoisted function (with no keyword)returns its declaration  (block scoped if strict mode)
+
+  ** a hoisted function with variable (function EXPRESSION) name returns the values same as VAR, LET or CONST keywords
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is the use of temporal dead zone?
+
+    - TDZ is a es6 feature to store let and const variable as ininitialized during global execution phase 
+
+    ** it helps to avoid errors as calling variable before declaration is a bad practice.... and returning undefined in case of var keyword variable increases confusion 
+
+    ** makes working of const variable i.e it can be reassigned.... so it can't be assigned value of undefined in creation phase and reassign its value in execution phase 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- what is the need for hoisting?
+
+    1) to implement programming style like mutual recursion
+
+    2) it makes code readable
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what happens at FUNCTION EXECUTION CONTEXT?
+
+  ** js file has only 2 context.... first is the global execution context.... 2nd is the function execution context.
+
+  ** FUNCTION execution context is created only when the js file encounters a FUNCTION INVOCATION when it is interpreting code lines at time of EXECUTION phase of global execution context.
+
+  ** when FUNCTION EXECUTION CONTEXT is created 
+     
+     ** 2 phases occur
+
+     1) creation phase
+
+      - FUNCTION execution context is added to the CALL STACK (LIFO)
+
+      - it creates an argument object (an argument is treated as a local variable inside the function)
+
+      - creates object named this (the value is dependent on the type of function invocation)
+
+      - assigns argument (if any) as a variable and stores its value
+
+      - sets up memory for variables and function 
+
+      - assigns default value of undefined to variables (if var )
+
+      - stores entire function declaration in case of any functions.
+
+    2) execution phase 
+
+      - assigns actual values of variables 
+
+      - executes codes
+
+      - returns value if any 
+
+    3) after both creation and execution is over, the FUNCTION EXECUTION CONTEXT is thrown off the CALL STACK is the memory is released 
+
+      ** exceptional case: closure?? (later)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is scope and scope chain in js?
+
+    ** scope is defined as the current execution context or area where the variables are accessible
+
+    ** scope chain is the process of js engine searching for a variable in nearest parent execution contexts if the variable is not found in the local current execution context.. it searches upto the global execution context..
+
+
+
+
+
+ 

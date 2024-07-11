@@ -1,0 +1,3 @@
+....to open extract window to set location to extract selected files in WINRAR....
+
+- press ALT + E

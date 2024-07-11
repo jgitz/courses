@@ -1,0 +1,12 @@
+icomoon.io - to download svg(scalable vector graphics) icons
+
+  - from the downloaded icons.... use the sprite file that contains all the icons.... copy the sprite file and paste it inside project image folder 
+
+logo maker - https://hatchful.shopify.com/
+
+- we need to compress images to reduce its size.... so we use the website.... sqoosh
+
+
+- use website: coolors.co to check the contrast between the text color and background color
+
+- use maketintsandshades site to obtain tints of for font color and background color

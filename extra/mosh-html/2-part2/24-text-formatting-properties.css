@@ -1,0 +1,76 @@
+/* 
+.... there are many properties to format a text 
+*/
+
+p {
+  text-align: left; /* 
+    - default: left
+    - center
+    - right
+    - justify (don't use) 
+
+    ** BEST PRACTICE: DON'T use JUSTIFY.... use LEFT or CENTER
+  */
+
+  text-indent: 1rem; /* 
+    - gives 1rem space before the FIRST LETTER of the paragraph 
+
+    ** BEST PRACTICE: DON'T indent first line of a paragraph which comes after a heading.... ONLY indent the subsequent paragraph.... so use the below code 
+
+        p + p {
+          text-indent: 1rem;
+        }
+  */
+
+  text-decoration: ; /* 
+        - underline: to underline every text
+
+        - line-through: to strike text.... use case to show strike old price in ecommerce sites 
+  */
+
+  text-transform: ; /* 
+        - uppercase
+        - lowercase 
+        - capitalize: make FIRST letter of each word in uppecase.... use case HEADINGS 
+  */
+
+  white-space:; /*.... 
+        - nowrap: every text of paragraph will be on a SINGLE LINE
+
+            ** might cause overflow of text beyond container width
+
+        ** BEST PRACTICE: use TEXT-OVERFLOW PROPERTY to make overflow hidden and add ... (3 dots) at the end ... like this 
+
+            P {
+              width: 50ch;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis
+            }
+  */
+
+  line-clamp: 3 ; /*.... truncate text on third line??  */
+
+  column-count: 2; /* makes the content of paragraph into 2 column
+
+     ** BEST PRACTICE: use it along with the COLUMN-GAP property... to set GAP between 2 columns.... and COLUMN-RULE to set DIVIDING LINE between the columns... like this 
+
+          p {
+            column-count: 2;
+            column-gap: 1rem;
+            column-rule: 3px dotted black; 
+          }
+  */
+
+  direction: rtl; /* 
+          sets direction of the text from right to left for languages like ARABIC, PERSIAN etc 
+
+          - ltr (default): left to right 
+ 
+          - rtl: right to left... for arabic, persian languages
+
+          ** SET ON BODY TAG css
+  */
+
+
+}

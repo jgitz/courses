@@ -1,0 +1,20 @@
+..... we cannot hard code a port number since site will be hosted by a hosting company
+
+..... so we need to store the port in an environment variable outside the application
+
+..... usuall environment variable is set with these steps
+
+  - open cli.... and type the following command to set an environment variable in your device
+
+    :: set PORT=5000
+
+      ** for mac
+
+          :: set PORT=5000
+
+    
+
+  - to use the PORT environment variable 
+  const port = process.env.<PORT> || <3000>
+
+    ** means if environment variable named PORT is NOT found.... the app use port 3000

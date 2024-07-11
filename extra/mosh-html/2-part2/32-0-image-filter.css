@@ -1,0 +1,22 @@
+/*
+..... various filter functions can be used to give filter layers to your image using FILTER css property....
+*/
+
+img:hover {
+  filter:blur(3px) grayscale(50%) /* 
+   when the image is hovered with mouse... the image will blur and will be in black and white
+   
+    ** you can use as many filter functions as you want with each function separate by space
+
+    ** other common filter functions are....
+
+        - opacity(50%)
+        - drop-shadow(16px 16px 20px blue)
+        - saturate(50%)
+        - brightness(0.4)
+        - contrast(200%)
+
+
+  */
+}
+

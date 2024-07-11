@@ -1,0 +1,5 @@
+- to select multiple text with same content
+  
+  - select the text
+
+  - press ctl + D

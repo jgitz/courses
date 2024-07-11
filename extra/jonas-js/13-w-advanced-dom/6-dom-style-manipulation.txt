@@ -1,0 +1,39 @@
+- to manipulate inline style 
+
+      <query_select_variable>.style.<css_property> = "<value with unit>"
+
+      eg: <query_select_variable>.style.width = "120%"
+
+      eg: <query_select_variable>.backgroundColor = "#37383d"
+
+
+      ** use camel case 
+
+      **** CAN'T be used to access styles defined inside separate css file.... only inline styles can be manipulated 
+
+- to manipulate styles in separate css file 
+
+    ** to access style : 
+
+          getComputedStyle(<query_select_variable>)
+          .<css property>
+
+    ** to change css property values inside inline using value from css file 
+
+        eg:  <query_select_variable>
+          .style
+          .height = Number
+                    .parseFloat(getComputedStyle(<query_select_variable>)
+                    .height, 10) + <40> + "px"
+
+              ** Number.parseFloat to parse the numerical value from the unit 
+
+              ** 10 is to correctly set parseFloat 
+
+- to set CSS VARIABLES style defined inside :root {} in css file 
+
+
+    eg : document.documentElement
+        .style
+        .setProperty("<--color-primary>", <color name/value>)
+

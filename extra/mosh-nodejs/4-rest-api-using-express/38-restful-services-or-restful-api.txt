@@ -1,0 +1,61 @@
+- CLIENT - SERVER architecture of web application
+
+    - most web application has a client and a server side.
+
+    - client and server side is linked via internet using HTTP protocol
+
+    - client need to fetch and push data into the server... for that the server has services that can be accessed by the client via http protocol
+
+    - client can access the server side services by various http requests
+
+    - REST is a convention for building server side http services which are exposed to give access to client
+
+- REST convention : full form is REpresentational State Transfer
+
+    - REST convention uses the following HTTP principles (CRUD) to implement server side http services
+
+        - CREATE 
+        - READ
+        - UPDATE 
+        - DELETE
+
+    - SERVER SIDE endpoints: these are url to which the client should communicate for specific data operations in server side
+
+      eg: http://vidly.com/api/customers
+
+        ** client should communicate to this customers resource url to do CRUD operations on customer data
+
+    - HTTP REQUESTS: http requests are requests sent by the client to the server
+
+      - the VERB/METHOD of the http requests determines the CRUD type of the http request
+
+      - HTTP METHODS: the http method defines the CRUD type of the http requests
+
+        - basic HTTP METHODS are
+
+          1) GET : for reading data from server endpoint
+          2) POST : for creating data into the server endpoint
+          3) PUT : updating data of the server endpoint
+          4) DELETE : deleting data from the server endpoint
+
+
+- USAGE of HTTP METHODS from CLIENT to SERVER endpoint
+
+  1) GET method usage: 
+
+      - to get details of all resources from backend.... the client sends GET request to endpoint .... the server sends response with all resource data
+
+      - to get details of an individual resource attach the resource number or id with the api endpoint
+
+  2) PUT method usage:
+
+    - to update a specific resource..... client sends PUT request to the server endpoint with resource id..... along with the specific resource object data inside the BODY of the request.... now the server responds with updated resource
+
+  3) DELETE method usage:
+
+    - to delete a specific resource.... client sends DELETE method request to the server side api endpoint with specific id inside the endpoint url.... no body is required for a delete request
+
+  4) POST method usage:
+
+    - to create a new resource.... client sends a POST request to the server side api endpoint.... no need to specify id inside the endpoint url... the new resource data is included in the BODY of the request  
+

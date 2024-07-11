@@ -1,0 +1,55 @@
+..... in the design there are different button variations 
+
+  - button with primary color 
+  - button with secondary color
+  - button with accent color (search button of orange color) 
+
+  - button with only outine/border of primary color 
+  - button with width of its text.... (orange search button)
+
+  - big button which stretch 100% of the WIDTH OF THE PARENT (buy now button inside cards )
+
+** button bem classes 
+
+    - .btn : block class 
+    - .btn--primary: modifier class for primary color 
+
+    - .btn--secondary: modifier class for secondary color
+
+    - .btn--accent: modifier class for accent color 
+
+    - .btn--outline: modifier class for outline button 
+
+    - .btn--block: modifier class for button that occupies 100% of the width of parent element
+
+** STANDARD styles for a button component 
+
+  ** display: inline-block: we set button in two ways.... i.e using button tags and using anchor tags.... but anchor tag is INLINE BY DEFAULT and WON'T ALLOW WIDTH value to be set unless we make it INLINE-BLOCK using this style
+
+  ** cursor: pointer: always set this on BUTTON HOVER 
+
+  ** background: <light color>: always set LIGHT BACKGROUND COLOR on hover 
+
+  ** white-space: nowrap: button text should not wrap on page resize
+
+  ** border: 0 : button component comes with an UGLY DEFAULT BORDER 
+
+  ** outline: 0: button component will show a BLUE OUTLINE when you PRESS TAB.... it is UGLY 
+
+  ** set SIZE OF BUTTON by adjusting PADDING of button in REM
+
+  ** set a SMALL margin to button in PIXEL.... here 1rem (top & bottom) and 0 (left & right)
+
+  ** always set HOVER STATE FOR BUTTON with CURSOR STYLE and LIGHT BACKGROUND COLOR
+
+  ** text-align: center: because anchor tag button aligns text to left by defaule
+
+  ** add media query style for desktop
+
+  ** ANCHOR TAG as button is USED WHEN we need to ROUTE to ANOTHER PAGE on button click
+
+  
+
+
+
+

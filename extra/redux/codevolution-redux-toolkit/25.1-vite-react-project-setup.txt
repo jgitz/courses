@@ -1,0 +1,11 @@
+**** watch video
+
+- vite can be used instead of create-react app
+
+- vite is faster as it uses golang behind the scenes
+
+- vite build files are smaller in size
+
+- vite has react component files in .jsx extension
+
+- index.js is replaced with main.js in vite

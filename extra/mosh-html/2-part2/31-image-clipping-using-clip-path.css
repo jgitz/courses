@@ -1,0 +1,11 @@
+/* 
+
+..... images can be clipped to various shape using CLIP-PATH css property
+
+  ** USE ONLINE TOOLS to generate clip path for various shapes
+
+*/
+
+img {
+  clip-path: "values from online tools"; 
+}

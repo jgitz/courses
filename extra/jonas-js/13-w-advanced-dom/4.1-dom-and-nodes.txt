@@ -1,0 +1,25 @@
+- NODES : is an object with METHODS and PROPERTIES 
+
+    ** every element inside the dom is a NODE
+
+    ** there are different types of node with different methods and properties 
+
+        1) NODE: every single element in js is of type node
+
+        2) TEXT NODE (child of node type)
+
+        3) COMMENT NODE (child of node type)
+
+        4) DOCUMENT NODE (child of node type) : has methods like .querySelector(), .createElement(), .getElementById()
+
+        5) ELEMENT NODE (child of node type): apart from document node.... element node also HAS .querySelector()
+
+        6) HTML ELEMENT NODE (child of element node type)
+
+        7) htmlButtonElement, htmlDivElement.... etc(child of html element node based on type of element)
+
+        8) EVENT TARGET : is PARENT of BOTH NODE TYPE and WINDOW OBJECT.... provides methods like ADD EVENT LISTNER, REMOVE EVENT LISTNER 
+
+**** all the CHILD NODE types INHERITS METHODS AND PROPERTIES from the PARENT NODES
+
+

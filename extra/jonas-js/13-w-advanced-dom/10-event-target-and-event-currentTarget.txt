@@ -1,0 +1,28 @@
+.... so most of the events are accessable from the parent element even if it occured at a target element..... for eg
+
+.... if we do a click on a target element.... that click can can be listned in the parent element as well..... but original place where the click occured is target element....
+
+..... so 2 event methods can be used to find the distinguish the TARGET ELEMENT and THE CURRENT element (PARENT ELEMENT) when attaching event listner on a parent element 
+
+
+- inside EVENT HANDLER FUNCTION use :
+
+    <e>.target 
+
+        ** to find the original element where the event occured 
+
+- inside EVENT HANDLER FUNCTION use : 
+
+    <e>.currentTarget 
+
+        ** to find the parent element from which it is accessed 
+
+
+- inside EVENT HANDLER FUNCTION at the TARGET or PARENT element use : 
+
+    <e>.stopPropagation()
+
+        ** to stop bubbling up of the events to the root document element 
+
+
+**** it's BAD PRACTICE to use e.stopPropagation() unless it is necessary

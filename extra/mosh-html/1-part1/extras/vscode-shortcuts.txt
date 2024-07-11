@@ -1,0 +1,18 @@
+- ctl + D : to multiselect next element of same content
+
+- to disable multi cursor select: press escape twice 
+
+- to wrap a text with a tagname without extension
+
+    - select text 
+
+    - press ctl + p
+
+    - type >wrap and press enter 
+
+    - enter the tag name and press enter
+
+- 30: to set items in list with ascending numberals use 
+
+    ul>li*5{item $}
+

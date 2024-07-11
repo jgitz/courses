@@ -1,0 +1,11 @@
+- objects are fundemental concept of js
+
+- there are many ways to declare an object in js (later).... easiest way is to use OBJECT LITERALS.... i.e simply enclose key value pairs inside a {} and assign it to a variable 
+
+** in console the object keys are listed in alphabetical order 
+
+- object vs array : 
+
+    ** array for ordered data 
+
+    ** object for unstructured data 

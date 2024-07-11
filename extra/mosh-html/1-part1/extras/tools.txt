@@ -1,0 +1,54 @@
+- unsplash.com for free image download
+
+    - small, medium and large image sizes are used to download images based on your VIEWING DEVICES 
+
+- pexels.com for free videos
+
+    - different sizes can be downloaded
+
+- cssgradient.io - to generate gradient
+
+- for making different image versions... use the site: https://www.responsivebreakpoints.com/
+
+
+  - set resolution from 200px to 1400px: to cover the minimum and maximum screen widhts you want
+
+  - set the size step to 50KB: i.e each image version will be 50KB bigger than the other 
+
+  - set the maximum images to 5: to create 5 versions of the image
+    
+  - upload the image of high quality and high resolution that you want to make different versions of 
+
+  ** now different version of the image is generated
+
+  ** there is also img tag code with src set attribue... 
+
+- to convert a jpeg image to webp... use the site: https://cloudconvert.com/
+
+  ** you can convert any type of files
+
+- use this site to get svg images for backgrounds : https://www.svgbackgrounds.com/
+
+- use font awesome to display font icons:
+
+    steps to use font awesome 
+
+    - create account in font awesome 
+
+    - create font icon kit and add icons you want to use inside it 
+
+    - copy the script tag of font awesome and paste it inside the html head AFTER style.css link tag 
+
+    - to use the icon as font 
+
+        - create a PARENT SPAN TAG with class named <icon> or anything of your choice 
+
+        - inside the span parent... add ANOTHER SPAN as CHILD 
+
+        - on CHILD SPAN/i tag
+
+            - add fontawesome readymade classes in CLASS ATTRIBUTE
+
+            ** we get an i tag from font awesome.... but standard is to use SPAN to display fonts as I TAG is DEPRECATED
+
+        - to CHANGE COLOR AND SIZE of the icon.... change the CSS of the PARENT SPAN TAG

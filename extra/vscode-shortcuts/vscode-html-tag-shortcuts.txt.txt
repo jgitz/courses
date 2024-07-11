@@ -1,0 +1,3 @@
+- to create a DIV with UL with 3 li items: div>ul>li*3
+
+- to create 2 sibling divs with different class names: .class1+.class2

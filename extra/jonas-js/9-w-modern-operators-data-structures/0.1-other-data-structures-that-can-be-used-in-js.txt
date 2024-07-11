@@ -1,0 +1,12 @@
+- other built in data structures in js
+
+  - WEAK SET
+  - WEAK MAP
+
+- non built in data structures that can be used in js
+
+   - STACKS
+   - QUEUES
+   - LINKED LISTS
+   - TREES
+   - HASH TABLES

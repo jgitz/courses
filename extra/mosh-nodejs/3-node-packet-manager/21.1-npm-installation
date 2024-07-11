@@ -1,0 +1,12 @@
+- to install a specific version of npm do
+
+  :: npm i -g npm@<5.5.1>
+
+    ** add sudo in mac if there is permission error
+
+    ** open cli with administrative privilages in windows if there is permission error
+
+
+- to see version
+
+  :: npm -v

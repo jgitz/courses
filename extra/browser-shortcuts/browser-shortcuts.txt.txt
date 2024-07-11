@@ -1,0 +1,34 @@
+- select address bar url: ctl + L 
+
+- search google via address bar: ctl + E....
+
+	** to open it in new tab press: alt + enter
+
+- back: alt + left arrow 
+
+- front: alt + right arrow
+
+- bookmark: ctl + D
+
+- history: ctl + H
+
+- scroll down: spacebar
+
+- scroll up: shift + spacebar
+
+- to see full source code: ctl + u
+
+- to open delete search history menu: ctl + shift + delete
+
+- to open browser menu: ctl + f
+
+- to open new window: ctl + n
+
+- to open new incognito window: ctl + shift + n
+
+- to open new tab: ctl + t
+
+- to open recently closed tab: ctl + shift + t
+
+- to cycle between tabs: ctl + tab
+

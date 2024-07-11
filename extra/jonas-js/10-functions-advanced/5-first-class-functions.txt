@@ -1,0 +1,15 @@
+- Why functions are called FIRST CLASS CITIZENS?
+
+  because
+
+      ** everything in js is an OBJECT including FUNCTIONS and has methods to do operations
+
+      ** so since function is an object.... it is treated as a VALUE that can be done anything
+
+      ** so FUNCTION can be 
+
+          ** stored in a VARIABLE
+
+          ** used as argument inside a function
+
+          ** used as return value from a function

@@ -1,0 +1,26 @@
+/* 
+
+- to change the default link styles of hyper link use the exact below combination of pseudo calss
+
+*/
+
+a:visited, a:link {
+  color: dodgerblue;
+}
+
+a:hover, a:focus {
+  color: deeppink;
+}
+
+/* 
+
+a:visited : selects all the atag hyperlinks which are visited 
+
+a:link: sellects all the hyperlinks in the html page
+
+a:hover: selects the a tag hyperlinks on which mouse pointer hovers
+
+a:focus: selects the atag hyperlink which is selected using TAB key of keyboard
+
+*/
+

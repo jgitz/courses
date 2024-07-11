@@ -1,0 +1,19 @@
+.... till now we've learnt prototypal inheritance.... i.e properties and methods were inherited from by OBJECTS/INSTANCES from the PROTOTYPE method of the TEMPLATE(BLUEPRINT).... 
+
+- REAL INHERITANCE(** name given by me): real inheritance in traditional programming language means
+
+      ** inheritance should be between PROPERTIES of 2 CLASS.... i.e
+
+          ** CHILD CLASS must be able to inherit property from the PARENT class without any prototype method 
+
+          ** CHILD CLASS also has ITS OWN METHODS along with the inherited method 
+
+          ** eg: there are 2 classes PERSON CLASS and STUDENT CLASS.... PERSON class defines properties for creating a person such as NAME, AGE etc.... STUDENT class should inherit properties from the PERSON class as well as ADD NEW property such as ROLL NUMBER
+
+- REAL INHERITANCE IN JS: 
+
+      ** unlike traditional programming language.... js has NO concept of class 
+
+      ** in js class means CONSTRUCTOR FUNCTION(or template/blueprint) + its PROPERTIES from PROTOTYPE PROPERTY 
+
+      ** so in js a CHILD CLASS must be able to INHERIT properties FROM PROTOTYPE property of the PARENT CLASS 

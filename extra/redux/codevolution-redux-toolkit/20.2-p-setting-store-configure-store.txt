@@ -1,0 +1,10 @@
+to configure store using the cake feature reducer
+
+
+- goto projectFolder/app/store.js
+
+- use require() function to import configureStore from @reduxjs/toolkit
+
+- import cake reducer using require()
+
+- make store variable and assign the configureStore({}) function with cake reducer

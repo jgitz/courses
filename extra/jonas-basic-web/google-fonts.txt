@@ -1,0 +1,1 @@
+always select fonts with weignt >= 400 usually 400, 500 and 700

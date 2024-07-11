@@ -1,0 +1,24 @@
+- js can be run inside a browser and inside your server device
+
+- in browser js ENGINE is used to connect to WEB API's
+
+- WEB API'S gives js ENGINE the access to DOM and other methods such as FETCH and TIMERS to use js language to manipulate the DOM.
+
+- inside browser WINDOW OBJECT gives the js engine access to web api and it's here fetch and other methods are listed 
+
+  ** indexedDB inside the window object gives access to in built INDEXED DB storage of the browser 
+
+- parts of js runtime environment 
+
+    1) js engine with call stack and memory heap 
+
+    2) WEB API  
+
+    3) CALL BACK / TASK queue (FIFO)
+
+    4) MICRO TASK QUEUE (FIFO)
+
+    5) EVENT LOOP  
+
+
+

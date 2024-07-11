@@ -1,0 +1,63 @@
+<!-- 
+
+..... DIV and SPAN are GENERIC CONTAINER ELEMENTS.... they can hold any content
+
+- SEMANTIC ELEMENTS: are meaningful container elements which to hold specific type of content... some commonly used semantic tags are 
+
+    - article tag: any INDEPENDENT, SELF-CONTAINED content can be put inside article tag... common USECASES
+
+        - forum post 
+        - comments 
+        - reviews 
+        - product cards
+
+            ** an article can contain multiple children elements like h1, img, list etc
+
+    - figure tag: is used to wrap an img tag and give it a caption 
+
+        - <figcaption><figcaption>: is given right after the img tag to give a caption to the image 
+
+          ** it's not necessary to keep figcaption tag below the img tag.... we can add it above the img tag too
+
+    - mark tag: is a semantic tag to HIGHLIGHT TEXT
+
+          ** it has default yellow color.... it CANNOT be changed
+        
+    - time tag: to wrap any date of time text content inside html code 
+
+          - datetime attribute: used to specify date inside the time tag for SEO optimizations
+
+              ** syntax 
+
+                  <time datetime="<year>-<mm>-<dd> <hh>:<mm>"></time>
+
+                    ** time should be in 24 hour format
+
+
+  
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+  <article class="article">
+    <h1>Heading</h1>
+    <p>Published on <time datetime="2020-02-02 19:00">February 6, 2020</time></p>
+
+    <figure>
+      <img src="./23-1-p-i-teddy.webp" alt="a teddy bear">
+      <figcaption>Teddy bear caption</figcaption>
+    </figure>
+
+    <p><mark>Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit. Sequi, mollitia voluptas nobis quasi accusamus provident omnis, nemo nisi sunt molestias esse officiis ab minima consectetur iste recusandae? Ullam earum doloribus reprehenderit, quas placeat itaque. Esse.</p>
+    
+  </article>
+  
+ </body>
+ </html>

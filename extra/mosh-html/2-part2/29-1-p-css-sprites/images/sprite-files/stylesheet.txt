@@ -1,0 +1,59 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-balloon {
+    width: 512px;
+    height: 512px;
+    background-position: 0 0;
+}
+
+.icon-fireworks {
+    width: 512px;
+    height: 512px;
+    background-position: -512px 0;
+}
+
+.icon-github {
+    width: 30px;
+    height: 30px;
+    background-position: -1024px 0;
+}
+
+.icon-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -1054px 0;
+}
+
+.icon-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -1084px 0;
+}
+
+.icon-popcorn {
+    width: 512px;
+    height: 512px;
+    background-position: 0 -512px;
+}
+
+.icon-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -1114px 0;
+}
+
+.icon-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -1144px 0;
+}
+
+.icon-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -1174px 0;
+}

@@ -1,0 +1,5 @@
+- THIS KEYWORD : is an object created during EXECUTION CONTEXT.... this object is the object to which a function is attached.
+
+  ** in GLOBAL EXECUTION CONTEXT, the value of this object is WINDOW/GLOBAL object in browser/nodejs
+
+  ** in FUNCTION EXECUTION CONTEXT, the value of this depends on the TYPE OF function INVOCATION  

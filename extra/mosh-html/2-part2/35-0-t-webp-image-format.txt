@@ -1,0 +1,6 @@
+.... today we use WEBP image format to make WEBSITE PERFORMANCE better..... because webp image has LOW SIZE than the jpg image.... and they have NEGLIGIBLE QUALITY difference....
+
+** to convert a jpeg image to webp... use the site: https://cloudconvert.com/
+
+  ** you can convert any type of files
+

@@ -1,0 +1,62 @@
+/* 
+
+.... a color in css can be represented in 5 methods
+
+    1) rgb: red green and blue values are given from range 0 - 255
+    2) rgba: rgb system PLUS a 4th value from 0 - 1 to define ALPHA VALUE for OPACITY
+
+        - 0 = transparent 
+        - 1 = fully opaque
+
+    3) hexadecimal: represented in hexadecimal form like this 
+
+        #e6982c
+
+          ** here each 2 numbers represents rgb value of r, g, and b in hexadecimal form 
+
+          ** DISADVANTAGE is that there is NO PROVISION to specify ALPHA VALUE FOR OPACITY
+
+    4) hsl: in this system the color is specified in HUE, SATURATION and LIGHTNESS value like this 
+
+      - first value: is a degree to select the COLOR from COLOR WHEEL 
+
+      - second value: specifies SATURATION in PERCENTAGE
+
+      - third value: specifies LIGHTNESS or BRIGHTNESS of the color in PERCENTAGE
+
+
+    5) hsla: hsl system PLUS a 4th value from 0 - 1 to define ALPHA VALUE for OPACITY
+
+        - 0 = transparent 
+        - 1 = fully opaque
+
+*/
+/* RGB SYSTEM */
+
+p {
+  background-color: rgb(235, 83, 23);
+}
+
+/* RGBA SYSTEM */
+
+p {
+  background-color: rgba(0, 0, 255, 0.508);
+}
+
+/* HEXA DECIMAL SYSTEM */
+
+p {
+  background-color: #38a738;
+}
+
+/* HSL SYSTEM */
+
+p {
+  background-color: hsl(60, 100%, 50%);
+}
+
+/* HSLA SYSTEM */
+
+p {
+  background-color: hsla(307, 87%, 76%, 0.414);
+}

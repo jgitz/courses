@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // to display date in other descriptive formats 
+
+    const currentDate = new Date()
+
+    console.log(currentDate) // Date Mon Apr 08 2024 23:05:56 GMT+0530 (India Standard Time)
+
+    const dateOptions = {weekday:'long', month:'long', day:'numeric', date:'numeric', year:'numeric'}
+
+    const descriptive_date = currentDate.toLocaleDateString(undefined, dateOptions) //  Monday, April 8, 2024
+
+    console.log(descriptive_date) // 
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+- sql command to make a table in postgresql
+
+	:: CREATE TABLE <table name> (<column 1> <data type>, <column 2> <data type>);
+
+		eg CREATE TABLE users (name text, age smallint, birthday date);
+
+
+
+- to see the table in cli 
+
+	:: \d
+
+- to exit the postgres cli
+
+	:: \q

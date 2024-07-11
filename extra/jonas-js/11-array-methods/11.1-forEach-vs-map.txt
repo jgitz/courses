@@ -1,0 +1,16 @@
+- both foreach and map methods mutates any array/object SPECIFIED inside the CALLBACK FUNCTION
+
+- forEach always returns UNDEFINED as value
+
+    * map return a new array with the operation which it was said to be returned
+
+- looping performance: for > forEach method > map method 
+
+- forEach is used when you don't want to return anything after looping operation
+
+- map is used if you want to obtain a new array after looping operation
+
+- forEach is used where you don't want to transform an array elements
+
+    * map is used when you want to transform an array
+

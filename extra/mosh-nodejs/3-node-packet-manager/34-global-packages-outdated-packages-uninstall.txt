@@ -1,0 +1,20 @@
+- global packages: are packages that are not application specific and these packages can be accessed from anywhere from your device.
+
+  eg npm cli, ng cli for angular
+
+- command to list global packages
+
+  :: npm list -g
+
+
+- command to install a package globally
+
+  :: npm i -g <package-name>
+
+- command to see outdated global packages
+
+  :: npm -g outdated
+
+- command to uninstall a globall package
+
+  :: npm un -g <package name>

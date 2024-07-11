@@ -1,0 +1,3 @@
+- js is an INTREPRETED or JIT (Just In Time) compiled language 
+
+- both intrepretor and JIT compiler operations happens inside the JS ENGINE 

@@ -1,0 +1,66 @@
+- grid is used to make 2d layouts
+
+- grid cannot replace flexbox... flexbox is used to create 1d layout
+
+- grid us fr (fractional) unit for sizing its grid cells.... it sizes the width or height in fraction of parent element height or width
+
+- css eg
+
+  .container{
+    display: grid
+    grid-template-columns: <col 1 width in fr> <col2 width in fr>
+
+    grid -template-rows: <row 1 height in fr> <row 2 width in fr>
+    **** best practice is to not to define rows
+    
+    column-gap: gap b/w columns in px
+    row-gap: gap b/w rows in px
+  }
+
+  above ex short hand
+
+    .container{
+      display: grid
+
+      grid-template-columns: repeat(<number of columns, <width in fr> )
+    }
+
+
+- manual placing of a div inside a grid... eg
+
+  .item{
+    grid-column: 2/3 ** specifies start and end of column grid lines
+    grid-row: 1/2 ** specifies start and end of row grid lines
+  }
+
+
+  - to span a div across many grid lines
+
+    .div {
+      grid-column: 1/ span 4; 
+    }
+
+    - to span a div from start to end
+
+      .div {
+      grid-column: 1/ -1; 
+    }
+
+- if grid content is smaller than grid container.... we can justify content.... eg
+
+  .container{
+    justify-content: center/spaceb-between ** to align content horizontally
+
+    align-content: center/start/end... ** to align content vertically
+
+    align-items: center/stretch/end ** default stretch  ** vertical alignment
+  
+    justify-items: center/stretch/end.. ** default is stretch ** horizontal alignment
+
+
+  }
+
+  .item {
+    align-self: center
+    justify-self: center
+  } *** to select an item and apply alignment

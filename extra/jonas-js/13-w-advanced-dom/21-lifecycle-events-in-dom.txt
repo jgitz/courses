@@ -1,0 +1,9 @@
+1) domContentLoaded event: first event that occurs in dom when html is parsed and dom tree is made.
+
+    ** this event works only when html and js gets loaded and don't look for images and external resources like css to load
+
+    ** we can specify codes that makes actions that need to get happened only after dom tree gets ready
+
+2) load event: fired when all the resources including css files and images.... and ANY VARIABLE with API FETCH call are loaded
+
+3) beforeunload event: this event gets fired when we just click the exit button of the browser tab
