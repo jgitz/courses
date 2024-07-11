@@ -1,0 +1,167 @@
+<!-- 
+watch: https://www.youtube.com/watch?v=aohtUVqnw5c
+
+
+.... whenever an event occurs in dom.... it travells like a wave in the water hitting every elements inside the dom.....
+
+..... event's direction can be in two ways 
+
+  1) BUBBLING: here the event wave travels from inner dom element from which it originate to outer dom elements 
+
+  2) CAPTURING: here the event wave occurs at document level and travels inward to the target element in which the event is assigned 
+
+      ** we can use either bubble or capture phase for an event 
+
+      ** by default the CAPTURE mode is set FALSE and hence BUBBLING is the default mode 
+
+      ** we can change bubbling mode to capture mode by setting a THIRD BOOLEAN ARGUMENT inside the AddEventListener METHOD.... like this 
+
+          <>.addEventListener('<event type>', <listener_function>, TRUE)
+
+            ** here setting the THIRD ARGUMENT to TRUE enables CAPTURE MODE and DISABLES BUBBLING MODE 
+
+- <e>.target: points to the element from which the EVENT ORIGINATED 
+
+- <e>.currentTarget: points to the ENDING ELEMENT on which the bubbling/capturing event STOPS
+
+- <e>.stopPropagation: adding this to a listener function stops the BUBBLING/CAPTURING waves from the origin element... hence the event of the origin element only gets triggered 
+
+    ** but if MORE THAN ONE scame EVENT TYPE are attached to the origin element, they gets triggered.... TO AVOID THIS 
+
+        ** <e>.stopImmediatePropagation: adding this to a listener function stops BUBBLING/CAPTUING waves from origin element AS WELL AS stops any other event of SAME EVENT TYPE which is attached to the origin element from getting triggered 
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=d, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .border {
+      border: '2px solid yellow'
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: greenyellow;
+    }
+
+    .padding {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- bubbling test area start -->
+  <div class="red borde padding" id="bubble_outer">
+    <h4>This is outer div.... click to see bubble</h4>
+
+    <div class="green border" id="bubble_inner">
+      <h3>This is inner div.... click to see bubble</h3>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <!-- bubbling test area end -->
+
+  <!-- capturing test area start -->
+
+  <main class="red border padding" id="capture_outer">
+    <h4>This is outer div.... click to see capture</h4>
+    <section class="green border" id="capture_inner">
+      <h3>This is inner div.... click to see capture</h3>
+    </section>
+  </main>
+
+  <!-- capturing test area end -->
+
+  <script>
+    // selection
+
+      let bubbleInnerEl = document.querySelector('#bubble_inner');
+      let captureInnerEl = document.querySelector('#capture_inner');
+
+      let bubbleOuterEl = document.querySelector('#bubble_outer');
+      let captureOuterEl = document.querySelector('#capture_outer');
+
+
+
+    // listener functions 
+
+      function bubble_inner_listener(e) {
+        console.log("bubble inner")
+        
+        // to see the bubble starting element 
+
+        console.log(e.target)
+        
+       // to see the bubble ending element 
+
+        console.log(e.currentTarget)
+
+
+      };
+
+      function capture_inner_listener(e) {
+        console.log("capture inner")
+
+          // to see the capture starting element 
+
+          console.log(e.target);
+        
+        // to see the capture ending element 
+ 
+         console.log(e.currentTarget);
+
+      };
+
+      function bubble_outer_listener(e) {
+        console.log('bubble outer')
+          // to see the bubble starting element 
+
+          console.log(e.target);
+        
+        // to see the bubble ending element 
+ 
+         console.log(e.currentTarget);
+
+      };
+
+      function capture_outer_listener(e) {
+        console.log("capture outer")
+
+          // to see the capture starting element 
+
+          console.log(e.target);
+        
+        // to see the capture ending element 
+ 
+         console.log(e.currentTarget);
+
+      };
+
+    // assigning listeners to  inner elements
+
+      bubbleInnerEl.addEventListener('click', bubble_inner_listener); // ** by default it is bubbling mode so no need of setting 3rd argument 
+
+      captureInnerEl.addEventListener('click', capture_inner_listener, true); // ** capturing mode enabled using the THIRD ARGUMENT
+
+      bubbleOuterEl.addEventListener('click', bubble_outer_listener); // ** by default it is bubbling mode so no need of setting 3rd argument
+      
+      captureOuterEl.addEventListener('click', capture_outer_listener, true); // ** capturing mode enabled using the THIRD ARGUMENT
+  </script>
+
+</body>
+
+</html>

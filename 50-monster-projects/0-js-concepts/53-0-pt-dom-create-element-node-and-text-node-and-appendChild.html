@@ -1,0 +1,76 @@
+<!-- 
+  - to create an element node we use 
+
+      - document.createElement('<div or any tag>')
+
+  - to create a text node we use 
+
+      - document.createTextNode('<any text here>')
+
+**** merely creating element or text node won't get it displayed in the page.... we need to specify where to APPEND/INSERT it in the DOCUMENT 
+  
+  - to append the element as LAST CHILD do 
+
+    - document.<body>.appendChild('<element you want to append>')
+
+  - to insert an element BEFORE a subject element 
+
+    - document.<body>.insertBefore(<new element>, <subject element>)
+
+
+ -->
+
+ <!-- 
+    - create a div element 
+
+    - add background color yellow to the div 
+
+    - create a text node named 'text node using document.createTextNode() method'
+
+    - append the text node to the div 
+
+    - append the dive to the before the subject element H1 
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>subject element h1.... a div will be added before it </h1>
+
+    <script>
+        // selecting h1 
+
+            let h1El = document.querySelector('h1');
+
+        // creating a div element 
+
+            let divEl = document.createElement('div');
+
+        // adding yellow color background to div 
+
+            divEl.style.backgroundColor = 'yellow';
+
+        // creating a new text node with text 
+
+            let textNOde = document.createTextNode('text node created using document.createTextNode method');
+            
+        // attaching the text node to the div element 
+
+            divEl.appendChild(textNOde);
+
+        // placing the entire div before the starting of subject node h1 
+
+            document.body.insertBefore(divEl,h1El)
+
+    </script>
+    
+  </body>
+
+  </html>

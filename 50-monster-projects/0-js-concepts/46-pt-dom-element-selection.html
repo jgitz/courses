@@ -1,0 +1,70 @@
+<!-- 
+
+- practice 
+
+    - getElementById
+    - querySelector
+        - element 
+        - class
+        - id
+        - css selector
+
+- use the above to change background color of different element using style.backgroundColor
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h5 id ="getId">getElementById</h5>
+  
+  <h4 id = "getId2" >query selector id</h4>
+
+  <h4 class="_class">query selector class</h4>
+
+  <ul>
+    <li>css selector first chils</li>
+    <li>css selector nth child</li>
+    <li>css selector last child</li>
+  </ul>
+
+  <script>
+    console.log(document.getElementById("getId"));
+
+    console.log(document.querySelector("h4"));
+
+    console.log(document.querySelector('getId2'));
+
+    console.log(document.querySelector("._class"));
+
+    document.getElementById("getId").style.backgroundColor = "violet";
+
+    document.querySelector("h4").style.backgroundColour = "indigo";
+
+    document.querySelector("#getId2").style.backgroundColor = "blue";
+
+    document.querySelector("._class").style.backgroundColor = "green";
+
+    // css selectors
+
+    document.querySelector("li:first-child").style.backgroundColor= "yellow";
+
+    document.querySelector("li:last-child").style.backgroundColor = "orange";
+
+    document.querySelector("li:nth-child(2)").style.backgroundColor = "red";
+
+    // **** always wrap query selecor params in ""
+
+    // always wrap the assigned values after = in "" (here "violet", "indigo etc")
+
+  </script>
+  
+</body>
+</html>

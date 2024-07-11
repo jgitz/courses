@@ -1,0 +1,43 @@
+<!-- 
+
+  - to remove an element from dom use 
+
+      <>.remove()
+
+      ** the element only gets removed from the DOM's visible part and not from the script memory
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+    <h4>there was an h1 tag element below this and it was removed using  el.remove() method</span> </h4>
+
+    <h1>This tag will be removed from the browser</h1>
+
+    <script>
+      // selecting element to variable 
+
+        let h1El = document.querySelector('h1');
+
+      // removing the h1 element 
+
+        h1El.remove();
+
+          // h1 element will be removed in the browse and only h4 element will be shown
+
+          // ** h1El is not removed.... only the element gets removed from the dom and not from the script memory... we can still access h1El by 
+
+              console.log(h1El) // ** h1 tag is printed
+
+    </script>
+  
+ </body>
+ </html>

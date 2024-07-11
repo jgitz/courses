@@ -1,0 +1,58 @@
+<!-- 
+  - make 3 buttons
+  - each button should console log the count number on clicking it
+
+  - use query selector and onclick event
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn-1" type="button">#1</button>
+  <button class="btn-2" type="button">#2</button>
+  <button class="btn-3" type="button">#3</button>
+  
+  <script>
+      let var1, var2, var3;
+      var1 = var2 = var3 = 0;
+
+      function console_message() {
+        console.log(`button 1 count: ${var1}, button 2 count: ${var2}, button 3 count: ${var3}`)
+      }
+
+      function handle_button1() {
+        var1++;
+        console_message();
+      };
+      function handle_button2() {
+        var2++;
+        console_message();
+      };
+      function handle_button3() {
+        var3++;
+        console_message();
+      };
+
+      let allButtonNode = document.querySelectorAll("button"); // ** selects all the button tags and index it in a node starting from 0
+
+      // adding on click evert 
+
+      allButtonNode[0].onclick = handle_button1; // ** no need to invoke the funciton with bracket as onclick syntax don't need function invocation
+      allButtonNode[1].onclick = handle_button2;
+      allButtonNode[2].onclick = handle_button3;
+
+
+  </script>
+</body>
+</html>
+
+<!-- 
+
+  - run this on live server.... click the buttons and watch output on console window
+ -->
