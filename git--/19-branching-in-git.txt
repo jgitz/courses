@@ -1,0 +1,51 @@
+what is branching in git? : there are 2 main types of branches in git
+
+        1) master branch (only one master branch)
+        2) feature branch (we can make as many branches as we like)
+
+
+initially there is only a single main branch called MASTER BRANCH in your local git repo..... all the changes and updates and history is along the master branch....
+
+.... at some point we can make a diversion BRANCH from main branch to TEST SOME NEW FEATURE....or to FIX bugs... without making it affect our work.... this branch is called FEATURE BRANCH....
+
+.... we can test NEW CODES along the FEATURE BRANCH.... and if the code work is satisfactory.... we can MERGE it to the MASTER BRANCH....
+
+.... the add and commits done on each FEATURE BRANCH is only viewed if you toggle to that respective branch
+
+BRANCHING COMMANDS.....
+
+- to check the current branch : :: git branch ::
+
+- to make a new FEATURE BRANCH : :: git checkout -b <branch name with naming convention like < feature/ticket/bug>-<description> > ::
+
+- to toggle between branches : :: git checkout <branch name> ::
+
+- to see difference of changes of a file in two branch: first toggle to one branch.... from there execute the command :: git diff :: .... shows UNCHANGED codes in WHITE and ABSENT codes in RED....
+
+ /* - merge code to master branch: before merging... we need to push the feature branch commits to github.... 
+ 
+    so first we need to upstream push the new feature branch using command :: git push -u <repo alias eg origin> <feature branch name>..... goto github and you see a new button in your remote repo named COMPARE AND PULL REQUEST
+
+    PULL REQUEST: we've added new codes in feature branch.... so it is good that people can comment on our code for code review as well as add LINE COMMENTS on our code.... inoreder to do this.... we need to make PULL REQUEST IN GITHUB ACCOUNT..... goto github.... click on button named COMPARE AND PULL REQUEST..... now can write comment about the code change on your branch... then click CREATE PULL REQUEST button....
+
+    now you or anyone can comment on your commit as well as each line of your code.... make conversations using comment....
+
+    to merge the feature branch to master branch.... in github.... click the green button named MERGE PULL REQUEST.... click CONFIRM MERGE.....
+
+    .... even though we merged the feature branch to master branch in GITHUB.... local machine MASTER won't reflect the change.... to reflect the change we need LOCAL PULL REQUEST COMMAND... if already set upstream for the branch
+    :::: git pull :::: ELSE if no upstream was set.... use the command :::: git pull -u <repo alias eg origin> <master> :::: ...... now the MERGE CHANGE MADE in GITHUB is REFLECTED in local machine MASTER BRANCH....
+
+- deleting command for a feature branch : since we have added a feature and merged it with the master branch..... we don't need the feature branch.... so we delete the feature branch using command.... :: git branch -d <feature branch name>.....
+
+
+
+
+    
+
+
+
+
+
+
+
+

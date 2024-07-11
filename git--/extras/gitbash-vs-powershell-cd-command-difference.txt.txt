@@ -1,0 +1,9 @@
+.... cd command GITBASH and POWERSHELL has CHANGES in slash/backclash in the FILE/FOLDER PATH INPUT
+
+- powershell cd command (uses BACK SLASH \ )
+
+	:: cd C:\run-time-folder\courses\git\extras :: 
+
+- gitbash cd command (uses FORWARD SLASH)
+
+	:: cd /c/run-time-folder/courses

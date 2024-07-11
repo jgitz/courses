@@ -1,0 +1,23 @@
+we have to review every file codes before committing.... and unstage files if necessary
+
+- to view the changes in code on files in staging area.... we use DIFF command....
+
+    - :: git diff --staged
+
+        ** --- means old version
+
+        ** +++ means new version
+
+        ** @@ -1,3 +1,5 @@
+             
+             means on old version from line 1 3 line is displayed
+
+             in new version from line one 5 lines are displayed
+
+        ** green + lines : means added lines in new version
+
+        ** white lines : simply displays unchanged lines
+
+        ** --- /dev/null : means this file is a new file
+
+    ***** the comparison is between staged file state and the state of the same file in the last commit

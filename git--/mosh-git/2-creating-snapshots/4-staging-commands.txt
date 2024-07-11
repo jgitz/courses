@@ -1,0 +1,59 @@
+- to see status of tracking of files of project folder
+    - :: git status ::
+
+        **** untracked files in red
+
+
+- to add files to staging area
+
+    - :: git add <file1> <file2>
+
+        - pattern
+            - to add only certain extension files
+            
+                - :: git add *.txt
+            
+            - to add all files recursively (subfolders and files)
+                - :: git add .
+
+                    **** caution, we won't need all files and folders added to repository eg : large binary files, large log files
+
+                    **** yellow color in git bash means there are files in staging area ready to be committed 
+
+- to see files currently inside the staging area
+
+    - :: git ls-files
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- UNSTAGE commands to REMOVE FILES/FOLDERS from the STAGING AREA (**** NO FILE/FOLDER WILL BE REMOVED from the WORKING DIRECTORY)
+
+    - to unstage a SPECIFIC FILE 
+
+        :: git reset HEAD <file path/name> ::
+
+    - to unstage ALL the STAGED FILES from ONLY THE STAGING AREA
+
+        :: git reset HEAD -- . ::
+
+            ****  DON'T MISS -- AND DOT (.) at the end else WON'T WORK 
+
+    - ANOTHER SAFE COMMAND 
+
+        :: git rm --cached -r <file/folder> ::
+
+            ***** :: git rm -r <file/folder>:: will REMOVE file from BOTH STAGING AREA and WORKING DIRECTORY 
+
+
+
+    ***** the command is RESET.... AND NOT RESTORE.... RESTORE WILL PERMANENTLY REMOVE CHANGES FROM STAGING AS WELL AS FROM THE WORKING DIRECTORY  
+
+
+***** TO DISCARD changes in BOTH STAGING AREA and WORKING DIRECTORY.... PERMANENTLY 
+
+    :: git restore <file name>
+
+
+
+

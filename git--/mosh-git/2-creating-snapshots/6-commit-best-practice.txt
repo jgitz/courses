@@ -1,0 +1,13 @@
+commit best practices
+
+    - make similar logical tasks in one commit.
+
+    - don't mix up 2 different tasks inside a single commit.
+
+    - use present tense for commit messages 
+
+    - CAPITALIZE FIRST letter of SUBJECT LINE and BODY 
+
+    - DON'T use FULL STOP at the END of MESSAGES 
+
+    - Always SEPARATE SUBJECT and BODY with a BLANK LINE in between them 

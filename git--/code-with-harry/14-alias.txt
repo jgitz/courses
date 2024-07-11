@@ -1,0 +1,6 @@
+alias : means adding a short command instead of bigg command
+
+to set an alias for a big command
+    - git config --global alias.<alias> <original command (command section that comes after git)>
+
+    **** if command with options.... enclose the command plus options inside double ""

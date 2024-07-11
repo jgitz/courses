@@ -1,0 +1,5 @@
+why git cli over git gui
+    - lightweight
+    - gui has limitations
+    - gui not available everywhere
+        - eg if you connect to a remote server. They won't give you permission to install gui tool

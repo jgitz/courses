@@ -1,0 +1,25 @@
+- to commit files to git repo
+    - :: git commit -m "< SUBJECT message here>" -m "" -m " BODY description here"
+
+        or
+
+        :: git commit :: vscode txt file pops up
+            - first line for SUBJECT
+
+            - 3rd line for BODY (description)
+
+        ** SUBJECT SHOULD BE SHORT 
+
+        ** DESCRIPTIVE DETAILS of the commit can be written in  BODY 
+
+        ** there are 3 -m in the command:
+        
+         - FIRST M is to write SHORT SUBJECT MESSAGE
+
+         - SECOND M is to make a BLANK LINE to SEPARATE SUBJECT and BODY 
+
+         - THIRD M is to write DESCRIPTIVE BODY MESSAGE 
+
+- to MODIFY LAST COMMIT MESSAGE: 
+
+:: git commit --amend -m "<updated commit message>"

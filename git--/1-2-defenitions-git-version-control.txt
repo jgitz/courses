@@ -1,0 +1,13 @@
+what is git? : free and opensource version control system.
+
+what is version control? : The management of changes in documents, programs, websites and other collections of information....
+
+- ..it helps to  track our code changes
+
+- .. it enables to save our updated code as new versions
+
+- .. enables us to goto a previous version
+
+
+
+

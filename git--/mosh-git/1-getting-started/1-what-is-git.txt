@@ -1,0 +1,33 @@
+what is git?
+    - git is a version control sysetm.
+
+    - it stores all the changes made in our files in a database called repository.
+
+    - we can see all our history of file changes and revert back to older state if needed.
+
+what is version control system : it is a system where we can track update history of our files and enables many developers to work on the same projece
+
+what are types of version control systems
+    - there are two types 1) centralised vcs 2) distributed vcs
+
+        1) centralised vcs : all developers connect to a central server.
+
+        eg: subversion, tfs (team foundation server).
+            - demerit: if central server goes offline, whole team cannot collaborate anymore.
+
+
+        2) distributed vcs : here every team members has copy of the  project files locally so they can synchronise by sharing files between them
+
+        eg: git, mercurial
+
+Advantages of git
+    - free
+    - rollback to previous versions
+    - open source
+    - scalable 
+    - fast
+    - cheap branching and merging         
+
+
+
+         

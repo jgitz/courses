@@ -1,0 +1,12 @@
+ --> UNTRACKED : when git is initialized inside a working folder, the files of the folders are in untracked state.
+
+ --> UNMODIFIED : when you add the files of the working folder into the staging area, the files are in unmodified state.
+    **** now TRACKING is enabled.
+
+ --> MODIFIED : when you modify contents of the files which are inside the staging area, the modified files are in modified state.
+
+ --> STAGED : if we once more use add command over the modified files, the files get into STAGED state.
+
+ --> UNMODIFIED : if we commit the staged files, the files goes to UNMODIFIED state.
+
+ --> UNTRACKED : if we now remove the file, the file goes to UNTRACKED state.

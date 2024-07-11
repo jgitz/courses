@@ -1,0 +1,17 @@
+what is cloning a file? : if you have made a file in github account online.... and you want that file/repo inside your local machine we use cloning using CLONE command....
+
+*-practice: clone a github repository into your local machine :::: signup to github account.... goto repository....... click green button named code.... there are various clone code https,ssh,github cli.... copy https code.... goto vscode.... open the folder where you want to clone in vs code integrated terminal.... type the code :::: git clone <copied https clone code> :::: now inside your local machine folder.... the github repository folder is cloned along with its file.... :::: the git repository folder in local machine has a .git hidden file to add git features to the file.... if you open the local cloned repo inside the git bash cli.... there is a colourful text <main> which indicate this folder has git functionalities....
+
+- git status command : :::: git status :::: command inside local repo folder shows the untracked files that has changes or updations..... red files indicate the repo has untracked files inside the repo..... we need to make all files tracked by git to commit it from your local repository to the github reposiory..... to make all the untracked file tracked we use git ADD command.....
+
+- git add command : :::: git add . :::: git add <specific file> :::: if you find untracked files after using.... git status command.... we use the add command to make it tracked.... then we use COMMIT command to save the changes LOCALLY....
+
+- git commit command : :::: git commit -m <write title> -m <write description> :::: this makes the saving of file changes only in LOCAL MACHINE.....(( sometimes you need to again add git hub gmail using command :::: git config --global user.email "you@example.com"::::)) to save it into our REMOTE repository.... we need PUSH COMMAND.... but to use push command.... we need to link your LOCAL MACHINE to your GITHUB account using SSH ( can also use http method.... but ssh requires no password each time you push files )
+
+- how to link LOCAL MACHINE to GITHUB account using SSH? : refer https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent ...... or ..... open GIT BASH terminal.... to generate a new ssh key type :::: ssh-keygen -t rsa -b 4096 -C "<github account email id>" ::::.... it'll ask location to save key..... give optional passphrase....... open public key.... copy it.... open github account.... click on settings under profile picture.... click on ssh gpg keys.... click new ssh key.... now we need to CONFIGURE local machine for ssh.... for that first start ssh agent in GIT BASH CLI using command :::: eval "$(ssh-agent -s)" ::::.... now add your ssh PRIVATE KEY to the ssh agent using command ::::: ssh-add <path of private key>
+
+- git push command : :::: git push origin main :::: now got github account to see the changes added
+
+
+
+******* this is procedure for transfering/cloning a remote repo FROM github TO local machine.... the procedure and codes for PUSHING a local repo FROM local machine INTO github is DIFFERENT....

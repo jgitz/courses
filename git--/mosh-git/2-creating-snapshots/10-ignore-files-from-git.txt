@@ -1,0 +1,49 @@
+certain log files and binary files should not be added to git, as it will increase the size of our files in git repo..... so we should ignore these file
+
+- to prevent a folder/files from tracking
+    - goto the folder where you want to ignore certain files
+
+        - create a new file named .gitignore
+
+            - you can use ANY of the following TWO METHODS to create .gitignore file 
+
+                1) use VSCODE 
+
+                2) use POWERSHELL 
+
+                    - run POWERSHELL (NOT CMD) as ADMINISTRATOR 
+
+                    - to create file named .gitIgnore... use the command 
+
+                        :: New-Item -Path <file path> -ItemType File :: 
+
+                    - to add files/folders to ignore by git
+
+                        - eg node_modules folder in a project 
+
+                            :: echno /node_modules/ > .gitignore
+
+        - open the .gitignore file and add files and folders which you want to ignore in the following format
+
+            - for folders: <folder name>/
+            - for files: <file name with extension>
+            - for pattern: eg: 
+                
+                - *.txt: to select ALL TEXT FILES 
+                - **/node_modules/: to RECURSIVELY SELECT all node_modules FOLDER in the CHILDREN FOLDERS of the PARENT REPOSITORY 
+
+            - save the file
+
+    ***** .gitignore won't work for a file if the file was earlied COMMITTED.... so we have to remove it exclusively from the staging area and then commit one more time.... so to make .gitignore work for a folder/file that was earlier committed..... do as follows....
+        
+        - remove the file/ folder from staging area
+            - :: git rm --cached -r <folder/> 
+                    ** / after the folder name is important
+
+                    ** to remove a file from staging area EXCLUDE -r option
+
+            - :: git commit -m "message" 
+
+            **** now the file/folder is ignored if it is added inside .gitignore file
+
+        

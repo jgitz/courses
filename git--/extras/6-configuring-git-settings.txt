@@ -1,0 +1,79 @@
+git settings can be applied to 3 different levels
+    1) SYSTEM LEVEL : settings get applied to all users of the device
+
+    2) GLOBAL LEVEL : settings get applied to all repositories of the current user
+
+    3) LOCAL LEVEL : settings get applied only to the current repository
+
+to open vscode from git bash
+    - open the folder in git bash
+
+    - type command 
+        :: code :: 
+
+    - now vscode opens
+
+
+git configuring
+
+    - to make a FOLDER into a GIT REPOSITORY by initializing git: 
+
+        - open terminal and cd into the folder 
+
+        - use command 
+
+            :: git init :: 
+
+            ** now a .git HIDDEN FOLDER will appear when the command is a success 
+
+    - to set name GLOBALLY (i.e to all future repos made in the device)
+        - :: git config --global user.name "<name>" ::
+
+    - to set email GLOBALLY ((i.e to all future repos made in the device))
+        - :: git config --global user.email <email id> :: 
+
+        **** no double "" for email id
+
+    - to set vscode as default editor... goto git bash and type
+        - :: git config --global core.editor "code --wait" ::
+        
+        - to open the vscode global settings text file
+            - :: git config --global -e ::
+
+        - to handle end of line....
+            - for windows 
+                :: git config --global core.autocrlf true ::
+
+            - for mac/ linux
+                :: git config --global core.autocrlf input ::
+
+** extra 
+
+    - to add a specific username and email to a repository.... such that that username and email will only be used in that repository... use 
+
+        :: git config --local user.name "<user name>"
+
+        :: git config --local user.email "<email>"
+
+        ** shorthand 
+
+            :: git config user.name "<user name>"
+
+            :: git config user.email "<email>"
+
+
+    - to view current user and user email
+
+        :: git config --get user.name 
+
+        :: git config -- get user.email
+                    
+
+    ***** if we encounter error saying "not git repository" when we try to add USERNAME and USER EMAIL LOCALLY even after INITIALIZING git in the folder.... use the below command 
+
+        :: git config --global --add safe.directory C:/run-tiPS C:\run-time-folder\works\web-works\fms>
+
+
+
+    
+

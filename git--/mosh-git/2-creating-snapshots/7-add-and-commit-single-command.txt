@@ -1,0 +1,2 @@
+- to add and commit in a single command
+    - :: git commit -am "<message>"

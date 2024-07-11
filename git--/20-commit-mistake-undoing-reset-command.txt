@@ -1,0 +1,42 @@
+ sometimes we do add and do a single commit or do many commits..... so if we want to undo ADD or COMMITS.... we use git RESET command....
+
+
+1) to undo an ADD command: use command
+    :: git reset ::
+    or
+    :: git reset <file name> ::
+
+2) to undo last commit: use command
+
+    :: git reset HEAD~1 :: 
+    **** HEAD is in all uppercase
+
+3)  to see LOG of all commits: use command
+
+    :: git log ::
+
+    **** the latest commit is on top of the screen
+
+
+    **** there is a hash code for each commit.... it is the identity of corresponding commits....
+
+
+4) to undo a set of commits:
+
+    copy the hash code (from commit log)  of the commit from which the rest all commits have to be undone.... then type command
+
+        :: git reset <hash code of the commit>
+
+        **** only the pasted commit remains.... rest all commits after the pasted commit is DELETED from the add i.e the changes remains but it is not saved
+
+5) to hard delete the commit codes: 
+
+    :: git reset --hard <hash code of the commit> 
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+push : put codes from local git to github
+
+pull : put codes from remote github to local git
+
+- git remote add <remote repo alias eg origin> <github repo url>
+
+- to view the connected remote repo
+    - :: git remote :: or
+    or
+
+    - :: git remote -v
+
+- to push code from local git to github
+
+    - set http permission or ssh
+
+    - :: git push <alias :eg origin> <branch in github : master>
+
+

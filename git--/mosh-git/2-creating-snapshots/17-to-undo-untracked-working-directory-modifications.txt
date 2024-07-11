@@ -1,0 +1,11 @@
+sometimes we need to remove modifications made to a file which is not yet added to the staging area.... i.e to discard all local changes.... do
+
+    - :: git restore <file/pattern/ . >
+
+        ** but git won't remove untracked files to do that if any
+
+            - :: git clean -fd
+
+
+
+

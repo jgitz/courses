@@ -1,0 +1,13 @@
+- to rename remote repository url aliases 
+
+	- check the current remote repo url aliases 
+
+		:: git remote -v 
+
+
+	- to rename the old alias name with new name
+
+		:: git remote rename <old alias name> <new alias name>
+
+
+		***** if the below ERROR OCCURS.... run GIT BASH as ADMIN or GIVE APPROPRIATE 				PERMISSIONS TO the repo

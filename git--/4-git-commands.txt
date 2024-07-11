@@ -1,0 +1,9 @@
+clone command : to bring a repository FROM GITHUB to LOCAL MACHINE.
+
+add command : to ENABLE tracking of file changes in git.... but WON'T save changes.
+
+commit : to save the changes made to the files into git.
+
+push :  to upload the git commits to a REMOTE REPOSITORY like GITHUB, BIT BUCKET, GITLAB etc.
+
+pull command : if you make change to codes inside GITHUB... and want to download the file changes to your local machine.... we use pull command

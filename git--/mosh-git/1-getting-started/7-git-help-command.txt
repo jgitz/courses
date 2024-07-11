@@ -1,0 +1,7 @@
+command to check command options
+
+    - for detailed help
+        - :: git <command> --help ::
+    
+    - for brief help
+        - :: git <command> -h

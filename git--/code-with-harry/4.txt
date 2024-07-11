@@ -1,0 +1,5 @@
+default branch of local git is master branch
+
+to add all files to staging area :: git add --a
+
+same as :: git add .

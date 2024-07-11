@@ -1,0 +1,13 @@
+to initialize git in a folder 
+    - open folder in terminal and type
+        - :: git init ::
+
+        ***** now a hidden git folder is created and don't touch it.... you can see it using command 
+            - :: ls -a ::
+
+to remove the folder from git repo.... remove the .git folder folder from the work folder.
+    - :: rm -rf .git ::
+
+    
+
+        

@@ -1,0 +1,7 @@
+- ?? if you modified the file to be deleted and added it already.... to delete the file.... you need to force remove the file using the command
+
+		:: git rm -f <file name> :: 
+
+- ?? to ONLY delete the file from the staging area and NOT from the WORKING TREE.... use the command 
+
+		:: git rm --cached <file name> :: 

@@ -1,0 +1,24 @@
+- we can sign up to git hub after creating an account inside it.
+
+*practice- after signing up to your account we can create a REMOTE repository inside it. CREATE one named GIT YOUTUBE.... give a description to it.... keep it public.... keep all other settings as it is....
+
+
+- there are two ways to add a file inside github remote repository... first by creating a file in your local machine and pushing it to git hub.... second directly create a file inside your online git repository...
+
+- what is an .md file? : it is known as a markdown file... a mark down file can be edited like a text file.... any file can be made to an md file by adding a .md at the end....
+
+*practice- create an md file named readme.md inside your github remote repository.... :::: sign up to github.... goto repository..... click create new file.... give file name <readme.md>... write some text..... before you press commit.... there are two spaces to give TITLE and a DETAILED DESCRIPTION.... these two spaces serve to give details of your updation of file.... press commit new file.... now file is made..... goto file and add a new line to that file..... give a title and description.... press commit..... click on history/ clock button to see the history and previous version.... green highlited lines shows newly added lines.... and red for deleted lines....
+
+
+- installing git.... install git to your pc from internet (always check option git bash to be installed)..... check if it is installed using command inside terminal....
+    git --version
+
+- install vs code code editor inside your local machine....
+
+- inside vs code there is an integrated TERMINAL........ to open the integrated terminal in vscode.... either right click on file inside vs code and select integrated terminal option.... or click ctl + j
+
+
+
+
+
+

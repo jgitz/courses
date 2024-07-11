@@ -1,0 +1,1 @@
+ - :: git commit -am "<message>" :: only commits already existing tracked file into commit and new UNTRACKED files won't be added into the commit through this method

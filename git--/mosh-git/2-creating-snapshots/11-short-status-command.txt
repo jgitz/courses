@@ -1,0 +1,14 @@
+to get a brief status command output
+
+    - :: git status -s
+
+        ** red M : modified not staged
+
+        ** red ?? : new file untracked
+
+        ** green M : staged all modifications
+
+        ** green M and red M : additional modifications to file in staging area is not added
+
+        ** green A : new file added to staging area
+

@@ -1,0 +1,3 @@
+- :: git diff :: command compares the working directory file with file version in staging area. 
+
+- :: git diff --staged :: command compares file version in staged area with old version of file in previous commit.

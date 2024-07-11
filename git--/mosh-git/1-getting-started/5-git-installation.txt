@@ -1,0 +1,4 @@
+- install git from site
+
+- command to check git version in your system
+    - :: git --version ::

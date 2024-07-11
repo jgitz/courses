@@ -1,0 +1,15 @@
+compare the workflow between github and local git?
+
+- in github account... the work flow is...
+ ----> make repo on github 
+ ----> make file, write codes
+ ----> commit changes using commit button with title and description 
+ ----> make a PULL REQUEST if you are NOT the owner of the github account to make changes
+
+- in local git.... the workflow is
+  ----> goto local repo folder
+  ----> initiate git inside the folder using command :: git init ::
+  ----> add files and codes in repo
+  ----> use status, add and commit commands
+  ----> use push command to push changes to remote repo
+  ----> use git pull request if you don't own the github account to which you are pushing the local repo

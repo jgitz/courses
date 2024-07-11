@@ -1,0 +1,31 @@
+to compare the file states using visual diff tools in vscode do the following in git terminal
+
+    - :: git config --global diff.tool vscode
+
+    - :: git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+
+    - :: git config --global -e
+
+        - in the popped up text file goto cmd = line and add
+
+            - $LOCAL $REMOTE **** if its not there
+
+    **** now visual diff tool is configured for vscode
+
+to use visual diff tool.... inside git terminal
+
+    - to see working directory state changes
+
+        - :: git difftool
+
+        - type y
+
+        - old and new modifications of the file are shown in vscode 
+
+    - to see changes in files in staging area
+
+        - :: git difftool -- staged
+
+        - type y
+
+        - old and new modifications of the file are shown in vscode  

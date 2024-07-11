@@ -1,0 +1,7 @@
+to sign in with another github account.... 
+
+-windows search windows credentials
+
+-under windows credentials... remove github
+
+- now again try push with upstream command :: git push -u <alias> <branch eg master>

@@ -1,0 +1,68 @@
+- update when cloning a remote repo using https url as well as pushing to a new repo
+
+	- now we can't use password for authentication.... instead set up a token inside github and store and use the token to replace the password when prompted for authentication password....
+
+	- steps to set up token 
+
+		- goto github account.... press on profile picture.... press on settings.... press on developer settings.....press on personal access tokens.... select classic.....write anything as note.... set expiry days for token.... select all the check boxes..... press generate..... store the token safely in local computer/EMAIL inside a text file..... use this token instead for password for authentication on bash cli.....
+
+			
+
+			****** ALWAYS STORE THE GENERATED TOKEN INSIDE YOUR COMPUTER INSIDE A TEXT FILE/or in EMAIL ..BECAUSE IT WON'T BE GENERATED AGAIN
+
+			****** for more details visit: https://gitprotect.io/blog/how-to-clone-using-https-in-git/
+
+- FOLDERS won't be listed in ::git status :: command.... only files will be shown
+
+- to see all remote repos with their aliases 
+
+	:: git remote -v ::
+
+- to push all the local repo branch to the remote repo use 
+
+	:: git push -all :: 
+
+- to fetch only the changes from the remote repo to your local repo use commands
+
+	:: git fetch 
+	:: git merge FETCH_HEAD
+
+	***** git PULL command will don the above 2 commands in one single step using command 
+
+			:: git pull <remote repo alias eg origin> <branch... eg master>
+
+- to create a new branch and switch to the new branch.... use the command 
+
+	:: git checkout -b <new branch neame>
+
+		** this is a shorthand for 2 command 
+
+			:: git branch <new branch name>
+			:: git checkout <new branch name>
+
+- alwaays switch to the older branch and then use the merge command 
+
+	:: git checkout <old branch>
+	:: git merge <new branch>
+
+- to see the current branch use 
+
+	:: git branch
+
+	** not really needed as current branch is already displayed in the cli
+
+- to see list of all the branches use
+
+	:: git branch -v
+
+- to list all the merged branches ??
+
+	:: git branch --merged
+
+- to list all the not merged branches
+
+	:: git branch --no-merged
+
+- to rename current branch 
+
+	:: git branch -M <new name>

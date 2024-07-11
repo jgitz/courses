@@ -1,0 +1,26 @@
++++++++ procedure to push a local repo into git hub ++++++
+
+*- practice
+
+- goto your local repo which you want to add in git.... open the local repo folder in terminal....
+
+- now this local repo has no git in it.... to initiate git inside the local repo..... open repo in terminal.... use command :::: git init ::::
+
+- create any file say readme.md in local repo
+
+- use :: git status :: to check untracked file
+
+- use :: git add . :: to track untracked files
+
+- use :: git commit -m "<title message>" -m <description message> :: to save changes locally
+
+- before pushing the local repo to github.... you need to link local repo to github repo....to link your local repo to github...... goto your github account... either create a new repository (optional you can use existing repository as well).... copy the github repo url... goto local repo.... open terminal type..... :: git remote add <alias name for repo say origin> <copied github repo url path> ::
+
+- to see all the remote repository alias names and github repo urls that you are connected to.... use command.... :: git remote -v ::::
+
+- now to push the local repo to the github repo use this ONE TIME UP STREAM COMMAND.... :: git push -u <alias name say origin> master.... now you can see local repo inside the github.... 
+
+***** after using onetime upstream command.... to push any updates made in this repo..... we can use simple command.... :: git push ::
+
+.... make a new file..... use add and commit commands.... now use simple command :: git push :: .... now you can see your new file pushed into github repo with a simple command....
+ 

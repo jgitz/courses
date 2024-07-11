@@ -1,0 +1,13 @@
+course Terms and command
+
+directory = folder
+
+terminal or command line = CLI or interface for text commands
+
+cd = cd command to change directory
+
+code editor = vs code
+
+repository = folder/place where your project files are saved
+
+github - is a WEBSITE to HOST all your project repositories. i.e it is a REMOTE REPOSITORY.
