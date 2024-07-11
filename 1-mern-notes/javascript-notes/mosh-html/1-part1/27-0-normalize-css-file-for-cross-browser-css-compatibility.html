@@ -1,0 +1,55 @@
+<!-- 
+  .... different browsers renders css styles differently and hence there is a need for standardizing css styles.... we implement standardizing using codes from a project named normalize.css 
+
+  - steps to implement standardization of css 
+
+    - goto website: https://necolas.github.io/normalize.css/
+
+      - click download
+
+      - copy all the css codes from the new window 
+
+      - inside your project folder 
+
+          - create a file named normalize.css
+
+          - paste the copied css codes 
+
+          - goto your html file...
+
+              - inside head tag
+
+                  - add link tag to link normalize.css
+
+                  - then add link tag to link you external css file 
+
+                  ** it is important to add link tag for normalize.css BEFORE the link tag of you external css file
+
+** To check if the procedure is successful.... any paragraph tag content should touch the left side of the view port WITHOUT ANY MARGIN
+
+    -
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- linking normalise.css -->
+
+  <link rel="stylesheet" href="./27-1-p-normalise.css">
+
+  <!-- linking your external.css file -->
+
+  <link rel="stylesheet" href="./27-2-p-external-css.css">
+ </head>
+ <body>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam soluta, dolorum earum natus minus ab omnis? Reprehenderit, molestias dolorum.</p>
+  
+ </body>
+ </html>
+

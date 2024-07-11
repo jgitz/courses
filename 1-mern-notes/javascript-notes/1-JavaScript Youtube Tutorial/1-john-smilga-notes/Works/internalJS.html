@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>never</b>use inline for giving script. Problem with inline is that, 
+        you have to cha*nge each line tag if we want to change properties of the script. so we use <b>inline or external scripts</b>.</p>>
+
+        <p>Here we make an internal script to manage 7 buttons i.e the <b>script tag</b> is at the end of this html body</p>   
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="class">button name</button>
+        <button class="cla"></button>
+        <button class="cla"></button>
+        <button class="cla"></button>
+        <button class="cla"></button>
+        <button class="cla"></button>
+        <button class="cla"></button><button class="cla"></button><button class="cla"></button>
+
+        <script style="text-align: left;">
+            document.querySelectorAll('.class').forEach((item) => {item.addEventListener('click', () => {alert('this is awesome')})})
+            // document.write('hello world')
+            // alert('hello world')
+            // console.log('hello world')
+            
+            
+
+
+
+        </script>
+
+        
+    </body>
+
+</html>

@@ -1,0 +1,3 @@
+..... to get various screen sizes in browser console 
+
+link: https://dmitripavlutin.com/screen-window-page-sizes/

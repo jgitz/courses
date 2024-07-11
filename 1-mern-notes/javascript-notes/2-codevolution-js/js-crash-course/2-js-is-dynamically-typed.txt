@@ -1,0 +1,3 @@
+- js is a dynamically typed language
+
+- dynamically typed means we don't have to declare the type of the variable at the time of declaration.

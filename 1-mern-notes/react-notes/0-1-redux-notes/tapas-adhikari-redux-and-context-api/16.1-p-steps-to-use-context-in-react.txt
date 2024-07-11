@@ -1,0 +1,62 @@
+..... steps to create and use context in react components....
+
+- STEP 1: create a SEPARATE context file of filename format <Component>Context.js (** starting letter of file is UPPERCASE)
+
+    - inside the context file.... add the following lines 
+
+        - import React from 'react'
+
+        - export const <Context_variable> = React.createContest(<initial value>);
+
+            ** starting letter of Context_variable is UPPERCASE
+
+            ** initial value is OPTIONAL... any datatype can be added as initial value 
+
+- STEP 2: using of context_variable and context provider html tag
+
+    - goto APP.js or the PARENT COMPONENT of the child component where you want to give the context 
+
+        - import the Context_variable from the context.js
+
+        - create a const DATA VARIABLE and store the DATA you want to pass to the components as context..... eg 
+
+            const data_variable = <data of any form>
+
+        - wrap the child/target component you want to pass the context with CONTEXT PROVIDER tag with VALUE ATTRIBUTE pointing to the DATA VARIABLE like this 
+
+            <Context_variable.provider value= {data_variable}>
+
+              <Target_component/>
+            
+            </Context_variable.provider>
+
+                ** now the target component .js file will have access to the data of the data_variable.... and it should be EXTRACTED in the target component using useContext hook to use it 
+
+- STEP 3: using of useContext HOOK to extract data and use it inside TARGET COMPONENT
+
+    - goto the .js file of the TARGET COMPONENT.... and add the following codes 
+
+
+        - import Context_variable from the context .js file 
+
+        - import useContext hook from react using line 
+
+              import {useContext} from 'react'
+
+                ** useContext hook is used to extract data from the context 
+
+        - use another variable to hold the EXTRACTED DATA from the hook like this 
+
+            const <extracted_data_variable> = useContext(<Context_variable>)
+
+
+        - now you can use the data inside the target component using the <extracted_data_variable>
+
+
+        ** you can use the above 4 steps to provide and use data inside CHILD COMPONENT .js files  of the TARGET COMPONENT
+
+
+        
+
+
+

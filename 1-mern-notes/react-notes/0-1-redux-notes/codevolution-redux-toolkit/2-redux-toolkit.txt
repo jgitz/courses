@@ -1,0 +1,48 @@
+>17>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- old way of setting up redux is now changed with introduction of redux toolkit
+
+- problems of old redux
+
+	- too much boilerplate code suchas 
+		
+		- action
+		- action object
+		- action creator
+		- switch statement in reduxer
+
+	- many packages are needed to be installed such as thunk and immer
+
+- REDUX toolkit: abstracts much of redux components
+
+>18>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- steps and folder structure for redux toolkit
+
+	- command: to install redux toolkit
+
+		:: npm i @reduxjs/toolkit
+
+	- create folder named app 
+
+	- goto folder app
+
+		- create file named store.js... to store store codes
+
+	- create another folder named features
+
+	- goto features folder
+
+		- make new folders for each features (eg make 2 folders named
+		  cake and icecreams)
+
+		- reducers and actions of each feature is stored in their corr
+		  esponding feature folder.
+
+>19>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+	

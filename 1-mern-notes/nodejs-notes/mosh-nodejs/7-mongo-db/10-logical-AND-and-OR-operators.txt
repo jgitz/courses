@@ -1,0 +1,21 @@
+- mongoose AND method syntax 
+
+    .find().and([{
+
+      <field1>: <value1>,
+      <field2>: <value2>
+
+    }])
+
+        ** operands are written inside a SINGLE OBJECT which is WRAPPED in an ARRAY 
+
+- mongoose OR method syntax 
+
+
+    .find().or([
+      {<field1>: <value1>},
+      {<field2>: <value2>}
+    ])
+
+        ** EACH OPERAND is written inside SEPARATE OBJECTS which is then WRAPPED in an RRAY
+

@@ -1,0 +1,5 @@
+- git lense for vs code
+- git kraken (gui for windows/linux)
+
+- posh-git to get colorful gitbash cli in windows
+    for mac install zsh

@@ -1,0 +1,33 @@
+commit e5e1c8f9b72b8dadc2c8805a0b00929df5dc7334 (HEAD -> master)
+Author: jerald <pingjerald@gmail.com>
+Date:   Thu Apr 6 21:54:26 2023 +0530
+
+    style list component and icon component with media queries
+
+commit 5ca68cb444cb800c053320ee29d55034fb099533
+Author: meera <meeraktom@gmail.com>
+Date:   Thu Apr 6 15:06:08 2023 +0530
+
+    badge component style and media queries
+
+commit 080b55a0b5fcf37ce15fd2d39edd2997809526a9
+Author: meera <meeraktom@gmail.com>
+Date:   Thu Apr 6 14:27:18 2023 +0530
+
+    link component design with media queries
+
+commit 1354cfa66b878120e538f2be6ee8c4a540b60647
+Author: meera <meeraktom@gmail.com>
+Date:   Thu Apr 6 13:39:18 2023 +0530
+
+    finish typography styling
+
+commit 42d913af39dca8740bd5f85e9c1e72f6b5a565ed
+Author: meera <meeraktom@gmail.com>
+Date:   Sat Apr 1 12:34:43 2023 +0530
+
+    Define the color palette
+
+commit f8177b8c3adb5e39077f8fe860897ae96d375e2c
+Author: meera <meeraktom@gmail.com>
+Date:   Mon Mar 20 04:25:08 2023 +0530

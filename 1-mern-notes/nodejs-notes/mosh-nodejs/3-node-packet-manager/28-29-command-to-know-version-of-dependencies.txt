@@ -1,0 +1,26 @@
+to know the version of all installed dependencies of a project
+
+- goto project folder.... open terminal... type
+
+    :: npm list
+
+      ** only versions of main dependencies are showh
+
+      **** to see versions of all dependencies and subdependencies.... type
+       
+        :: npm list --depth=1
+
+
+- to know the version of a package..
+
+  :: npm view <package name eg: mongoose>
+
+- to know the verion of subdependencies of a package
+
+  :: npm view <package name> dependencies
+
+- to see all the version of a package from the beginning
+
+  :: npm view <package name> versions
+
+    **** s in versions is important

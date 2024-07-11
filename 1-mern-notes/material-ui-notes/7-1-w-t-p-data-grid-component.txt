@@ -1,0 +1,1 @@
+watch.... data grid component can be used to display various data in table.... we can use features like fiter, sort etc on the listed data

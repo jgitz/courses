@@ -1,0 +1,5 @@
+- we can chain as many array methods as we want
+
+** too much use of chaining makes PERFORMANCE ISSUES
+
+** it is best practice NOT TO USE array methods that MUTATES the original array... method like sort,splice, reverse etc

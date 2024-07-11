@@ -1,0 +1,120 @@
+.... we run our app in different environments like development, production etc....
+
+.... in each environments, we tend to use different databases or mail server and different app name.....
+
+..... so we've to set configuration detail files for the server app for each environments....
+
+..... for this we use npm package named config....
+
+..... steps to set configuration files 
+
+- goto project folder
+
+    - :: npm i config
+
+- goto project folder
+
+    - make a new folder named config
+
+    
+- goto projectFolder/config folder
+
+  - to add default config files
+
+    - make new file named default.json
+
+    - goto default.json to define default config like this
+
+      {
+        "name": "express app"
+
+      }
+
+  - to add development config file
+
+    - make new file named development.json
+
+    - goto development.json to define config for development environment like this 
+
+      {
+        "name": "development express app",
+        "mail"": {
+          "host": "dev-mail-server-address"
+        }
+
+      }
+
+        ** the name property overwrites the default name
+
+        ** the value of host key should be set as an environment variable ??
+
+
+  - to add production config file
+
+    - make file named production.json
+
+    - open production.json file to add production configuration settings like this
+
+      {
+        "name": "production express app",
+        "mail"": {
+          "host": "prod-mail-server-address"
+        }
+
+      }
+
+- now that we've set the config files for various environments..... we can access these config file data inside the app using config.get() commands like this
+
+
+  - goto index.json
+
+      - require config library
+
+      - to access the mailserver host address... development
+
+        console.log(config.get("mail.host"))
+
+
+** you should not store application secrets such as passwords inside the config files.... instead you should use environment variable to store password and do a different method to access it fron the app index.js safely like this
+
+
+  - set pasword as an environment variable like this
+
+    - open cli
+
+        :: set <app>_password=<123>
+
+    - goto projectFolder/config folder
+
+        - make a new file named
+
+            custom-environment-variables.json
+
+              ** file name spelling is important
+
+        - goto file named custom-environment-variables.json... and now we can add a password for development mail server like this
+
+          {
+            "name": "development-app",
+            "mail": {
+              "host": "dev-mail-server",
+              "password": "app_password"
+            }
+
+          }
+
+          ** the name and mail can be ommitted if it is set inside another environment config file
+
+  - now to access password inside the app
+
+    - goto index.js... and add commands
+
+        console.log(config.get("mail.password"))
+
+
+        
+
+
+
+
+   

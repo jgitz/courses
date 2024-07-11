@@ -1,0 +1,45 @@
+to see what changes were made to files in a commit.... we use show command
+
+show command is used to view GIT OBJECTs such as
+    - commits
+    - blobs (files)
+    - tree (directories)
+    - tags ?? (later)
+
+- to see commit details of a specific commit
+    - do :: git log :: to fetch the commit id
+
+    - :: git show <id / partial id>
+
+        ** shows differences of the code change
+
+
+- we can use HEAD in show command to move back in steps to previous commits from the latest commit
+
+    - to show the commit one step back from the latest commit....
+        - :: git show HEAE~<1> *** you can use 2 or 3
+
+
+- to see the exact file state of a commit with no differences displayed....
+
+    - :: git show HEAD~<1>:<exact file path of which you want to see the codes>
+
+
+- to see all files and folders of a commit
+
+    - to list all the files and folders of a commit
+        :: git ls-tree HEAD~<1 >
+
+            ** lists all files and folders associated with the commit
+
+            ** blob means file
+
+            ** tree means folder
+
+            ** there is unique id number 
+
+    - to see exact codes of a file inside the commit
+
+        - copy the file id from ls-tree command
+
+        - :: git show <full/partial id number of file from ls-tree command>

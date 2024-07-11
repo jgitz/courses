@@ -1,0 +1,9 @@
+- a variable/function defined in a file is private to that file
+
+- if we want to access a private variable/function in other file, we need to export the variable from the file using 
+
+  - at the end of the file... type
+
+      - module.exports.<any name> = <variable/function name from the file>
+
+        ** this adds the <any name> to exports {} object of the module object

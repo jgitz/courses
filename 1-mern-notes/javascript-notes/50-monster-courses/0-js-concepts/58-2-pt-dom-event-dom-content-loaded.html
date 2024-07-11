@@ -1,0 +1,46 @@
+<!-- 
+
+  - DOMContentLoaded EVENT: this is the type of event that triggers only if the entire HTML PAGE SKELETON is loaded on the browser
+ -->
+
+ <!-- 
+   display an H1 ELEMENT with content "dom loaded" when all the html page content is loadedkkk
+  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+  <h2>loading</h2>
+  <h3>loading</h3>
+  <h4>loading</h4>
+  <h5>loading</h5>
+
+  <script>
+    // selecting h2 element 
+
+      let h2El = document.querySelector('h2');
+
+    // dom content loaded listener
+
+      function listener_function() {
+        let h1El = document.createElement('h1');
+        let textNode = document.createTextNode('DOM content is loaded');
+        h1El.appendChild(textNode);
+
+        document.body.insertBefore(h1El, h2El);
+      }
+
+    // adding event listener to document object
+
+      document.addEventListener('DOMContentLoaded', listener_function)
+  </script>
+  
+ </body>
+ </html>

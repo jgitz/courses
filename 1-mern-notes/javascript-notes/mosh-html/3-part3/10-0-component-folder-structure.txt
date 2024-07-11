@@ -1,0 +1,19 @@
+.... our website has many components.... so to DESIGN and VIEW the component we need to use SEPARATE HTML files .... and css file....
+
+... but after designing we add the component css to STYLES.CSS 
+
+- to implement this... we use a folder structure
+
+  - step1: goto project folder 
+
+      - create a folder named components 
+
+  - step 2: got project/components folder 
+
+      - create html file to design component 
+
+      - create css file to design component 
+
+          ** instead we can use EMBEDDED CSS in the html file using style tag
+
+      - after designing... copy and paste the css to the styles.css 

@@ -1,0 +1,11 @@
+- node has many useful built in modules that has objects and functions to do operations on serverr like
+
+  - path module
+
+  - http module
+
+  - os module
+
+  - query strings module
+
+  - process module

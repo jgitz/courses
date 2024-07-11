@@ -1,0 +1,68 @@
+- TABS and TAB and LINK TAB component: are nested component to create tabs like pagenumber and horizontal menu tabs 
+
+    - syntax 
+
+        <Tabs>
+            <Tab/>
+            <Tab/>
+            <Tab/> 
+
+            <LinkTab/>
+            <LinkTab/>
+
+        </Tabs>
+
+          ** linktab component is used to provide link as tab with link path in href attribute
+
+    - TABS component props 
+
+        - variant: 
+            - standard: default 
+            - fullWidth: tabs take full width of the page
+            - scrollable: scroll button appears on left and right of the tabs
+
+        - value : index number of the child tab component starting from 0, 1, 2 (index number to tab child is automatically added by mui)
+
+            ** usually it is a state variable value
+
+        - indicatorColor: to set indicator color on tabs
+
+            ** only primary and secondary colors 
+
+        - textColor: to add color to the tab text  
+
+            ** only primary and secondary colors
+
+        - onChange : takes 2 arguments.... 
+
+              1) event 
+              2) value: index value of the  clicked child tab components starting from 0, 1, 2
+
+        - centered: to center align the tabs 
+
+        - orientation: to create vertical tab use "vertical" as value
+
+     - TAB component props 
+
+        - label
+
+        - value: any string 
+
+        - disabled 
+
+        - wrapped: wraps the long labels of a tab
+
+        - icon: to take icon value in form of {<Icon/>}
+
+     - LINK TAB component props 
+
+    
+
+        - label 
+
+        - href: takes link as strings
+
+***** link tab didn't work
+
+
+

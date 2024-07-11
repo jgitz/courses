@@ -1,0 +1,30 @@
+- EXECUTION CONTEXT : is an environment where a peice of js code is executed and stores some data from the code.
+
+- there are 2 execution context 
+
+    1) global execution context 
+
+    2) function execution context 
+
+        ** 1 per each function 
+
+- execution contexts are run inside CALL STACK
+
+
+- CONTENTS inside an execution context 
+
+    1) variable environment 
+
+        - let const var 
+        - function 
+        - function argument object 
+
+    2) scope chain : variables from previous scope 
+
+    3) this keyword
+
+
+    **** ARROW FUNCTION don't have THIS keyword and ARGUMENTS OBJECT 
+
+      ** ARROW FUNCTION takes this keyword and arguments object from the closest REGULAR FUNCTION PARENT.
+

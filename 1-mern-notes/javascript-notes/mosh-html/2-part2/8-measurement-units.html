@@ -1,0 +1,41 @@
+<!-- 
+
+.... there are TWO TYPES of units in html 
+
+    1) ABSOLUTE UNITS: these don't depend on any other units.... eg: px, cm, inch, mm etc.....  
+
+        ** cm, inch, mm etc are used only for printing purpose
+
+    2) RELATIVE UNITS: these units are units which depend on dimension of other elements... the main relative units are 
+
+        - % ( relative to dimension of the parent element)
+        - vw, vh (relative to dimension of the view port )
+        - em (relative to font size of the element)
+        - rem (relative to the font size of the ROOT ELEMENT i.e html tag)
+
+** by default the height of a block level element is ZERO... so even after we apply a HEIGHT in % unit.... it WONT GET APPLIED.... so the BEST PRACTICE IS....
+
+    ** apply height property in VH UNIT and NOT %....if % is applied for height.... it only gets displayed only after more contents are added to the element 
+
+** USE OF PX: used for borders 
+
+** FONT SIZE in html: if No font-size is set to the css.... the page will take the DEFAULT font-size set by the browser i.e 16px
+
+
+** FONT SIZE BEST PRACTICES: 
+
+      1) in css always set font-size of root element... i.e html tag... as 62.5% ... like this 
+
+        html {
+          font-size: 62.5%
+        }
+
+          ** so the font size in px is 62.5% of 16px.... i.e 10px.... this makes calculations easier in REM 
+
+      2) after setting the ABOVE... always use REM for FONT as well as BOX sizing
+
+** use of rem for BOX SIZING dimensions makes the box SCALABLE in different SCREEN SIZES
+
+
+
+ -->

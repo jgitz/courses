@@ -1,0 +1,87 @@
+<!-- 
+
+..... dom methods to do various operations on an element class attribute 
+
+  1) .... to ADD a single or MULTIPLE class names to an element use.. 
+
+    <>.classList.add('<class1>', '<class2>')
+
+      ** using <>.setAttribute('class', 'class name') only allows you to set SINGLE class name at a time 
+
+  2) ... to REMOVE a single or MULTIPLE class name from an element use..
+
+    <>.classList.remove('<class1>', '<class2>')
+
+  3) ... to check if a specific CLASS NAME EXISTS on an element 
+
+    <>.classList.contains('<class name>')
+
+      ** returns boolean true/flase 
+
+  4) .... to REPLACE a class name with another class name 
+
+    <>.classList.replace('<old class name>', '<new class name>')
+
+  5) to TOGGLE a class name in an element (toggle MEANS if class name is absent.... it'll be added..... if class name is present.... it'll be removed)
+
+    <>.classList.toggle('<class name>')
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+    <h1 class=""> add class name class1</h1>
+
+    <h2 class="class1">remove class name class1</h2>
+
+    <h3 class="class1 class2"> check if contains class2</h3>
+
+    <h4 class="class1">replace class1 to class2</h4>
+
+    <h5 class="class1"> class1 present.... toggle it</h5>
+
+  <script>
+
+    // selecting elements to variables 
+
+      let h1El = document.querySelector('h1');
+      let h2El = document.querySelector('h2');
+      let h3El = document.querySelector('h3');
+      let h4El = document.querySelector('h4');
+      let h5El = document.querySelector('h5');
+
+    // adding class to h1 element 
+
+      h1El.classList.add('class1');
+
+    // removing class1 class from h2 elemtne
+
+      h2El.classList.remove('class1');
+
+    // checking if h3 element has class named class 2
+
+      console.log(h3El.classList.contains('class2')); 
+
+    // replacing class1 to class2 in h4 element
+
+      h4El.classList.replace('class1', 'class2');
+
+    // toggle existing class1 class in the h5 element.... since it exists.... class1 will be removed 
+
+      h5El.classList.toggle('class1');
+
+  // inspect elements in browser to see the results
+
+  </script>
+    
+  
+ </body>
+ </html>

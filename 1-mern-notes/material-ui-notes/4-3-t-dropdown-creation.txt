@@ -1,0 +1,45 @@
+..... to create a drop down feature we need to use the following components 
+
+    - FORM CONTROL tag: ?? used to wrap all the other components used to make the dropdown feature..... takes the followin props 
+
+        - size: "small" etc as string 
+
+        - margin: "dense", "normal"..... to give the margin to the wrapper
+
+        - fullWidth: form making the dropdown full width 
+
+        - required
+
+        - error : to wrap the dropdown in red
+
+        - focused: to focus/active the dropdown on page loading
+
+    - INPUT LABEL tag: inside form control to give the label to the select component  using syntax 
+
+        <InputLabel></InputLabel>
+
+    - SELECT component: to wrap all the items specified using the Menu item tag..... takes the following values
+
+        - name: to use as an identifier inside onchange handler
+
+        - autoWidth: to adjust width automatically 
+
+            ** omit fullWidth inside the formControl if you are using auto Width on select tag
+
+        - value: to specify default state variable value
+
+        - label: ideally to specify same label as that of InputLabel tag
+
+        - onchange 
+
+    - MANU ITEM component: to wrap and specify the dropdown options ..... syntax 
+
+        <MenuItem></MenuItem>
+
+            ** takes the following props 
+
+                  - value: to specify the value of the option if any 
+
+***** if you are using inputLabel to set the label.... then also set label prop inside the Select tag   
+
+***** if you are using autoWidth in select tag.... then OMIT fullWidth in formControl tag

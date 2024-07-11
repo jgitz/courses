@@ -1,0 +1,11 @@
+- a closure gives function access to the variables of PARENT FUNCTION even AFTER EXECUTION of parent function 
+
+- the variables that closure remembers includes function arguments 
+
+** during VARIABLE LOOKUP.... CLOSURE is given MORE PRIORITY than other SCOPES
+
+- variables are remembered by closure due to JS ENGINE mechanism
+
+- variables remembered by closure cannot be manipulated.... but CAN BE SEEN using COMMAND
+
+    console.dir(<function>)

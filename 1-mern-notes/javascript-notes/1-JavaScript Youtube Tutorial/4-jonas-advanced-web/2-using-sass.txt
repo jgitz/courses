@@ -1,0 +1,30 @@
+
+
+- make a folder for sass
+
+- sass files that we make should have .scss extension as we use scss syntax..the main file where we write sass code is main.scss file.... so
+
+    - goto sass folder
+
+        - create file named main.scss
+
+- now we write all our css codes in sass folder inside main.scss file..
+
+- now inside project folder
+
+    - make folder named css.... to store the compiled sass code as css file
+
+    - goto css folder
+
+        - create a file named style.css
+
+            ** style.css is the file where compiled sass code is outputted as css codes
+
+- write sass codes in main.scss
+
+- to compile codes to style.css.... use command
+
+    :: npm run compile:sass
+
+
+        ** now css code comes up inside css/style.css file

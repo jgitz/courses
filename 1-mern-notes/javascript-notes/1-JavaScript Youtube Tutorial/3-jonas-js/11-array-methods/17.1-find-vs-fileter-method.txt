@@ -1,0 +1,11 @@
+- find method only returns the first occurance of the condition.
+
+    * filter method returns every element occurances that satisfies the condition.
+
+- find method returns a value whose datatype is dependent on the datatype of the array element. 
+
+    * filter method returns an ARRAY.
+
+- find method RETURNS UNDEFINED if no element matches the condition.
+
+    * filter method RETURNS EMPTY ARRAY if no element matches the condition.

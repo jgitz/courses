@@ -1,0 +1,75 @@
+- goto mongodb.com 
+
+    - click products
+
+        - click community server
+
+            - download the latest version windows installer
+
+- open downloaded installer
+
+   - next 
+
+   - accept next 
+
+   - click complete version 
+
+   - check install mongodb as service and check run service as NETWORK SERVICE (means mongodb will run in the background)
+
+   - check install mongodb compass 
+
+   - click install
+
+- close compass window
+
+
+- to create a folder to save all the mongo server database that you create 
+
+    - open local disk c 
+
+        - create a new folder named data 
+
+        - open the newly created data folder 
+
+            - create a new folder named db
+
+- starting  mongodb server 
+
+    - open cmd 
+
+    - type  
+    
+         :: cd "<C:\Program Files\MongoDB\Server\6.0\bin>" ::
+
+            ** or path where you installed mongodb
+
+            ***** wrap path in "" else error
+    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- now to use mongo commands we need to install mongo shell application known as MONGOSH 
+
+    - goto https://www.mongodb.com/try/download/shell
+
+        - download msi installer (not zip) 
+
+        - before installation always copy/remember the installation path.... IT IS NEEDED TO SET ENVIRONMENTAL VARIABEL
+
+        - install 
+
+- setting environmental variable such that MONGOSH.EXE shell can be run from anywhere 
+
+    - search for environmental variables in windows search 
+
+    - under user variables.... select path...
+
+        - click new and add the mongosh installation folder path
+
+
+** now to open mongosh from anywhere... inside cli type 
+
+    :: mongosh.exe ::
+
+         ** now we can use mongodb commands to manipulate data in mongodb server 
+

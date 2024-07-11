@@ -1,0 +1,42 @@
+/* 
+
+..... sometimes we apply 2 style css to a single element with 2 different values.... 
+
+.... in this case the CSS APPLIES the style BASED ON SPECIFICITY 
+
+- SELECTOR SPECIFICITY: is a value that defines PRIORITY of SELECTORs in CSS for applying styles 
+
+  ** selector priority goes like: ID SELECTOR > CLASS/ATTRIBUTE SELECTOR > ELEMENT SELECTOR
+
+  ** in vscode selector specificity can be seen by hovering mouse over the selector inside the css file 
+
+    ** the specificity value is displayed in the form (<number of id selectors>, <number of class/attribute selector>, <number of element selector>)
+
+      - eg: 
+
+          - (1,0,0) : means 100 and the selector has.... 1 id selector..... 0 class/attribute selector.... 0 element selector
+
+          - (0, 1, 0): means 10 and the selector has..... 0 id selector.... 0 class/attribute selector.... 0 element selector
+
+** !important: is a VALUE APPLITED to a CSS PROPERTY if we want it to be given the TOP MOST PRIORITY... EG
+
+    p { color: green !important; }
+
+      ** now the color of the paragraph will be green even if we add another color to it in subsequent css properties 
+
+** always the last css selector style will be applied to the element
+
+
+*/
+
+.class#id{ /* specifity: 110 */
+
+}
+
+p#id{ /* specificity 101 */
+
+}
+
+p h1 p { /* specificity 003 */
+
+}

@@ -1,0 +1,9 @@
+..... REACT is a js library which does declarative programming 
+
+- IMPERATIVE: we specify correct INSTRUCTIONS to acheive DESIRED OUTPUT
+
+    ** eg: dom manipulation codes in script file of vanilla js website
+
+- DECLARATIVE: we only specify our desired output and the output is obtained while every steps taken to reach that output is ABSTRACTED AWAY behind the scenes.
+
+    ** eg: react uses JSX to specify our desired output.... while real dom manipulation is done in the backstage by the react

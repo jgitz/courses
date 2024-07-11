@@ -1,0 +1,15 @@
+- what are the features of FUNCTIONAL COMPONENTS?
+
+    - it is a js function with component business logic
+
+    - it must return view of the web app
+
+    - the view is returned from functional component as JSX 
+
+    - DEFAULT EXPORT of the FUNCTION
+
+    - ** component can store DATA PRIVATE to them called STATES 
+
+    - ** INTER COMPONENT data sharing is achieved through PROPS
+
+        ** flow of props is UNI DIRECTIONAL from PARENT to CHILD component.... you cannot MODIFY the data of PARENT DIRECTLY using props

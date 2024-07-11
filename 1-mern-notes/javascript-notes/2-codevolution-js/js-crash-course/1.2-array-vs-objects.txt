@@ -1,0 +1,8 @@
+- array is used to store data whose order matters
+
+- objects is used to store data whose order doesn't matter 
+
+
+- objects inside array: used to store objects if the order of objects are important
+
+- array inside object: used to store array whose order doesn't matter but the order of content of the array matters.

@@ -1,0 +1,11 @@
+- NaN cannot be used as a value in a condition in if statement....
+
+- Instead use 
+
+    Number.isNan(<variable>)
+
+     ** to check if the variable value is NaN 
+
+     ** Number.isNan() is different from isNaN()
+
+** for more read: https://www.samanthaming.com/tidbits/21-how-to-test-nan/

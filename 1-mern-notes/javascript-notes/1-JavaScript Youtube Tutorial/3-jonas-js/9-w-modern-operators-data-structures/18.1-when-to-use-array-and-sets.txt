@@ -1,0 +1,20 @@
+- ARRAYS and sets are used when you just want to create a SIMPLE LIST of VALUES
+
+- WHEN to use ARRAYS?
+
+    ** when you want an ORDERED list of values 
+
+    ** when you want DUPLICATE values
+
+    ** when you want to MANIPULATE values
+
+
+- WHEN to use SET?
+
+    ** when you want NON-REPETITIVE list of values
+
+    ** when ORDER of the list DOES NOT matter
+
+    ** when you want to REMOVE DUPLICATES from ARRAYS
+
+    ** when HIGH PERFORMANCE is important (eg: deletion of elements if way more faster in SETS than in ARRAYS)

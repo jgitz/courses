@@ -1,0 +1,13 @@
+- to change background color of entire body 
+
+    document.querySelector("body").style.backgroundColor = "green";
+
+- to change width (boldness) of a string
+
+    document.querySelector(".class").style.width = "30rem"
+
+** styles added via dom method is INLINE STYLE and don't manipulate the css file
+
+** style properties with multiple words are written in camel case
+
+** value of style SHOULD always be a STRING with UNITS with no space

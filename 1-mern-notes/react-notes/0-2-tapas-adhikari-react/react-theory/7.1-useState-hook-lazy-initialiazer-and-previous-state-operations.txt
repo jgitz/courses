@@ -1,0 +1,16 @@
+- LAZY INITIALIZATION TECHNIQUE (***** not to be mistaken with lazy initializer... it is another concept): any CALLBACK function given in as an ARGUMENT inside useState(<callback>) will only RUN ONCE... 
+
+    ** do memory intense computations which need to only run once is given inside as a callback arrow function inside useState hook like this 
+
+
+        const [state, setState] = useState(() => {
+          memory intense computations here 
+        })
+
+- using PREVIOUS state to do computations: 
+
+    ** any CALLBACK function given INSIDE setState(<callback>) will have PREVIOUS STATE as an argument on which we can do computations 
+
+        setState((previous_state) => {
+          computations using previous state
+        })

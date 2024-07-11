@@ -1,0 +1,48 @@
+..... the previous version of redux was very difficult to implement because.... it needed separate files to specify reducer, actions etc..... to solve this the new version named REDUX TOOLKIT was launched....
+
+- Explain an overview of working of redux toolkit
+
+    - there are only 2 main .js files needed for redux toolkit implementation 
+
+        1) store.js : where reducers are imported and combined to create the global store
+
+        2) <>slice.js : is a single file where
+              - initial state
+              - reducers
+              - actions
+              - SELECTORS
+              - extra reducers (for async thunk operations)
+              - createAsyncThunk etc
+              
+              are defined and exported
+
+
+            ** slice file helps to create a single file for a reducer and actions associated with it instead of creating separate action and reducer files in older version of redux
+
+            ** SELECTORS: are simple js functions used to get the current state value at any point of time
+        
+        3) Provider html tag and store attribute: this is an html tag with an attribute named store..... this will wrap the component where you want to provide the store globally....
+
+            <Provider store={store_variable}>
+              <Target_component/>
+            </Provider>
+
+            ** this tag comes from REACT-REDUX binding library
+
+        4) immer library: is a library that comes inbuild with redux-toolkit.... this library automatically apply immutability in states from the reducer.
+
+          **** so no need to use spread operator to make immutability like in the older redux version 
+
+        5) createSlice({}) method: is a method provided by redux-toolkit to combine 
+
+          - initial state 
+          - reducer
+          - action 
+
+          into a single object 
+
+        6) useSelector hook: is a hook to use SELECTORS defined inside the slice file inside the components inorder to get the CURRENT STATE value of the state 
+
+            ** it is provided by REACT-REDUX library 
+
+        7) useDispatch hook: is a hook used to dispatch actions from the component 

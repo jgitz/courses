@@ -1,0 +1,95 @@
+<!-- 
+** for more read: https://www.digitalocean.com/community/tutorials/js-async-functions
+
+** for more watch : https://www.youtube.com/watch?v=_9vgd9XKlDQ
+
+  .... we use multiple await statements inside an async function to FETCH RELATED response FROM api endpoints.... the very same can be done using CHAINING multiple .then syntax.... 
+
+  BUT.... if your multiple FETCH CALL's are NOT related.... then THERE IS NO POINT to run it like that inside a an ASYNC function OR using MULTIPLE .then syntax..... the PROBLEM is that 
+
+      - it makes the each fetch call to run one after the other sequentially (it is not needed as the fetch calls are not related)
+
+      - other problem is that IT TAKES MORE TIME and NOT performance efficient to sequenitally call fetch requests.... 
+
+    ** THE better solution is to RUN async functions PARALLEL using Promise.all([]) method 
+
+** Promise.all([]) : it takes a SINGLE ARRAY as ARGUMENT... and we feed in our NON RELATED async FUNCTION INVOCATIONS as EACH ARRAY ELEMENTS..... and it RETURN an ARRAY of PROMISE RESPONSES as the return value
+
+    syntax:
+
+      const result =Promise.all([<async function1()>, <async function 2>])
+
+        ** return value will be [<return value 1>, <return value 2>>]
+
+        **** the whole array creation will be JEOPARDISED if ONE ASYNC FUNCTION FAILS
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // follow DRY PRINCIPLE.... we created an async function to do fetch calls by taking url as argument
+    const fetch_responses = async (url) => {
+      try {
+        const response = await fetch(`${url}`);
+        const data = await response.json()
+        return data
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+
+    // fetch_responses('https://jsonplaceholder.typicode.com/todos/1')
+    // fetch_responses('https://jsonplaceholder.typicode.com/todos/2')
+    // fetch_responses('https://jsonplaceholder.typicode.com/todos/3')
+
+    // another async function is created to trigger promise all
+
+    const promiseAll_async_function = async () => {
+      try {
+        const data = await Promise.all([
+          fetch_responses('https://jsonplaceholder.typicode.com/todos/1').then(d => d),
+          fetch_responses('https://jsonplaceholder.typicode.com/todos/2').then(d => d),
+          fetch_responses('https://jsonplaceholder.typicode.com/todos/3').then(d => d)
+        ])
+
+        /* **** in the above step.... we chained .then because.... an async function DOESN'T return its INTENDED return VALUE  unless... we chain a .then with it OR use it inside IIFE 
+          
+        .... if NO .then is chained.... it'll return an ARRAY with THREE UNDEFINED values
+        */
+
+
+
+        console.log(data)
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+
+    promiseAll_async_function() /* o/p: array with 3 objects
+      Array(3) [ {…}, {…}, {…} ]
+​
+      0: Object { userId: 1, id: 1, title: "delectus aut autem", … }
+      ​
+      1: Object { userId: 1, id: 2, title: "quis ut nam facilis et officia qui", … }
+      ​
+      2: Object { userId: 1, id: 3, title: "fugiat veniam minus", … }
+      ​
+      length: 3
+    */
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+git settings can be applied to 3 different levels
+    1) SYSTEM LEVEL : settings get applied to all users of the device
+
+    2) GLOBAL LEVEL : settings get applied to all repositories of the current user
+
+    3) LOCAL LEVEL : settings get applied only to the current repository
+
+to open vscode from git bash
+    - open the folder in git bash
+
+    - type command 
+        :: code :: 
+
+    - now vscode opens
+
+
+git configuring
+
+    - to set name
+        - :: git config --global user.name "<name>" ::
+
+    - to set email
+        - :: git config --global user.email <email id> :: 
+
+        **** no double "" for email id
+
+    - to set vscode as default editor... goto git bash and type
+        - :: git config --global core.editor "code --wait" ::
+        
+        - to open the vscode global settings text file
+            - :: git config --global -e ::
+
+        - to handle end of line....
+            - for windows 
+                :: git config --global core.autocrlf true ::
+
+            - for mac/ linux
+                :: git config --global core.autocrlf input ::
+
+                    
+
+
+
+    
+

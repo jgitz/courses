@@ -1,0 +1,28 @@
+we are going to add a logger middleware using redux-toolkit
+
+- install the logger middleware using
+
+    :: npm i redux-logger
+
+
+- goto store.js
+
+  - set require redux-logger
+
+  - make logger variable using reduxLogger.createLogger()
+
+  - inside store variable.... inside configure store... add middleware object and concat logger middleware like this....
+
+      middleware: (getDefaultMiddleware) => getDefaultMiddleware.concat(logger)
+
+- to test logger working goto index.js
+
+    - remove the console log code from the subscribe variable and leave it as an empty arrow function
+
+
+    - do :: node index.js
+
+
+      ** logger middleware displays the state changes as the subscribe() is used with an empty arrow function
+
+    

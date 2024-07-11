@@ -1,0 +1,75 @@
+.... there are many ways to add scripts into your page....
+
+      1)script tag with regular SRC attribute 
+
+      2)script tag with src and ASYNC attribute 
+
+      3) script tag with src and DEFER attribute 
+
+
+
+
+1) script tag with SRC ATTRIBUTE 
+    -  when script tag is kept inside..
+
+        ** inside head tag: the html starts parsing and when it encounters script tag with src attribute inside the head tag... the html parsing STOPS.... and script is fetched and executed.... then after that html parsing continues till the end 
+
+        ** inside end of body tag: the html get fully parsed until it encounters script tag at the end of the body..... script is fetched and executed 
+
+  **** drawback is large loading time 
+
+2) script tag with src and ASYNC ATTRIBUTE: 
+
+    - script tag with async attribute is specified inside HEAD TAG:
+
+        ....html starts parsing....when it encounters script tag inside the head tag 
+
+            ** the html parsing CONTINUES and the script is fetched ASYNCHRONOUSLY...
+
+            ** BUT after fetching when script EXECUTION STARTS.....HTML PARSING is stopped till script execution.... and when script execution is finished.... html parsing continues till its end 
+
+     **** faster than regular script tag usage 
+
+     **** drawback is html parsing is interrupted
+
+            ** also script are not guaranteed to get executed in order
+
+            ** domContentLoaded event don't wait for async script to finish loading
+
+3) script tag with src and DEFER attribute: 
+
+      - script tag with defer attribute is specified inside HEAD TAG:
+
+            .... html parsing starts.... when it encounters script tag inside the head tag 
+
+                ** the html parsing CONTINUES and the script is FETCHED ASYNCHTONOUSLY....
+
+                ** but after fetching script execution DON'T STARTS
+
+                ** HTML parsing continues 
+
+                ** after the html parsing is finished.... fetched SCRIPT is EXECUTED
+
+
+
+      **** advantage is script are executed in orderd
+
+          ** domContentLoaded event only triggers after defer script gets executed
+
+
+
+
+**** ALWAYS use script tag with DEFER attribute inside the HEAD when ORDER of execution is important if we have multiple script tags
+
+    ** always include 3rd party script BEFORE DEFER script tag 
+
+**** when using 3rd party script where order doesn't matter.... use ASYNC script tag
+
+**** DON'T use REGULAR script tag usage INSIDE HEAD TAG
+
+
+**** for OLD BROWSERS defer and async DON'T work.... so use REGULAR SCRIPT TAG at the END of the BODY
+
+
+
+

@@ -1,0 +1,16 @@
+- STATIC METHODS : are methods that can only be used on CONSTRUCTOR function or ES6 class by chaining it on the constructor function/ class 
+
+    ** static methods are NOT inherited by objects/instanced made from the constructor functions 
+
+    ** eg: Arrayl.from() method can only be used by Array constructor functions 
+
+    ** these methods are NOT STORED in the PROTOTYPE property of the constructor function 
+
+- INSTANCE METHODS: are methods that are stored in PROTOTYPE property of the CONSTRUCTOR FUNCTION/ ES6 CLASS.... 
+
+    ** instance methods are INHERITED by the OBJECTS/INSTANCES made from the CONSTRUCTOR FUNCTION/CLASSES 
+
+    ** eg map, length, slice, methods are all instance methods offered by Array constructor function..... and can be used by the objects/instances created from the Array constructor function 
+
+**** we CAN add our own CUSTOM STATIC METHODS (we've already studied how to add instance methods)
+

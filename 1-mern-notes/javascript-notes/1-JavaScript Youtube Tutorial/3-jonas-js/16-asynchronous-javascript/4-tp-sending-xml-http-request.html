@@ -1,0 +1,88 @@
+<!-- 
+
+- steps to send xml request 
+
+    step1: create a XMLHttpRequest function and assign it to a variable 
+
+        const <request_variable> = new XMLHttpRequest
+
+    step2: to set the type of CRUD http request..... use <request_variable>.open method like this 
+
+        <request_variable>.open("<GET/POST/DELETE/UPDATE>", "<ENDPOINT PATH>")
+
+    step3: send the request using send() method like this 
+
+        <request_variable>.send()
+
+    step4: get the RESPONSE DATA from the endpoint and STORE it inside a variable ASYNCHRONOUSLY using LOAD EVENT listener like this 
+
+        <request_variable>.addEventListener('load', () => {
+          const data = this.responseText
+
+          **** to conver the data to an object use JSON.parse() like this 
+
+          const data_object = JSON.parse(data)
+        })
+
+        ** load is an asynchronous event 
+
+** always the response recieved from an api will be a JSON STRING..... to work with it we need to convert it to a js OBJECT using JSON.parse() method like this 
+
+        JSON.parse(<response>)
+
+**** XMLHttpRequest will ONLY WORK in BROWSER and NOT in NODEJS
+ -->
+
+ <!-- 
+
+  - practice 
+
+      - use the endpoint : https://restcountries.com/v3.1/all
+
+      - send a get http request 
+
+      - save the response data of countries in a variable and console log it
+
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    // step 1 
+
+    const request_variable = new XMLHttpRequest;
+
+    // step 2 
+
+    request_variable.open('GET', "https://restcountries.com/v3.1/all");
+
+    // step 3 
+
+    request_variable.send();
+    console.log(request_variable.responseText)
+
+    // step 4 
+
+    request_variable.addEventListener('load', () => {
+      const response = request_variable.responseText // ***** DON'T use this.responseText.... else error
+
+      console.log(response) //** response in json STRING format.... js CANNOT work on it using its object/array methods
+
+      // ** to convert JSON STRING into an object
+      const data = JSON.parse(response) // **response in OBJECT format so js can work on it
+
+      console.log(data)
+    })
+  </script>
+</body>
+</html>
+

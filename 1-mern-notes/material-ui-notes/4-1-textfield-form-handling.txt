@@ -1,0 +1,18 @@
+..... in this session we learn how to handle the inputs to text fields inside a form
+
+
+** there is NO form tag from MUI.... we use traditional html form tag with onSubmit attribute 
+
+** form should have a submit button with type submit and an onClick attribute set to a HANDLER FUNCTION 
+
+** textfield mui component should have the following attributes 
+
+    - name attribute : enables to use a single onchange handler on multiple text fields with use of [e.target.name] as key ([] is used to set dynamic/computed values as key) in onchange handler function
+
+    - value: to set initial value... usually it is pointed to a state variable
+
+    - onchange attribute set to handler function 
+
+    - type: text, number, email, password etc 
+
+    - label: display name for text field.... doubles as placeholder too

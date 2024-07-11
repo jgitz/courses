@@ -1,0 +1,9 @@
+- any text related TAGS in a mui webpage is known as TYPOGRAPHY 
+
+- typography includes HEADING TAGS, PARAGRAPHS etc
+
+- PROPERTIES (prop) of TYPOGRAPHY TAG 
+
+    - VARIANT: to select the html tag which you want to assign to the typography tag.... eg p, h1, h2... etx
+
+    - more typography props and values are inside the mui site under the API of each componets

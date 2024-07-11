@@ -1,0 +1,41 @@
+- LIFECYCLE in react: are certain points in react process which we can access and do operations 
+
+** in CLASS components we use METHODS like componentDidMount, componentDidUpdate, componentWillUnmount etc to hook into react life cycles 
+
+** in FUNCTIONAL components we use APPROPRIATE HOOKS in various SCENARIOS like below....
+
+        - when functional components mounts : we useEffect hook
+
+        - when state of functional components changes  : we use useState hook
+
+        - when props of functional components changes 
+
+        - when context or store changes
+
+        - when functional component unmounts
+
+** lifecycles and functional component hooks 
+
+  - MOUNTING PHASE: is when a component is created and inserted into the dom 
+
+    - main hooks used in mounting phase are 
+        - useState to add state to the component 
+
+        - useEffect hook effect function is used to handle any sideeffect BASED on the dependency array 
+
+        - useRef: create a mutable referenct to a value in the DOM 
+
+  - UPDATING PHASE : occurs when there is a PROP OR STATE change in the functional component 
+
+    - main hooks used in updating state are 
+
+       - useState hook to update the state 
+
+       - useEffect hooks effect function to run update codes 
+
+  - UNMOUNTING PHASE: occurs when a functional component is removed from the DOM
+
+    - main hooks used in unmounting phase are 
+
+      - useEffect hook's CLEANUP FUNCTION (this is inside the return of the effect function)
+

@@ -1,0 +1,3 @@
+- js is a garbage collected language 
+
+- garbage collection : memory is managed through an algorithm (mark and sweep algorithm). cleans memory when application don't need them

@@ -1,0 +1,46 @@
+<!-- 
+
+  ..... we use srcset and sizes attribute to address resolution switching and to display image in various screens ....
+
+  ..... using srcset the browser select the image version by suitable for the device screen resolution and dpr
+
+  ..... using sizes attribute.... we specify the width of the image you want in different screen sizes
+
+***** if you DON'T want dynamic width and a fixed width to the image on all the screens.... use the sizes attribute code like this??
+
+  sizes="
+    (max-width: 1400px) 100vw, 1400px
+  "
+
+  ** vw width can be anything of your choice
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <img src="./34-i-400px.jpg" 
+  alt="a tree in a landscape full of snow"
+
+  srcset="
+    ./34-i-400px.jpg 400w,
+    ./34-i-800px.jpg 800w,
+    ./34-i-1200px.jpg 1200w
+  "
+
+  sizes="
+
+    (max-width: 500px) 100vw,
+    (max-width: 700px) 50vw,
+    33vw
+  
+  "
+  >
+ </body>
+ </html>

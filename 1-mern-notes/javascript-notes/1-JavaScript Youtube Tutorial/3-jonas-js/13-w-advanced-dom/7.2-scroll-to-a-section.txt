@@ -1,0 +1,20 @@
+.... to scroll to a section.... we have two methods 
+
+- OLD METHOD; to scroll to a section use 
+
+      window.scrollTo(<getBoundingClientRect_variable>.left + window.pageXOffset, <getBoundingClientRect_variable>.top + window.pageYOffset)
+
+
+- to do smooth scrolling ; to smoothly scroll to a section
+
+    window.scrollTo({
+      left: <getBoundingClientRect_variable>.left + window.pageXOffsec
+
+      top: getBoundingClientRect_variable>.top + window.pageYOffset
+
+      behavior: "smooth"
+    })
+
+- NEW METHOD (works only on modern browsers): to scroll to a section using new method 
+
+      <query_select_variable_section>.scrollIntoView({behavior: "smooth"})

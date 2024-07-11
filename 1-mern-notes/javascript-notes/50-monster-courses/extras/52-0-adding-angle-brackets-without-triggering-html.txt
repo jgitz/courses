@@ -1,0 +1,7 @@
+.... to show < and > and & inside html without error... use 
+
+    - &lt; for <
+    - &gt; for >
+    - &amp; for &
+
+** read https://stackoverflow.com/questions/14659240/angle-bracket-without-triggering-html-code

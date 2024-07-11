@@ -1,0 +1,133 @@
+>6>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- naming convention in js is camelcase
+
+- use capital letters for storing constants
+
+- symbols allowen in variable names are $ and _
+
+- if you want to give reserved keywords suchas name, function, new etc to a variable name it with an _ at the start like this
+
+    let _name
+
+    let _function
+
+- value: smallest unit inside js is called  value
+
+- vairables: enables us to store values inorder to reuse it many times.
+
+>7>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- data types are added to value and NOT to the variable
+
+- 7 primitive data types (SNUB SNB) and ONE none primitive datatype (object)
+
+- DYNAMIC TYPING: js is dynamically typed as the values are automatically assigned a datatype by the js and WE CAN REASSIGN the type of VALUE to any other data type later.
+
+- undefined: type of an empty variable 
+
+- NaN : type is number
+
+- null : type is OBJECT (its a bug in js)
+
+>8>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- convention is to use const to every variables, and for variable values that would change, use let
+
+- while using const on an array or object or any non primitive datatype, we can change its individual internal elements but const won't allow to change the whole collection of elements
+
+>9>>>>>>>>>>>>>>>>
+
+>10>>>>>>>>>>>>>>>>>>>
+
+>11>>>>>>>>>>>>>>>>>>
+
+>12>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- usecase of template literals to write strings with multiple lines
+
+    eg: console.log(`line 1
+    line 2
+    line 3
+    line 4
+    `) 
+
+    o/p line 1
+        line 2
+        line 3
+        line 4
+
+>15>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- type conversion: manually convert types of values using methods such as Number(), String(), Boolean()
+
+  ** type conversion using methods DON'T mutate the original variable type
+
+  ** don't have methods to convert variables to undefined 
+
+- type coercion: if there is an expression with 2 different data types with a mathematical operator, js automatically converts one into datatype of the other and outputs the result
+
+- NaN - is an invalid number of type number
+
+
+>16>>>>>>>>>>>>>>>>
+
+- falsy values in js : values that returns boolean false value
+
+  - 0, null, NaN, undefined, ""
+
+- truthy value: anything that is not falsy value is truthy i.e it returns boolean true.
+
+- usecase of truthy or falsey value
+
+  - used inside the condition of if and else 
+
+  - used to test existance of a variable using if else 
+
+    ** always if the conditional variable of if else is a number, there is a chance for if statement to return undefined if the variable is assigned number 0, because 0 is false 
+
+>17>>>>>>>>>>>>>>>
+
+- == is called loose equality 
+
+- === is called strict equality 
+
+- == and != performs type coercion
+
+- === and !== don't performs type coercion
+
+- to get an input dialogue box in browser use prompt
+
+    const <input> = prompt("what is your name")
+
+      ** always the value stored will be string 
+
+>18>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- expression: is a collection of operantors and operands that produces a value.. eg
+
+    1 + 2
+
+    1992
+
+    true && false && !true
+
+    ** string also counts as expression 
+
+- statements: are codes that cannot return a value of its own but are used for flow control 
+
+
+>23>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+- usecase of ternary operator
+
+  - to conditionally assign a value to a variable 
+
+  - to add an if conditional inside template literal
+
+  eg: if else statement, switch statement 
+
+  ** ternary operator doesn't replace if else, if else is used for bigger block of codes 
+
+
+

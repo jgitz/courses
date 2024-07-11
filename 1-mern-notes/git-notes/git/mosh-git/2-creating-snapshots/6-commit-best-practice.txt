@@ -1,0 +1,6 @@
+commit best practices
+    - make similar logical tasks in one commit.
+
+    - don't mix up 2 different tasks inside a single commit.
+
+    - use present tense for commit messages 

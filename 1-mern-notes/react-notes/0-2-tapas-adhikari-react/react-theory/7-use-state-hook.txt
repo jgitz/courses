@@ -1,0 +1,21 @@
+- useState hook: 
+
+    ** is a BUILT IN hook in react 
+
+    ** it is a JS FUNCTION with an OPTIONAL argument to set INITIAL VALUE 
+
+    ** it RETURNS an ARRAY with 2 ITEMS
+
+          1) a VARIABLE (state) to store the current value 
+          2) a FUNTION/METHOD (setState) to update the current state value
+
+    ** is used to DECLARE and TRACK state changes in a functional component 
+
+    ** whenever there is a CHANGE in the STATE.... react RERENDERS the changed part that is realated to the state
+
+
+***** why use of setState method from USE STATE hook to update the state?
+
+    ** because react uses a virtual dom to impose changes..... then a differentiation algorithm compares realDOM and virtual dom to compare the changes and only modify the changes in the real dom 
+
+    ** for efficient working of VIRTUAL DOM.... tracking of STATES are important.... if a STATE is made MUTABLE.... then tracking of state change is not possible.... SO react uses setState to make a new instance of the state and thus can compare the change with old instance ??

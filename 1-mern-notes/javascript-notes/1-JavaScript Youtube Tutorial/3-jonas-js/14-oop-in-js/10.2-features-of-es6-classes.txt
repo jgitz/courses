@@ -1,0 +1,9 @@
+- ES6 classes can be stored as expressions.
+
+- ES6 classes are NOT HOISTED.
+
+- ES6 classes are FIRST CLASS CITIZENS.
+
+- ES6 class body is always EXECUTED in STRICT MODE automatically
+
+** 

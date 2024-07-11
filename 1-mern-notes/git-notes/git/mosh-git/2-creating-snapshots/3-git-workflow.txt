@@ -1,0 +1,26 @@
+
+- there are 3 parts for git in local machine
+
+    1) working directory : the folder in which user works
+    
+    2) staging area/index : the place we add the modified files for review. if we don't need a modification done in certain file of staging area, we can unstage that particular file
+
+        - we use add command
+
+    3) git repository : this is the .git folder inside the project folder. After we review modified files which are inside staging area, we COMMIT files to the .git repo to permanently store the file snapshots.
+
+        - we use commit command
+
+        - a git commit contains
+
+            - an id
+            - commit message
+            - date/time
+            - author
+            - complete snapshot of the project when the commit was made. so we can easily revert back to older state.
+
+                **** this don't take space as git compresses content and don't store duplicate content
+
+        **** staging area don't get empty after we commit files to repo
+
+        **** even to notify deletion of a file which is inside the staging area, we need to add the file again to staging area

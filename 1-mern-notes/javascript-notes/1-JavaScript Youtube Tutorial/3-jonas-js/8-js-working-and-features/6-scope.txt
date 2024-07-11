@@ -1,0 +1,18 @@
+- scope: in js refers to the space or environment in which a certain variable is declared.
+
+- there are 3 scopes in js 
+
+    1) block scope : created by {} of statements such as if, for etc
+
+      **** {} of an object is NOT a BLOCK SCOPE
+
+    2) function/local scope : created by {} of functions
+
+    3) global scope
+
+
+***** in strict mode...along with variables,  functions are also block scoped.... i.e functions declared inside a block can only be accessed inside that scope..... if not in strict mode, the fuction are scoped to the nearest parent function.....
+
+** var is function scoped i.e it look for variables in the nearest function scope
+
+** let and const are block scoped

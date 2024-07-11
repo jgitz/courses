@@ -1,0 +1,8 @@
+we need the website to route to HOME PAGE and CHECKOUT page when the AMAZON LOGO and BASKET icon tag on NAV BAR is clicked
+
+- goto HEADER component.... IMPORT LINK from react-router-dom
+
+- wrap AMAZON LOGO image in LINK tag with TO attribute pointing to "/".... i.e home component routing path
+
+- wrap DIV  which has BASKET icon tag inside LINK tag with TO attribute pointing to "/checkout".... i.e checkout component routing path
+**** also wrap entire div inside link tag.... else purple color on basket icon

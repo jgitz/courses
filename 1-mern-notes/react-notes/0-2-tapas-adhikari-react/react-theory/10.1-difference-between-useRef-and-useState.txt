@@ -1,0 +1,5 @@
+- what is the difference between useState and useRef hooks? 
+
+    ** useState RE RENDERS the entire component when the STATE VALUE changes 
+
+        * useRef DOESN'T rerenders the entire component if the variable value is UPDATED

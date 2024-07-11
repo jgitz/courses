@@ -1,0 +1,12 @@
+.... watch it
+
+-  HIGHER ORDER COMPONENT: in react higher order component is a SIMPLE FUNCTION which 
+
+    - takes a simple COMPONENT as ARGUMENT 
+
+    - then the COMPONENT is TRANSFORMED as an ENHANCED COMPONENT...
+
+    - the codes to create a HOC is in CLASSICAL COMPONENT syntax
+
+** this is used before HOOKS came into react... so there is a chance that we find this in legacy code 
+

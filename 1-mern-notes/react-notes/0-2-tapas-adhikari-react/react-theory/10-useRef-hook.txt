@@ -1,0 +1,51 @@
+- USE REF HOOK: 
+
+    ** is a react built in hook 
+
+    ** it persists the hooks return values no matter how many times the component re renders 
+
+    ** if the return value of the hook gets UPDATED .... the component DOESN'T re renders 
+
+    ** useRef hook ARGUMENT: useRef hook accepts an OPTIONAL INITIAL VALUE for the reference value..... it can be of any js value
+
+    ** useRef hook RETURN value: useRef hook returns a PLAIN JS OBJECT with a PROPERTY named CURRENT
+
+    ** SYNTAX: 
+
+          const <variable_name> = useRef(<initial_value>)
+
+
+              ** return value is 
+
+                    {current: <initial_value>}
+
+              ** to UDATE the value dom
+
+                    <variable_name>.current = <new_value>
+
+
+                        ** updating this value DOESN'T cause RE RENDERS....
+
+                        ** this value will be PERISISTING throughout component re renders
+
+
+- USE CASES 
+
+    1) to store some values that don't vanish after re renders 
+
+
+    2) ***** DOM MANIPULATION using react html attribute REF 
+
+        ** REF attribute: is a react specific attribute for every html tags... 
+
+            ** it is used to link a useRef hook variable to an HTML TAG...eg 
+
+                <input type= "text" ref = {<useRef_variable>}>
+
+            ** now the value of current of linked useRef variable will be HTML TAG 
+
+            ** now we can chain dom methods to the useRef.current object to do changes to html tags... eg
+
+              <useRef_variable>.current.focus();
+
+                  ** now the input box in the element gets focused with dark borders

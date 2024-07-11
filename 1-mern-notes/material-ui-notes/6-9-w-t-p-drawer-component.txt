@@ -1,0 +1,1 @@
+watch..... drawer component is the component that opens and closes a pane with list of menu/options from any side of the web app.... the ANCHOR PROP decide from where the drawer should slide in and out.... to give items inside the drawer component.... we use LIST component with nested list components

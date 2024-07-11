@@ -1,0 +1,21 @@
+- color palet is set to define the following colors 
+
+    - primary color: most used color in the project design.... here a shade of blue 
+
+    - secondary color: second most used color in the project design.... here it is another shade of blue 
+
+    - accent color: color used in buttons and small elements.... here it is a shade of red 
+
+    - heading color: color used in headings 
+
+    - body color: color used in body texts
+
+    - border color: for border color of components 
+
+** color palette is defined inside :root PSEUDO CLASS
+
+  ** :ROOT: is a PSEUDO CLASS SELECTOR to define GLOBAL VARIABLES and CUSTOM PROPERTIES
+
+  ** the primary, secondary and the accent color is defined as CSS VARIABLES inside :root
+
+  ** heading color and body color is also defined inside the : root

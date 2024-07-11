@@ -1,0 +1,60 @@
+{
+  box-sizing: content-box; /* 
+  
+  - default box sizing 
+
+  - here the size of content box remains the same 
+
+  - padding, border are applied over the content box
+
+  - size of the element INCREASES as we apply padding and borddr 
+  */
+
+  box-sizing: border-box;
+
+  /*
+  
+  - padding and border added to an element is SUBTRACTED from the original size of the content.
+
+  - size of the CONTENT BOX remains the same even after application of padding and border
+  
+  
+
+  */
+}
+
+/* 
+
+- BLOCK level elements have width and height properties BUT it takes the entire width of the vp by DEFAULT 
+
+- INLINE elements HAS NO width and height properties and hence we cannot add a width/height to inline elements by DEFAULT 
+
+- so to change the default behavior of block and inline element.... use 
+*/
+
+div {
+  display: inline-block /* now the div (block level element) WON'T occupy entire width of vp */
+}
+
+span {
+  display: inline-block /* now the SPAN (inline element) can be given HEIGHT and WIDTH   */
+}
+
+/* best practice.... set box-sizing to border-box to all elements using universal selector */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ***** but UNIVERSAL SELECTOR css WON'T get applied to PSEUDO ELEMENTS (i.e the ones start with ::).... so do the below.... so modify the above as  */
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+

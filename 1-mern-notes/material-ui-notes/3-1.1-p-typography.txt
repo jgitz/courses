@@ -1,0 +1,23 @@
+- inside src/component folder
+
+      - create a new component named Typography.js
+
+      - inside the Typography.js
+
+          - do rfce
+
+          - import {Typography} from "@mui/material"
+
+                ** named import 
+
+          - create a test typography tag with text
+
+          - add a variant of H1 to the typography tag like this 
+
+              <Typography variant='h1'>Test typography tag text</Typography>
+
+          - add an sx prop with font color red and border 1px solid black
+
+- inside src/app.js 
+
+      - specify the Typography component as tag with import statements

@@ -1,0 +1,85 @@
+/* 
+
+syntax 
+
+    @media <media type> <logical operator> (<condition>: <breakpoint value>) {
+      css codes
+    }
+
+    where 
+
+      - media type values: 
+
+          - screen 
+          - print
+          - all 
+          - speech 
+
+      - logical operator values
+
+          - and 
+
+          - or
+
+      - conditions and breakpoint values
+
+          - min-width: styles application STARTS FROM this value... used in MOBILE FIRST APPROACH
+          
+            - takes breakpoint values in pixel/or other units??
+
+          - max-width: styles are applied UPTO this value.... used in DESKTOP FIRST APPROACH  
+
+            - takes breakpoint values in pixels/other units??
+
+          - orientation: automatically computes landscape or portrait mode based on width and height of the vp 
+
+            - takes breakpoint values 
+
+                - landscape: when width is greater than height 
+
+                - portrait: when height is graeter than width 
+
+          - min-aspect-ratio: takes values in the form of aspect ratio in the RATIO FORMAT 
+
+              - WIDTH/HEIGHT
+
+            eg 
+
+              - min-aspect-ratio: 7/4
+
+                ** applies the style if the aspect ratio starts from width of 7 and height of 4
+** use 
+
+    - min-width: for mobile first approach
+
+    - max-width: for desktop first approach
+*/
+
+/* media query examples */
+
+@media screen and (min-width: 500px) {
+  background-color: green;
+}
+
+@media screen and (min-aspect-ratio: 16/9) {
+  background-color: blue;
+}
+
+/* combining TWO conditions example */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  /* css codes */
+} /* 
+
+** ONLY applies when BOTH the conditions ARE MET
+
+*/
+
+/* SHORTHAND SYNTAX */
+
+@media (min-width: 500px) {
+
+} /* short hand for @media all and (min-width:500px) */
+
+
+

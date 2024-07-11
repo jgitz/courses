@@ -1,0 +1,26 @@
+
+/* 
+
+- BOX MODEL: 
+
+    - any width and hight given to an element creates a CONTENT BOX inside which the element content resides 
+
+    - border: is the border line of the content box
+
+    - padding: space given between content box and its border 
+
+    - margin: space given outside the border line
+
+*/
+
+element {
+  padding: 20px 10px; /* 20px for top and bottom.... 10px for left and right  */
+
+  margin: 1px 2px 3px 4px; /* 1px-top... 2px-right.... 3px-bottom.... 4px-left*/
+}
+
+/* 
+
+- margin collapse: top and bottom margin of 2 vertically adjacent element will collapse.... i.e only bottom margin of 1st element will be applied
+
+*/

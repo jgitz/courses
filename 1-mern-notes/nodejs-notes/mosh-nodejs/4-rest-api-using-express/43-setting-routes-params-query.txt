@@ -1,0 +1,49 @@
+.... a server recieves client request to the exposed api endpoint.... now the server has to resolve the request and send appropriate response...... this is done in express like this
+
+ - app.get("/api/courses", (req, res) => {
+    res.sent("anything")
+  })
+
+
+ - to handle routes to individual resources with id's use...
+
+    app.get("/api/courses/:<id>", (req, res) => {
+      res.send(req.params.id)
+    })
+
+    ** req.params.id is an important line to catch the params data from the client side
+
+ - eg routes with 2 params year and month
+ 
+    app.get("/api/courses/:year/:month", (req, res) => {
+      res.send(req.params)
+    })
+
+    ** now the browser will display the year and month specified in path of the url inside an object
+
+
+- query parameters : are parameters given after a questinon mark inside the url box... eg
+
+  localhost:3000/api/courses/2018/1?sortBy=name
+
+- reading query parameters in express using req.query method
+
+    app.get("/api/posts/:year/:month", (req, res) => {
+      res.send(req.query)
+    })
+
+    ** the url inside app.get don't need to have query parameters
+
+    ** the query parameter given inside the url code will have an object with key value pair... eg...
+
+      for the url localhost:3000/api/courses/2018/1?sortBy=name
+
+      the req.query object will be
+
+        {
+          sortBy: name
+        }
+
+
+
+

@@ -1,0 +1,20 @@
+- SX PROP: is a prop that can be used in any mui component tags to give ADDITIONAL css properties
+
+- SX PROP USE 
+
+      ** values of sx prop must me inside {{}}
+
+      ** multiple css styles are separated by COMMAS
+
+      ** css properties should be in CAMEL CASE
+
+      ** css values should be WRAPPED in '' or "".... this includes pixel values
+
+
+      ** EXAMPLE 
+
+            <Typography variant='h1' sx={{
+                color: red, 
+                border: "1px solid black",
+                borderRadius: "10px"
+              }}>

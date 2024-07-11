@@ -1,0 +1,65 @@
+- useEffect hook syntax: 
+
+    useEffect(() => {
+      side effects codes here 
+
+      return () => {
+        clean up codes here 
+      }
+
+    }, [<depandency array>])
+
+
+        ** useEffect hook has two arguments
+
+              1) EFFECT function : write the codes which make side effects
+              2) dependency array: if you specify items (states or props) in this array, and the component will rerender every time the item value changes 
+
+          **** useEffect dependency array can ONLY take STATES and PROPS as arguments 
+
+- 4 USES of useEffect hook 
+
+      1) if you want to run side effects on EVERY RENDER ....do this 
+
+           useEffect(() => {
+            codes
+           })
+
+              ** no dependency array: means the use effect codes run on every re render on the compone t 
+
+              ** dangerous to do this 
+
+      2) if you want to run side effects only ONCE.... do this
+
+          useEffect(() => {
+            codes
+          }, [])
+
+              ** keeping dependency array empty: means the use effect codes only runs ONCE on initial render
+
+      3) if you want to run side effect only when a STATE/PROPS changes.... do this 
+
+          useEffect(() => {
+            codes
+          },[<state1>, <prop1>, <state2>, <prop2>])
+
+
+              ** dependency array filled with state and props : means the side effects only runs when the state or props specified in the dependency array changes 
+
+      4) if you want to CLEAN UP the side effect BEFORE the TRIGGER of another side effect.... do this....
+
+
+          useEffect(() => {
+            side effect codes
+
+            return () => {
+              clean up codes
+            };
+
+
+          },[<state>])
+
+
+              ** to clean up some thing.... just write the clean up codes inside A FUNCTION and RETURN the function FROM the useEffect CALLBACK function argument
+
+              ** CLEAN UP codes ONLY RUNS on NEXT STATE change render.

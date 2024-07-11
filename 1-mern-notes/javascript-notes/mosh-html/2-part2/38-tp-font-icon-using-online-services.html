@@ -1,0 +1,59 @@
+<!-- 
+
+** we can use SVG ICONS using online icon services like 
+
+  - font awesome
+  - ionicons
+  - material design icons
+
+  ** advantage: no need to download icons as we can obtain it online 
+
+** steps to use font awesome 
+
+    - create account in font awesome 
+
+    - create font icon kit and add icons you want to use inside it 
+
+    - copy the script tag of font awesome and paste it inside the html head AFTER style.css link tag 
+
+    - to use the icon as font 
+
+        - create a PARENT SPAN TAG with class named <icon> or anything of your choice 
+
+        - inside the span parent... add ANOTHER SPAN as CHILD 
+
+        - on CHILD SPAN/i tag
+
+            - add fontawesome readymade classes in CLASS ATTRIBUTE
+
+            ** we get an i tag from font awesome.... but standard is to use SPAN to display fonts as I TAG is DEPRECATED
+
+        - to CHANGE COLOR AND SIZE of the icon.... change the CSS of the PARENT SPAN TAG
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .icon {
+      font-size: 10rem;
+      color: greenyellow;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/8b53bb534f.js" crossorigin="anonymous"></script> <!-- font awesome script -->
+ </head>
+ <body>
+
+  <span class="icon">
+    <span class="fa-solid fa-house fa-beat-fade"></span>
+  </span>
+  
+ </body>
+ </html>

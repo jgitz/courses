@@ -1,0 +1,93 @@
+<!-- 
+
+- DROPDOWN LIST: is a list that contains some option from which you can select SINGLE/MULTIPLE options.
+
+- select tag: is a tag wrapper that takes OPTION TAGS as children
+
+    - attributes 
+
+        - multiple>> allows you to select multiple options
+
+        - value="<anything>" >> to display a text on dropdown field
+
+- option tag: is used to specify options of a drop down list....
+
+  - attributes 
+
+      - value="<numeral>" >> is used to give value to option and this NUMERAL VALUE is sent to the backend
+
+      - selected >> is a boolean attribute that selects an option by default
+
+        ***** only works if autocomplete="off" is set on SELECT TAG
+
+- optgroup tag: is used to group options and give a heading/label by WRAPPING multiple OPTION TAGS
+
+  - attributes 
+
+      - label="<heading>" >> gives heading for the grouped option tags
+
+***** standard
+
+  - always use a first option tag with EMPTY VALUE to give heading to the dropdown list
+
+  - set autocomplete="off" on select tag.... only then "selected" boolean attribute works on option tag
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h6>select tag with autocomplete by default with no title</h6>
+  <select name="" id="">
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3">option 3</option>
+  </select>
+
+  <h6>select tag with autocomplete off.... a title..... </h6>
+  <select autocomplete="off" name="" id="">
+    <option value="">select an option</option>
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3">option 3</option>
+  </select>
+
+  <h6>dropdown list with a preselected option using selected boolean</h6>
+  <select autocomplete="off" name="" id="">
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3" selected>option 3</option>
+  </select>
+
+  <h6>dropdown list with multiple selection</h6>
+  <select autocomplete="off" multiple name="" id="">
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3">option 3</option>
+  </select>
+
+  <h6>grouping options using optgroup tag</h6>
+  <select autocomplete="off" name="" id="">
+    <option value="">Select a technology</option>
+    <optgroup label="Frontend">
+      <option value="1">HTML</option>
+      <option value="2">CSS</option>
+      <option value="3">Javascript</option>
+    </optgroup >
+    <optgroup label="Backend">
+      <option value="4">NodeJs</option>
+      <option value="5">Java</option>
+      <option value="6">C#</option>
+      <option value="7">python</option>
+    </optgroup>
+  </select>
+</body>
+</html>

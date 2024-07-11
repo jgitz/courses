@@ -1,0 +1,8 @@
+- EXCEPT PRIMITIVE data types everything is an OBJECT 
+
+- so an array is an object 
+
+  - any array is created from a BLUEPRINT called ARRAY CONSTRUCTOR FUNCTION....and this function has a property called PROTOTYPE
+  - this array prototype holds array METHODS such as push pop etc 
+
+  - any array created in the js inherits method from prototype

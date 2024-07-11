@@ -1,0 +1,24 @@
+
+- regex patterns are wrapped inside 2 slashes / .... like this 
+ 
+      /<pattern>/
+
+- to make pattern CASE INSENSITIVE... add an "i" to the end of the closing /.... like this 
+
+      /<pattern>/i 
+
+- to find something which STARTS with a string.... use CARROT SYMBOL ^.... like this 
+
+      /^<string>/
+
+- to find something which ends with a string.... use DOLLAR symbol $.... like this 
+
+      /<string>$/
+
+- to find presence of a string AT ANY POSTION.... use .* .... like this 
+
+      /.*<string>.*/
+
+        ** .* means the string can be surrounded by ANY number (including zero) of characters before and after it
+
+**** these regex patterns can be used inside the mongoose queries

@@ -1,0 +1,11 @@
+- to see all props accepted by an mui component tag in react 
+
+    - to to opening tag of the component 
+
+    - add a <space> inside the opening tag AT THE ENDING of tag name
+
+    -  click ctrl + <space>
+
+** now all the props accepted by the mui component gets listed in the vscode
+
+**** we can use ctrl + <space> inside tag attribute values too to list the option values the attribute takes

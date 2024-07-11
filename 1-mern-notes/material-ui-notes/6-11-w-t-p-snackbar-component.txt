@@ -1,0 +1,1 @@
+watch.... snackbar component is used to display short notifications inside your web app.... there are props to set auto close the snackbar notification by setting time in millisecond

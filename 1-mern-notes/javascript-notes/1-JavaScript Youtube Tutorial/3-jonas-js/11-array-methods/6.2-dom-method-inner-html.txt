@@ -1,0 +1,20 @@
+- inner HTML method : it is used to view and set element content and data inside a parent element
+
+    <querySelect_parent_element_Variable>
+    .innerHTML
+
+     ** console logging the above displays every child elements contained inside the parent element
+
+** USE CASE: to EMPTY the all the child element content of parent element by assigning an empty string to it like this  
+
+    <querySelect_parent_element_Variable>
+    .innerHTML = ''
+
+
+** what difference between dom methods innerHTML and textContent?
+
+    ** textContent dom method only manipulates the text content which is wrapped by the element and not any other html elements inside
+
+      * innerHTML dom method manipulates the entire child element tags and their contents which are inside a parent element
+
+      

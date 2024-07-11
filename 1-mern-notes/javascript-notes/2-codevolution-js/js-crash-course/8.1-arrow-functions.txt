@@ -1,0 +1,7 @@
+** syntax
+
+  const <variable> = (parameter1, parameter2) => {
+    return code
+  }
+
+  ** no need for return key word if there is no { } when function code is written on single line

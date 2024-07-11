@@ -1,0 +1,6 @@
+controlled input in react: means the inputs are controlled by variables using useState in react.... the initial values of the inputs are stored here
+
+
+value attribute of controlled input: the value attribute of an input of a controlled component points to the initial value of the state variable.... this sets a default value to the form input... it is usually an empty string
+
+onChange attribute of controlled inputs: the onChange attribute means whenever something new is typed into the input.... the default value of input is changed.... now we've to store the new value in the state variable.... so a handler function is assigned to the attribute

@@ -1,0 +1,64 @@
+/* 
+** BEST PRACTICE: codes to set a background image to a page 
+*/
+
+body {
+  background: url("path of image"); /* 
+    - background property is a SHORTHAND for 
+        - background-image
+        - background color 
+  */
+
+  
+  background-repeat: no-repeat; /* 
+    
+    - repeat (default): repeats the image in x and y direction 
+
+    - no-repeat: don't repeat the image 
+
+    - repeat-x: repeats only horizontally in x-axis 
+
+    - repeat-y: repeats only vertically in y-axis
+  
+  */
+
+  background-size: cover; /* to set DIMENSIONS of the background image
+  
+      - cover: image stretches to cover the entire WIDTH of the PARENT ELEMENT
+
+      - other values
+
+          background-size: 100% 90px >>> the width of of the PARENT ELEMENT  and HEIGHT of image is 90px
+
+            **** always set the HEIGHT PROPERTY of PARENT TAG if you set height value in background-size.... else the image gets invisible.... because the parent element is block element... and a block element has default height = 0
+  
+  */
+
+
+  background-position: 100px 90px ; /* 
+
+    - image is 100px far from left and 90px far from the top
+
+    - can also use % unit
+
+        100% 0 >> pushes image to top right corner of the vp
+
+    - 0px 0px (default): image will be on top left corner 
+
+    - used to move around the image to specific area of the body 
+
+    ** OPTIONAL use based on USE CASE: background-position is ONLY USED if there is a use case.... else it is omited
+    
+        ** sometimes we want to set an image to center of the page
+  */
+
+  background-attachment: scroll; /* 
+
+    - scroll (default): enables the background to SCROLL along with the contents
+
+    - fixed: background stays FIXED (RELATIVE to the VP and NOT the PARENT ELEMENT)... wihout moving when content is scrolled
+  
+  */
+
+
+}

@@ -1,0 +1,1 @@
+watch.... elements/images/icons/text/links can be vertically listed using list parent tag and listItems child tags as well as listItemButton, listItemIcon, listItemText nested tags to make various features.... we can also use collapse component to make the list collapsible

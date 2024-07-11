@@ -1,0 +1,36 @@
+..... in old redux we can use action type of one reducer inside another reducer.... but the logic can only be done on the another reducer state....
+
+
+.... for eg..... CAKE_ORDERED action type of cake reducer can be used as a case inside the icecream reducer.....
+
+.... but the logic written under the CAKE_ORDERED action type inside icecream reducer can only act on INITIAL STATE of ICECREAMS and NOT on INITIAL STATE of CAKES.....
+
+**** The above is made possible in toolkit using extraReducers property in the slice file
+
+  - to provide action type of a reducer in another reducer
+
+    - goto another reducer
+
+    - import the actions from the other reducer
+
+    - inside createSlice({})...
+
+      - make another property named extraReducers
+
+        - the value of extraReducers property is an arrow function with builder function as argument
+
+        - inside builder arrow function block
+
+          - use builder.addCase() method like this... the addcase() has 2 arguments.... first the action.type from other reducer..... second an arrow function which can accept state and action as arguments to write logic for state change.... eg
+
+            extraReducers: (builder) => {
+              builder.addCase(cakeActions.ordered, (state) => {
+                state.noOfIceCreams--
+              }
+            }
+
+
+              ** action type is from other reducer
+
+              ** state inside logic is of this reducer 
+

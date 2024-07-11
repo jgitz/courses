@@ -1,0 +1,23 @@
+.... suppose your react app has a parent component and a child component inside the parent....
+
+.... whenever there is a state change inside the parent.... the child also rerenders (refreshes).... EVEN IF the child has nothing to do with the state change (this is due to the operation of virtual doms).... this is NOT desirable.... to solve this we need to use MEMOIZATION technique using REACT MEMO.... which is a HIGHER ORDER COMPONENT that takes the CHILD COMPONENT as argument 
+
+- WHAT IS MEMOIZATION? 
+
+    .... if a function returns same value for constant arguments..... memoization is a method to cache that RETURN VALUE in memory.... such that whenever you invoke that function again.... it DON'T EXECUTE the funciton to compute the return value... instead it returns the VALUE FROM CACHE....
+
+      ** if there is a change in the argument.... then the new return value is stored in the cache......
+
+- React.memo(<child component>) : is a REACT HIGHER ORDER FUNCTION to MEMOIZE the return value of the CHILD COMPONENT 
+
+  ** usually when there is a state change in the parent.... the child component is re rendered uncessarily..... 
+
+  ** adding the default export of the CHILD COMPONENT to 
+
+    export default React.memo(<child component>)
+
+      ** now the return view of the child is memoized in the cache 
+
+      **** but the CHILD RERENDERS if there is a change in the PROPS ARGUMENT coming into the CHILD COMPONENT
+
+***** DON'T use React memo hoc on all the child component.... because memoization is also an performance draining process

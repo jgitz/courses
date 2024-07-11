@@ -1,0 +1,44 @@
+- EVENT: everything that we do in a webpage triggers an event.... so far we have studied
+
+    - click
+
+    - keyup, keypress, keydown (keyboard event)
+
+    ** another common new event is
+
+        ** mouseenter: it is like hover.... when mouse hovers above an element it triggers an event 
+
+            eg: <query_select_variable_h1>
+                .addEventListner("mouseenter", function(e) {
+                  alert("hello")
+                })
+
+                    ** in the above case.... when mouse hovers above the h1.... page alerts hello 
+
+      ** besides there are many events
+
+      ** link to all events: https://developer.mozilla.org/en-US/docs/Web/Events#event_listing
+
+- ADD EVENT LISTNER METHOD: events continously happens when whenever we explore a website.... to listen to an image and do some actions.... we use ADD EVENT LISTNER METHOD....
+
+        ** to add an event listner 
+
+                <query_select_variable>
+                .addEventListner("<event>", function_variable)
+
+                    ** always make a named function outside the add event listner method.... only then we can REMOVE IT LATER 
+
+        ** to remove an event listner: sometimes we need only the event listner to fire only once..... so INSIDE THE ADD EVENT LISTNER FUNCTION {}.... as a LAST LINE add the following line 
+
+                <query_select_variable>
+                .removeEventListner("<event>", function_variable)
+
+                    ** here we repeat the event as well as the function variable.... and that is the syntax
+
+                    ** this line can be given anywhere like inside setTimeout function 
+
+- HTML ONCLICK attribute: inside ANY ELEMENT we can define an onclick (NO camel case) attribute and call a function inside its value wrapped in "".... this was an old way to define a CLICK EVENT.... but not used now
+
+        <h1 onclick = "alert('hello')">
+
+            ** NOT USED NOW 

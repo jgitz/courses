@@ -1,0 +1,83 @@
+<!-- 
+
+ - any element can be stored in a variable.... this saves lot of typing and repeating 
+
+ - methods to change contents of an element
+
+    - <>.innerText = "any text"
+
+        ** replaces text inside the element
+
+        ** innerText returns only the TEXT inside the elements and REMOVES THE SPACES.... NO nested element text is returned 
+
+    - <>.textContent = 'any text'
+
+        ** replaces text inside the element
+
+        ** textContent returns the TEXT along with SPACES... NO nested element text is returned
+
+    - <>.innerHTML = " any text and html tags like <br> can be added"
+
+        ** text as well as HTML TAGS can be added inside the element
+
+        ** innerHTML returns all text along withe any nested html tags inside the subject element....
+
+  ** use innerHTML when you want to only update the text
+
+  ** use textContent only when you want to add spaces and format the text 
+
+  ** use innerHtml if you want to add html tags inside the text
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+
+    <p id = _innerText>
+         innerText <span>span here</span>    <br>
+
+        <h4>innerText nested h4 here</h4>
+    </p>
+
+    <div id = _textContent>
+         TextContent <span>span here</span>    <br>
+        <h4>TextContent nested h4 here</h4>
+    </div>
+
+    <div id = _innerHTML>
+        innerHTML <span>span here</span> <br>
+        <h4>innerHTML nested h4 here</h4>
+    </div>
+
+    <script>
+        // selecting elements
+        const p_id_innerText = document.querySelector('#_innerText');
+        console.log(p_id_innerText.innerText); // returns only text and removes spaces....
+        // ** no nested h4 text is returned?? span text was returned... because the element is P tag.... ... h4 WILL be displayed if it was DIV tag
+
+
+
+        const p_id_textContent = document.querySelector('#_textContent');
+        console.log(p_id_textContent.textContent); // returns text with spaces...
+        // ** nested h4 text is returned?? span text was returned.... because the element is div tag... h4 WON'T be displayed if it was P tag
+
+        const p_id_innerHTML = document.querySelector('#_innerHTML');
+        console.log(p_id_innerHTML.innerHTML);// returns text with html tags 
+        // ** nested h4 text is returned?? span tag text and br tag was returned.... because the element is div tag... h4 WON'T be displayed if it was P tag
+
+        
+
+
+
+        
+    </script>
+    
+ </body>
+ </html>

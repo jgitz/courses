@@ -1,0 +1,23 @@
+- CLOSURE: a closure is the combination of function and its surrounding state in the scope. closures are created every time a function is created.
+
+           in a NESTED function....
+           when we RETURN the INNER function INSTEAD of INVOKING the inner function.... 
+           the INNER function ALONG with its SCOPE is returned.....
+           this enables the OUTER function to store DATA/STATE of the variables inside the OUTER function.....
+           this combination of FUNCTION and SCOPE chaining is known as CLOSURE.
+
+           ** CLOSURE occurs only when an inner function is RETURNED from the OUTER function (without brackets)
+
+           ** an outer function which RETURNS the inner function can only be INVOKED after ASSIGNING it to a variable and invoking the VARIABLE with brackets ()
+
+           ** use of VAR keyword on variables won't make closure to work
+
+- HEAP MEMORY: is memory where the data from closure is stored. 
+
+  ** heap memory is persistant, i.e permanent
+
+- CALL STACK: is where PURE FUNCTIONS (functions which has NO dependencies outside its scope) gets executed
+
+  ** unlike heap, the memory used by the pure function is released after the function execution
+
+  

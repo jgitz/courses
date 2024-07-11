@@ -1,0 +1,46 @@
+..... one PROBLEM of USE STATE HOOK is that..... in a react app COMPONENT..... when there is multiple HANDLER functions which makes state change on a state defined by a USE STATE HOOK.... it'll be
+
+    - difficult to predict the state change 
+
+    - difficult to track the origin handler function which created state change
+
+    - difficult to debug an error in state change
+
+    ** to solve this.... we use USE REDUCER HOOK 
+
+
+- USE REDUCER HOOK: 
+
+    - syntax 
+
+        const [<state>, <dispatch>] = useReducer(<reducer>, <initial state>)
+
+
+        ** use reducer is a simple function that
+
+              - takes 2 arguments
+
+                  - reducer variable: usually from a separate file which hosts reducer function with.... state and action as argument and.... business logic written inside switch case STATEMENTS
+
+                  - initial state: object, array or any datatype 
+
+              - returns an ARRAY with TWO ITEMS 
+
+                  - state: gives access to the state values 
+
+                  - dispatch: is a function which takes ACTION OBJECT (with type and payload as items.... also any data can be added as item (key value pair)) as ARGUMENTS.... and PUSHES the action into REDUCER 
+
+
+              ** dispatching of action will end up inside the relevant reducer.... it works out the respective business logic defined in CASE and updates the state 
+
+              ** MULTIPLE use reducer hooks can be made inside a component to manage separate states 
+
+** ADVANTAGES of USE REDUCER HOOK: use reducer helps to 
+
+      -isolate all the state management logic from the component file to a separate file 
+
+      - test the states separately
+
+      - makes the state more predictable
+
+**** NO NEED to use useReducer if the state datatype is PRIMITIVE DATATYPE..... juse use USE STATE HOOK for that 

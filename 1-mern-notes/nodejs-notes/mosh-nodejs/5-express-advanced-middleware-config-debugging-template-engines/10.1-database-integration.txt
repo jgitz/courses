@@ -1,0 +1,5 @@
+- database list and the setting up code for express can be viewed in the following website
+
+  https://expressjs.com/en/guide/database-integration.html
+
+  ** we use mongoose

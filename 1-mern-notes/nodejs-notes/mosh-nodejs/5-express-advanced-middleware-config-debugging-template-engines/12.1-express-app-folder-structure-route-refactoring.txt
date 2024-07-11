@@ -1,0 +1,25 @@
+- every codes relating to routes are stored in MULTIPLE JS FILES in a separate folder with name ROUTES
+
+  - when routes are written in separate folder other than index.js 
+
+    - **** const app = express() WON'T work as these files only have route commands
+
+      ** so rename app in all router files as
+
+          const router = express.Router()
+
+      ** the paths with "/" (or /:id if required) from every method requests.... only handler is needed
+
+      ** also default export router like this
+
+          module.exports = router
+
+      ** goto index.js and load the routes js files as requred
+
+        ** now route is specified in index.js like this
+
+          app.use("<endpoint path>", <router file loading variable>)
+
+
+- move middlewares function files in separate folder named middleware
+      

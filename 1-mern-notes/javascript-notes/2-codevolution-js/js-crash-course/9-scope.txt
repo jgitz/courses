@@ -1,0 +1,18 @@
+- scope: determines the accessibility of variables in js
+
+- types of scopes
+
+    1) BLOCK SCOPE: 
+        - introduced in 2015 with let and const key words
+
+        - block scope states, variables declared inside {} cannot be accessed outside {}
+
+        - 
+
+    2) FUNCTION SCOPE: 
+
+        - variables declared inside the function {} cannot be accessed outside the function.
+
+    3) GLOBAL SCOPE:
+    
+        - variables declared outside a code block or function block can be accessed anywhere

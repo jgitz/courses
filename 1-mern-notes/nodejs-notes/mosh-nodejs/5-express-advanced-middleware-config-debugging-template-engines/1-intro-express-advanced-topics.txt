@@ -1,0 +1,9 @@
+- we need to be familiar with advanced topics in express frameworks like 
+
+  - middleware
+
+  - configuration
+
+  - debugging
+
+  - templating engines

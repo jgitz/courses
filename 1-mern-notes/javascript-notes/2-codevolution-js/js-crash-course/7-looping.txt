@@ -1,0 +1,42 @@
+- for
+
+   ** syntax:
+
+        for (initializer; stop condition; final-expression) {
+
+        }
+
+
+- while
+    ** syntax
+
+          let <initializer>
+
+          while( stop condition) {
+            codes
+
+            <expression>
+          }
+      
+
+- do while:
+
+    ** this get executes the code atleast once
+    ** syntax:
+
+          let <initalizer>
+          do {
+            codes
+
+            expression
+          } while (stopping condition)
+
+- for of 
+
+    ** recent addition to loop over collection of data like Array
+
+    ** syntax:
+
+          for (const <item> of Array) {
+            codes
+          }

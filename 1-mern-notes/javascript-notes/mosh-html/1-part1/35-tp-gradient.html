@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+     - gradients are used to give pattern with two or more colors
+
+     - gradients are techically images
+
+     - gradient is of two types 
+
+        - linear gradient 
+        - radial gradient : gradient transfomation from center to outside 
+
+     - css codes for gradient is given inside the css property 
+
+        - background-image 
+
+        - background (short hand which takes both image and background color)
+
+    ***** use cssgradient.io to make better complex gradient
+
+    ***** always use another background property with solid color for FALLBACK BACKGROUND if there is NO BROWSER SUPPORT for the GRADIENT CSS  
+    */
+
+    div {
+      width: 500px;
+      height: 500px;
+      color: white;
+    }
+
+    .box1 {
+      background: linear-gradient(30deg,yellow 70%, blue, red ) /* 
+
+        - first argument values (TRANSITION):
+
+            - TRANSITION degree of the first color:
+                - given in deg unit
+                - degree can be given from 0deg to 360deg
+                - at 0 deg 1st color is at bottom.... same in 360deg
+
+                - degree of 1st color varies in clockwise direction
+
+            - to bottom(default value): 2nd color at the bottom
+
+            - to top: second color at the top 
+
+            - to <rignt/left>: second color to the right/left
+
+            - to <top right/left>: second color at top right/legt corner
+              
+            - to <bottom right/left>: second color to the bottom right/left corner
+        
+        - second argument: is a set of first color and its occupancy space in %
+
+          - here in the example.. the first color yellow occupies 70% of the space
+
+        - third argument: is a set of second color and its occupancy space in %
+
+        ** more than two colors can be given
+      
+      */
+    }
+
+    .box2 {
+      background:radial-gradient(circle at top left,yellow, red 20%, blue); /* 
+      
+        - first argument: pattern at the center and its position
+
+            - pattern values 
+
+                - circle 
+                - ellipse
+
+            - position values 
+
+                - at top/bottom
+                - at top right/left
+                - at bottom right/left
+
+        - second argument: FIRST color with space occupancy in PERCENTAGE
+
+            ** FIRST COLOR occupies THE CENTER
+
+        -third argument: second color with space occupancy in PERCENTAGE
+
+
+      
+      */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box1">
+    <h1>linear gradient</h1>
+  </div><br>
+
+  <div class="box2">
+    <h1>radial gradient</h1>
+
+  </div>
+  
+</body>
+</html>

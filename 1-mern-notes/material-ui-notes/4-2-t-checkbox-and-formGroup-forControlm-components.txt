@@ -1,0 +1,35 @@
+- CHECK BOX COMPONENT: <CheckBox/> makes an mui checkbox.... it can take following properties 
+
+    - name: to use inside onchange function expression 
+
+    - value: to set initial value.... commonly from a state variable 
+
+    - onChange: to give in the handler function 
+
+    - color: to give color to the checkbox 
+
+    - defaultChecked : to make the checkbox checked by default 
+
+    - disabled : to make the checkbox disabled 
+
+        ** FORM CONTROL LABEL component: is used to give a label to the side of the CHECKBOX  
+
+              - syntax 
+
+                  <FormControlLabel control={<CheckBox/>} label="<label name>">
+
+        ** FORM GROUP COMPONENT : is used as a WRAPPER to group a set of RELATED CHECKBOXES 
+
+              - syntax 
+
+                  <FormGroup>
+                    <FormControlLabel control={<CheckBox/>} label="<label name>">
+                    <FormControlLabel control={<CheckBox/>} label="<label name>">
+                    <FormControlLabel control={<CheckBox/>} label="<label name>">
+                  </formGroup>
+
+**** mui has NO form component..... mui uses HTML form tag and its properties
+
+
+              
+

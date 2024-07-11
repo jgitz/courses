@@ -1,0 +1,29 @@
+.... from the design psd file... find the individual reusable components.....like
+
+- areas where you can use grid
+
+
+- nav bar: consists of menu/link in form of HORIZONTAL INLINE LIST
+
+- hero section: consists of a description, an image an a button
+
+- button component 
+
+- link component: styled links
+
+- search input component with button: to search something in the site
+
+- badge component: creative way to display tags 
+
+- card components
+
+- icon variations 
+
+- media component/element: is a set of a small image and a column of description
+
+- testimonial component: usually image with a testimonial/review quote
+
+- call to action component: usually at the end of the page to suggest user what to do next 
+
+- footer: usually a group of lists with NO BULLET POINTS
+

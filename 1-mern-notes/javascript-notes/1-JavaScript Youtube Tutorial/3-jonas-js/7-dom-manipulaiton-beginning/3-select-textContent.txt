@@ -1,0 +1,5 @@
+- to select the text content of the following html tag 
+
+  <p class="paragraph_class"> TEXT CONTENT </p>
+
+  document.querySelector(".paragraph_class").textContent

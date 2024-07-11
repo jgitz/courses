@@ -1,0 +1,19 @@
+enable routing  in app.js.... setting paths for components
+
+- install react-router-dom inside your project
+
+- inside app.js.... import BrowserRouter as ROUTER, ROUTES and ROUTE from react-router-dom
+
+- inside app.js.... make Router tag
+
+- inside app.js inside router tag.... make ROUTES tag
+
+- inside app.js... make route tag and set path "/"........ to home and header component using elements ATTRIBUTE
+
+- inside app.js.... make another route tag.....inside set path "/checkout"....for header.....and set a temporary checkout message inside an h1 tag....... using ELEMENTS ATTRIBUTE
+
+***** to list multiple tag inside ELEMENT attribute use square [] inside curly {} like this {[<component/>, {[component 2]}]} ..... with comma in between....
+
+**** app.js main div should be INSIDE the ROUTER tag
+
+

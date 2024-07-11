@@ -1,0 +1,49 @@
+p{
+  font-family: 'Courier New', Courier, monospace;
+  /* 
+  
+  - enables to set a stack of multiple fonts.... here if first font is not working... the next font is chosen and if that too doesn't work.... the last font is chosen 
+
+  - the LAST FONT of the font stack is set to a GENERIC FONT.... they are 
+
+    - serif: has some medieval font style..... usually used for professional purposes 
+
+    - sans-serif: plain font style 
+
+    - monospace: every letter in this font will have SAME WIDTH (used to display programming codes)
+
+  */
+
+  font-weight: /* values can be
+    
+    - numerals of multiple of 100 from 100 to 900
+
+    - text: bold, bolder, normal, lighter etc
+
+    ** numeral values are used
+  */;
+
+  font-style: /* italic, normal etc */ ;
+
+  font-size: /* any numeral value in rem or pixel..... ** rem is preferred */;
+
+  color: /* 
+
+    - default: black or #000
+
+    - BEST PRACTICE: set font color to some grey color using values of pattern... #111, #222, #333 etc
+  
+  */
+
+/* 
+
+  ** BEST PRACTICES 
+
+       - in css add the FONT-FAMILY to BODY TAG 
+
+       - choose font color in GREY SHADES
+
+*/
+
+
+}

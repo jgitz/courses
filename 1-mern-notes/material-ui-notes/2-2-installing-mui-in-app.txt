@@ -1,0 +1,3 @@
+- goto mui site and copy install commands and paste inside demo-app via cli
+
+    :: npm install @mui/material @emotion/react @emotion/styled ::

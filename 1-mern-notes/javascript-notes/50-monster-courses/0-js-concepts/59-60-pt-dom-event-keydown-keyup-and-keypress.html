@@ -1,0 +1,85 @@
+<!-- 
+  ....there are events that trigger on pressing keys in keyboard 
+
+  - keydown event: triggers when we press a key 
+
+        ** it gets fired for ALL KEYS in keyboard
+        ** keeps on trigerring if we press and HOLD a key
+
+  - keyup event: triggers when we release the key 
+
+        ** it gets fired for ALL KEYS in keyboard
+        ** DON'T get fired on press and HOLD.... it only triggers once
+
+  - keypress: triggers in between a key press and release
+
+      ** ONLY gets fired for ALPHABET and NUMBER KEYS.... and not any other keys LIKE ARROW KEYS, DELETE, BACKSPACE , TAB etc
+      ** gets triggered for ENTER and SPACE
+      **continously gets triggered for press and hold
+
+  `** priority order is all three event is used in same element 
+
+            keydown > keyup > keypress
+
+  - listener function event methods to use with event related to keyboard 
+
+      - to get the NAME of the pressed key use 
+
+          <e>.key 
+
+      - to get the UNICODE value of the pressed key use any of the following 
+
+            - <e>.keyCode (** most preferred as it shows unicode value of the spacebar)
+            - <e>.char (*** not working)
+            - <e>.which (deprecated)
+            - <e>.charCode (deprecated)
+
+              ** you can shortcut the above all using || if you're not sure of which to use
+
+              ** to reverse convert the UNICODE to its real value use 
+
+                  String.fromCharCode(<any unicode>)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+   <h1>the below input tracks key down</h1>
+   <input type="text" id="_keydown">
+
+   <h1>the below input tracks key up</h1>
+   <input type="text" id="_keyup">
+
+   <h1>the below input tracks key press</h1>
+   <input type="text" id="_keypress">
+
+   <script>
+    //selecting 
+
+      let keydownEl = document.querySelector('#_keydown');
+      let keyupEl = document.querySelector('#_keyup');
+      let keypressEl = document.querySelector('#_keypress');
+
+    // listener functions
+
+      function listener(e) {
+        console.log(e.key, e.keyCode, e.charCode, e.which);
+        console.log(e.target.value);
+      }
+
+    // adding event 
+
+      keydownEl.addEventListener('keydown', listener);
+      keyupEl.addEventListener('keyup', listener);
+      keypressEl.addEventListener('keypress', listener);
+
+   </script>
+   
+ </body>
+ </html>

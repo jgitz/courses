@@ -1,0 +1,23 @@
+- in redux-toolkit we use a create Slice method to store action and reducers as object
+
+** it is inside the slice file.... we specify the INITIAL STATE of the FEATURE as a simple CONST VARIABLE (NOT useState variable)
+
+- slice method has methods to export actions and reducers
+
+- createSlice({}) method stores an object which holds the following properties
+
+  - name of the slice as string
+
+  - initial state variable
+
+  - reducers state to hold actions as well as reducers
+
+- reducer key of the slice is an object 
+
+    - each action TYPE is made as key inside this reducer object
+
+    - the value of the action type key is an arrow function with state and action as params
+
+        ** the create slice will automatically take the initial state from the const variable and points it to the STATE PARAM as initial stae is already specified as state inside the CREATE SLICE OBJECT
+
+    - the logic is written inside the arrow function WITHOUT return statement

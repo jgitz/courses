@@ -1,0 +1,12 @@
+just like sass variables.... we can use variables inside css by setting css custom variables....
+
+  - declaration syntax:
+     --color-primary: <color>
+
+  - calling variable syntax: var(--color-primary)
+
+- custom variables are stored inside 
+
+  :root {
+    --color-primary: <color>
+  }

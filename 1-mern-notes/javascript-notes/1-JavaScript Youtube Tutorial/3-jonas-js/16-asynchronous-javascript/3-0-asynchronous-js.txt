@@ -1,0 +1,23 @@
+- synchronous code: runs the code line by line 
+
+- asynchronous code: DOESN'T allow the code to run in sequence.... asynchronous code allows the asynchronous operations to run in BACLGROUND.... while the other codes are allowed to run continously 
+
+- ASYNCHRONOUS CODES IN JS EG
+
+    - setTimeout()
+    - setIntervel()
+    - load event listener
+
+        ** callback function of load event only triggers when everything inside the webpage is loaded 
+
+
+    - <image_query>.src method 
+
+    ** AJAX (Asynchronous js and xml) CALLS to backend via http requests GET/PUT/PATCH/DELETE
+
+**** not all methods with CALLBACK functions are asynchronous in nature 
+
+**** not all event listeners are async..... eg click event is NOT async in nature
+
+
+

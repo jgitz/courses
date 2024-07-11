@@ -1,0 +1,7 @@
+to restore the file changes that we've added to staging area.... we use restore command
+
+    - :: git restore --staged <file name / pattern> <another file> <.(to restore all files that are inside the staging area)>
+
+        **** restore command restores files to last commit state
+
+        **** if we restore a new file which is absent in the previous commit... its state is changed to untracked after the execution of the restore command 

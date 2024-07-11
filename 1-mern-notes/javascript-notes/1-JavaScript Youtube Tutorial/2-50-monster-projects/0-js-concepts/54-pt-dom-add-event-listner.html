@@ -1,0 +1,78 @@
+<!-- 
+
+  - to add an event to an element and add different effects on the element with the function... use 
+
+    <element>.addEventListner('<event type>, <funciton expression >')
+
+      ** DON'T invoke the function expression with ()
+
+      ** use this. inside the function block to manipulate the element properties 
+
+      ** common event types are 
+
+            - click 
+            - keydown
+            - keyup
+            - keypress
+
+      
+ -->
+
+ <!-- 
+   - use the addEventListner to change the color of the h1 to GREEEN on clicking it 
+
+      ** use class toggle functionality to achieve that
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+
+      .green {
+        color: green;
+      }
+
+      .red{
+        color: red
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="green">This h1 is in GREEN COLOR</h1>
+    
+    <script>
+      // selecting element 
+
+        let h1El = document.querySelector('h1');
+        console.log(h1El)
+        
+        // function defining 
+        
+        const to_red_function = function (){
+          // to change the color to red
+            this.classList.toggle("red");
+        };
+
+        // adding event to h1 to track click event and reference it to a function expression that'll change it's color to red and change its textContent
+      
+        h1El.addEventListener('click', to_red_function);
+        
+  
+// ***** always define the listner function before the add event listener function 
+
+// ***** check for addEventListener function spelling... it's listENER
+
+        
+    </script>
+  </body>
+  </html>

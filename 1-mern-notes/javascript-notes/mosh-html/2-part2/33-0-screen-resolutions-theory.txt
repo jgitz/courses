@@ -1,0 +1,48 @@
+- physical resolution: dimension of the lcd screen hardware in pixels.... eg 480 x 320 means 480px width and 320px height
+
+- logical resolution: actual resolution of the screen output after scaling of the output to x number of times 
+
+    eg: older apple mobiles have hardware resolution of 480 x 320 px..... while new apple phone 4 have hardware resolution of 960 x 640px (double of old apple).... 
+
+    ..... so we might think an image of width 320 px will look smaller on new iphone 4.... but, WRONG.... they will look the same as new iphone 4 has 2X scale factor.... i.e to display 1px the new iphone will take 2px....
+
+** so new iphone has 
+
+    - physical resolution: 960px x 640px
+    - logical resolution: 480px x 320px
+
+** the width and height we give inside CSS points to LOGICAL RESOLUTION and NOT physical resolution
+
+- DPR Ration (Device Pixel Ratio): ratio between PHYSICAL RESOLUTION to LOGICAL RESOLUTION
+
+    ** new iphone 4 has DPR = 2
+
+- High Density Screens: screen hardwares with DPR GREATER THAN 1
+
+
+***** RELEVANCE of DPR ratio: images in your website has to be accessed by devices of various DPR rations.... and using only single image of a specific resolution that look good in 1x screen will be BLURRY on 2x and 3x screeens..... the solution for this images
+
+    ** make 3 versions of 1x image... such that it suits resolution of 2x and 3x screens... follow the below steps with eg....
+
+        - step1: find the highest resolution of the image you want to display..... SAY 2000px x 2000 px 
+
+        - step2: SAY you only want 400 px image in 1x screen.... so you need 800px image in 2x screen and 1200px image in 3x screens 
+
+        - step3: open 2000px image in photoshop and make 3 versions of the image in
+
+            - 1200px
+
+            - 800px 
+
+            - 400px 
+
+            ** set baseline compression of 7 in photoshop
+
+            **** follow conversion of image from higher resolution to lower.... and NOT VICE VERA 
+
+        - step4: use SRCSET attribute inside IMG tag to set display of 1x, 2x and 3x versions of the image.... (next lesson)
+
+
+    ***** you need not make multiple versions of all the images
+
+ 

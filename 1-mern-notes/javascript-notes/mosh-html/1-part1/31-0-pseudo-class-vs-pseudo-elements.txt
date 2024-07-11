@@ -1,0 +1,29 @@
+** PSEUDO CLASS: is PRE DEFINED CLASS used to style an ELEMENT based on the STATE of the ELEMENT 
+
+  * PSEUDO ELEMENT: is used to STYLE a PART of the ELEMENT 
+
+** PSEUDO CLASS is preceded by : in css
+
+  * PSEUDO ELEMENT is preceded by :: in css
+
+** PSEUDO CLASS examples: 
+
+    - :first-child
+    - :last-child 
+    - :hover
+    - :link
+    - :visited
+    - :focus
+
+  * PSEUDO ELEMENTS examples:
+
+      - ::before (to add an element before another element with a content)
+
+      - ::after (to add an element after a another element)
+
+      - ::first-letter (to select the first letter of another element like paragraph)
+
+      - ::first-line (to select the first line of another element like paragraph)
+      
+      - ::selection (to select the text selection using mouse)
+      

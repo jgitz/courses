@@ -1,0 +1,7 @@
+- with same steps of cakeSlice.... make iceCream feature with initialState 20 icecreams
+
+- set iceCream slice.js file
+
+- set store with icecream reducer
+
+- test the icecream order and restock inside index.js file

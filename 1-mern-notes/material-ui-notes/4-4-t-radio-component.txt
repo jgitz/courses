@@ -1,0 +1,23 @@
+.... for using a radio component we need the following 
+
+  - FORM CONTROL TAG : outer wrapper into which every successive tags are included 
+
+  - FORM CONTROL LABEL : to give name to the radio button collection 
+
+  - RADIO GROUP : is a wrapper into which RADIO components are added through FORM CONTROL LABEL TAG...
+
+    - defaultValue prop: used to set default value from the radio button values from the formControlLabels as STRING 
+
+  - FORM CONTROL LABEL : uses an ATTRIBUTE named CONTROL attribute which take <Radio/> component as value.... also we set the label of the button using LABEL ATTRIBUTE... commonly used props 
+
+    - label 
+
+    - control : here the radio component is specified as <Radio/>
+
+        ** radio control takes value prop which is specified inside the radioGroup defaultValue PROP 
+
+  
+
+    
+
+**** use chebox if you want to select multiple options simultaneously.... use radio button if you want to select one option from many.... use SWITCH component if you have only one option

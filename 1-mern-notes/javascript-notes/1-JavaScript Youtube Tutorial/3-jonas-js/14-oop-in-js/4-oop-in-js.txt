@@ -1,0 +1,23 @@
+** js has no concept of CLASS 
+
+** so OOP in js works with a CONCEPT of PROTOTYPAL INHERITANCE 
+
+- PROTOTYPE in js : is CLASS to which many objects can be attached and have MANY METHODS which can be used by the attached object 
+
+- PROTOTYPAL INHERITANCE : methods defined inside the PROTOTYPE class can be INHERITED BY an INSTANCE/OBJECT attached to the prototype.
+
+- PROTOTYPAL INHERITANCE VS CLASSICAL inheritance :
+
+    ** in CLASSICAL OOP inheritance.... inheritance happens from one PARENT CLASS to ANOTHER CLASS 
+
+    ** in PROTOTYPAL inheritance.... inheritance happens from one CLASS to another INSTANCE/OBJECT 
+
+
+- EXAMPLE of prototypal inheritance in js: 
+
+    ** Array.prototype is PROTOTYPE object which contains all ARRAY METHODS like MAP 
+
+    ** any array created in js is linked to Array.prototype and hence inherits array methods contained inside it....  
+
+
+**** 4 PRINCIPLES of OOP i.e ABSTRACTION, ENCAPSULATION, INHERITANCE and POLYMORPHISM is still valid in polymorphism and can be implemented using various methods

@@ -1,0 +1,34 @@
+function: is a block of code that takes input data, transforms the data and then outputs some data....
+
+- parameters: placeholder local variables of a function to hold input arguments 
+
+- arguments: are data fed into the function during function invocation
+
+- return value: output data from a function and return value ends the function execution.
+
+  ** function without return value returns undefined 
+
+  ** console.log() is a function 
+
+>>>>>>> TYPES OF FUNCTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1) function declaration : functions defined with function keyword
+
+  ** if assigned to a variable, no need bracket for the variable as variable already stores value of the function
+
+2) function expression: assign an identifier to the function 
+
+    ** need to use bracket to the variable name to invoke the function
+
+    ** type of expression variable is FUNCTION 
+
+** function declaration vs function expression: 
+
+    - function declaration can be hoisted but not function expression 
+
+3) arrow function: faster way to write a function expression.
+
+
+** standard is to use function expression over function declarations... because it's not a good practice to have hoisting as well your function gets stored in a variable in a single line 
+
+** arrow function and function expression has different use cases as they have some differences 

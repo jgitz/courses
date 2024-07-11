@@ -1,0 +1,23 @@
+..... here we are going to make our LOCAL device as our MONGO server..... and now we need to connect our express app to the server....
+
+- open demo-project/index.js
+
+     - require mongoose 
+
+     - use mongoose connect code to connect to the server 
+
+          mongoose.connect('mongoose://<localhost>:<port number>/<database name>')
+          .then(() => console.log('connected to mongoDb'))
+          .catch(err => console.log('connetion unsuccessful', err))
+
+              ** url syntax changes if you db server is remote (atlas)
+
+              ** local host url with port number is obtained from mongoDb compass application
+
+              ** database name is NON EXISTING database.... it'll be AUTOMATICALLY created by mongodb 
+
+
+***** if the above connect url don't work.... replace it with the below url code
+
+     mongoose.connect("mongodb://127.0.0.1:27017/moshPractice")
+        

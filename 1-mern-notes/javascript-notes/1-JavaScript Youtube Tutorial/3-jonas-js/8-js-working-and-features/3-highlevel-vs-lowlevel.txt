@@ -1,0 +1,9 @@
+- js is a high level language
+
+- c is a low level language 
+
+- highlevel language abstracts memory and cpu requirements for an application
+
+- low level language requires developers to allocate memory and cpu requirements
+
+- low level language apps are more optimized and faster

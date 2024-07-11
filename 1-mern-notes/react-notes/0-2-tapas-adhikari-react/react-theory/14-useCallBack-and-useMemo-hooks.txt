@@ -1,0 +1,41 @@
+.... sometimes we need to cache a FUNCTION or a FUNCTION RETURN VALUE.... and want to trigger it based on OTHER STATES..... for this we use USE-CALL-BACK and USE-MEMO HOOKS....
+
+..... both the use callback and use memo hooks are a function which takes 2 arguments 
+
+    1) a callback function: where we write codes 
+    2) a dependency array: to set the trigger state variables 
+
+- USE CALL BACK HOOK: is used to cache entire function inside the memory 
+
+    - syntax 
+
+          const <subject_function_variable_name> = useCallback(() => { 
+            codes we want to cache}, [<state1>, <state2>])
+
+
+    ** here the ENTIRE FUNCTION will be cached..... and the function will get changed only when the dependency array states get altered
+
+** USE CALL BACK and USE EFFECT:
+
+      ** PROBLEM OF USE EFFECT: if a useEffect has a FUNCTION_EXPRESSION INSIDE DEPENDENCY ARRAY.... this use effect codes runs EVERY TIME there is a RE RENDER on the APP DUE to ANY OTHER STATE CHANGES.... this is because.... the react DON'T consider the function BEFORE re render and the function AFTER re render as same.....
+      
+          ** this is TRUE for OBJECTS, ARRAYS and FUNCTIONS 
+
+      ** so we take the function that we want to use inside USE EFFECT and put is as CALLBACK FUNCTION argument of USE CALL BACK 
+
+          ** now the function is cached.... and the function before rerender and the function after rerender is considered as the same by react 
+
+- USE MEMO HOOK: used to cache the function RETURN VALUE inside the memory
+
+    - syntax 
+
+        const <variable> = useMemo(() => {
+          codes with RETURN VALUE
+        }, [<state1>, <state2>])
+
+    ** if a function inside the component returns same value..... it is better to cache the RETURN VALUE of the function.... so react will be spared to run the function again and again on re renders 
+
+
+** DON'T USE use callback and use memo hooks unnecessarily as the cacheing process of a performance intensive process
+
+    

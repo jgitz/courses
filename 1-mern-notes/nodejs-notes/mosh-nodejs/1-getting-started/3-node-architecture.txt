@@ -1,0 +1,15 @@
+- Untill 2009 js could only be run inside browsers. Each browser uses different js engines. 
+
+  - chrome uses v8 engine
+  - edge uses chakra engine 
+  - firefox uses spydermonkey engine
+
+- in 2009, the founder of node took v8 js engine and embedded it inside C++ to create an application named node.exe
+
+- special objects and modules are created inside the node.exe so we can interact with the server using js, like interacting with server file system.
+
+
+** node is NOT a programming language or a framework.
+
+** node is a RUNTIME ENVIRONMENT for executing js code inside server 
+

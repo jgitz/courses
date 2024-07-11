@@ -1,0 +1,10 @@
+[
+  {"name":"Emmanuel Joseph", "rollNo": 1 , "gender":"male", "isAdmitted": true},
+
+  {"name":"Teddy Thomas", "rollNo": 2 , "gender":"female", "isAdmitted": true},
+
+  {"name":"Jerry Joseph", "rollNo": 3 , "gender":"male", "isAdmitted": false},
+
+  {"name":"Flem Thomas", "rollNo": 4 , "gender":"male", "isAdmitted": false}
+  
+]

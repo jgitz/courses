@@ -1,0 +1,82 @@
+- There are two APPROACHES followed to update a document fields 
+
+      1) QUERY the document first and then update 
+
+      2) update first directly 
+
+
+1) QUERY FIRST method steps: inside the ASYNC function .... do
+
+      step1: query the document by id
+      
+            const <data> = await <Model_variable>.findById("<id>")
+
+      step2: check if data has arrived.... using an if condition.... else return the async function 
+
+            if(!<data>) return;
+
+      step3: use SET method to update field values of the queried document 
+
+            <data>.set({
+              <field1>: <new value>,
+              <field2>: <new value>
+            })
+
+      step4: save the updated document using SAVE method 
+
+            const <result> = await <data>.save()
+
+
+              ** the <result> will only return the UPDATED DOCUMENT 
+
+  ***** this approach is done when you want to update a document based on certain conditions (conditions can be specified inside an if statement)
+
+2) UPDATE first approach with UPDATE method and UPDATE OPERATORS.... to implement this approach.... inside the async function do....
+
+      const <data> = <Model_variable>.update({
+
+        {<filter_field>: <filter_falue>},
+
+        {${update_operator}: <value>}
+
+      })
+
+          ** commonly used UPDATE OPERATORS 
+
+              - $set: to set a value 
+
+                    {
+                      $set: {
+                        <field1>: <updated value>
+                        <field2>: <updated value>
+                      }
+                    }
+
+              - $unset: to remove a specified field 
+
+              - $rename: renames the field 
+
+              - $currentDate: sets the value to current date or timestamp 
+
+              - $inc: increaments the field value by the specified increament value (used for likes functionality)
+
+              - $min: only update the field if the specified value is less than the existing field value 
+
+              - $min: only updates the field if the specified value is greater than the existing value
+
+              ** the return value of the promise is NOT the updated documents.... instead it is the NUMBER of updated documents 
+
+                  ** to RETURN UPDATED DOCUMENT as promise return... use findByIdAndUpdate METHOD on the MODEL VARIABLE 
+
+                      ** SYNTAX
+
+                          const <data> = await <Model_variable>
+                          .findByIdAndUpdate(id, { $<update operator>: <value> }, { new: true })
+
+                              **** here there is NO filter object
+
+                              **** DON'T forget {new: true}.... else it will return the document BEFORE UPDATE
+
+              ** more operators link: https://www.mongodb.com/docs/manual/reference/operator/update/
+
+              

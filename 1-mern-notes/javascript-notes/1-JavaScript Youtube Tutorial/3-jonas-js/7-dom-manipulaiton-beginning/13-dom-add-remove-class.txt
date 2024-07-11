@@ -1,0 +1,11 @@
+- to remove class or classes from an element 
+
+    document.querySelector("element")
+    .classList
+    .remove("class1", "class2")
+
+- to add class use .classList.add("class1", "class1")
+
+
+** no need of dot . for classes inside add() and remove()
+    

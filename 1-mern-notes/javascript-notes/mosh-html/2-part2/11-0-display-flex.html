@@ -1,0 +1,146 @@
+<!-- 
+
+  .... to make arrangements of elements in ONE direction (EITHER x-axis or y-axis).... we UTILISE FLEXBOX PROPERTIES 
+
+  .... to set the flex box INSIDE A CONTAINER..... USE 
+
+    display: flex; (to the container)
+
+      ** even if the display is set to flex.... the ELEMENT BEHAVES as BLOCK ELEMENT
+
+**      other CONTAINER PROPERTIES  
+
+    - flex-direction: sets the MAIN AXIS direction of flex items ... values 
+
+      - row (default): set main axis as x-axis 
+
+      - column: set main axis as y-axis
+
+      - row-reverse 
+
+      - column-reverse
+
+    - justify-content: sets the arrangement of items on MAIN AXIS.... values 
+
+        - flex-start (default): all items pushed to start of the main-axis
+        
+        - flex-end: all items are pushed to the END of the main-axis
+
+        - center: all items are pushed to the center of the main axis
+
+
+        ** to distribute flex item by controlling spaces... use the following values 
+
+          - space-evenly: total inter item spaces are distributed evenly  
+          
+          - space-between: FIRST and the LAST item is SET to START and END.... other items are spaced evenly 
+
+          - space-around: individual items will have fixed space around them.... values 
+
+    - align-items: is used to arrange items in the CROSS-AXIS
+        - flex-start (default)
+
+        - flex-end: pushes the items to the end of the flex
+
+    - flex-wrap: wraps the newly added item to a NEW LINE if there is NO SPACE in the CONTAINER.... values 
+
+        - nowrap (default)
+
+        - wrap
+
+
+
+    - align-content: position the WHOLE FLEX CONTENT  in the vertical axis... and controls the SPACE BETWEEN multiple LINES of items
+
+        ** only works if there are items in MULTIPLE LINES/ROWS
+
+
+
+** FLEX ITEM PROPERTIES: properties applied only to flex items 
+
+    - align-self: to overwrite the cross axis position of the item 
+
+    - flex-basis: to set  size of the items 
+
+
+
+      eg: flex-basis: 5rem;
+
+      ** flex-basis sets the WIDTH of the flex-direction is ROW 
+
+      ** flex-basis sets the HEIGHT of the flex-direction is COLUMN
+
+      ** default value is auto.... 
+
+      ** any width/height css property given to the item will be OVERWRITTEN by the flex-basis value 
+
+    - flex-grow: this makes the item to EXPAND to occupy AVAILABLE SPACES for screen size change.... values 
+
+        - 0 (default) : NO expansion from default size
+
+        - 1
+
+        - 2 etc
+
+    - flex-shrink: opposite of flex-grow.... i.e this make item to SHRINK ot occupy the AVAILABLE SPACES for screen size change.... values 
+    
+        - 0 (default): NO shrinking from default size
+
+        - 1
+
+        - 2
+
+      ** both flex-shrink and flex-grow is used together
+
+      ** SHORT HAND for FLEX-GROW = 1, FLEX-SHRINK = 2 and FLEX-BASIS = 15
+
+        flex: 1 2 15rem
+
+
+
+
+
+
+
+    
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 90vh;
+      border: 2px solid black;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .item {
+      width: 5rem;
+      height: 5rem;
+      background: gold;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+
+  </div>
+
+</body>
+
+</html>

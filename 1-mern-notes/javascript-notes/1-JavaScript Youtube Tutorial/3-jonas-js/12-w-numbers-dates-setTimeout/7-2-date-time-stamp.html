@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 
+
+- TIMESTAMP: is a DATE REPRESENTED IN MILLISECOND from the UNIX date 1 JANUARY 1970
+
+*/
+
+// to see the UNIX DATE 
+
+const UNIX_DATE = new Date(0)
+console.log(UNIX_DATE) // Thu Jan 01 1970 05:30:00 GMT+0530 (India Standard Time)
+
+// ** <>.getTime() method: is used to CONVERT a date to TIMESTAMP (milliseconds from UNIX DATE 1 January 1970)
+
+const date_today = new Date();
+const date_today_timestamp = date_today.getTime();
+console.log(date_today_timestamp); //  1678273650964 ** this much milliseconds have passed from 1 January 1970 till today
+
+// ** to revert a TIMESTAMP MILLI SECOND to NORMAL DATE.... just fed in the timestamp as ARGUMENT to date constructor 
+
+console.log(new Date( 1678273650964)) // Date Wed Mar 08 2023 16:37:30 GMT+0530 (India Standard Time) ** converted the millisecond timestamp to normal date
+
+// SPECIAL METHOD to get CURRENT TIMESTAMP 
+
+let current_time_stamp = Date.now()
+console.log(current_time_stamp) //  1678275033636
+
+  </script>
+</body>
+</html>

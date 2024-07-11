@@ -1,0 +1,23 @@
+- FRAMEWORK: 
+
+      ** is an ecosystem with inbuilt tools that are needed for development 
+
+          ** eg Angular.... it has many inbuilt tools 
+
+      ** less freedom for developers as the developers have to code in the way that framework says
+
+
+
+- LIBRARY: 
+
+    ** does only one thing
+
+          ** eg: REACTJS library only deals with the UI design
+
+    ** there are no built in features other than its primary functionality....
+
+            ** to use more features.... you have to install seaparate libraries.... 
+
+                  ** eg: in react we use... axios for data fetching..... jest for testing..... redux for state management
+
+    ** developers have more freedom to add and remove features using 3rd party libraries

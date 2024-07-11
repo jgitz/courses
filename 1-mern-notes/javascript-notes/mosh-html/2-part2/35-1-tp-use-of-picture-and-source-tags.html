@@ -1,0 +1,53 @@
+<!-- 
+
+  - PICTURE TAG: is a tag which is used to take IMAGES of ANY FORMATS
+
+      ** syntax: <picture><picture>
+
+      ** picture tag takes the following CHILDREN TAGS
+
+        - SOURCE TAG: to specify any picture of ANY FORMAT like this 
+
+          <source type="image/webp" srcset="<file path>"/>
+
+        - IMG TAG:
+        
+- USECASE OF PICTURE TAG: is mainly used to specify FALLBACK IMAGE VERSIONS because 
+
+    - not all browsers allows you to display WEBP images.... so we need to host a .JPG version as fallback
+
+    - commonly use of picture tag (see the practical)
+
+      - create a picture parent tag 
+
+      - INSIDE PICTURE TAG 
+
+          - use a SOURCE TAG to point WEBP image version
+
+          - use another SOURCE TAG to point JPG image version
+
+          - use an IMG TAG for    
+
+              - setting alt text to picture tag... as picture tag don't have alt attribute 
+
+              - pointing fallback version to browsers that DON'T SUPPORT picture or source tag
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+    <picture>
+      <source srcset="./35-1-i-jpg-image.jpg" type="image/jpg">
+      <source srcset="./35-1-i-jpg-image.jpg" type="image/jpg">
+      <img src="./35-1-i-jpg-image.jpg" alt="a tree in a landscape full of snow">
+    </picture>
+ </body>
+ </html>

@@ -1,0 +1,3 @@
+- hoisted var returns UNDEFINED 
+
+- hoisted let and const returns REFERENCE ERROR because it is inside TDZ 

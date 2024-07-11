@@ -1,0 +1,65 @@
+<!-- 
+
+  - youtube link: https://www.youtube.com/watch?v=ubNP6fbT2Ac
+
+  .... node lists and html collections are two different structures in which different collections of objects are outputted in dom.... different dom method gives either html colleciton or node list
+
+  - NODE LIST: a node list gives outputs ALL the NODES which are CHILDREN of a parent node
+
+      - it includes every node such as text node, comment node and element node contained in the parent
+
+      - foreEach ARRAY METHOD works on a variable stored with node list
+
+      - a variable stored with NODE LIST is NOT LIVE.... i.e.... the node list ITEM in js DOESN'T UPDATE with change in DOM 
+
+        ** exception is <>.childNodes method 
+
+  - HTML COLLECITON: an html collection only gives out CHILD NODES which are ELEMENT NODES from a parent 
+
+    - No comment node or text node is included in html collection 
+
+    - FOR EACH method DON'T work on an HTML COLLECTION 
+
+    - simple FOR LOOP is used to loop all items of an HTML COLLECTION 
+
+    - a variable stored with HTML COLLECTION is LIVE..... i.e the items in the HTML COLLECTION changes with DOM UPDATES
+
+- METHODS/PROPERTIES THAT RETURN HTML COLLECITON:
+
+    - <>.getElementByTagname('')
+
+    - <>.getElementsByClassName('')
+
+    - <>.getElementsByTagNameNS('') : returns tags with custom name space given inside the ()
+
+    - <>.children
+
+    
+
+- METHODS/PROPERTIES THAT RETURN NODE LIST:
+
+    - <>.querySelectorAll()
+    - <>.childNodes
+
+- PROPERTIES THAT RETURN NODE: 
+
+    - <>.firstChild
+    - <>.lastChild
+    - <>.nextSibling
+    - <>.previousSibling
+
+- PROPERTIES THAT RETURN ELEMENT NODES: 
+
+    - <>.firstElementChild
+    - <>.lastElementChild
+    - <>.nextElementSibling
+    - <>.lastElementSibling
+
+
+
+
+
+
+
+  
+ -->

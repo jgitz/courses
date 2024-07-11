@@ -1,0 +1,7 @@
+- to check presence of a class on element 
+
+    document.querySelector("element")
+    .classList
+    .contains("class")
+
+** used inside if else to set condition

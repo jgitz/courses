@@ -1,0 +1,3 @@
+- .replace: is a dom method that can be used to replace a text with another one 
+
+    <querySelector_variable>.textContent.replace("<subject text>", "<replacement text>")

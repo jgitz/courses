@@ -1,0 +1,30 @@
+vs code extensions
+
+- html css support: for html, css autocompletion
+
+- css peek: to see the css properties of a class in .html file.... go over the class and press ctrl key and click the class name.... to see the css codes
+
+- prettier: to format the code
+
+- highlight matching tag: to highlight opening and closing tags 
+
+- todo highlight: to write todo's in the code for pending works.... open a block comment and type TODO: or FIXME:.... this will be highlighted like this
+
+- live server: to make a server to display our webpage inside the browser and see the changes live
+
+- markdown all in one: helps to see markdown files of .md extension
+
+    - press ctl + shift + v to see markdown design
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+VSCODE SETTINGS 
+
+- to set intendation width 
+
+    - goto file> preferences> settings> extensions> prettier
+
+        - set print width to 124 (width of a single line)
+
+        - set tab space to 4 (space applied when you press tab)

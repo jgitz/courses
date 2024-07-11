@@ -1,0 +1,3 @@
+- one file should have only one default export
+
+- only funcitons or class or expressions can only be exported by default export.... and no object can be exported

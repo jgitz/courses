@@ -1,0 +1,5 @@
+- ARRAY METHODS THAT RETURNS BOOLEANS 
+
+    1) INCLUDES (based on element value)
+    2) SOME (based on callback condition )
+    3) EVERY (based on callback condition)

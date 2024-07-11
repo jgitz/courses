@@ -1,0 +1,44 @@
+steps to create and publish your own package
+
+- create a folder for library
+
+- goto library folder
+
+  - open terminal and type
+
+      :: npm init --yes
+
+  - make a new index.js file
+
+  - goto index.js 
+
+      - write export functions using module.exports to export library functions
+      
+         module.exports.<function name> = funcition() {codes}
+
+- open library folder
+
+  - open terminal
+
+    - to sign up in npm registry.... use command
+
+      :: npm adduser
+
+        ** type username
+        ** type requred fields
+
+    - command to login to npm 
+
+      :: npm login
+
+        ** type username and email
+
+    - to publish your package... use command
+
+      :: npm publish
+
+  
+
+
+        
+

@@ -1,0 +1,41 @@
+ ..... using of context in react is ONE method to provide data to components globally WITHOUT PROPS DRILLING
+ 
+ - what is context?
+
+   ** context is some information which is available GLOBALLY 
+
+   ** in react a context can be created 
+
+        - GLOBALLY which is accessible to ALL the components 
+
+        - PARTIALLY accessible to SELECTED components
+
+   ** there can be MULTIPLE CONTEXTS created inside an application 
+
+  
+- what are the INGREDIENTS to implement context to react components? 
+
+    .... there are 3 ingredients to enable data gloabally available to all the components using context.... they are 
+
+      1) CONTEXT: holds the INFORMATION/DATA which you want make available globally.... context is created by using the react api from
+        
+         React.createContext(<initaial value>) 
+
+            ** initial value can be of any datatype
+
+      2) CONTEXT PROVIDER: is an HTML WRAPPER which wraps the component where you want the context data to be provided 
+
+          ** the context provider tag has an ATTRIBUTE named VALUE to which we give the data holding variable as value 
+
+          ** component AS WELL AS its CHILD components will get the data from the CONTEXT
+
+      3) useContext HOOK: is a hook used to EXTRACT the data from the context to use it inside the component 
+
+
+***** use context only when there is a need to pass data DEEP down the NESTING heirarchy.... else USE PROPS for small nesting
+
+
+
+
+
+

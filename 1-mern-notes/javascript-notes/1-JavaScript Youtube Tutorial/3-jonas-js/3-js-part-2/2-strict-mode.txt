@@ -1,0 +1,22 @@
+- strict mode is to make your js code secure
+
+
+- strict mode in js is activated by using the following line as the first line of your js file 
+
+  "use strict";
+
+    ** this can be used inside a function or a block. But it's not recommended, instead give strict mode to entire file 
+
+- advantages of strict mode
+
+    - consoles error if the variable name is wrong
+
+    - won't allow reserved key words to be set as variable names. eg: interface, name, new, private, if etc variable names won't be allowed
+
+    - set this object to undefined (if not strict mode, it will be set to WINDOW object in BROWSER and GLOBAL object in NODEJS)
+
+    - in strict mode...along with variables,  functions are also block scoped.... i.e functions declared inside a block can only be accessed inside that scope..... if not in strict mode, the fuction are scoped to the nearest parent function.....
+
+    
+
+**** not working in nodejs

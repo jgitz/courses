@@ -1,0 +1,37 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>              
+
+- what is hoisting?
+
+  assigning variable values as undefined/uninitialized and storing function declaration at the creation phase of global execution context is known as hoisting.
+
+  ** a hoisted variable returns undefined/REFERENCE ERROR
+
+      **** undefined for VAR keyword (and is function scoped) 
+
+      **** ininitialized TDZ for LET and CONST key word (block scoped)
+
+  ** a hoisted function (with no keyword) returns its declaration (block scoped if strict mode)
+
+  ** a hoisted function with variable (function EXPRESSION) name returns the values same as VAR, LET or CONST keywords
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is the use of temporal dead zone?
+
+    - TDZ is a es6 feature to store let and const variable as ininitialized during global execution phase 
+
+    ** it helps to avoid errors as calling variable before declaration is a bad practice.... and returning undefined in case of var keyword variable increases confusion 
+
+    ** makes working of const variable i.e it can be reassigned.... so it can't be assigned value of undefined in creation phase and reassign its value in execution phase 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- what is the need for hoisting?
+
+    1) to implement programming style like mutual recursion
+
+    2) it makes code readable
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

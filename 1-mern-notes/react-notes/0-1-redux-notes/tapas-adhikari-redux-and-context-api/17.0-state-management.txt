@@ -1,0 +1,27 @@
+..... in raect states are used to control the behavior of the application view.....
+
+..... state changes are used to trigger change in the behavior of the view 
+
+..... in bigger application with many components..... change of state in any component can be triggered from any other component.... so it brings the following PROBLEMS 
+
+    1) state can get managed in multiple ways ?? 
+
+    2) state gets updated from multiple places 
+
+    3) difficult to trach the origin which triggered the state change: it'll be difficult in a multi component app to find the origin component which made a state change in another component 
+
+    4) polluting of state: with no tracking there might be chances that the developer pollute the state by using fixing codes 
+
+    5) no predictibility: the above all contribute to unpredictable nature of state changes in the application 
+
+
+    ** the solution for all the above problems is to use STATE MANAGEMENT TOOLS.... ONE of the popular state management tool is REDUX
+
+
+- what is REDUX? 
+
+    - REDUX is an ARCHETECTURAL CONCEPT to manage states PREDICTABILY 
+
+    
+
+

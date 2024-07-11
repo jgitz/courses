@@ -1,0 +1,37 @@
+/* 
+
+ - pseudo class: are readymade classes predefined by the browser according to the STATE of the element... pseudo class starts with :
+
+ - pseudo class selectors : used to select elements with pseudo class 
+
+
+*/
+
+parent :first-child {}  /* selects ONLY the first child of the parent
+
+  ** not preferred as it is fragile when the html content change
+
+*/
+
+parent :first-of-type {} /* selects every FIRST CHILD of MULTIPLE TYPE of tags in the parent.... i.e if the parent has multiple ptags, atags etc.... this selects the FIRST CHILD of every ptags and atags which are inside the parent element 
+
+  ** this is an alternate method for previous :first-child
+
+*/
+
+parent p:first-of-type {} /* only selects the first ptag and NOT other ptags which are inside of parent */
+
+parent :last-child {} /* selects ONLY the last child of the parent
+  ** not preferred as it is fragile when the html content chang
+*/
+
+parent :last-of-type {} /* same as parent :first of type */
+
+parent p:last-of-type{} /* same as  parent p:last-of-type */
+
+ul li:nth-child(odd) /* selects all the odd numbered li childs of parent ul tag */
+
+ul li:nth-child(even) /* selects all the EVEN numbered li childs of parent ul tag */
+
+ul li:nth-child(3n) /* selects EVERY 3RD li items of parent ul tag  */
+

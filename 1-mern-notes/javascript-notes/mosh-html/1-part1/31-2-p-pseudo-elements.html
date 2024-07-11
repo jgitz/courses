@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p::before, p::after {
+      content: "...";
+      display: block;
+    }
+
+    p::first-letter {
+      font-size: 500px;
+
+      /* **** didn't work because.... ::first-letter SHOULD NOT BE PRECEEDED BY ELEMENTS.... here p tag is preceeded by ::before element */
+    }
+
+    p::first-line {
+      color:greenyellow;
+
+      /* **** didn't work because.... ::first-line SHOULD NOT BE PRECEEDED BY ELEMENTS.... here p tag is preceeded by ::before element */
+    }
+
+    
+
+    p::selection {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ducimus temporibus perferendis necessitatibus aspernatur corporis? Quisquam quibusdam incidunt harum sint vel! Commodi assumenda, laboriosam amet beatae, sunt voluptatibus animi magnam dolor vel sapiente delectus recusandae laudantium quis similique corporis voluptates rerum repellat quam distinctio rem debitis, quo dicta. Ad qui corrupti, voluptate autem inventore molestias quos, neque, quaerat asperiores veritatis iusto libero placeat! Corporis eos enim assumenda cupiditate aperiam vitae nisi quo id adipisci reiciendis architecto earum possimus ex delectus placeat sapiente nulla sed, blanditiis at quae quibusdam sunt ut ea ipsam. A aspernatur quisquam facere optio est, laborum repellendus.
+  </p>
+</body>
+</html>

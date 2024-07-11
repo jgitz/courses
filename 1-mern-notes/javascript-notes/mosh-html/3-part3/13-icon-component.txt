@@ -1,0 +1,73 @@
+.... in our design there are many variations of icons.... i.e icons with different colors and background colors
+
+.... in this project.... icons files are provided in resources in SVG HTML FILES.... i.e the icon designs are designed using XML in svg form 
+
+- step 1: create an svg sprite of all icon svg files EXCEPT attributes.txt and logo.svg 
+
+  - use this site to generate svg sprite: https://svgsprit.es/
+
+  - download the svg sprite and paste it inside project/images folder 
+
+  ** the sprite file contains the following XML TAGS 
+
+    - svg: to design svg designs 
+
+    - symbol: each symbol tag is an icon 
+
+    - path: each path value defines the curves of the icon.... this defines the icon design
+
+- step 2: to USE/DISPLAY sprite file ICONS in INDEX.HTML use the following codes inside index.html body
+
+  <svg class="icon">
+    <use xlink:href="<path of sprite file>#<symbol id>"></use>
+  <svg/>
+
+    ** svg is a xml wrapper to use svg tags 
+
+    ** use tag is used to use sprite/svg file located in another folder location
+
+    ** xlink:href is an attribute to point to our required icon in the sprite 
+
+    ** #<symbol id> : is obtained from ID ATTRIBUTE of SYMBOL TAG of the SPRITE FILE 
+
+      ** each icon is inside symbol attributes with distinct id's.... use the id of the required sprite icon
+
+    **** NO NEED TO search these codes inside the sprite file.... instead at the VERY END of the SPRITE GENERATING WEBSITE.... these will be written.... COPY IT from there 
+
+      ** after pasting.... CHANGE THE PATH to our SPRITE file location in xlink:href ATTRIBUTE
+
+.... now our design has many icons with primary color and background color.... 
+
+** WRAP each <svg></svg> icon inside SPAN with CLASS "icon-container".... then only we can give BACKGROUND COLOR to the ICON SVG'S 
+
+** here svg tag class ICON is readymade from sprite website.... and use CLASS ICON the BLOCK of BEM 
+
+** icon--primary is the MODIFIER of block ICON with color PRIMARY 
+
+  ** fill: <color> : css is used to fill COLOR to an SVG DESIGN.... FILL attribute ONLY WORKS with SVG FILES/DESIGNS
+
+    **** color: <color> WON'T work with svg tag.... so use fill
+
+** adding CIRCLE BACKGROUND COLOR to icon 
+
+    - use .icon-container to style this 
+
+    - inside .icon-container selector
+
+        - use background attribute to set the background color 
+
+        - use appropriate SAME WIDTH and HEIGHT values to set container DIMENSION TO SQUARE.... here we used 64px as width and height 
+
+        - use border-radius: 100%; to make the squre container to CIRCLE (as per the design the background of icon is a CIRCLE)
+        
+        - use display: inline-flex: because 
+
+            - our container is a SPAN which is an INLINE element and inline element don't allow to set width and height property
+
+            - flex because we need to CENTER the ICON inside the container
+
+        - use flex container properties: to center the icon inside the container
+
+            justify-content: center;
+            align-items: center;
+

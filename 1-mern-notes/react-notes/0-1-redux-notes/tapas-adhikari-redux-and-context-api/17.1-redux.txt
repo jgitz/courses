@@ -1,0 +1,70 @@
+- what is Redux? 
+
+    - redux is an archetectural cocept used for state management
+
+    - redux can be used with vanilla js, react, angular etc 
+
+
+.... in a simple web page.... there are many terminologies which are used to create redux ingredients..... they are 
+
+    1) view: the frontend ui of that get rendered on the browser 
+
+    2) action: if a button is there in the ui.... the function that is referenced in its ONCLICK attribute is the action 
+
+    3) dispatching an action: any process that invokes state change via TRIGGERING of an action.... here if the button is clicked..... this is called action because it triggers onclick listener function and that makes state change 
+
+    **** the problem here is that if the webpage is big..... and there are many states which are triggered using many other listener function.... it'll be difficult to manage and track the state change and error debugging becomes difficult....     
+
+        ** this problem is rectified using redux 
+
+- What are the ingredients of REDUX ARCHITECTURE?
+
+    1) STORE: every state in the app is grouped inside an OBJECT/array called store
+
+        - store is a centralised repository for states 
+
+        - IMMUTABILITY of states inside store: the developer CANNOT directly alter a state residing inside the store..... a procedure has to be followed to make a state change 
+
+        - the UI connected to the state always takes it's value from the store 
+
+    2) ACTION: is something in the UI done by the client that TRIGGERS a state change....
+
+        - in REDUX action is a simple OBJECT with 2 items 
+
+            1) type: holds identifying name of action as string 
+            2) payload: holds data related for state change in any datatype
+
+    3) ACTION CREATOR: is the function that is used to trigger action....
+
+        ** the return of ACTION CREATOR is where we specify the ACTION with type and payload 
+
+    4) DISPATCH: dispatch is a function which takes ACTION CREATOR as ARGUMENT..... this dispatch forwards the action with type and payload to the reducer 
+
+    5) REDUCER: is a function which holds the business logic to change the state value by receiving the payload from the dispatched action 
+    
+        -is another js function which 
+    
+          -takes TWO ARGUMENTS 
+
+            1) INITIAL STATE  
+
+            2) ACTION 
+
+        - the body of the reducer function has a SWITCH CASE.... where it checks action.type and each case RETURN holds the business logic for changing the state
+
+            ** the case return should return NEW ARRAY or OBJECT to maintain IMMUTABILITY 
+
+            **the case return has no need for new data if the state value is STRING or NUMBER 
+
+        - the return value of the CASE STATEMENTS will alter the STATE values inside the store 
+
+        - altering of state value will then produce changes in the UI 
+
+    
+
+          
+
+      
+
+  
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     /* 
+     
+     ..... we can do ANY ARITHEMATIC operations between 2 date variables..... BUT
+
+        ** the result of the ARITHEMATIC OPERATION between 2 string will be of a NUMBER DATATYPE which is IN MILLISECOND FORMAT
+
+        ** we need to CONVERT this millisecond result to DAYS by 
+
+          DIVIDING MILLISECOND BY (1000 * 60 * 60 * 24)
+
+        ** when doing date subtraction in an ORIGINAL APP always WRAP the output inside Math.abs() to take MODULUS of NEGATIVE NUMBERS 
+
+      ** for more complicated date operations like daytime saving etc.... we use MOMENT JS LIBRARY
+
+    
+
+     */
+
+     // calculating number of days between 2 dates..... from january 1 to january 11
+
+      // step 1: initializing dates january 1 and january 11
+
+        const january_1 = new Date(2023, 0, 1) // type is OBJECT
+        const january_11 = new Date(2023, 0, 11) // type is OBJECT
+
+      // step 2:  doing ARITHEMATIC SUBTRACTION to calculate the difference between the dates
+
+        const difference = january_11 - january_1
+
+        console.log(difference) //  864000000 ** millisecond ** type is number
+      
+      // step 3: converting the difference result from MILLISECOND TO DAYS
+
+        const number_of_days = difference / (1000  *60 * 60 * 24) 
+
+        console.log(number_of_days) // 10 ** i.e the difference between january 1 and january 11 is 10 days
+
+     
+
+         
+
+  </script>
+</body>
+</html>

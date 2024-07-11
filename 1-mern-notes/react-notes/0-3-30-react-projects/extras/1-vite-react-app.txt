@@ -1,0 +1,45 @@
+.... use vite tool instead of create-react-app.... because vite is faster and supports all frameworks inclucing vanilla js .... vite is fast because it is developed in golang language
+
+.... watch: https://www.youtube.com/watch?v=vr-I2HIVmTw
+
+- steps to create a react app using vite
+
+    - open cli and type 
+
+          - :: npm create vite@latest :: 
+
+          - add project name (a project folder of same name will be created)
+
+          - use arrow keys to select react from the list 
+
+          - select javascript from language list
+
+          - process complete
+
+    - open the project folder in intgrated terminal.... and type
+
+        - :: npm i :: 
+
+        - now to run development server on browser... inside the cli... type 
+
+          :: npm run dev
+
+            ** click on link to see server running on the browser
+
+    - project folder structure 
+
+        - src folder has all the codes 
+
+            - main.jsx is the new index.js 
+
+            - css of main.jsx is in index.css file 
+
+            - app.jsx is the main app file and its css is in app.css
+
+
+
+            
+
+
+
+    

@@ -1,0 +1,23 @@
+.... main return of functional component interprets jsx..... so if we want to use js variables and datatypes (declared before main return) inside return.... we've to follow the following syntax 
+
+- to use js variables.... enclose it in curly {}
+
+    {variable}
+
+- to use js comment.... enclose it inside curly {}
+
+    {/* comment */}
+
+- jsx WON'T display js RESERVED WORD like TRUE... NULL.... UNDEFINED as STRING unless it is converted to string like this....
+
+    {String(true)}
+
+- if you specify a variable with array of strings in jsx inside {}.... the output will be array element strings merged into one without space
+
+- jsx DON'T allow IF ELSE STATEMENTS
+
+    ** instead TERNARY OPERATORS and SHORTCIRCUITING is supported
+
+- jsx DON'T allow LOOP STATEMENTS like FOR WHILE etc 
+
+    ** instead use ARRAY MAP method with KEY PROPERTY inside element tag 

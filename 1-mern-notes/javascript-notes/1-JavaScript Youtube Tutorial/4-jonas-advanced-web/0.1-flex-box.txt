@@ -1,0 +1,31 @@
+align items : baseline - means align items to the base of the text font
+
+order - default order is of flex item is 0..... more -ve integer orders items to the start.... more +ve integers orders the items to the end
+
+flex-grow: 1 - item occupies maximum width with respect to width of other items....
+
+  flex-grow: 2 - means items become double the size of other elements
+
+flex-basis: <% or px> : can be used to set width instead of using width property.... here width is set in % or px with respect to width of the container
+
+  ** but even when we decrease vp width.... the item shrinks
+
+  ** default value: auto
+
+
+flex-shrink: 0 - means upon decreasing vp width.... the item won't decrease its size.... instead scroll bar appears........ flex-shrink: 1 means the item gets smaller when decrease in vp width
+
+    
+shorthand
+
+  - flex: <flex grow> <flex shrink> <flex-basis>
+
+    eg: flex: 0 1 300px
+
+
+flex-wrap: wrap : when there are too much items inside the container.... the items get into a new line.... and prevents container overflow
+
+align-content: center/flex-end... - in a big container with wrapped items.... this option positions the whole content along cross-axis
+
+  align-content: space-between - makes space between the rows
+

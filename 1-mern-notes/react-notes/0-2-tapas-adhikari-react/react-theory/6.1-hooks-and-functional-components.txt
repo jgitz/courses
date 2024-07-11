@@ -1,0 +1,33 @@
+- STATEFUL COMPONENT: any action that changes some state variables inside a component is called stateful component 
+
+    ** any function that don't have any state changes/side effects inside it is called stateless component 
+
+***** FUNCTIONAL components always tries to be a STATE LESS component.... but its impossible to be stateless as there are states/side effects that depend on api calls.... input output operations.... dom manipulations etc....
+
+    ** solution to make a functional component stateless is to MANAGE SIDE EFFECTS using HOOKS 
+
+*- HOOKS : hooks are plain REACT specific js functions used to manage REUSABLE STATES and SIDE EFFECTS to ISOLATE STATEFUL logics from the FUNCTIONAL COMPONENT
+
+    ** commonly used REACT HOOKS 
+
+            - useState
+            - useEffect
+            - useContext 
+            - useRef
+            - useMemo
+            - useCallback
+            - useReducer
+            - useLayoutEffect 
+
+    ** useState: Allows functional components to have state, and to update that state based on user interactions or other events.
+
+    ** useEffect: Allows functional components to perform side effects, such as fetching data from a server or setting up event listeners.
+
+    ** useContext: Allows functional components to access data from a React context, which can be used to share data between components without needing to pass it down through props.
+    
+    ** useRef: Allows functional components to reference a DOM element or other value, which can be useful for implementing animations or other complex UI interactions.
+
+** in older version of react... functional component had NO option to have DATA in STATES.... instead they used props... WITH THE INTRODUCTION of HOOKS.... functional component can have states 
+
+
+       

@@ -1,0 +1,22 @@
+we can publish our own libraries
+
+
+- to publish a brand new library
+
+  - write library codes
+
+  - open terminal and type command 
+
+      :: npm publish
+
+        ** npm will publish your library in npm registry
+
+- to edit an existing library
+
+    - edit the library conde
+
+    - open terminal and type command
+
+        :: npm version <minor/major/patch>
+
+          ** npm will automatically assign the semantic number

@@ -1,0 +1,42 @@
+<!-- 
+  - checkbox: is a type of INPUT TAG used to select options via checkboxes
+
+      - attributes 
+
+          - checked: is a boolean attribute to check a default option
+
+            ***** only works if autocomplete="off" is done on the input tag
+
+** standard 
+
+  - add label only after the checkbox
+
+      ** for attribute of label and the id attribute of the checkbox should be the same
+
+  - every input-label tag pair is wrapped in a div to display them vertically (else input tags are inline by default)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+  <div class="form-group">
+    <input type="checkbox" id="option1">
+    <label for="option1">Option 1</label>
+  </div >
+
+  <div class="form-group">
+    <input autocomplete="off" type="checkbox" id="option2" checked>
+    <label for="option2">Option 2 (default)</label>
+  </div >
+
+
+  
+ </body>
+ </html>

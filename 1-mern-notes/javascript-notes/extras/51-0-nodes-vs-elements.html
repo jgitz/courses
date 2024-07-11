@@ -1,0 +1,95 @@
+<!-- 
+ 
+** WATCH steve griffith youtube channel: https://www.youtube.com/watch?v=y3itGTCseAk
+
+  - what are NODES? 
+
+      - There is nothing like elements inside an html.... all that we see in a HTML page is a NODE..... what we call element/tag is in reality an ELEMENT NODE.... and this is one among many other types of node 
+
+      - TYPES of NODES in an html page: there are 13?? different nodes in dom.... but most commonly used nodes are....
+
+          1) ELEMENT NODE: every element/tag in form of <></> is an ELEMENT Node
+
+          2) TEXT NODE: any text we write in html WITHOUT a <></> wrap is a text node 
+
+            ** A space is also a text node
+
+            ** also a TEXT NODE is created EVERYTIME we press ENTER key inside html document
+
+          3) COMMENT NODE: any text wrapped in html comment syntax is a comment node
+
+          4) DOCUMENT NODE: content of entire html file 
+
+          5) DOCUMENT TYPE NODE: it has the content is the line <!DOCTYPE html>
+
+            ** document type node is the FIRST CHILD of the DOCUMENT NODE 
+
+          6) DOCUMENT FRAGMENT NODE: ??
+
+              usage:
+              
+                  let <> = new DocumentFragment()
+
+- ELEMENT: is technically ELEMENT NODE..... i.e anything of the form <></>
+
+** every node can have child nodes.... fo eg 
+
+    <h1>heading</h1>
+
+      ** here h1 is an element node and is a PARENT 
+
+      ** heading is a text node and is CHILD of h1 parent node
+
+** TEXT NODES, COMMENT NODES, ELEMENT NODES be CHILD NODES 
+
+** ONLY ELEMENT NODES can be a PARENT NODE
+
+** to know node type of element use 
+
+    <>.nodeType
+    
+      ** output values determine the node type 
+
+        - 1 means ELEMENT NODE 
+        - 3 means TEXT NODE 
+        - 8 means COMMENT NODE
+        - 9 means DOCUMENT NODE 
+        - 10 means DOCUMENT TYPE NODE 
+        - 11 means DOCUMENT FRAGMENT NODE
+
+** to know the value of a child node inside a parent node ue 
+
+    - <parent>.childNodes[0].nodeValue
+
+      
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+    <h1>heading</h1>
+
+    <script>
+      // selecting h1 tag 
+      let h1El = document.querySelector('h1');
+
+      // to see node type of an element 
+
+        console.log(h1El.nodeType); // o/p 1
+
+      // to see the value of the heading element
+
+        console.log(h1El.childNodes[0].nodeValue) // o/p heading
+
+    </script>
+  
+ </body>
+ </html>

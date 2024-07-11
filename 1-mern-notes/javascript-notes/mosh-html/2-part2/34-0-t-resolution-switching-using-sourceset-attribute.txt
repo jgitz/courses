@@ -1,0 +1,61 @@
+..... previously we tackled the problem of screens with DIFFERENT DPR scale ratios.....
+
+.... there are different screens with SAME DPR ratio... but DIFFERENT logical?? SCREEN RESOLUTIONS.... for eg: an apple iphone, macbook and apple desktop screen has different screen resolutions....
+
+.... so in these different screens, a same image would be displayed differently  if RELATIVE UNITS like vw and vh are used to define the IMAGE DIMENSIONS.... the image will be RESIZED and this operation is COSTLY for browser..... as the browser needs to LOAD and RESIZE the image in memory.... this is known as RESOLUTION SWITCHING....
+
+....to prevent this, we can USE SRCSET attribute in a different way (check the next note for practical use)....
+
+..... in this method 
+
+  - we make 3 versions of image for SMALL, MEDIUM and LARGE screens
+
+  - and the browser selects the BEST IMAGE based on the SCREEN RESOLUTION and the PIXEL RATIO of the device
+
+  - here in the practical.... inside the srcset attribute.... 
+  
+    - we give in THE ACTUAL WIDTH of THE IMAGE VERSION.... and
+
+    - the UNIT USED is W and NOT PIXEL
+
+** USE OF SIZES ATTRIBUTE:
+
+    .... when we ONLY USE SCRSET to control the image width..... we used to EXPLICITELY set a DEFAULT WIDTH for the image inside the CSS....
+
+    ..... now we want to provide DYNAMIC WIDTH to the IMAGE in DIFFERENT SCREENS.... WITHOUT USING MEDIA QUERIES.... we use SIZES ATTRIBUTE inside the img tag like this (main practical in the next notes)...
+
+      - remove the fixed default width of the image from the css
+
+      - inside the sizes attribute... set the SCREEN WIDTH and IMAGE width in the following format 
+
+          sizes= "
+            (max-width: 500px) 100vw,
+            (max-width: 700px) 50vw,
+            33vw
+          "
+
+            ** means for max width SCREEN SIZE of 500px, 700px and every other screen size... use image with width of 100vw, 50vw and 33vw RESPECTIVELY
+
+** IN SUMMARY:
+
+    - using srcset... we give 3 versions of an image for the browser to select 
+
+    - using sizes attribute.... we specify the width with which the BROWSER SELECTED image version should be displayed in different screen sizes 
+
+    ** srcset and sizes attribute are USED TOGETHER inside an IMG TAG
+
+***** for making different image versions... use the site: https://www.responsivebreakpoints.com/
+
+
+  - set resolution from 200px to 1400px: to cover the minimum and maximum screen widhts you want
+
+  - set the size step to 50KB: i.e each image version will be 50KB bigger than the other 
+
+  - set the maximum images to 5: to create 5 versions of the image
+    
+  - upload the image of high quality and high resolution that you want to make different versions of 
+
+  ** now different version of the image is generated
+
+  ** there is also img tag code with src set attribue... 
+

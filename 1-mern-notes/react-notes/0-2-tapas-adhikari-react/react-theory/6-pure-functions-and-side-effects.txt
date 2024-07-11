@@ -1,0 +1,44 @@
+- FUNCTIONAL components are simply a js FUNCTION which can nest many other function inside it 
+
+- PURE FUNCTIONS: functions that give out same output for the same input.. or it gives out same output for the same arguments
+
+      - it has the following features 
+
+          - predictable
+          - readable
+          - reuseable
+          - testable
+
+      - eg 
+
+          function greeting(name) {
+            return "Hello name"
+          }
+
+- when will a pure function become IMPURE?
+
+    ** pure function becomes inpure when any changes outside the funciton triggers changes inside the function
+
+    ** effects that make pure function impure are called SIDE EFFECTS
+
+- what are SIDE EFFECTS? 
+
+      ** effects that make pure functions IMPURE are known as SIDE EFFECTS 
+
+      ** eg of side effects 
+
+            1) using global variables inside a function: this changes the function output if global variable is changed 
+
+            2) using a variable inside a function that change its value with response of network/api calls 
+
+            3) mutating inputs of a function by using mutating methods inside the function.... eg using mutating array methods on the arguments inside a function
+
+            4) dom manipulations: functions made to do dom manipulations instead of returning something.... so this kind of function is unpredictable
+
+            5) logging into console or file 
+
+            6) input output operations
+
+            7) console.log inside a function
+
+**** we cannot create a web app with only pure functions as the app code require use of logging... dom manipulation... api calls.... etc.... so try to use pure functions wherever possible and isolate codes that makes side effects into SEPARATE FUNCTIONS 

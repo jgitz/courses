@@ -1,0 +1,48 @@
+- TEXT FIELD component: is a component used to add inputs into the forms
+
+    ** text field is EQUIVALENT to html INPUT TAG 
+
+    ** all properties of html input tags WORKS in the TEXT FIELD COMPONENT
+
+    ** TEXT FIELD component has additional styles
+
+- TEXT FIELD COMPONENT PROPS 
+
+    1) variant: takes the following values as strings
+
+        1) outlined : outlines the input box
+
+        2) filled : fills the input box with some predefined shade
+
+        3) standard: input box has an underline
+
+    2) placeholder: takes any string value 
+
+    3) label: takes any string you want to give it as label
+
+    4) type: takes strings as input which defines type of the text.... takes the following values 
+
+        1) text 
+
+        2) email 
+
+        3) password
+
+        4) number
+
+    5) value: takes a state variable inside {} to store the initial value of the text field
+
+    6) onChange: takes a FUNCTION expression inside {} ..... inside the arrow function block... mostly it'll be set State function with e.target.value 
+
+    7) required: makes that field mandatory 
+
+    4) helperText: string to help the user to guide him.... the string text will be displayed under the text field 
+
+    5) defaultValue: to set a default value inside the text field 
+
+    6) disabled 
+
+    
+
+**** label and placeholder props DON'T work together..... label itself automatically become the placeholder
+    

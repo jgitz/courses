@@ -1,0 +1,25 @@
+- in react we can make components of functional type or classical type 
+
+- FUNCTIONAL COMPONENT: component js file has a main function that returns the component view we want to see inside the FUNCTION RETURN 
+
+- JSX: is an extension of js syntax that allows you to use html syntax inside the react component 
+
+    ** the return block of functional component is written in JSX 
+
+- React.createElement() : is the utility function used by react in backstage to convert jsx to html 
+
+    ** it takes 3 arguments
+
+          1) the element tag as string
+
+          2) attribute 
+
+          3) text content 
+
+    ** eg
+
+          React.createElement("h1", null, "hiii")
+
+              ** makes an H1 tag with text hiii
+
+    ** using this inside main return of functional component also works

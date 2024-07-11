@@ -1,0 +1,1 @@
+watch.... progress bar component is used to display different kinds of progress/loading bars(linear, circular etc).... if you set variant prop to "indeterminate".... the progress bar will freely run.... if you set the variant prop to "determinate".... the progress bar will move according to percentage completion (watch to know how you set the feature)

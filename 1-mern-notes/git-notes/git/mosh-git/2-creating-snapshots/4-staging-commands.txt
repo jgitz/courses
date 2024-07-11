@@ -1,0 +1,29 @@
+- to see status of tracking of files of project folder
+    - :: git status ::
+
+        **** untracked files in red
+
+
+- to add files to staging area
+
+    - :: git add <file1> <file2>
+
+        - pattern
+            - to add only certain extension files
+            
+                - :: git add *.txt
+            
+            - to add all files recursively (subfolders and files)
+                - :: git add .
+
+                    **** caution, we won't need all files and folders added to repository eg : large binary files, large log files
+
+                    **** yellow color in git bash means there are files in staging area ready to be committed 
+
+- to see files currently inside the staging area
+
+    - :: git ls-files
+
+
+
+

@@ -1,0 +1,14 @@
+.... since states are private to a component.... in order to pass data to another component..... we use props.... props are passed from parent to child in herarchial manner....
+
+- PROPS DRILLING: is a process of passing data to an origin component to the target component by passing it through all the components which comes between the origin and the target component 
+
+    ** in an app with many component this is a problem for developer to pass the props through all the components 
+
+    ** if a component is deleted during refactoring of the code.... then many changes has to be made to make the props drilling to work
+
+
+    ** solution for props drilling are 
+
+            1) using context api to provide data globally
+
+            2)

@@ -1,0 +1,11 @@
+.... even though there in NO stand alone input component (we only have an input component mixed with a search button) in the DESIGN.... WE NEED TO MAKE A STAND ALONE INPUT COMPONENT WITH MEDIA QUERIES.... and use it to build the component which have a mix of input and search button in the design 
+
+** border: 2px solid <color>: even though input component has a DEFAULT border.... that border has a MIXED COLOR.... even if we change the border-color property.... it WON'T go.... UNLESS WE DEFINE THE BORDER AGAIN LIKE THIS
+
+** ::placeholder: is a pseudo element used to style the PLACEHOLDER TEXT of INPUT TAG 
+
+** STANDARD 
+
+  ** always set outline:0; to remove blue border when you press tab key
+
+

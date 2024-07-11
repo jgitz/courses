@@ -1,0 +1,13 @@
+** we use .svg files in IMG TAG to display svg images for logos, simple graphics etc 
+
+** also always use .svg files as BACKGROUND IMAGES.....
+
+** advantages of svg images
+
+    - low in file size 
+
+    - scalable in different screen without blur 
+
+
+**** use this site to get svg images for backgrounds : https://www.svgbackgrounds.com/
+

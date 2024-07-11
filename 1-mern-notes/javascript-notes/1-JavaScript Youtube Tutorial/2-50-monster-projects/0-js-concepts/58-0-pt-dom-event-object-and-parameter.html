@@ -1,0 +1,60 @@
+<!-- 
+  ..... the listner function inside an addEventListnerMethod always take a parameter called EVENT (naming convention is e)
+
+  - EVENT parameter always shows the details of the event (click, keypress etc)
+
+  - to know the type of event.... inside the event listner function.... do 
+
+      console.log(e.type)
+
+  - TARGET: the TAG on which the EVENT LISTNER is added is known as TARGET 
+
+  - to know the target element details inside an event listner function there are 2 methods
+
+      - use console.log(e.target)
+
+      - use console.log(this)
+
+  - ... every event has a DEFAULT BEHAVIOR when it is triggered... to prevent that... inside the listener function... use.... 
+
+      <e>.preventDefault()
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+    <h1> h1 tag TARGET on which a click event is added</h1>
+    <script>
+      // selecting elements 
+
+        let h1El = document.querySelector('h1')
+      
+      // listener function 
+
+        let listener_function = function(e) {
+
+          
+
+          console.log(e) // outputs event object 
+
+          console.log(e.type) // outputs event type .... here 'click'
+
+          console.log(e.target) // outputs the target tag object.... here it is h1
+
+          console.log(this) // outputs the target tag object.... here it is h1
+
+
+        }
+
+      // adding click event to h1 
+
+        h1El.addEventListener('click', listener_function)
+    </script>
+ </body>
+ </html>

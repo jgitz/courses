@@ -1,0 +1,40 @@
+- the value of this object is different in different type of function invocation.
+
+**** this object has default value of WINDOW/GLOBAL object in browser/nodejs (in strict mode it is undefined)
+
+  1) window binding:
+
+      ** this object points to undefined in STRICT MODE 
+
+      ** this object points to the WINDOW OBJECT 
+
+  2) implicit binding: 
+
+      ** this object is the object left to the dot of the method when calling
+
+        <object>.function()
+
+          ** this points to object
+
+  3) explicit binding 
+
+      ** this object is the object given inside the brackets of .call(), .apply() and .bind()
+
+  4) new binding: 
+
+      - this object is created as an EMPTY OBJECT INSIDE the function at every instance created during function invocation using new binding 
+
+  5) lexical binding/arrow function: 
+
+      ** arrow function has no this object..... this object inside arrow function points to the this of the PARENT SCOPE  
+
+      ** this of an arrow function used as a method inside an object(implict binding) returns undefined (in strict mode )(DON'T confuse {} of the object as a block scope....it is just an object literal  )
+
+  6) eventlistner handler:
+
+      ** this object the dom element on which eventlistner is applied
+
+
+**** don't use arrow function as a method 
+
+**** if you want to add a function inside a METHOD (i.e function inside an object)..... then use ARROW function instead of regular fuction....

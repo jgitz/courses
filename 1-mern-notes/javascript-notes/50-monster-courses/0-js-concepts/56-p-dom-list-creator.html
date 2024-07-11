@@ -1,0 +1,64 @@
+<!-- 
+  - use an text input to feed in an item name
+  - on click of a button.... add the item as an list item inside an unordered list 
+ -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>List creator</h1>
+
+    <ul>
+
+    </ul>
+
+    <label for="text-input"></label>
+
+    <input type="text" id="text-input" value="">
+
+    <button>click to add to list</button>
+
+    <script>
+      // selecting elements 
+
+        const ulEl = document.querySelector('ul')
+        const inputEl = document.querySelector('input');
+        const buttonEl = document.querySelector('button')
+
+      // function for button click event listner 
+
+        const click_button_function = function() {
+
+          
+        // create li element node
+          let liEl = document.createElement('li');
+
+        // create text node with input box value
+          let text_node = document.createTextNode(inputEl.value);
+
+        // appending li tag with text node
+
+          liEl.appendChild(text_node)
+
+        // appending ul tag with li node which have  text node
+
+          ulEl.appendChild(liEl)
+
+        // make input box empty after the li item is added
+
+          inputEl.value = ''
+        }
+
+      // adding click event listner to the button 
+
+        buttonEl.addEventListener('click', click_button_function)
+    </script>
+    
+  </body>
+  </html>

@@ -1,0 +1,36 @@
+- to get the dimensions of a section (DOM RECTANGLE)
+
+      <query_select_by-id-variable>
+      .getBoundingClientReact()
+
+        output: is dimensions of the section
+
+            X : measured from left (wrt to viewport)
+            y: measured from the top (wrt to view port)
+            width:
+            height:
+            top: measured from top of viewport
+            bottom:
+            right:
+            left:
+
+            ** x and left are same measured from vp top
+            ** y and top are same measured from vp left 
+
+            ** right is measured from vp left all the way to right of the element 
+        
+- to get scroll position 
+
+      ** window.pageXOffset
+
+            o/p : x distance from the left of viewport 
+
+      ** window.pageYOffset
+
+            o/p : y distance from the start of the page to the current viewport top
+
+- to get viewport height and width 
+
+      ** document.documentElement.clientHeight
+
+      ** document.documentElement.clientWidth

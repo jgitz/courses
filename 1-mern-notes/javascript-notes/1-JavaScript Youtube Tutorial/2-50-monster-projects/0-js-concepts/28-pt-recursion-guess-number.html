@@ -1,0 +1,70 @@
+<!-- 
+  ** recursion is a function calling itself from its inside 
+ -->
+
+<!-- 
+  - write a program to set a secret number as 5
+
+  - take a number between 0 to 9 from the user inside the browser 
+
+  -if the user enters 5.... console log "correct guess"
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    let secretNumber = 5;
+    
+    function guess() {
+      
+      let userGuess = prompt("Enter your guess from numbers 0 to 9 "); // prompt always stores input as string 
+      
+      // converting string from prompt to number
+      
+      userGuess_string_to_number = Number(userGuess); // if an alphabet is entered.... this outputs NaN
+
+      /* if (userGuess_string_to_number === NaN ) {
+
+        console.log("Error! Enter a number");
+        guess(); 
+
+      } ** won't work.... refer extras */
+
+      if (Number.isNaN(userGuess_string_to_number)) {
+
+        console.log("Error! Enter a number");
+        guess(); // ** recursion
+        
+      } else if (userGuess_string_to_number === secretNumber) {
+
+        console.log("Correct Guess");
+        return;
+
+      } else {
+
+        console.log(userGuess_string_to_number);
+        
+        console.log("Wrong guess! Try again!");
+
+         // ** recursion.... the same function is called from its inside
+
+      }
+      
+    }
+
+    guess()
+
+  </script>
+  
+</body>
+</html>

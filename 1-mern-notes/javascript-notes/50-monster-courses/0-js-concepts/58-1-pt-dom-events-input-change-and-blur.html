@@ -1,0 +1,65 @@
+<!-- 
+  watch: https://www.youtube.com/watch?v=EaRrmOtPYTM&list=PLyuRouwmQCjmQTKvgqIgah03HF1wrYkA9&index=17
+
+
+  .... input, change and blur are events that are applied to INPUT TAG 
+
+  - input event: it triggers whenever there is change inside input field when we feed in text from keyboard
+
+  - blur event: first we click inside the input field.... then it gets focused.... but then when you click anywhere outside the input field.... blur event is triggered 
+
+  - change event: first we click inside the input field.... then we type some values... then when you click anywhere outside the input field.... change event is triggered 
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+  <h1>INPUT event on below input field.... type something inside this</h1>
+  <input type="text" id="_input">
+
+  <h2>BLUR event on the below input field.... click inside the text box.... and then click anywhere outside the text box</h2>
+  <input type="text" id="_blur">
+
+  <h3>CHANGE event on the below input field.... click inside the text box... and then type anything... then click anywhere outside the text box</h3>
+  <input type="text" id="_change">
+
+  <script>
+    // selecting 
+
+      let _inputEl = document.getElementById('_input');
+      let _blurEl = document.getElementById('_blur');
+      let _changeEl = document.getElementById('_change');
+
+    // listener functions 
+
+      function _input_listener(e) {
+        console.log(e.type)
+      };
+
+      function _blur_listener(e) {
+        console.log(e.type)
+      };
+
+      function _change_listener(e) {
+        console.log(e.type)
+      };
+
+    // setting event listeners on input
+
+      _inputEl.addEventListener('input', _input_listener);
+
+      _blurEl.addEventListener('blur', _blur_listener);
+
+      _changeEl.addEventListener('change', _change_listener);
+  </script>
+  
+ </body>
+ </html>

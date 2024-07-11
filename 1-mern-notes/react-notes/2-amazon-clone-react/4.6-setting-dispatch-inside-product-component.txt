@@ -1,0 +1,16 @@
+now whenever we click add to basket.... some data should be pushed into the data layer.... this is achieved using dispatch inside the component (here product.js)
+
+- goto product.js.... import useStateValue from ./StateProvider.js
+
+- goto product.js.... inside component function.... before main return..... call state (optional) and dispatch using useStateValue
+
+- inside product.js.... goto add to basket button.... set an onclick to a function named addToBasket
+
+- inside product.js.... before main return write function named addToBasket.... inside this function use a DISPATCH function with object... TYPE and ITEM
+    - type (identifier)
+    - item ( set of objects to be sent to reducer... here we sent id, image, pricing, title etc)
+
+- now to check if the dispatch is working.... goto recucer.js.... write a console.log(action).... click add to basket button..... check if action is dispatched....
+
+- now whenever you press add to cart button, the it gets added into the basket state array in the reducer..... so the number of items in cart is basket.length
+

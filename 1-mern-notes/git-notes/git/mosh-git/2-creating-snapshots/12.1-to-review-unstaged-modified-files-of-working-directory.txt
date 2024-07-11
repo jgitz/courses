@@ -1,0 +1,7 @@
+to see the changes made to untracked/unstaged files use command
+
+    - ::  git diff  
+
+        **** compares the changes only when the previous version is staged
+
+        **** compares the file state in the working directory wrt to earlier state of the same file in the STAGING AREA.

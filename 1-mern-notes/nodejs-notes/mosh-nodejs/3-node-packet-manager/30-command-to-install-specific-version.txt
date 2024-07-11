@@ -1,0 +1,3 @@
+- command to install specific version of the package
+
+   :: npm i <package name>@<semantic version number>

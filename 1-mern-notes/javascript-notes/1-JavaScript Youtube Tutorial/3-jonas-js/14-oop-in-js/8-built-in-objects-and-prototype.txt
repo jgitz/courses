@@ -1,0 +1,11 @@
+- Everything in js is created from constructor functions... that includes ARRAY, STRINGS, OBJECTS, FUNCTIONS etc.
+
+    ** all these js elements are made from their correspoding CONSTRUCTOR FUNCTION 
+
+    ** and the METHODS used by thes built in objects are STORED INSIDE PROTOTYPE of corresponding CONSTRUCTOR FUNCITONS... and is passed to all the instances using prototypal inheritance
+
+    ** in browser also everything is an object.... and prototype property is also there inside html elements..... we can inspect it using 
+
+        console.dir(<query_select_variable>)
+
+**** DON'T add custom built methods into prototype property of built in constructor function.... it can create bugs

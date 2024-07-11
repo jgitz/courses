@@ -1,0 +1,43 @@
+- types of FUNCTION invocation 
+
+    1) WINDOW BINDING simple function invocation. 
+
+    2) IMPLICIT BINDING: function invoked as METHOD from a PARENT OBJECT  
+
+      eg: parent.function()
+
+    3) EXPLICIT BINDING: function is defined outside the object....
+
+      ** function is attached to the object using .call, .bind or .apply
+
+        ** <function>.call(<object>, arg1, arg2)
+
+          ** immediately invokes function
+
+        ** <function>.apply(<object>, argumentsArray)
+
+          ** immediately invokes function
+
+        ** const <> = <function>.bind(<object>, arg1, arg 2)
+    
+    4) NEW BINDING: function invoked with new keyword and arguments 
+
+        eg const <> = new <Function>(arg1, arg2)
+
+    5) LEXICAL BINDING: ARROW function invocation 
+
+    6) invoked as EVENT LISTNER HANDLER
+
+**** ORDER OF PRECENDENCE OF BINDING:
+
+          ** trick: NE ID 
+
+              - New binding
+
+              - Explicit binding 
+
+              - Implicit binding 
+
+              - Default/window binding 
+
+    

@@ -1,0 +1,20 @@
+- inside practice folder.... create a react app using commad 
+
+    :: npx create-react-app <demo-app>
+
+- inside depo app folder... clean up 
+
+        - app.css
+
+        - index.css
+
+        - remove unnecessary codes from app.js
+
+- inside src folder.... create a new component folder to practice various mui components
+
+- inside index.css... add the following css code 
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }

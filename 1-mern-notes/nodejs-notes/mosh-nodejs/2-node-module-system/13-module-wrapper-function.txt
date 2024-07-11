@@ -1,0 +1,17 @@
+- MODULE WRAPPER FUNCTION: the codes written inside a node file is actually run inside a function in the background... that function is
+
+    (function (exports, require, module, __filename, __dirname) {
+
+      <codes written inside file here>
+    })
+
+      ** exports argument: is a shortcut for module.exports
+
+
+      ** module argument: refers to module object
+
+      ** require argument: refers to require() and it is local to that file
+
+      ** __filename: path to file
+
+      ** __dirname: path to the directory

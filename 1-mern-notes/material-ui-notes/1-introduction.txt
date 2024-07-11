@@ -1,0 +1,19 @@
+- is a design library with prebuilt components to build responsive web pages 
+
+- mui library is based on MATERIAL DESIGN by google.. material design is used by google to design android os ui
+
+- FEATURES of MUI 
+
+    ** components based library (no need to write css for components)
+
+    ** supports additional css properties
+
+    ** works with react js
+
+- ADVANTAGES 
+
+    ** time savings 
+
+    ** responsive 
+
+    ** no need to write css styles

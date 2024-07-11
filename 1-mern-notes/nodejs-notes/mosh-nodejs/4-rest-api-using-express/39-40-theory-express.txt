@@ -1,0 +1,25 @@
+- express offers methods such as 
+
+  - app.get()
+  - app.post()
+  - app.put()
+  - app.delete()
+
+- express request syntax
+
+    app.<request verb get/post>(<endpoint path>, (req, res) => {
+
+    } )
+
+
+    ** the endpoint path is known as ROUTE
+
+    ** the  req, res callback function is known as ROUTE HANDLER
+
+- express listening syntax
+
+  app.listen(<port number>, <function to display console message > )
+
+- command to run express app on browser
+
+  :: node index.js

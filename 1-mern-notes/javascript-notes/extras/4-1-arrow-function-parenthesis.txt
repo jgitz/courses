@@ -1,0 +1,11 @@
+- arrow function syntax 
+
+    () => ({key: value, key: value})
+
+        ** the () enables arrow function to return an object without a return keyword 
+
+        ** the above syntax is same as 
+
+              () => {
+                return {key: value, key: value}
+              }

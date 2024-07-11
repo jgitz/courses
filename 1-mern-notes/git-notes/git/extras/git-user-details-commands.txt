@@ -1,0 +1,5 @@
+- git config -l :: to display all user details
+
+- git config user.name :: to display username
+
+- git config user.email :: to display user email id

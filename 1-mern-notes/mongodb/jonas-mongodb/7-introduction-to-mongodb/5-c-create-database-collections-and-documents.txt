@@ -1,0 +1,73 @@
+- open powershell
+
+    - to start the mongosh... type 
+
+        :: mongosh.exe :: 
+
+        ** now we can use mongo commands 
+
+
+- to create/ switch to a database use USE COMMAND 
+
+      :: use <database name>
+
+      ** if the database don't exist.... it creates one and switches to it
+
+..... now to store data we need collection and documents inside collecitons 
+
+- to create a collection inside a mongo database 
+
+    - in cli.... start mongosh using 
+
+            :: mongosh.exe ::
+
+    - switch/create the database where you want to make a collection 
+
+            :: use <database name> ::
+
+    - to make a collection and INSERT ONE document .... type
+
+            :: db.<colleciton name>.insertOne({key1: "value1"}, {key2: "value2"})
+
+            ** USE "" to wrap VALUES and NOT ''
+
+            ** "" wrapping around key in NOT MANDATORY
+
+            ** whenever a document is created.... a _id property is automatically added to the document
+
+    - to LIST ALL documents saved in the collectoin
+
+            :: db.<collection name>.find()
+
+    
+
+- to SHOW all databases in your mongodb 
+
+    - open powershell cli and run mongosh using command 
+
+        :: mongosh.exe :: 
+
+    - to LISH all DATABASES type....
+
+        :: show dbs 
+
+        ** we can use USE COMMAND to any database to switch to the database
+
+- to show all collections of a database 
+
+    - open mongosh in powershell cli 
+
+        - go to database using use command like this 
+
+                :: use <database name> ::
+
+        - to LIST all collections of that database.... type  
+
+                :: show collections
+                
+
+- to QUIT MONGOSH.... type.... 
+
+        :: quit() :: 
+                
+

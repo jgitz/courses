@@ -1,0 +1,14 @@
+..... in manual web app building you need to configure many tools into your react app project to BUILD IT.....like
+
+    - BABEL: for transpiling the jsx to html and js
+
+    - WEBPACK: configuration library to set the configuration 
+
+.... for a beginner... this is a cumbersome process.... so a solution is to have a tool that does all this automatically.... and that tool is CREATE REACT APP 
+
+- CREATE REACT APP: is a package that automatically sets up REACT with package runner command npx (node package executer)
+
+    ** it uses BABEL and WEBPACK to build your app
+
+
+**** npm vs npx link: https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx

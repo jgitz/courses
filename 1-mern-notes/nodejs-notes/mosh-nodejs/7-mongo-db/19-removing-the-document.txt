@@ -1,0 +1,16 @@
+.... there are two approaches to delete objects 
+
+1) using deleteOne or deleteMany METHODS inside async function 
+
+    const <data> = await <Model_variable>.deleteOne({_id: "<id value>"})
+
+        ** returned promised data is the number of deleted documents (more than 1 if deleteMany method is used)
+
+2) using findByIdAndRemove method inside async function ....
+
+      const <data> = await <Model_variable>
+                      .findByIdAndRemove("id")
+
+          ** the return value of the promise is the DELETED DOCUMENT 
+
+          ** if the document with the id is absent.... the promise will return NULL value

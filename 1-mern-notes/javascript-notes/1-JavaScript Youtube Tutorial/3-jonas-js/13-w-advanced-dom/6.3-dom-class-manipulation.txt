@@ -1,0 +1,26 @@
+- to add class : 
+
+    <query_select_variable>
+    .classList
+    .add("<class 1>", "<class 2>")
+
+- to remove class :
+
+    <query_select_variable>
+    .classList
+    .remove("<class 1>", "<class 2>")
+
+- to toggle class :
+
+    <query_select_variable>
+    .classList
+    .toggle("<class>")
+
+- to check presence of a class 
+
+    <query_select_variable>
+    .classList
+    .contains("<class>")
+
+
+**** DON'T USE <query_select_variable>.className to set class because it OVERWRITES every classes

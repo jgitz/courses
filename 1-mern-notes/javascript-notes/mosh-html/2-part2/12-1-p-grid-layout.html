@@ -1,0 +1,74 @@
+<!--
+  
+  - implement grid layout given in the figure
+  
+  - the grid is 3 x 2 .... i.e 3 rows and 2 column
+
+  - set container height to 90vh (don't give 100vh.... else overflow happens due to addition of default margines )
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+   
+
+    .container{
+      border: 2px solid red;
+      height: 90vh;
+
+      display: grid;
+      grid-template: 1fr 5fr 1fr / 1fr 1fr ;
+      grid-template-areas: 
+      "header header" 
+      "sidebar content"
+      "footer footer";
+      gap: 1rem;
+      
+    }
+
+    .item {
+      border-radius: 10px;
+    }
+
+    .item-header {
+      background: dodgerblue;
+      grid-area: header;
+    }
+
+    .item-sidebar {
+      background: orange;
+      grid-area: sidebar;
+    }
+
+    .item-content {
+      background: gold;
+      grid-area: content;
+    }
+
+    .item-footer {
+      background: red;
+      grid-area: footer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item item-header"></div>
+    <div class="item item-sidebar"></div>
+    <div class="item item-content"></div>
+    <div class="item item-footer"></div>
+  </div>
+
+
+  
+</body>
+</html>

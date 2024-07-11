@@ -1,0 +1,7 @@
+- since functions in js are objects.... they can be manipulated using function methods.... most commonly used function methods to manipulate THIS key word are 
+
+    1) call method 
+
+    2) apply method (not used now)
+
+    3) bind method 

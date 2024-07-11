@@ -1,0 +1,24 @@
+- Testing: is a process of testing your application before deployment..... testing can be  
+
+      1) manual: manually testing the application
+
+      2) automated: testing application by writing test code. 
+
+            ** automated testing is further classified into 
+
+                1) UNIT TESTING: testing a unit or block of code in an application without its external dependencies.
+
+                    - cheap to write 
+                    - executes fast
+
+                2) INTEGRATED TESTING: tests the application code with its external dependencies
+
+                    - tests the application with its external dependencies 
+
+                    - takes long time to execute 
+
+                3) END TO END TESTING: drives an application through its UI using specific tools like SELENIUM.. 
+
+                    - very slow 
+
+                    - small change in the application can break this test 

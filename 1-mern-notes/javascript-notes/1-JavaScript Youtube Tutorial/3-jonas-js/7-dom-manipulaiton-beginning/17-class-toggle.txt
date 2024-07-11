@@ -1,0 +1,5 @@
+- class toggling: means remove a class if it is there and add the class if it is not there 
+
+  document.querySelector("element")
+  .classList
+  .toggle("class1")

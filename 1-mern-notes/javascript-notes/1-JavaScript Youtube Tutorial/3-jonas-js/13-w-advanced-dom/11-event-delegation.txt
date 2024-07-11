@@ -1,0 +1,11 @@
+.... if you want to add event listners to many elements.... 
+
+** DON't make add event listners to each element.... as that is INEFFICIENT for large scale application
+
+** FIND a COMMON PARENT ELEMENT to all the TARGET ELEMENTS and add a SINGLE EVENT LISTNER THERE 
+
+** inside the event listner handler....
+
+      ** use e.target to manipulate original target element where the click happened 
+
+      ** USE AN IF statement to track only event that is happened at the target element 

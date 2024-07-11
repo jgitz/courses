@@ -1,0 +1,13 @@
+In vscode.... on the left pane.... there is an option to do source control on the file you are working
+
+    - click on source control icon on left pane..... click the file
+
+        ** displays untracked on top if the file is untracked
+
+        ** to stage the file click on + button
+
+        ** to unstage the file click on - button
+
+        ** to commit add commit message on space on source control tab and click TICK mark on top
+
+        ** to see commit history.... click on file and click TIMELINE tab on bottom left of EXPLORER

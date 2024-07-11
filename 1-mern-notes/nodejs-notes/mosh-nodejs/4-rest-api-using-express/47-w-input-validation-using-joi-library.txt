@@ -1,0 +1,5 @@
+- watch
+
+.... we should never trust an input coming from the client.... the input must be verified whether it if of the format that the server needs.... 
+
+.... joi is a library with methods and functions that helps to validate the requests coming to the backend

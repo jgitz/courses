@@ -1,0 +1,34 @@
+- goto resources folder and install all the fonts given inside the font folder by multiple select and install method
+
+- create project folder named moshify-project to store the project files
+
+- inside moshify-project folder
+
+    - create index.html file
+
+    - create folder named css to store css files 
+
+- goto project/css folder 
+
+    - make file named normalize.css and paste normalize css codes from internet 
+
+    - make styles.css file to store our css codes 
+
+        ** in big projects, there will be multiple css files.... and they all will be combined by a css preprocessor like sass
+
+- goto project/index.html
+
+    - add link tag to link normalise.css
+
+    - add link tag to link styles.css
+
+    ** link tag order matters
+
+- goto project folder... 
+
+    - create a folder named images to store images/icons/sprites
+
+    - create a folder named components to store TEMPLATE HTML codes of the designed components of the page
+
+- initialize git inside the project folder
+

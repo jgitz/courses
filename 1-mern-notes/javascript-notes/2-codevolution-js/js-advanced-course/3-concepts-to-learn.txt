@@ -1,0 +1,19 @@
+concepts that we're about to learn
+
+- nested function's scope
+
+- Closure
+
+- Currying
+
+- this keyword
+
+- Prototype
+
+- prototypal inheritance
+
+- Class
+
+- iterables and iterators
+
+- generators

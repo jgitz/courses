@@ -1,0 +1,11 @@
+- to commit files to git repo
+    - :: git commit -m "<message here>" -m "description here"
+
+        or
+
+        :: git commit :: vscode txt file pops up
+            - first line for message
+
+            - 3rd line for description
+
+

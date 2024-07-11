@@ -1,0 +1,34 @@
+analogy
+
+  - kitchen = server
+
+  - waiter = thread
+
+  - client order = request
+
+
+- asynchronous/non blocking:
+
+  - here a SINGLE thread is used to handle requests. 
+
+  - but when the server processes a request, the thread moves to handle other request
+
+  - eg: js and node is synchronous
+
+- synchronous/blocking:
+
+  - here if only a single thread is used to handle requests. The thread waits for the server to process the current request before taking another request.
+
+  - in this scenario, multiple threads are used if the server want to handle multiple requests simultaneously. if all threads gets occupied, then more servers are assigned to handle large scale requests..
+
+  - eg: asp.net
+
+- EVENT QUEUE in node
+
+  - node uses an event queue to track the requests.
+
+** node is ideal for i/o data intensive applications with network access
+
+** node cannot be used for cpu intensive applications such as image/video encoding
+
+

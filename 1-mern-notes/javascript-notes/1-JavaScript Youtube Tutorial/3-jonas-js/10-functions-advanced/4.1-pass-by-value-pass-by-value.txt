@@ -1,0 +1,10 @@
+- in original programming OTHER THAN JS 
+
+    ** pass by value: means we can pass a VALUE of a VARIABLE into a FUNCTION
+
+    ** pass by REFERENCE: means we can pass a REFERENCE/ADDRESS of a VARIABLE into a FUNCTION 
+
+
+***** IN JS there is NO pass by reference.... there is ONLY PASS BY VALUE.... because even for NON PRIMITIVE dt's we PASS IN THE ADDRESS AS VALUES 
+
+    ** due to this we CANNOT point to REFERENCE / ADDRESSES of PRIMITIVE data type to manipulate it

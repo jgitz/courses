@@ -1,0 +1,35 @@
+to create a package.json file...
+
+- goto project folder.... open terminal
+
+  - type command
+
+    :: npm init
+
+      - now default questions is asked
+
+        - package name? <default folder name / name of your choosing>.... press enter
+
+        - version?... press enter
+
+        - description?.... press enter
+
+        - entry point? .... press enter
+
+        - test command? .... press enter
+
+        - git repository? .... press enter
+
+        - keywords? .... press enter
+
+        - author? .... press enter
+
+        - license? .... press enter
+
+        - press enter
+
+         ** now package.json file is created in your project folder
+
+**** if you want to create package.json file faster with default value without questions.... then type
+
+  :: npm init --yes

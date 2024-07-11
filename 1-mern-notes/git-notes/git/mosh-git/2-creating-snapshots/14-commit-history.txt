@@ -1,0 +1,28 @@
+to see all commit history
+
+    - :: git log
+
+        ** commits are sorted newest first
+
+        ** unique id for commit
+
+        ** HEAD -> master :HEAD is referencing that we are currently working in the branch named MASTER
+
+        ** commit author name and email
+
+        ** date and time of commit
+
+        ** commit message
+
+        ** press space to scroll
+
+        ** press q to quit
+
+    - to show brief commit history
+
+        - :: git log --oneline
+
+    - to reverse sort order to show oldest commit on top
+
+        - :: git log --oneline --reverse
+

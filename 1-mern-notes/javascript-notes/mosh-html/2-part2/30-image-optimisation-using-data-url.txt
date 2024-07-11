@@ -1,0 +1,20 @@
+..... images can also be converted to url and stored in the browser memory.... so that there is no need for browser to send another http request to download the image....
+
+- steps to convert image to url 
+
+    - step 1: google data url generator.... click any site 
+
+    - step 2: upload the image you want to convert to url .... click generate
+
+    - step 3: copy the generated url code 
+
+    - step 5: inside the project html.... paste the copied code to SRC attribute of IMAGE TAG 
+
+
+***** this method IS NOT USED NOW.... because 
+
+        - generated url has MORE SIZE than the original file 
+
+        - slow on MOBILE DEVICES
+
+        - not easy to replace the image as you have to generate another data url for the new image

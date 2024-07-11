@@ -1,0 +1,45 @@
+- BUTTON component tag is used by mui to add different types of PREDEFINED buttons to your react app
+
+- BUTTON COMPONENT PROPS 
+
+    - VARIANT: takes the following values 
+
+          1) text: makes a button which only shows outline when mouse is hovered over it 
+
+          2) contained: makes a button with a background color 
+
+          3) outlined: makes a button with an outline border around it and no background color
+
+    - DISABLED: disables the button 
+
+    - href : specify a link as a value wrapped in "" to make the button a link
+
+    - onClick: 
+
+        onClick={() => {
+
+        }}
+
+    - color: takek predefined colors defined in the THEME OF mui.... common color values below 
+
+          - success: green 
+
+          - primary: blue 
+
+          - secondary: pinkish violet 
+
+          - error: red
+
+      - size: takes value 
+
+            - small 
+
+            - medium 
+
+            - large
+
+
+**** there are other predefined codes for other action buttons such as PHOTO UPLOAD, FILE UPLOAD etc inside mui site
+
+      
+

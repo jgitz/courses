@@ -1,0 +1,29 @@
+- APPBAR component: is used to make a navigation bar in the mui
+
+    - syntax:
+
+        <AppBar>
+        </AppBar>
+
+          ** can add button, logo etc to build a navbar
+
+          ** B is uppercase in AppBar tag
+
+    - accepted propes 
+
+        - variant: 
+
+            - "elevation": gives shadows to the appbar.... this is dafault variant 
+
+            - "outlined" : no shadow to app bar 
+
+        - color 
+
+- TOOLBAR component: provides a structure to provide sub elements in a navbar with automatic flex properties  
+
+      - syntax: 
+
+          <Toolbar>
+          </Toolbar> 
+
+          ** b is lowercase in toolbar tag

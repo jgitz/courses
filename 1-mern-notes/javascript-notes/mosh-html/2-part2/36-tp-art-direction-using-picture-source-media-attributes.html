@@ -1,0 +1,33 @@
+<!-- 
+
+  ..... some times we need to use CROPPED VERSION of an image in MOBILE.... because some big image that looks nice on desktop.... should be cropped to look nice on mobile.... to implement this we use 
+
+      - PICTURE TAG 
+
+      - SOURCE TAGS inside picture tags to provide different versions
+
+      - MEDIA ATTRIBUTE INSIDE SOURCE TAG to specify DYNAMIC SCREEN WIDTH 
+
+      ** see the practical 
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <picture>
+    <source media="(min-width: 501px)" srcset="./36-i-full-image.jpg"/> <!-- full image is displayed on screen sizes greater than 501px -->
+
+    <source media="(max-width: 500px)" srcset="./36-i-cropped-image.jpg"/> <!-- cropped image is displayed on screen sizes less than 500px -->
+
+    <img src="./36-i-full-image.jpg" alt="a tree on a landscape full of snow"> <!-- used as fallback and for alt text for picture tag -->
+  </picture>
+  
+ </body>
+ </html>

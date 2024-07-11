@@ -1,0 +1,52 @@
+<!-- 
+
+....there are 2 ways to set DIMENSIONS of the element....
+
+    1) by setting WIDTH and HEIGHT property 
+
+      ** disadvantage is that the element won't change dimensions automatically according to screen sizes
+
+    2) by setting 
+    
+        - WIDTH to AUTO
+        - height to any value
+        - position to realtive/absolute
+        - setting top/right/bottom/left combination.... 
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box-fixed {
+      width: 10rem;
+      height: 10rem;
+      background: greenyellow;
+      border: 2px solid black;
+    }
+
+    .box-dynamic {
+      position: absolute;
+      left: 4rem;
+      right: 4rem;
+      width: auto;
+      height: 5rem;
+      background: greenyellow;
+      border: 2px solid red;
+    }
+  </style>
+ </head>
+ <body>
+
+  <div class="box-fixed">fixed box.... don't change with screen size </div>
+
+  <div class="box-dynamic">dynamic width box which change with screen size</div>
+  
+ </body>
+ </html>

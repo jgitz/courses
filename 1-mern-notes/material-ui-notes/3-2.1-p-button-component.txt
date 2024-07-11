@@ -1,0 +1,20 @@
+- inside src/components folder 
+
+
+    - create a new component file named ButtonComponent.js 
+
+    - inside ButtonComponent.js 
+
+          - do rfce
+
+          - import { Button } from "@mui/material";
+
+          - create a button component using mui <Button> tag
+
+    - inside app.js
+
+            - specify ButtonComponent after importing it 
+
+    - goto button component and experiment with the various button mui styles 
+
+

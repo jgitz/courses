@@ -1,0 +1,5 @@
+- to remove a file from both working directory and staging area
+
+    - git rm <file name or pattern>
+
+        **** to delete a file, you need to remove it from both working directory and staging area.... so always use this command to delete files entirely

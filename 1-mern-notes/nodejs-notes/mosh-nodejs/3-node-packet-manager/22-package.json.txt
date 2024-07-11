@@ -1,0 +1,3 @@
+- package.json is a file which has metadata about your application
+
+- every project needs a package.json file

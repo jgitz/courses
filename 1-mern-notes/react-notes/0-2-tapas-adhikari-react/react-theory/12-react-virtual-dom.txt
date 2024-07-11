@@ -1,0 +1,31 @@
+.... DOM is just an access point api to DYNAMICALLY change the HTML CONTENTS using javascript....
+
+.... DOM manipulation has 3 parts 
+
+    1) select the element you want to change/modify (querying)
+
+    2) update the selected element 
+
+    3) RE-RENDER the updated view inside the browser 
+
+.... the  FIRST STEP is PERFORMANCE costly if the element you want to select is NESTED inside various other ELEMENTS down the DOM TREE....
+
+.... the THIRD STEP of RE-RENDERING of DOM is a very INTENSIVE PROCESS.... such that it AFFECTS the APP PERFORMANCE if there is a need for FREQUENT RE-RENDERING.....
+
+..... FRAMEWORKS or LIBRARIES like REACT is used to solve this RE-RENDERING problem using VIRTUAL DOM 
+
+- VIRTUAL DOM: is a IN-MEMORY COPY of your original app's DOM TREE....
+
+    ** the dom manipulation of elements are done in the VIRTUAL DOM by react 
+
+    ** since virtual dom is IN-MEMORY.... the manipulation operations will be faster
+
+
+
+** when react finds a change in the VIRTUAL DOM..... it DON'T UPDATE the virtual dom immediately.... INSTEAD it MAKES a NEW VERSION of virtual dom with UPDATIONS..... then uses DIFFING ALGORITHM to find the changes between OLD VIRTUAL DOM and NEW VIRTUAL DOM.... after this these changes are applied to REAL DOM 
+
+** RECONCILIATION: whenever react finds a change in virtual dom.... it creates a NEW VIRTUAL DOM..... and uses diffing algorithm.... if there are many manipulations in virtual dom.... all of them are made into a BATCH JOB and apply it to REAL DOM... instead of applying each changes one by one to real dom....
+
+    - PROCESS of BATCHING UP of all the virtual doms and applying it on the REAL DOM is known as RECONCILIATION
+
+***** LIST ELEMENTS and KEY ATTRIBUTE: DIFFING algorithm finds it difficult to find changes in LI TAG unless a UNIQUE KEY is given to all LI TAGS.... so ALWAYS use KEY inside REACT LI TAGS....

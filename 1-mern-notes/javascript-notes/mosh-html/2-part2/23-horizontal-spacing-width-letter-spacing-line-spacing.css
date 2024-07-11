@@ -1,0 +1,49 @@
+/* 
+
+.... horizontal spacing is controlled by 3 attributes 
+
+  1) letter-spacing: defines spaces between each letters 
+
+      ** use unit in PX
+
+      ** -ve values can be used 
+
+      ** ideal value depends on use case 
+
+      ** set on BODY TAG css
+
+  2) word-spacing: defines spaces between each words
+
+      ** use unit in PX
+
+      ** ideal value depends on use case 
+
+      ** set on BODY TAG css
+
+  3) WIDTH OF P ELEMENTS : defines number of words in a line of paragraph tag...
+
+      ** RULE: ideal number of words in a line of paragraph is 50 to 70 WORDS 
+
+      ** the UNIT USED is CH.... 1CH = space taken by numeral letter 0
+
+      ** BEST PRACTICE: 
+
+          p {
+            width: 50ch
+          }
+
+          ** 50ch will limit 50 to 70 words per line
+
+
+*/
+
+/* example */
+
+body {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+p {
+  width: 50ch;
+}

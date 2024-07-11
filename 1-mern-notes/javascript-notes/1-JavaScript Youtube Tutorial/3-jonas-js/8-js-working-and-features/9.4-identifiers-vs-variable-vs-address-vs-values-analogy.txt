@@ -1,0 +1,24 @@
+- ANALOGY: 
+    ** there is a school locker with LOCKER NUMBER 
+
+    ** inside the locker we can either store a paper slip with NUMBERS or paper slip with a house address 
+
+
+- VARIABLE: is the inside space of the locker
+
+  ** in js variable is where we store value
+
+  ** variables always store a value 
+
+  ** value can be the VALUE itself(in primitive datatypes) OR address (non primitive)
+
+- IDENTIFIER: is the locker number 
+
+    ** in js is the name of the variable space 
+
+    ** identifiers always points to a CALL STACK ADDRESS 
+
+- VALUE: is the paper slips inside locker 
+
+    ** in js value can be the VALUE itself(in primitive datatypes) OR address (non primitive)
+

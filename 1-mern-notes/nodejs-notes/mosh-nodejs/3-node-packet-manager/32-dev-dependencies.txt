@@ -1,0 +1,18 @@
+- there are two types of dependencies
+
+    1) dependencies that are needed for the application in production environment.
+
+      eg: mongoose, express
+
+    2) dev dependencies: dependencies that are only needed at development environment and not in production environment.
+
+      eg: unit testing tool, bundling tool, static analysis tool, live-server etc
+
+- command to specify dev dependencies on install
+
+  :: npm i <package name> --save-dev
+
+    ** now inside package.json file.... this package is stored inside the property devDependencies
+
+    
+

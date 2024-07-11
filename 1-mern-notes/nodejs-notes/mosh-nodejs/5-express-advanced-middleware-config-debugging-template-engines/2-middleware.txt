@@ -1,0 +1,35 @@
+- express application is a collection of middleware functions
+
+- a middleware starts when a request comes to it.... then 2 thing is done by middleware....
+
+  1) either end the middleware operation by sending response
+
+    ** or 
+
+        2) transfer the request to the next middleware
+
+
+- the request handler function inside the http methods itself is a middleware function that enables the app to take the client request, then resolve it and send the response back to the client
+
+- another middleware example is the 
+
+    - app.use(express.json())
+
+      ** express.json() accepts the request from the client... and if the client request has a body in json format... then this middleware extracts the body and assign it to object named req.body...... hence we are able to access req.body in the route handler function....
+
+ - request processing pipeline in express.... the following figure shows the 2 middlewares involved when an express server receives a client request..
+
+    - request comes =>
+
+      => express.json() parses request body into json object and stores inside req.body object... then passes the request to route handler function
+
+      => route handler function is a middleware that recieves the client request and enables server to resolve the request and send back response to the client 
+
+
+- custom middleware functions
+
+    - express.json() and route handling arrow functions are built in middleware functions of express
+
+    - we can make custom middleware functions and put it before the beginning of request processing pipeline
+
+    - we can do logging, authentication and authorisation through using custom middleware functions

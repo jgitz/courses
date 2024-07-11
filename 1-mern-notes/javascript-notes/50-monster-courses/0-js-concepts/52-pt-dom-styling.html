@@ -1,0 +1,75 @@
+<!-- 
+  ..... any css styles can be added to your page using <>.style PROPERTY and add values as strings after = .... for eg 
+
+      <>.style.border = '4px'
+
+  - to add multiple css styles to an element 
+
+      <>.style.cssText = "background-color: red; color: green; font-size: 40px"
+
+          ** DON'T USE camel case inside "" which comes after =
+
+  ** styles added will be INLINE STYLE.... and NO modification is done on EXTERNAL STYLES added via css file 
+
+  
+
+    
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>style - display: none</h1>
+  <h2>style - display: block and font color red </h2>
+  <h3>style - border: '5px dotted purple' and display: 'inline-block'</h3>
+  <h4>style - fontSize: '40px' and green color font </h4>
+
+  <h5>adding multiple styles with &lt; &gt;.cssText = 'css properties without camel case'  </h5>
+
+
+
+  <script>
+    // selecting elements 
+
+    let h1El = document.querySelector('h1');
+    let h2El = document.querySelector('h2');
+    let h3El = document.querySelector('h3');
+    let h4El = document.querySelector('h4');
+    let h5El = document.querySelector('h5');
+
+    
+
+    // making h1 element disappear using display: none 
+
+    h1El.style.display = 'none';
+
+    // h2 element with display block and font color red
+
+    h2El.style.display = 'block';
+
+    h2El.style.color = 'red';
+
+    // h3 element with border style 
+
+    h3El.style.border = '4px dotted purple';
+
+    h3El.style.display = 'inline-block';
+
+    // h4 element with font size 40 px 
+
+    h4El.style.fontSize = '40px';
+    h4El.style.color = 'green'
+
+    // h5 multiple styles with cssText method
+
+      h5El.style.cssText = 'color: white; background-color: purple; font-size: 40px '
+  </script>
+</body>
+</html>

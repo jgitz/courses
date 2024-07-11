@@ -1,0 +1,1 @@
+watch.... dialog component is use to make POP UP inside your web app.... we can blur the background as well as do transition..... commonly used for yes/no confirmation

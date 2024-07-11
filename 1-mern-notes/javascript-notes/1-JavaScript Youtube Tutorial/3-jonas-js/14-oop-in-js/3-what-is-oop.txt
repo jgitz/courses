@@ -1,0 +1,8 @@
+- OOP (Object Oriented Programming) : 
+
+      ** is a programming PARADIGM which structures codes inside objects
+
+      ** OBJECTS become building blocks 
+
+      ** public interface API methods are used by the CODES OUTSIDE the object to access and communicate with the OBJECT 
+

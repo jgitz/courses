@@ -1,0 +1,1 @@
+watch.... auto complete component is used commonly in a search box/ text field where when we click the field.... auto completed options gets listed.... the listed options are fed into the autocomplete component in various methods like array of objects inside an OPTION attribute 

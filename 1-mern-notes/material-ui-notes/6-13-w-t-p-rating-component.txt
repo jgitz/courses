@@ -1,0 +1,1 @@
+watch.... rating component is used to set star rating inside your web app.... precision prop allows you to set decimal rating.... defaultValue is used to set default rating value..... the onChange prop arrow function of rating takes event as well as rating value as arguments

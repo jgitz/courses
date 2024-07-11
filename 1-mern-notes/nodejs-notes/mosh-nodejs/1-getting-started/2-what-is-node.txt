@@ -1,0 +1,13 @@
+- what is nose
+
+    nodejs/node is a crossplatform runtime environment to run js outside a browser i.e inside a backend server
+
+- advantages of node
+
+    - used to make scalable, faster web apps
+
+    - use js
+
+    - large open-source libraries
+
+

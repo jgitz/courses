@@ -1,0 +1,18 @@
+watch..... modal component is the base component used in other component like dialog, drawer, menu and popover
+
+.... modal is also used to make pop ups..... difference between dialog and modal component is that.... modal component opens in full screen by default.... and dialog component opens at the center of the screen by default.... so we need extra customisation to set position of the modal window
+
+    - dialog box use cases 
+
+        - confirmation message 
+        - permission 
+
+        ** skippable non mandatory popups are made using dialog component 
+
+    - modal use cases 
+
+          - pay screen 
+
+
+          ** non skippable mandatory popups are made using modal component
+

@@ -1,0 +1,68 @@
+..... consider the following code 
+
+function Counter({ onSuccess }) {
+  const [count, setCount] = useState(0);
+  console.log(count);
+
+  const increaseCount = () => {
+    setCount(count + 1);
+    setCount(count + 1);
+    setCount(count + 1);
+  };
+
+  return (
+    <>
+      <button onClick={increaseCount}>Increase</button>
+      <div>Counter: {count}</div>
+    </>
+  );
+}
+
+export default function IndexPage() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+
+>>>>>>>>>> 
+
+In the above example, the Counter component increments the value of the state variable count. Since increaseCount() function calls the setCount() function 3 times, you might think that one button click will increase the count value by 3. But, it will only increment by 1 per button click.
+
+n this case, if setCount(count + 1) is called in rapid succession, React may batch these updates, but each update is based on the original value of count, not the updated value from the previous call.
+
+On the other hand, when you use setCount((count) => count + 1) three times in succession, you're providing a function to setCount that takes the previous state (count) as an argument. React guarantees that the latest state value is passed to this function. So since there is PREVIOUS STATE INVOLVED.... REACT WON'T DO BATCH UPDATE.... this is implemented below
+
+>>>>>> solution: use setCount with previous state like this 
+
+import { useState } from "react";
+
+function Counter({ onSuccess }) {
+  const [count, setCount] = useState(0);
+  console.log(count);
+
+  const increaseCount = () => {
+    setCount(count => count + 1);
+    setCount(count => count + 1);
+    setCount(count => count + 1);
+  };
+
+  return (
+    <>
+      <button onClick={increaseCount}>Increase</button>
+      <div>Counter: {count}</div>
+    </>
+  );
+}
+
+export default function IndexPage() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+b 
+
+

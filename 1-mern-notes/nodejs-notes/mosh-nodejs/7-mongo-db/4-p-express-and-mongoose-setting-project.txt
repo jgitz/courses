@@ -1,0 +1,17 @@
+..... for practicing mongoose in node app..... we need to create an node app and install mongoose library
+
+- to create a demo project 
+
+    - create a folder for the project named demo-practice project 
+
+    - to initialize packet.json... open demo project folder in integrated terminal and do 
+
+        :: npm init 
+
+    - to install mongoose inside the demo project.... 
+
+        - open the project folder in integrated terminal and do 
+
+            :: npm i mongoose
+
+    - inside demo project folder.... create a file named index.js

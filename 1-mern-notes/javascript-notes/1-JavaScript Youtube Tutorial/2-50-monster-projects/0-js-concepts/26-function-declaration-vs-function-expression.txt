@@ -1,0 +1,7 @@
+- function declaration: means simply defining funciton with "function" keyword
+
+    ** gets hoisted 
+
+- funciton expression: assigning a function declaration to a variable name
+
+    ** DON'T gets hoisted

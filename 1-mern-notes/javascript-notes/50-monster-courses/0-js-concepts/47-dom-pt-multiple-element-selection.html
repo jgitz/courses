@@ -1,0 +1,97 @@
+<!-- 
+  - multiple elements can be selected using many methods 
+
+      - document.getElementsByClassName("<class>")
+
+        ** returns an HTML COLLECTION (like array) with each element with index number
+
+      - document.getElementsByTagName("<tag>")
+
+        ** returns an HTML COLLECTION (like array) with each element with index number
+
+      - document.querySelectorAll("<tag>/<.class>/<#id>")
+
+        ** returns a NODE COLLECIION (like array) with each element with index number
+
+- now to loop through all the selected multiple elements 
+
+        ** use SIMPLE FOR loop for HTML COLLECTIONS
+
+        ** use <>.forEach(<callback function>) for NODE LIST 
+
+
+        ***** forEach method WON'T work with HTML COLLECTIONS
+
+      -
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+
+   <h1>getElementsByTagName</h1>
+   <h1>getElementsByTagName</h1>
+ 
+   <h2 class="_class">getElementsByClassName</h2>
+   <h2 class="_class">getElementsByClassName</h2>
+
+    <h3>querySelectorAll</h3>
+    <h3>querySelectorAll</h3>
+
+    <script>
+      const h1_list = document.getElementsByTagName('h1'); 
+
+      console.log(h1_list); // o/p is html collection
+
+      const h2_list = document.getElementsByClassName('_class');
+
+      console.log(h2_list); // o/p is html collection
+
+      const h3_list = document.querySelectorAll('h3');
+      
+      console.log(h3_list); // o/p is NODE LIST
+
+    // looping the each selection collection and updating text content of selection
+
+    // **** html collections only use for loop to loop through all elements
+
+    for(let i = 0; i < h1_list.length; i++) {
+
+      h1_list[i].textContent = ' getElementsByTagName : updated via for loop';
+
+      h1_list[i].style.backgroundColor = 'violet';
+      
+    }
+
+    for(let i = 0; i < h2_list.length; i++) {
+
+      h2_list[i].textContent = ' getElementsByClassName : updated via for loop';
+
+      h2_list[i].style.backgroundColor = 'yellow';
+
+    }
+
+    // node list looping can be done with forEach method.... forEach won't work for html collecitons.... for loop can also be used for node list
+
+    h3_list.forEach(function(el) {
+
+      el.textContent = 'querySelectorAll : updated via forEach loop';
+
+      el.style.backgroundColor = 'grey';
+
+    })
+
+      
+    </script>
+
+ </body>
+ 
+ </html>

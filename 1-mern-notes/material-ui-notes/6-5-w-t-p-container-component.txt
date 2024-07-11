@@ -1,0 +1,1 @@
+watch.... container component is used to CENTER contents HORIZONTALLY on a webpage

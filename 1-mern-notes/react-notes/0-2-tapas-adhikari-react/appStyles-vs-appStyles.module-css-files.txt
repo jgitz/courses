@@ -1,0 +1,20 @@
+.... in react the parent component is the app component.... it can be styled in 2 ways 
+
+    1) by creating a appStyles.css file 
+
+    2) by creating a appStylesModule.css file 
+
+- DIFFERENCE between appStyles.css and appStylesModule.css files 
+
+    ** in appStyles.css.... the style classes defined in it can be applied to ANY CHILD component of the APP COMPONENT.... this creates conflicts 
+
+        * in  appStylesModule.css... the style classes defined in it can only be used for element INSIDE the APP component.... and cannot be used in child component 
+
+    ** in appStyles.css.... the styles defined inside the css file is used by simply specifying the style class inside CLASSNAME attribute of the elements 
+
+        className = {<class name from css file>}
+
+        * in appStylesModule.css... the styles defined inside the css file can only be specified inside the CLASSNAME attribute of the elements in the following format 
+
+            className ={styles.<className from css file>} 
+

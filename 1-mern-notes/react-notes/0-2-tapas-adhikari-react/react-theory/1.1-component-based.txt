@@ -1,0 +1,5 @@
+- What is meant by components in react?
+
+    ** the sites divided into separate ISOLATED UNITS 
+
+    ** these isolated units can be developed separately.... tested separately.... merged.... as well as reused

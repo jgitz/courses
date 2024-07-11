@@ -1,0 +1,5 @@
+- STATE: is data private to the component 
+
+    ***** if we IMPORT a state from file into a component..... and CHANGE the data of the IMPORTED state.... it WON'T get reflected on the ORIGINAL file.... the state change ONLY HAPPENS inside the COMPONENT 
+
+      ** if you want to reflect change in the original file.... one way is to use PROPS

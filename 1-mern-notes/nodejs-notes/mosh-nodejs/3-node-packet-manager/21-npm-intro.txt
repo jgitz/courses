@@ -1,0 +1,17 @@
+- npm is a cli tool and registry to add 3rd party library into your application. These are free reusable code
+
+- we can also publish our own node module in npm website
+
+- we add 3rd party library to our node application using a cli.
+
+- npm gets installed when you install nodejs
+
+- command to get version of npm... 
+
+    :: npm -v
+
+    ** version of node application and npm will be different because these are two programs developed independently
+
+    
+
+

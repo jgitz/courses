@@ -1,0 +1,5 @@
+- renaming or moving a file which is inside the staging area won't inherit tracking of old file. so we need to add the renamed file again into the staging area as well as add the previous file too.... or we can use this command
+
+    - git mv <new file name> <old file name>
+
+    ***** moves the file in both working directory and staging area

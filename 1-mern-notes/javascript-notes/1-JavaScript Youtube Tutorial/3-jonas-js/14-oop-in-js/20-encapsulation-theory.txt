@@ -1,0 +1,9 @@
+- ENCAPSULATION of PROPERTIES AND METHODS:
+
+      ** means prevent manipulation of properties and values from outside of the objects accidentaly by the developers
+
+- ENCAPSULATION can be achieved in JS using TWO WAYS 
+
+    1) using PROTECTED PROPERTIES and METHODS via underscore _ NAMING CONVENTION. 
+
+    2) using PRIVATE properties and syntax USING # naming convention.

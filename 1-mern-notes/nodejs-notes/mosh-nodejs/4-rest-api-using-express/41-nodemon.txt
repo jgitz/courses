@@ -1,0 +1,11 @@
+- to monitor and reflect all changes made to express server we need to install nodemon
+
+- nodemon is shortform for node monitor
+
+- install command
+
+  :: npm i -g nodemon
+
+- from now on run index.js file using command
+
+  :: nodemon index.js

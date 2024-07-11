@@ -1,0 +1,7 @@
+- js is a DYNAMICALLY TYPED LANGUAGE 
+
+- DYNAMICALLY TYPED: the variables are not assigned DATA type, the type AUTOMATICALLY get assigned when the js engine runs the code.
+
+  ** type checking happens at the run time in js
+
+  ** in c++ type checking happens at compilation. Hence it is STATICALLY TYPED....here we've to manually assign variables..

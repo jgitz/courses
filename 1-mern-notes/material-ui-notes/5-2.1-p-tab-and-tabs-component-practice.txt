@@ -1,0 +1,13 @@
+..... to see practice code goto src/component/TabsTab Component
+
+- variant: prop for TABS parent tag .... values
+
+    - fullWidth: children tabs component takes full available width equally 
+
+    - scrollable: ??
+
+    - standard: default
+
+- centered: prop inside TABS parent component to center the children tabs 
+
+***** linktab didn't work

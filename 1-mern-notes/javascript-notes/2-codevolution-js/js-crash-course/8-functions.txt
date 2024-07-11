@@ -1,0 +1,25 @@
+- functions are block of codes to perform a particular task
+
+
+- functions are reusable
+
+
+- functions helps prevent repetition of code
+
+- funtions helps to divide the code into small chunks
+
+
+** syntax 
+
+    function <name>(parameter1, parameter2) {
+      codes
+    }
+
+
+    <name>(parameters) ** function invocation
+
+** parameters: are values passed into function during function definition.
+
+** arguments: are values passed into function during function invocation.
+
+** add return code in function when you want to use a function as a variable value

@@ -1,0 +1,26 @@
+- node includes many functions and methods that can be used in both browser as well as in server.
+
+- global objects and functions are those which can be accessed from any file in the server.
+
+
+- browser specific global objects that works in node
+
+    - setTimeout()
+    - clearTimeout()
+
+    - setInterval()
+    - clearInterval()
+
+    - the above functions are part of WINDOW object inside a browser.... but inside node, these are part of object named GLOBAL object... so the above functions can be written as
+
+      - global.setTimeout()
+      - global.clearTimeout()
+      - global.setInterval()
+      - global.clearInterval()
+
+    - console.log()
+
+    - more node global functions later
+
+
+- scope of a variable created in node is scoped to that file and is not global

@@ -1,0 +1,22 @@
+ - CUSTOM HOOK: is a simple JS FUNCTION EXPRESSION with codes you want to execute.... it has following features
+
+      - it can include REACT hooks such as useEffect, useState etc...inside the function block 
+
+      - it SHOULD RETURN values.... it can be if form of ARRAY or objects
+
+      - the function expresson should be default exported
+
+
+      ** in the component....after importing the custom hook.... we can call this hook and values like this 
+
+
+          const [<value1>, <value2>] = <custom_hook_name>(<arguments if any>)
+
+
+- steps to make custom hooks
+
+
+      - custom hooks used in the project should be stored in a SEPARATE FOLDER named HOOKS 
+
+      - each hook should be a .js file starting with WORD "USE"
+

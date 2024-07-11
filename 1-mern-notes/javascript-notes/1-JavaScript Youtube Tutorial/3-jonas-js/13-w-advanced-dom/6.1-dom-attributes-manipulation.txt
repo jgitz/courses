@@ -1,0 +1,39 @@
+.... we can manipulate attributes of elements such as alt, src, etc 
+
+    ** class attribute is known as className
+    in dom
+
+
+- to access an INBUILT ATTRIBUTE of an element 
+
+      eg : <query_select_variable>.alt
+      eg : <query_select_variable>.src
+
+- to access a CUSTOM ATTRIBUTE given to an element (sometimes in frameworks, we add custom attributes)
+
+    <query_select_variable>
+    .getAttribute("<attribute name>")
+
+- to set VALUES to INBUILT ATTRIBUTE 
+
+    eg :  <query_select_variable>
+          .alt = "another alt"
+
+- to set VALUES to CUSTOM attributes
+
+      <query_select_variable>
+      .setAttribute("<attribute name>", "<attribute value>")
+
+
+** if the ATTRIBUTE is SRC.... use the ABSOLUTE PATH (i.e FULL URL)
+
+**** SRC AND HREF
+
+    ** <query_select_variable>.src : gives ABSOLUTE URL
+
+    ** <query_select_variable>.getAttribute("src") : gives the RELATIVE PATH URL
+
+**** DON'T USE className attribute to set class as it OVERWRITES EVERY class names
+   
+      
+

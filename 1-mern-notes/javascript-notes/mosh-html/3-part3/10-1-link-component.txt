@@ -1,0 +1,27 @@
+... we need to design link component
+
+** we design the link component inside COMPONENTS FOLDER.... and after designinig... paste the css to STYLES.CSS 
+
+- link component design
+
+  - link component is designed with media queries
+
+
+** STANDARD
+
+
+  ** DON'T use anchor element selector to style the css .... instead USE A CUSTOM CLASS.... here we used the class "link-arrow"
+
+  ** ALWAYS use PSEUDO ELEMENT ::after to add an ICON to the link 
+
+
+  ** when using selector combination with CLASS, PSEUDO CLASS and PSEUDO ELEMENT... use the following syntax order 
+
+    eg: .class:hover::after 
+
+    **** if this order changes.... WON'T WORK
+
+  ** always use SEPARATE MEDIA QUERIES for each component 
+
+  ** margin between component and its icon should be given in PIXEL UNIT as we need it to be constant
+

@@ -1,0 +1,7 @@
+- use e.target.parentElement.remove() to remove the parent element on click of close button (7 alert app)
+
+- (7 alert app) console log..
+
+    e.target.parentElement.parentElement
+ 
+  to display parent element OF THE PARENT ELEMENT

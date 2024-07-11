@@ -1,0 +1,69 @@
+<!-- 
+
+- FORM TAG: is used to create a form with different input fields and with submit and reset buttons 
+
+- INPUT TAG: used to give in different types of inputs such as text, number, email etc 
+
+    - type attribute: used inside input field to give the type of input data like... email, text, number, password, radio, checkbox, date etc
+
+- LABEL TAG: is used to give a LABEL NAME to the input field 
+
+    - for attribute: is used to link the input field to label.... the FOR ATTRIBUTE value and ID of the INPUT FIELD should be the same
+
+- BUTTON TAG: a form should always have a single or multiple button tags to SUBMIT or RESET the form 
+
+    - type attribute: to set button type like 
+
+        - submit 
+        - reset: clears all the form input data on clicking
+
+**** input tag, label tag, button etc are INLINE ELEMENTS.... to display them VERTICALLY.... WRAP LABEL-INPUT tag pair INSIDE DIV TAG
+
+**** standard is to give wrapping div tag a CLASS of FORM-GROUP to apply css to obey LAW OF PROXIMITY
+
+
+ -->
+
+<!-- ** practice
+
+  create a basic form with 
+    - user name 
+    - email
+    - password
+    - submit button 
+    - reset button 
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" id="username">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="" id="password">
+    </div>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+</body>
+</html>
+

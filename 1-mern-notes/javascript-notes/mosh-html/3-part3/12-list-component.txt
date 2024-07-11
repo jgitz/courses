@@ -1,0 +1,22 @@
+.... in the design we can see 2 types of list 
+
+  1) an INLINE LIST to specify rate of domain names 
+
+  2) a normal VERTICAL LIST with TICK MARK as bullet points 
+
+** we implement list variations using BEM standards 
+
+  ** DON'T use li element as selector... instead use custom made classes 
+
+  ** .list is the class to define BLOCK of BEM 
+
+  ** .list--tick and .list--inline are MODIFIERS to make inline and tick variations of the list 
+
+  ** .list__item is the class to define ELEMENT in BEM.... i.e .list__item is CHILD of the BLOCK class list.... it has NO STAND ALONE IDENTITY 
+
+** list-style-image: url("<image path>") : is used to replace the bullets with ANY IMAGE..... here we use SVG of TICK image 
+
+** in project folder.... always make an IMAGE FOLDER to save the IMAGE/ICONS USED 
+
+
+- list varition styles are implemented with media queries

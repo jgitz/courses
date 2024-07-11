@@ -1,0 +1,13 @@
+- METHODS THAT CREATES NEW ARRAY AS OUTPUT 
+
+    1) MAP (looping)
+
+    2) FILTER (using condition)
+
+    3) SLICE (portion of original)
+
+    4) CONCAT (merge two arrays)
+
+    4) FLAT (flatten nested array)
+
+    5) FLAT MAP  (flat nested array and loop)

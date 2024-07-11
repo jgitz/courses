@@ -1,0 +1,91 @@
+>26>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- react-redux: is a library and functions to use redux functions with react frontend
+
+  - to install react-redux
+
+    :: npm i react-redux
+
+- PROVIDER component: is a react-redux component to provide store to all the components in your application..... syntax usage
+
+    <Provider store={store}>
+     <App />
+    <Provider/>
+
+>27>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- useSelector hook: is a react-redux hook that is used to fetch any state described inside the redux store into your react component.
+
+  - useSelector() is assigned as a variable
+
+  - useSelector() accepts an arrow function with state as parameter.... this function is called selector function and returns a value from the store.... eg
+
+    const <state> = useSelector(state => state.<reducer key>.<key in initial state>)
+
+    ** now the <state> variable holds value of the state and can be used inside the component
+
+>28>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- useDispatch hook: is a react-redux hook used that enables to dispatch actions from the react component
+
+- usage of useDispatch hook
+
+  - import useDispatch from react-redux
+
+  - const dispatch = useDispatch()
+
+  - import actions into components
+
+  - now you can dispatch any action by using dispatch(action()) inside any handler functions like this
+
+      dispatch(action())
+
+        ** don't forget brackets () after action
+
+>29>>>>>>>>>>>>>>>>>>>>
+
+- redux dev tools can be added as an extension in chrome to track redux operations for debugging
+
+  - state tab : shows all state
+
+  - diff tab: before and after states after an action dispatch
+
+  - test dispatching an action at bottom dispatch button
+
+  - time travel debugging: play button plays all the action and state change
+
+>30>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- steps to use data fetched by createAsyncThunk in a react frontend
+
+  - goto react component
+
+  - import action from the slice file where data is fetched through thunk
+
+  - import useEffect hook
+
+  - import useDispatch
+
+  - import useSelector hook
+
+  - create dispatch variable and assign useDispatch()
+
+  - declare useEffect snippet
+
+  - inside useEffect snippet
+
+    - dispatch(fetchAction())
+
+  - inside a variable use useSelector hook to fetch state data from the slice file
+
+  - use the useSelector variable inside the component body to use state data fetched by thunk
+
+>31>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+**** watching is pending
+
+- react-toolkit supports type script
+
+
+
+   

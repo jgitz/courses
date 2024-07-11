@@ -1,0 +1,34 @@
+ ... in old redux.... the async actions are done by using redux-thunk middleware.....
+
+ .... in old redux we use utilise curry function in action creators to use axios logic and dispatch data into the frontend state components....
+
+ **** but async actions in toolkit is handled inside slice file using createAsyncThunk method from @reduxjs/toolkit.... the steps are
+
+  - goto relevant slice file
+
+  - require .createAsyncThunk from @reduxjs/toolkit
+
+  - require axios
+
+  - set slice initial state
+
+  - .createAsyncThunk() takes 2 arguments....
+    - first action type of form
+
+       <slice name>/<createAsyncThunk variable name>
+
+    - second callback arrow function to implement axios logic....
+
+      ** axios command is a promise with a then and catch BUT catch method is OMMITTED....
+
+        ** the thunk has 3 readymade action types
+
+            1) PENDING
+            2) FULFILLED
+            3) REJECTED
+
+            ** these 3 thunk action types are used inside the slice extra reducers with multiple builder arrow function with logic for the above three cases
+
+  - use .createAsyncThunk() to implement axios logic like this
+
+  

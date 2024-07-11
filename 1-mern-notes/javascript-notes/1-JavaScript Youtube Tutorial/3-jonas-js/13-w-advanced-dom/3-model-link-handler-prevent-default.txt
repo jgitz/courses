@@ -1,0 +1,7 @@
+..... in a website.... we mostly make all the clickable buttons as links...
+
+.... so if we have a button which pops up a window of model on clicking it.... there will be a jump/ shift in the page.... that is a DEFAULT BEHAVIOR  of LINKS.... so 
+
+      ** inside the click handler of the link..... use 
+
+            e.preventDefault()

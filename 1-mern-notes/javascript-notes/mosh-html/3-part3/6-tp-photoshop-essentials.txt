@@ -1,0 +1,50 @@
+- open the design psd files in photoshop
+
+- press ctl + h to disable guide lines
+
+- press z for zoom tool.... 
+
+- press h for hand tool
+
+- press t for type tool.... it is used to get the size of fonts.... PRESS ESCAPE to deselect text selection
+
+    - default text size is displayed in pt uint..... to change it to PIXELS.... do the following
+
+        - in the menu... click edit 
+
+        - select preferences
+
+        - select units & rulers
+
+        - change type from POINTS TO PIXELS 
+
+- use color picker tool to select color....color will be selected on foreground color.... click it to see the color values
+
+- use ruler tool to draw lines to measure element width and height
+
+    - use H value in photoshop at the top.... that defines height of components like typography 
+
+** to select color picker.... press i.....
+
+** to select ruler.... press shift + i
+
+** to zoom in press ctl++
+** to zoom out press ctl--
+
+** to measure border radius: select ellipse tool to draw circle...... inside window tab select info option... then look width and height.... divide the SMALLEST of the either by 2..... that is tha border radiut
+
+** to measure blur and spread of a shadow.... select the element with the shadow.... click layer on the right pane.... click fx... click drop shadow.... the SIZE value gives the BLUR.... the SPREAD value gives the shadow SPREAD.....
+
+    ** to set the HORIZONTAL offset in CSS.... use the angle value like this .... 
+
+        horizontal offset = (90 - <photoshop angle>) + 180
+
+        ** in css this is set in DEG UNIT 
+        ***** DIDN'T WORK ??
+
+    ** to set the VERTICAL offset in CSS... use the DISTANCE VALUE from the photoshop
+
+
+
+
+

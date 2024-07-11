@@ -1,0 +1,58 @@
+- fonts can be downloaded in different formats 
+
+    .ttf, woff, woff2
+
+    ** woff and woff2 is preferred for using in web as they have less size 
+
+- to install new fonts.... 
+
+    - goto fontsquirrel.com 
+
+    - download a font package 
+
+    - open the zip file
+
+    - double click to install the fonts of your choosing 
+
+    - now if these files are of .ttf format.... you need to convert it to woff or woff2
+
+        - goto fonsquirrel.com
+
+        - click generator 
+
+        - upload your ttf font 
+
+        - generate and download converted woff or woff2 files of your uploaded fonts 
+
+        - install fonts woff fonts of your choosing 
+
+- to use downloaded fonts inside your project 
+
+    - goto your project folder 
+
+        - goto your css folder 
+
+        - create folder named fonts 
+
+        - goto fonts folder 
+
+            - make a new folder for your font 
+
+            - goto the new folder 
+
+                - paste the woff files of your fonts 
+
+        - copy the codes from css file obtained from your downloaded folder 
+
+        - goto your project main css file 
+
+        - and paste the font style codes at the TOP LINE of your project CSS FILE
+
+        - edit SRC URLS of the css file to the font file location in your project folder 
+
+        - you can also edit the FONT WEIGHT and FONT STYLE if you want
+
+         
+
+        
+

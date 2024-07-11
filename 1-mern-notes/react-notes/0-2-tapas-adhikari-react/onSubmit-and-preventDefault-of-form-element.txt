@@ -1,0 +1,6 @@
+usually there is a submit button at end of the form.... if the button has a type attribute of submit.... it refreshes the page.... this is undesirable...
+
+
+.... so an onSubmit attribute is set on form tag.... it points to a handler function with event to do what when form is submitted....
+
+..... usually the onSubmit handler function has a event.preventDefault() function to prevent refreshing of page when the form submission activity ends

@@ -1,0 +1,24 @@
+- API (Application Programming Interface): is a piece of software that can be used by ANOTHER SOFTWARE in order to allow APPLICATIONS to communicate EACH OTHER 
+
+    eg: dom api
+
+- ONLINE API: is an software that is inside a WEB SERVER that will accept REQUESTS from client and SENDS what the CLIENT needs from the web server
+
+    ** to develop your own web/online api's.... we need to know backend languages like NODE.JS, java etc 
+
+    ** there are ready made 3rd party api's available too made by other developers like.... jsonplaceholder.com.... movies api etc
+
+
+- XML: is a format in which data is transferred through internet....
+
+    ** now today xml is NOT USED 
+
+- AJAX (Asynchronous Js and XML): is used to send CRUD requests to backend servers 
+
+    ** xml was used in ajax calls in olden days.... now there are NEW FORMATS to send data in web like  JSON 
+
+    ** today JSON FORMAT is used by AJAX to send data over internet
+
+- JSON format: is just a js object which is CONVERTED TO STRING and send over the internet
+
+    ** it is easy to transfer json format data through the internet and is easy for js to handle it
