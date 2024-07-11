@@ -1,0 +1,11 @@
+.... using fs module method like to write, append etc can make CALLBACK HELL.... 
+
+** the solution is to use FS PROMISES 
+
+** FS PROMISES: is a PROPERTY from CORE FS MODULE which enables to use writeFile(), appendFile() etc using ASYNC AND AWAIT 
+
+  ** THIS PREVENTS CALLBACK HELL
+
+  ** error is catched by CATCH BLOCK of TRY CATCH block of async function
+
+**** refer next lesson to implement a scenario using fs promises 

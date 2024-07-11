@@ -1,0 +1,8 @@
+.... in most web app we need two functionalities
+
+  1) REGISTER USER: i.e client  creates a new user and password and register it to server 
+
+  2) AUTHENTICATION: i.e login to the web app using username and password
+
+
+  ** while developing codes for registration of a USER WITH PASSWORD.... we use THIRD PARTY BCRYPT library to ENCRYPT OUR PASSWORD

@@ -1,0 +1,42 @@
+.... in a nodejs file.... there are many events  that could be happening both pre defined events and user made events.....
+
+..... so if we need to do some operations based on these events..... we need to EMIT THE EVENT("which are user defined events") and LISTEN TO THE EVENT..... if we need to listen PRE-DEFINED events.... we DON'T need to emit it manually as it will be emitted automatically and only needed to be LISTENED...
+
+.... both to EMIT a custom event AND to LISTEN for an event WE UTILIZE EVENT CORE MODULE....
+
+
+- steps to create a custom event and listen it 
+
+    - import EVENTS module as EventEmitter variable like this
+
+        const EventEmitter = require("events")
+
+    - to create a custom event of any event name... do like this 
+
+        - make a CUSTOM CLASS by extending EventEmitter variable....
+
+            - class <MyEmitter> extends EventEmitter {
+              
+            }
+
+        - make a NEW OBJECT from the class MyEmitter like this 
+
+          const myEmitter = new MyEmitter()
+
+    - now we need to LISTEN to a CUSTOM EVENT that we'll emit in the NEXT STEP.... we use .on() method to listen to the event.... .on() function will HOST THE LOGIC for the event inside an ARROW FUNCTION CALLBACK....
+
+        myEmitter.on(<custom event name>, (argument) => {
+          logic here
+        })
+
+    - now we need to EMIT the event if it is USER DEFINED/CUSTOM EVENTS using the new myEmitter OBJECT VARIABLE 
+
+      myEmitter.emit(<custom event name>, <argument to the .on() function callback>)
+
+      ** we can add as may ARGUMENTS after a COMMA if the .on() callback takes more arguments....
+
+    **** the custom event name given in .on() and .emit() SHOULD BE THE SAME 
+
+      
+
+          

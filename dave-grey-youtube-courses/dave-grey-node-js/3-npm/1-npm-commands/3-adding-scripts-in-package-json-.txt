@@ -1,0 +1,30 @@
+..... we need to use some commands to run scripts for START, RUN, DEV, TEST etc.... 
+
+..... scripts are some commands you want to run.... 
+
+.... npm allows you to store the LENGTHY COMMANDS and substitute with a SINGLE WORD COMMAND.... to do this we ADD the commands under SCRIPTS OBJECT in PACKAGE.JSON 
+
+
+- to add a start script....
+
+    - goto package.json file.... under the scripts object.... add the following 
+
+      "start": "node index",
+
+      ** this will make the node server to run index.js file on cli command 
+
+        :: npm start 
+
+- to add a dev script(to run index in nodemon)....
+
+    - goto package.json file.... under the scripts object.... add the following
+
+      "dev": "nodemon index",
+
+      ** this will make the nodemon to run index.js on cli command 
+
+        :: npm run dev 
+
+
+        **** start command is ONE of the few command where we DON'T HAVE TO SPECIFY run....
+

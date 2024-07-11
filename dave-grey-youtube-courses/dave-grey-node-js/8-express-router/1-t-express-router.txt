@@ -1,0 +1,67 @@
+.... so far we've written all the routes inside server.js using multiple app.get(), app.post() etc....
+
+.... but for a big project with multiple routes.... it is overwhelming to describe all routes inside server.js.... so we need to separate all the routes into separate files.... 
+
+..... express routers help to define routes in separate files.... and allow us to import and use it inside the server.js using app.use().... just like middleware...
+
+- procedure to isolate routes to separate files 
+
+    - create a folder named ROUTES..... this is where we store individual route files as .js files 
+
+
+    - inside the routes folder.... create .js ROUTE FILE of any name .... inside the .js file 
+
+      - import express
+
+      - import path
+      
+      - to use router functionality using express.... do the following 
+
+        const router = express.Router()
+
+          ** UPPERCASE R for express.Router()
+
+          ** now this router has all the methods like get, post, put, delete etc and we can use it with dot chaining just like app.get(), app.post() etc.... you can use router.get(), router.post() etc....
+
+      - define routes using router.get(), router.post() etc.... eg syntax for router.get()
+
+        router.get('/<subRoute>', (req, res) {
+          response codes
+        })
+
+          ** ROUTER.ROUTE() for a same route path.... we can add get, post etc using DOT CHAININ.... so we use router.route() like this
+
+            router.route('<sub-route path>')
+            .get((req, res) => {codes})
+            .post((req, res) => {codes})
+            .put((req, res) => {codes})
+            .delete((req, res) => {codes})
+            
+
+           
+
+          ** the real route will be defined in SERVER.JS using APP.USE.... and this route will only get activated only if ... inside BROWSER we give the url as /<route>/<subRoute>
+
+      - at the end add export statement 
+
+          module.exports = router
+
+
+      - to use the router inside server.js.... goto server.js and use app.use() like this 
+
+        app.use('/<route>', require('<router.js path>'))
+
+
+***** if we we intend to send a index.html page as response from a subdirectory .... inside server.js... always use ANOTHER express.static() to specify that subdirectory as public.... else the css WON'T WORK..... use express.static() like this 
+
+  app.use('/<new-route>', express.static(<public folder path>))
+
+    ** now only.... the index.html from ANOTHER DIRECTORY will have css applied
+
+    ** BY DEFALULT.... static middleware is set to ROOT i.e / 
+
+          app.use('/', express.static(<public folder path>))
+
+
+
+

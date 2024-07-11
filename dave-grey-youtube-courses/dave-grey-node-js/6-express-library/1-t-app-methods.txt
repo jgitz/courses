@@ -1,0 +1,60 @@
+.... app is the VARIABLE used to chain EXPRESS() methods.... the various methods are 
+
+- app.get("<path>", route_handler_function): used to handle the get requests comint to the route path
+
+- app.post("<path>", route_handler_function): used to handle post reques
+
+- app.put("<path>", route_handler_function): used to handle put update requests
+
+- app.delete("<path>", route_handler_function): used to handle delete request
+
+- app.all("<path>", route_handler_function): used to handle ANY TYPE OF HTTP REQUEST... i.e GET, POST, PUT and DELETE 
+
+- app.use("<path>", route_handler_function)
+
+
+- app.route("<path>", route_handler_function): is used to CHAIN MULTIPLE HTTP REQUESTS to a SINGLE ROUTE.... 
+
+  - eg: 
+
+    app.route("/home")
+      .get((req, res) => {codes})
+      .post((req, res) => {codes})
+      .put((req, res) => {codes})
+      .delete((req, res) => {codes})
+
+- app.use(middleware_function_variable): is used to ACTIVATE MIDDLEWARE function
+
+    ** middleware can be a CUSTOM MIDDLEWARE or THIRD PARTY MIDDLEWARES
+
+    ** middleware function is defined SEPARATELY using a handler function of syntax 
+
+      const middleware_function_variable = (req, res, next) {
+        codes 
+        next()
+      }
+
+      **** the next argument and next() is IMPORTANT.... then only the other APP METHOD after app.use(middleware_function_variable) line will be GIVEN CONTROL
+
+- app.set(<configuration property>, <cofiguration value>): is used to set configuration properties such as 
+    - "view engine": to set templating engine such as ejs, pug, moustache
+
+    - "view" : to set folders where views are stored 
+
+    - "port": to set listening port 
+
+    - "env": to set environment where app is running 
+
+
+    ** if a REQUEST COMING TO your server is taken up by a MIDDLEWARE and is MODIFIED inside the MIDDLEWARE.... then all the REQ arguments used inside all APP METHODS down the line of code will have the MODIFIED REQUEST 
+
+** ROUTE HANDLER FUNCTION SYNTAX : ROUTE handler function is used to define codes to do operation on incoming requests on the routs
+
+    - (res, req, next) {
+      codes 
+      next()
+    }
+
+    ** next parameter is OPTIONAL 
+
+    ** next parameter and next() is used to forward the CONTROL to the NEXT app method used on the SAME ROUTE separately

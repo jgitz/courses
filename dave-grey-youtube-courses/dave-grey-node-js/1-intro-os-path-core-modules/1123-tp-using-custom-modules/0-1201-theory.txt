@@ -1,0 +1,27 @@
+.... so far we uses  OS MODULE and PATH MODULE..... 
+
+** OS AND PATH MODULES are CORE MODULES of Nodejs
+
+.... apart from core modules..... we can make CUSTOM MODULES and EXPORT OBJECTS/VARIABLES from it 
+
+** steps to create a custom module and using it 
+
+  - step1: make a .js file with ANY NAME.... here math.js 
+
+  - step2: inside math.js
+
+      - write functions or variables you want to export 
+
+      - to export functions of methods... at the end of the file use 
+
+        module.exports = {<variable1>, variable2}
+
+          ** check for exports spelling... it is exports with s 
+
+      - to USE this module and its exported function in any other .js file.... goto any .js file (here index.js)
+
+        - use require() to IMPORT THE CUSTOM MODULE 
+
+          ** inside require brackets ().... you need to provide FULL PATH OF THE CUSTOM MODULE FILE 
+
+        - now you can use the functions from the module using DOT CHAINING

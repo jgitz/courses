@@ -1,0 +1,77 @@
+- req.method: gives the request CRUD METHOD NAME 
+
+- req.path: gives the URL PATH part defined between / and ?... for eg in the following URL
+
+  www.google.com/image/
+
+- req.params: used to get the params from the client browser url
+
+    app.get('/users/:userId', function (req, res) {
+
+    console.log(req.params.userId); // Output: userId value
+
+    });
+
+
+- req.query: used to get the query string from client browser url 
+
+    app.get('/users', function (req, res) {
+
+    console.log(req.query); // Output: { page: '1', limit: '10' }
+
+    });
+
+- req.body: used to store body data send by the client 
+
+    app.post('/users', function (req, res) {
+
+      console.log(req.body); // Output: { name: 'John', age: 30 }
+
+    });
+
+    **** it is important to use MIDDLEWARES to parse the incoming data to the required format 
+
+- req.headers: to get the request headers 
+
+- req.on(): is a method that enables us to use BUILT IN EVENT LISTENSES to do operation on incoming data 
+
+    - req.on("data", (chunk) => {
+      codes you want to do on incoming data chunk
+    })
+
+      ** enables us to do operation on ARRIVING DATA CHUNKS
+
+    - req.on("end", () => {
+      codes
+    })
+
+      ** enables to do operations when the coming DATA CHUNK ends from the client 
+
+    - req.on("error", (err) => {
+      console.log(error)
+      res.status(400)
+      res.end("Bad Request")
+    })
+
+      ** used to show error occured during collection of data chunks from the client
+
+- req.headers.origin: gives the DOMAIN ADDRESS which is sending reques to your server... it's mainly used in CORS
+
+  ** req.headers.origin WILL BE UNDEFINED if we send request to your server from the SAME LOCALHOST address you are working.... CORS protocol sets the ORIGIN... so the REQUEST should come from a CROSS ORIGIN... i.e from another domain address.... then only origin is set to the domain address of the client
+
+- req.accepts("<FILE EXTENSION eg: html, json>") : is a function that CHECK WHAT FILE TYPE will the CLIENT ACCEPTS as RESPONSE..... 
+
+    let contentType = req.accepts("html") // it will store "html"
+
+    let contentType = req.accepts(["html", "json"]) // it will store will EITHER STORE "html" OR "json" based on the CLIENT HEADER.....
+
+
+    ** req.accepts checks a SPECIFIC CLIENT REQUEST HEADER to take decision
+
+
+- req.params.<param_name>: to obtain the param part of the endpoint send from the client via browser
+
+
+- req.cookies?.<cookie name>: to fetch ALREADY PRESENT COOKIE and access the COOKIE DATA set by the server (using res method) in the client browser during previous client-server interation
+
+    ** optional chaining is used to check the presence of cookie

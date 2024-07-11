@@ -1,0 +1,205 @@
+.... res methods are methods used on response INSIDE ROUTE HANDLERS  
+
+
+- res.send(<data>): is equivalent to res.end(<>).... it is used to send data to the client and render it on the page
+
+    ** res.send() AUTOMATICALLY set HEADERS such as CONTENT-TYPE and STATUS CODE ... but sometimes we use OTHER METHODS to ACCURATELY set both....
+
+- res.status(<status code>).send("<any message>"): is used to set status code 
+
+    ** it is equivalent to res.writeHead(<status>, header_object) in http module
+
+    **** res.status() WON'T CLOSE/END the response automatically.... there are 3 solutions to it 
+
+      - scenario 1: if you want to display a STATUS MESSAGE on the browser and END the response... use
+
+        ** res.status(<status code>).send("<any message>")
+
+      - scenario 2: if you DON'T want any status code message and END the request... use 
+
+        ** res.status(<status>).end()
+
+      - scenario 3: if you want express to automatically send INBUILT STATUS MESSAGE along the status code and END the response ... use SHORTHAND 
+
+        ** res.sendStatus(<status code>)
+
+
+- res.redirect(<redirect route eg: /new-page>): is used to REDIRECT to another route....
+
+  ** by DEFAULT... res.redirect() AUTOMATICALLY SETS 302 STATUS CODE.... to set CUSTOM STATUS CODES.... use the FOLLOWING TWO SNTAX 
+
+    1) res.redirect(<status code>, <redirect route>)
+
+        ** here it sets status code and AUTOMATICALLY use res.send() to send a RESPONSE BODY RELATED TO STATUS CODE.... browser EXPECTS a RESPONSE BODY with redirect status code 
+
+    2) res.status(<status code>).send("<message>").redirect("<redirect route>")
+
+      eg res.status(301).send("Moved Permanently").redirect("/new-page")
+
+      ** it is IMPORTANT to CHAIN .SEND if you are FOLLWOWING this SYNTAX... bacause, unlike the previous syntax.... this syntax DOESN'T SETS a RESPONSE BODY AUTOMATICALLY....
+
+- res.set("<header property>", "<header property valeu>): is used to set any header property on the response 
+
+    ** it is equivalent to res.setHeader() in http module
+
+- res.type(): is a SHORTHAND to set CONTENT-TYPE HEADER of the RESPONSE..... for eg... to set the content type of the response as plain text 
+
+  res.type("text/plain")
+
+    ** res.type("txt") also sets content-type to text/plain
+
+    ***** res.type is NOT AVAILABLE in .createServer 
+
+- res.json(<json data>) : is used to STRINGIFY JSON DATA to send it to the client VIA HTTP...
+
+  ** it used JSON.stingify() in the backend.... so we can provide ADDITIONAL ARGUMENTS to set REPLACER FUNCTION and NUMBER OF SPACES (refer extras/json.txt)
+
+- res.write() : is used to add CHUNK of DATA part by part to the client....
+
+  ** res.write() should be TERMINATED with res.send() OR res.end()
+
+- res.get('<header property>'): can be used to output a single response header property 
+
+- res.getHeaders() can be used to get all the response header objects
+
+- res.render(): is used to DYNAMICALLY RENDER an html page in the backend with data USING TEMPLATING ENGINE and then send it to the frontend 
+
+    ** usage 
+
+      - html page code : 
+
+          <h1> hello <%= name %> </h1>
+
+      - express server.js code 
+
+        app.set("view engine", "ejs") // to set the templating engine 
+
+        // route handler code used is below 
+
+          const name = "John"
+
+          res.render("hello", {name})
+
+          ** here "hello" is the EJS FILE NAME in the views folder 
+
+          ** {name} is the dynamic value holding variable you want to display
+
+    ** res.render() is used with templating engine 
+
+    ** res.render() WON'T ALTER the original html page.... it only DYNAMICALLY add data to the html page 
+
+    ** res.render() automatically notify's to client about end of response 
+
+- res.sendFile(<file path using path.join>): is a res method to send files from server to the frontend..... mainly it is used to send html files like index.html.... while using .createServer... we had to use fs module to read content of a file and use res.end() to send the data.... but res.sendFile() is simpler 
+
+  SYNTAXES:
+
+    1) res.sentFile(<path.join(file path)>)
+
+
+    2) res.sentFile(<path WITHOUT USING PATH.JOIN eg: /folder/file.txt>, options_object)
+
+        ** options object is a simple object with the following properties 
+
+          - header properties: all the header properties like content-type 
+
+          - 'root': defines the root directory of path using __dirname 
+
+          - 'dotfiles': how to deal with the FILENAMES THAT STARTS WITH DOT... the values are 
+
+            - "allow"
+            - "deny"
+            - "ignore"
+
+          - "etag": sets ETAG header?? to a HASH of the FILE CONTENTS 
+
+            ** etag is a method to compare the data of a file inside the server with that of the original file and LOOK FOR MODIFICATIONS.... so if there is no modification of file inside the server.... the server can easily use the cacched version
+
+              ** it is used both in CLIENT SIDE and SERVER SIDE for caching purposes
+
+- res.cookies() : used to set cookies in client browser.... cookies are DATA OBJECTS that a server set in client for different purposes....
+
+  ***** to parse a cookie coming from client.... we need to INSTALL MIDDLEWARE named 'cookie-parser'
+
+  - syntax to set a cookie 
+
+      res.cookie(<cookie_name>, object_with_cookie_value, {optional option object to set options})
+
+      ** properties set in options object defines the BEHAVIOR of the cookie 
+
+  - COMMONLY USED COOKIES with different options 
+
+     - regular cookie which gets DELETED on closing of browser 
+
+        res.cookie('<cookie name>', <cookie data object/any datatype>)
+
+     - regular cookie which PERSISTS upto an expiry time 
+
+        res.cookie('<cookie name>', <cookie data object/any datatype>, {expires: unixtimestamp})
+
+        ** timestamp should be created using new Date() constructor 
+
+        ** the persistant cookie gets deleted after its expiry 
+
+     - regular cookie with RELATIVE EXPIRY TIME: we can use maxAge PROPERTY instead of EXPIRES to set a relative time expiry from the current time IN MILLISECONDS.... using this code 
+
+        res.cookie('<cookie_name>', '<cookie value>', {maxAge: 60 * 60 * 1000})
+
+          ****** time should be given in MILLISECONDS 
+
+          ** 60 * 60 * 1000 means 1 hour in milliseconds.... so the cookie will expire in 1 hour
+
+      
+
+     - HTTP ONLY COOKIE: are cookies which CANNOT BE ACCESSES through JS in CLIENTS BROWSER 
+
+        res.cookie('<cookie name>', <cookie data object/any datatype>, {httpOnly: true})
+
+        ** commonly used in MERN STACK APP to send REFRESH JWT TOKENS to the CLIENT 
+
+     - SIGNED COOKIE: used to send and SIGNED cookie VALUE from the SERVER SIDE... so the real cookie value cannot be found by the client .... 
+
+        res.cookie('<cookie name>', <cookie data object/any datatype>, {signed: true})
+
+        ** before this line we need to use THIRD-PARTY COOKIE-PARSER middleware to sign the cookie with a SECRET KEY
+
+        **** a REQ from client with SIGNED COOKIE can be accessed in the SERVER using the  REQ line 
+
+          req.signedCookies.<cookie_name>
+
+            **** must ensure that the 3rd party cookie-parser middleware line which sets SECRET KEY is used prior to this line
+
+     - SECURE COOKIE: this cookie will ONLY get send to client ONLY IF THE COMMUNICATION PROTOCOL is HTTPS 
+
+        res.cookie('<cookie name>', <cookie data object/any datatype>, {secure: true})
+
+  - SOME COMMONLY used COOKIE VALUES 
+
+      - session cookeis: used to close a session when browser is closed 
+
+          res.cookie('sessionId', 'abc123'>)
+
+            ** abc123 is session id
+
+      - user preferences: to store user settings like language, display preferences etc 
+
+        res.cookie('language', 'en')
+
+          ** to set the language to english
+
+      - remember me cookies: these are cookies with longer expiration time and allows the user to automatically stay logged in without reentering credentials 
+
+        res.cookie('rememberMe', 'true', {expires: unixTimeStamp})
+
+      - tracking and analytics: to track user info like user behavior, pagevisits, interactions 
+
+        res.cookie('analytics', 'true')
+
+      - csrf token cookies : CSRF(Cross Site Request Forgery) tokens are used to protect against CSRF attacks... so tokens generated by the server in HTTP ONLY COOKIE 
+
+        res.cookie('csrfToken', 'abc123', {httpOnly: true})
+
+- res.clearCookie() : used to delete a cookie from the client 
+
+    res.clearCookie('<cookie name>', {option object with PROPERTIES you set when you created the cookie})
+

@@ -1,0 +1,9 @@
+.... in this practical.... we use express router to make routes into separate files....
+
+- goals
+
+    - set routes to views/subdir folder to in a separate routes .js file 
+
+    - set public folder using static middleware to enable css to work on .html files of subdir route 
+
+    - display subdir files named index.html and test.html

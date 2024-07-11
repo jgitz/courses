@@ -1,0 +1,27 @@
+- MIDDLEWARE: is just a FUNCTION that is executed BETWEEN REQUEST-RESPONSE cycle between a client and a server 
+
+
+- TYPES OF MIDDLEWARES in EXPRESS: there are THREE TYPES of middle wares used in express 
+
+    1) BUILT IN MIDDLEWARES: there are built in middlewares in express framework... commonly used built in middlewares are 
+
+      - express.json()
+      - express.urlencoded()
+      - express.static()
+
+    2) CUSTOM/USER-DEFINED MIDDLEWARES: are middleware FUNCTION that a user can define using err, req, res and next parameters and next() function 
+
+    3) THIRD-PARTY MIDDLEWARES: are THIRD PARTY PACKAGED MIDDLEWARES you have to install from NPM to use...some of commonly used ones are 
+
+      - morgan: to log HTTP CLIENT REQUEST details in server terminal 
+
+      - body-parser: is used to PARSE incoming client request into any other format such as URLENCODED, JSON etc and STORE in REQ.BODY
+
+      - cookie-parser: is used to PARSE cookies in req headers and STORE IT INSIDE REQ.COOKIES 
+
+      - cors (Cross Origin Resource Sharing): used to ENABLE/DISABLE DOMAINS from accessing our BACKEND ROUTES
+
+** app.use() is the express function to use THIRD PARTY and CUSTOM MIDDLEWARES
+
+      
+      

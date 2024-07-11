@@ -1,0 +1,9 @@
+- initiate npm in the folder 
+
+- configure scripts in package.json
+
+- install dependencies 
+
+    - nodemon (dev dependency)
+    - date-fns 
+    - uuid

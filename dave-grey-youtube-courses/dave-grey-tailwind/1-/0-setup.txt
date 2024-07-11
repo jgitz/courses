@@ -1,0 +1,28 @@
+
+
+- vs code 
+
+- chrome 
+
+- npm packet manager 
+
+- vs code extenstions
+
+  - tailwind css intellisense: to get tailwind class suggestion options (intellisense) in vscode 
+
+  - inline fold: to minimize inline tailwind classes in class attribute in html for BETTER READABILITY 
+
+    - in html file... click on 3 DOTS to SHOW CLASSES.... click ANYWHERE ELSE to HIDE the classes 
+
+  - live server vscode extension
+
+    ** do the follwowing settings change to implement FULL RELOADING of the webpage
+
+      - in vscode open live server extension 
+
+      - open live server settings by clicking GEAR BUTTON 
+
+      - search for FULL RELOAD using search bar 
+
+      - ENABLE/CHECK the FULL RELOAD OPTION 
+

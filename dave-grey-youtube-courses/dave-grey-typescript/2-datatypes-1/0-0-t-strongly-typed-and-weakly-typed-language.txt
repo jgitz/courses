@@ -1,0 +1,22 @@
+- STRONGLY TYPED LANGUAGE: we need to SPECIFY the TYPE of DATA we use 
+
+  ** here we need to enforce the datatype of the variables EXPLICITELY
+
+  ** ts is a strongly typed language
+
+  ** other eg: java, C++, C#
+
+- WEAKLY/LOOSELY TYPED LANGUAGE: we DON'T need to SPECIFY the TYPE of DATA we use 
+
+  ** it uses IMPLICIT TYPE CONVERSION to assume the datatype of variables.... i.e the type is assumed value of the variable
+
+  ** eg: js is a loosely typed language 
+
+  ** other eg: pearl, php 
+
+
+***** STATIC TYPED and DYNAMIC TYPED is NOT RELATED to STRONGLY TYPED and LOOSELY TYPED (next note)
+
+  ** a strongly typed language can be EITHER STATIC or DYNAMICALY TYPED
+
+    ** TS is a STRONGLY TYPED STATIC LANGUAGE

@@ -1,0 +1,16 @@
+
+
+- make a folder named routes to store route files
+
+- inside routes folder...
+
+    - make a file named subdir to write route codes for subdir files 
+
+
+- inside routes/subdir.js.... write the router codes to display subdir files named index.html and test.html 
+
+    ***** don't forget module.exports = router 
+
+- goto server.js to set main route to /subdir using app.use()
+
+    - write static middleware code to set public folder for /subdirroute

@@ -1,0 +1,57 @@
+- to install a package GLOBALLY using npm....
+
+    :: npm i <package name> -g :: 
+
+- to initialize NODE in project folder
+
+    - open project folder in CLI and type INITIALIZATION COMMAND ....
+
+        :: npm init ::
+
+         ** some questions will be asked.... skip them OR YOU CAN CHANGE THEM to your choice....
+
+         ** package.json file will be displayed.... this file has all the package names that we installed in the project...
+
+         ** PACKAGE.JSON is configuration file used in NODEJS based projects and are managed with NPM
+
+        ** use the following to skip questions 
+
+          :: npm init -y ::
+
+
+- to install a package as PRODUCTION DEPENDENCY (i.e the package will be a part of the FINAL APPLICATION)
+
+  :: npm i <package name>
+
+
+  ** now our package gets installed in FOLDER NAMED NODE_MODULES 
+
+  **** in git always IGNORE the NODE_MODULES folder by creating .GITIGNORE file inside the project folder
+
+- to install a package as DEV DEPENDENCY (package NOT NEEDED for PRODUCTION)
+
+  :: npm i <package name> -D 
+
+
+- to install a SPECIFIC VERSION of the package....
+
+  :: npm i <package>@<version number>
+
+- to check for updated versions of the package use 
+
+  :: npm update ::
+
+- to uninstall a PRODUCTION package 
+
+  :: npm rm <package>
+
+- to uninstall a DEV DEPENDENCY 
+
+  :: npm rm <package> -D 
+
+- to uninstall a GLOBAL DEPENDENCY 
+
+  :: npm rm <package> -g
+
+
+**** even if we uninstall dependencies.... any SCRIPT COMMANDS ASSOCIATED with the dependency WON'T gets removed.... you should remove it MANUALLY....

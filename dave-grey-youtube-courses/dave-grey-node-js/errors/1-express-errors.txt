@@ -1,0 +1,5 @@
+- dont use res.write and res.sendFile() together... else error
+
+- dont use res.write and res.send() together.... instead use res.end() for res.send()
+
+- always use only ONE res.send() OR res.sendFile() inside a SINGLE ROUTE HANDLER.... ??we need to use fs modeule to read the file content and use multiple res.write to implement this ??

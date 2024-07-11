@@ -1,0 +1,15 @@
+.... below are the usage of THIRD PARTY MIDDLEWARES such as MORGAN, BODY-PARSER, COOKIE-PARSER
+
+- MORGAN: npm install the package.... import the morgan package.. then use like this  
+
+  app.use(morgan("dev"))
+
+    ** here dev is just a BUILT IN FORMAT to display the HTTP REQUEST in server terminal 
+
+- BODY-PARSER: npm install the body-parser package.... import the body-parser package... then use like this 
+
+  app.use(body-parser.urlencoded({extended: false})) // to parse req.body 
+
+- CORES MIDDLEWARE (EXPLAINED IN THE NEXT NOTE): used to set the CLIENT DOMAINS from which you want access to the server 
+
+

@@ -1,0 +1,68 @@
+.... at present, it is dangerous to save raw password in database.... we've to ENCRYPT the raw password to HASH CODE before saving it into the database.... 
+
+.... in our express app we use BCRYPT LIBRARY to HASH the raw password before saving it into the database 
+
+
+- to install bcrypt library in your project.... open cli from the project folder and type 
+
+    :: npm i bcrypt 
+
+
+- to HASH the raw password using bcrypt we use bcrypt.hash() method 
+
+    syntax: 
+
+      const password = await bcrypt.hash(<password>, <salt OR salt rounds number>, optional_callback)
+
+
+        ** password: is the password/data we want to encrypt 
+
+        ** salt: if 2 users use similar passwords... their generated hash would be the same.... so we need to add some HIDDEN unique CHARACTERS as salt to make unique hashes from same passwords.
+
+          ** in this new command.... the .hash method AUTOMATICALLY GENERATES SALT for us.... 
+
+            ** this is used in this project
+
+          ** in older apps salt is manually generated using separate method using bcrypt.genSalt(<salt round number>) like this 
+
+            const saltRounds_variable = <10>;
+
+            const salt_variable = await bcrypt.genSalt(saltRounds_variable) // now salt is generated 
+
+            ***** now we need to store the SALT in SEPARATE DATABASE field.... inorder to compare the password 
+
+            const password = await bcrypt.hash(<password>, <salt_variable>)
+
+
+        ** salt rounds: is a number of iterations to generate hash code.
+
+          - recommended iterations are between 10 and 12 
+
+          - more iterations means more time to generate hash and more security it gives from cyber attacks 
+
+        ** optional callback function can be used to HANDLE ERROR like this 
+
+          syntax 
+
+            (err, hash) => {
+              if (err ) {
+                // handle error 
+              } else {
+                handle hash code
+              }
+            }
+
+            ** mostly we WON'T USE this 
+
+- to compare HASH CODE of server db and CLIENT INPUT PASSWORD during AUTHENTICATION we use BCRYPT.COMPARE() method like this 
+
+    const match = const bcrypt.compare(<client_input_password>, <hash_code_from_db>)
+
+      ** produce boolean true/false if password is matched or not
+
+
+**** mostly we use AWAIT KEYWORD with BCRYPT METHODS because bcrypt works with PROMISES
+
+
+
+    

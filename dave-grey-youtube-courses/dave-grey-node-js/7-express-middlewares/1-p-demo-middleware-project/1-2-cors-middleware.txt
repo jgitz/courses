@@ -1,0 +1,10 @@
+... now we need to use CORS to receive requests from another domains 
+
+- install cors using :: npm i cors
+
+- make a folder named CONFIG to storet he cors options codes inside config/corspOptions.js.... and export the cors options so it can be used inside the server.js
+
+- use app.use(cors(corsOptions)) to enable cors inside the 
+
+
+** after specifying https://www.google.com inside the whitelist.... try fetch request from the console to the server.... check if log file is created with www.google.com as entry.... if that happens... then success

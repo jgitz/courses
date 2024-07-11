@@ -1,0 +1,85 @@
+.... now we need to specify which all html files should be styled by tailwind....
+
+- in demo-1 project folder.... open tailwind.config.json
+
+  - inside the module.exports object....
+
+    - on the CONTENT KEY.... insert PATH PATTERN to select ALL HTML FILES in the BUILD FOLDER like this 
+
+      module.exports = {
+        content: ['./build/*.html'],
+        theme: {
+          extend: {},
+        }, 
+        plugins: []
+      }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- in DEMO-1 project folder... inside SRC FOLDER.... create CSS FILE named 
+
+  - input.css
+
+- inside demo-1/src/input.css... add the three following lines 
+
+  @tailwind base; 
+  @tailwind components;
+  @tailwind utilities;
+
+  **** ignore ERROR UNDERLINE WARNINGS 
+
+** tailwind compiles css from INPUT.CSS and builds CSS file in the BUILD FOLDER (... we configure it to create it in BUILD FOLDER (.. next point))
+
+- now we need to set ./src/input.css as INPUT and ./build/css/style.css as OUTPUT where COMPILED CSS is STORED... to do that... open CLI and type command 
+
+  - ::npx tailwindcss -i ./src/input.css -o ./build/css/style.css ::
+
+  ** now we have tailwind compiled BASE CSS CODES in ./build/css/style.css file 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+... now use the style.css file as CSS FILE in ./build/index.html.... to do that.... 
+
+- add the following LINK tag as LAST CHILD in HEAD TAG after TITLE TAG
+
+  <link rel="stylesheet" href="./css/style.css">
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... now add some demo tags with TAILWIND CSS CLASSes inside the BODY TAG.... for eg 
+
+  - inside ./build/index.html
+
+  - inside body tag... add a demo div with tailwind classes 
+
+    <div class="bg-emerald-500 w-52 h-52"></div>
+
+      - bg-emerald-500: is a color class in tailwind 
+      - w-52: adds width 
+      - h-52: adds height
+
+      ** you can search for classes in tailwindcss.com docs
+
+  - now to add these style class inside ./build/css/style.css file..... we need to compile the css file using the code 
+
+    - :: npx tailwindcss -i ./src/input.css -o ./build/css/style.css:: 
+
+    **** it's difficult to runt the above code after EVERYTIME we've added a class... so use WATCH COMMAND TO AUTOCOMPILE using the command 
+
+      - :: npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... now tailwind.css DON'T PROVIDE ALL CSS STYLES.... it lacks styles like RADIAL GRADIENT...
+
+.... so to use those styles....we need to add those missing styles MANUALLY inside ./SRC/INPUT.CSS 
+
+- for eg to add radial backround gradiens class... goto demo-1/src/input.css and add css styles 
+
+  .<radial-blue> {
+    background: radial-gradient(<lightyellow>. <skyblue>)
+  }
+
+- add this class to RELEVANT TAGS inside demo-1/build/index.html 
+
+

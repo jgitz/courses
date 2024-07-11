@@ -1,0 +1,3 @@
+- redirect using res.writeHead() will ONLY WORK if the error code is in the RANGE OF 300 - 399
+
+- redirect call will always make the browser to CACHE the redirect site.... so when building projects.... always routinely CLEAR THE BROWSER CACHE

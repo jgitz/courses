@@ -1,0 +1,27 @@
+- install vscode 
+
+  - extensions 
+
+    - es7 react
+
+  - settings (file > preferences > settings)
+
+    - search for "emmet"
+    - under "include languages"
+
+      - add item 
+
+        - key: "javascript"
+        - value: "javascriptreact" 
+
+- install nodejs (from nodejs website)
+
+  - to check the version of the nodejs that is installed.... in the terminal... use 
+
+    :: node -v ::
+
+- install react developer tools extension on chrome
+
+  - goto https://chromewebstore.google.com/
+
+  - search for "React Developer Tools" extension 

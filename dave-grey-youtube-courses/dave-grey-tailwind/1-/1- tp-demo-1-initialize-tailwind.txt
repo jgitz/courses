@@ -1,0 +1,15 @@
+- to initialize tailwind in a project folder 
+
+  :: npx tailwindcss init ::
+
+    ** creates tailwind.config.js file in the project folder 
+
+- inside the project folder create the following children folders
+
+  - BUILD 
+
+  - SRC 
+
+- inside the BUILD FOLDER create file named INDEX.HTML 
+
+- inside index.html... add HTML BOILERPLATE CODE 

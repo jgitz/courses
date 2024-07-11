@@ -1,0 +1,39 @@
+.... below are the commonly used BUILT IN MIDDLEWARES and their SYNTAXES
+
+- express.json(): used to make JSON OBJECT from JSON STRING and STORE it inside REQ.BODY
+
+- express.urlencoded(): is used to parse the ENCODED URL which is in STRING FORMAT into JS OBJECT and STORE it inside REQ.BODY
+
+  app.use(express.urlencoded({ extended: false }))
+
+  ** here the extended FALSE means... the middleware PARSES ONLY STRING DATA and ARRAY DATA coming in URL ENCODED format.... if EXTENDED = TRUE means it PARSES other datastructures such as OBJECTS
+
+- express.static(): is used to set FOLDER to serve STATIC FILES....  else our EXTERNAL CSS FILES  won't work 
+
+  ** to set a single PUBLIC FOLDER to serve static file 
+
+    app.use(express.static("public")) // ** allows to access index.html stored in putblic folder using browser url: localhost:5000/index.html
+
+    app.use(express.static("assets"))    // ** this will set serve static files stored in assets folder... if there is an image in path assets/images/logo.png.... to access it through browser url.... just do localhost:5000/images/logo.png
+
+    app.use(express.static("/home", express.static("public"))) // ** here the /home is a ROUTE WE TYPE IN BROWSER URL.... now to access an image in /public/images/logo.png.... you have to type browser url localhost:5000/home/images/logo.png
+
+
+
+
+
+
+
+
+** we just use app.use() to use these middlewares like this 
+
+  app.use(express.json())
+
+** express.json() and express.urlencoded() are mainly used to handle POST and PUT HTTP REQUESTS 
+
+** PARSING MEANS.... CONVERSION of data from one FORMAT to another
+
+***** in express.... the req.body is NOT AUTOMATICALLY FILLED with CLIENT REQUEST DATA..... we'need to use MIDDLEWARE suchas urlencoded or body-parser to parse and STORE the incoming CLIENT REQUEST data inside REQ.BODY..... if NOT PARSED.... req.body is an EMPTY OBJECT
+
+  ** in .createServer to fill the req.body... we need to use external packages like body parser 
+

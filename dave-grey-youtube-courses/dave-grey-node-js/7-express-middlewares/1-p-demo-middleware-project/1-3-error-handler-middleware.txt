@@ -1,0 +1,5 @@
+..... make a middleware for error handling and use it at the end of the server.js BEFORE app.listen TO CATCH ERROR and DISPLAY ERROR message
+
+- make error handling middleware inside the middlewares/errorhandler.js
+
+  - inside errorhandler.js.... use LOGEVENTS function middleware to log a separate logfile inside logs folder for storing error

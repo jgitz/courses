@@ -1,0 +1,10 @@
+- set up a route named /employees to practice thunder client requests 
+
+- use codes to practice working of get, post, put and delete requests from thunder client 
+
+- also test req.params.<param_name>
+
+** we don't really use database to practice CRUD OPERATION.... we just send a response from the server back to thunder client to show that the crud request from the thunder client is handled with a reply 
+
+
+**** always module.export the router from all routes files else error

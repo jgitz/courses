@@ -1,0 +1,3 @@
+- to use typescript... we need to install typescript GLOBALLY using the command 
+
+  :: npm i typescript -g ::

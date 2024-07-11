@@ -1,0 +1,1 @@
+// ** note that during serving html files using express... it's EXTERNAL CSS is NOT GETTING APPLIED.... this is because of SECURITY POLICY CALLED "SAME ORIGIN POLICY".... the solution is to use EXPRESS MIDDLEWARE NAMED STATIC MIDDLEWARE.... next chapter

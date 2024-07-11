@@ -1,0 +1,42 @@
+- MVC (Model View Controller) : is a SOFTWARE ARCHITECTURE PATTERN which divides an application into 3 components
+
+  1) MODEL: refers to the data/database related codes involved in the application such as DATA MODELING CODES
+
+  2) VIEW: refers to the USER INTERFACE of the application 
+
+  3) CONTROLLER: refers to the BUSINESS LOGIC to implement MODEL-VIEW communication 
+
+
+  ** ANALOGY: if you consider a restaurant 
+
+      - VIEW is the TABLE you are sitting 
+
+      - MODEL is the KITCHEN from which the customer obtains the meal 
+
+      - CONTROLLER is the WAITER who takes order and deliver meals to the controller 
+
+
+- MVC FOLDER STRUCTURE in NODEJS APPLICATION 
+
+    - MODEL FOLDER: exclusively holds the file which has DATA
+
+    - VIEWS FOLDER: exclusively holds the html files we want to render 
+
+    - CONTROLLERS FOLDER: exclusively holds the ROUTE HANDLERS and the codes relating to ROUTES involved in delivering of data 
+
+
+- OTHER IMPORTANT FOLDERs in NODEJS APPLICATION 
+
+    - CONFIG FOLDER: holds config files relating to middlewares and other functionalities... eg cores options codes for cores middleware 
+
+    - DATA FOLDER: used to hold dynamic and static data files required for the application 
+
+    - ROUTES FOLDER: to store the route files with ROUTE HANDLERS for different routes specified in the server.js 
+
+    - ROUTES/API folder: API FOLDER is hosted INSIDE ROUTES FOLDER to write any business logic related to api endpoints 
+
+    - PUBLIC FOLDER: is a folder to host files you want to make access to public 
+
+    - MIDDLEWARES FOLDER: is used to host USER DEFINED MIDDLEWARES CODES such as errorHandler middleware and logger middleware 
+
+    - LOGS FOLDER: is used to store error log and other log files. Most of the time... this folder is created using USER-DEFINED MIDDLEWARES such as LOGGER MIDDLEWARE

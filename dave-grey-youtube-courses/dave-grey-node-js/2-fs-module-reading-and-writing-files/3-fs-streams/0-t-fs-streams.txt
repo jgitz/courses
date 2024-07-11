@@ -1,0 +1,41 @@
+... sometimes we need to read/write data from a file that has LARGE AMOUNT OF DATA....
+
+.... in this case..... traditional fs.readFile() method and write method is NOT EFFICIENT..... as we have TO LOAD the ENTIRE FILE CONTENT INTO THE MEMORY....
+
+..... the solution is using a concept called STREAMS
+
+- STREAMS: is a method through which a content of a file is taken PART BY PART into memory for READ/WRITE PURPOSES
+
+
+- fs STREAM METHODS: the CORE FS MODULE provides you with READ and WRITE methods to implement STREAMING of FILE CONTENT.... those METHODS ARE 
+
+    1) fs.createReadStream(): method to READ CONTENT of a file part by part 
+
+      - syntax 
+
+          fs.createReadStream(<file path>, {encoding: "<eg:utf8>"})
+
+            - takes TWO ARGUMENTS:
+
+                1) file path 
+
+                2) encoding object: to provide the encoding of data to which you want to read the content 
+
+            ** storing read stream method into a VARIABLE will store the READ DATA from the file 
+
+    2) fs.createWriteStream(): method to SET LOCATION of a NEW FILE where you want to write data PART BY PART 
+
+
+      - syntax 
+
+          fs.createWriteStream(<file path>)
+
+            ** only has ONE ARGUMENT to take the file path to which you want to write the content 
+
+      **** fs.createWriteStream() DON'T have option to write data to a file.... it just sets the location of the new file.... writing of data is set using PIPE METHOD....
+
+- FS PIPE METHOD: is a special method COMMONLY USED IN READ/WRITE stream to READ THE DATA from a file.... and use the data to WRITE a new file.... with a SINGLE LINE....
+
+    - syntax 
+
+        fsReadStreamVariable.pipe(fsWriteStreamVariable)

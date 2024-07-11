@@ -1,0 +1,24 @@
+- make a separate folder named MIDDLEWARE to store CUSTOM MIDDLEWARE 
+
+- install packages 
+
+    - date-fns
+    - uuid
+
+- inside the middleware folder....
+
+    - make a custom middleware named logEvents.js... to log the following details inside a FOLDER NAMED LOG 
+
+      - date
+      - uuid 
+      - req.headers.origin: to get origin domain of a cross origin request 
+      - req.method: client request method get/post etc 
+
+- now everytime you operate your web app in browser.... a log data is created and stored in log/request-logs.txt
+
+** when you call an imported middleware inside server.js.... DON'T USE () to call the middleware function in app.use(<>)
+
+**** but now you see undefined in the log file at the place of req.headers.origin.... now we need to rectify it by configuiring THIRD PARTY CORS middleware 
+
+    ** without cors, you won't be able to get requests from another domains
+      

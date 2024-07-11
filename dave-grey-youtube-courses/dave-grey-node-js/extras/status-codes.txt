@@ -1,0 +1,9 @@
+- wrong endpoint typed by client - 404 not found
+
+- if fields are remained empty - 400 bad request 
+
+- if user already exists - 409 conflict
+
+- if user-password authentication fails because of no presence of user of the name - 401 unauthorised
+
+- for any internal erro - 500 internal server error

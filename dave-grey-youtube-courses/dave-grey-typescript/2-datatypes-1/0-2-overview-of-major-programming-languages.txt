@@ -1,0 +1,120 @@
+Here's an overview of the static type, dynamic type, strongly typed, weakly typed, interpreted, and compiled characteristics of several programming languages:
+
+C:
+
+    - Static type: Yes
+
+    - Dynamic type: No
+
+    - Strongly typed: Yes
+
+    - Weakly typed: No
+
+    - Interpreted: No (typically 
+    compiled)
+    
+    - Compiled: Yes
+
+
+C++:
+
+    - Static type: Yes
+
+    - Dynamic type: No
+
+    - Strongly typed: Yes
+
+    - Weakly typed: No
+
+    - Interpreted: No (typically 
+    compiled)
+
+    - Compiled: Yes
+
+
+C#:
+
+    - Static type: Yes
+
+    - Dynamic type: Yes (with dynamic 
+    keyword)
+    
+    - Strongly typed: Yes
+
+    - Weakly typed: No
+
+    - Interpreted: No (typically 
+    compiled)
+
+    - Compiled: Yes
+
+
+Java:
+
+    - Static type: Yes
+
+    - Dynamic type: No
+
+    - Strongly typed: Yes
+
+    - Weakly typed: No
+
+    - Interpreted: No (typically 
+    compiled to bytecode, then executed by JVM)
+    
+    - Compiled: Yes (to bytecode)
+
+
+JavaScript:
+
+    - Static type: No (prior to the - 
+    introduction of TypeScript)
+
+    - Dynamic type: Yes
+
+    - Strongly typed: No (prior to the 
+    introduction of TypeScript)
+    - Weakly typed: Yes
+
+    - Interpreted: Yes
+
+    - Compiled: No (though there are - 
+    transpilers like Babel)
+
+
+TypeScript:
+
+    - Static type: Yes
+
+    Dynamic type: No
+    Strongly typed: Yes
+    Weakly typed: No
+    Interpreted: No (typically compiled to JavaScript, then executed)
+    Compiled: Yes (to JavaScript)
+
+Go:
+
+    Static type: Yes
+    Dynamic type: No
+    Strongly typed: Yes
+    Weakly typed: No
+    Interpreted: No (typically compiled)
+    Compiled: Yes
+
+Python:
+
+    Static type: No (prior to the introduction of type hints)
+    Dynamic type: Yes
+    Strongly typed: No (prior to the introduction of type hints)
+    Weakly typed: Yes
+    Interpreted: Yes
+    Compiled: No (though there are tools like PyInstaller)
+
+PHP:
+
+    Static type: No (prior to PHP 7)
+    Dynamic type: Yes
+    Strongly typed: No (prior to PHP 7)
+    Weakly typed: Yes
+    Interpreted: Yes
+    Compiled: No

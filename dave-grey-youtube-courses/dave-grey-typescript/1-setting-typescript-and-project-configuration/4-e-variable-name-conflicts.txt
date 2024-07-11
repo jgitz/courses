@@ -1,0 +1,3 @@
+**** ts DON'T ALLOW you to use SAME VARIABLE NAMES on DIFFERENT FILES in the SAME FOLDER.... 
+
+  ** solution is to use EXPORT and IMPORT STATEMENTS in the ts file to make it distinct and this allows you to use same variable names in different files in the same folder

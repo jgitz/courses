@@ -1,0 +1,9 @@
+	2023-04-16	 22:10:20	10415d06-d351-46f2-a379-cf4ccdfa6ccb	GET	/
+	2023-04-16	 22:10:20	e045ddeb-db7c-4be6-b6ed-18c2372cb244	GET	/css/style.css
+	2023-04-16	 22:10:34	1930f21b-91ec-488e-b43d-187a97f51063	GET	/new-page.html
+	2023-04-16	 22:10:34	56b2baa9-1b9b-4c8e-95c8-cb15924c5813	GET	/css/style.css
+	2023-04-16	 22:10:34	4719b46d-d6fa-43be-ad35-4dcb2d00c2c6	GET	/img/img1.jpg
+	2023-04-16	 22:10:45	c99a0b1e-a07c-497d-82c9-dcaf74fa3f14	GET	/lsdfjlsdjf
+	2023-04-16	 22:10:45	bdfdba9a-cf80-4c98-b112-8ac602bd4ecc	GET	/css/style.css
+	2023-04-16	 22:11:41	1d7eff79-984f-42a6-95ab-6c6e74ee841e	GET	/lsdfjlsdjf
+	2023-04-16	 22:16:59	742b38f0-de4b-4eb6-a317-60f6eede7c85	GET	/subdir/test

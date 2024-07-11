@@ -1,0 +1,22 @@
+1 ) Import the required Node.js modules, including http, path, and fsPromises.
+
+2) Define a constant named PORT with a default value of 5000 if no environment variable is set.
+
+3) Create an HTTP server using the http.createServer() method, which takes a callback function that will be invoked for each incoming HTTP request.
+
+4) inside the .createServer callback 
+
+    - the variable extension will store the extension name from the typed url in the browser 
+
+    - the variable contentType is used to set the contentType using the SWITCH CASE STATEMENTS.... we use this variable for various other operations 
+
+    - the CHAINED TERNARY is used to check the url from the browser and SET THE FILE PATH to the SERVER RESOURCES and STORE in inside the VARIABLE FILEPATH 
+
+      ** check the syntax style and tab spaces of the chained ternary
+
+    - after the end of the ternary .... we've defined a line such that... any url typed in the browser without a / at the end.... will be appended with .html in the filepath variable 
+
+
+** check the syntax style and tab spaces of the chained ternary
+
+** note the use of .slice(-1) method to know if we've given a / at the end of the url in the browser.... in the project we've assumed that a / at the end should route to SUBDIRECTORY inside views folder

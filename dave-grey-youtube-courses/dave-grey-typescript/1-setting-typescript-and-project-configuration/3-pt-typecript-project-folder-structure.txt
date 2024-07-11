@@ -1,0 +1,94 @@
+..... in a project involving typescript we need the following FOLDER STRUCTURE and TYPESCRIPT CONFIGURATION 
+
+- FOLDER STRUCTURE: 2 folders are used....
+
+    1) create folder named SRC : this is where we write all .TS FILES including MAIN.TS 
+
+    2) ceate folder named BUILD: this is where we need our COMPILED .JS files as well as INDEX.HTML 
+
+    ***** now normally when we run a .ts file.... .js file gets generated inside the folder of .ts file.... but HERE IN OUR PROJECT.... we want the .TS files in our SRC FOLDER and the .JS FILES in our BUILD FOLDER.... 
+
+      ** for this we need to CONFIGURE tsconfig.json file in our project (next point )
+
+- CONFIGURING tsconfig.json file in our project 
+
+  - to initialize tsconfig.json file in our project.... from project folder.... open cli and type 
+
+    :: tsc --init :: 
+
+      ** now tsconfig.json file will be created and WE NEED TO MODIFY CODES IN IT 
+
+  - for CONFIGURING tsconfig.json.... open tsconfig.json file 
+
+    - to set SRC FOLDER as root folder... 
+
+      - find key named "rootDir"
+
+      - uncomment the line "rootDir": "./"
+
+      - change it to 
+
+          "rootDir": "./src"
+
+    - to set BUILD/JS folder (js folder will be automatically created by ts) as the folder to store compiled .JS FILE... 
+
+      - find key named "outDir"
+
+      - uncomment the line "outDir": "./"
+
+      - change it to 
+
+          "outDir": "./build/js"
+
+          ** even if we didn't create js file.... it'll be automatically created
+
+    - to change the js ES VERSION to which ts compiles .js file 
+
+      - find key named "target"
+
+      - uncomment the line "target": "es2016"
+
+      - change the version to 
+
+            "target": "es5"
+
+            ** we use es5 so out .js file will be compatible with OLDER BROWSERS
+
+
+- now we need the ts to TRACK ALL THE .TS FILE written inside the /SRC FOLDER (ROOT FOLDER).... in cli... type 
+
+  :: tsc -w :: 
+
+    ** this will only TRACK .TS FILES in ROOT FOLDER... i.e in SRC FOLDER in our project...
+
+    **** in our project we DON'T WANT TS to track .ts and create .js file written OUTSIDE /SRC FOLDER.... to prevent this 
+
+      ** solution:
+
+        - open tsconfig.json file 
+
+          - find the SECOND LAST } sign...
+
+          - after that } put a , (comma)
+
+          - then type the following code 
+
+              "include": [
+                "src"
+              ]
+
+... in typescript file... it shows error in RED SQUIGGLY UNDERLINE.... BUT EVEN IF there is error in .ts code.... ts COMPILES .JS FILE.... to prevent this... 
+
+  - open tsconfig.json file 
+
+    - find the key "noEmitOnError"
+
+    - uncomment the line "noEmitOnError": true
+
+    ** now if there is warning red squiggly lines in .ts file.... no .js file will be compiled
+
+
+
+
+
+    

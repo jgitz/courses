@@ -1,0 +1,24 @@
+.... in js every thing from array to functions are OBJECTS.... 
+
+.... typescript provides 3 WAYS to define objects with static types 
+
+
+1) use <>:object with variables you wan't to define object.... ts WON'T give errors if you assign :object to ARRAYS or FUNCTION
+
+  ** here you cannot add TYPES TO OBJECT PROPERTIES 
+
+  ** here you cannot make PROPERTIES AS OPTIONAL USING ?
+
+2) TYPE OBJECT ANNOTATIONS: is used to define CUSTOM OBJECT TYPE with types defined on properties of object 
+
+  ** it uses type keyword
+
+  ** a new custom TYPE is created which you can ASSIGN TO OBJECT USING : on object variables
+
+3) INTERFACE OBJECT ANNOTATIONS: it is similar to type object annotations... and is used to create CUSTOM OBJECTS with properties with specific types 
+
+  ** it uses interface keyword 
+
+** even though TYPE OBJECT ANNOTATION and INTERFACE OBJECT annotation is similar.... it has DIFFERENT USECASES... and different DEGREES OF FLEXIBILITY 
+
+**** practice of above 3 in next notes

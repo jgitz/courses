@@ -1,0 +1,5 @@
+- npm allows you to install THIRD PARTY PACKAGES created by OTHER DEVELOPERS
+
+- we use npm commands in CLI to install packages 
+
+- NPM comes preinstalled when you install nodejs 

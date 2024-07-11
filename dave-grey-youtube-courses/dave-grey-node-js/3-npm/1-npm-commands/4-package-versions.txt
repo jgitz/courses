@@ -1,0 +1,27 @@
+.... in the package.json.... we can see the package versions in the format with some SYMBOLS 
+
+- package version formats 
+
+    - "1.2.3" : means 
+
+        - major version: 1
+        - minor version: 2
+        - patch: 3 
+
+        - this means only this version will get installed during project installation and any OTHER VERSIONS DON'T WORK....
+
+    - "^1.2.3" : means 
+
+        - make the major version CONSTANT and only install versions with changes in minor and patch version DURING UPDATES 
+
+        ** this is commonly used and is DEFAULT 
+
+    - "~1.2.3": means 
+
+        - only ALLOW changes in PATCH VERSION in updates... while MAJOR AND MINOR versions remain CONSTANT
+
+    - "*": means 
+
+        - install the LATEST VERSION during updates 
+
+        ** NOT SAFE TO USE

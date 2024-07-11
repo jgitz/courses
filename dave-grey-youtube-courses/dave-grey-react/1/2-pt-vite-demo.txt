@@ -1,0 +1,69 @@
+.... now we use VITE to set up REACT APP.... because it is faster as it use GOLANG and TYPESCRIPT 
+
+- to create REACT APP using VITE
+
+  - install NODE JS from nodejs site 
+
+  - goto project folder 
+
+    - open terminal and type 
+
+      - :: npm create vite@latest 
+
+      - type the project name
+
+        ** it creates the REACT APP PROJECT FOLDER 
+
+      - select REACT FRAMEWORK from the list 
+
+      - select the scripting language (js/ts/remix??/js+swc??/ts+swc)
+
+      ** NOW REACT APP PROJECT FOLDER IS CREATED 
+
+    - goto REACT APP PROJECT FOLDER 
+
+      - open terminal... and run command 
+
+        :: npm i ::
+
+      - to run the react app in browser... in the terminal... type 
+
+        :: num run dev ::
+
+        ** click on the LOCAL HOST link to open VITE REACT APP in the BROWSER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- VITE REACT APP FOLDER and FILE STRUCTURE 
+
+  - file tsconfig.json: config file of typescript
+
+  - file package.json: config files for the project 
+
+  - file index.html: the first file to get open when you run the app.... after this react files get executed to display the view 
+
+    - you can set META TAGS for your react app for SEO here in the index.html 
+
+    - has DIV TAG with id="root"
+
+    - has a SCRIPT TAG tha points to the source file /src/main.tsx
+
+  - file vite.config.ts: used to install PLUGINS?
+
+  - file src/vite-env.d.ts: typescript file to add TYPES?? for ENVIRONMENT VARIABLES??
+
+  - file src/MAIN.TSX 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- WORKING of REACT APP 
+
+  - when the server of the app starts.... it calls index.html 
+
+  - index.html routes the app to src/main.tsx.... because of the script tag which points to src/main.tsx inside index.html 
+
+  - inside main.tsx..... there is REACT DOM method to RENDER the page to an HTML ELEMENT with ID of 'root'..... this HTML element is inside the INDEX.HTML 
+
+    - inside this reander method..... all the REACT COMPONENTS are specified.... so it gets RENDERED to the 'root' element in INDEX.HTML 
+
+    - the first COMPONENT listed is APP COMPONENT..... hence the CODES WRITTEN inside APP.TSX file gets RENDERED inside index.html 

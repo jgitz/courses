@@ -1,0 +1,34 @@
+... http only encourages to transmit data in a STRING FORMAT.... so JSON is a DATA FORMAT through which data can be transfered from CLIENT-SERVER and VICE VERSA in a string format.. JSON converts a data structure in string format...
+
+** both in frontend and backend JS FILES.... we use JS OBJECTS..... and use OBJECT METHODS.... but when we need to send these OBJECTS to CLIENT or SERVER through INTERNET using HTTP.... we need to convert it to string using the method JSON.stringify(<object>)
+
+** now the object is transffered to the destination through http as STRING.... but in the destination... if we want to MANIPULATE the recieved JSON STRING.... we've to CONVERT it back to an OBJECT... so we use the method JSON.parse(<json string>)
+
+** JSON.stringify REAL SYNTAX: usually .stringify function sends json data without white spaces.... but it can be modified with white spaces if we add OPTIONAL ARGUMENTS  
+
+  - real SYNTAX: 
+
+      JSON.stringify(<data>, replacer_function, <number of spaces>)
+
+      ** replacer_function is used to modify the json data before sending.... if it is not used it can be SET NULL 
+
+        syntax: 
+
+          (key, value) => {
+            if (key === "<any key of json data>") {
+              return undefined; // ** this removes the json data with that key name 
+            }
+
+            return value 
+          }
+
+      ** <number of spaces> can set any numeral value.... so every line of json data will be added 2 spaces at the beginning
+
+
+**** always use JSON.parse over a json data when INSIDE A JS FILE.... but when sending json data to a CLIENT VIA HTTP.... always use JSON.stringify() method over the json daat
+
+***** DIFFERENCE BETWEEN A JSON FILE CONTENT and the OUTPUT of the same file content when applied JSON.stringify()
+
+  ** JSON file content has STRING content WITH WHITE SPACES for better FORMATTING 
+
+  ** when JSON FILE CONTENT is applied JSON.STRINGIFY() method.... the entire content of the file will be REMOVED OFF its WHITE SPACES and WILL BE IN A SINGLE LINE....

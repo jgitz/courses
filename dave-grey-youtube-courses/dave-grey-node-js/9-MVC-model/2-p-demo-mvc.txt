@@ -1,0 +1,3 @@
+.... create a demo express app in mvp ARCHITECTURE
+
+.... the app we build uses an employee data and CRUD OPERATION is realised through js codes INSTEAD OF A DATABASE 

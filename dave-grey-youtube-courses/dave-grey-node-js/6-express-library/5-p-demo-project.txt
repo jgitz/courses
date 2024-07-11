@@ -1,0 +1,13 @@
+....developed a express server for practicing all that we've studied....
+
+- do the following in browser 
+
+  - localhost:5000 : should show index page WITHOUT CSS 
+
+  - localhost:5000/index: should show index page WITHOUT CSS 
+
+  - localhost:5000/index.html: should show index page WITHOUT CSS
+
+  - localhost:5000/old-page: should redirect to new page and url in browser should change to localhost:5000/new-page 
+
+  - localhost:5000/dslfhlskdjf: should display 404.html page WITHOUT CSS

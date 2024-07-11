@@ -1,0 +1,1 @@
+- index.html: is a file that is looked for or loaded by the web server AUTOMATICALLY when you type a url and send request to the backend

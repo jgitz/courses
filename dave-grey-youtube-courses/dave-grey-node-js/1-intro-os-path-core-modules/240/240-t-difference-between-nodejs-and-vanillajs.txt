@@ -1,0 +1,24 @@
+.... the difference between NODEJS and VANILLAJS
+
+** Nodejs runs on SERVER
+
+    * Vanillajs runs on BROWSER
+
+** Nodejs has GLOBAL OBJECT 
+
+    * Vanillajs has WINDOW OBJECT 
+
+    * GLOBAL OBJECT has LESS METHODS than WINDOW OBJECT 
+
+** NodeJs uses COMMONJS MODULE SYNTAX 
+
+    * Vanillajs use ES6 MODULE SYNTAX 
+
+** NodeJs has COMMON CORE MODULES to control OS, FILESYSTEM ETC of a server
+
+    * Vanillajs is used to manipulate DOM 
+
+** NodeJs DOESNOT have FETCH API to send crud requests to endpoints.... and we use THIRD PARTY PACKAGES to implement that
+
+
+    * VanillaJs has fetch api to send crud requests to endpoint

@@ -1,0 +1,21 @@
+- typescript file has the EXTENSION .ts 
+
+- to run a typescript file we in CLI type command 
+
+    :: tsc <file_path>::
+
+      ** when this is run.... a .JS file will be made on the same directory....
+      
+      ***** and WE USE THIS .JS FILE and NOT the .TS FILE 
+
+      ***** EVERYTIME we make a change in the .ts file we NEED TO RUN THIS COMMAND to REGENERATE .ts file.... 
+
+        ** solution is to use WATCH COMMAND (in next point)
+
+- to track changes of a .ts file and AUTOMATICALLY GENERATE .JS file.... in cli type 
+
+  :: tsc <file_path> -w :: 
+
+    ** now everytime we make change in .ts file... .js file is generated AUTOMATICALLY 
+
+    ***** BUT even if we delete a .TS FILE... its .JS FILE WON'T get deleted.... we've to MANUALLY DELETE .JS FILE

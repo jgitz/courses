@@ -1,0 +1,38 @@
+.... now we've set the filePath from the browser url 
+
+..... now we need to serve files to from server to client 
+
+- so we use a FILE EXISTS SYNC to check if the FILEPATH EXISTS or not 
+
+- now since file serving is a REPEATING OPRATION.... we set a FUNCTION NAMED FILESERVEASYNC.... this is set outside the .createServer method
+
+  - fileServeAsync will have codes to read data using fsPromise and use res.end() to render the data
+
+- we set an IF ELSE BLOCK based on FILE EXIST SYNC to 
+
+    - if file exists.... inside if statement we call the fileServeAsync function to serve the fle to frontend 
+
+    - if the file doesn't exists.... we use else block to make a SWITCH STATEMENT
+
+      - practice redirect if the browser url is /old-page.html
+
+      - server 404.html file to frontend
+
+- ** REFACTOR 1: fileServeAsync() function code is refactored to parse .json file content to object.... and stringify the content to send it to the client 
+
+- ** REFACTOR 2: fileServeAsync() function code is refactored to add the following conditional INSIDE FS PROMISE READ METHOD
+
+  !contentType.includes("image") ? "utf8" : ""
+
+    ** else IMAGES won't be displayed (in new-page.html) as the ENCODING is UTF8.... to render the image, the ENCODING OPTION should be BLANK.... here blank is realised through EMPTY STRING
+
+- ** REFACTOR 3: fileServeAsync() function code is refactored to add the following conditional to manipulate status code inside WRITE HEAD METHOD
+
+  filePath.includes("404.html")? 404: 200
+
+  ** this set 404 status code when 404.html file is pushed to the function.... and on other cases status code 200 is set
+
+
+***** redirect using res.writeHead() will ONLY route to LOCATION URL ONLY IF the error code is in the RANGE OF 300 - 399....
+
+***** redirect call will always make the browser to CACHE the redirect site.... so when building projects.... always routinely CLEAR THE BROWSER CACHE

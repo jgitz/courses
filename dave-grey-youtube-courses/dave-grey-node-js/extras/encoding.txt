@@ -1,0 +1,36 @@
+- encoding: is a process of tranferring a data from one format to other.
+
+  ** this enables COMPATIBILITY of data to be used in different SYSTEMS and APPLICATIONS.
+
+
+.... the basic form of representation of data is BINARY.... but this form is not HUMAN READABLE.....
+
+.... so if we want to read the the data like ALPHA NUMBERICAL characters.... it is impossible to read in BINARY FOMAT FOR HUMANS...
+
+... so we convert binary alpha numberics to a format called ASCII (olden days).... and TODAY UTF-8 encoding is used to display all language characters INCLUDING MALAYALAM....
+
+.... even though the binary is the basic form... http PREFERS data in a STRING format to tranfer data over it because HTTP is a TEXT BASED PROTOCOL.... BUT data can be sent in BINARY FORMAT as well in http....
+
+** commonly used encoding in web development 
+
+  1) ascii: used to convert binary to english alphabets and number 
+
+  2) utf-8: converts binary to almost all characters of all languages 
+
+  3) Base64: used to convert BINARY data into ASCII format....
+
+    ** commony used to convert images into string format 
+
+    ** used to store images and videos in database
+
+    ** but the resulting string has 33% increase in data size
+
+  4) url/percentage encoding: url contains special characters which needs to be encoded.... the encoded characters are preceeded by %sign and followed by the HEXADECIMAL code of the special character.... eg / = %20 
+
+  5) json encoding: to convert datastructures into string format 
+
+  6) xml encoding: used to encode datastructures using markup language using tags
+
+  7) form encoding: encodes html form data from html to formats like URL ENCODING or MULTIPART/FORM-DATA 
+
+  ** large video files are send as CHUNKS of binary data or in is compressed formate through http 

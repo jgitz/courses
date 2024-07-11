@@ -1,0 +1,43 @@
+.... when a SERVER receives a CLIENT REQUEST at an SERVER ENDPOINT.... it RESOLVES THE REQUEST and SEND BACK some  META DATA as HTTP RESPONSE to the client.... these META DATAS are 
+
+1) HTTP STATUS CODE: are THREE DIGIT NUMERAL CODES that the SERVERS give to the client.... 
+
+  ** various codes DEFINES WHAT HAPPENED to the CLIENT REQUEST
+  
+  ** the DEVELOPER has to set the code to a client request manually 
+
+  ** COMMONLY USED ERROR CODES
+
+      - 200 OK: server successfully resolved the request and send the resource to the client 
+
+      - 201 CREATED: server successfully created a NEW RESOURCE as a result of a client request... eg: new user account 
+
+      - 204 NO CONTENT: the server RESOLVED the request successfully... but there is NO RESOURCE SENT BACK to the CLIENT 
+
+      - 400 BAD REQUEST: server cannot resolve the request DUE TO CLIENT....such as IMPROPER REQUEST SYNTAX or INVALID REQUEST PARAMETERS or empty fields
+
+      - 401 UNAUTHORIZED: the client must AUTHENTICATE to get the RESPONSE FROM the server... mostly used when there's no user that client requests
+
+      - 403 FORBIDDEN: client DOESN'T have the PERMISSION to access the resourve EVEN AFTER AUTHENTICALTION
+
+      - 404 NOT FOUND: the server COULD NOT FIND the requested resource due to URL ERROR or ENDPOINT ERROR FORM THE CLIENT'S PART 
+
+      - 409 CONFLICT: request from client creates conflict in server. mostly used when there is an already existing user 
+
+      - 500 INTERNAL SERVER ERROR: server COULD NOT FULLFIL the client request due to SERVER-SIDE ERRORS such as DATABASE ERRORS, UNHANDLED EXCEPTIONS?? etc
+
+      - codes of range 300-399 are redirect messages
+
+      - codes of range 100-199 are INFORMATIONAL RESPONSES... eg 100 requests the client to continue the request as server verifies the client request.
+
+2) HTTP HEADERS: are metadata that provides additional details of the RESPONSE such as 
+
+  - content-type : of the response body
+  - encoding
+  - cache control ??
+  - length ?? 
+
+3) RESPONSE BODY: holds the ACTUAL CONTENT of the response in ANY FORM such as HTML, JSON, TEXT etc
+
+4) COOKIES? : small piece of data stored by the browser and SEND BACK to the SERVER on SUBSEQUENT requests.... cookies are mainly used to TRACK the
+

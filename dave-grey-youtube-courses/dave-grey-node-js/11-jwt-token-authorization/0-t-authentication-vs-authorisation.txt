@@ -1,0 +1,27 @@
+..a web app user has 2 security checks to pass 
+
+  1) AUTHENTICATION: is a process by which the IDENTITY of the USER is verified with USER CREDENTIALS such as USERNAME/EMAIL and PASSWORD..
+
+    ** other than password... the following credentals can be used 
+
+      - fingerprints 
+      - facial recognition 
+      - MFA (Multi Factor Authentication)
+
+    ** once authentication succeeds... the user is GRANTED ACCESS to the SYSTEM/APPLICATION RESOURCES 
+
+  2) AUTHORIZATION: is a process by which a PERMISSIONS and ACCESS levels are granted to ALREADY AUTHENTICATED USERS
+
+    ** a system will have many resources... not all users will be allowed access to certain resources... inorder to gain access... we need to give PERMISSIONS to the users
+
+    ** ACCESS CONTROLS can be given through
+
+        - RBAC (Role Based Access Control)
+        - ABAC (Attribute Based Access Control)
+        - Custom Policies 
+
+**Analogy 
+
+  - AUTHENTICATION: is like PUB BOUNCER who check ID PROOF of the VISITORS 
+
+  - AUTHORIZATION: is like additional PASSES like VIP PASS to visit VIP AREAS inside the PUB

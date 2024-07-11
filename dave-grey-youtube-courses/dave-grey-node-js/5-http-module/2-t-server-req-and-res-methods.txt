@@ -1,0 +1,67 @@
+..... given are the most used REQ and RES METHODS used inside .createServer callback 
+
+** REQ METHODS 
+    - req.url: returns url requested by the client 
+
+    - req.method: returns http method of the request send by the client 
+
+    - req.headers: returns an OBJECT with all HTTP HEADERS of the client request 
+
+    - req.params: returns params part of the url typed by client in the browser
+
+    - req.query: returns query string of the url typed by the client in the browser 
+
+    - req.body: to access the data that client sents in its body 
+
+    - req.headers.origin: gives the CLIENT DOMAIN from which a REQUEST is made to the server
+
+** RES METHODS 
+
+  - res.write(<data>): sends ANY TYPE of data to the client from the server and THIS GETS DISPLAYED in the browser 
+
+    ** this data is added to RESPONSE BODY
+
+  - res.writeHead(<status code>, header_object)
+
+    - eg: 
+
+     res.writeHead(200, {
+
+    'Content-Type': 'text/html',
+    'Cache-Control': 'max-age=3600',
+    'Set-Cookie': 'name=value',
+    'Access-Control-Allow-Origin': '*'
+
+    });
+
+      ** sets error code 200
+
+      ** the object is the HEADER OBJECT of the SERVER RESPONSE with commonly used header properties
+
+  - res.statusCode = <status code>: used to INDIVIDUALLY SET the status code in server response 
+
+  - res.setHeader("<header object property>", "<value for the property>"): used to INDIVIDUALLY SET the RESPONSE HEADER OBJECT values ...
+
+    - eg: 
+
+        res.setHeader("content-type", "text/plain)
+
+          ** sets the "content-type" property inside header object with value "text/plain"
+
+  - res.getHeaders(): to display all the headers of the response that we are going to send to the client 
+
+  - res.end(<data>): EVERY RESPONSE should end with this method to NOTIFY the CLIENT that the RESPONSE has ended and hence STOP listening....
+
+    ** data is optional
+
+    ** the data is FINAL PART of RESPONSE BODY
+
+** RESPONSE CODE TO REDIRECT  the page to another url 
+
+  res.writeHead(302, {location: "<url eg www.google.com>"})
+
+  ** location is a HEADER PROPERTY for redirect purpose 
+
+  ** 302 is a redirect code
+
+**** there is no dedicated method to return the response body data 

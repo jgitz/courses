@@ -1,0 +1,3 @@
+.... till now we used an app.all to send 404.html if there is a 404 error.... but in many cases we DON'T want to send 404.html..... sometimes we need to send a 404 in the form of .json or text data..... 
+
+.... so we refactor the app.all for 404 to set conditional statements to send 404 response with req.accepts() 

@@ -1,0 +1,6 @@
+- content-type HEADER: is a header we set or EXPRESS AUTOMATICALLY sets to a respose when RESPONSE.SEND() is used
+
+.... but SOME BROWSERS DON'T obeys the value of content-type header value.... eg: if the response is a TEXT/PLAIN content-type but with some html codes.... the browser renders the response as TEXT/HTML.... so to solve this we use X-CONTENT-TYPE-OPTIONS HEADER....
+
+
+- x-content-type-options: is an HTTP HEADER we add to the RESPONSE to say to browser to STRICTLY RENDER the RESPONSE with the x-content-type-options VALUE....

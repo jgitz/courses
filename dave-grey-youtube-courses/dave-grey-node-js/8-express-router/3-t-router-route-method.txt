@@ -1,0 +1,16 @@
+.... when we use router methods in router files.... we used to write router.get(), router.post() etc separately...
+
+.... but if we want to do get, post, put etc on a single route path.... you can use router.route() method 
+
+
+- router.route() method: 
+
+    - syntax: inside a route file 
+
+        router.route('<route>')
+          .get((req, res) => {})
+          .post((req, res) => {})
+          .put((req, res) => {})
+          .delete((req, res) => {})
+
+          ** we can use dot chaining to chain multiple http methods to the same route

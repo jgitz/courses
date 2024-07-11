@@ -1,0 +1,18 @@
+..... a node js server should always have 2 log files..... 
+
+  1) to store the details when the web server is started.... in our project it should be stored in logs/startUpLogs.txt 
+
+  2) to store the details of errors catched inside the server.... in our project it should be stored in logs/errorLogs.txt 
+
+
+.... logging functionality is REALISED through a CUSTOM MODULE named logEvents.js and..
+
+  - logEvents.js module uses date-fns and uuid packages to set log file creation logic and is exported
+
+  - inside the server.js ... logEvents function is imported and is EMITTED and LISTENED using EVENTS CORE MODULE.... the events are EMITTED AT 3 PLACES inside server.js
+
+    1) inside the fileServeAsync CATCH BLOCK .... emit errors
+
+    2) inside the .createServer 404 switch block to emit 404 errors 
+
+    3) at the start of .createServer to log the startup of server 

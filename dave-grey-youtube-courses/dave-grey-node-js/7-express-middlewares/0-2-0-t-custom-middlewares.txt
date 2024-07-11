@@ -1,0 +1,14 @@
+- CUSTOM/USER-DEFINED MIDDLEWARE in EXPRESS: a USER-DEFINED express MIDDLE WARE FUNCTION can be defined and stored in a VARIABLE using following syntax 
+
+    cont <middleware_variable> = (err, req, res, next) {
+      codes 
+      next()
+    }
+
+      ** here err ARGUMENT is only used for ERROR HANDLING and CAN BE OMITTED 
+
+      ** next and next() is very important 
+
+      ** middleware is CALLED in express using 
+
+          app.use(<middleware_variable>)

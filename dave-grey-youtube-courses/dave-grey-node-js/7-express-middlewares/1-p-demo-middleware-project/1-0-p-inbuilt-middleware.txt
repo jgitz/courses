@@ -1,0 +1,5 @@
+- use the following inbuilt middleware in server.js 
+
+    - express.urlencoded: to recieve form data in url form 
+    - express.json: to handle json data from the client 
+    - express.static: to set public folder to server staic files such as css..

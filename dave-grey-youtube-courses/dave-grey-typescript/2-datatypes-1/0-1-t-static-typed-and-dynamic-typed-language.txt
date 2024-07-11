@@ -1,0 +1,38 @@
+- STATIC TYPING: the datatype assigned to the variables are CHECKED AT THE COMPILE TIME
+
+  ** hence if there is type error in the file during COMPILE TIME.. it WON'T RUN.....
+
+  ** MOSTLY this happens with COMPILED LANGUAGE with EXCEPTIONS
+
+- DYNAMIC TYPING: the datatype is of the variables are checked during the runtime of the program... 
+
+  ** hence the program stops execution when it hits a line with type error 
+
+  ** MOSTLY this happens with INTERPRETED LANGUAGE with exceptions
+
+  
+  
+
+** ADDITIONAL FACTS: 
+
+  - PYTHON is an INTERPRETED language with DYNAMIC TYPING 
+
+    ** BUT STATIC TYPING can be enforced with THIRD PARTY TOOLS like "mypy" or "pyright"
+
+  - JAVASCRIPT is a HYBRID LANGUAGE.... i.e JS is BOTH interpreted and compiled language
+
+      ** in modern JS ENGINES in browsers.... JS CODE is first compiled to BYTECODE by JIT(Just In Time) COMPILER.... and THEN this BYTECODE is run by INTERPRETER in runtime 
+
+  - TYPESCRIPT is a STATICALY TYPED.. COMPILED LANGUAGE 
+
+    ** TS is COMPILED/TRANSPILED into JS CODE which is then used by BROWSER JS ENGINES
+
+    ** TYPESCRIPT COMPILER is called TSC
+
+  - JAVA is a STATIC TYPED.... COMPILED LANGUAGE..
+
+    ** JAVA CODE is COMPILED to BYTECODE 
+
+    ** BYTE CODE is the INTERPRETED by JVM (Java Virtual Machine)
+
+    ** JVM is a PLATFORM INDEPENDENT RUN-TIME ENVIRONMENT to execute BYTECODE

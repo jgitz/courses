@@ -1,0 +1,21 @@
+.... now we know how difficult it is to set up a server with nodejs .createServer method....
+
+.... we employed complex switch case and if statements to realise it.....
+
+.... now we use EXPRESS.JS FRAMEWORK to simplify many operations....
+
+- EXPRESS JS: is a framework that is used to build WEB SERVER to build web applications and api's
+
+
+
+- ADVANTAGES of Expressjs FRAMEWORK 
+
+  1) ROUTING: enables to easily define GET, POST, PUT, DELETE HTTP requests to BACKEND ROUTES
+
+  2) MIDDLEWARE: enables to use MIDDLEWARES to add various functionality to your web app
+
+  3) TEMPLATING: enables to use templating engines such as PUG, EJS, MOUSTACHE etc to render DYNAMIC VIEWS 
+
+  4) ERROR HANDLING: enables to handle errors efficiently
+
+  5) DATABASE INTEGRATION: enables to seamlessly integrate various DATABASES

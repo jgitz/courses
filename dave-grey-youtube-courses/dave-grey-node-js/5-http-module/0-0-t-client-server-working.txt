@@ -1,0 +1,38 @@
+- CLIENT: hosts the website in a domain name.... when we click on any buttons on the page.... a REQUEST is sent to server 
+
+- SERVER: is the PORT/IP where all the files of your website resides... and serves these files when a CLIENT REQUEST ARRIVES
+
+- NODE JS HTTP MODULE: a node CORE MODULE used to create web server and handle http requests 
+
+
+- CLIENT-SERVER WORKING: 
+
+    - client makes an http request (get, post, put, or delete) with http headers(next lesson) related to the client request
+
+    - server receives the request.... RESOLVES the request and send APPROPRIATE RESPONSE back to the client....
+
+    - the SERVER RESPONSE might include 
+
+        - a resource that client requested like html page, photo etc
+
+        - http HEADERS relating to the RESOURCE SEND to the CLIENT
+
+    - client receives the response and RENDERS the RESOURCE in browser
+
+** extras about working of http REQUESTS
+
+    - when client makes a request in ANY OTHER DATA OTHER THAN STRING.. it is converted to string as HTTP IS A STRING BASED PROTOCOL.. but this string is first ENCODED IN THE FORM OF BYTES and sent to server.... 
+
+    - since at the server.... it recieves some BYTES of string.... the server needs to DECODE THESE BYTES back into STRING using some req methods like req.setEncoding("utf8")
+
+    ** req.url, req.params, and req.query all sends receives data from client in string format.... so NO NEED TO CONVERT it into string.... but the data that we need to store in REQ.BODY will be of other datatypes other than string... so we need to convert it to string in the server
+
+
+
+** always check for spelling mistake in process.env.PORT.....
+
+** always import fs module along with fsPromises.... because fs promises will only work inside async function.... while fs module methods can work anywhere 
+
+
+
+

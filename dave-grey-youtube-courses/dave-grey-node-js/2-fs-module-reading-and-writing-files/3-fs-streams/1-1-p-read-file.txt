@@ -1,0 +1,1 @@
+- large content which you want to read using read stream .... the next WRITE will have this same line repeated using WRITE STREAM method and PIPE METHOD

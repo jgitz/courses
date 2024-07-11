@@ -1,0 +1,13 @@
+.... one of the ADVANTAGES of EXPRESS is that it allows you to use REGEX to set ROUTE ARGUMENT inside its HTTP REQUEST METHODS.... 
+
+- COMMONLY USED ROUTE REGEX EXAMPLES 
+
+    1) "^/$": means the route that starts with / and ends with /
+
+    2) "^/$|/index.html": means search for route EITHER / OR /index.html 
+
+      ***** don't use spaces inside regex.... else error
+
+    3) "/index(.html)?": means .html part is OPTIONAL.... route with /index or /index.html will work 
+
+    4) "/*": means it will accept any value after / like  /ldsjf , /ljlkjk etc 

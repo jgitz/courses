@@ -1,0 +1,11 @@
+.... our web app will have many middlewares to be used.... so it is IMPORTANT to call these middlewares in SEQUENCE in order for the app to function properly as the express follows WATERFALL MODEL.... 
+
+- most commonly followed order is 
+
+  1) user defined  logger middleware 
+
+  2) 3rd party cors middleware 
+
+  3) built in urlencoded middleware 
+
+  4) built in json middleware 
