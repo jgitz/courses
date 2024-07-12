@@ -1,2 +1,0 @@
-** CTL + CLICK on the COMPONENT TAG to jump to the COMPONENT FUNCTION and VICE-VERSA
-

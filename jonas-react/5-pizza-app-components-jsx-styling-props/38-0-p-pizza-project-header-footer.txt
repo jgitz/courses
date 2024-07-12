@@ -1,3 +1,0 @@
-.... now create HEADER, MENU and FOOTER COMPONENT for the project
-
-.... place the 3 components inside APP COMPONENT
