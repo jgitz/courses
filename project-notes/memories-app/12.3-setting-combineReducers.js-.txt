@@ -1,0 +1,12 @@
+combineReducers() is a function which combine multiple reducers inside an object {}
+
+
+- goto client/src/reducers/combineReducers.js
+
+  - import combineReducers from redux
+
+  - export default combineReducers() with an object to specify individual reducer names
+
+  - import postsReducer as posts 
+
+  - inside combineReducers({})  object add posts

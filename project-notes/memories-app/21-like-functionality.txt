@@ -1,0 +1,17 @@
+.... same procedure like edit post and delete post functionality
+
+- in client set the likePost axios api 
+
+- create new LikePostAction and configure it 
+
+- write like business logic inside the Reducer 
+
+- inside post.... create a new handle function for like button....inside the function.... dispatch the likePost action with post id.... assign handlelike to like button 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- go to server folder and 
+
+    - set likePost route 
+
+    - inside post-controller folder..... write a new controller logic for like post with mongodB findByIdAndUpdate post command

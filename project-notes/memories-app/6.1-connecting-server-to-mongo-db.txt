@@ -1,0 +1,53 @@
+now we need to connect the mongodb cloud cluster to our server side application....
+
+- goto mongo atlas website.... login
+    - click databases tab on left pane
+        - on your cluster, click connect
+
+        - select option "connect your application"
+            ** because we want db to connect to server side node application
+
+        - copy the connection starting
+
+- goto server folder....open index.js
+    - make a const variable named CONNECTION_URL and assign it the COPIED string from mongodb
+
+    - now inside the pasted string..... replace the username and password with the USERNAME and PASSWORD that you gave at DATABASE ACCESS (not google account password)
+
+        **** this line is vulnerable.... so later we'll store it as an environmental variable
+
+    - now we need a variable named PORT to set port on which our server will run
+        - we set either AN ENVIRONMENTAL VARIABLE to link HEROKU port (to be set later) or port 5000 (to work while testing)
+
+    - now to set up mongoose.... use mongoose.connect()
+        - this has two parameters...
+            1) connection_url variable
+            2) an object with two options
+                - useNewUrlParser: true;
+                - useUnifiedTopology: true;
+
+                    **** not required but to prevent error/warning messages in console
+        
+        - add .then callback codes if mongoose connects to db
+            - for express app to listen to port and show a console log that server is running
+
+        - add .catch callback codes to display error.message
+
+        - add the following line on index.js to prevent error/warnings in console
+
+            - mongoose.set("useFindAndModify", false)
+            ***** this line no longer needed so commented
+
+- now to start the server app running.... goto server folder open the terminal.... type
+    - npm start
+
+        ** npm start because in package.json file we added script that START command refers to COMMAND: :: nodemon index.js
+
+
+***** change port number
+
+**** comment the line ....  mongoose.set
+("useFindAndModify", false).... it is a legacy code
+
+**** enter correct password in CONNECTION_URL variable
+

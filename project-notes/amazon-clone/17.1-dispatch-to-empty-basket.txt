@@ -1,0 +1,8 @@
+now after payment.... the page routes to orders page.... but the basket count should be made zero
+
+- inside payment.js.... inside handle submit.... after payment intent..... before the navigate to order component line add a dispatch
+    - add a dispatch with type "EMPTY_BASKET"
+
+- goto reducer.js
+    - add a new case in reducer with "EMPTY_BASKET"
+        - make basket array empty

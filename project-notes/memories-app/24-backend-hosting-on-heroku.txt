@@ -1,0 +1,133 @@
+- create new heroku account 
+
+- click create new app
+
+- add app name and region
+
+- click create app
+
+- click link download and install heroku cli
+
+- select windows 64
+
+- run downloaded package exe file
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- open server folder inside cmd/powershell 
+
+    **** heroku commands not working inside vscode integrated terminal 
+
+- inside powershell/cmd.... from inside of server folder....
+
+      - type login command of heroku 
+
+          :: heroku login :: 
+
+            ** browser pops up with login window.... and login to your heroku account 
+
+      -** inside server folder initialize git using command 
+
+          :: git init 
+
+          **** we're hosting backend as separate so we initialize a separate git for server
+
+
+      - link heroku with your existing git repository using command 
+
+          :: heroku git:remote -a <mood-book-app> ::
+
+              ** mood-book-app is the name of repository in the heroku account and not github account
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- indide server/index.js....after app.use("/posts") line.... add the following code to give a welcome message for the app hosted in heroku 
+
+    app.get("/", (req, res) => {
+      res.send("Hello to Mood-Book app")
+    })
+
+- inside server folder... create a new file named Procfile 
+
+    ** P of filename Procfile is uppercase 
+
+        - open Procfile file and add the following lines 
+
+            web: npm run start 
+
+- inside the server folder..... add node_modules folder to git ignore 
+
+    ** git ignore file of server folder.... and NOT of memories app
+
+    ** usually .env file will also be added inside gitignore if we're hosting it in github.... but for heroku deployment we don't do that
+
+- inside the server/.env file 
+
+    - comment out the port variable as it'll be populated by heroku
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- open server folder inside GIT BASH CLI  
+
+    - use git add command 
+
+        :: git add . ::
+
+    - use commit command 
+
+        :: git commit -am "message" ::
+
+    - change branch from master to main usng checkout command 
+
+        :: git checkout -b main ::
+
+    - delete master branch locally using command 
+
+        :: git branch -D master ::
+
+    - open server folder in   CMD/POWERSHELL to reset heroku for git branch changes.... and type the heroku reset command....
+
+        - install heroku-repo cli plugin using command....
+
+            :: heroku plugins:install heroku-repo ::
+
+        - use heroku repo reset command....
+
+            :: heroku repo:reset -a <mood-book-app> ::
+
+        - use heroku git commmand to push the server app to your main branch
+
+            :: git push heroku main :: 
+
+- now open your heroku account on the BROWSER....
+
+    - open the app... mood-book-app
+
+          - click overview tab.... and you can see build succeeded message
+
+    
+          - click on open app tab 
+
+              - now you can see backend message from server index.js 
+
+                  Hello to Mood-book app
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... now we've hosted server inside the heroku.... now we don't need server url of localhost 5000 .... and replace it with heroku server url 
+
+- goto client/axios-api/axios.js 
+
+    - COMMENT OUT the url variable for local host 5000.... and REPLACE it withheroku server url 
+
+        const url = "https://mood-book-app.herokuapp.com/posts"
+
+            **** https important... else error
+
+
+**** now your frontend at local host 3000 is connected to heroku backend.... instad of local host 5000
+
+**** now the next step is to change the hosting of frontend from localhost 3000 to front end hosted in cloud via using NETLIFY 
+
+
+

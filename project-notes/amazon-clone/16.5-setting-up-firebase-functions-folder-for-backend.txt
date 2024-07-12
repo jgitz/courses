@@ -1,0 +1,12 @@
+now we've set front end.... now we need to set backend.... remember in axios.js we've not set base url of the backend..... we've to obtain this url from firebase
+
+- goto project folder.... enter terminal
+    - type command :: firebase init
+        - select functions options.... use spacebar to select and press enter
+        - which language?... select javascript... enter
+        - do you want to use eslint?.... press y
+        - do you want to install dependencies?..... press y
+
+        - **** now you have a folder named FUNCTIONS outside the SRC FOLDER..... this FUNCTION folder is now the BACKEND folder.... and SRC is the FRONTEND folder.... the function folder has its own node modules and index.js file.... and we configure backend inside this functions folder
+
+- 

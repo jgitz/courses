@@ -1,0 +1,14 @@
+now we need to add payment page.... we have a proceed to checkout button on SUBTOTAL component.... make a payment component.... set the route in app component.... use NAVIGATE form react router dom to cofigure PROCEED to checkout button in subtotal component to route to the new payment component
+
+- create new comopnent named payment.js.... and payment.css
+
+- goto app.js.... set a route tag to payment component with path "/payment"
+
+- goto subtotal component....
+    - import useNavigate from react-router-dom
+    - before main return, set variable named navigate to useNavigate hook
+    - on proceed to checkout button.... set an onclick to.... ARROW FUNCTION.... navigate("/payment")
+
+**** USE NAVIGATE IS IMPORTED
+***** always assign imported useNavigate variable to a variable
+****** onclick only takes an ARROW FUNCTION as the value....

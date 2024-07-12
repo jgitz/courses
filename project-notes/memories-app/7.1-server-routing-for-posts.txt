@@ -1,0 +1,26 @@
+now we need to set a separate files for posts (??)..... then set a route to it with / .... but use the middleware in index.js to add a prefix /posts to the post.js route
+
+- inside server folder.
+    - create a folder named routes
+
+    - inside routes folder... make a file named posts.js
+
+
+- goto posts.js
+
+    - import express
+
+    - create router variable usint express.Router();
+
+    - using router variable set a get route with route as / and with req and res function and send a message using res.send....
+
+    - export default router variable
+
+- goto index.js
+
+    - import postRoutes(??) from posts.js
+
+    - using middleware app.use.... assign /posts route to the imported postRoutes from posts.js
+
+
+        ** now to access if it is working.... open browser and goto url : localhost:5000/posts

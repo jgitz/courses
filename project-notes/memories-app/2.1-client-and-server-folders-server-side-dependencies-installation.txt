@@ -1,0 +1,45 @@
+- inside memories-app folder.... make 2 folders for front end and backend
+    - make folder named "client" for front end
+    
+    - make folder named "server" for backend
+
+- install latest node by downloading it from web
+
+- goto server folder.....
+    - create a file named index.js.... this is the starting file of our backend
+
+    - to create package.json file inside the server folder.... open terminal from server folder and type
+        - :: npm init -y ::
+
+        **** this file holds all the dependencies used in backend
+
+    - now we need to install dependency packages for backend.... the dependency packages are
+
+        - body-parser : middleware to send post requests.... to handle http post requests in express.js we need this.... body-parser middleware extracts the entire body portion of an incoming request and filters only req.body....
+
+        - cors : to send cross origin requests
+
+        - express : backend nodejs framework to set routing of our application
+
+        - mongoose : to create models for our post..... we use cloud ATLAS db of mongodb
+
+        - nodemon : to automatically reset the server upon any change made in the backend code
+
+            - to install all in one go.... goto terminal and type
+                - :: npm i body-parser cors express mongoose nodemon ::
+
+    - inside server folder.... inside package.json.... add these two lines
+        - after key named main add this line
+            - "type": "module", ** comma is important
+                ***** so we can use traditional react import syntax instead of require syntax
+
+            - inside the "scripts" key
+                - remove the existing test line
+                - add the line
+                    - "start": "nodemon index.js"
+
+    - now goto server folder.... open index.js and import all the dependencies installed
+
+     
+    
+

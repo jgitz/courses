@@ -1,0 +1,38 @@
+.... now we've created action for current id..... its logic should be written inside a reducer
+
+
+- goto src/reducers folder 
+
+      - create a new file currentIdReducer.js
+
+      - inside src/reducers/currentIdReducer.js 
+
+          - write the following code to set reducer function with currentId state initial state and action as parameters.... use switch on basis of action.type.... implement the logic like this
+
+
+              
+                export const currentIdReducer = (currentId = null, action) => { 
+                  switch (action.type) { 
+                    case "CURRENT_ID": 
+
+                      return action.payload
+
+                    default:
+                      return currentId 
+                  }
+
+                  
+                }
+      
+      - goto src/reducers/combineReducers.js 
+
+          - import currentIdreducer
+
+          - add the new currentIdReducer as currentId inside the combineReducer method after already defined posts reducer after a comma like this
+
+              export default combineReducers({ 
+                posts,
+                currentId: currentIdReducer
+              })
+
+.... now we need to dispatch action from the frontend to trigger this reducer to store currentId state in the store 

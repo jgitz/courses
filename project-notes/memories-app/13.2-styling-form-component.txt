@@ -1,0 +1,10 @@
+now we need to style the form component.....
+
+- goto client/src/form/formStyles.js
+
+  - set styles as named export objects
+
+- goto client/src/form/form.js
+
+  - use sx attribute and assign the value as variables from formStyles.js
+

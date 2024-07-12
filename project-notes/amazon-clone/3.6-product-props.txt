@@ -1,0 +1,21 @@
+make props parameters named title, price, rating, image, and ID ( a random number for unique identification ) for PRODUCT component
+
+give the product tags listed in home component with appropriate product specific props
+
+inside product.js.... write an arrow function with array prototype, fill and map methods to make a DYNAMIC rating stars....
+    { 
+          Array(rating) /* makes an array with slots = rating number */
+          .fill()
+          .map((_, i) => ( /* ARROW function BLOCK inside RETURN has simple () instead of {}*/
+            <p>⭐</p>
+            )) 
+        }
+
+inside product.css... make rating flex to display stars from vertical to horizontal
+
+
+**** **** don't forget {} for multiple parameters as props inside a component function..... else blank page
+
+***** no curly brackets inside array prototype
+
+***** an arrow function block inside the component function return has simple () instead of {}

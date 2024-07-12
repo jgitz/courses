@@ -1,0 +1,50 @@
+- use command :: npx create-react-app :: to create the app folder
+
+- set up a fire base account using your gmail (ping) to HOST your project. It has database functionality.
+
+    - inside your firebase account.... create a new project named AMAZON-CLONE-APP (any name can be used)
+
+- to start the project in browser use command :: npm start :: inside from the project folder
+
+- now you need to register your project created inside firebase.
+
+    - goto firebase.... click on your project
+
+    - on top left click on </> symbol
+
+    - enter a nick name (amazon) for the app ( this is used in firebase console)
+
+    - check the also setup firebase hosting... click register app button
+
+    - next step is not needed.... click next
+    
+    - install firebase cli in your LOCAL MACHINE PROJECT FOLDER using command :: npm install -g firebase-tools ::  .... click next.... click continue to console button 
+
+    - now to install firebase in your project folder.... goto project folder and do
+        - :: npm i firebase --force ::
+        
+
+- now we need to copy the FIREBASE CONFIG from firebase project an paste it inside your local project
+    - goto fire base project
+    - on top left click on settings
+    - click on project settings
+    - go all the way down.... click config radio button
+    - copy all the config code
+    - goto LOCAL MACHINE PROJECT / src folder
+
+    - create a file named firebase.js.... and paste the copied code
+        - also inside firebase.js.... paste the following import codes
+            import firebase from 'firebase/compat/app';
+
+            import 'firebase/compat/auth';
+
+            import 'firebase/compat/firestore';
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+for memory posts, we need 2 functionalities...
+
+    1) to read/ list all created memories posts on the browsers : for that we created getPosts
+
+    2) to create new memory post : so we need to create a new 
+
+now we need to make a route and controller logic to create post....for post creation functionality
+
+
+- goto  controllers/posts..
+
+    - export a variable named createPosts with request and response....
+
+- goto routes/posts.js
+
+    - create a get route with variable create posts....

@@ -1,0 +1,20 @@
+now we've setup front end.... now we've to set backend in firebase...
+
+- goto firebase site.... goto amazon clone project.... click settings.... click build....
+click authentication.... enable email/password
+
+- goto firebase.js in your local project folder.... add these codes to....initialize firebase.... setup database and handle sign ins.... then export these....
+
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+    const db = firebaseApp.firestore();
+
+    const auth = firebase.auth()
+
+    export { db, auth };
+
+    - **** now we use these exported functions  in our backend project folder to make our app interact with firebase using fire base specific commands.... such as create user using email and password
+
+    
+
+    

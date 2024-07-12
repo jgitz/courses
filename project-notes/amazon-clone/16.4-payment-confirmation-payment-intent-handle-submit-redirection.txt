@@ -1,0 +1,20 @@
+now we've got secret key..... now we've to pass card number to backend and recive a PAYMENT INTENT as confirmation message to finish the transaction....
+
+
+- now inside payment.js.... inside handleSubmit function we need to write some STRIPE CODES.... ........ once we recieve response with secret code from the backend in the previous step... it means now we need to submit our credit card details from the FORM cardElement..... 
+    - to do it... inside handleSubmit.... create an await stripe function with variable name payload.... pass in the SECRET CODE and cardElement details....
+
+    - then there'll be a response from the stripe........ that response is called PAYMENT INTENT.... that means OUR TRANSACTION IS SUCCESS.... now we need to set   
+        - state variable SUCCEEDED to true
+        - state varaible ERROR to null
+        - state variable PROCESSING to false
+        - then REDIRECT to another page/ component named "ORDERS" to implement redirection....
+            - import USENAVIGATE hook from react router dom
+            - assign the use navigate hook to a variable named navigate
+            - now inside the inside payment.js... inside handle submit function.... at last use the USE NAVIGATE REDIRECT CODE..... like this
+                navigate("/orders", {replace: true})
+
+                **** {replace: true} removes the page from which we routed into the orders.... i.e payment page is removed from the browser history... hence, if we click back button... we can't go back to previous payment page
+
+
+- now we've to set our BACKEND

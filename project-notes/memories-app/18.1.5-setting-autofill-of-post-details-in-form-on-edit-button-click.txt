@@ -1,0 +1,51 @@
+.... now we've configured an edit functionality in post component..... with every click of edit currentId state of the store is set with id of the post from which edit was clicked..... 
+
+.... now inside form component.... use the currentId state from the store to AUTOFILL the post detail on clicking the edit button....
+
+.... also set the heading of the form component from "CREATE MEMORY" to "EDIT MEMORY" when edit button is clicked 
+
+..... also revert the title from "EDIT MEMORY" to "CREATE MEMORY" on click of clear button of form 
+
+- inside src/components/Form.js component..... 
+
+      - import the following 
+
+          - import { useSelector } from "react-redux";
+          - import { useEffect } from "react"; 
+          - import {currentIdAction} from "../../actions/currentIdAction.js" 
+
+      - before the main return.... using useSelector() to fetch the currentId state from the store and assign it to a variable named currentId
+
+          const currentId = useSelector(state => state.currentId)
+
+      - before the main return....  again use useSelector() with a conditional to filter out the post details with the currentId and store it inside a variable named post 
+
+          const post = useSelector(state => currentId ? state.posts.find(p => p._id === currentId): null)
+
+      - before the main return.... make a useEffect hook with post variable inside the dependency array..... and inside the hook body.... write code such that.... if there is a post variable.... setPostData() with content stored in the post 
+
+            useEffect(() => { 
+
+              if (post) setPostData(post); 
+
+              }, [post]); 
+
+      - inside the main return..... on line 108.... write a TERNARY operator to set condition in presence of POST variable such that.... if there is post variable.... the title would change form "CREATE MEOMRY" to "EDIT MEMORY"
+
+          {post? "EDIT MEMORY": "CREATE MEMORY"}
+
+      - before the main return.... inside the handle clear function.... write a dispatch() currentIdAction with value null to RESET currentId state with NULL.... this will also change the title of form from "EDIT MEMORY" to "CREATE MEMORY"
+
+          const handleClear = () => {
+                setPostData({ creator: "",
+                title: "",
+                message: "",
+                tags: "",
+                imageFile: ""}); 
+                
+                dispatch(currentIdAction(null)) /* 18.1.5 */
+
+              }; /* 18.1*/
+
+
+.... now we've only set the edit part with display.... now we've to set PASSING of edited memory from FRONTEND/CLIENT to SERVER and store it it the mongodb database on CLICK OF SUBMIT BUTTON in the form

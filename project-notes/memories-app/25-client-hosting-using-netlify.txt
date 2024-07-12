@@ -1,0 +1,20 @@
+.... now we are going to host frontend inside netlify .....
+
+
+- login to netlify account 
+
+
+- open memories-app/client inside cli 
+
+    - stop the client if it is running
+
+    - type build command  
+
+        :: npm run build :: 
+
+            ** now a build folder will be created inside CLIENT FOLDER 
+
+    - open the client/build folder inside the file explorer
+
+        
+

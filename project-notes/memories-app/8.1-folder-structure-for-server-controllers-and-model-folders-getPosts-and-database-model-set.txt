@@ -1,0 +1,72 @@
+best practice is to make separate folders for programming logic and database.... so we need to make 2 folders
+    1) controllers folder : to hold logic js files
+    2) model folder : to make a schema and model of our database
+
+
+- goto server folder....
+    - create a folder named controllers
+
+    - goto controllers folder
+
+        - create a file named posts.js to store logics
+
+        - goto routes/posts.js
+            
+            - cut the logic of router.get...
+                *** i.e the codes after "/"
+
+        - goto controllers/posts.js
+
+            - create an export variable named GETPOSTS and paste the logic that we cut from /routes/posts.js (previous setup)
+
+        - again goto routes/posts.js
+
+            - import getPosts variable from /controllers/posts.js
+
+            - inside the router.get.... after "/".... after a comma.... add the imported getPosts variable
+
+- goto server folder
+
+    - create a new folder named models.... to store mongoose schema and models for various actions
+
+    - goto models folder
+
+        - create a new file named postMessage.js to specify the schema and make model db for someone posting a new memory
+
+        - goto postMessage.js
+
+            - import mongoose
+
+            - to create a schema for memory posts.... make a variable postSchema using (**) new mongoose.Schema()
+                
+
+                - inside mongoose.Schema method... create the schema of db entries inside an object.... schema includes
+                    - title, message, creator as strings
+
+                    - tags as an ARRAY of strings
+
+                    -  a property named SELECTED FILE is made to post MEMORY PHOTO....**** its value is given as STRING.... because we use base 64 to convert image to string
+
+                    - for like count....we make an object with key likeCount.... which has 2 properties.... 1) type with type NUMBER 2) default with value 0.
+
+                    - for date we create an object with key createdAt.... the object has two properties.... 1) type : Date 2) default: new Date
+
+                - to make model out of the schema named postSchema use.... mongoose.model()....
+
+                    - make a variable named
+                    
+                         PostMessage = mongoose.model("PostMessage", postSchema)
+                            *** P is uppercase in PostMessage variable
+                - export default the model named PostMessage
+                
+                    **** now we can do actions like find, create, delete.... etc on PostMessage model database
+
+
+
+
+
+
+
+***** in nodejs always add .js extension for imported js files.... don't ommit like in react files.... else console error
+
+        

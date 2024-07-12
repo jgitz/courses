@@ -1,0 +1,39 @@
+..... now that we've set actions and reducers for currentId.... we need to dispatch the action from front ent..... to do that we need to do the following 
+
+        1) store the currentId of the post in a variable 
+
+        2) create a handleEdit function for 3 dot button... such that it sets the currentId variable with the id value of the post and dispatch the currentId action function with that id value 
+
+        3) to prevent DOUBLE CLICKING to set currentId in store.... we need a USE EFFECT HOOK which DISPATCHES CURRENT ID action whenever the CURRENTID variable value changes
+
+
+- goto src/components/posts/post/post.js component 
+
+    - import the following
+
+          - useState from react
+          - useDispatch from react-redux 
+          - currentIdAction from actions
+         
+
+    - before the main return.... use USE STATE hook to create a new variable named CURRENTID to store the id of the clicked post
+
+        const [currentId, setCurrentId] = useState(null)
+
+
+    - before the main return.... create a dispatch variable and assign useDispatch() to use the dispatch functionality
+
+    - inside the main return.... goto 3 dot button element and set the onClick to handleEdit function which we'll define in the next step 
+
+    - before the main return.... define the handleEdit function such that it sets the CurrentId STATE variable from the post._id value (from the prop parameter) from the store.... like this
+
+          const handleEdit = () => {
+             
+              const postId = post._id 
+              dispatch(currentIdAction(postId));
+              
+            } /* 18.1.4 */
+
+                ***** always make it a habit to store outside value as a separate variable inside a function..... here it is postId
+
+    

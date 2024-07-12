@@ -1,0 +1,22 @@
+now we have used dispatch actions inside useEffect to load posts data inside the app component.... now we need to display it inside the posts component....
+
+
+- goto client/src/components/posts.js
+
+    - import useSelector from react-redux
+
+    - inside the component function..... before the main return
+
+      - declare a variable named posts and assign it useSelector with combined reducer posts key inside it like this.... and console.log(posts) to check if store is working
+
+        const posts = useSelector((state) => state.posts)
+
+        console.log(posts)
+
+** run react app inside browser... if an empty posts [] is displayed inside the console.... your app is working
+
+**** now run the react app in browser.... inside console if an empty [] is displayed and a network error is displayed...
+
+  goto server/index.js.... check if app.use(posts) is declared before app.use(cors).... if so ..... make app.use(posts) come after app.use(cors)
+
+    ** order of app.use matter inside the server index.js

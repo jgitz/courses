@@ -1,0 +1,27 @@
+ now we have to create an authentication page i.e login page.... so we make a component....
+
+ - make a component named login.js and login.css
+
+ - inside app.js.... make a route with path "/login"
+
+ - inside the header.js.... link the sign in tag to login page using link tag....
+
+ - but the login page don't need nav bar.... so inside app.js we have to remove the common navbar from routes and add it individually to the needed routes using {[]} inside elements attribute
+
+ - inside the login.js.... construct the page body with 
+    - amazon logo linked to home page
+    - email and password input
+    - sign in button
+    - create amazon account button
+    - disclaimer text
+
+
+- to store user and password in variables.... inside login.js.... import usestate from react
+    - set email and password variables using usestate as EMPTY STRING.
+    - connect the email and password fields with use state variables using VALUE TAG attribute
+    - now inside email input tag....set ONCHANGES attribute....now write an ARROW function TO SET EMAIL varible.... do the same for PASSWORD
+
+    - inside sign in button add attribute type = submit
+
+    - inside the signin button.... assign an onclick attribute to a function called signIn.... now before main return..... write a sign in arrow function to prevent RELOAD using the command.... :: preventDefault() ::.... also inside the function reserve space for FIREBASE CODE .... do the same for create account buttton
+

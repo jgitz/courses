@@ -1,0 +1,1 @@
+**** **note: if there is error.... goto powershell or integrated terminal... remove the file  C:\Users\<user>\AppData\Roaming\npm\nodemon.ps1.... then type npm cache clean --force.... now again run ng --version..

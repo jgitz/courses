@@ -1,0 +1,31 @@
+..... from the posts component we've loaded the state details and fed it inside post component as props....
+
+..... now we've to design post component as cards using the fed in props.....
+
+..... we need an edit and delete icons...... for that we need to install material icons Package
+
+- goto client folder
+
+    - install material icons package
+
+- goto client/component/posts/post/postStyles.js
+
+  - set styles for post component here with createTheme and nested object with self export 
+
+- goto client/component/posts/post/post.js component
+
+  - import delete icon from material ui icon
+
+  - import MoreHorez icon for edit button from material ui icon
+
+  - import thumb up icon for likes from material ui icon
+
+  - import style class from the postStyles.js
+
+  - import other mui components for designing the component
+
+  - import moment library to display time as text like 5 minutes ago.... 5 seconds ago etc....
+
+  - add post prop from the posts component as the main function parameter
+
+  - inside main return design card to hold the posts 

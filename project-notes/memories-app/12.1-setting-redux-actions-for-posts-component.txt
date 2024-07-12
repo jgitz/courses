@@ -1,0 +1,72 @@
+for state management we use redux.... redux has actions, reducers, and store...... first we need to create actions 
+
+... here we are going to define actions of posts component.... 
+
+.... an action creator is a function which return an object with type and payload
+
+
+... the main action of the posts component is to fetch the posts from backend server....
+
+.... for fetching posts from backend server, we've already written a fetchPosts function inside src/axios-api/axios.js..... we've to write an n action
+
+.... for fetch post action.... the type is "FETCH_ALL" and payload is an array [] into which posts will be collected from the backend
+
+.... inside action, inorder to use asynchronous fetching of posts from backend.... we've to use thunk....
+
+.... to use thunk inside the action... we've to curry in an async(dispatch) function into the action action function
+
+- goto client/src
+
+  - create a folder named actions
+
+  - goto client/src/action
+
+    - create a file named postsAction.js to specify actions related to posts
+
+    - goto postsAction.js
+
+      - create an action arrow function variable named getPosts
+
+      - inside the getPosts arrow function.... curry in another arrow function named async(dispatch) for adding thunk capabilities
+
+      - inside the arrow function block....
+
+        - create a try catch blocks
+
+        - inside try....create a destructured object {data} to await and get posts from backend using axios.fetchPosts() and store it inside
+
+          ** this {data} will hold all the posts comming from backend
+
+        - now use dispatch() to dispatch action object with
+
+          - type: "FETCH_POSTS"
+          - payload: data
+
+        - inside catch... console log the error.message
+
+        - now add named export to getPosts action to use it inside the app.js
+
+** now we need to set reducer for "FETCH_POSTS" action type
+
+** actions will be dispatched from the app.js file by using the calling action functions inside dispatch()
+
+
+
+
+
+
+- goto client/src/index.js....
+
+  - import Provider from react-redux
+
+  - import createStore, applyMiddleware, compose from redux
+
+  - import thunk from redux-thunk
+
+  - create store variable using createStore() with 2 arguments...
+
+    1) reducers(will be created later)
+    2) compose(applyMiddleware(thunk))
+
+        ** to set middleware inside store
+

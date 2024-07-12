@@ -1,0 +1,11 @@
+now we have set firebase websit authentication on create and sign in button.... now we've load the authentication data into our APP and use it to display signout and user name on navbar.... we employ USE EFFECT as well as REDUCER file for this
+
+- goto app.js.... import useEffect, USE STATE VALUE and auth 
+
+- goto app.js.... before the main return.... use useEffect....
+    .... inside the use effect.... use auth onState change function.... inside the state change write DISPATCH conditions for SIGN IN state and LOG OUT state....
+
+- goto reducer.js.... 
+    - inside initialState object.... set a new object named <user> and set it to null
+
+    - inside the reducer switch... write a new case for SIGN in and LOGOUT

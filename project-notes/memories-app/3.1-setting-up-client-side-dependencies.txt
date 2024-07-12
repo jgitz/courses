@@ -1,0 +1,23 @@
+now we need to set up client/ frontend side dependencies
+
+- goto client folder.....open the terminal initiate an EMPTY react app using the command
+    - :: npx create-react-app ./ ::
+
+- goto client folder now we need to install the following dependencies....
+
+    - material ui: for designing ui with readymade design components
+
+    - axios : for handling api requests
+
+    - moment : to work with time and date
+
+    - react-file-base64 : used to convert our images into strings inorder to sent it to backend
+
+    - redux : state management
+    
+    - redux-thunk : to implement async actions with redux
+        - to install all of this.... goto client folder.... open terminal and type
+
+            - :: npm i axios moment react-file-base64 redux react-redux redux-thunk ::
+
+            - :: npm install @mui/material @emotion/react @emotion/styled ::

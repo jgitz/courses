@@ -1,0 +1,42 @@
+now we need our app to create a new user in firebase website.... when you click CREATE NEW AMAZON ACCOUNT BUTTON.... so we need to write firebase code inside the register function in LOGIN page....
+
+- goto login.js....import auth from firebase 
+
+-goto login.js.... inside register function (linked to on click of create account button).... write firebase code to pass in email and password to register a new user in firebase website....
+    auth
+    .createUserWithEmailAndPassword(email, password)
+    .then((auth) =>{
+        console.log(auth);
+    })
+    .catch((error) => alert(error.message))
+        - in the above code the email and password is passed to firebase website.
+        - if the user is created an object is returned and we console log that object.. if success the object is printed
+        - if the object is not recieved the error message is displayed using catch
+
+        - now check if the create button is working by typing email and password... then click the create button.... if it works.... there'll be an object inside the console
+
+        - now as we click create.. we need to route to HOME page.... so we have to use USE NAVIGATE HOOK inside REGISTER FUNCTION AUTH... inside login component.
+            - import useNavigate from react-router-dom
+
+            - before main return
+                const navigate = useNavigate()
+
+            - inside register function.... inside auth....
+
+                 if (auth) { 
+                 navigate("/") 
+                }
+            - now the site will route to home page after creation of account
+
+- now inside the login.js.... inside sign in funciton.... write firebase authentication codes like register.... 
+    - here we use firebase command 
+        auth.signInWithEmailAndPassword
+
+
+
+
+
+
+
+    
+

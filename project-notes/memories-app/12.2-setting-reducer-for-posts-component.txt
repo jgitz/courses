@@ -1,0 +1,41 @@
+reducers are the file that defines logic for actions
+
+.... reducer is a function which take arguments
+
+  - previous state
+  - action
+
+..... logic for action type is written as cases inside switch statement
+
+
+- goto client/src
+
+  - create folder named reducers
+
+  - open client/src/reducers folder
+
+    - create file named combinedReducers.js
+
+    - create file named postsReducer.js
+
+  - open client/src/reducer/postsReducer.js
+
+    - write a default export reducer function with posts , action and switch case
+
+
+    - inside switch block
+
+      - write case for action.type "FETCH_POSTS"
+
+      - inside case 'FETCH_POSTS'
+
+        - write logic to return action.payload
+
+      - write default case to return posts state
+
+** now we've created action and reducer for getting posts from backend
+
+** now we need to create store and provide accessibility to store to every components inside the react app.... so in next step store is going to be created inside the src/index.js file
+
+
+**** always add default case for reducer switch statement.... else react won't render the page

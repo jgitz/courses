@@ -1,0 +1,29 @@
+checkout page right side which list total price is to be made as a component named "SUBTOTAL"
+
+install a LIBRARY named REACT-CURRENCY-FORMAT using command 
+    - npm i react-currency-format --save --force
+    this library adds properties to currency value.. lik currency decimal scale, thousands separator (comma) etc
+
+- make a subtotal component
+
+- inside checkout.js list subtotal component on right side
+
+- inside subtotal component.... import CURRENCY format tag from REACT-CURRENCY-FORMAT
+
+- inside subtotal.js.... inside component return.... inside CURRENCY FORMAT TAG....inside render text ARROW FUNCTION.... add body elements of subtotal components such as.... gift check box....
+
+- inside subtotal component.... after the render text arrow function add currency format variables
+        - decimalScale = {2}
+        - value = {0}
+        - displayType = {"text"}
+        - thousandSeparator= {true}
+        - prefix = {"$"}
+
+- design subtotal component css file
+        
+
+
+
+**** always use --save and --force if the library installation shows dependency errors
+
+**** import of currency format tag has NO curly {}... if there is curly bracket, error appears

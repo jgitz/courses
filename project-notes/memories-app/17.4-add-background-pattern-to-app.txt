@@ -1,0 +1,16 @@
+..... to add a pattern for the whole app..... use a free pattern from the site
+
+  svgbackgrounds.com
+
+
+- goto svgbackgrounds.com
+
+  - select a background
+
+  - click export
+
+  - select css option to copy css of the pattern
+
+- goto index.css
+
+  - inside body{}... remove the existing codes if any and paste the pattern css that we've copied

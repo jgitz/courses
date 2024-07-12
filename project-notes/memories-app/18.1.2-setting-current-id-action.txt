@@ -1,0 +1,19 @@
+.... to make a state called currentId.... we need an action and reducer.... here we configure action for current id 
+
+
+- goto src/actions folder 
+
+    - create new file called currentIdAction.js
+
+    - inside src/actions/currentIdAction.js 
+
+        - add the following action creator function with currentId parameter and return action object with type and payload like this 
+
+            export const currentIdAction = (currentId) => { 
+                          return {
+                            type: "CURRENT_ID", 
+                            payload: currentId 
+                          }
+                          }
+
+.... now we need to set reducer for currentId action to set its business logic 

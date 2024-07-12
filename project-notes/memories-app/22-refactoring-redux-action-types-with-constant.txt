@@ -1,0 +1,14 @@
+.... any spelling errors in action types won't get displayed in console.... so store all action types inside a separate file as variables and use the variables for action types inside the action files
+
+
+- inside client/src folder
+
+      - create new folder named constants 
+
+            - inside constant folder
+
+                - write all action types as named export variables 
+
+- goto each action files and replace all the types with the variables inside the constants folder
+
+- goto each reducer files and replace all the types in case statements with variables from constants folder

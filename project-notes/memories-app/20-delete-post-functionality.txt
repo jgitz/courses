@@ -1,0 +1,17 @@
+.... same procedure like edit post 
+
+- in client set the delete axios api 
+
+- create new deletePostAction and configure it 
+
+- write delete business logic inside the Reducer 
+
+- inside post.... create a new handle function for delete button....inside the function.... dispatch the deletePost action with post id.... assign handleDelete to delete button 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- go to server folder and 
+
+    - set deletePost route 
+
+    - inside post-controller folder..... write a new controller logic for delete post with mongodB delete post command

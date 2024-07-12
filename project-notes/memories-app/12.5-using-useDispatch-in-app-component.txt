@@ -1,0 +1,27 @@
+now we have to dispatch actions.... so far we've created only a getPostsAction() to get whole posts from backend....
+
+.... now we want to display it inside the component where <Posts> component is used... i.e in our project it is inside app.js
+
+- goto client/src/app.js component
+
+  - import useDispatch from react-redux
+
+  - import useEffect from react
+
+  - import getPostsAction from postsAction.js
+
+  - inside the component function.... before the main return
+
+    - declare create a variable named dispatch to store useDispatch()
+
+    - declare useEffect hook
+
+    - inside useEffect hook
+
+      - use dispatch() to call getPostsAction() like this
+
+        - dispatch(getPostsAction())
+
+          **** call the getPostsAction using ()
+
+      - use dispatch variable inside the input array [] of the useEffect hook

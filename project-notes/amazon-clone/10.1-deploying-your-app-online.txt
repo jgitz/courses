@@ -1,0 +1,34 @@
+even though we need some more updates in the app.... we decide to do it after deploying it online....
+
+- open terminal from your project folder.. (**** check error part at end)
+    - run command 
+        :: firebase login ::
+
+        - firebase login appears on browser... login to firebase account
+
+
+    - run command 
+        - :: firebase init ::
+        - select HOSTING CONFIGURE OPTION.... press enter
+        - choose existing project.... select project and click enter
+        - in next line (what do you want) type :: build ::
+
+        - **** configure as a single page *** YES
+        - github deployment :: N ?? ::
+
+- now type command 
+    :: npm run build ::
+
+- after building an app.... if we do any change to the app.... you have to run command :: npm run build :: again and again
+
+- now to deploy the app... type command..
+    :: firebase deploy ::
+
+
+***** error to run firebase commands in project folder do
+            - remove the file C:\Users\user\AppData\Roaming\npm\ng.ps1
+            - run command :: npm cache clear --force
+
+**** after building an app.... if we do any change to the app code .... you have to run command :: npm run build :: again and again
+
+    

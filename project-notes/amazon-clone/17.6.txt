@@ -1,0 +1,20 @@
+now till now we used firebase emulator api base url to link our backend to front end so we can test.... now we need to deploy the backend into the firebase..... in firebase terminology HOSTING means frontend and FUNCTIONS means backend
+
+- to deploy the backend/functions into the firebase account.... first you need to update your firebase plan to blaze
+    - goto your firebase account   
+        - on left menu.... at the bottom there'll be a plan name called spark.... click upgrade button..... click blaze plan
+
+- goto functions folder..... open the terminal from function folder....
+    - quit the emulator using control + c
+
+    - to deploy only the functions (backend **** we've already deployed the frontend (hosting) into the firebase) into the firebase type
+        - :: firebase deploy --only functions :: 
+
+
+**** before deploying backend or functions into the firebase.... update your firebase account plan to BLAZE else the terminal deploy command will show error
+
+**** if there is an eslint lint error in cli.... goto firebase.json file inside the project folder...
+        
+        - remove the following line from predeploy array
+
+            "npm --prefix \"$RESOURCE_DIR\" run lint"

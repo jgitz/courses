@@ -1,0 +1,36 @@
+
+
+- inside server/routes/posts-route.js 
+
+
+      - create a new patch route with dynamic id param as url and a controller named update post 
+
+          router.patch("/:id", updatePost) /* 999 */
+
+
+- inside server/controller/post-controller.js 
+
+      - create a named export async FUNCTION with req and res parameters... to write controller logic of update post.... and update the edited post in the mongodb database..... write codes to update the post by finding the post in database and replace it with post data from the frontend.... and send back the updated post back to frontend, which will be used inside the editPostAction creator logic 
+
+
+          export const updatePost = async (req, res) => {
+            const {id: _id} = req.params // renamed recieved id
+            const editPostData = req.body 
+            
+            if(!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send('No post with this id') // to check if the fetched id is inside the mongoose database of posts
+
+            // if the _id is valid execute the below codes 
+
+            const updatedPost = await PostMessage.findByIdAndUpdate(_id,{...editPostData, _id}, {new: true}) // to find the post by the id and update it with the data recieved from front end
+
+            console.log("hihi")
+
+            // {...post, _id} because we need to update the _id property also inside the document
+
+            res.json(updatedPost) // sending the updated post back to front end so it can dispatch it to the store   
+        }
+
+**** now frontend and backend for edit post functionality is fully functional
+
+
+          

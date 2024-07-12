@@ -1,0 +1,12 @@
+var num=10;
+console.log(typeof(num));
+var string="10";
+console.log(typeof(string));
+var float=10.5;
+console.log(typeof(float));
+var boolean=true;
+console.log(typeof(boolean));
+var undefined;
+console.log(typeof(undefined));
+var null_variable=null;
+console.log(typeof(null_variable));

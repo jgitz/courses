@@ -1,0 +1,10 @@
+now we have a nav bar...
+
+next we need a home component.... where we display a banner and then shopping products inside 3 rows
+
+create a home component and css file.... add it in app.js
+
+add a banner image.... style it with gradient style..
+
+the home component has products that should be arranged as 3 rows.... 1st row with 2 products.... 2nd row with 3 products.... 3rd row with one product....
+    - create 3 div for 3 rows

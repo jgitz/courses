@@ -1,0 +1,25 @@
+now your order details are pushed into firebase database..... now the front end is redirected to orders component show the orders..... we have to configure the orders page such that it shows all the orders..... this order details should be pulled from the firebase database
+
+- goto orders.js.... 
+    - import 
+        - db from firebase.js
+        - import orders.css
+        - import useState value
+        - import use effect
+
+    - set a useState value to connect to stateProvider
+    
+    - set a state named orders to store the order details pulled from firebase database as ARRAY...initial state is an empty array
+
+    - set a use effect hook such that the codes inside the hook would load the order details from the firebase database
+        - the db codes will filter by descending order of the date created
+
+        - onSnapshot method is used such that any data inside the filtered database can be used for various operations
+
+            - inside onsnapshot method... .
+
+                - ....we use set orders with arry map method to store id of the document and the data of the document to be stored in keys named id and data 
+
+        - wrap the whole code inside use effect in an if else conditional.... such that.... it only executes if there is a user logged in.... else set state order variable as empty
+
+        - inside use effect input array..... put user variable such that the use effect reloads with change in user variable

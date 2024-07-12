@@ -1,0 +1,25 @@
+for database we are using mongodb atlas cloud database.... to set this up
+
+- goto mongodb cloud atlas website
+
+    - create account with google
+
+    - select free plan
+
+    - select every free options
+
+    - add a name for your cluster (on database button on left pane) ( cannot be changed )
+
+    - create a username and password (on database access button on left pane)...
+        **** this is the creadential to be used to read and write to the database 
+
+    - to add ip address.... click network access button on left pane
+    
+        - click add ip address green button on top right
+
+        - click add current ip address button on pop up window
+
+        - click confirm
+
+    
+         

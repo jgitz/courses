@@ -1,0 +1,32 @@
+now we need a store to push all the states into it....
+
+.... store is created using createStore() from redux
+
+.... createStore() takes 2 arguments
+
+  1) reducers from combine reducers
+  2) compose(applyMiddleware(thunk)) to specify middleware
+
+    ** here the middleware used is thunk
+
+.... now inorder to provide this store to all components.... we use <Provider> tag from react-redux
+
+
+..... here to provide store to whole of app.... we make store inside index.js
+
+
+- goto src/index.js
+
+  - import Provider from react-redux
+
+  - import legacy_createStore, applyMiddleware and compose from redux
+
+  - import thunk from "redux-thunk"
+
+  - import reducers from combineReducers.js
+
+  - make store variable and use legacy_createStore() and compose(applyMiddleware(thunk)) to create store with thunk to have a store with asynchronous capabilities
+
+  - wrap the <App/> component inside <Provider> tag and add a prop to provider which calls newly created store
+
+    ** <Provider> tag provides store to the whole app component

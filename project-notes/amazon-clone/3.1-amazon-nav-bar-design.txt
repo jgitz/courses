@@ -1,0 +1,3 @@
+make header component for nav bar.... design the html.... paste the component inside app.js
+
+**** always copy image url 

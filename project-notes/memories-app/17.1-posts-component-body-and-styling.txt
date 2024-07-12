@@ -1,0 +1,23 @@
+.... now we've set set codes to create posts from frontend and store posts details in backend..... 
+
+.... now we need the front end to fetch post details from the backend and display it in posts component
+
+
+.... we've already loaded the post details from the store using the useSelector hook.... now we need to use that to display the posts from the state
+
+
+- goto posts folder
+
+  - inside the postsStyle.js.... define the styles inside a nested object named classes
+
+  - goto posts.js 
+
+      - import postsStyle style
+
+      - import post.js component
+
+      - import mui components grid and circular progress
+
+      - now inside main return.... in a conditional.... define a ternary oprtator such that it shows circular progress if there is no post in loaded state..... else define a grid and map the items from the state and enclose post component inside a grid and give in the state as prop for the post component
+
+      - add appropriate sx prop to each mui component

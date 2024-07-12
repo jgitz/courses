@@ -1,0 +1,8 @@
+now here we first need to setup express app.... also set up the middleware named body parser using codes.... and setup cors middleware
+
+- goto index.js
+    - setup const app to express()
+
+    - set up 2 line body-parser code using app.use() for handling both json and url
+
+    - setup cors middleware using app.use

@@ -1,0 +1,17 @@
+now we need a functionlity that when we click add to basket button... the basket conunt dynamically varies....
+
+to do this we need a DATA LAYER....
+
+DATA LAYER can be made using 2 libraries.... either REDUX or CONTEXT API.... in this project we use CONTEXT API....
+
+- to hold data layer files.... make a separate folder named DATA-LAYER....
+
+- inside data layer folder.... make a file named StateProvider.js
+
+- inside StateProvider.js.... make snippet to.... make data layer..... then to provide data layer to your entire app components.... and to enable every component to pull data/info from the data layer....
+
+- to give all components access to data layer.... goto index.js.... import stateprovider tag from stateprovider.js file..... wrap the APP TAG inside .... STATE PROVIDER TAG with props.... initial state and reducer.... this attribute initial state and reducer are from file named reducer.... so next we need to make file named reducer.js.... for time being inside index.js.... import initialState and reducer from ./reducer.js file ( we'll make it in next step)
+
+**** don't miss the return inside the state provider arrow function.... else blank page
+
+

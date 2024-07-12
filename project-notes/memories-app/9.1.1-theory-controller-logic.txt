@@ -1,0 +1,9 @@
+ whenever you write a logic in an arrow function with request, and response.... you need 
+
+    - async or await if necessary
+
+    - try and catch block
+
+    - try block with codes and status code with output returned in json format
+
+    - catch block with error message and status code

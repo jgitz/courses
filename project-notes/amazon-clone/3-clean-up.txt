@@ -1,0 +1,12 @@
+react app cleanup
+
+- remove both test files.... app.test.js and setupTests.js
+
+- remove logo.svg
+
+- goto app.js.... delete all code in return tab <div>....delete the logo import.... add a demo h1 tag of your liking
+
+- goto app.css.... delete all code
+
+- goto index.css..... give margin 0 to all 
+

@@ -1,0 +1,43 @@
+..... now inside our server index.js.... the port number and mongoose connection url should be maintained secret....
+
+.... we make use of a .env file and INSTALL dotenv PACKAGE
+
+- goto server folder..
+
+      - create a new file named .env
+
+          - inside .env file 
+
+              - set PORT = 500
+
+              - set CONNECTION_URL = <mongodb url without "">
+
+              **** inside .env file.... there is NO NEED for const keyword.... NO NEED to wrap string with QUOTES
+
+- open server folder inside integrated terminal 
+
+      - install the PACKAGE named DOTENV using command 
+
+          :: npm i dotenv ::
+
+          ** dotenv library is used to connect the .env file content to index.js process.env.<variable_name> command
+
+- goto server/index.js...
+
+    - import dotenv from "dotenv"
+
+
+    - after the command const app = express().... add the dotenv config code 
+
+        dotenv.config();
+
+    - ERASE OR OBSCURE the CONNECTION_URL variable 
+
+        ** now on the CONNECTION_URL will be fetched from the .env file
+
+    - inside the mongoose.connect command.... replace the variable CONNECTION URL with the following 
+
+        process.env.CONNECTION_URL
+
+    
+    - stop and RESTART the server using :: npm start :: to get make the changes to take place

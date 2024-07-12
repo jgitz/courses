@@ -1,0 +1,36 @@
+now we need to set action to dispatch type and payload to 
+
+
+- goto client/src/actions folder
+
+  - create a new action file named createPostsAction.js
+
+  - open createPostsAction.js
+
+    - import * as axios from client/src/axios/axios.js
+
+    - create a new createPostsAction arrow function.... and curry in the async(dispatch) to use thunk capabilities....
+
+    - inside the curried arrow function
+
+      - create a try catch block
+
+      - inside the try block
+
+        - make a await variable named data to fetch the data from the backend using the createPost axios function defined inside axios file... like this
+
+          const createPosts = (newPost) => async (dispatch) => { /* 14.2 */
+  try {
+    const data = await axios.createPosts(newPost)
+
+          ** here we send newPost data to axios...... then to backend
+
+        - use dispatch() to dispatch the action with type "CREATE_POSTS" and payload the awaited data
+
+      - inside the catch block
+
+        - console log the error.message
+
+    
+
+    

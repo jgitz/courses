@@ -1,0 +1,53 @@
+..... now we've created view to edit the post from the form.... now we need to configure SUBMIT button such that .... the edited post is passed to backend
+
+
+
+
+
+- open src/axios-api/axios.js 
+
+      - create a function expression with variable name editPost..... and set a AXIOS PATCH operation to a url which will be the endpoint of backend.... the function should send EDITED POST and the CURRENT ID into the backend....
+
+          export const editPost = (editPostData, currentId) => axios.patch(`${url}/${currentId}`, editPostData) 
+
+
+- goto src/actions
+
+      - create a new file named editPostAction.js 
+
+      - inside src/actions/editPostAction.js 
+
+          - import editPost from axios-api/axios.js as axios
+
+          -  create a curry function action creator which accepts editPostData and current id dispatched from frontend..... as well as a async dispatch....
+
+          - inside the action creator.....create a try catch block......inside try block.... evoke editPost function from axios api to backend.... and store the backend response (which is an object with edited post data) inside a destructured variable data
+
+          - inside the action creator..... dispatch action with TYPE EDIT_POST and destructured data as PAYLOAD....
+
+          - inside the catch block console the error 
+
+
+              ***** use ERROR parameter in catch block console...... instead of error.message.... deep details of error can't be found....
+
+- inside src/reducers/postReducer.js 
+
+      - inside the switch case statement.... create a new case for EDIT_POST action and write the business logic using ARRAY MAP method such that.... if there is a post in the store with post._id == to action.payload.id (edited post from the backend).... then return the action.payload to the store..... like this  
+
+           return posts.map(post => post._id === action.payload._id ? action.payload : post)
+
+- inside src/components/form.js 
+
+
+      - inside handleSubmit function....before the handleClear() function.... create an if else statement..... inside if block move the already written createPost action dispatch line on condition of presence of variable post..... inside else statement..... dispatch the newly created editPostAction 
+
+          if(!post) {  
+              dispatch(createPostsAction(postData)); /* 14.3 */
+            } else {
+              dispatch(editPostAction(postData, currentId)) 
+            } 
+
+**** now when we edit a post and click submit button of the form.... the form will SEND the EDITED POST DATA as well as the CURRENT ID to the backend
+
+**** now we need to set ENDPOINT of edit post inside the backend 
+

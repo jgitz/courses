@@ -1,0 +1,5 @@
+**** a if there is an mui component inside a div.... the div component style using className prop won't work....
+
+  ** make the div as Box
+
+  ** use sx prop instead of className to specify style

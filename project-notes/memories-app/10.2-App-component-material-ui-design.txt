@@ -1,0 +1,14 @@
+now we need to design the app.js component using material ui....
+
+the app.js body should contain 
+    - a navbar with text memories
+    - an image
+    - posts component
+    - form component
+
+
+goto src/app.js
+    - import necessary mui components
+    - goto public/index.html and add head link tag for roboto font as Typography in mui uses roboto font
+    - wrap the entire page in a container component
+    - the posts and form components are made into grid

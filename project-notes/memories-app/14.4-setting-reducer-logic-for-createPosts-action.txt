@@ -1,0 +1,26 @@
+.... now we've created action.... configured dispatch for action from frontend.... now we've to set logic for the action inside the reducer with switch case
+
+
+- goto client/src/reducers/postsReducer.js
+
+
+  - create a new case for action.type "CREATE_POSTS"
+
+  - inside the case
+
+    -  return the spread of all data in posts state along with the action.payload
+
+
+** now run the backend
+
+** run the frontend
+
+** create a post and submit in the frontend
+
+** check mongoose database for your post data inside collection.... if found... then success
+
+
+***** check the routes of backend for get or post request spellings.... else infinite get requests from the frontend console
+
+***** if there is a new field to be added to server end mongodb schema..... first delete the entire db from the mongo atlas.... add the new field in schema and try again
+

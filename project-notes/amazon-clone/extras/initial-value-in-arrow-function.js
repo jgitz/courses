@@ -1,0 +1,1 @@
+ /* 6.1 comma , 0 means initial value....we can set an initial value after a comma inside an arrow function */

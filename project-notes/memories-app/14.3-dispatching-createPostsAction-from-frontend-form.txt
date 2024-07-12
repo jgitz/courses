@@ -1,0 +1,25 @@
+now we've created an action to do.... this action must be triggered from the frontend i.e from the forms component....
+
+.... we want the form to dispatch the form inputs when the form is submitted.... hence we've to dispatch the data from handleSubmit()
+
+
+- goto client/src/components/form/Form.js
+
+  - import useDispatch hook from react-redux
+
+  - import createPostsAction from createPostsAction.js
+
+  - before the main return make a variable named dispatch and assign it useDispatch
+
+  - goto handleSubmit() arrow function.... inside the function block
+
+    - use e.preventDefault() to prevent page refresh on form submission
+
+    - use dispatch(createPostsAction(postData)) to dispatch post data from the form component to the reducer.... like this
+
+        const handleSubmit = (e) => {
+            e.preventDefault() /* 14.3 */
+
+            dispatch(createPostsAction(postData)) /* 14.3 */
+          } 
+

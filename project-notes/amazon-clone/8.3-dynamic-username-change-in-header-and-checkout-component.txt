@@ -1,0 +1,9 @@
+now we've loaded auth data with user details into USER state in reducer file.... now we need to use the data to change dynamically display USER NAME and SIGN OUT in the nav bar...
+
+- goto header.js.... before the main return functio.... pull USER state from the reducer
+
+- goto header.js.... inside the GUEST tag add conditional statement such that it displays USER EMAIL instead of GUEST.... as well as conditional statement to display SIGNOUT if a user is signed in....
+
+- goto checkout.js....
+    - pull user state from reducer
+    - add a tag as heading to display user EMAIL

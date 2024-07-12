@@ -1,0 +1,10 @@
+/* conmparison operators are
+
+==
+>=
+<=
+!=
+===
+!==
+
+*/

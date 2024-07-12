@@ -1,0 +1,57 @@
+
+- goto github
+    - create a new repository with same name as "memories-app"
+
+- to exclude note txt files from tracking.... goto local memories-app folder
+
+    - open gitbash terminal
+
+        - :: touch .gitignore :: to set a gitignore file
+
+        - open .gitignore file...
+
+            - add the following pattern to ignore all .txt and .md files to exclure my notes from tracking and commit
+                - *.txt
+                - *.md
+
+        - now initialize git inside the folder using command
+            - :: git init
+
+        - if not set, set user.name and user.email using git config commands
+
+        - to link local git repo to github memories-repo... do the following
+            - goto github.... open memories-app repo
+
+                - copy the repo https code from https space.... **** not ssh code
+
+            - goto local git bash terminal
+
+                - check the branch using the command
+                    - :: git branch
+
+                        **** if the branch is master.... we need to change the branch to main using the command
+
+                            - :: git branch -M main
+
+                            ** done because github default branch is main
+
+                - now to link the github url to local git.... inside git bash terminal type..
+                    - :: git remote add origin <copied github repo https url>
+
+                    - to check if remote repo is added... type
+
+                        - :: git remote -v
+
+        - to push the files from local repo to remote repo...do ONETIME initial upstream command 
+
+            - :: git push -u origin main   
+
+                ** now files gets pushed to github account into main branch of github repo
+
+                ***** after initializing upstream command, you only need :: git push :: to push files 
+
+
+
+
+
+

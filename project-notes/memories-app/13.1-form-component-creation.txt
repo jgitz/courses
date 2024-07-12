@@ -1,0 +1,80 @@
+ now we need a from to create memories with photo and send it to backend....
+
+ .... the form will have the following inputs
+
+  - creator named
+  - title
+  - message
+  - tags
+  - select photo file (using filebase tag from react-file-base64 )
+
+  - submit button
+  - clear button
+
+    ** all this form inputs should be stored inside an object and be sent to the backend database
+
+
+
+- goto client/components/forms.js
+
+    - import the following material ui components
+
+        - paper
+        - typography
+        - textField
+        - Button
+
+        
+
+    - import FileBase tag from react-file-base64..... to select image and save it as string
+
+    - import useState to make a variable to store the form input data
+
+    - before the main return make a variable postData and setPostDAta using useState hook with initial values like this
+
+      const [postData, setPostDAta] = useState({
+        creator:"",
+        title: "",
+        message:"",
+        imageFile: ""
+
+      })
+
+        
+    - now use paper tag as a container
+
+    - inside the paper tag
+
+      - make html form component
+
+      - inside the form component
+
+        - make a typography for form title
+
+        - make 4 inputs using text fields for creator, title message and tags
+
+          - ** each input has a value and onChange attribute pointing to its initial state value and handler function respectively
+
+          - outside the main return write the handler function for each inputs to store the input value in state variable
+
+        - make a div to set image file selection
+
+        - inside the div
+
+          - use <FileBase/> tag like this
+
+              <FileBase 
+                type="file"
+                multiple={false}
+                onDone={(base64) => setPostData({....<postData, <selectedFile>: base64 >})}
+              />
+        
+        - make an mui button with type submit
+
+        - make an mui button for clearing with onClick attribute
+        
+
+
+    
+
+

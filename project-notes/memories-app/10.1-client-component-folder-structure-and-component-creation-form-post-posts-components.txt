@@ -1,0 +1,56 @@
+now we need to create the front end
+
+our website home page will have
+
+    - posts component : a big home component where all memories posts.... and a small image 
+
+    - post component : individual memory post inside posts component (home page)
+
+    - form component : form to create new post
+
+
+now for good practice we create a folder structure to keep components.
+
+.. images are saved inside separate folder
+
+.. folder of a child component is created inside the folder of the parent component (i.e post component folder is made inside the posts component folder)
+
+****.. here we use material ui for ui design.... so component css is defined inside STYLES.JS for EACH component and NOT inside .css file
+
+
+- goto client/src folder
+
+    - make a folder named image...
+
+        - download the image for posts page from this link: 
+
+            - https://raw.githubusercontent.com/adrianhajdin/project_mern_memories/master/client/src/images/memories.png?token=AF56X74XONEUGZ4FD2FUIA27UURPI
+
+- goto client/src
+
+    - make a folder named components... to store components
+
+    - goto client/src/components folder
+
+        - make folder named Form to store
+
+            - create Form.js and formStyles.js files
+
+            - inside Form.js do rfce
+
+        - make a folder named posts
+
+            - create Posts.js and PostsStyles.js files
+
+            - inside Posts.js do rfce
+
+
+            - inside posts folder
+
+                - create another folder named post.... to store post component
+
+                    - create Post.js and postStyles.js
+
+                    - inside Post.js do rfce
+
+        

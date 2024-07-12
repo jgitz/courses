@@ -1,0 +1,37 @@
+now logic of getPost is to see all the posts that are created.
+
+i.e... postMessage is the database which has all memories post.... we've to list its contents using mongodb method find()
+
+- goto controllers/posts..
+
+    - import PostMessage from models/PostMessage.js.... i.e database model
+
+    - make getPost variable async
+
+    - inside getPost arrow function block
+
+        - make try and catch block
+
+        - inside try block... make a variable named postMessages (**** p is lower case)
+
+            - make the newly created postMessage variable as AWAIT.... and assign PostMessage.find() (**P is uppercase as it is database model***) method to it....
+
+                *** this find() means get all contents of database model
+
+            - assign res.status as 200 and return postMessage as json
+
+        - inside catch block
+
+            - assign status code 404
+
+            - return json message 
+                {message: error.message}
+
+    ** now if we goto browser you should see an EMPTY ARRAY []
+
+
+
+
+
+
+

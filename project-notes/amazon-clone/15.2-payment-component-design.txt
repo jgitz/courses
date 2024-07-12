@@ -1,0 +1,19 @@
+now we need to design the payment component to which we are routed when we click proceed to checkout button inside the subtotal component.
+
+- goto payment.js and design the following
+    - divide the page into 3 sections
+        - one to display address
+        - one to display the cart items
+        - one for PAYMENT detaila (to be used by stripejs)
+
+- inside payment.js import 
+    - payment.css
+    - useStateValue()
+
+- inside payment.js.. before the main return pull basket state and user from reducer using useStateValue
+
+- inside payment.js... at top... add a heading with dynamic display of number of items... and set a link to the checkout component
+
+- inside the section reserved for display of cart item... place the CHECKOUT PRODUCT component using map method and basket state
+
+- inside payment.css.... design the css 

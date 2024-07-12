@@ -1,0 +1,23 @@
+now we have to design the left side of checkout page.... i.e the place where we have to list the products dynamically...
+
+- so we make the dynamic list of cart contents as a separate component named CHECKOUT PROCUCT....
+
+- make a component named CheckoutProduct.js.... make it's css
+
+- inside CHECKOUT COMPONENT.... list CHECKOUT PRODUCT component tag 
+
+- the checkoutProduct tag in checkout.js needs to take props from basket state... so it can be passed to checkoutProduct.js..
+    - inside checkout.js.... import useState value from state provider
+    - inside checkout.js.... before main return.... write pull code to pull basket state from reducer.. using use state value
+    - inside checkout.js.... add props title,price,image, rating into the checkoutProduct component tag from basket state contents
+
+- now goto checkoutProduct.js..
+    - pass in props parameters
+    - construct the body of the component.
+
+- now test the checkoutProduct page by adding products inside cart and moving into chekout page... and see if added products are listed on the left....
+
+- now goto design css inside checkoutProduct.css
+
+
+**** always enclose multiple props parameters inside curly {}

@@ -1,0 +1,20 @@
+
+now we have to configure remove button of checkoutProduct component....using dispatch and reducer file
+
+- inside checkoutProduct.js... import usestatevalue from state provider... before main funciton write.... the pull code for basket state and dispatch.
+
+- inside checkoutProduct.js.... before main return write a remove from basket function with A DISPATCH which dispatches ID and a type identifier
+
+- inside checkoutProduct.js.... link the remove from basket function to the remove button using onclick attriburte
+
+- goto reducer.js.... inside reducer function.... inside the switch statement.... add another case with type linking to dispatch from the checkoutProduct component using array method
+    -findIndexOf and splice
+
+- goto browser and check if it works
+
+
+**** don't put () after a function inside onClick attribute
+
+****  never put a curly {} around a single line arrow function.... else function won't run 
+            
+

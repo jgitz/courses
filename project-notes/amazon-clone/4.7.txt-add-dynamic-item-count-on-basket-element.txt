@@ -1,0 +1,13 @@
+now the basket state array length is equal to the number of items in the cart.... now use it to give basket count in header component....
+
+- goto header.js component.... import useState from stateprovider.js....
+
+- inside header component.... before main return..... use the useState command to pull the states from reducer....
+**** here the curly {} around the state is important.... else error
+
+- goto header.js.... goto basket count tag.... instead of 0..... write basket?.length 
+    **** ? is known as OPTIONAL CHAINING.... i.e even if the basket object has error... it only returns undefined instead of making error in program 
+
+- now click the add to cart button and see basket count increasing in the nav bar ( header component )
+
+**** here the curly {} around the state is important.... else error

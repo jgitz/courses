@@ -1,0 +1,24 @@
+products are listed as a single component and is reused.... a product componet should have the following contents....a title.... price.... star rating.... product image.... add to cart button
+
+make product component and product.css.... list it inside HOME component (not APP.JS)
+
+make a div tag to hold product title and price..
+
+make a div (becaus star should be dynamic) for product star rating.. copy and paste star emojis from google
+
+make a div for product image and add image src
+
+make button named add to cart
+
+make style for .home in home.css to make home content safe from screen enlargment
+
+make css for home row in home.css
+
+populate the home rows with product components
+
+inside index.css.... make body background color grey to see the product components which has white background....
+
+
+
+**** make every row div inside home container
+

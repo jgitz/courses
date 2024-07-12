@@ -1,0 +1,69 @@
+youtube link: https://www.youtube.com/watch?v=o1chMISeTC0
+
+- material ui is a opensource styling framework specifically made for react
+
+- material ui helps to create consistent component designs
+
+- owned by google
+
+
+working
+
+    - separate packages should be installed for icons 
+
+    - roboto font should be installed or linked inside public/index.html
+
+    - may have to edit meta viewport tag of public/index.html
+
+    - may have to use css baseline mui component for cross browser working
+
+
+components explanation
+
+    - all components and its import codes are obtained from mui official website
+
+    - surface tab of mui site has components like card, paper etc
+
+    - appbar component: is under surface tab in mui site.... it gives navbar designs.... an appbar component is a mix of many components.... so copy and paste all source codes
+
+    - accordion component: os under surface tab in mui site.... it gives a vertical menu options.... ideal for FAQ questions
+
+    - layout tab of mui site has components to arrange items inside website
+
+    - container component: is a layout component that centers the items inside horizontally
+
+    - box component: is a layout component that mimics div html tag
+
+        - padding prop to add padding
+
+        - sx prop : allows you to add css styles inside a {} such as flex styles
+
+
+    - grid component: to resize components like a card and have responsive design
+
+        - in grid, the width is divided in 12 columns
+
+        - width can be specified through xs prop
+
+    - there is no component to size image... so use html img tag with width 100% and height in remote
+
+    - typography component : this is to do operations on font.... it is under data display tab in mui site....
+
+        - variant prop to add size
+
+        - component prop to say what html component should it be
+
+
+    - using icons in mui:
+
+        - install separate mui icons package 
+
+        - use respective icon component tag after importing it.
+
+    - rating component: to display rating
+
+        - size prop: to set size of stars
+
+
+
+        

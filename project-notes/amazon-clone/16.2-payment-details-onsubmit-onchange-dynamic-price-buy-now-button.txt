@@ -1,0 +1,60 @@
+with stripe card element inside the payment details section... we can see input space to provide card number as well as cvc number....
+
+.... now we need the input space to be disabled when the card number and input space is empty....also we need to point out error when there is error in the input
+
+.... we need to display the order total in dollars inside the payment details.... so we need to use currency format and reducer.....
+
+..... we need a submit button.... with button disabled in the following conditions
+    - disabled when payment is processing
+    - disabled when payment has succeded
+    - disabled when card input is empty
+
+.... we need to change button text dynamically as 
+    - processing, if the payment is processing
+    - else display text "buy now"
+
+..... we need to display an error text only when error is there
+
+..... we need to write functions for submit as well as onchange
+
+- inside payment.js
+    - inside form element... add an onsubmit attribute with function HANDLESUBMIT
+
+    - inside carlelement tag.... ad an on change attribute with function HANDLECHANGE
+
+    - import useState from react and before main return set two states
+        - error, to store errors.... set default state as null
+        - disabled, to flag disabled state.... set default state as true
+
+    - before the main return.... declare functions HANDLESUBMIT and HANDLECHANGE
+        - inside the handle change function....we need to make disabled state empty and also set error message in error state.... so add two lines
+         
+             setDisabled(e.empty)
+             setError(e.error ? error.message : "")
+
+    - now we need to display the basket total dynamically inside the payment details section....... so..
+        - inside form tag make a div with class payment__priceContainer
+
+        - import currenctformat tag from react currency format library 
+
+        - import getBaskettotal function selector from reducer to display basket price
+
+        - use currencyFormat tag and getbasketTotal selector to display the basket total inside the newly created payment__priceContainer div
+
+        - inside the payment__priceContainer div, make a
+            - new button tag
+            - inside the button attribute space make OR ( || ) conditions to make button disabled on PROCESSING, DISABLED, AND SUCCEEDED VARIABLES (we'll make the processing and succeeded variables later)
+
+            - also we need to dymamically change the button text on processing
+                - inside the button tag.... make a span tag.... inside the span tag.... add a condition such that.... the span text displays text PROCESSING when payment is processing.... else display text "buy now" if the payment is not processing....
+
+        - inside the form tag... outside the payment__priceContainer div.... add a conditional div to display error message using the state error
+    
+    - before the main return.... using use state.... declare two variables
+        - processing, with initial state false
+        - succeeded, with initial state empty string ("")
+
+
+
+
+

@@ -1,0 +1,22 @@
+now after designing the body of the app.js component.... we've to style app.js component....
+
+here, we're not using app.css file to style the component.... instead we created a separate style.js folder for each component.... define styles as self as jsx css export variables.... import these variables inside the component.... and each mui component is given these style variables inside sx prop
+
+- goto src folder
+
+    - create AppStyles.js to define self export style variables for app componrnt
+
+    - goto AppStyles.js
+
+        - create self export variable appBarStyle and define styles as camel case css codes inside {}
+
+        - create self export variabel headingStyle ad define styles
+
+        - create self export variable imageStyle and define style
+
+    - goto app.js component....
+        - import appBarStyle, headingStyle and imageStyle from styles.js
+
+        - on corresponding appBar, typography and image tags, define these imported style variables inside sx prop....
+
+    - pending stlyes.js of forms, posts and post component??

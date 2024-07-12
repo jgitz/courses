@@ -1,0 +1,29 @@
+for icons of header nav like cart icon.... we need MATERIAL UI
+
+install material ui in your project
+    - goto material ui site... 
+    - copy installation code
+    - paste it inside project folder terminal
+
+material ui provides icon package.... to use it you have to install icon package of material ui
+
+    - goto material ui site
+    - search for icons in searchbar.... click on icons term on search list
+    - copy npm install code for icon package installation
+    - paste it inside project folder terminal
+
+now to add icons to header component
+    - goto material ui site
+    - search icons
+    - on icons, search for icons you want
+    - copy import code 
+    - paste import code inside HEADER COMPONENT
+    - paste the ICON as tag with class name inside required locations
+
+add search icon using material ui
+
+now style all header contents using header.css
+
+add a shopping basket icon in header component using material ui
+
+create a span after basket icon....add two class name for span... one for style... one for basket content count

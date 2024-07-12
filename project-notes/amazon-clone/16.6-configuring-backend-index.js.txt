@@ -1,0 +1,66 @@
+
+
+
+- goto functions folder.... open it in terminal 
+    - **** we're setting backend.... our backend folder is FUNCTIONS folder and not SRC
+
+- goto functions folder.... open index.js.... clean all the existing codes.. *** except functions variable....
+
+- we are going to use express js as backend.... goto functions folder.... open in terminal and install express package
+    - :: npm i express ::
+
+- inside functions folder.... to integrate frontend to backend.... you need to install "cors" package..... open terminal from functions folder.... and type 
+    - :: npm i cors ::
+
+- inside the functions folder.... inorder to implement payment functionality.... install stripe
+    - :: npm i stripe ::
+
+- inside the function folder.... inside index.js....... using require method.... import
+    - "express"
+    - "cors"
+
+- inside function folder.... inside index.js....
+    - set app variable with express() method
+    - using app.use method.... set middlewares for
+        - cors
+        - express.json
+
+- inside fucntion folder.... inside index.js.... at the very end
+    - use export.api on functions variable (firebase) and https onRequest method
+
+- inside function folder..... inside index.js.... set a home route with "/" and use get function to send a status 200 and hello world to home
+
+- to know if our backend is working.... we need to EMULATE it somewhere before actual deployment of the app..... on terminal type the firebase emulator command
+    - :: firebase emulators:start ::
+
+    - now inside terminal you'll get an API endpoint link under functions api.... copy the link and store it somewhere
+
+    - open the copied link in browser.... you'll see "this is backend page home" ( message we defined on home with get command).... now our API is working
+
+- now we want the set the backend what to do when a post request from frontend i.e the payment total from payment component comes to backend..
+    - inside function folder.... inside index.js...
+        - make an ASYNCH post route to /payment/create with request and response
+            - inside the post... request the total amount from the query parameter... and store it inside a variable named total
+
+            - write a console log to display the total 
+
+            - make a variable named PAYMENT INTENT and assign it with AWAIT stripe code to send payment intent with total amount and currency
+
+            - give a response status 201 (201 means we've successfully created something)
+
+            - also send response an object named clientSecret with payment intent and client secret
+
+- now copy the firebase emulator url that we've set up and.....
+    - goto axios.js inside src folder.... and paste it as the base url
+
+- now add products in front end.... now we should see secret code in the frontend console.... and inside the terminal console we can see the total amount....
+    - for testing payment.... enter card details and date as 42424242424242424242424
+
+    - once you click buy now.... the frontend routes to the /orders page
+
+    - check the stripe online account for successful payments... if not success there's a problem and you have to debug
+
+**** **** inside index.js.... changed currency from  usd to inr because the default currency in your stripe account is inr so use that else payment method error comes and payment intent won't be created 
+
+**** both frontend and backend works on different ports
+

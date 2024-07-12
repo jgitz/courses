@@ -1,0 +1,10 @@
+**** in the youtube video.... he don't use the redux to pass in current id.... so trying to implement redux for current id state by OURSELVES 
+
+.... we've now set 3 dot button for editing a POST.... so what we have to implement in frontend is 
+
+    1) on click of 3 dot.... a new state named currentId must be created.... currentId should store the id of the clicked post INSIDE store (action and reducers and combine reducers should be configured)
+
+    2) when ... button of a post is clicked.... it should automatically fill in the FORM INPUT FIELDS with its values 
+
+
+    

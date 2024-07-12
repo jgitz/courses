@@ -1,0 +1,17 @@
+...... designing handle clear function such that whenever the form input is cleared once we click submit....
+
+
+- goto client form component
+
+  - inside handle clear function
+
+    - setstate post data to empty values for database fields
+
+
+  - goto handle submit function
+
+    - call handle clear function at the last
+
+
+** now create another memory.... after clicking submit, the fields should clear its fed in inputs
+

@@ -1,0 +1,41 @@
+now logic of createPost is that... we need to create a new memory post with inputs such as title, photo etc...
+
+.. we put this inputs in the front end.... and is transferred to the backend....
+
+.. at backend... our inputs are inside request body.... backend logic need to fetch the inputs
+
+... these body inputs must be saved inside a variable
+
+.... now we need to add it into our database model.... so we do it by creating a new variable....then assign it NEW KEY word with <database_model_variable>(<body_input_variable>)
+
+
+.... and to save this new post data inside the db.... use save()
+
+
+- goto controllers/posts-controller.js
+
+    - make createPost async
+
+    - inside createPost arrow function block
+
+        - make a variable named POST to store req.body.... ie data inputs from frontend
+
+        - to make a new data use the code
+
+            - const newPost = new PostMessage(post) **** check keyword new
+
+        - make a try and catch block
+
+        - inside try.... inorder to save the new data into database add this code
+
+            - await newPost.save()
+
+            - make res.status as 201... and return new data in json format
+
+        - inside catch.... make res.status as 409... and return json message {message: error.message}
+
+
+** we can't see the output as we have not set the body to give inputs to create database... so now we have to setup frontend to do that
+
+            
+

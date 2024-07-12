@@ -1,0 +1,12 @@
+now we've setup front end to create post.... now we need to send this new post details to backend.... so first we need to set endpoint towards the backend
+
+- goto client/src/axios/axios.js
+
+    - add a new variable named createPosts and assign an arrow function with axios.post(url) to the backend like this
+
+      export const createPosts = (newPostData) => axios.post(url, newPostData) 
+
+      ** here we send the new post data along with the url
+      
+
+

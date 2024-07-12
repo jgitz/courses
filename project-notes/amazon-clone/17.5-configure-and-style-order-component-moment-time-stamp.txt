@@ -1,0 +1,50 @@
+now we have loaded orders data from database into orders state variable.... now we need to design the body of the orders component page such that the order item gets displayed
+
+- create another component named ORDER.JS (NOT ORDERS) inside which we are going to display the cart orders
+
+- inside the orders.js component.... inside the main return..... design the page body.....
+    - import order.js
+    - place the newly created ORDER component tag with ORDER state variable as props
+
+- now to show TIME STAMP with date and time when order page is created.... we need to install a library named moment.... so inside project folder.... open terminal and type
+    - npm i moment (use --force if error)
+    
+    ** moment library creates unix timestamp
+
+- goto order.js component....
+    - import
+        - order.css
+        - import moment from moment
+        - import CheckoutProduct.js component
+        - import currency format
+    - set prop parameter on main function
+
+    - inside main return    
+        - design the body of the page
+        - use moment library command to display the timestamp of the order by wrapping the variable that holds the timestamp
+
+        - from orders prop....use data.basket to obtain the cart items.... use map method
+            - inside map.... call checkout product component with props such as id, title, image, price, rating
+
+            - ***** the original checkout product has a remove from basket button.... we don't need that in the orders page.... so to remove that.... inside the checkout product tag.... add a prop
+                - hideButton
+
+                - goto CheckoutProduct.js
+                    - add a prop parameter named hideButton
+
+                    - goto the main return.... wrap the remove button element inside the conditional
+                        { !hideButton && (
+                            <remove button>
+                        ) }
+
+                        **** now the remove button only shows if there is no hideButton Prop
+
+
+        - use currency format library to display the order total
+            ***** since we are pulling the order total from backend.... the total amount will be in cents..... to convert it back to dollars..... divide the amount by 100
+
+- goto order.css and orders.css and design the css page
+
+- goto headers.js component..... use the Link tag with to attribute value "/orders" to wrap the div that holds the RETURNS AND ORDERS section of the nav bar.... now when you click returns and orders.... the page gets routed to the orders page that shows all your orders....
+
+- goto payment.css... do some touch up on the design of the payment button section

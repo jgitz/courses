@@ -1,0 +1,3 @@
+this is an app to add important events happened in your life as cards with description, delete, like functionalities
+
+- we intend to use HEROKU to host application

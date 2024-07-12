@@ -1,0 +1,15 @@
+now we need to add real signout function to the website.... such that no auth object comes from firebase website to our app... hence the user state in reducer file sets to initial state null
+
+- goto header.js component....
+    - before the main return.... make a function named handle authentication for sign out.... inside the function use the firebase function 
+        auth.signOut()
+    
+    - inside the span tag of sign in/signout....... add an ONCLICK linked to HANDLE AUTHENTICATION function....
+
+    - now automatically the reducer user state sets to the initial state.... i.e null when sign out span is clicked
+
+- but.... when sign out is clicked.... it immediately routes to the LOGIN PAGE.... we don't want that to happen.... we want it to stay in the current home page.... to make it happen
+    - inside header.js.... inside the LINK TAG that wraps SIGN OUT span.... add a NOT function with &&.... such that the it only routes to the home page when the USER reducer state is NULL
+
+
+

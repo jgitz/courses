@@ -1,0 +1,20 @@
+
+- goto client folder...
+    - delete the existing src folder
+
+    - create a new empty folder named src
+
+    - inside the new src folder...
+        - create new file named index.js
+
+            - inside index.js... add react codes and imports
+
+    - inside src folder
+        - create a file named App.js
+
+            - inside App.js.... add react import codes and react functional component codes
+
+    - goto client folder.... now run the app using command by opening terminal
+        - :: npm start
+
+    - stop the front end by pressing ctrl + c because we've more stuff to setup in backend

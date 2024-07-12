@@ -1,0 +1,12 @@
+- to specify initial state and reducer..... inside data layer folder.... make a file named reducer.js...
+    - inside reducer.js make initial state....
+        initialState is an object with state_variablen name (here BASKET) as key and its value is array
+    
+    - inside reducer.js make reducer arrow function..
+        - a reducer arrow function has 2 parameters..... 1) state (here basket).... 2) action
+            
+        - and the arrow function has a switch statement.... which listens to action.type...
+
+        **** type is thing that is a part of DISPATCH.... DISPATCH is written inside a component file.... it has 2 parts......... 1) type (an identifiet)
+        2) item (an object which contains properties to be pushed to data layer (state) from the component)
+

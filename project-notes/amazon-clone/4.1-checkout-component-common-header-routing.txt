@@ -1,0 +1,21 @@
+when you create the basket button, there should be a page to checkout....
+
+    - the page is divided into two sides.
+
+        - left side has
+            - an advertisement image at top
+            - a title
+            - cart contents listed
+        
+
+        -right side has
+            - the total price
+            - this order contains gift checkbox
+            -a proceed to checkout button
+            (all will be made into a subtotal component)
+
+create checkout component and it's css file
+
+list it inside app.js path for  checkout
+
+goto app.js since header component is common to all components....... delist it from route and place it outside the ROUTES TAG
