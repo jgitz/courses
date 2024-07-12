@@ -1,0 +1,30 @@
+- A well implemented and maintained CMDB provides an organization with complete visibility into their enterprise infrastructure, including reliable configuration data for physical and virtual servers, computers, routers, switches, applications, cloud instances, and more.
+
+- each component of the IT INFRA is stored as CI (Configuration Items) in the CMDB.... and CMDB allows to manage all CI's and define relationsip b/w them 
+
+- FEATURES of CMDB 
+
+  1) STANDARDISED: ServiceNow CMDB utilizes a SINGLE DATA MODEL, with common processes, standard taxonomy, and pre-negotiated semantics, format, and quality standards for
+   exchanged data
+
+  2) SINGLE S/M of RECORDS: As a result, every table, view, and application built on the Now Platform leverages a consolidated, single system of record??
+
+  3) EXTENDABLE: This data model is also easily extensible: base system tables and views can be extended easily; fields from other tables can be referenced and used to drive workflow; and data validation and normalization rules ensure that trusted data can be leveraged across any application, form, or workflow.
+
+- TOOLS to VIEW CMDB DATA:
+
+  1) CMDB CHANGES: Every change to CMDB data is fully traceable and logged by date and time, source of change
+
+    - A CI and SERVICE HISTORY TIMELINE provides a visualization of planned and unplanned changes to CIs and alerts over time. 
+
+  2) CMDB QUERY BUILDER: 
+
+    - The CMDB Query Builder feature provides a simple and intuitive way to QUERY the CMDB for CIs and relationships across multiple CMDB tables, including service maps. 
+
+    - The user interface is drag-and-drop and enables the creation and execution of complex queries into CMDB data without writing code.
+
+    - Queries can be saved, scheduled, and exported into multiple file formats.
+
+  3) CMDB DASHBOARD: A health dashboard provides a holistic view into the quality of CMDB data. It provides a single view of the quality of data at the CMDB, CI class, and CI levels using completeness, correctness, and compliance scores.
+
+ 

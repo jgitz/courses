@@ -1,0 +1,19 @@
+- WHAT is personalize list (....classic):
+
+  - allows you to SHOW/HIDE FIELDS on a VIEW 
+
+  - it TEMPORARILY MODIFIES the layout of a list for an INDIVIDUAL USER 
+
+  - personalization should be used for TEMPORARY SITUATIONS 
+
+  - any global changes made to hidden fields of a PERSONALIZED VIEW will not be reflected in the personalized list... to view it the user has to make the list back to DEFAULT LAYOUT configuration using RESET COLUMN DEFAULTS option (below) 
+
+  - the following changes can be done on the list using personalized list 
+
+    - ADD COLUMNS 
+
+    - REMOVE COLUMNS 
+
+    - REARRANGE COLUMNS 
+
+    - RESET COLUMN DEFAULTS: i.e to change back the personalized list to original list field configuration of the view 

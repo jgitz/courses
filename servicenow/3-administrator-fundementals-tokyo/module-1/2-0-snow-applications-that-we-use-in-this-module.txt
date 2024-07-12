@@ -1,0 +1,39 @@
+... in this module.... we explore 3 SNOW APPLICATIONS 
+
+1) ITSM INCIDENT MANAGEMENT APPLICATION
+
+2) SERVICE OPERATIONS WORKSPACE
+
+3) EMPLOYEE CENTER PORTAL
+
+
+1) ITSM INCIDENT MANAGEMENT APPLICATION:
+
+2) SERVICE OPERATIONS WORKSPACE: provides a unified experience for multiple IT Service Management workflows. I t is used to manage the lifecycle of task records such as incidents, requests, and walk-ups in IT Service Management workflows.
+
+    - USE CASES 
+
+      - An agent can start the day by looking at an overview of assignments, outages,
+      service announcements, and assignments in Service Operations Workspace to
+      prioritize work based on service level agreements (SLAs), priority level, and urgency.
+
+      - The agent can create an incident based on the issue reported. Since the agent has
+      access to related incidents and recent interactions, better and faster support can
+      be provided. Agent also has access to all related information from the incident
+      record page.
+
+      - The agent can resolve the incident faster by using tailored recommendations.
+
+      - The agent can reach out to experts on-call for high-priority tasks.
+
+      - The agent can collaborate easily with the requester and peers right from the task.
+
+      - The agent can create a change request to fix the issue.
+
+3) EMPLOYEE CENTER PORTAL: is a snow application theat provide EMPLOYEES a PLATFORM to COMMUNICATE.
+
+  - Employee Center is a ServiceNow Store application that is AVAILABLE TO ALL CUSTOMERS BY DEFAULT.
+
+  **EMPLOYEE CENTER PRO extends the standard capabilities and requires additional
+  licensing. Employee Center Pro is available as a standalone offering and is included
+  with the HR Service Delivery Professional or Enterprise offerings.

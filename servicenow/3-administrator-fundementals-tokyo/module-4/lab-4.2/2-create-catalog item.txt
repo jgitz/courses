@@ -1,0 +1,84 @@
+..... CATALOG_ADMIN user can make catalog items 
+
+.... catalog items are made using CATALOG BUILDER 
+
+..... to make catalog item 
+
+- impersonate catalog_admin user 
+
+- goto ALL > SERVICE CATALOG > CATALOG BUILDER 
+
+- click CREATE NEW CATALOG ITEM 
+
+- click continue 
+
+- from templates... select STANDARD ITEMS IN SERVICE CATALOG OPTIONS 
+
+- click USE THIS ITEM TEMPLATE
+
+- fill the following fields about the catalog item 
+
+  - name 
+  - short description 
+  - upload image 
+  - description (about the catalog item)
+
+- click CONTINUE TO LOCATION 
+
+  - see if proper catalogs and catagories are listed (depends on the template)
+
+  - click on the EDIT button under CATAGORIES to add required catagory from the list 
+
+  - click save selections
+
+- click continue to questions 
+
+- EXPAND "STANDARD EMPLOYEE QUESTIONS" section to see the questions loaded by the TEMPLATE as well as to add questions.... to add questions
+
+  - click INSERT NEW QUESTION 
+
+  - select question TYPE (text, choice, date/time etc)
+
+  - select QUESTION SUBTYPE (dropdown, radio, record reference etc)
+
+  - fill QUESTION LABEL 
+
+  - set NAME (VARIABLE NAME for the question)
+
+  - select/deselect MANDATORY CHECK BOX
+
+- click "CONTINUE TO CHOICES"
+
+- if you have different versions of your catalog items with multiple specifications... you can add CHOICES based on the specification....
+
+  - click + to add choice with DISPLAY NAME and VALUE?
+
+- click save to add this question 
+
+** on the left pane... on the question tab you can insert new questions in the similar way 
+
+- on the settings tab on left pane you can edit settings (pre selected if you are using a template)
+
+- use the ACCESS tab on the left pane to set access to users and group 
+
+- click CONTINUE TO FULLFILLMENT link on the bottom right
+
+- on fulfillment tab on the left pane... you can select FLOW that the the request should follow after catalog item is requested
+
+- click PREVIEW on the TOP RIGHT to see your CATALOG ITEM in different views like PORTAL, NOW MOBILE, VIRTUAL AGENT etc 
+
+- once you are satisfied with the view.... goto REVIEW AND SUBMIT tab on LEFT PANE 
+
+  - click submit
+
+** now to see the catalog item record in INSTANCE 
+
+  - goto ALL > SERICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS 
+
+  - search for your catalog items here.... and you can 
+
+  - ensure ACTIVE FIELD is CHECKED 
+
+  - click on TRY IT button on the top to do a demo of ordering the item 
+
+**** you can also see the item on appropriate CATAGORY in ALL > SELF SERVICE > SERVICE CATALOG 

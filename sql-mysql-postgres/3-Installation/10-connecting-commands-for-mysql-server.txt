@@ -1,0 +1,45 @@
+..... we need to do some commands to connect to your mysql server.... the server is known as host.... host value can be 
+
+    1) localhost: if your mysql server is your current working device
+
+    2) ip: if your mysql server is a remote device 
+
+- STEPS TO CONNECT to  MYSQL SERVER (WINDOWS)
+
+      - STEP 1: open mysql shell cli from start
+
+      - STEP 2: inside mysql shell.... type command 
+
+          :: shell.connect({host: "localhost"}, user: "root", port:<custom port number>)
+
+          - press enter 
+
+              ** host can be ip address if remote device is used as a server
+
+              ** port number can be OMITTED if you want to use DEFAULT port number 3306
+
+        - STEP 2: write password for root user in cli 
+
+        - STEP 3: to use sql language in the shell do this command in cli....
+
+              :: \sql 
+
+        - STEP 4: now you can use sql commands.... eg 
+
+              :: SELECT "hello world";
+
+              
+                  o/p: +-------------+
+                      | hello world |
+                      +-------------+
+                      | hello world |
+                      +-------------+
+
+                  ** don't forget ; after every sql statements
+
+**** in this COURSE we use VSCODE EXTENSION SQLTools as client
+
+**** you can also use WORKBENCH GUI to do database management using MYSQL 
+
+
+

@@ -1,0 +1,47 @@
+.... each record on the table is a FORM with fields filled....
+
+.... form can be designed in 2 ways 
+
+    1) form design: we design form in the STUDIO (FORM HAMBURGER > CONFIGURE > FORM DESIGN)
+
+      ** you need to set appropriate application scope to work in studio
+
+      ** CANNOT set REFERENCE FIELDS using DOT WALKING
+
+    2) form layout: we design form in the instance
+
+      - uses LIST COLLECTOR (with available and selected box to set fields)
+
+      - can DOT WALK and use REFERENCE FIELDS
+
+- RELATED LIST: is the TABS at the end of a form/record... these are LISTS which are related to the form 
+
+    ** we can also CONFIGURE this by using (RECORD > HAMBURGER > RELATED LIST) 
+
+        - add relevant fields to get displayed as related list 
+
+
+***** FORM DESIGN and FORM LAYOUT will alter the form display for ALL USERS 
+
+***** USE TUNING SWITCH BUTTONS (PERSONALIZE) to personalize the form display for you and OTHER USERS are NOT AFFECTED 
+
+  - check the fields you want to display
+  - uncheck the fields you want to hide
+  - mandatory fields CANNOT be hidden 
+  - if you leve the form... you've to reset personalization again 
+
+  - To disable personalize form for the itil
+    role, navigate to sys_properties.list find the property glide.ui.personalize_form.role and set
+    the Value to admin (to specify the role that can access form personalization).
+
+  **** to personalize forms in workspace interface 
+
+    - open a record in workspace 
+
+    - goto details tab 
+
+    - click 3 DOTS on top left 
+
+    - check or uncheck fields 
+
+    - update form

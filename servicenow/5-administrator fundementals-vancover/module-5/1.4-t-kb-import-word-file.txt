@@ -1,0 +1,25 @@
+.... we can IMPORT WORD FILES and make article from its content.... 
+
+....steps to IMPORT WORD FILES 
+
+  - goto ALL > KNOWLEDGE > ARTICLES > IMPORT ARTICLES 
+
+  - select the KNOWLEDGE BASE 
+
+  - select the CATAGORY 
+
+  - use BROWSE FILE to add MULTIPLE WORD FILES 
+
+  - click IMPORT 
+
+  - click CONTINUER 
+
+  ** you can IMPORT MULTIPLE word files.... and for EACH WORD FILE.... ONE article is CREATED 
+
+  ** CHECK PUBLISH FIELD to initiate PUBLISH WORK FLOW after the import 
+
+  ***** if the PUBLISH CHECKBOX is absent.... configure KNOWLEGE PROPERTIES by going to path 
+
+    - ALL > KNOWLEDGE > ADMINISTRATION > PROPERTIES 
+
+    - activate SHOW PUBLIC CHECK BOX ON THE KNOWLEDGE ARTICLE IMPORT POP-UP 

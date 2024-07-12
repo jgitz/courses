@@ -1,0 +1,177 @@
+- ORDER FIELD: in a RECORD FORM allows you to SET ORDER of that RECORD in the LIST VIEW 
+
+  - eg: a record of order 100 will be LISTED FIRST in the list when compared to a record with order 200 
+
+  ** i.e LOWER THE ORDER NUMBER.... the RECORD will be on LISTED TOP LEVEL of the LIST VIEW 
+
+- ANNOTATIONS: are USEFUL INFO that appear on FORM as BANNERS in multiple colors.
+
+  - you can TOGGLE THEM ON/OFF using MORE OPTIONS (THREE DOTS) in the FORM 
+
+- ${URI_REF} variable will show INCIDENT NUMBER of an INCIDENT RECORD 
+
+- use stats.do to see ALL SYSTEM STATS DETAILS in CONTENT FRAME 
+
+- to find RUNNING RELEASE for your instance use stats.do 
+
+- to CONFIRM that a PATCH HAS BEEN APPLIED.... find the EVENT system.patched event... AND CREATE a NOTIFICATION for this event
+
+- USER AUTHENTICATION METHODS in snow 
+
+  - LDAP
+  - SSO 
+  - Local Database 
+  - OAuth 
+  - API ACCESS POLICY 
+  - DIGEST TOKEN AUTHENTICATION 
+  - TIME LIMITED AUTHENTICATION 
+  - MFA 
+  - CERTIFICATE BASED AUTHENTICATION 
+  - SELF-REGISTRATION 
+  - ZERO TRUST ACCESS 
+
+- What are the different interfaces for accessing a ServiceNow Instance?
+
+  - NOW PLATFORM UI 
+  - SERVICE PORTAL 
+  - SERVICENOW AGENT 
+  - SERVICENOW MOBILE 
+
+- What are the tree components of the Now Platform User Interface?
+
+  -Banner Frame
+  -Application Navigator
+  -Content Frame
+
+- What defines which fields appear in a list and the order of said fields?
+
+  - view 
+
+- What defines which fie
+
+  - template
+
+- What is defined as a series of tables containing assets and business services controlled by a company?
+
+ - Configuration Management Database (CMBD)
+
+- Which ServiceNow product can be used to populate the CMBD?
+
+  - Discovery
+
+- Which role can manage multiple knowledge bases?
+
+  - knowledge_admin
+
+- Is a homepage captured in an update set?
+
+ - Homepages are not automatically included, but can be manually added
+
+- Which ServiceNow product provides the ability to quickly integrate with 3rd party applications without scripting?
+
+  - IntegrationHub
+
+- to create RECORD PRODUCERS... goto  All > Service Catalog > Catalog Definition > Record Producers.
+
+- QUESTION OPTION in SERVICE CATALOG 
+
+  - TEXT 
+  - OPTION 
+  - CHOICES 
+  - DATE/TIME 
+  - DISPLAY LABELS 
+
+- TYPES of VARIBLES 
+  - MULTIPLE CHOICE (RADIO BUTTONS)
+  - REFERENCE 
+  - CHECK BOX 
+  - SELECT BOX (DROPDOWN) 
+  - SINGLE LINE TEXT 
+
+- TABS in CATALOG BUILDER 
+
+  - DETAILS TAB 
+  - LOCATION TAB (.. to set CATALOG and CATAGORIES)
+  - QUESTIONS TAB 
+  - ACCESS TAB (.. to set USER CRITERIA to CI)
+  - FULLFILLMENT TAB (.. to set FLOW)
+  - REVIEW and SUBMIT TAB 
+
+- TABS in Catalog Item RECORD in MAINTAIN ITEMS PATH 
+
+  - PORTAL SETTINGS (..to set visibility)
+  - PRICING 
+  - PROCESS ENGINE (.. to set flows)
+  - VARIABLES TAB (..to set question variables)
+  - PICTURE TAB (.. to set catalog item picture)
+  - ITEM DETAILS 
+
+- SHARING OPTIONS in REPORT DESIGNER 
+
+  - SHARE (me/everyone/user and groups)
+  - SCHEDULE (email)
+  - DASHBOARD 
+  - EXPORT AS PDF 
+  - PUBLISH (URL)
+
+- PERFORMANCE ANALYTICS (DASHBOARD) COMPONENTS: 
+
+  - DATA COLLECTOR (..to capture snapshot)
+  - TABLE 
+  - DASHBOARD
+  - WIDGET 
+
+
+
+- SAVE BUTTON OPTIONS in REPORT DESIGNER 
+
+  - UPDATE 
+  - INSERT 
+  - INSERT and STAY 
+  - SAVE AS DATA SOURCE 
+
+- VIRTUAL AGENT uses 
+
+  - NATURAL LANGUAGE 
+  - AI 
+
+- NOW ASSIST 
+
+  - LLM 
+  - GENERATIVE AI 
+
+- PREDICITIVE INTELLIGENCE: automatically set fields 
+
+  - MACHINE LEARNING 
+
+- PERFORMANCE DASHBOARD
+  - PERFORMANCE MATRICS
+  - RESPONSIVE DASHBOARD 
+  - GRAPHS 
+  - TIME SERIES GRAPHS
+
+- STATS TOOL: 
+
+  - SYSTEM DIAGNOSTICS 
+  - PERFORMANCE EVALUATION 
+  - SLOW PATTERN TABLES 
+
+- WHO IT WILL RECEIVE options in EMAIL NOTIFICATION FORM 
+
+  - USERS/GROUPS in field 
+  - USERS 
+  - GROUPS
+
+- WORKSPACES WHICH SUPPORT DOCKED CHAT/SIDEBAR DISCUSSIONS 
+
+  - ITSM MANAGER WORKSPACE
+
+  - VENDOR MANAGEMENT WORKSPACE
+
+  - HR AGENT WORKSPACE
+
+  - CSM MANAGER WORKSPACE
+
+  - CSM CONFIGURATION 
+
+

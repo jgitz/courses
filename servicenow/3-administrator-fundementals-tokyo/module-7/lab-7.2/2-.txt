@@ -1,0 +1,61 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to elevate to SECURITY ADMIN (to alter high security settings such as ACCESS CONTROL)
+
+  - login as BASE SYSTEM ADMINISTRATOR (not a user with admin role)
+
+  - click on USER MENU on the top right
+
+  - click on ELEVATE ROLE
+
+  - check security_admin CHOICE
+
+  - click update
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view ACCESS CONTROL RULES for all tables in the instance....
+
+  - goto ALL > SYSTEM SECURITY > ACCESS CONTROL (ACL)
+
+    ** the name column shows the TABLES... and clicking on it openst the RECORD that defines ACL RULE 
+
+    ** you can see same TABLE name eg incident repeated many times.... that is because multiple ACL rules are set on the same table
+
+    ** read the DESCRIPTION column of the ACL list to understand the acl record does 
+
+    ** if you are searching for a particular AC RULE RECORD..... follow the steps 
+
+      1) search on NAME column... fill search box with the TABLE NAME which is associated with the AC RULE RECORD.... eg INCIDENT (table name)
+
+      2) set search on the OPERATION name on the OPERATION COLUMN (eg: read, write, create, delete)
+
+      3) read the DESCRIPTION OF EACH AC RULE RECORD on the list by HOVERING on the DESCRIPTION COLUMN 
+
+      4) open the AC RULE RECORD and SEARCH for hints in ROLE section..... do this on multiple records for trial and error UNTIL YOU FIND THE RIGHT AC RULE RECORD
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to give ACCESS CONTROL or set ACCESS CONTROL RULES to ROLES....
+
+  - elevate as SECURITY ADMIN  
+
+  - goto ALL > SYSTEM SECURITY > ACCESS CONTROL(ACL)
+
+  - click new to set ACL RULES 
+
+    - operation: <read, write etc>
+
+    - check ADMIN OVERRIDES 
+
+    - check ACTIVE 
+
+    - NAME: <select the TABLE where you want to set the ACL RULE>
+
+    - description: give description 
+
+    - on ROLE TAB.... select and ADD ROLE
+
+    - ADD FILTER CONDITION 
+
+    **** always write PROPER DESCRIPTION on the AC RULE RECORD... because it's the ONLY IDENTIFIER to identify the AC RULE in the AC LIST.... the NAME field in the AC LIST only gives TABLE NAME....

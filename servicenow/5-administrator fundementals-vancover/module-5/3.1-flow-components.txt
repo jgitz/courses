@@ -1,0 +1,110 @@
+- FLOW COMPONENTS: a flow has six COMPONENTS 
+
+  1) TRIGGERS: are ACITVITIES that INITIATE the flow 
+
+    - TYPES of TRIGGERS 
+
+      1.1) RECORD BASED TRIGGER : triggers flow when record is CREATED/UPDATED/DELETED
+
+        - RECORD TRIGGER TYPES
+
+          - CREATED 
+
+          - UPDATED 
+
+          - CREATED or UPDATED
+
+      1.2) DATE BASED TRIGGER/SCHEDULED TRIGGER: trigger flow based on DATE and TIME... eg: daily, weekly, monthly...etc 
+
+        - SCHEDULED TRIGGER TYPES
+
+          - RUN ONCE 
+
+          - DAILY 
+
+          - WEEKLY 
+
+          - MONTHLY 
+
+          - REPEAT
+
+
+
+        ** EXECUTION TIME?? can also be used as INPUT for ACTIONS in a flow 
+
+      1.3) APPLICATION BASED TRIGGER: eg inbound email, service catalog, SLA TASK
+
+        - APPLICATION TRIGGER TYPES
+          
+          - INBOUND EMAIL 
+
+          - SLA TASK 
+
+          - SERVICE CATALOG
+
+          - application triggers can also be SPOKE SPECIFIC based on the installed SPOKE 
+
+  2) CONDITIONS: are APPLIED to TRIGGERS.... and it determine WHEN or HOW an ACTION should RUN....eg run an action only if a field has a certain value 
+
+  3) ACTIONS: are OPERATIONS EXECUTED by the s/m such as record look up, udpdate field value, request approval etc  
+
+    - TYPES of ACTIONS
+
+      3.1) APPLICATION SPECIFIC actions defined by SPOKES installed 
+
+      3.2) SERVICENOW CORE ACTIONS: some of core actions are 
+
+        - ASK FOR APPROVAL: create RULES FOR an APPROVAL/REJECTION/CANCELLATION/DUE DATE on any RECORD 
+
+        - WAIT FOR CONDITION: PAUSE the flow untill a CONDITION is MET 
+
+        - LOOK UP RECORD:  look up a SINGLE RECORD on ANY TABLE to confirm WHETHER it EXISTS or NOT 
+
+        - CREATE RECORD
+
+        - DELETE RECORD 
+
+  4) FLOW LOGIC: is LOGIC used to DEFINE RELATIONSHIP b/w NODES
+
+  
+    - TYPES of FLOW LOGICS in FLOW DESIGNER 
+
+      - CALL A WORKFLOW 
+
+      - SET flow VARIABLES 
+
+      - IF 
+
+      - ELSE IF 
+
+      - FOR EACH 
+
+      - GET flow OUTPUT
+
+      - END FLOW 
+
+      - WAIT for a DURAITON of TIME 
+
+      - DO the FOLLOWING in PARALLEL 
+
+      - DYNAMIC FLOWS 
+
+  5) DATA: data that can be used inside flow COMPONENTS
+
+    - in flow designer we use DATA PANE (RIGHT) where we can see DATA PIILLS or USE DATA PILL PICKER 
+
+  6) SUBFLOW: ??
+
+** RUN AS field in flow is used to specify WHETHER to run the flow as a SYSTEM USER OR USER WHO THE INITIATE SESSION 
+
+  - SYSTEM USER: means a SNOW ACCOUNT that is NOT RESTRICTED by ACCESS CONTROLS 
+
+  - USER WHO INITIATES THE SESSION: means to run the flow as UPDATES comes form USER WHO TRIGGERS the flow 
+
+** you can TEST the FLOW by clicking TEST BUTTON on top 
+
+** to make the flow ACTIVE in the s/m... click ACTIVATE BUTTON on the top 
+
+
+** SPOKE: contains FLOW DESIGNER TRIGGERS and ACTIONS dedicated to a SPECIFIC APPLICATION.... eg: ITSM SPOKE 
+

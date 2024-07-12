@@ -1,0 +1,24 @@
+- UI ACTION: is used to ADD UI COMPONENTS to the FORM/LISTS 
+
+  ** UI ACTIONS can be SERVER OR CLIENT SIDE (** check CLIENT FIELD to run it on client side)
+
+  ** UI ACTIONS CAN contain SCRIPTS to define CUSTOM FUNCTIONALITY
+
+  ** UI ACTIONS can add UI COMPONENTS on BOTH FORMS and LISTS 
+
+  ** example of components that can be added using UI ACTIONS: 
+
+    - FORM/LIST BUTTONS 
+    - FORM/LIST CONTEXT MENU ITEMS (rightclick a record )
+    - FORM/LIST LINKS 
+    - LIST CHOICES (..added at the BOTTOM of a list)
+
+- UI ACTIONS FORM FIELDS: 
+
+  - CLIENT FIELD: check to run ui action on the CLIENT SIDE 
+
+  - ACTIVE FIELD: check to make UI ACTION ELEMENT VISIBLE and hence can be INTERACTED WITH by a USER 
+
+  - ORDER FIELD: LOWER the ORDER NUMBER... the UI ACION  will be DISPLAYED BEFORE a UI ACTION with a HIGHER ORDER NUMBER  
+
+***** to TURN ON SAVE BUTTON on form... goto ALL > SYSTEM PROPERTIES > UI PROPERTIES > show save, insert and insert and stay buttons on forms 

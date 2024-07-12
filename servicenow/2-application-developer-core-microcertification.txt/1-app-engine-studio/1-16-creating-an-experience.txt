@@ -1,0 +1,88 @@
+.... now we need to make a ui for the app....
+
+.... ui is created in EXPERIENCE section of the app.....
+
+- snow allows us to create 4 TYPES of UI'S 
+
+  1) WORKSPACE 
+
+  2) STANDARD CATALOG ITEM 
+
+  3) RECORD PRODUCER
+
+  4) PORTAL 
+
+  5) MOBILE EXPERIENCE
+
+** in this course we'll be creating a RECORD PRODUCER.... to work on that we need to LEARN ABOUT SERVICE CATALOG 
+
+- SERVICE CATALOG: is a SELF SERVICE in snow that allows us to ORDER CATALOG ITEMS.....   (BESIDES service catalog... other cataloges are TECHNICAL CATALOG & RESOURCES CATALOG)
+
+  - There are 4 components for service catalog 
+
+    1) STANDARD CATALOG ITEMS: GOODS or SERVICES with its specifications that we order through service now... eg laptop, mobiles etc 
+
+    2) CATAGORIES: catalog items are LOGICALLY grouped into catagories.... eg phone, laptop etc goes into HARDWARE CATAGORY 
+
+      ** same item CAN be added to TWO or more catagories
+
+    3) RECORD PRODUCERS: allows you to CREATE FORMS and add RECORDS to a TABLE 
+
+      ** RECORD PRODUCERS take data from the users by ASKING QUESTIONS 
+
+      ** record producer is a type of catalog item
+
+    4) ORDER GUIDES: allows you to order MULTIPLE CATALOG ITEMS in one REQUEST 
+
+      ** order guide is a type of catalog item
+
+    5) CONTENT ITEMS: catalog items which PROVIDE INFORMATION INSTEAD OF GOODS
+
+      ** content item is a type of catalog item
+
+
+** in this course we create a RECORD PRODUCER FROM A TABLE 
+
+  - we use CATALOG BUILDER to build a RECORD PRODUCER 
+
+  - we specify the following things in CATALOG BUILDER to make a record producer 
+
+    - details 
+
+    - destination : is the table where record will be created
+
+    - location: is the CATALOG and CATAGORY to which the RP belong
+
+    - questions: collect data from the user in form of questions... field types can be added to the question like
+
+      - text: single line, multi line, rich text (html text)
+
+      - option: check box, yes/no options
+
+      - choice: dropdown, dropdown with options from table, record reference from other tables, radio button, multiselect
+
+      - date/time:
+
+      - display label:
+
+    - settings 
+    - access
+
+  - once RP is created it can be VIEWED in 
+
+    - PORTAL: in service portal you can access your RP by 
+
+      - goto the SERVICE PORTAL
+
+      - click the REQUEST SOMETHING 
+
+      - select the CATAGORY of your RP 
+
+      - click on your rp 
+
+      - fill the form 
+
+
+    - NOW MOBILE 
+
+    - VIRTUAL AGENT

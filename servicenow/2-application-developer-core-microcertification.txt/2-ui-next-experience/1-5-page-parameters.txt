@@ -1,0 +1,24 @@
+- PARAMETERS: are data params related to the page given inside the URL 
+
+** in SNOW, there are 2 TYPES of PARAMETERS: 
+
+  1) REQUIRED PARAMETERS: these are data pieces that the PAGE REQUIRES such as:
+
+    - sys_id
+    - table
+    - query 
+
+    ** once we define these parameter values in the ui builder.... it'll be VISIBLE in the URL 
+
+
+  2) OPTIONAL PARAMETERS: optional parameters are optional values that we want to pass into the url like:
+
+    - color 
+    - string 
+
+    ** these parameters are given as KEY-VALUE PAIRS inside the UI BUILDER 
+
+    ** they work no matter what ORDER they are specified in 
+
+
+  

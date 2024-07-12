@@ -1,0 +1,17 @@
+- DATA DEFINITION STATEMENTS (DDS): are SQL QUERY statements used to
+
+   ** DEFINE DATABASES, TABLES and TABLE STRUCTURES
+
+    ** define RELATIONS between different TABLES
+
+    ** CHANGE and DELETE tables
+
+    **** data definition statements DON'T work with the DATA VALUES
+
+- DATA MANIPULATION STATEMENTS: are SQL QUERY statements used to 
+
+      ** INSERT, UPDATE and DELETE data on an EXISTING TABLE (CRUD operations)
+
+      ** manipulate data like JOIN, FILTER, SORT
+
+      ***** data manipulation statements are used on database created using DATA DEFINITION STATEMENTS

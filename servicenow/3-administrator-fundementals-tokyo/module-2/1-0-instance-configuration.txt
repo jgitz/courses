@@ -1,0 +1,51 @@
+- What is a baseline implementation?
+
+    A baseline Implementation is a set of
+    installed applications on a ServiceNow
+    instance, before any configuration or
+    customization has been done
+
+
+- What is an instance?
+    An instance is a copy of a ServiceNow
+    environment that is specific to a customer.
+    There are three typical environments:
+    Production — where people do their work
+    and support their customers
+    Non-production — used for development,
+    testing, and experimentation
+    Development developers may get their
+    own personal instance to do
+    experimentation and learning outside of
+    the customer/company's environment
+
+- What is meant by Configuring an instance?
+  Most of what administrators do in a
+  ServiceNow instance is configuration.
+  This primarily consists of things that can
+  be done without code.
+  Examples:
+  Update list of categories on a form
+  Add fields to form
+  Configure list views
+  Create a service catalog and
+  catalog items
+  Extend a table for a new hardware
+  class
+
+- What is meant by customizing an instance? 
+
+  Customization is done when a customer
+  requires additional functionality that does
+  not exist in the platform, and they want to
+  add features.
+  Examples:
+  Enhance a portal widget to
+  display lists with complex access
+  controls
+  Add a table for special billing
+  requirements
+
+**** whenever you make CHANGES to an instance.... it must be packaged to be moved into PRODUCTION ENVIRONMENT by using UPDATE SETS
+
+**** you can also publish customizations to an APPLICATION REPOSITORY??

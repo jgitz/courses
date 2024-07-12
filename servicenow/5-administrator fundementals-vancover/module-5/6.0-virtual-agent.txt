@@ -1,0 +1,37 @@
+- VIRTUAL AGENT: is a CONVERSATIONAL PLATFORM that helps USERS obtain INFORMATION, PERFORM COMMON TASKS, MAKE DECISIONS within a MESSAGING INTERFACE.. 
+
+  ** VA can be used to get INFO from SERVICE CATALOG, KNOWLEDGE BASE etc 
+
+  ** users can use LIVE AGENT support to SWITCH to a HUMAN AGENT 
+
+  ** uses NATURAL LANGUAGE UNDERSTANDING and ARTIFICIAL INTELLEGENCE to figure out the user queries...
+
+  ** VA is trained with 3 MILLION WORDS 
+
+  ** VA allows user to get IMMEDIATE HELP in DAY or NIGHT 
+
+- common SUPPORT TASKS that can be accomplished using VA 
+
+  - answer FAQ 
+
+  - provide HOW TO TUTORIALS 
+
+  - QUERING/UPDATING records 
+
+  - GATHER DATA 
+
+  - perform DIAGNOSTICS 
+
+  - resolve MULTI-STEP PROBLEMS 
+
+  - work with FILE ATTACHMENTS during live CHAT 
+
+** VA CAN BE USED WITH 
+
+  - service portal 
+
+  - ios 
+
+  - android 
+
+  - THIRD PARTY MESSAGE APPS such as SLACK and TEAMS using appropriate SERVICENOW ADAPTERS 

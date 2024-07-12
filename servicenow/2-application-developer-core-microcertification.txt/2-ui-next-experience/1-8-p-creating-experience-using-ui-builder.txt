@@ -1,0 +1,121 @@
+..... we can create an experince in 2 ways 
+
+  1) use the AES to create experience in experience tab and EDIT it in the UI BUILDER 
+
+    - here the generated expereince will have prebuilt pages 
+
+  2) use the UI BUILDER from the instance to create experience WITHOUT GOING to AES 
+
+    - so we can generate PAGES WITHOUT PURCHASING AES....
+
+    - HERE there's NO PREBUILT PAGES UNLIKE in AES
+
+
+- steps to build an experience in UI BUILDER 
+
+  - from instance > all > ... click UI BUILDER .... UI BUILDER opens in a new tab 
+
+  - change the SCOPE TO <APP NAME> scope in the TOP RIGHT 
+
+  - to create a new page... open PAGE OPTIONS MENU by clicking VERTICAL 3 DOTS on the LEFT SIDEBAR.... and click CREATE PAGE
+
+  - ON TOP-LEFT....select CREATE BLANK PAGE button
+
+  - fill the fields 
+
+    - Name: <name of the page eg: landing page>
+
+    - Path: <URL AUTOMATICALLY POPULATED>
+
+  - click CREATE
+
+  - you can see the new landing page on the LEFT PANE under the VARIANTS
+
+  - to add component... there are 2 ways... 
+
+    1) select the + sign on the page TOP CENTER 
+
+    2) on LEFT PANE.... click ADD COMPONENT under CONTENT TREE 
+
+    - select from different types of components like... container... RICH TEXT etc 
+
+    - to edit HTML of component: 
+
+      - select the component from LEFT PANE 
+
+      - select the CONFIG tab on the RIGHT PANE 
+
+      - click EDIT HTML option on the right pane 
+
+      ** ALWAYS SAVE by clicking save button on the TOP-RIGHT 
+
+  - to create another component AFTER/BEFORE a component: 
+
+    - click on the target component on the LEFT PANE 
+
+    - click on the 3 HORIZONTAL DOTS on the immediate right
+
+** to open your ui builder page... click on the OPEN button on the top NEXT to the URL....
+... the page will be opened in the SERVICENOW INSTANCE
+
+.... now in the opened page... we can see icons along with home icons in the left vertical pane.... we can set path to the page for the HOME ICON.... to do that 
+
+  - on ui builder click MENU
+
+  - click edit EXPERIENCE SETTINGS 
+
+  - click advanced settings 
+
+  - click on UX PAGE PROPERTIES tab on the bottom 
+
+  - search and click on chrome_toolbar record
+
+  - on the json code.... on the 'route' key... set value to path name you want to display in STRING FORMAT 
+
+
+.... various VARIANTS of the SAME PAGE can be made for different USERS.... to do a VARIANT of a page for certain users....follow the steps:
+
+  - click on the page on the left page under variants 
+
+  - click on the 3 dots on the page 
+
+  - click on duplicate 
+
+  - click the duplicate page on left pane
+
+  - click on the 3 dots adjacent to the duplicate page 
+
+  - select EDIT PAGE VAIRANTS SETTINGS 
+
+  - RENAME the DUPLICATE PAGE
+
+  - to set the AUDIENCE (USERS who can see the page variant): 
+
+    - click on the duplicate page on the left pane 
+
+    - click on the 3 dots 
+
+    - select EDIT AUDIENCES
+
+    - click add audiences button or +ADD BUTTON 
+
+    - click on the OPEN AUDIENCES IN PLATFORM on the RIGHT COLUMN... a NEW WINDOW POPS UP 
+
+      - click NEW on the top right of the NEW WINDOW 
+
+      - set NAME and ROLES 
+
+      - click submit
+
+      - close the window 
+
+    - on ADD AUDIENCE WINDOW.... now select the user name in AUDIENCE FIELD
+
+    - on ADD AUDIENCE WINDOW.... set ORDER TO <100>
+
+      ** LESSER ORDER number....HIGHER the priority
+
+    - click SAVE and click DONE
+
+
+

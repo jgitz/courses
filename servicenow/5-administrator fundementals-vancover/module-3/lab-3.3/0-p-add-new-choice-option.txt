@@ -1,0 +1,10 @@
+.... to add a new choice option to a CHOICE FIELD on a form....
+
+- open form (check list and form view)
+
+- right click on choice field > CONFIGURE CHOICES 
+
+- on bottom left... fill ENTER NEW FIELD with the new choice option 
+
+- click add button 
+

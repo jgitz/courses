@@ -1,0 +1,50 @@
+- FLOW DESIGNER: is a NON-TECHNICAL INTERFACE for implementin PROCESS AUTOMATION known as FLOWS to AUTOMATE BUSINESS LOGIC or PROCESS such as TASK, APPROVAL, NOTIFICATIONS and RECORD OPERATIONS 
+
+
+  ** to open FLOW DESIGNER 
+
+    - ALL > PROCESS AUTOMATION > FLOW DESIGNER
+
+  ** ROLES REQUIRED 
+
+    - action_designer 
+
+    - flow_designer
+
+    - flow_operator 
+
+
+
+- FLOWS: are used to automate BUSINESS LOGIC for APPLICATIONS or PROCESSES such as APPROVAL, TASKS, NOTIFICATION and RECORD OPERATIONS 
+
+- BENIFITS of FLOWS
+
+  - provides NATURAL LANGUAGE description of FLOW LOGIC
+
+  - single environment to visualize and build BUISINESS PROCESS 
+  
+  - config and runtime info available to CREATE, OPERATE and TROUBLESHOUT FLOWS 
+
+  - provide REUSABLE ACTIONS 
+
+  - EXTEND FLOW DESIGNER using INTEGRATION HUB or installing SPOKES 
+
+  - create various FLOW TRIGGERS like SLA TRIGGER 
+
+
+
+
+** in snow there are THREE METHODS for PROCESS AUTOMATION   
+
+  1) FLOWS (..using FLOW DESIGNER)
+
+  2) WORKFLOW 
+
+  3) PROCESS?? (..using PROCESS AUTOMATION DESIGNER)
+
+  ** WORKFLOW is DEPRECATED and is only used to define flow in KNOWLEDGE BASE LIFECYCLE 
+
+  ** FLOW is now the GOTO AUTOMATION TOOL to define FLOWS 
+
+  ** PAD (..Process Automation Designer) is used to define process
+

@@ -1,0 +1,87 @@
+- TABLES: data in the snow application is stored in tables.
+
+    - in snow app... you can create table in 3 ways 
+
+        1) upload spreadsheet of FILE EXTENSION .xlsx
+
+        2) create from existing table: tables can be extended with other tables
+
+        3) create table from SCRATCH
+
+
+
+- TABLE TYPES in snow:
+
+    1) BASE TABLE: contains primary application records 
+
+    2) REFERENCE TABLE: these are tables from which fields can be refered to the base table on which we are working
+
+
+- inbuilt tables in snow 
+
+    - Cost center table 
+
+    - Location table 
+
+    - Department table 
+
+    - User table 
+
+    - Group table 
+
+- FIELD TYPES in tables
+
+    - REFERENCE: fields associated with another table 
+
+    - CHOICE: dropdown options 
+
+    - BOOLEAN true/false 
+
+    - STRING: are of 2 types 
+
+        - string 
+        - string_utf_8
+
+        ** string_utf_8 supports EMOJIS
+
+    - DATE 
+
+    - INTEGER: numbers with ZERO DECIMAL POINTS 
+
+    - STRING: on string field can take 255 ? characters. Anything more will be added in a NEW STRING FIELD 
+
+    ** for more FIELD TYPES refer the link: https://docs.servicenow.com/bundle/sandiego-platform-administration/page/administer/reference-pages/reference/r_FieldTypes.html
+
+    ** CHOICE is used if the options are a SMALL LIST 
+
+    ** REFERENCE is used if the the options are BIG LIST 
+
+    ** you can make an existing column to SERIAL NUMBER by toggling ON the DISPLAY OPTION....  only ONE COLUMN per table can be assigned a DISPLAY ON 
+
+    ** ON CHOICE COLUMNS.... DEFAULT VALUE can be added by adding value in default column
+
+
+** if you CHECK EXTENSIBLE OPTION while creating table.... your table fields can be REFERENCED/USED in other tables 
+
+- SOME INBUILT TABLE COLUMN LABELS, NAMES(variable name) and types 
+
+  - CREATED - sys_created_on - glide_date_time 
+
+  - CREATED BY - sys_created_by - string 
+
+  - NUMBER - number - string 
+
+    ** only seen if AUTO NUMBERING is turned on 
+
+  - SYS ID - sys_id - GUID 
+
+    ** a unique ID for the RECORDS 
+
+  - UPDATED - sys_updated_on - glide_date_time 
+
+  - UPDATED BY - sys_updated_by - string 
+
+  - UPDATED - sys_mod_count - numeric 
+
+      ** this is a count on HOW MANY TIMES updates are made on the record
+    

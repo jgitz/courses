@@ -1,0 +1,28 @@
+** in every databese COLUMN named <id> is important to give unique identifiers to each records in the table...
+
+** id columns can be set using 2 ways 
+
+      1) using UNIQUE constrain
+
+            ** any number of columns can be assigned unique constraints
+
+            ** always use INT datatype NOT NULL with UNIQUE constraint
+
+            ** WE have to INSERT unique ids by ourselves
+
+            ** not used now for <id> column 
+
+
+
+      2) using PRIMARY KEY constraint 
+      
+            **only ONE column per TABLE can be assigned this
+
+            ** should add INT datatype
+
+            ** automatically assigns a unique id
+
+            ** preferred method to assign <id> column
+
+**** refer next files for setting unique and primary key
+

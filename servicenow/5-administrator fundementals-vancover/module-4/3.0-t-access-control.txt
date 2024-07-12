@@ -1,0 +1,31 @@
+- what is an ACCESS CONTROL? 
+
+  - ACCESS CONTROL is a SECURITY RULE to restrict PERMISSIONS of a USER from VIEWING and INTERACTING with data 
+
+  - ACL RULES can control the following basic CRUD OPERATIONS on TABLES and FIELDS 
+
+    - create : enable users to create NEW RECORDS 
+
+    - read:enables user to DISPLAY RECORD
+
+    - WRITE : enable users to UPDATE RECORDS
+
+    - delete : enables users to DELETE RECORDS
+
+  - ACL RULES can control SPECIFIC OPERATIONS on TABLES and FIELDS.... SOME EXAMPLES of specific operations are 
+
+    - personalize_choices: user cannot RIGHT CLICK on CHOICE FIELD LABEL and SELECT CONFIGURE choices
+    
+    - execute: restricts user the EXECUTION of scripts on RECORD/UI PAGE 
+
+    - edit_ci_relations: user cannot DEFINE RELATIONSHIPS between CONFIGURATION ITEMS TABLES (cmdb_ci)
+
+    - save_as_template: controls the FIELDS that should be SAVED?? when a TEMPLATE is CREATED 
+
+    - report_on: (??user is restricted from CREATION REPORT on the OBJECT?? )... 
+
+      ** DEFINITION from DOCUMENTATION: allows users to create REPORT on TABLE 
+
+    - report_view: enables users to VIEW a report made on TABLE OR TABLE FIELD
+
+

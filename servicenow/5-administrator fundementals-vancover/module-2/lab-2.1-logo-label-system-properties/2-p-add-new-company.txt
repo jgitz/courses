@@ -1,0 +1,17 @@
+..... a business involves many companies acting together as customers, vendors, manufacturers etc.... 
+
+.... so we need to make profiles for companies in our instance.... to do that...
+
+- login as system administrator 
+
+- goto ALL > USER ADMINISTRATION > COMPANY 
+
+- click NEW 
+
+  ** fill the company name and other details 
+
+- click save 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>> 
+

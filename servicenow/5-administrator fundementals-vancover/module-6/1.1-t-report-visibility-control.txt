@@ -1,0 +1,23 @@
+- REPORT VISIBILITY CONTROLS: are the UI BUTTONS that allows to SET VISIBILITY/AUDIENCE to the reports when you open REPORT LIST using ALL > REPORTS > VIEW/RUN module 
+
+  - MY GROUPS BUTTON: shows reports visible to CURRENT USER only 
+
+  - GROUP BUTTON: shows reports which are visible to GROUP that USER BELONGS 
+
+  - GLOBAL BUTTON: shows reports which are visible to EVERY PROCESS USER (..everyone)
+
+  - ALL BUTTON: shows reports which are PERSONAL, GROUP and GLOBAL 
+
+
+** to get a guide to create new report.. goto
+
+  - ALL > REPORTS > GETTING STARTED
+
+** in the REPORT LIST (..all > reports > view/run).... you can
+
+  - SEARCH FOR REPORTS using SEARCH BAR 
+
+  - FAVOURITE the reports using STAR 
+
+  - CREATE NEW REPORT using CREATE A REPORT BUTTON 
+  

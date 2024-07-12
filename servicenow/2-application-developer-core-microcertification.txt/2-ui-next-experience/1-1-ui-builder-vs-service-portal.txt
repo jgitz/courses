@@ -1,0 +1,61 @@
+..... you can desingn web components in snow in 2 ways 
+
+  1) using SERVICE PORTAL 
+
+    - used to create REQUESTER EXPERIENCES 
+
+    - built on ANGULAR 
+
+    -EMPLOYEE SERVICE CENTER is the current recommended service portal 
+
+    - is RESPONSIVE
+
+    - provides PIXEL PERFECT DESIGN 
+
+    - ATF testing
+
+    - full support from SERVICE CATALOG
+    
+    - DIFFICULT to set up PUBLIC PAGES 
+
+    - used to make
+
+        - enterprise portals 
+
+        - customer portals
+
+  2) using UI BUILDER
+
+    - used to create FULFILLER EXPERIENCE 
+
+    - is similar to react and is component based 
+
+    - is NOT RESPONSIVE
+
+    - DOESNOT provide pixel perfect design
+
+    - LIMITED SUPPORT from service catalog
+
+    - NO testing can be done using ATF
+
+    - used to make 
+
+        - workspaces 
+        
+        - small portals 
+
+        - departmental portals
+
+    ** UI builder is NOT as CAPABLE as SERVICE PORTAL 
+
+    ** WORKSPACE: is a GUI for AGENTS that shows MULTIPLE TOOLS on one page to HANDLE USER REQUESTS
+
+    ** PORTAL: is a page where USERS can 
+
+      - create REQUESTS 
+
+      - TRACK TICKETS 
+
+      - SEARCH KNOWLEDGE BASE 
+
+      ... etc 

@@ -1,0 +1,39 @@
+- LIST CONTEXT MENUS (... in classic list): are MENUS in a LIST to configure list view and control it.....it's also  there are  THREE CONTEXT MENUS in a list 
+
+  1) LIST CONTROL MENU: click on the HAMBURGER SIGN on the top left of the list..... it is used for 
+    - FILTER OPERATION
+    - FAVOURITE CREATION
+    - VIEW CHANGE
+    - set number of RECORDS PER PAGE (show option )
+
+    - GROUP BY FIELDS 
+
+    **  you can ALSO RIGHT CLICK on LIST HEADER to OPEN LIST CONTROL 
+
+  2) COLUMN OPTIONS MENU: 3 DOTS on EACH FIELD on the COLUMN HEADER... used to 
+  
+    - configure LIST LAYOUT
+    - create QUICK REPORTS
+    - SHOW VTB and charts 
+    - launch interactive analysis 
+    - CONFIGURING LIST 
+    - IMPORT EXPORT DATA 
+
+    ** you can also RIGHT CLICK on each column header to open column option menus for the RESPECTIVE COLUMNS 
+
+  4) LIST FIELDS CONTEXT MENU: right click on ROW CELL... it has following OPTIONS
+
+    - filtering options 
+
+    - assigning TAGS 
+
+    - ADD to VTB (**** to SHOW VTB... use COLUMN OPTIONS MENU)
+
+       
+
+
+** OTHER NAMES of LIST CONTEXT MENUS
+
+  - aka LIST CONTROL MENUS
+
+  - aka ADDITIONAL ACTIONS (in FORMS)

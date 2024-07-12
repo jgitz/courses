@@ -1,0 +1,9 @@
+- DATABASE SERVER/CLUSTER: is the software platform that enables us to manipulate data inside RDBMS... it holds collection of DATABASES
+
+- DATABASE: is COLLECTION of TABLES which hold DATA.
+
+      ** the tables of 2 separate database can or cannot be related
+
+- TABLE: is where data is stored in tabular form in ROWS(RECORDS/ENTRIES) and COLUMNS(FILDS)
+
+- DATA: is the information stored in FIELDS (COLUMNS) of the table.

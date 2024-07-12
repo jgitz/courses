@@ -1,0 +1,81 @@
+..... to create a new incident by a service desk agent
+
+- login as the service desk agent 
+
+- goto SERVICE DESK > INCIDENTS > NEW 
+
+  - fill the CALLER FIELD with the user who reported the incident 
+
+  - fill the SHORT DESCRIPTION FIELD
+
+  ** these 2 FIELDS are the minimum field to be filled to submit an incident  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to verify an incident by the service desk agent 
+
+- login as service desk agent user 
+
+- goto INCIDENT > OPEN - UNASSIGNED 
+
+- click your incident 
+
+  - fill the following fields 
+
+    - category 
+
+    - subcategory 
+
+    - service 
+
+    - service offering 
+
+    - configuration item 
+
+    - channel 
+
+    - urgency 
+
+    - assignment group 
+
+    - assigned to 
+
+    - description 
+
+    - work notes 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..... to see KNOWLEDGE ARTICLES on your incident based on the short description and ATTACH it to the incident
+
+- login as the service desk agent 
+
+- open your incident 
+
+- scroll down and expand RELATED SEARCH RESULTS
+
+  - select the KNOWLEDGE ARTICLE option from the drop down 
+
+    - it has knowledge articles listed BASED ON THE SHORT DESCRIPTION 
+
+  - open the ARTICLE related to the incident 
+
+    - if the article helped you.... CHECK THIS HELPED option at the top 
+
+    - to attach the article to the incident.... click the ATTACH BUTTON on the article
+
+      ** a CHECK SIGN will be displayed
+
+    - on NOTES TAB.... under work notes.... there'll be a comment automatically filled with the link of the knowledge article.... click POST to post work note
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+...... to add users/managers/email to WATCH LIST or WORK NOTE LIST 
+
+- login as service desk agent 
+
+- open the incident 
+
+- under the NOTES TAB.... unlock WATCH LIST ICON and add users to watch list 
+
+- unlock WORK NOTE LIST to add users to work list 

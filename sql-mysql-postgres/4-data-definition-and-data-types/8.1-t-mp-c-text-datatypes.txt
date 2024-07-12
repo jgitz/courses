@@ -1,0 +1,34 @@
+- COMMONLY USED TEXT DATATYPES 
+
+
+    1) CHAR(<X>) : used to specify SHORT TEXTS of X LENGTH 
+
+        **** if the data used is less than the X character space.... the remaining space at the beginning is spaced..... eg 
+
+    
+
+    2) VARCHAR(<X>) : also used to specify SHORT TEXT 
+
+        ** don't fill white space if the data stored is less than X length
+
+    3) text datatype to store long texts:
+
+        ** in MYSQL:
+
+              - TEXT 
+              - MEDIUMTEXT
+              - LONGTEXT 
+
+        ** in POSTGRES 
+
+              - TEXT
+
+          ***** NO need to specify text length 
+
+          ***** but there is a limit for text length in TEXT datatype 
+
+      4) ENUM: to SPECIFY which TEXT values are allowed in a column
+
+          ** NOT supported in POSTGRES but there ar ways to do it
+
+          

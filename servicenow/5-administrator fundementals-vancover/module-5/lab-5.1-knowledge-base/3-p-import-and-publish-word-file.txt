@@ -1,0 +1,44 @@
+... to import WORD FILE and PUBLISH KB ARTICLE 
+
+- login as SYSTEM ADMIN 
+
+- goto ALL > KNOWLEDGE > ARTICLES > IMPORT ARTICLES
+
+- fill KNOWLEDGE BASE FIELD with correst knowledge base where you want to publish the article 
+
+- click on BROWSE FILE 
+
+- ADD WORD FILE FROM the local device 
+
+- click IMPORT 
+
+- click CONTINUE on loading POPUP 
+
+- click on KB ARTICLE RECORD NUMBER on POPUP 
+
+  ** your KB ARTICLE content comes up.... you can edit the content 
+
+- on TOP RIGHT.... click EDIT BUTTON to edit article 
+
+- to view how the article will get displayed to users... on RELATED LINKS SECTION... click VIEW ARTICLE 
+
+- select PUBLISH to publish article 
+
+
+
+** you can view your KB ARTICLE RECORD at ALL > KNOWLEDGE > ARTICLES > ALL 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... if PUBLISH BUTTON of a KB ARTICLE RECORD is clicked for an article in KB with APPROVAL WORKFLOW.... then KB MANAGER should APPROVE it.... to do that 
+
+- login as user with role APPROVER_USER/KNOWLEDGE_MANAGER of the corresponding KB 
+
+- goto ALL > SELF SERVICE > MY APPROVALS  (..also ALL > SERVICE DESK > MY APPROVALS)
+
+- open the request 
+
+  - change the STATE FIELD to APPROVED 
+
+  ** double check the KNOWLEDGE ARTICLE RECORD before approving 

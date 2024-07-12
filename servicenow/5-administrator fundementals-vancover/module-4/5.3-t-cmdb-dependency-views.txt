@@ -1,0 +1,52 @@
+- DEPENDENCY VIEW: is an APPLICATION (ALL > DEPENDENCY VIEW) which has modules to see RELATIONSHIP B/W CI'S in your infra in GRAPHICAL WAY....
+
+  - DEPENDENCY VIEWS MAP can give the following info about CI 
+
+    ** to VIEW DEPENDENCY MAP.... 
+
+      - OPEN CI RECORD (cmdb_ci)
+
+      - ON RELATED ITEMS TOOLBAR.... click SHOW DEPENDENCY VIEW ICON (MAP ICON)....
+
+      - now dependency view opens in a NEW TAB 
+  
+    - it shows if a CI has any ACTIVE/PENDING ISSUES using the following ICONS and GLYPHS
+
+      - ACTIVE INCIDENT (..TRIANGLE WARNING ICON)
+
+      - PROBLEM ICON (..SPANNER ICON)
+
+      - AFFECTED CI's for task (..CAR BATTERY ICON??)
+
+      - HOVER OVER the CONNECTION LINES to view the CURRENT RELATIONSHIP 
+
+      - RIGHT CLICK ON CI ICON to get MENU OPTIONS (..allows to view form, view map, add relationship)
+
+      
+
+    - investigate TASKS that are connected to the CI 
+
+    - allows to access CI RELATED INCIDENTS, PROBLEMS CHANGES and SERVICES 
+
+    - CREATE/DELETE RELATIONSHIPS b/w CI'S 
+
+      **** many of the RELATIONSHIPS in the map is created through the DISCOVERY PROCESS (automated scanning by the snow instance)
+
+  - features of DEPENDENCY VIEWS MAP: 
+
+    - it by default shows the ROOT CI/ROOT NODE 
+
+    - ROOT CI has a DARK PULSATING BORDER 
+
+    - the map shows BOTH UPSTREAM and DOWNSTREAM CI'S 
+
+    - by default it displays 3 LEVELS of CI relationship 
+
+    - by default CLUSTERS are COLLAPSED 
+
+    - it has INDICATORS to INDICATE if a CI HAS any ACTIVE and PENDING ISSUES 
+
+    ** MANY of the RELATIONSHIPS in the DEPENDENCY MAP is CREATED through DISCOVERY PROCESS.... but user can CREATE, DEFINE and DELETE RELATIONSHIPS in the MAP 
+
+    ** if we CHANGE RELATIONSHIP of a CI in the DEPENDENCY MAP.... the changes are AUTOMATICALLY APPLIED TO CMDB 
+

@@ -1,0 +1,39 @@
+- to add fields in classic from 
+
+  - check scope (you can do it later also)
+
+  - go to target list 
+
+    ** ensure the view is DEFAULT VIEW (HAMBURGER > VIEW )
+
+  - open a record 
+
+    - click HAMBURGER > CONFIGURE > FIELD LAYOUT 
+
+      ** you can set scope here too
+
+    - select field from available box to selected box 
+
+    - click save 
+
+- to add fields in WORKSPACE 
+
+  - check scope (you can do it later also)
+
+  - goto target list 
+
+  - click HAMBURGER > VIEW > < TARGER WORKSPACE> 
+
+  - select a RECORD 
+
+  - click HAMBURGER > CONFIGURE > FIELD LAYOUT 
+
+    - you can set the scope here too
+
+  - check if the VIEW field is set to TARGET WORKSPACE
+
+  - select the SECTION where you want to add the field from the DROP DOWN 
+
+  - add your required field from AVAILABLE BOX to the SELECTED BOX 
+
+  - click save 

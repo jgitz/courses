@@ -1,0 +1,103 @@
+.... to create a NEW CATALOG ITEM using CATALOG BUILDER 
+
+- login as SYSTEM ADMIN 
+
+- open CATALOG BUILDER using ALL > SERVICE CATALOG > CATALOG BUILDER 
+
+  ** new window opens 
+
+- click CREATE NEW CATALOG ITEM BUTTON 
+
+- on GETTING STARTED PAGE.... click CONTINUE BUTTON 
+
+- to SELECT A TEMPLATE... click any listed template to use.... eg "standard items in service catalog" template.... then click USE THIS TEMPLATE BUTTON 
+
+- complete the form 
+
+  - in DETAILS TAB 
+
+    ** on BASIC INFO SECTION 
+
+      - fill ITEM NAME 
+
+      - fill SHORT DESCRIPTION 
+
+
+    ** on ITEM DETAILS 
+
+      - attach IMAGE FILE 
+
+      - fill DESCRIPTION 
+
+    - click CONTINUE TO LOCATION 
+
+  - in  LOCATION TAB.... you can set CATALOG and CATAGORIES to which the item belongs 
+
+    ** you can add a CI to MANY CATAGORIES using LIST COLLECTOR 
+
+    - click CONTINUE TO QUESTIONS 
+
+  - in QUESTIONS TAB... we set INPUT FIELDS so users can SELECT CATALOG ITEM VARIANTS and OPTIONS .... we can use TYPES like TEXT, OPTION, CHOICE, DATA/TIME and DISPLAY LABELS to set questions.... 
+
+    - to set question.... click INSERT NEW QUESTION and fill FORM 
+
+      - fill QUESTION TYPE with variable type.. eg: choice 
+
+      - fill QUESTION SUB TYPE: eg dropdown (fixed value)
+
+      - fill QUESTION LABEL: with question description 
+
+      - fill NAME: with unique variable name for the question 
+
+      - CHECK/UNCHECK MANDATORY 
+
+      - EXPLORE other SUB TABS in questions to set VALUES 
+
+      - you can review QUESTION UX look on RIGHT PANE 
+
+      - click INSERT QUESTION 
+
+      - you can click + to add NEW QUESTIONS 
+
+      - click CONTINUE to SETTINGS 
+
+    - in SETTINGS TAB: you can configure PORTAL SETTINGS such as BUTTON COLOR and other settings related to CART UI 
+
+      - click CONTINUE to ACCESS 
+
+    - in ACCESS TAB... you can set USER CRITERIA (user access) of CATALOG ITEMS... using AVAILABLE FOR and NOT AVAILABLE FOR FIELDS 
+
+      - click CONTINUE TO FULFILLMENT 
+
+    - in FULFILLMENT TAB: you can set FLOW for the catalog item REQUEST PROCESS....use SELECTED FLOW FIELD to specify flow 
+
+      - click continue to REVIEW AND SUBMIT 
+
+    - in REVIEW AND SUBMIT TAB: 
+
+      - click PREVIEW and SELECT PORTAL option... to see PORTAL VIEW of your CATALOG ITEM 
+
+      - if everything is ok.... CLICK SUBMIT
+
+
+**** you can also do these in CI RECORD (.. ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS)
+
+  - use various tabs to EDIT the settings 
+
+    - use ITEM DETAILS TAB to change DESCRIPTION 
+
+    - use PRICING TAB to add CI ITEM PRICING 
+
+    - USE PROCESS ENGINE TAB to set FLOW
+
+    - use PICTURE TAB to change CI PICTURE 
+
+    - use PORTAL SETTING TAB to change visibility settings of the CART 
+
+    - use VARIABLES TAB (in RELATED LISTS) to change QUESTIONS SETTINGS and CHOICES
+
+  ** CLICK TRY IT BUTTON on top for PREVIEW 
+
+** to verify if your CI is created... goto 
+
+  - ALL > SELF SERVICE > SERVICE CATALOG 

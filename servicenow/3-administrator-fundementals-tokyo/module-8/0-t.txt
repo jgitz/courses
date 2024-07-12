@@ -1,0 +1,9 @@
+- SCRIPTING in SERVICENOW: servicenow uses JAVASCRIPT scripts to configure the instances
+
+  ** there are over 30 places where scripts can be used in servicenow instance 
+
+- CLIENT SIDE SCRIPT: are the scripts in js language that execute at the client side (in BROWSER)
+
+- SERVER SIDE SCRIPT: are js scripts that execute it serverside (in servicenow databases and application server )
+
+** servicenow is a APaas (Application Platform As A Service)

@@ -1,0 +1,11 @@
+..... some columns in the table SHOULDN'T be OMITTED to set NULL value during INSERT statements..... eg for columns are NAME, ADDRESS etc....
+
+.... so a NOT NULL CONSTRAINT SHOULD BE added to COLUMNS while TABLE DECLARATION
+
+- both MYSQL and POSTGRES: 
+
+      :: CREATE TABLE <table_name> (
+        <column_name> <DATA_TYPE> NOT NULL
+      );
+
+**** refer file 25 for alter statements       

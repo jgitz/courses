@@ -1,0 +1,97 @@
+- ITSM: is a concept that involves giving IT SERVICES to customers and users
+
+- IT SERVICE LIFE CYCLE: PLAN > DESIGN > CREATE > OPERATE > IMPROVE
+
+- ITSM TERMINOLOGIES: 
+
+  1) SERVICE: anything that offers VALUE by fulfilling DEMANDS without exposing the COST and RISK involved behind it 
+
+  2) REQUEST: MECHANISM to OBRAIN, CHANGE or DISCONTINUE a service 
+
+  3) INCIDENT: UNPLANNED INTERRUPTION or QUALITY REDUCTION of an IT SERVICE 
+
+  4) PROBLEM: refers to UNDERLYING CAUSE of recurring ONE or MORE INCIDENTS
+
+  5) CHANGE: refers to ADDITION, MODIFICATION or DELETION of IT SERVICES
+
+
+- CMDB (Configuration Management Database): is a RECORD where PHYSICAL and LOGICAL COMPONENTS (CI's) and their REALTIONSHIPS are defined 
+
+  ** CMDB is a REPOSITORY of all the CONFIGURATION ITEMS (CI'S) listed in your instance
+
+  ** CMDB enables to TRACK PHYSICAL and LOGICAL STATE of IT COMPONENTS 
+
+  ** CMDB is used as a CRITICAL ANALYSIS and DECISION MAKING SUPPORT TOOL 
+
+
+- CSDM (Common Service Data Model): is a FRAMEWORK for CMDB with starndard set of TERMS and DEFINITIONS 
+
+  - CSDM is used for DATA MODELLING and MANAGEMENT
+
+- KNOWLEDGE MANAGEMENT: is the process of CREATING, SHARING, USING and MANAGING knowledge and information in an organisation
+
+  - in snow, knowledge management is done through KNOWLEDGE BASES and KNOWLEDGE ARTICLES
+
+  - KNOWLEDGE ARTICLES can also be accessed from SERVICE CATALOG (CONTENT ITEMS)
+
+  - MULTIPLE KNOWLEDGE BASES can be made for DIFFERENT GROUPS in the snow instance and can be shared WITHIN as well as BETWEEN the different groups
+
+- SERVICE PORTFOLIO MANAGEMENT: is a CENTRALIZED APPLICATION to manage entire IT SERVICES in your enterprose.. it is mainly used to 
+
+  - design pipeline of services for organisational needs (uses SERVICE PIPELINE: i.e services that are NOT AVAILABLE in your instance)
+
+  - helps unnecessary service duplication (uses SERVICE CATALOG: i.e to see all the services that are active in the organisation)
+
+  - quickly identify and retire low value services (RETIRED SERVICES: lists the services in your instance that are NOT IN USE)
+
+- SERVICE OPERATIONS WORKSPACE: is a workspace used to manage LIFE CYCLE of TASK RECORDS such as INCIDENTS, PROBLEMS etc 
+
+  ** you can install service operations workspace (sn_sow_itsm_cont)
+
+- ROLES: are used to control access to snow applicaitons and modules 
+
+  ** one ROLE can contain OTHER ROLES and the permissions get INHERITED to child roles
+
+  ** best practice is to give roles to GROUPS and add users into the group rather than giving roles to user
+
+- SERVICENOW PERSONAS/ROLES (grants access and permissions to applications and modules in snow instance)
+
+  1) END USERS: uses a SERVICE PORTAL to interact with SERVICE DESK. users can be INTERNAL/EXTERNAL USERS 
+
+    ** END USERS are NOT assigned any ROLE
+
+  2) AGENT/FULFILLERS: manage all the REQUESTS made by the END USERS.... agents are assigned to USER GROUPS based on their department 
+
+    - uses ITSM APPLICATIONS to resolve REQUESTS/TASKS 
+
+    - BASE ROLE used is ITIL 
+
+    - has the following permissions 
+      - READ
+      - CREATE 
+      - UPDATE 
+      - DELETE
+
+  3) PROCESS MANAGERS: ensure the PROCESSES?? are running correctly and efficiently.... they may be managers of ONE or MORE GROUPS 
+
+  4) PROCESS OWNLERS: responsible for ONE OR MORE PROCESSES.... they define 
+
+    - PROCESS MODELS 
+    - KPI (Key Performance Indicators)
+
+    ** they ae SENIOR MANAGERS to look after PROCESSES
+
+  5) SERVICE OWNERS: responsible for ENTIRE SERVICE... they are responsible for MAINTANENCE and DATA INTEGRITY of services
+
+
+- itsm SUPPORTING INTERFACES: 
+
+  - ITSM SUITE : gives applications and interfaces for the END-USERS 
+
+  - snow EMPLOYEE CENTER PORTAL 
+
+  - NEXT EXPERIENCE LANDING PAGE: provides infor you need to start working various views like list 
+
+  - NOW MOBILE NOW: allows employees to find answers an create requests in all departments 
+
+

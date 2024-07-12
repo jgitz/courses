@@ -1,0 +1,21 @@
+1) statement KEYWORDS should be UPPERCASE 
+
+2) DATABASE/TABLE names should be LOWER CASE 
+
+3) DATABASE/TABLE names should NOT have WHITE SPACES.... instead use UNDERSCORE _ .... eg
+
+      :: CREATE DATABASE dummy_database;
+
+4) if DATABASE/TABLE names is same as a KEYWORD used in the statement.....
+
+      - in MYSQL: wrap the database name in BACKTICKS ``..... eg
+
+            :: CREATE DATABASE `database`;
+
+
+      - in POSTGRES: wrap the database name in double quotes ""..... eg
+
+            :: CREATE DATABASE "database";
+
+
+

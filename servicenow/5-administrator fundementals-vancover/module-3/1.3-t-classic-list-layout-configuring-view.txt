@@ -1,0 +1,59 @@
+.... LIST LAYOUT (..classic) include the list records and the FIELDS (columns).... we can change the FIELD HEADERS of the list...
+
+
+
+- WHAT is meant by CONFIGURING LIST LAYOUT? 
+
+  - it means changing the layout of the list by changing fields of a list or changing order of the list 
+
+  - roles required is admin || personalize_list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- How can you change the list layout? 
+
+  - sign in as admin || personalize_list 
+
+  - open a list 
+
+  - click ANY COLUMN OPTIONS MENU (3 dots on column header or right click on column header)
+
+  - goto CONFIGURE 
+
+  - click LIST LAYOUT
+
+  - LIST COLLECTOR INTERFACE APPEARS 
+
+      - add fields from LEFT BOX (AVAILABLE) to RIGHT box (selected) 
+
+
+  - now we can set the layout to an EXISTING VIEW (choose from dropdown on  VIEW NAME (CHOICE) field).... OR you can set a NEW VIEW by choosing NEW option from the CHOICE DROPDOWN of the field LIST VIEW NAME
+
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  - How to add NEW FIELD to an existing list 
+
+    - sign in as admin || personalize_list user 
+
+    - open a list 
+
+    - click any column option menu (3 dots on column header or right click on column header)
+
+    - click configure 
+
+    - select list layout.... list collector appears 
+
+      - to add new field.... 
+      
+        - goto the CREATE NEW FIELD section of list collector (bottom right side)
+
+        - add field name 
+
+        - add field type 
+
+        - click add
+
+        ** now your field gets added to the SELECTED BOX of the list collector
+
+    - click SAVE on the list collector 

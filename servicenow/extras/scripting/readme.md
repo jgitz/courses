@@ -1,0 +1,1 @@
+chuck thomasi playlist link: https://www.youtube.com/watch?v=62Nabpb94Jw&list=PL3rNcyAiDYK2_87aRvXEmAyD8M9DARVGK&index=1 

@@ -1,0 +1,498 @@
+- ALL MENU: all menu on the left side of the platform
+
+- USER MENU: top right PROFILE PICTURE (AVATAR)
+
+  ** if the user is elevated to SECURITY ADMIN..... then the PROFILE PICTURE (AVATAR) will have an UP ARROW 
+
+- FILTER NAVIGATOR: the search box inside all menu
+
+- APPLICATION/MENU: MAIN ITEMS in the all menu 
+
+- MODULES: SUB ITEMS under main items (application) in the ALL MENU
+
+- EDIT APPLICATION ICON: note and pencil icon besides every APPLICATION
+
+- EDIT MODULE ICON: note and pencil icon besides every MODULE 
+
+- GOLBAL SEARCH: search bar on TOP RIGHT of the INSTANCE 
+
+  ** we can load any RECORD by pasting the RECORD NUMBER in the GLOBAL SEARCH BAR 
+
+- CONTEXTUAL APP PILL: is the BLACK BUBBLE in the middle of the NAV BAR of the snow.... it shows where you are in the system through the 
+writings inside the bubble 
+
+
+- APPLICATION SCOPE PICKER: GLOBE ICON on the top right 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ACTIVITY STREAM is under NOTES TAB inside a CLASSIC FORM
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- LIST ICONS 
+
+  - PERSONALISE LIST: GEAR ICON on TOP RIGHT 
+
+    ** A GEAR WITH PURPLE DOT means you have personalised the list for the current user
+
+  - ACTIVITY STREAM: PULSE ICON on TOP RIGHT 
+
+  - LIST CONTROLS: top left hamburger on the record list
+
+  - COLUMN CONTEXT MENU: 3 DOTS on each column in column header 
+  
+  - LIST FIELDS CONTEXT MENU: right click on the row cells 
+
+  - FILTER: funnel icon on top left.... it is used to set filter condtions.... run and save these filter conditions 
+
+    ** the interface where we write condition is called CONDITION BUILDER 
+
+    - BREAD CRUMB: a path of bread crumbs with > and . conntectors which shows AT A GLANCE VIEW of FILTER CONDITIONS....
+
+  - LIST COLLECTOR: is the interface where we can add / remove fields of a list and rearrange its order... 
+
+    - AVAILABLE FIELD = LEFT BOX 
+
+    - SELECTED FIELD = RIGHT BOX
+
+  - DOT WALKING: + sign in REFERENCE FIELD inside AVAILABLE BOX in LIST VIEWS, FORM LAYOUT, LIST VIEWS, REPORTS and FLOW DESIGNER
+
+    - CHAIN LINKS: dots on the dotwalking field 
+
+    - EXPAND REFERENCE FIELD: share like button in between the boxes of a list collector... click to EXPAND the REFERENCE FIELD 
+
+      ** might take some seconds to show the expanded list 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- CLASSIC FORM ICONS 
+
+  - PERSONALIZE FORM: tuning switches on top right 
+
+  - MORE OPTIONS: 3 dots on top right.... you can set template and annotation(on/off)
+
+    - has following options 
+
+      - EMAIL 
+
+      - TOGGLE TEMPLATE BAR 
+
+      - TOGGLE ANNOTATIONS
+
+      - TAGS 
+
+  - ACTIVITY STREAM: pulse icon on top right 
+
+  - ADDITIONAL ACTIONS: HAMBURGER on the top lefe... used to mainly configure form layout
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- WORKSPACE FORM ICONS (DETAILS TAB)
+
+  - CONTEXTUAL SIDE PANEL: the tool panel on the right side 
+
+  - TEMPLATES: PAPER ICON on CONTEXTUAL SIDE PANEL 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- CLASSIC FORM ICONS 
+
+  - ADDITIONAL ACTIONS: HAMBURGER top left
+
+  - REFERENCE FIELD: MAGNIFYING GLASS  (REFERENCE LOOK UP ICON )
+
+    ** REFERENCE ICON :.. INFO ICON to preview reference record that occupies the reference field 
+
+    ** in the backend... the reference field stores the SYS_ID of a RECORD 
+
+  - DATE/TIME FIELD: CALENDAR 
+
+  - TRUE/FALSE FIELD: CHECK BOX 
+
+  - CHOICE FIELD: DROPDOWN ARROW 
+
+  - PERSONALIZE FORM: TUNING SWITCHES (top right)
+
+  - PERSONALIZE in RELATED LINKS: GEAR ICON in RELATED LINKS 
+
+  - FILTER in RELATED LINKS: FUNNEL ICON in related links 
+
+_____________________________________________________
+
+- FORM LAYOUT LIST COLLECTOR ICONS
+
+  - DOT WALK ICON: SHARE ICON between boxes 
+
+  - RELATED TABLES: green table names with + sign on AVAILABLE BOX  
+
+_______________________________________________________________
+
+- FORM DESIGN (studio) ICONS 
+
+  - HANDLE ICON: dot grid on fields to drag 
+
+  - SETTINGS ICON: gear icon on fields to set field properties (label, mandatory, read only, reference, choices etc)
+
+  - REMOVE ICON: cross icon....to remove field from the form 
+
+  - FIELD LABEL: text input space where we add READ ONLY NAME for field identification.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- INSIDE APPLICATION MANAGER (all > system applications > all available application > all)
+
+  - PLUGINS: has PUZZLE ICONS 
+
+  - APPLICATIONS: has RUBIX CUBE ICON 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- WORKSPACE ICONS 
+
+  - LIST ICON (on left pane): shows the lists of the workspace 
+
+    - list icon has 2 TABS displayed when clicked 
+
+      1) LIST PANE: shows the system list 
+
+      2) MY LISTS PANE: shows list created by the USER 
+
+        ***** only the LOGGED IN USER can see the lists in MY LISTS TAB
+_________________________________________________________
+
+  - LIST PANE: shows the LISTS as ITEMS and SUB ITEMS in each item.... these items corresponds to TABLES in the database 
+
+    ** the ITEMS of the LIST PANE are called LIST CATAGORIES
+
+      - list catagories are just headings and DON'T open any list when clicked.... it only shows sub items when it is clicked.... 
+
+    ** the SUB ITEMS under LIST CATAGORIES are called UX LIST (FILTERED  LIST)
+
+      ** UX LIST RETRIEVE RECORDS when clicked 
+
+    **** NO LIST CATAGORY gets displayed if it DOESNOT have any UX LIST under it
+______________________________________________________________
+
+  - LIST ACTIONS: the GEAR ICON on top right 
+
+  - COPY URL: share icon near the gear icon on top right 
+
+  - SHOW FILTER PANEL: FUNNEL ICON top right
+
+  ______________________________________________________
+
+  - CONTEXT MENUS in workspace 
+
+    - MORE OPTIONS MENU: click 3 DOTS on the column header 
+
+    - MORE UI ACTIONS MENU: click on 3 DOTS ON EACH CELL.... it allow you to 
+
+      - filter out 
+      - show matching
+
+    - GRAB ICON: the DOT GRID on the left of each column header.... it allows you to DRAG COLUMN POSITIONS 
+
+  - CONTEXTUAL SIDE PANEL: tool pannel on the RIGHT 
+
+  - AGENT ASSIST: is a GRADUATION HAT icon on the CONTEXTUAL SIDE PANEL (right side panel) of an INCIDENT PAGE in the SERVICE OPERATIONS WORKSPACE 
+
+    - it gives KNOWLEDGE BASE ARTICLES related to the solution for the INCIDENT 
+
+    - click on the article..... click on the top ATTACH BUTTON to attach the article to the INCIDENT CALLER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- EDIT APPLICATION (.. all menu) and MODULE FORM ICONS 
+
+  - EDIT USER ROLES: pencil icon 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- DEPENDENCY VIEW MAP ICONS 
+
+  - ACTIVE INCIDENT: TRIANGLE WARNING ICON 
+
+  - ACTIVE PROBLEMS: SPANNER ICON 
+
+  - AFFECTED CI'S for a task: LEAD CAR BATTERY  
+
+  - MENU OPTIONS: right click on the CI ICON 
+
+  - to view CURRENT RELATIONSHIP: hover over the connecting lines 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- FLOW DESIGNER ICONS in DIAGRAMMING VIEW  
+
+  - VIEW SELECTOR: top right branch button... used to switch to different flow chart views 
+
+  - NODE PROPERTIES: 3 DOTS on each BLOCK in flow.... each BLOCK is known as NODE.... and when you click it.. properties appear on the RIGHT PANEL
+
+  - SEARCH: SEARCH BOX on TOP.... used to search for NODES 
+
+  - DATA PILL PICKER: pencil on data pills on ACTION FIELDS 
+
+  - HELP PANEL: question mark button on top right on top most header 
+
+  - TEST: TEST BUTTON on top to test the flow 
+
+  - ACTIVATE: ACTIVATE BUTTON on top to ACTIVATE the flow 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- visibility buttons in REPORT LIST VIEW in ALL > REPORTS > VIEW/RUN module 
+
+    - MY GROUPS BUTTON: shows reports visible to CURRENT USER only 
+
+  - GROUP BUTTON: shows reports which are visible to GROUP that USER BELONGS 
+
+  - GLOBAL BUTTON: shows reports which are visible to EVERY PROCESS USER (..everyone)
+
+  - ALL BUTTON: shows reports which are PERSONAL, GROUP and GLOBAL 
+
+  - CREATE REPORT BUTTON: to create a new report
+
+_________________________________________________________
+
+
+- REPORT DESIGNER ICONS (ACTIONS and OPTIONS):
+
+  - REPORT INFO: ICON with letter "i" 
+
+  - SHARING MENU: ICON with BOX and ARROW: GIVES following SHARING OPTIONS: 
+
+    1) SHARE (..to set VISIBILITY)
+
+    2) SCHEDULE (..to send report as email on a SCHEDULED TOME)
+
+    3) ADD TO DASHBOARD 
+
+    4) EXPORT TO PDF 
+
+    5) PUBLISH (.. create a URL to display the report)
+
+      ***** by DEFAULT.... PUBLISH OPTION is INVISIBLE..to make it VISIBLE 
+
+        ** set true to sys property glide.report.published_reports.enabled 
+
+  - DELETE REPORT: TRASH BIN ICON
+
+  - RUN REPORT: RUN BUTTON to RUN the REPORT 
+
+    **** running report DON'T SAVE/UPDATE 
+
+  - SAVE REPORT: provides the FOLLOWING SAVING OPTOINS 
+
+    1) UPDATE: OVERWRITES and UPDATES the report and RETURN to REPORT LIST 
+
+    2) INSERT: save DUPLICATE COPY?? of the report and RETURN TO REPORT LIST 
+
+    3) INSERT and STAY: save DUPLICATE COPY of the report, but REMAINS ON THE REPORT 
+
+    4) SAVE AS REPORT SOURCE: allows you to CREATE PRE-FILTERED DATA-SET that can be used for CREATING REPORTS (** requires ROLE: report_admin) 
+
+  - CONDITION BUILDER: is FUNNEL ICON on the MAIN CONTENT FRAME of the REPORT DESIGNER.... it is used to set CONDITIONS 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- BUTTONS and TABS in DASHBOARD LIST (.. all > self-service > dashboards)
+
+  - RECENT TAB: shows RECENT DASHBOARDS 
+
+  - OWNED BY ME: shows dashboards owned by current user  
+
+  - SHARED WITH ME: shows dashboards shared with the current user
+
+  - ALL: shows ALL DASHBOARDS 
+
+  - CREATE A DASHBOARD BUTTON: to create new dashboard 
+
+  - GROUP FILTER (choice field): to group DASHBOARDS 
+
+  - SEARCH FIELD: to search dashboard by name
+_________________________________________________________
+
+- DASHBOARD UI(??) is the GRAPHICAL DASHBOARD page that opens when we OPEN A DASHBOARD from DASHBOARD LIST (ALL > DASHBOARDS)
+
+- ICONS and BUTTONS in DASHBOARD UI 
+
+  - CONFIGURATION ICON: TUNING SWITCH ICON on TOP RIGHT 
+
+    - used to
+    
+      - APPLY LAYOUT to DASHBOARD from APPLY QUICK LAYOUT SECTION 
+
+      - CREATE TABS on DASHBOARD 
+
+      - change BACKGROUND COLOR of DASHBOARD
+
+- DASHBOARD MENU: HAMBURGER ICON on left... it has following OPTIONS 
+
+  - create new dashboard 
+
+  - view DASHBOARD PROPERTIES (..open DASHBOARD RECORDS)
+
+  - DELETE DASHBOARD
+
+  - CREATE FAVOURITE 
+
+  - EXPORT TO PDF 
+
+  - COPY DASHBOARD URL
+
+- SHARING MENU: to set visibility to USERS, GROUPS, ROLES 
+
+  - you can add MESSAGE to the USER/GROUP/ROLES 
+
+  - you can set CAN EDIT/ CAN VIEW option
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- the SIDEBAR DISCUSSION has the FOLLOWIN G OPTIONS when CLICKED 
+
+    - ALL, UNREAD and FAVOURITE TABS: to view ALL DISCUSSION, UNREAD DISCUSSIONS and DISCUSSIONS MARKED as FAVOURITE 
+
+    - SEARCH: MAGNIFIER ICON to search for previous discussion 
+
+    - PIN ICON: to PIN SIDEBAR DISCUSSION to the RIGHT of the SCREEN 
+
+    ** SIDEBAR DISCUSSION is ONLY supported in the FOLLOWING WORKSPACES 
+
+      - CSM CONFIGURABLE WORKSPACE 
+
+      - CSM MANAGER WORKSPACE 
+
+      - VENDOR MANAGEMENT WORKSPACE
+      
+      - HR AGENT WORKSPACE 
+
+      - ITSM MANAGER WORKSPACE 
+
+_____________________________________________________________ 
+
+- DOCKED CHAT WINDOW: is the chat box that opens up at the BOTTOM when a user click on SIDEBAR DISCUSSION NOTIFICATION 
+
+  - ICONS in DOCKED CHAT WINDOW 
+
+    1) USER AVATAR with ONLINE STATUS DOT:
+
+      - online status DOT   
+
+        - GREEN DOT = user is LOGGED IN 
+        - NO DOT = user is NOT LOGGED IN 
+        - ORANGE DOT = USER RECENTLY LOGGED OUT 
+
+    2) TEXT INPUT BOX: to send messages 
+
+    3) QUICK ACTION ICON: THUNDER ICON on bottom left of the chat box.... used to send KNOWLEDGE ARTICLES 
+
+    4) EMOJIS ICON 
+
+    5) ADD ATTACHMENTS: PAPER CLIP ICON... to attach RELATED DOCUMENTS 
+
+    6) SEND MESSAGE ICON 
+
+    7) FAVOURITE ICON: STAR ICON ON TOP.... to mark the SIDEBAR DISCUSSION as FAVOURITE.... this discussion will be listed in FAVOURITE TAB 
+
+    8) INFO ICON: on top... shows ABOUT MENU, PARTICIPANTS MENU and LEAVE DISCUSSION BUTTON 
+
+    9) COLLAPSE ICON: 2 DIAGONAL ARROWS... to COLLAPSE the chat window 
+
+    10) CLOSE: close the chat window 
+
+    ** whenever a SIDEBAR DISCUSSION is started from the workspace.... a CORRESPONDING SIDEBAR DISCUSSION TILE is automatically added to the ACTIVITY STREAM 
+
+    ** you can also ADD ANY MESSAGE FROM THE DOCKED CHAT BOX to the activity stream (..by clicking 3 DOTS on the MESSAGE)... and also EDIT the MESSAGE before posting it to activity stream 
+
+    **** CUSTOMERS with NON-FULFILLER ROLES CANNOT ACCESS RECORD or CONVERSATIONS HAPPENING on SIDEBAR DISCUSSION TILE
+
+
+**** for more info watch link: https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/administer/conversational-interfaces/concept/sidebar-overview.html 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- UI POLICY FORM ICONS AND FIELDS (.. record form > additional actions > ui policy)
+
+  - table field: to specify the record table 
+
+  - short descriptoin 
+
+  - WHEN TO APPLY TAB (... related list tab): to specify conditions to apply the ui policy
+
+    - global (..checkbox): to apply UI POLICY in ALL FORM VIEWS 
+
+    - REVERSE IF TRUE (..checkbox): to reverse actions if CONDITIONS are FALSE 
+
+    - ON LOAD (..checkbox): perform action on loading time and PERFORM IT AGAIN if the CONDITIONS are satisfied
+
+    - INHERIT (..checkbox): to inherit ui policy to EXTENDED TABLES
+
+  - SCRIPT TAB (.... related list): to add SCRIPTS 
+
+    - RUN SCRIPTS (..checkbox): check the box to see CONSOLE to write SCRIPTS 
+
+_____________________________________________________
+
+-  UI POLICY ACTIONS fields and ICONS .... 
+
+  - if you are creating a NEW UI POLICY.... UI POLICY ACTIONS RELATED LIST TAB appears ONLY WHEN you SAVE the UI POLICY FORM 
+
+  - FIELD NAME: to specify field name to set ui policy actions 
+
+  - MANDATORY (..checkbox): to make the field mandatory 
+
+  - VISIBLE (..checkbox): to HIDE/DISPLAY FIELD 
+
+  - READ ONLY (..checkbox): to make the field READ-ONLY or EDITABLE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+
+- BUSINESS RULE FORM icon and fields (..record form > additional actions > configure > business rule )
+
+  - NAME: 
+
+  - TABLE: 
+
+  - active
+
+  - ADVANCED: **** IF CHECKED then 
+
+    - ADVANCED TAB appears in RELATED LIST: helps to set CONDITION and WRITE SCRIPT in the CONSOLE 
+
+    - the following FIELDS appears inside WHEN TO RUN TAB (..related list)
+
+      - WHEN FIELD: options are before/after/async/display 
+
+      - ORDER: 
+
+      - DELETE (..checkbox) 
+
+      - QUERY (..checkbox)
+
+  - RELATED LISTS 
+
+    - WHEN TO RUN TAB 
+
+      - INSERT (..checkbox)
+
+      - UPDATE (..checkbox)
+
+      - GIVE CONDITIONS in FILTER CONDITIONS 
+
+      - GIVE ROLE CONDITIONS 
+
+    - ACTIONS TAB: to set what actions to do in form when the form meets conditions 
+
+      - SET FIELD and FIELD VALUES 
+
+      - CHECK ADD MESSAGE (..checkbox) to add message 
+
+      - CHECK ABORT ACTION (..checkbox) to PREVENT CARRYING OUT ACTIONS

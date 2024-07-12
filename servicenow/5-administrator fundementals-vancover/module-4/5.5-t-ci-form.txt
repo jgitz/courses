@@ -1,0 +1,33 @@
+- CI FORM: is the form used to CREATE A CI ITEM RECORD 
+
+  ** to create a CI RECORD... goto 
+
+    - ALL > CONFIGURATION > CI CLASS MANAGER > select CI LIST TAB > click "i" button and OPEN CI RECORD 
+
+
+- FIELDS and ICONS of a CI RECORD 
+
+  - commonly found fields are 
+
+    - name 
+
+    - description 
+
+    - version etc 
+
+  - ICONS 
+
+    - TOGGLE VIEWS: is a switch to toggle b/w DASHBOARD view and FORM VIEW 
+
+      ** DASHBOARD VIEW opens the RECORD in CI HEALTH DASHBOARD 
+
+    - RELATED ITEMS TOOL BAR: is a tool bar in CI RECORD FORM VIEW.... click on the ICONS BELOW to do the operations using RELATED ITEMS TOOL BAR 
+
+      - MAP ICON: to see DEPENDENCY MAP 
+
+      - + ICON: to ADD CI RELATIONSHIP 
+
+      - GEAR ICON: for RELATIONSHIP VIEW SETTINGS 
+
+      - all the CI ITEMS RELATED to the SUBJECT CI is listed 
+      

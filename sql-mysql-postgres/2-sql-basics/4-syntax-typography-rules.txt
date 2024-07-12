@@ -1,0 +1,16 @@
+- Every statement/command should end with SEMICOLON; 
+
+- KEYWORDS should be written in UPPERCASE 
+
+- if the FIELD NAME is same as the KEYWORD...
+
+      ** in MYSQL: enclose the field name in BACKTICKS ``
+
+          :: SELECT `select` FROM customers
+
+      ** in POSTGRESQL: enclose the field name in DOUBLE QUOTES ""
+
+          :: SELECT "select" FROM customers 
+
+
+- ORDER of clauses  matter.. i.e for example.... SELECT comes first... then FROM... then comes WHERE

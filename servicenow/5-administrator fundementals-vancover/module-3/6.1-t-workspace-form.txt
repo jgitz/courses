@@ -1,0 +1,15 @@
+..... a FORM is displayed DIFFERENTLY in WORKSPACE ENVIRONMENT 
+
+- FORM is located at DETAILS TAB of the workspace environment 
+
+- FORM FIELDS are displayed in the detaails panel 
+
+- SECTIONS are BOLD HEADINGS before a set of FORM FIELDS inside the details tab
+
+- ACTIVITIES are displayed in SEPARATE ACTIVITY STREAM PANEL 
+
+- TEMPLATES: allows to autopopulate field values which are repeating in multiple forms..... in workspace.... templates can be created in 
+
+  - goto DETAILS > TEMPLATE ICON (PAPER ICON on the right panel (CONTEXTUAL SIDE PANEL)) > click + ICON 
+
+  - fill the form 

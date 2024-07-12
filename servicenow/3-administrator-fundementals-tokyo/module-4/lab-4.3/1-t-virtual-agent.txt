@@ -1,0 +1,13 @@
+- VIRTUAL AGENT: is an CONVERSATIONAL PLATFORM which gives information and helps customer to perform common WORK TASK. 
+
+  ** it provides informaiton from KNOWLEDGE BASES, SERVICE CATALOG ETC 
+
+  ** virtual agent uses NLU with over 3 million words
+
+  ** it works on both SERVICE PORTAL and SNOW MOBILE ENVIRONMENTS 
+
+  ** it can also be connected to THIRD PARTY MESSAGING APPLICAITONS like TEAMS and SLACK using specific servicenow ADAPTERS 
+
+  ** it also SUPPORTS FLOW DESIGNER
+
+- LIVE AGENT: funcitionality gives customer to connect with HUMAN AGENT to resolve issues

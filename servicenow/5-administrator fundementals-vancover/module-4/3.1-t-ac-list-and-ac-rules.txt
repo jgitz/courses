@@ -1,0 +1,59 @@
+- ACCESS CONTROL LIST: is a list of ACCESS CONTROL RULES.... you can see the list from the FOLLOWING PATHS 
+
+  - ALL > SYSTEM SECURITY > ACCESS CONTROL 
+
+  ** to view ACCESS CONTROL RULE LIST of a SPECIFIC TABLE.... on FILE NAVIGATOR (..all menu)... type 
+
+    <table name>.config
+
+- PARTS OF ACCESS CONTROL RULE: an access control RULE is created by FILLING the FOLLWING FIELDS in a FORM obtained in path ALL > SYSTEM SECURITY > ACCESS CONTROL > new (.. login as security_admin)
+
+  1) OPERATION: a valid snow operation (create, write etc) which need to be applied to an OBJECT (TABLE, FIELD etc)
+
+  2) OBJECT: is the snow instance OBJECT that is needed to be SECURED using ACCESS CONTROL RULE and APPLY the OPERATION 
+
+    - the object is INPUTTED in the FORM using the NAME FIELD.... the name field has 2 INPUT FIELD
+
+      - FIRST FIELD is used to specify the TABLE 
+
+      - SECOND FIELD is used to specify the FIELD of the TABLE 
+
+      **** NAME FIELDS (first field, second field) COMBINATION will be discussed LATER in the note
+
+    3) PERMISSION: permission required to access the TABLE/FIELD can be given in 3 WAYS 
+
+      1) ROLES 
+      2) CONDITIONAL EXPRESSION 
+      3) SCRIPTS 
+
+_____________________________________________________
+
+** NAME FIELDS (first field, second field) COMBINATION:
+
+  1) <table>.<none/blank>: means WHOLE TABLE is selected to apply the AC RULE 
+
+  2) <table>.<field>: means a FIELD of the table is selected and the ac rule is applied to the field 
+
+    **** the other users would be DENIED ACCESS to the SPECIFC FIELD (**even if a read access is given to other users using NONE RULE) unless another rule is written for the users
+
+  3) <table>.*: means all the FIELDS... EXCEPT any ac rule defined by <table>.<field> is selected to apply the AC RULE 
+
+    ** this method allows us to write LESS NUMBER of AC RULES 
+
+    **** the other users would be DENIED ACCESS to the FIELDS (**even if a read access is given to other users using NONE RULE)  unless another rule is written for the users 
+
+  ** IMPORTANT USE CASE of the COMBINATION 
+
+    1) <table>.<none/blank>: is used to GRANT ACCESS to all ROWS and FIELDS of the TABLE 
+
+    2) <table>.*: is used to DENY ACCESS to ALL OTHER ROLES even to the fields given access through <table>.<none/blank>
+
+    3) <table>.<field>: used to OVERRIDE and GIVE PRECEDENCE to a RULE applied to the SAME FIELD using <table>.* 
+
+  **** BEST PRACTICES 
+
+    - when creating a <table>.<*>.... ALSO CREATE a <table>.<none/blank>
+
+    - to MOSTLY GRANT ACCESS.... use <table>.<none/blank>
+
+    - to MOSTLY DENY ACCESS.... use <table>.*

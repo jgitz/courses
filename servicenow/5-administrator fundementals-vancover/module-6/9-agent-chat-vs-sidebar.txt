@@ -1,0 +1,3 @@
+- AGENT CHAT: is a CHAT BOX in WORKSPACE used for chat b/w END-USER and AGENT 
+
+- SIDEBAR DISCUSSIONS/DOCKED CHAT WINDOW: is used by AGENTS in an instance to COLLABORATE with each other 

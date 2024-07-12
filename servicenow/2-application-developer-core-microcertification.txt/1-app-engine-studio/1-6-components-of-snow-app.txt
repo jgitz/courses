@@ -1,0 +1,27 @@
+... an application developed in snow has the following components 
+
+  1) DATA: in the form of tables 
+
+    ** this is the place in AES where we add TABLES
+
+  2) EXPERIENCE: UI for the users.... snow provides 5 types of UI experiences 
+
+    1) CATALOG ITEM 
+
+    2) RECORD PRODUCER
+
+    3) WORKSPACE 
+
+    4) PORTAL 
+
+    5) MOBILE EXPERIENCE
+
+
+
+    ** this is the place we add UI (FORMS)
+
+  3) LOGIC: business logic and automation 
+
+  4) SECURITY: roles are assigned to users for application access.
+
+    - ROLE NAMES naming standard: LOWER CASE with UNDERSCORES

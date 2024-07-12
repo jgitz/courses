@@ -1,0 +1,124 @@
+.... everything in snow platfom is stored in a RELATIONAL DATABASE  
+
+.... this database includes 
+
+  - tables : is the basic component of a database and a database consists of multiple tables 
+
+  - records (rows of the table): basic component of a table 
+  - fields(columns of the table): individual data component of a record 
+
+..... snow platforms have many inbuild tables such as .... INCIDENT, PROBLEM, CHANGE, CMDB(configuration management DATABASE: records/tables? of every CONFIGURATION ITEMS (hardware, software etc) used in the organisation using the snow platform )
+
+- SYSTEM DICTIONARY: contains all the TABLES and FIELDS used in your snow platform.... to view it 
+
+  - goto: ALL > SYSTEM DEFINITION > DICTIONARY
+
+  ** ?? administratiors can also use the following tools 
+
+    - Tables module: Provides a list of all tables in the database.
+
+    - Tables & Columns module: Provides a list of all existing tables, with columns, column attributes, and indexes.
+
+    - Schema map: Provides a graphical representation of the relationships between tables.
+
+    - Data dictionary tables: Contains additional information that defines database elements.
+
+- SYS_ID: all the RECORDS in tables of SNOW has a UNIQUE 32 CHARACTER LONG ID
+
+- RECORD NUMBERING: to change NUMBERING FORMAT of records... goto 
+
+  ALL > SYSTEM DEFINITION > NUMBER MAINTENANCE
+
+- FIELD TYPE: defines the type of input taken by the field like string, choice etc 
+
+- to see addetional FIELD SETTINGS and ATTRIBUTES of tables... goto 
+
+  ALL > SYSTEM DEFINITION > TABLES & COLUMNS
+
+- FIELD ATTRIBUTES to define field are 
+
+  - FIELD LABEL 
+  - FIELD NAME 
+  - FIELD DATA (VALUE)
+
+- REFERENCE FIELD (MAGNIFYING GLASS/INFO ICON): is a field that take a RECORD FROM ANOTHER RECORD as value 
+
+  ** magnifying glass icon allows you to select record and input into the field 
+
+  ** info icon on a completed record field allows you to view tha record
+
+- TABLE RELATIONSHIPS: define the relationship between 2 or more tables in snow platform.... there are 4 table relationships 
+
+  1) ONE TO MANY: examples 
+  
+    - table with REFERENCE FIELD that takes RECORD from another table as data 
+
+    - GLIDE LIST: is a field that allows to TAKE MULTIPLE RECORDS (from glide list??)from another table as data.... eg: watch list field in incident table 
+
+    - DOCUMENT ID FIELD: allows a user to select ANY RECORD FROM ANY TABLE 
+  
+  2) MANY TO MANY: are table where LINKS to other table is provided in RELATED LINKS section 
+
+    ** ?? it is created using the lists 
+
+      - sys_collections.list 
+      - sys_m2m.list
+
+  3) tables created using DATABASE VIEWS: for generating REPORTS.... sometimes many tables have to be joined.... so a READ ONLY, VIRTUAL TABLE is created using database views functionality.... 
+
+    ALL > SYSTEM DEFINITION > DATABASE VIEWS 
+
+  4) EXTENSIONS: means creating an EXTENDED TABLE.... that is.... CREATING A CHILD TABLE/CLASS from a PARENT TABLE/CLASS.... 
+
+    - the child table INHERITS ALL FIELDS from the PARENT TABLE
+
+    - the child table can CREATE its own UNIQUE TABLE 
+
+    - example of PARENT TABLE/CLASS: TASK TABLE([TASK]), CONFIGURATION ITEM TABLE (CI TABLE)
+
+    - example of CHILD TABLE/CLASS: INCIDENT TABLE, PROBLEM TABLE, CHANGE REQUEST TABLE are child class of TASK TABLE 
+
+- TYPES of basic tableS in snow 
+
+  1) PARENT TABLE: a table from which a numerous CHILD TABLES are extended 
+
+  2) BASE TABLE: is a TABLE which has NO PARENT... i.e a base table is NOT A CHILD TABLE of any table.... eg: TASK TABLE 
+
+  3) CORE TABLE: are BUILT IN TABLE that comes with SNOW PLATFORM.... eg task table, incident table, problem table.... etc 
+
+  4) CUSTOM TABLES: tables created by ADMINS/DEVELOPERS 
+
+    ** a custom table created in SCOPED APPLICATION has prefix x_
+
+    ** a custom table created in GLOBAL APPLICATION has prefix u_
+
+
+
+  ** TASK TABLE is a PARENT TABLE, BASE TABLE, CORE TABLE
+
+  ** NOT ALL TABLES can be EXTENDED to create CHILD TABLES 
+
+  ** reference field of CUSTOM TABLE can take records from CORE TABLES
+
+- SCOPED APPLICATION: are application developed in a scope... such that the app is SANDBOXED and any unwanted change WON'T DESTROY the snow platform 
+
+- GLOBAL APPLICATION: is not sandboxed.... hence any change can AFFECT the snow platform
+
+- SCHEMA MAP: is a GRAPHICAL REPRESENTATION that shows RELATIONSHIP BETWEEN TABLES in snow platform.... to view it.... goto 
+
+  ALL > SYSTEM DEFINITION > TABLES .... select  SHOW SCHEMA MAP
+
+
+- TABLE TERMINOLOGIES: 
+
+  - LIST: whenever you open a table.... you see LIST of records.... you configure LIST VIEW HERE 
+
+    - the hamburger in list is called LIST CONTEXT MENU
+
+  - FORM: whenever you open a RECORD from a table.... it is called a FORM.... 
+  
+    - We fill the record fields inside this FORM 
+
+    - we configure FORM VIEW after opening a record
+
+    - the hamburger in form is called FORM CONTEXT MENU

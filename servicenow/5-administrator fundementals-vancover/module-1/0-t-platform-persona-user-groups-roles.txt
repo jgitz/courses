@@ -1,0 +1,142 @@
+What is servicenow platform? 
+
+- servicenow is a aPAAS (Application Platform as a service)
+
+  - snow platform provides end to end service to businsesses 
+
+  - it is a CONFIGURABLE WEB BASED user interface 
+
+  - it has a FLEXIBLE DATABASE SCHEMA 
+
+  - it use a SINGLE SYSTEM OF RECORD to consolidate an organisation's business processes 
+
+  - it allows SHARING OF DATA b/w APPLICATIONS and DEPARTMENTS 
+
+  - it INTEGRATES WITH OTHER ENTERPRISE SYSTEMS 
+
+  - allows to build CUSTOM APPLICATIONS
+
+- servicenow applications is stored in CLOUD DATACENTER SERVERS.. these applications can be accessed by CLIENTS through their device via internet 
+
+- every data in SNOW is a RECORD which is stored in TABLES
+
+- there are many tables in servicenow to store records 
+
+  - there are some tables that are shared by MANY APPLICATIONS such as: 
+
+    - sys_user
+    - sys_user_group
+    - task
+
+  - there are also table specific to certain applications such as 
+
+    - incident table (itsm application) 
+    - cases table (HR Service Management application)
+
+- there are MANY WAYS to interact with the application... MOST COMMONLY USED ways are 
+
+  - WORKSPACE 
+  - LIST
+  - FORM 
+  - DASHBOARD 
+  - KNOWLEDGE BASE 
+  - SERVICE CATALOG
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- PLATFORM PERSONAS 
+
+
+  - SYSTEM ADMINISTRATOR: 
+
+      - role: admin
+
+      - can access all platform features and application 
+
+      ***** admin has RESTRICTED ACCESS to HR and SERVICE OPERATIONS features
+      ***** admin has RESTRICTED ACCESS to ACCESS CONTROL LIST and MANY of the HIGHER SECURITY SETTINGS 
+
+  - SECURITY ADMIN: 
+
+  - SPECIALIZED ADMINISTRATOR 
+
+    - gives access to manage SPECIFIC FUNCTION or APPLICATIONS 
+
+  - PROCESS USER 
+
+    - role: any role associated to ITIL ACTIVITIES in ITIL WORKFLOW (eg: INCIDENT and CHANGE management)
+
+    - can also include role such as "itil" role and other roles such as approver_user 
+
+  - APPROVERS
+
+    - approvers can accept requests and gives permission to VIEW/MODIFY APPROVER RECORDS 
+
+    - role: approver_user
+
+      ** no other role can be given other than this??
+
+  - REQUESTER 
+
+    ** is NOT A ROLE but can SUBMIT/MANAGE their OWN REQUESTS 
+
+    - requester is also known as ESS (Employee Self Service) users 
+
+    - requester uses SERVICE CATALOG and SELF SERVICE APPLICATIONS  
+
+    - they are NOT assigned roles and can only MANAGE THEIR OWN REQUESTS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- USER: is an individual that has been granted access to your instance 
+
+  ** user has a USER ID and we can SET LOGIN PASSWORD 
+
+  ** users are listed in sys_user table
+
+  ** to add a user... goto ALL > USER ADMINISTRATION > USERS > new 
+
+- GROUP: set of users for a common purpose.... EXAMPLES are given below 
+
+  - SERVICE DESK 
+
+  - KNOWLEDGE BASE AUTHORS 
+
+  - HR ADMINISTRATORS 
+
+  ** to see groups use sys_user_group.list 
+
+  ** to add a group... goto ALL > USER ADMINISTRATION > GROUPS > NEW....click EDIT in group member RELATED LIST to add/remove users
+
+
+- ROLES: are used to ACCESS CONTROL to regulate access to APPLICATIONS, MODULES and to create ACCESS CONTROL LIST 
+
+  ** roles can be given to both USERS and GROUPS 
+
+  ** a role can can consist of many other roles
+
+  ** SELF SERVICE USERS: are users with NO ROLES ASSIGNED.... these users can still view various platform applications and do common actions where permission is NOT REQUIRED 
+
+  ** best practice is to add users to a group and GIVE THE GROUP THE ROLE...  
+
+    ***** in this case you cannot remove the role of the user from the USER RECORD.... to remove the role from a user.... you have to remove him from the GROUP RECORD
+
+
+- USER IMPERSONATION: you can impersonate users in snow platform for testing purposes.... for effective testing create 3 USERS with following ROLES
+
+  1) admin : to do the work
+
+  2) itil: to test as process user 
+
+  3) ess (employee self service): to test the end user 
+
+  4) impersonator: is a role given to user so the USER can IMPERSONATE OTHER USERS for testing 
+
+    ** IMPERSONATION can ONLY BE done by USERS WITH the roles ADMIN or IMPERSONATOR
+
+  **** impersonations are LOGGED in system logs 
+
+    $$ to see impersonation option to users glide.sys.log_impersonation needs to be set to TRUE in sys_property
+
+  
+

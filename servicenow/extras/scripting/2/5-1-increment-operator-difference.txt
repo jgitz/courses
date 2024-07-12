@@ -1,0 +1,9 @@
+var a = 0; 
+
+gs.info(a++) // 0 // ** but VALUE OF A BECOMES 1
+
+gs.info(++a) // 2 
+
+** a++ : is post-incrementing 
+
+** ++a : is pre-incrementing

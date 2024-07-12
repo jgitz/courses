@@ -1,0 +1,77 @@
+- NEXT EXPERIENCE UI FRAMEWORK: is snow's JAVASCRIPT FRAMEWORK to make REUSABLE WEB COMPONENTS
+
+- UI BUILDER: is a web user interface builder in NEXT EXPERIENCE UI FRAMEWORK. 
+
+  - ui builder is used to
+  
+  
+    - build PAGES for 
+
+        - CONFIGURABLE WORKSPACES
+
+        - APP ENGINE STUDIO GENERATED WORKSPACES 
+
+        - APP ENGINE STUDIO GENERATED PORTALS 
+
+        - CUSTOM web experiences made using next experience COMPONENTS 
+
+        - custom web components 
+
+    - configure page LAYOUTS 
+
+    - add components to page 
+
+    - configure and STYLE COMPONENTS which can communicate to each other 
+
+    - set up DATA RESOURCES and use DATA BINDING so components CAN FETCH and display DATA
+
+    - define EVENT HANDLERS for EVENTS 
+
+    - create client STATE PARAMETERS to store DATA at PAGE-LEVEL 
+
+    - add client scripts
+
+    - apply themes
+
+
+** to use UI BUILDER.... go to instance 
+
+  - click all 
+
+  - search NOW EXPERIENCE FRAMEWORK 
+
+  - select UI BUILDER 
+
+  ** to access ui builder in the instance... you need to be either ADMIN or UI_BUILDER_ADMIN
+
+** another way to access ui builder is from the AES 
+
+  - goto aes 
+
+  - select the app
+
+  - select experience tab and click + 
+
+  - select the frontend 
+
+  - fill the required fields and create the experience
+
+  - again goto the experience tab and click edit on your newly created expereence
+
+***** if you DON'T create UI BUILDING from AES.... i.e you directly go into the INSTANCE and select UI BUILDER.... then there is a REQUIREMENT to SET ROLES .... to do that.....
+
+  - goto instance 
+
+  - elevate the role to SECURITY ADMIN 
+
+  - open the ui builder 
+
+  - on the left pane CLICK THE 3 VERTICAL DOTS (page options) 
+
+  -  OPEN SECURITY ACL'S OPTION 
+
+  - add the roles in REQUIRES ROLE option at the BOTTOM
+
+
+** APP ENGINE STUDIO is SEPARATE from UI BUILDER even though BOTH are connected 
+

@@ -1,0 +1,30 @@
+..... snow provides SEVERAL LEVEL of security before a USER can do CRUD OPERATIONS on a TABLE..... the several levels of security are 
+
+  1) USER LOGIN/AUTHENTICATION: secured using 
+
+    - USERS 
+    - GROUPS 
+    - ROLES 
+
+  2) APPLICATION/MODULE SECURITY: secured using ROLES 
+
+  3) DATABASE ACCESS: secured using 
+
+    - GLOBALLY DEFINED SYSTEM PROPERTIES ?? (DENY ACCESS BY DEFAULT)
+
+    - TABLE & FIELD level ACCESS CONTROLS (ACL)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... THERE ARE 3 SECURITY MODULES in ALL MENU to manage security of the instance 
+
+  1) ALL > SYSTEM PROPERTIES > SECURITY 
+
+  2) ALL > SYSTEM SECURITY > ACCESS CONTROL 
+
+    **** only SECURITY_ADMIN can modify ACL RECORDS or CREATE ACL'S
+
+  3) ALL > SYSTEM SECURITY > HIGH SECURITY SETTINGS 
+
+    **** only  SECURITY_ADMIN can modify MANY of the security settings of high security settings module 
+

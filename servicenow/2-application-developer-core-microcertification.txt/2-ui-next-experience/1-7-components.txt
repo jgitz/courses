@@ -1,0 +1,77 @@
+- COMPONENTS: basic building block of a page in UI BUILDER
+
+  - there are over 150 PRE-BUILT BASELINE COMPONENTS in ui builder 
+
+
+- COMPONENTS has 3 parts: 
+
+    1) CONFIG: under this tab, we can add DATA to components in 3 ways 
+
+      a) STATIC DATA BINDING: where we give data related to the component manually 
+
+      b) DYNAMIC DATA BINDING: here we sepecify a dependent data which depends on other data 
+
+      c) SCRIPT: JAVASCRIPT CODES that can populate data values
+
+      
+
+    2) STYLES: use this tab to set styling to the components 
+
+      - we can add css codes for styling 
+
+
+    3) EVENTS: you can add event handlers to add actions related to that event
+
+- COMPONENT PRESETS and CONTROLLER: component presets are PRE CONFIGURED COMPONENTS with some DATA RESOURCE attached to it.... CONTROLLER is a DATA RESOURCE which FETCHES data required for the component
+
+- VIEWPORT COMPONENT: is a component that allows us to show content of another page inside a component.
+
+  - viewports to can be added in 3 ways 
+
+    1) make entire PAGE a viewport 
+
+    2) make a separate TAB and assign viewport component to it 
+
+    3) make a viewport inside the SIDEBAR
+
+- MODAL COMPONENT: is any POP UP WINDOWS in your page.... below are different types of MODAL COMPONENTS 
+
+  i) ALERT: to show alerts 
+
+  ii) CONFIRM: window that asks you something 
+
+  iii) CONFIRM and DELETE: for eg a message window to confirm delete 
+
+  iv) CUSTOM MODAL: modal windows with custom layout and custom css styles 
+
+  v) I-FRAME: to bring content into a model content from EXISTING I-FRAME content 
+
+  vi) MODAL VIEWPORT: to pass content into a viewport in a model using EVENT and scripting
+
+- REPEATER COMPONENT: is a component that allows you to REPEAT a SAME COMPONENT with different data from datasource such as ARRAY.
+
+  - if the data is in array... we can aceess its PROPERTIES?? using the script 
+
+    @item.value.{property_name}
+
+- CUSTOM COMPONENT: we can create custom componentsusing JS, NPM SERVICENOW CLI 
+
+- SERVICENOW CLI: is a JS based CLI that enables to develop custom components in your local environment an then DEPLOY to the INSTANCE to use it inside the UI BUILDER
+
+  ** SERVICENOW CLI is available in SERVICENOW STORE 
+
+- UI-COMPONENT EXTENSION: is an extension in SERVICENOW CLI to develop CUSTOM COMPONENTS.... it allows you to 
+
+  - create PROJECT SCAFFOLDING files to develop the custom components 
+
+  - starts a local development serve to TEST YOUR component 
+
+  - build COMPONENT PROJECT and DEPLOY it to snow INSTANCE 
+
+- DECLARATIVE ACTION COMPONENTS: are FORM BUTTONS that'll FIRE CUSTOM EVENTS...
+
+  **** DECLARATIVE ACTIONS are CREATED and CONFIGURED OUTSIDE the UI BUILDER.....
+
+  ** you can access VARIOUS BASELINE DECLARATIVE ACTIONS AT 
+
+    now experience > actions and events > ux form actions

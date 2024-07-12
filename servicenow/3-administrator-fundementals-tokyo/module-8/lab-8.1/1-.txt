@@ -1,0 +1,80 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to set UI POLICY and UI ACTION in a form (UI POLICY refers to TRIGGER CONDITIONS.... UI ACTION refers to CHANGE in FIELD VALUE when trigger conditions are met)
+
+(USE CASE: to set UI PROPERTIES like VISIBILITY OF A FIELD when trigger conditions are met)
+
+
+
+  - open the table
+
+  - open the form 
+
+  - to set UI POLICY
+
+    - click HAMBURGER > CONFIGURE > UI POLICIES
+
+      - click new
+
+      - add SHORT DESCRIPTION FIELD 
+
+      - goto WHEN TO APPLY TAB.... feed in conditions
+
+      - check ONLOAD FIELD 
+
+      - check REVERSE IF FALSE 
+
+      - save
+
+    ** this record is saved at ALL > SYSTEM UI > UI POLICIES
+
+  - to set UI ACTION 
+
+    - scroll down to UI ACTIONS TAB
+
+    - click NEW 
+
+      - select field name from drop down 
+
+      - set mandataory field: leave alone
+
+      ** most commonly used is to toggle VISIBILITY from LEAVE ALONE to TRUE
+
+      - submit
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to configure BUSINESS RULE 
+
+(USE CASE: to set a field value or display alert message when trigger conditions are met)
+
+  - open table 
+
+  - open click new 
+
+  - click HAMBURGER > CONFIGURE > BUSINESS RULE
+
+  - click new 
+
+    - name field: <>
+
+    - table: <specify table>
+
+    - on WHEN TO RUN TAB.... set trigger CONDITIONS 
+
+      - check INSERT 
+      
+      - check UPDATE
+
+    - on ACTIONS TAB
+
+      - you can set field values 
+
+      - check ADD MESSAGE and write alert message in text box to display message
+
+    - submit 
+
+    
+
+    
+

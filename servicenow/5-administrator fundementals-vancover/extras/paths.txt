@@ -1,0 +1,597 @@
+- to see user records
+
+   ALL > SYSTEM SECURITY > USERS and GROUPS > USERS 
+
+- to see group records 
+
+  ALL > SYSTEM SECURITY > USERS and GROUPS > GROUPS
+
+- to see ROLES 
+
+   ALL > SYSTEM SECUTITY > USERS and GROUPS > ROLES 
+
+- ALL > SERVICE DESK >  MY GROUPS WORKS.... includes any WORK assigned to a group the user is a member of.... BUT the WORK have NOT BEEN ASSIGNED to a specific user person.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- to make HR CASES 
+
+   - ALL > HR CASE MANAGEMENT > ALL HR CASES > ALL 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open SERVICE OPERATIONS WORKSPACE by a user to WORK on INCIDENTS and do other operations 
+
+   - ALL > WORKSPACE EXPERIENCE > SERVICE OPERATIONS WORKSPACE 
+
+      ** ANOTHER METHOD: on top click on WORKSPACES TAB.... click SERVICE OPERATIONS WORKSPACE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open EMPLOYEE CENTER PORTAL for a CALLER USER to see status of REQUEST/INCIDENT made for him 
+
+   - ALL > SELF SERVICE > EMPLOYEE CENTER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open application manager in the instance.... use either of the 2 below given paths: 
+
+   1) ALL > SYSTEM APPLICATIONS > ALL AVAILABLE APPLICATIONS > ALL 
+
+   2) ALL > SYSTEM DEFINITION > PLUGINS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to change the BANNER IMAGE and BANNER TEXT in the instance 
+
+   ALL > SYSTEM PROPERTIES > MY COMPANY
+
+- there are many companies associated with your instance... to view all COMPANIES 
+
+   ALL > USER ADMINISTRATION > COMPANIES 
+
+- SYSTEM PROPERTIES... is used to change BROWSER TITLE, CONTEXT PILL TITLE, TIMEZONE, DATE FORMAT, BANNER COLORS etc... the path to open SYSTEM PROPERTIES 
+
+   - ALL > SYSTEM PROPERTIES > SYSTEM
+
+   ** or goto ALL > SYSTEM PROPERTIES > BASIC CONFIGURATION UI 16 
+      ** in BASIC CONFIGURATION UI 16 MODULE.... we can also change BANNER IMAGE and PAGE HEADER CAPTION (**** same as BANNER TEXT)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open APPLICATION MANAGER (to install, update and manage APPLICATIONS and PLUGINS of your instance)
+
+   - ALL > SYSTEM APPLICATIONS > ALL AVAILABLE APPLICATIONS > ALL
+
+   - ALL > SYSTEM DEFINITION > PLUGINS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see all the companies associated with your business (like subsidiaries, customer companies, vendors.. etc).... we need to open COMPANY LIST 
+
+   - ALL > USER ADMINISTRATION > COMPANIES 
+
+- to create NEW USER 
+
+   - ALL > USER ADMINISTRATION > USERS > NEW
+
+   ** or use ALL > SYSTEM SECURITY > USERS AND GROUPS > USERS ... click new 
+
+- to create NEW GROUP 
+
+   - ALL > USER ADMINISTRATION > GROUPS > NEW
+
+   ** or use ALL > SYSTEM SECURITY > USERS AND GROUPS > GROUPS ... click new 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- to change list layout: ANY LIST > COLUMN OPTIONS MENU (3 dots) > CONFIGURE > LIST LAYOUT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create APPLICATION in ALL MENU 
+
+   - ALL > SYSTEM DEFINITION > APPLICATION MENUS 
+
+- to create modules in ALL MENU under an application 
+
+   - ALL > SYSTEM DEFINITION > MODULES 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view EVERY FIELDS in of all tables of your instance.... goto 
+
+  - ALL > SYSTEM DEFINITION > DICTIONARY (sys_dictionary.list)
+
+    ** lists all COLUMNS/FIELDS corresponding to the table of which it belongs 
+
+- to CREATE/REVIEW new table and configure existing tables.... goto 
+
+  - ALL > SYSTEM DEFINITION > TABLES (sys_db_object.list)
+
+- to view FIELD SETTINGS and FIELD ATTRIBUTES of tables.... goto 
+
+  - ALL > SYSTEM DEFINITION > TABLES & COLUMNS
+
+  ** it can be also used  to CREATE TABLE or CREATE APPLICATION or BROWSE CUSTOM APPLICATIONS (not installed apps from store) of your instance
+
+- to VIEW ALL FIELD LABELS in the instance (LANGUAGE FILE)
+
+   - ALL > SYSTEM DEFINITION > LANGUAGE FILE (sys_documentation.list)
+
+- TO CHANGE the RECORD NUMBER FORMAT of a table... goto
+
+   - ALL > SYSTEM DEFINITION > NUMBER MAINTENANCE
+
+- to view DATABASE VIEWS (virtual read only tables made by joining multiple tables )
+
+   - ALL > SYSTEM DEFINITION > DATABASE VIEWS 
+
+- to view SCHEMA MAP of a TABLE... 
+
+   - ALL > SYSTEM DEFINITION > TABLES (sys_db_object) 
+
+   - on RELATED LINKS SECTION....click SHOW SCHEMA MAP 
+
+- to view ACCESS CONTROL RULES of a table... 
+
+   - do <TABLE NAME>.config (..access controls of the table)
+
+   - click on ACCESS CONTROLS TAB
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to set form layout in classic form 
+
+   - FORM > FORM CONTEXT MENU > CONFIGURE > FORM LAYOUT 
+
+- to set form layout in FORM DESIGN (STUDIO)
+
+   - FORM > FORM CONTEXT MENU > CONFIGURE > FORM DESIGN 
+
+- to set RELATED LIST in classic form 
+
+   - FORM > FORM CONTEXT MENU > CONFIGURE > RELATED LISTS 
+
+- to set form TEMPLATE on classic form 
+
+   - FORM > MORE OPTION (3 DOTS) > TOGGLE TEMPLATES 
+
+- to set from template on WORKSPACE FORM 
+
+   - RECORD > DETAILS TAB > CONTEXTUAL SIDE PANEL (right side panel) > TEMPLATE ICON (PAPER ICON) 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see all CHOICES available for choice field in the instance 
+
+   - ALL > SYSTEM DEFINITION > CHOICE LISTS 
+
+- to see if a CHOICE is a DEPENDENCY FIELD 
+
+   - right click on CHOICE FIELD LABEL > CONFIGURE CHOICES > see if there is a DEPENDENT FIELD 
+
+- to add a NEW CHOICE to an EXISTING CHOICE FIELD 
+
+   - right click on CHOICE LABEL > SHOW CHOICE LIST > NEW > fill form and SUBMIT 
+
+   ** another simple method... right click on CHOICE LABEL > select ENTER NEW ITEM OPTION 
+
+- to DELETE a CHOICE  from a choice field 
+
+   - right click on CHOICE FIELD > CONFIGURE DICTIONARY > delete choice from CHOICE TAB in RELATED LIST 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- paths of THREE SECURITY MODULES in snow instance 
+
+   1) ALL > SYSTEM PROPERTIES > SECURITY 
+
+   2) ALL > SYSTEM SECURITY > ACCESS CONTROL 
+
+   3) ALL > SYSTEM SECURITY > HIGH SECURITY SETTINGS 
+
+- to view ACCESS CONTROL LIST of a TABLE.... in FILE NAVIGATOR (..all menu).. type 
+
+   <table name>.config
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create a NEW ROLE or ACCESS ROLE RECORDS.... 
+
+   - ALL > SYSTEM SECURITY > USERS AND GROUPS > ROLES 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to LOAD DATA (..as well as for incremental loading of dat )to IMPORT SET TABLE 
+
+   - ALL > SYSTEM IMPORT SETS > LOAD DATA 
+
+- to see the IMPORT SET TABLE 
+
+   - ALL > SYSTEM IMPORT SETS > ADMINISTRATION?? 
+
+   ** or ALL > SYSTEM IMPORT SETS > IMPORT SET TABLE 
+
+      ** click on the TABLE NAME  
+
+- to create a TRANSFORM MAP (.. to link import set table to target table)
+
+   - ALL > SYSTEM IMPORT SETS > CREATE TRANSFORM MAP
+
+   ** COPY EMPTY FIELD option is applied here 
+
+   ** has the following RELATED LINKS 
+
+      - AUTO MAP MATCHING FIELDS 
+
+      - MAPPING ASSIST 
+
+      - TRANSFORM 
+
+   ** has the following RELATED LIST TAB 
+
+      - FIELD TAB: to set COALESCE FIELD
+
+- to view existing TRANSFORM MAP (.. mainly to set COALSCE FIELD)
+
+   - ALL > SYSTEM IMPORT SET > ADMINISTRATION > TRANSFORM MAPS 
+
+- to CLEAN UP IMPORT SETS 
+
+   - ALL > SYSTEM IMPORT SETS > IMPORT SET TABLES > CLEAN UP 
+
+      ** options 
+
+         - DELETE RELATED TRANSFORM MAP (to delete the TRANSFORM MAP)
+
+         - DELETE DATA ONLY (..only deletes the data and PRESERVE TABLE STRUCTURE)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open CMDB WORKSPACE.... goto 
+
+   - ALL > CMDB WORKSPACE > CMDB WORKSPACE 
+
+- to open CMDB DATA MANAGER to manage CMDB POLICIES 
+
+   - ALL > CMDB WORKSPACE > CMDB WORKSPACE 
+
+   - on top.... goto MANAGEMENT TAB 
+
+   - on right pane.... click CMDB DATA MANAGER
+
+- 2 WAYS to get DEPENDENCY VIEWS MAP of a CI 
+
+   1) ALL > DEPENDENCY VIEWS > VIEW MAP
+
+      - search for your CI in the search bar and click it 
+
+   2) goto cmdb table (cmdb.list) or cmdb_ci table 
+
+      - open the ci record
+
+      - on MIDDLE RELATED ITEMS TOOLBAR...ON RIGHT.... click on SHARE/TREE ICON to view dependency views map of the ci
+
+- to open CI CLASS MANAGER 
+
+   - ALL > CONFIGURATION > CI CLASS MANAGER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view all KNOWLEDGE BASES HOMEPAGE (**NOT KB RECORD LIST)
+
+   - ALL > SELF SERVICE > KNOWLEDGE
+
+- to open KNOWLEDGE MANAGEMENT GUIDED SETUP 
+
+   - ALL > KNOWLEDGE > ADMINISTRATION > GUIDED SETUP 
+
+- to see all the KNOWLEDGE BASES in your instance 
+
+   - ALL > KNOWLEDGE > ADMINISTRATION > KNOWLEDGE BASES
+
+- to create a USER CRITERIA RECORD 
+
+   - ALL > KNOWLEDGE > ADMINISTRATION > USER CRITERIA 
+
+- to IMPORT WORD FILE 
+
+   - ALL > KNOWLEDGE > ARTICLES > IMPORT ARTICLES 
+
+   ***** if the PUBLIC CHECKBOX is absent in IMPORT ARTICLE RECORD.... configure KNOWLEGE PROPERTIES by going to path 
+
+    - ALL > KNOWLEDGE > ADMINISTRATION > PROPERTIES 
+
+    - activate SHOW PUBLIC CHECK BOX ON THE KNOWLEDGE ARTICLE IMPORT POP-UP 
+
+- to add KNOWLEDGE ARTICLES to NOW MOBILE APP 
+
+   - goto ALL > SYSTEM MOBILE > NOW MOBILE APP > KNOWLEDGE BASES 
+
+- KNOWLEDGE ARTICLES LIST CAN BE SEEN  by going to 
+
+   - ALL > KNOWLEDGE > ARTICLES > ALL 
+
+   ** replace ALL with RETIRED/UNPUBLISHED/PUBLISHED/RETIRED to see respective articles
+
+- NEW KNOWLEDGE ARTICLE can be created by going to 
+
+   - ALL > KNOWLEDGE > ARTICLES > CREATE NEW
+
+- to approve PUBLISH/RETIRE request of an ARTICLE by a KNOWLEDGE MANAGER (..approver_user/knowledge_manager)... you can use TWO METHODS 
+
+   1) goto ALL > SELF SERVICE > MY APPROVALS 
+
+   2) goto ALL > SERVICE DESK > MY APPROVALS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view SERVICE CATALOG HOMEPAGE (****NOT RECORDS): 
+
+  - ALL > SELF SERVICE > SERVICE CATALOG
+
+- to view all CATALOG ITEM ORDER REQUESTS (#REQ)
+
+  - ALL > SELF SERVICE > MY REQUESTS
+
+- to view all REQUESTED ITEM RECORDS (#RITM)
+
+  - ALL > SELF SERVICE > REQUESTED ITEMS
+
+____________________________________________________
+
+- to view ALL CATALOG RECORDS in your instance
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATALOGS
+
+- to view all CATAGORY RECORDS of your SC 
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATAGORIES
+
+- to view all CATALOG ITEM RECORDS of your SC 
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS 
+
+- to view all ORDER GUIDES 
+
+   - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > ORDER GUIDES
+
+_________________________________________________
+
+- to view all CATALOG VARIABLES of your sc 
+
+   - ALL > SERVICE CATALOG > CATALOG VARIABLES > ALL VARIABLES 
+
+- to view all VARIABLE SETS of your sc 
+
+   - ALL > SERVICE CATALOG > CATALOG VARIABLES > VARIABLE SETS
+
+_________________________________________________________
+
+- to open CATALOG BUILDER 
+
+   - ALL > SERVICE CATALOG > CATALOG BUILDER 
+
+_________________________________________________________
+
+- to add USER CRITERIA for a CATALOG ITEM 
+
+   - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > USER CRITERIA 
+
+   **** USER CRITERIA is APPLIED to CATALOG ITEMS and NOT SERVICE CATALOG
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open FLOW DESIGNER 
+
+   - ALL > PROCESS AUTOMATION > FLOW DESIGNER 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open PAD (PROCESS AUTOMATION DESIGNER)
+
+   - ALL > PROCESS AUTOMATION > PROCESS AUTOMATION DESIGNER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to VIEW reports or CREATE NEW reports....
+
+   - ALL > REPORTS > VIEW/RUN 
+
+   ** you can ALSO generate reports from a TABLE FIELD using COLUMN CONTEXT MENU in LIST VIEW 
+
+- to get a guided experience to create report....
+
+   - ALL > REPORTS > GETTING STARTED 
+
+- to open REPORT DESIGNER to make new reports 
+
+   - ALL > REPORTS > CREATE NEW 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see all tags created by user and edit tag properties such as color, name, icon etc 
+
+   - ALL > SELF-SERVICE > MY TAGS 
+
+- to see all DOCUMENTS with tags 
+
+   - ALL > SELF-SERVICE > MY TAGGED DOCUMENTS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see MAILS SEND from the INSTANCE 
+
+   - ALL > SYSTEM MAILBOXES > OUTBOUND > OUTBOX
+
+   ** to PREVIEW an EMAIL content of RECORDS in OUTBOX 
+      - RIGHT CLICK on timestamp
+      - select PREVIEW EMAIL
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to VIEW DASHBOARDS or CREATE NEW DASHBOARDS 
+
+   - ALL > SELF SERVICE > DASHBOARDS 
+
+- to change DASHBOARD TYPE (**responsive/non-responsive) and OTHER PROPERTIES 
+
+   - ALL > SYSTEM PROPERTIES > DASHBOARD PROPERTIES
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to use PERFORMANCE ANALYTICS 
+
+   - ALL > PERFORMANCE ANALYTICS 
+
+   ** this has several MODULES like DASHBOARD, WIDGETS etc that we can use
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to make EMAIL LAYOUT 
+
+   - ALL > SYSTEM POLICY > EMAIL > LAYOUTS 
+
+- to make EMAIL TEMPLATE 
+
+   - ALL > SYSTEM NOTIFICATION > EMAIL > TEMPLATES 
+
+   ** you apply EMAIL LAYOUT 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to manage NOTIFICATION CHANNELS and SUBSCRIPTIONS.... goto 
+
+   - USER MENU (AVTAR) > PREFERENCES > NOTIFICATIONS > CORE UI
+
+   ** or use PATH ALL > SELF SERVICE > MY NOTIFICATION PREFERENCES 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+**** you can CONFIGURE SIDEBAR/VIRTUAL AGENT/ AGENT CHAT / SIDEBAR settings from 
+
+  - ALL > CONVERSATIONAL INTERFACES > SETTINGS > GENERAL/VIRTUAL AGENT/AGENT CHAT/ SIDEBAR 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- to TURN ON SAVE BUTTON on form... goto..
+
+   - ALL > SYSTEM PROPERTIES > UI PROPERTIES > show save, insert and insert and stay buttons on forms 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- to create UI POLICY on a FORM RECORD 
+
+   - RECORD FORM > ADDITIONAL ACTION > CONFIGURE > UI POLICY > select NEW in UI POLICIES LIST 
+
+   ** or goto ALL > SYSTEM UI > UI POLICIES > new
+
+___________________________________________________________ 
+
+- UI POLICY ACTIONS: once a UI POLICY is SAVED... UI POLICY ACTIONS determines WHAT HAPPENS?? ON THE FORM??
+
+  **** UI POLICY ACTIONS are also given inside UI POLICY FORM.... but the UI POLICY ACTIONS RELATED LISTS TAB APPEARS only when you SAVE NEW UI POLICY FORM 
+
+  **** in REALITY... UI POLICY is USED TO set CONDITIONS (..in when to apply tab) to TRIGGER UI POLICY ACTIONS.... the MANDATORY, HIDDEN, READONLY FIELDS are set in UI POLICY ACTIONS (..ui policy action tab in ui policy form)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- to view all UPDATE SET LIST 
+
+   - ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SETS 
+
+   ** also can be done using APPLICATION SCOPE ICON > click UPDATE SET SECTION > click OPEN LIST icon 
+
+- to OPEN NEW UPDATE SET 
+
+   - ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SETS > NEW 
+
+   ** also can be done using APPLICATION SCOPE ICON > click UPDATE SET SECTION > + ICON 
+
+- to OPEN CURRENT UPDATE SET RECORD 
+
+   - APPLICATION SCOPE ICON > click update set section > click OPEN RECORD icon (..paper icon)
+
+____________________________________________________
+
+- to RETRIEVE UPDATE set from an XML FILE 
+
+   - ALL > SYSTEM UPDATE SETS > RETRIEVED UPDATE SET > NEW 
+
+      ** upload XML FILE 
+
+      - .. PREVIEW and COMMIT 
+
+_________________________________________________ 
+
+- to set REMOTE CONNECTION to RETRIEVE UPDATE SET FROM  remote instance 
+
+   - ALL > SYSTEM UPDATE SETS > UPDATE SOURCES 
+
+    - fill the form with remote instance credentials 
+
+    - test conection 
+
+    - save
+
+    - CLICK retrieve update set
+
+    - select update set 
+
+    - click COMMIT UPDATE SETT 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to see PERFORMANCE DASHBOARD 
+
+- ALL > PERFORMANCE > DASHBOARDS 
+
+   - click ALL TAB 
+
+   - serach for dashboard named "SERVICENOW PERFORMANCE"
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... STATS TOOL PATH 
+
+   - to see SLOW QUERIES (sys_query_pattern)
+
+      - ALL > SYSTEM DIAGNOSTICS > STATS > SLOW QUERIES 
+
+   - to see SLOW SCRIPTS (sys_script_pattern)
+
+      - ALL > SYSTEM DIAGNOSTICS > STATS > SLOW SCRIPTS
+
+   - to see SLOW TRANSACTIONS (sys_transaction_pattern)
+
+      - ALL > SYSTEM DIAGNOSTICS > STATS > SLOW TRANSACTIONS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to VERIFY if an UPGRADE IS COMPLETE.... goto 
+
+    - ALL > SYSTEM DIAGNOSTICS > UPGRADE LOG 
+
+        ** look for record with MESSAGE: "Notifying HI that upgrade has been completed"
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see CLASS MANAGER.... goto 
+
+  - ALL > CONFIGURATION > CI CLASS MANAGER 
+
+- you can CREATE A NEW RELATIONSHIP RULE FROM.... 
+
+   - ALL > CONFIGURATION > RELATIONSHIPS > SUGGESTED RELATIONSHIPS 
+
+- to SELECT a CI RECORD  
+
+    - ALL > CONFIGURATION > CI CLASS MANAGER > select CI LIST TAB > click "i" button and OPEN CI RECORD 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to find CSDM APPLICATION 
+
+   - ALL > CSDM 

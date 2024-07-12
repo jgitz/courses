@@ -1,0 +1,52 @@
+- SECURITY ADMIN: is a HIGHER LEVEL role who has the PERMISSION to do operations like 
+
+  - MODIFY ACL'S in ALL > SYSTEM SECURITY > ACCESS CONTROL 
+
+  - MODIFY settings in ALL > SYSTEM SECURITY > HIGH SECURITY SETTINGS 
+
+
+  ** inorder for a USER to get OPTION TO ELEVATE to SECURITY ADMIN.... he needs BOTH of the FOLLOWING ROLES 
+
+    - SECURITY ADMIN ROLE (security_admin)
+
+
+  **** BUT an and ADMIN USER (i.e user with ROLE ADMIN) or BASE SYSTEM ADMINISTRATOR CANNOT see the SECURITY ADMIN ROLE (security_admin) in the ROLES LIST..... 
+
+    ** to see the security_admin role in the roles list.... you need to first
+
+      - first LOGIN as BASE SYSTEM ADMINISTRATOR 
+
+      - ELEVATE to SECURITY ADMIN 
+
+      ** now you can see security_admin role in roles list 
+
+      ** now you can ASSIGN SECURITY ADMIN ROLE (security_admin) to any USER who has ADMIN ROLE (admin)
+
+**** NOT EVEN users with ADMIN ROLE can IMPERSONATE as SECURITY ADMIN 
+
+**** ELEVATE ROLE ICON for a USER with SECURITY ADMIN ROLE WILL NOT GET DISPLAYED when we IMPERSONATE as the USER.... but the ELEVATE ROLE ICON WILL GET DISPLAYED when the USER LOG IN with his USER ID and PASSWORD 
+
+**** a USER with SECURITY_ADMIN role CANNOT DO ADMIN ROLE functions like CREATION of USERS, GROUPS, ROLES....
+
+**** a USER with SECURITY_ADMIN ROLE can ONLY CREATE ACL if he is given ADMIN ROLE along with SECURITY ADMIN ROLE....
+
+**** only A USER??/BASE-SYSTEM-ADMINISTRATOR ELEVATED as SECURITY_ADMIN can REMOVE SECURITY_ADMIN ROLE from a USER with SECURITY_ADMIN ROLE
+
+
+**** IMPERSONATE USER, LOG OUT , SESSION TIMEOUT etc will LOG YOU OUT from the SECURITY ADMIN ROLE if he was working as a security admin 
+
+**** NOT ALL ADMINS should be given SECURITY ADMIN ROLE 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... for BASE SYSTEM ADMINISTRATOR to ELEVATE to SECURITY ADMIN 
+
+- login as BASE SYSTEM ADMINISTRATOR 
+
+- click on USER MENU (top right dp)
+
+- click ELEVATE ROLE 
+
+- CHECK security_admin 
+
+- click UPDATE
+

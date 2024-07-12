@@ -1,0 +1,27 @@
+..... whenever a caller calls and informs issue to an agent.... the agent creates an incident for the issue.... 
+
+.... once the resolution for the incident is made by the agent using service operations workspace.... 
+
+....A REQUEST is generated for the CALLER with all the details and resolution for the issue....
+
+.... a caller can see his REQUEST in the EMPLOYEE CENTER PORTAL 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+....to open employee center portal 
+
+- login as a caller user 
+
+- goto ALL > SELF SERVICE > EMPLOYEE CENTER 
+
+- in the employee center portal 
+
+  - on top right.... click MY REQUESTS .... to open all the requests with the details of the incident made for his/her calls 
+
+    - you can see the STATE of the incident which is handled by the agents.... eg work in progress, resolved etc
+
+  - click on the target incident
+
+  - on ACTIVITY TAB.... you can see the KB ARTICLE LINK if a RESOLUTION is given by the agent 
+
+    - you can open the kb article and mark if the YES if the article is found as HELPFUL 

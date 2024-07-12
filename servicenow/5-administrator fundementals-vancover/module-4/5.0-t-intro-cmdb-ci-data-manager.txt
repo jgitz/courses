@@ -1,0 +1,78 @@
+- CONFIGURATION ITEMS: any TANGIBLE and INTANGIBLE devices or applications stored in cmdb... eg: computers, firewall, email services, services 
+
+  ** ANORTHER DEFINITION: CI is ANY COMPONENT that needs to be MANAGED to DELIVER SERVICES.
+
+- CMDB (Configuration Management DataBAse): is a series of TABLES and FIELDS that contain ALL of CONFIGURATION ITEM (CI) ATTRIBUTES and RELATIONSHIHP 
+
+  - there is a HEIRARCHY for all the TABLES in the CMDB 
+
+  - CMDB provide LOGIC MODEL of all the CI'S existing in your company 
+
+  - CMDB NOT ONLY tracks CI's in your s/m.. BUT ALSO RELATIONSHIPS b/w the CI'S 
+
+  ** CMDB DATA MANAGER: AS CI'S in CMDB increases... it IMPACT the PERFORMANCE and HEALTH of cmdb.... so CMDB DATA MANAGER TOOL is used to 
+
+    - create 
+    - publish
+    - manage CI POLICIES 
+
+    ** this enables to maintain CMDB in an EFFICIENT OPERATIONAL STATE 
+
+    ** you can access it on CMDB WORKSPACE (.. MANAGEMENT TAB)
+
+    ** CMDB DATA MANAGER definition from the documentation 
+
+      - CMDB Data Manager is a policy-driven framework for bulk management of CI life cycle operations such as deletion, archival, and attestation. The CMDB Data Manager is a comprehensive and integrated solution, which scales to large CMDBs and copes with rapid changes in a cloud-based world.....
+
+  ** snow instance provide an ALL MENU APPLICATION named CONFIGURATION (ALL > CONFIGURATION) which provide MODULES to implement CORE FUNCTIONALITY of cmdb such as 
+
+    - modules for HARDWARE 
+    - modules for Configuration 
+
+- KEY CMDB TABLES 
+  
+  1) cmdb (BASE CONFIGURATION ITEM) : contain CI DATA
+
+    - ?? used to store NON IT componenst in the s/m
+
+  2) cmdb_ci (CONFIGURATION ITEM) : also contain CI DATA 
+
+    - ?? extended from cmdb table 
+
+    - ?? used to store IT RELATED COMPONENTS of the s/m
+
+    - cmdb_ci has many CHILD TABLES eg: cmdb_ci_hardware
+
+  3) cmdb_rel_ci (CI RELATIONSHIP) : contain CI RELATIONSHIP DATA 
+
+    - is a BASE TABLE with NO PARENT TABLE 
+
+    - ?? used to store additional COMPONENTS and DETAILS associated with a CI... eg 
+
+      - hardisk of a server 
+      - serial number 
+      - RULES that control behavior of aCI (eg routing rules)
+
+
+- ROLES REQUIRED to access CMDB TABLES 
+
+  - cmdb_read
+  - asset
+  - itil 
+  - itil_admin  
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to access CMDB DATA MANAGER .. you can use TWO METHODS 
+
+
+  1) ALL > CONFIGURATION > CMDB DATA MANAGER 
+
+  2) .... you can access data manager from the cmdb workspace 
+
+    - goto ALL > CMDB WORKSPACE > CMDB WORKSPACE 
+
+    - on TOP of LANDING PAGE....click MANAGEMENT TAB
+
+    - on the RIGHT PANE... click CMDB DATA MANAGER

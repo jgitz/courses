@@ -1,0 +1,9 @@
+... if, else and else if in snow scripting is SAME as JS 
+
+if () {
+
+} else if () {
+
+} else {
+  
+}

@@ -1,0 +1,90 @@
+- goal: CREATE INCIDENT using CLASSICAL LISTS AND FORMS  
+
+** we use INCIDENT MANAGEMENT application of ITSM SUITE 
+
+  * ITSM APPLICATION SUITE consists of following APPLICATIONS 
+
+    - INCIDENT MANAGEMENT 
+
+    - PROBLEM MANAGEMENT 
+    
+    - CHANGE MANAGEMENT 
+
+    - SERVICE CATALOG 
+
+    ** you can access these in the ALL MENU 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to CREATE NEW INCIDENT: 
+
+    - all > INCIDENT > CREATE NEW 
+
+    - fill the form 
+
+      ** fill the mandatory CALLER FIELD (it chooses USER from USER TABLE). caller is the employee who faces problem.
+
+      ** fill short description and description field
+
+      ** fill service field 
+
+      ** fill service offering field 
+
+      ** fill configuration item 
+
+      ** fill channel 
+
+      ** fill state 
+
+      ** fill impact 
+
+      ** fill urgency 
+
+      ** fill assignment group (can be left as blank)
+
+      ** fill assigned to (can be left as blank )
+
+    - save 
+
+    - again on the form 
+
+      - fill the work notes (internal notes related to the incident)
+
+      - fill the additional comments (seen by the CUSTOMER/EMPLOYEE who has given this INCIDENT)
+
+    - click update
+
+** SAVE and POST buttons make you REMAIN on the form you are working 
+
+** SUBMIT and UPDATE buttons saves the form and routes you to the PREVIOUS PAGE
+
+** the TABS on the BOTTOM of the FORM is known as RELATED LISTS. they are the things to which this INCIDENT is related
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to EXPLORE and find INCIDENTS 
+
+  - goto ALL > INCIDENT > OPEN 
+
+   - on NUMBER column SEARCH for your INCIDENT number 
+
+    ** use WILD CARD *<incident number> to find all the results that has your incident number
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to get all the WORKS ASSIGNED to you 
+
+  - goto ALL > SERVICE DESK > MY GROUPS WORK
+
+
+  ** the list consists of 
+
+    - incidents 
+    - problems 
+    - changes 
+    - catalog tasks 
+
+    to which the user agent belongs to and which has fields are 
+
+      - ACTIVE 
+      - ASSIGNED to is EMPTY 
+      - STATE is not PENDING 

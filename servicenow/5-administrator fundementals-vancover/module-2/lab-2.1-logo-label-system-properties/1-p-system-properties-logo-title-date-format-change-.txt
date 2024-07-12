@@ -1,0 +1,47 @@
+to change COMPANY LOGO on top left of snow portal...
+
+- login as SYSTEM ADMINISTRATOR 
+
+-  ALL > SYSTEM PROPERTIES > MY COMPANY 
+
+- on the field name UI 16 BANNER IMAGE.... click UPDATE goto 
+
+- click CHOOSE FILE 
+
+- click OK 
+
+- click UPDATE 
+
+** reload the browser window to see updated logo on the top left
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to change browser tab TITLE and CONTEXT APP PILL TITLE
+
+.... you can also change DATE FORMAT, TIMEZONE etc from here 
+
+- login as system administrator 
+
+- goto..  ALL > SYSTEM PROPERTIES > SYSTEM  OR goto ALL > SYSTEM PROPERTIES > BASIC CONFIGURATION UI 16
+
+- scroll down to BROWSER TAB TITLE field  
+
+  - give title of your choice 
+
+- scroll down to save 
+
+
+** this will also change the TITLE IN CONTEXT APP PILL (at top middle of the banner)
+
+** you can also change DATE FORMAT, TIMEZONE etc from here 
+
+** this only displays a SUMMARY of IMPORTANT system properties.... to view all the sytem properties.... you need to open system properties list.... to do that 
+
+  sys_properties.list 
+
+
+***** ONLY SYSTEM ADMINISTRATOR can access SYSTEM PROPERTIES..... 
+
+***** logo and browser title change is INHERITED to the views of EVERY USER in the instance
+

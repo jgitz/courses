@@ -1,0 +1,26 @@
+.... to create a new LIST VIEW in list layout 
+
+- open any LIST 
+
+- open COLUMN OPTIONS MENU (right click on column header/3dots)
+
+- goto CONFIGURE > LIST LAYOUT 
+
+  ** LIST COLLECTOR OPEN 
+
+  - under LIST VIEW section on bottom left 
+
+    - on VIEW NAME DROPDOWN field.... select NEW 
+
+    - fill view name 
+
+    - click ok
+
+
+  - add or remove fields
+
+  - click save 
+
+*** now your LIST VIEW is added to the LIST CONTROL (HAMBURGER) > view 
+
+  - select the view to apply the list layout view

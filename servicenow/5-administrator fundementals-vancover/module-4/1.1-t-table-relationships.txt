@@ -1,0 +1,36 @@
+- TABLE RELATIONSHIP: refers to relationship b/w tables.... there can be FOUR RELATIONSIPS 
+
+  1) ONE TO MANY: i.e a field in a table HOLD A REFERENCE to RECORD on ANOTHER TABLE... there are THREE ONE TO MANY RELATIONSHIP 
+
+    1.1) REFERENCE FIELDS: allows to select a RECORD as value ONLY FROM THE TABLE on WHICH REFERENCE FIELD is CONFIGURED TO.
+
+    1.2) DOCUMENT ID: allows to take any record from ANY TABLE and use it as FIELD VALUE 
+
+    1.3) GLIDE LIST: allows to SELECT MULTIPLE RECORDS from a SINGLE TABLE??... defined by GLIDE??.... eg: watchlist functionality in INCIDENT TABLE allows to take MULTIPLE USER RECORD from USERS TABLE....
+
+  2) MANY TO MANY: 2 or MORE TABLES with BI-DIRECTIONAL RELATIONSHIP.... it is implemented using RELATED RECORDS in RELATED LIST IN A FORM (last set of TABS in a form )
+
+  3) DATABASE VIEWS: allows you to combine MULTIPLE TABLE DATA to create a VIRTUAL TABLE for REPORTING PURPOSES... to view DATABASE VIEWS.... goto 
+
+    - ALL > SYSTEM DEFINITION > DATABASE VIEWS 
+
+  4) EXTENSIONS: allows to create CHILD TABLE/CLASS (..extending table) from a PARENT TABLE/CLASS (...extended/extends table) which inherits fields from parent... and also has UNIQUE FIELDS on their own 
+
+    ** eg of PARENT TABLE/CLASS: configuration item table ??
+
+    ** eg CHILD CLASS of TASK TABLE:
+
+      - CHANGE REQUEST TABLE 
+      - INCIDENT TABLE 
+      - PROBLEM 
+
+    ** TABLE NAME naming format of CHILD TABLES: if you are making a child table from a parent table.... the child table should be named in below format 
+
+      <scope prefix>_<parent table name>_<child table name>
+
+        - scope prefix can be u_ (global scope) and x_ (application scope)
+
+    **?? allows to create A NUMBER of tables DEPENDING on the EXTENSION MODEL selected during table creation
+
+
+    

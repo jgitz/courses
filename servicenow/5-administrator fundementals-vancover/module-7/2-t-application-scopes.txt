@@ -1,0 +1,15 @@
+- SCOPING: enables to set WHICH PARTS of an application is ACCESSIBLE to other APPLICATIONS  
+
+- THERE ARE TWO TYPES of SCOPES in snow 
+
+  1) APPLICATION SCOPE: protects APPLICATIONS by IDENTIFYING and RESTRICTING access to AVAILABLE ARTIFACTS?? and DATA 
+
+    ** CUSTOM APPLICATION SCOPE with a UNIQUE NAME with PREFIX x_ is added when you create a CUSTOM APPLICATION... 
+
+    ** TABLES, SCRIPTS and RECORDS in APPLICATION SOCPE has name starting with PREFIX x_ 
+
+  2) GLOBAL SCOPE: APPLICATIONS developed PRIOR to APPLICATION SCOPING are in GLOBAL SCOPE...
+
+    ** APPLICATIONS developed in GLOBAL SCOPE can ACCES each other's data
+
+    ** TABLES, SCRIPTS and RECORDS in GLOBAL SOCPE has name starting with PREFIX u_ 

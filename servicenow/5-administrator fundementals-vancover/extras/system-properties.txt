@@ -1,0 +1,24 @@
+.... these are some of the important properties listed under sys_properties.list 
+
+
+- to see impersonaltion option to users glide.sys.log_impersonation needs to be set to TRUE in sys_property
+
+- glide.ui.polaris.expeirence: enables/disables UNIFIED NAVIGATION EXPERIENCE.... leave it true 
+
+- to DISABLE personalize option for ITIL role user.... 
+
+  - goto sys_properties.list > glide.ul.personalize_form.role ..... set it to ADMIN
+
+- to BLOCK NON LOGGED IN USERS access to KB... USE SYS PROPERTY 
+
+      - glide.knowman.block_access_with_no_user_criteria
+
+- by DEFAULT in REPORT DESIGNER SHARIGN OPTIONS =.... PUBLISH OPTION is INVISIBLE..to make it VISIBLE 
+
+  ** set true to sys property glide.report.published_reports.enabled 
+
+- to change RECIPIENT LIMIT of NOTIFICATIONS from 100 to any other number.... use the property 
+
+   - glide.email.smtp.max_recipients
+
+- BY DEFAULT the system property to run automated tests is DISABLED to PREVENT it from ACCIDENTALLY run in PRODUCTION INSTANCE

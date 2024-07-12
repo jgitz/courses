@@ -1,0 +1,75 @@
+- DEPENDENT FIELDS: CHOICE and REFERENCE fields in a form can be made DEPENDENT on other FIELDS OF THE SAME TABLE....   
+
+  ** this LIMIT THEIR AVAILABLE VALUES
+
+  ** to know if a CHOICE FIELD is dependent on other field 
+
+    - goto form > right click on choice field > CONFIGURE CHOICES 
+
+    - if the CHOICE is DEPENDENT the following lines will be displayed on the TOP LEFT 
+
+      - TAILORING: <variable name of this choice>
+      - <DEPENDENT FIELD> : <DEPENDENT FIELD VALUE>
+      - <TABLE NAME on which this field belongs>
+
+      eg: 
+
+      Tailoring:incident.subcategory
+      category: hardware
+
+- to see ALL THE CHOICES in your instance with corresponding table 
+
+  - ALL > SYSTEM DEFINITION > CHOICE LISTS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... adding a CHOICE to an EXISTING CHOICE FIELD in the form  can be done in TWO METHODS 
+
+- METHOD 1:
+
+- OPEN RECORD (check correct list and form view)
+
+- RIGHT CLICK on FORM CHOICE FIELD LABEL 
+
+- select SHOW CHOICE LIST 
+
+- select new 
+
+- fill the form 
+
+- click submit
+
+____________________________________________________________
+
+- METHOD 2: 
+
+- OPEN RECORD (check correct list and form view)
+
+- RIGHT CLICK ON the CHOICE FIELD LABEL on the form 
+
+- on bottom on ENTER NEW ITEM FIELD.... give type your choice name
+
+- click add button 
+
+** now your choice will be displayed in the drop down (also your choice will be added to ALL > SYSTEM DEFINITION > CHOICE LISTS)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to DELETE CHOICE OPITON from a CHOICE FIELD  
+
+- OPEN RECORD (check correct list and form view)
+
+- right click on the CHOICE FIELD from which you want to delete the choice option 
+
+- select CONFIGURE DICTIONARY 
+
+- scroll down to RELATED LIST and select CHOICES TAB 
+
+- select your option 
+
+- click DELETE BUTTON
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+** refer lab for dependent value setting 

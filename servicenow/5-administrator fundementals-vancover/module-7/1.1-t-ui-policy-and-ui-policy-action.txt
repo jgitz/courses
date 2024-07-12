@@ -1,0 +1,78 @@
+- UI POLICY: is a RULE applied to a FORM to DYNAMICALLY change information or the FORM ITSELF?? 
+
+  ** UI POLICY is used in CLIENT SIDE 
+
+  ** UI POLICY only APPLIES to data entered on a FORM through a STANDARD BROWSER
+
+  ** UI POLICY is REAL-TIME 
+
+  ** UI POLICY requires NO SCRIPTING and CUSTOM FLOWS?? (** BUT there is an option to add scripts in SCRIPT TAB)
+
+  ** UI POLICY is used on FORMS and LISTS??
+
+  ** UI POLICY is used to IMMEDIATELY implement UPDATES
+
+  ** UI POLICY is used to SET the FOLLOWING properties to the FIELDS 
+
+    1) MANDATORY/OPTIONAL (..form WON'T SAVE if the mandatory fields are left blank)
+
+    2) HIDDEN/VISIBLE (..fields become invisible if hidden)
+
+    3) READ-ONLY/EDITABLE (.. prevent user from UPDATING FORM VALUE)
+
+  ** to create UI POLICY on a FORM RECORD 
+
+    - RECORD FORM > ADDITIONAL ACTION > CONFIGURE > UI POLICY > select NEW in UI POLICIES LIST 
+
+    ** or goto ALL > SYSTEM UI > UI POLICIES > new
+
+  **** UI POLICY is NOT ABOUT SECURITY.... it's about USER EXPERIENCE adnd DATA INTEGRITY 
+
+  **** in REALITY... UI POLICY is USED TO set CONDITIONS (..in when to apply tab) to TRIGGER UI POLICY ACTIONS.... the MANDATORY, HIDDEN, READONLY FIELDS are set in UI POLICY ACTIONS (..ui policy action tab in ui policy form)
+
+_________________________________________________________________
+
+- UI POLICY ACTIONS: once a UI POLICY is SAVED... UI POLICY ACTIONS determines WHAT HAPPENS?? ON THE FORM??
+
+  **** UI POLICY ACTIONS are also given inside UI POLICY FORM.... but the UI POLICY ACTIONS RELATED LISTS TAB APPEARS only when you SAVE NEW UI POLICY FORM 
+
+  **** in REALITY... UI POLICY is USED TO set CONDITIONS (..in when to apply tab) to TRIGGER UI POLICY ACTIONS.... the MANDATORY, HIDDEN, READONLY FIELDS are set in UI POLICY ACTIONS (..ui policy action tab in ui policy form)
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- UI POLICY FORM ICONS AND FIELDS 
+
+  - table field: to specify the record table 
+
+  - short descriptoin 
+
+  - WHEN TO APPLY TAB (... related list tab): to specify conditions to apply the ui policy
+
+    - global (..checkbox): to apply UI POLICY in ALL FORM VIEWS 
+
+    - REVERSE IF TRUE (..checkbox): to reverse actions if CONDITIONS are FALSE 
+
+    - ON LOAD (..checkbox): perform action on loading time and PERFORM IT AGAIN if the CONDITIONS are satisfied
+
+    - INHERIT (..checkbox): to inherit ui policy to EXTENDED TABLES
+
+  - SCRIPT TAB (.... related list): to add SCRIPTS 
+
+    - RUN SCRIPTS (..checkbox): check the box to see CONSOLE to write SCRIPTS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-  UI POLICY ACTIONS fields and ICONS .... 
+
+  - if you are creating a NEW UI POLICY.... UI POLICY ACTIONS RELATED LIST TAB appears ONLY WHEN you SAVE the UI POLICY FORM 
+
+  - FIELD NAME: to specify field name to set ui policy actions 
+
+  - MANDATORY (..checkbox): to make the field mandatory 
+
+  - VISIBLE (..checkbox): to HIDE/DISPLAY FIELD 
+
+  - READ ONLY (..checkbox): to make the field READ-ONLY or EDITABLE 
+

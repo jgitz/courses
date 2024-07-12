@@ -1,0 +1,63 @@
+... to create a flow using flow designer 
+
+- login as ADMIN 
+
+- open flow designer from ALL > PROCESS AUTOMATION > FLOW DESIGNER 
+
+- click CREATE NOW from right 
+
+  ** FLOW PROPERTIES POPUP FORM loads 
+
+- fill flow properties form 
+
+  - fill FLOW NAME FIELD: <ANY NAME>
+
+  - fill description 
+
+  - fill APPLICATION: GLOBAL/ANY OTHER 
+
+  - fill PROTECTION: <NONE/READ-ONLY>
+
+  - fill RUN AS: SYSTEM USER/USER WHO INITIATES THE SESSION (..mostly used in system user)
+
+  - click SUBMIT 
+
+- ADD TRIGGER by selecting + button under trigger section 
+
+  - select type of trigger from RECORD/SCHEDULED/APPLICATION trigger types 
+
+  - IF NEEDED... fill ADVANCED OPTIONS to change the flow to run in BACKGROUND(DEFAULT) or FOREGROUND 
+
+  - click DONE 
+
+- ADD ACTIONS/FLOW LOGIC/SUBFLOW by clicking respective buttons from ACTION SECTION 
+
+  - use DATA PILL from DATA PANE on right or DATA PILL PICKER icon to set RECORD, TABLE, FIELD etc for the action
+
+  - click DONE when all is done
+
+  ** use DATA PILL ICON to DOT WALK  
+
+  **** WAIT CHECK BOX FIELD in the action enables us to PAUSE the flow UNTIL  the task COMPLETES and is marked CLOSED COMPLETE... i.e the task is NO LONGER ACTIVE 
+
+- to save progress.... press SAVE BUTTON on TOP RIGHT
+
+- if flow design is COMPLETE.... click ACTIVATE BUTTON on top to activate the flow 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add a FLOW to any CATALOG ITEM 
+
+- login as admin 
+
+- open the catalog item record from the list ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS 
+
+- select and OPEN the CATALOG ITEM RECORD 
+
+  - scroll down to PROCESS ENGINE tab in RELATED LISTS 
+
+  - set FLOW field with your desired FLOW NAME 
+
+  - click UPDATE 
+

@@ -1,0 +1,3 @@
+- use // for line comments 
+
+- use /* */ for block comments 

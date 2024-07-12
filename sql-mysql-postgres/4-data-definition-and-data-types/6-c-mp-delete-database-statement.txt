@@ -1,0 +1,7 @@
+.... statement to deleta a database in mysql and postgresql
+
+- for both mysql and postgres 
+
+      :: DROP DATABASE <database_name>;
+
+

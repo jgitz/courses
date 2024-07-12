@@ -1,0 +1,32 @@
+- CLIENT-SCRIPTS: allows to RUN JAVASCRIPT on the CLIENT (..WEB BROWSER) when the FOLLOWING EVENTS occur 
+
+  - On Load 
+
+  - On Change 
+
+  - On Submit 
+
+  - On Cell Edit 
+
+  ** CLIENT SCRIPTS are run in the BROWSER 
+
+  **** CLIENT SCRIPT is also RUN when a DATABASE LOOK UP is needed 
+
+- TYPES OF CLIENT SCRIPTS 
+
+  1) OnLoad()
+
+    ** runs when a form is FIRST DRAWN?? and BEFORE CONTROL is given to the user to begin typing 
+
+    ** used to do CLIENT-SIDE MANIPULATIONS of document on screen 
+
+  2) OnChange()
+
+  3) OnCellEdit()
+
+  4) OnSubmit() 
+    ** onSubmit can also be used to CANCEL A SUBMISSION by RETURNING FALSE 
+
+- Usecases
+
+  - make FIELDS VISIBLE on a CONDITION 

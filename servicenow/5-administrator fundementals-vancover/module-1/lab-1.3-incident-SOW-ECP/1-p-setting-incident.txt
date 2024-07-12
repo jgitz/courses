@@ -1,0 +1,65 @@
+..... create incident using CLASSIC LIST AND FORMS 
+
+- goto ALL > INCIDENT > CREATE NEW 
+
+-  fill the following fields 
+
+  - CALLER 
+
+  - SOFTWARE
+
+  - SHORT DESCRIPTION 
+
+  - DESCRIPTION 
+
+  - SERVICE (service is OVERALL SERVICE that supports parts of business)
+
+  - SERVICE OFFERING (are SERVICES that users can REQUEST to do their JOB)
+
+
+  - CONFIGURATION ITEM 
+
+  - CHANNEL: <phone>
+
+  - IMPACT: 
+
+  - URGENCY 
+
+  - PRIORITY 
+
+  - ASSIGNMENT GROUP (autopopulates on save WRT to the configuration item field ??)
+
+  - ASSIGNED TO 
+
+  - scroll down and goto NOTES TAB.... click on SHOW JOURNAL ICON on the right to worknote box.... now WORK NOTE and ADDITIONAL COMMENTS field comes up 
+
+    - work notes 
+
+    - additional comments
+
+    ** WORK NOTES: are only visible for INTERNAL USERS 
+
+    ** ADDITIONAL COMMENTS: are visible to CUSTOMERS
+
+- save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open OPEN INCIDENTS....
+
+  - goto ALL > INCIDENT > OPEN 
+
+  -search incident from the list 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- to see the NON ASSIGNED TASKS/INCIDENTS to be worked upon by a GROUP OF USERS of a USER GROUP .... 
+
+- login as user 
+
+- goto ALL > SERVICE DESK > MY GROUPS WORK 
+
+** MY GROUPS WORK includes any WORK assigned to a group the user is a member of.... BUT have NOT BEEN ASSIGNED to a special person.
+
+
+

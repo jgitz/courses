@@ -1,0 +1,7 @@
+... to add NEW ARTICLE 
+
+- login as SYSTEM ADMINISTRATOR 
+
+- goto ALL > KNOWLEDGE > ARTICLES > CREATE NEW 
+
+- fill the form details

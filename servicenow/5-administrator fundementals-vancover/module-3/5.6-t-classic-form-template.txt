@@ -1,0 +1,20 @@
+- TEMPLATE: allows to AUTO POPULATE commonly used field values in FORMS.
+
+  **** TEMPLATE CREATION SHOULD be restricted to SELECT GROUPS as it can BYPASS MANDATORY FIELDS, UI POLICIES etc.... specially on records with CONDITIONS and WORKFLOWS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to set template in CLASSIC FORM 
+
+  - open FORM 
+
+  - click on MORE OPTIONS (3 dots on top right)
+
+  - click TOGGLE TEMPLATE BAR 
+
+  - TEMPLATE BAR appears on the BOTTOM of the page 
+
+  **** if there no templates are listed... you can click on CREATE TEMPLATE on the same bar 
+
+  
+

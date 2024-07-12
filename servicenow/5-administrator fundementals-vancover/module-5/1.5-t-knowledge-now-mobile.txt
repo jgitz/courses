@@ -1,0 +1,9 @@
+- NOW MOBILE APP: is a MOBILE APP to manage your instance 
+
+  - mobile user can search for KNOWLEDGE ARTICLES, USERS, CATALOG ITEMS etc from GLOBAL SEARCH BAR on the app 
+
+  - users can search through CATAGORIES by using INFO ICON at the footer 
+
+  - admin should ADD ARTICLES to make it viewed in the NOW MOBILE APP.... this is done inside MOBILE EMPLOYEE SERVICE PORTAL.... to add articles to MOBILE KNOWLEDGE BASES 
+
+    - goto ALL > SYSTEM MOBILE > NOW MOBILE APP > KNOWLEDGE BASES 

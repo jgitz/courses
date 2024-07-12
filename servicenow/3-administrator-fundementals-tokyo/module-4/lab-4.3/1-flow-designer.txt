@@ -1,0 +1,97 @@
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create flow from scratch 
+
+- goto ALL > PROCESS AUTOMATION > FLOW DESIGNER 
+
+  - flow designer opens in a new tab 
+
+  - to add a flow .... 
+
+    - click NEW on top right 
+
+    - select FLOW 
+
+      - fill NAME FIELD 
+
+      - CHOOSE RUN AS FIELD:
+
+        // select SYSTEM USER ?
+
+        // select USER WHO INITIATES THE SESSION... if the UPDATE/trigger comes from the USER?
+
+      - click submit
+
+    - click SAVE
+
+    - add trigger 
+
+    - add actions (use dotwalk/data pane to fill data)
+
+      - table field gets auto filled
+      
+      - additional fields and its values can be added
+
+      - click done
+
+    - click SAVE
+
+
+
+    ** TOGGLE on VIEW SELECTOR on top middle to see DIAGRAMMING VIEW of your flow 
+
+    - click ACTIVATE on top right to activate the flow
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add flow to your CATALOG ITEM 
+
+  - goto ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS 
+
+  - select your CATALOG ITEM 
+
+    - goto PROCESS ENGINE TAB 
+
+    - fill the FLOW FIELD to select your FLOW that you have PREVIOUSLY CREATED
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... so when admin/user with appropriate role builds a catalog item.... employee users can ORDER these items.... but based on the flow.... these requests have to be processed by other user/chain of users for FURTHER APPROVAL..... 
+
+- the user with approval privialge can view the requests at ALL >  SERVICE DESK > MY GROUPS WORK
+
+- to find the catalog request in the table.... use the trick 
+
+  - right click on TASK TYPE COLUMN... 
+
+  - select GROUP BY TASK TYPE 
+
+    ** now tasks are grouped and you can pinpoint CATALOG TASK 
+
+  - open the catalog task 
+
+  - to assign the task to a USER.... add user to ASSIGNED TO FIELD 
+
+  - add WORK NOTES 
+
+  - click CLOSE TASK 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... sometimes we use FLOW to send EMAIL NOTIFICATIONS.... 
+
+.... to check if an email is SEND 
+
+- goto ALL > SYSTEM MAILBOXES > OUTBOUND > OUTBOX 
+
+  - locate your mail 
+
+  - to preview body.... 
+
+    - right click on the date of the mail in the record list 
+
+    - click preview email 
+
+      ** email body is displayed in a popup box

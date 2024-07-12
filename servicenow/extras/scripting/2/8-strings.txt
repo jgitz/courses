@@ -1,0 +1,3 @@
+- use + operator to CONCATINATE multiple string 
+
+- <string>.length: use this JS PROPERTY to get the length of the string

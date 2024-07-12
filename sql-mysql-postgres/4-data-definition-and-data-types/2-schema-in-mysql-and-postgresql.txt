@@ -1,0 +1,17 @@
+.....a database server has MANY DATABASES....
+
+.....a database has many TABLES....
+
+.....a table has many DATA..... 
+
+- CONCEPT OF SCHEMA IN MYSQL AND POSTGRESQL 
+
+      - schema in MYSQL: in mysql a schema is same as your DATABASE itself 
+
+      - schema in POSTGRESQL: in postgresql.... schema means a way of GROUPING MULTIPLE TABLES to share certain functionalities 
+
+          ** 2 or more tables are grouped to make a schema 
+
+          ** TABLES can have SAME NAMES if they belong to DIFFERENT SCHEMAS
+
+          ** TABLES inside a SCHEMA CANNOT have same name.... table names of a schema must be UNIQUE.....

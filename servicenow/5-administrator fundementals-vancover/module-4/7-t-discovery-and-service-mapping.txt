@@ -1,0 +1,20 @@
+- DISCOVERY: scans NETWORK for DEVICES and APPLICATIONS and UPDATES the CMDB 
+
+  - DISCOVERY is SERVICENOW MID Server (Management, Instrumentation, Discovery)
+
+  - it is a LIGHTWEIGHT JAVA PROCESS that runs on CUSTOMER'S SERVER 
+
+  - DISCOVERY USES HORIZONTAL METHOD (only find devices... and don't define their relationship) for uncovering devices 
+
+  - DISCOVERY FINDS DEVICES and their ATTRIBUTES 
+
+  - it also find RELATIONSHIP B/W DEVICES and show it in the DEPENDENCY VIEWER
+
+  ** DISCOVERY CANNOT find CONNECTIONS and DEPENDENCIES b/w each device it found... to do that we use SERVICE MAPPLING
+
+
+- SERVICE MAPPING (Top Down Discovery): helps the CMDB with IT RELATIONSHIPS and DEPENDENCIES b/w CI'S and MODEL IT
+
+  - it uses TOP-DOWN MAPPING  
+
+  - it finds the DEPENDENCIES and RELATIONSHIPS between DISCOVERED CI'S and AUTOMATICALLY POPULATES the info to CMDB

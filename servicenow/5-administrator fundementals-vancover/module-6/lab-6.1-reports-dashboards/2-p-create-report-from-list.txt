@@ -1,0 +1,51 @@
+.... to create REPORT on a COLUMN VALUES of a LIST 
+
+- open the LIST 
+
+- CLICK on 3 DOTS of the COLUMN from which you want to make the report.... COLUMN MENU opens up 
+
+- select BAR CHART/PIE CHART 
+
+  ** REPORT DESIGNER LAUNCHES 
+
+- set required data in DATA, TYPE, CONFIGURE and STYLE TABS on the left pane 
+
+- you can add CONDITIONS using CONDITION BUILDER ICON (..FUNNEL ICON)... 
+
+- click SAVE BUTTON to save changes 
+
+- click RUN to run the report 
+
+  ** RUNNING DON'T UPDATE/SAVE the report record 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to ADD REPORT to DASHBOARD 
+
+- open report from ALL > REPORTS > VIEW/RUN 
+
+- open report (..opens in REPORT DESIGNER)
+
+- on TOP click on SHARE BUTTON 
+
+  - select ADD TO DASHBOARD 
+
+    - select DASHBOARD NAME 
+
+    - select DASHBOARD TAB where you want to ADD THE REPORT  
+
+    - click ADD BUTTON  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to set REPORT SHARING to GROUPS/USERS 
+
+- open report from ALL > REPORTS > VIEW/RUN 
+
+- open report 
+
+- click SHARE BUTTON 
+
+  - CLICK SHARE OPTION 
+
+  - select required options from ME/EVERYONE/GROUP AND USERS 

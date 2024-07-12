@@ -1,0 +1,55 @@
+..... to make a create a new update set and MAKE IT the CURRENT UPDATE SET 
+
+  - goto ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SET 
+
+  - click NEW 
+
+  - complete the form... SET STATE FIELD to IN PROGRESS....
+
+  - on top click SUBMIT and MAKE CURRENT 
+
+  ** to CLOSE an UPDATE SET FOR MIGRATION.... set the STATE to COMPLETE 
+
+  ** to view what changed by whom on what.... go CUSTOMER UPDATES TAB.... the CLOUMN named TARGET NAME specifys where the update took place
+
+  **** once you set UPDATE SET TO COMPLETE.... NEVER REVERT ITS STATE to IN PROGRESS.... INSTEAD 
+
+    ** make a NEW UPDATE SET.... and give proper NUMBER NAMING CONVENTION..... and COMMIT THEM IN ORDER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to EXPORT UPDATE SET XML file 
+
+  - click on GLOBE ICON on top right 
+
+  - click UPDATE SET TAB.... and select the update set you want to export 
+
+  - click on the RECORD ITEM on the TOP RIGHT to open the UPDATE SET RECORD 
+
+    - REVIEW THE UPDATES in CUSTOMER UPDATES TAB  
+
+    - change the STATE field to COMPLETE 
+
+    - SAVE (***** DON'T CLICK UPDATE)
+
+    - click on EXPORT TO XML related link to DOWNLOAD the update set XML FILE to your local system 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..... to IMPORT an update set XML FILE to an instance and COMMIT IT 
+
+  - goto instance 
+
+  - login as admin 
+
+  - goto ALL > SYSTEM UPDATE SETS > RETRIEVED UPDATE SET
+
+  - click on IMPORT UPDATE SET from XML related link 
+
+  - choose and upload XML file from the local system 
+
+  - click PREVIEW UPDATE SET BUTTON 
+
+  - click COMMIT UPDATE SET BUTTON 
+
+  ** now all the changes will get applied to the instance

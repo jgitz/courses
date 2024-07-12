@@ -1,0 +1,25 @@
+- SCHEMA MAP: is a GRAPHICAL REPRESENTATION which shows the relationship of a specific table with other tables 
+
+  - to see SCHEMA MAP of a table 
+
+    - goto ALL > SYSTEM DEFINITION > TABLES (sys_db_object) and open a TABLE RECORD 
+
+    - goto RELATED LINKS SECTION and select SHOW SCHEMA MAP
+
+    - schema map gui appears 
+
+      - YELLOW BOX corresponds to CURRENT TABLE 
+
+      - GREEN BAR on table box means PARENT TABLE (extended)
+
+      - BLUE BAR on table box means CHILD TABLE (extending)
+
+      - ORANGE BAR on the table box means the selected table take REFERENCE VALUE FROM other tables (referencing table)
+
+        ** i.e the selected table TAKES values from ORANGE BAR TABLES.. eg: if SELECTED TABLE is INCIDENT TABLE.... then USERS TABLE is REFERENCING TABLE as INCIDENT TABLE takes value from USERS table to add users to fields like ASSIGNED TO 
+
+      - RED BAR on the table box indicates the tables that take values FROM the SELECTED TABLE (refernced table)
+
+        ** i.e the selected table GIVES values to the RED BAR TABLE....eg: if SELECTED TABLE is USERS TABLE.... then INCIDENT TABLE is REFERENCED TABLE as USERS TABLE gives value to the INCIDENT TABLE to fill fields like ASSIGNED TO 
+
+      - TABLES window on the TOP RIGHT gives summary of the table relationship  

@@ -1,0 +1,45 @@
+
+**ServiceNow Utah Release Highlights**
+
+**Customer Experience:**
+- Install Base Foundation: Complex product installs with linked databases.
+- ServiceNow Definitions: Customer-specific service suggestions.
+
+**Field Service Management:**
+- Task Bundling: Efficient task grouping for cost savings.
+- Intra-day Schedule Automation: Real-time work rescheduling.
+- Equipment Scheduling: Detailed scheduling for specialized equipment.
+
+**IT Service Management:**
+- Digital Portfolio Management: Integrated DevOps metrics.
+- User Experience Enhancement: Simplified and insightful ITSM.
+
+**Enterprise Asset Management:**
+- Asset Work Management: Data-driven asset allocation.
+- Enterprise Asset Maintenance: Automated asset upkeep.
+- Asset Reclamation: Streamlined asset recovery.
+
+**Software & Hardware Asset Management:**
+- Software Value Builder: Unused capability insight.
+- Containerized Licensing: Compliance for software in containers.
+- Procurement Workspace: Centralized asset acquisition.
+- Unified Theming & Authentication: Consistent user experience.
+
+**Integrated Risk Management (GRC):**
+- Operational Resilience Enhancements: Contextual data visualization.
+
+**App Engine & Automation Engine:**
+- App Creation Restriction: Governance for app creation.
+- Stream Connect for Kafka: Message flow automation.
+- Usage Dashboard Enhancements: Spoke utilization insights.
+
+**Next Experience UI & Now Intelligence:**
+- Theme Builder: Custom branded themes.
+- Unified Theming: Consistent look across platforms.
+- AI Search: Enhanced search for quick issue resolution.
+- Process & Workforce Optimization Expansion.
+
+**Service Mobile & Platform Security:**
+- Unified Theming: Consistent experience across platforms.
+- Platform Encryption: Privacy policy compliance.
+- Adaptive Authentication: Secure mobile device access.

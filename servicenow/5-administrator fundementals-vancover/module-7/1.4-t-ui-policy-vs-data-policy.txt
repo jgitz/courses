@@ -1,0 +1,9 @@
+.... difference between UI POLICY and DATA POLICY 
+
+** UI POLICY can be used to set 3 FIELD PROPERTIES.... MANDATORY... HIDDEN.... READ ONLY 
+
+  * DATA POLICY is used to set 2 FIELD PROPERTIES.... MANDATORY.... READ-ONLY 
+
+** UI POLICY only gets EXECUTED when DATA is ENTERED from STANDARD BROWSER 
+
+  * DATA POLICY is applied to all data which is inserted into platform via... FORM, LIST IMPORT SET and WEB SERVICES??

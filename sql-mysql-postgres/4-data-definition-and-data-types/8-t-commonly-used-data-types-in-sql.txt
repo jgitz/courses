@@ -1,0 +1,13 @@
+.... we need to set data types of the fields before entering a data in the table.....
+
+..... there are many data types used in mysql and postgres (check the official documentation siet)....
+
+- COMMNONLY USED DATATYPES in sql are:
+
+    1) text 
+
+    2) numeric
+
+    3) date 
+
+    4) other : like boolean, JSON text

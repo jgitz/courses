@@ -1,0 +1,38 @@
+.... FIELD CLASSES are field types that can be given in a form 
+
+- Audio
+- True/False: ** CHECK BOX
+- Calendar Date/Time
+- Choice
+- Color
+- Conditions
+- Condition String
+- Currency
+- FX Currency
+- Data Structure
+- Decimal
+- Document ID
+- Domain ID
+- Due Date
+- Field Name
+- File Attachment
+- Floating Point Number
+- Geo Point
+- Date
+- Date/Time
+
+ .... and OVER 30 FIELDS 
+
+** what is the difference REFERENCE FIELD, DOCUMENT ID FIELD and GLIDE LIST
+
+  - REFERENCE FIELD: is used to take a RECORD from only ONE TABLE to WHICH the FIELD is CONFIGURED 
+
+  - DOCUMENT ID FIELD: allows you to add RECORD from ANY TABLE of the instance 
+
+    ** configuring document id is tricky 
+
+    ** link: https://www.youtube.com/watch?v=jQOSQScn3oM
+
+  - GLIDE LIST: allows you to take MULTIPLE RECORDS as field values from a SINGLE TABLE?.... eg WATCH LIST functionality  
+
+

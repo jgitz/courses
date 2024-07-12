@@ -1,0 +1,66 @@
+..... there are many datatypes used to store NUMBER DATA 
+
+1) to store integer numbers (no decimals) between a minimum and maximum.... datatypes used are 
+
+      - INT 
+      - SMALLINT
+
+      - SERIAL: each records in this column increments by one wrt to the previous record value like serial numbers
+
+            **  SERIAL will produce an INT value in POSTGRES (and many other database systems)
+            
+            ** SERIAL will give you a BIGINT when used in MYSQL.
+
+  ***** if you store a DECIMAL number in place of integer.... SQL will ROUND it to the NEAREST whole number
+
+2) to store decimal number WITH PRECISION EXACT values 
+
+      - DECIMAL 
+
+      - NUMERIC
+
+          ** syntax for both MYSQL and POSTGRESQL
+
+              :: <column_name> NUMERIC(<precision_value>, scale_value);
+
+                  ** precision_value: means total number of digits expected INCLUDING digits AFTER decimal point
+
+                  ** scale_value: number of digits AFTER DECIMAN POINT.
+
+
+
+
+
+  
+  ** used commonly to store PRICES
+
+  ***** performance is slow
+
+3) to store decimal values with APPROXIMATE VALUES (computers can't find exact values of certain fractions):
+
+    - FLOAT
+
+        ** MYSQL syntax with options 
+
+                :: <column_name> FLOAT(<precision_value>, <scale_value>);
+
+                      ** precision_value: means total number of digits expected INCLUDING digits AFTER decimal point
+
+                      ** scale_value: number of digits AFTER DECIMAN POINT.
+
+                      ** eg 
+
+                          <column_name> FLOAT(5, 2)
+
+                              ** data can take values like 123.3, 1234.5 etc
+        
+        ** POSTGRES syntax (has no options)
+
+                :: <column_name> FLOAT;
+
+    - REAL
+
+  ** usually used to store data like SALARY ranges 
+
+  **** great performance but the value is NOT EXACT
+

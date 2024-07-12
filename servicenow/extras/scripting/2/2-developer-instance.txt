@@ -1,0 +1,19 @@
+- goto developer.servicenow.com... and sign in to your servicenow account
+
+- select request instance
+
+- note down the instance username and password (will ask once we stop and restart the instance)
+
+    username: admin
+    password: FuY0*+rk1sPO
+
+- now your snow instance will open up in new tab
+
+- to get the console to practice js in servicenow instance....
+
+  - click all 
+
+  - search for "scripts - background"
+
+      **** there is space after scripts.... else won't get its
+      

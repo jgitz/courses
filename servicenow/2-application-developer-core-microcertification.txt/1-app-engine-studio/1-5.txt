@@ -1,0 +1,11 @@
+- Application DEVELOPMENT life cycle in APP ENGINE STUDIO (AES)
+
+  - 3 types of instances are used while development 
+
+    1) app development is done in DEVELOPER INSTANCE
+
+    2) app testing is done on TESTING INSTANCE by the s/m administrator
+
+      ** if there is issues in the application... refactoring is done in the DEV INSTANCE 
+    
+    3) FINAL APP is pushed into PRODUCTION INSTANCE by the s/m administrator

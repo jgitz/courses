@@ -1,0 +1,48 @@
+..... to add an APPLICATION to all menu 
+
+- goto ALL > SYSTEM DEFINITION > APPLICATION MENUS 
+
+- click new 
+
+  - fill title eg HDD
+
+  - add role eg: itil 
+
+  - fill custom (leave): eg: custom applications
+
+  - fill HINT (any sentence about the application)
+  
+  - click SAVE
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add a MODULE to an application in ALL MENU 
+
+- goto ALL > SYSTEM DEFINITION > APPLICATION MENUS 
+
+- select your APPLICATION where you want to make the MODULE as SUB ITEM 
+
+- scroll down to MODULES TAB 
+
+- click new 
+
+- fill title 
+
+- on VISIBILITY TAB 
+
+  - add ROLE who can access the module 
+
+- on LINK TYPE TAB (what kind of display should the MODULE LINK in the all menu display when it is clicked)
+
+  - LINK TYPE (Choice): <eg: list of records>
+  
+  ** the below fields will depend on the LINK TYPE SELECTED (the below fields are for LINK TYPE = LIST OF RECORDS)
+
+  - TABLE: <incident>
+
+  - VIEW NAME: <view of the TABLE LIST given above>
+
+  - add filters in the condition builder eg <service offering> | contains | HHD
+
+- click submit

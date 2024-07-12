@@ -1,0 +1,38 @@
+.... in snow platform.... SOURCE CONTROL can be acheived via 2 METHODS 
+
+  1) using INBUILT UPDATE SET feature in SNOW INSTANCE 
+
+  2) using GITLAB 
+
+  ** both has its use cases and advantages and disadvantages 
+
+
+- UPDATE SET: 
+
+    - update set use XML to trach changes in the app 
+
+      ** NOT ALL CHANGES are tracked by update set 
+
+    - whenever you create an app in STUDIO.... a DEFAULT UPDATE SET in the NAME  of the app is created in the SNOW INSTANCE 
+
+    - to see the update sets in SNOW INSTANCE do: 
+
+        - click all 
+
+        - SEARCH for LOCAL UPDATE SET (under system update set)
+
+    ** NEVER BUILD the whole app in the DEFAULT UPDATE SET.... always create NEW UPDATE SET when you add new feature 
+
+    - to make a NEW UPDATE SET... in instance do:
+
+        - open LOCAL UPDATE SETS 
+
+        - click new 
+
+        - name: <1-<app>-<sub name>>
+
+            * eg: 01-uniAccess-base-application 
+
+        - description: <any>
+
+    

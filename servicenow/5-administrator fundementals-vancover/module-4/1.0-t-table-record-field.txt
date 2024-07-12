@@ -1,0 +1,84 @@
+.... every info in snow platform is stored in a RELATIONAL DATABASE 
+
+... the important THREE DATASTRUCTURES in SERVICENOW ARE 
+
+  1) TABLE:
+
+    - to view all tables.. ALL > SYSTEM DEFINITION > TABLES 
+
+    ** OR DO sys_db_object.list
+
+  2) RECORD: 
+
+    - SYS_ID: is a UNIQUE 32 bit id for EACH RECORD 
+
+    ** TO CHANGE the RECORD NUMBER FORMAT of a table... goto
+
+      - ALL > SYSTEM DEFINITION > NUMBER MAINTENANCE
+
+  3) FIELD:
+
+    - to view all fields.. ALL > SYSTEM DEFINITION > DICTIONARY (sys_dictionary.list)
+
+    ** to view all FIELD LABELS (LANGUAGE FILE)... ALL > SYSTEM DEFINITION > LANGUAGE FILE (sys_documentation.list) 
+
+    - FIELD ATTRIBUTES: are important parts that makes a field.... each field has THREE FIELD ATTRIBUTES 
+
+      3.1) FIELD LABEL: user-friendly name for HUMANS
+
+      3.2) FIELD NAME : SYSTEM_FRIENDLY UNIQUE name of system to identify field and use it
+
+        ** should be UNIQUE 
+
+        ** DOES NOT ALWAYS MATCH FIELD LABEL  
+
+      3.3) FIELD DATA: actual data VALUE given in the field
+
+  4) FIELD VALUE: intersection fo FIELD AND RECORD 
+ 
+
+** what are DATA DICTIONARY TABLES in servicenow platform ?
+
+  - They are tables that DEFINE DATABASE ELEMENTS (tables, fields, field labels)
+
+  - the THREE DATA DICTIONARY TABLES are 
+
+    1) sys_db_object.list (TABLES)
+    2) sys_dictionary.list (FIELDS)
+    3) sys_documentation.list (FIELD LABELS)
+
+** WHAT is SCHEMA MAP? 
+
+  - provides GRAPHICAL REPRESENTATION of RELATIONSHIP B/W TABLES 
+
+
+**** CREATING CUSTOM TABLES in snow need LICENSE 
+
+**** tables made by EXTENDING CMDB TABLE (cmdb) DON'T need LICENSE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+... to create a table... use any of the path below 
+
+  - ALL > SYSTEM DEFINITION > TABLES 
+
+  - ALL > SYSTEM DEFINITION > TABLES & COLUMNS
+
+  ** when a table is created.... A ROLE in the NAME OF THE TABLE with SCOPE PREFIX (u_ or x_ AND the name end with _user eg u_<table>_user) is also created automatically and added to ROLES TABLE (ALL > SYSTEM SECURITY > USERS and GROUPS > ROLES || ALL > USER ADMINISTRATION > ROLES)
+
+  ** the following ACCESS CONTROL RULE IS AUTOMATICALLY ADDED TO THE TABLE 
+
+    - create 
+    - read
+    - write 
+    - delete
+
+  **** BEST PRACTICE: before table creation.... check if there is already a table with the fields you want.... then use EXTENSION TABLES... instead of making table from scratch.... 
+
+
+
+    
+
+
+
+    

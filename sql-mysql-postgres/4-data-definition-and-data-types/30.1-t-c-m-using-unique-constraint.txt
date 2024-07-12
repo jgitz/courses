@@ -1,0 +1,8 @@
+..... creating an id column using unique (not used now for creating id)
+
+- both MYSQL and POSTGRES
+
+      :: CREATE TABLE <table_name> (
+        <id> INT NOT NULL UNIQUE, 
+      )
+      

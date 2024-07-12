@@ -1,0 +1,35 @@
+.... so in this note....we discuss the SETPS on EVALUATION of ACCESS CONTROL RULE when user requests for access to an OBJECT (TABLE/FIELD) in snow.... 
+
+- SETP 1: user requests ACCESS to OBJECT (TABLE/FIELD)
+
+- STEP 2: s/m searched in ALL > SYSTEM SECURITY > ACCESS CONTROL for 
+
+    2.1) search for MATCHING TABLE ACL RULES ... continues to next step 
+
+    2.2) search for MATCHING FIELD ACL RULES....
+
+    ** BOTH TABLE & FIELD AC RULES should be MATCHED to grand access to an OBJECT 
+
+    ** if a USER FAILS matching TABLE ACL RULE.... then the user is DENIED ACCESS to ALL FIELDS in the table 
+
+    ** if the user PASS the TABLE MATCHING RULE and FAILS the FIELD matching ACL RULE.... then the user is DENIED ACCESS to the FIELD 
+
+- STEP 3: if s/m matches BOTH TABLE & FIELD RULE.... then system checks if the USER HAS PERMISSION to access the OBJECT....
+
+  - PERMISSION: permission in ACL RULE form can be given through 
+
+    - CONDITIONS 
+    - ROLES 
+    - SCRIPTS 
+
+    ** if a permission is defined by above 3.... then all the 3 permission should be satisfied 
+
+    ** in case of ROLES..... ANY ONE of LISTED ROLES should be posessed by the USER 
+
+    ** s/m DENIES ACCESS if any PERMISSION IS NOT SATISFIED  
+
+
+** ACL RULES applied to a PARENT TABLE.... will be INHERITED to CHILD TABLE and its FIELDS
+
+
+***** for detailed working refer link: https://docs.servicenow.com/bundle/vancouver-platform-security/page/administer/contextual-security/concept/exploring-access-control-list.html 

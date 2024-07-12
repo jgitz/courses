@@ -1,0 +1,29 @@
+..... data in snow is stored and managed using 3 DATA STRUCTURES 
+
+  1) TABLE: list of RECORDS 
+
+  2) RECORDS: RECORDS are the units in TABLE where DATA is stored 
+
+  3) FIELDS: INDIVIDUAL pieces of data within a RECORD 
+
+    ** SYSTEM DICTIONARY consists of ALL FIELDS from ALL TABLES of your instance 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view EVERY FIELDS in of all tables of your instance.... goto 
+
+  - ALL > SYSTEM DEFINITION > DICTIONARY 
+
+    ** lists all COLUMNS/FIELDS corresponding to the table of which it belongs 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to CREATE/REVIEW new table and configure existing tables.... goto 
+
+  - ALL > SYSTEM DEFINITION > TABLES 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to CREATE TABLE or CREATE APPLICATION or BROWSE CUSTOM APPLICATIONS of your instance.... goto 
+
+  - ALL > SYSTEM DEFINITION > TABLES & COLUMNS 

@@ -1,0 +1,112 @@
+** servicenow is a APaas (Application Platform As A Service)
+
+- glide.sys.log_impersonation: needs to be added and set to true in order to see
+impersonation events in the System Log. This log file enables (true) or disables (false)
+impersonation logging for interactive sessions. For more information, visit ServiceNow
+Product Documentation: Impersonate a user.
+
+- glide.ui.polaris.dark_themes_enabled to true to activate dark theme
+
+ ** to find this property... 
+ 
+  -in all menu... search for 
+
+    sys_properties.list
+
+  - in the list... click on magnifying glass on the column header 
+
+  - under the name... search for wildcard 
+
+    *dark (star is part of the search term)
+
+    press enter 
+
+  - now all system properties with dark will be displayed 
+
+  - USER TABLE: :: User [sys_user] ::
+
+  - GROUP TABLE: :: Group [sys_user_group] ::
+
+  - ROLE TABLE: :: Role [sys_user_role] ::
+
+  - role name of HR ADMIN is : :: sn_hr_core.admin 
+
+  - To disable personalize form for the itil
+    role, navigate to sys_properties.list find the property glide.ui.personalize_form.role and set
+    the Value to admin (to specify the role that can access form personalization).
+
+  
+
+  - To disable personalize form for the itil
+    role, navigate to sys_properties.list find the property glide.ui.personalize_form.role and set
+    the Value to admin (to specify the role that can access form personalization)
+
+- to work with knowledge portal: The Knowledge Management - Service Portal plugin (com.snc.knowledge_serviceporfal) must be activated.
+
+- to make PUBLIC BUTTON of A REPORT to work  The sys_property glide.report.published_reports.enabled needs to be set to true in order to see the Publish option.
+
+- there is a default value for number of RECEIPIENT to which email can be set.... it's 1000.... to change it use glide.email.smtp.max_recipients
+
+
+- MANY TO MANY TABLES ARE CREATED?? using 
+
+    - sys_collections.list 
+    - sys_m2m.list
+
+-   ** cmdb_ci_hardware table consists of hardware tables 
+
+- to view ACCESS CONTROLS RULES associated with a TABLE...
+
+  - on the ALL menu... type 
+
+      <table name>.config 
+
+  - click ACCESS CONTROLS TAB
+
+- UI TRICK: inside a form > change the fields > right click on the form header > click INSERT and STAY.... this craetes a NEW RECORD without clicking new button and filling fields from the scratch
+
+** roles required to load data via ALL > SYSTEM IMPORT SETS > LOAD DATA 
+
+  - import_admin
+  - import_set_loader
+  - import_transformer
+
+** BEST PRACTICE: DON'T DELETE records from TABLES.... a record can always be MARKED INACTIVE or CANCELLED
+
+- roles that has CMDB ACCESS 
+
+  - asset 
+  - itil 
+  - itil_admin 
+  - cmdb_read 
+
+** key CMDB TABLES 
+
+  - cmdb (BASE CONFIGURATION TABLE)
+  - cmdb_ci (CONFIGURATION ITEM TABLE)
+  - cmdb_rel_ci (CI RELATIONSHIP TABLE)
+
+** ci class manager roles 
+
+  ** ROLES REQUIRED for READING CI CLASSE ATTRIBUTES: itil + personalize_dictionary 
+
+  ** ROLES REQUIRED for EDITING CI CLASSE ATTRIBUTES: itil_admin + personalize_dictionary
+
+** 7.4... to open an studio from a FORM in the instance 
+
+  - click on the HAMBURGER > CONFIGURE > FORM DESIGN 
+
+  ** form opens in STUDIO
+
+** the changes tracked by UPDATE are stored in the table CUSTOMER UPDATE (sys_update_xml)
+
+-  sys_properties.list (to list all servicenow instance property settings)
+
+-  com.snc.process_flow.reporting.level (turn this on in sys_properties for any flow made to work properly?)
+
+- for a manager to approve catalog item request.... the request will be in ALL > SERVICE DESK > MY APPROVALS
+
+- an administrator can see all the SERVICE CATALOG related tasks at ALL > SERVICE CATALOG > OPEN RECORDS > TASKS .... you can open tasks and close tasks
+
+- to review and troubleshoot a flow .... goto flow designer > click 3 dots on top right > click on executions > select the execution to see more details 
+

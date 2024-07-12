@@ -1,0 +1,28 @@
+..... date datatypes are used to store dates in VARIOUS FORMATS 
+
+1) to store ONLY DATE and NO TIME:
+
+      - DATE 
+
+            ** both mysql and postgres syntax 
+
+                  :: <column_name> DATE;
+
+2) to store DATE with TIME, HOUR, SECONDS, MILLISECONDS
+
+      - DATETIME
+      - TIMESTAMP
+
+            ** both mysql and postgres syntax 
+
+                  :: <column_name> TIMESTAMP;
+
+                        ** if we want to hardcode the date and time while INSERTING date data..... it should be of the format 
+
+                              <yy-mm-dd hh-mm-ss>
+
+                                    ** time should be in 24 hour format
+
+**** TIME ZONES: both mysql and postgres automatically converts the time data to UTC or greenwich time and stores it.... it automatically re converts to client time zones when viewing the time data
+
+

@@ -1,0 +1,41 @@
+REPORTS: servicenow allows you to create reports on TABLES and records and allows you to view it on DASHBOARD 
+
+  ** the reports only consider CURRENT STATE of the records 
+
+  ** to makd PUBLIC BUTTON of A REPORT to work  The sys_property glide.report.published_reports.enabled needs to be set to true in order to see the Publish option.
+
+  ** best practice is to search for existing reports in ALL > REPORTS > VIEW/RUN and make tweaks to generate new report RATHER THAN creating reports from the scratch 
+
+  ** REPORT DESIGNER: is used to make reports.... the parts of a report designer are: 
+
+    - DATA: provide NAME for the report and SOURCE of the data 
+
+    - TYPE: to select the TYPE OF VISUALIZATION from 28 different types 
+
+    - CONFIGURE: group the data by SPECIFIC FIELDS and RUN CALCULATIONS 
+
+    - STYLE: adjust look by changing color etc to your report
+
+    **** always CLICK RUN BUTTON to apply the changes after EACH CHANGE 
+
+    **** clicking RUN WON'T SAVE the changes
+
+  ** sharing menu of reoprt designer has following functionalites: 
+
+    - SHARE: to specify who can VIEW THE REPORTS 
+
+    - SCHEDULE: makes SCHEDULED EMAIL of the REPORTS 
+
+    - ADD TO DASHBOARDS: to add reports to dashboard 
+
+    - EXPORT TO PDF
+    
+    - PUBLISH: create URL of the report to share it to INTERNAL and EXTERNAL AUDIENCES.... but they have to first LOGIN TO SERVICENOW
+
+
+PERFORMANCE ANALYSIS: is a a recurring process that keep on tracking datas of a record. 
+
+DASHBOARD: reports can be shared on dashboards to graphically display it 
+
+
+

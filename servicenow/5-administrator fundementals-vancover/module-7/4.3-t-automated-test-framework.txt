@@ -1,0 +1,31 @@
+- AUTOMATED TEST FRAMEWORK: allows you to CREATE and RUN AUTOMATED TESTS on your instance 
+
+  ** BY DEFAULT the system property to run automated tests is DESABLED to PREVENT it from ACCIDENTALLY run in PRODUCTION INSTANCE 
+
+  - TESTS are written in TEST RECORD 
+
+  - TEST RECORDS are defined with TEST STEPS which are given IN ORDER 
+
+    ** ATF provides DEFAULT LIST of STEP CONFIGURATIONS
+
+  - A TEST STEP include ACTION TO TAKE and DATA NEEDED to take the action 
+
+    ** if a TEST STEP involves testing of UI ELEMENTS.... then the TEST will be run in BROWSER TAB/WINDOW-ON-DEMAND??/SCHEDULED AT A SET TIME 
+
+  - TEST RESULTS are displayed INSIDE TEST RECORD as RELATED LIST 
+
+  ***** BEST PRACTICE: DON'T RUN TESTS on PRODUCTION INSTANCE..... use NON-PRODUCTION instance to RUN TESTS 
+
+- BENEFITS OF ATF TESTS for MANAGERS and DEVELOPERS 
+
+  - reduce UPGRADE and DEVELOPMENT TIME 
+
+  - you can REUSE TESTS with DIFFERENT DATA SETS 
+
+  - KEEP TEST INSTANCE CLEAN by ROLLING BACK DATA nd CHANGES after each test is run 
+
+  - TEST SUITS: enables to RUN TESTS in BATCHES 
+
+  - SCHEDULE TEST SUITE RUNS 
+
+  - enable NON-TECHNICAL TEST DESIGNERS to CREATE TESTS 

@@ -1,0 +1,54 @@
+..... changes that are required to be made in production environments must follow SYSTEMATIC STEPS or PROCESS that take care of CHANGE MANAGEMENT.... 2 such CHANGE MANAGEMENT MODELS are 
+
+  1) AGILE: is a process cycle to incorporate changes into production using the following steps 
+
+    plan -> design -> develp -> test -> deploy -> review 
+
+    ** the above cycle is repeated and the final step is LAUNCH 
+
+  2) CHANGE MANAGEMENT? 
+
+- whenever a change request is made through servicenow... it passes through the following processes 
+
+  1) CREATION and SCOPE: create change request and document relevant details and locate it 
+
+  2) APPROVAL: if necessary the change request is reviewed and may be approved or rejected 
+
+  3) IMPLEMENTATION: implement the change 
+
+  4) CLOSURE: close the change after PIR(Post Implementation Review).... sometimes the change is closed automatically or closed manually 
+
+
+- METHODS/RESOURCES to MONITOR your INSTANCE: there are several ways to monitor the instance... and to help plan maintenance accordingly 
+
+  - PLATFORM DASHBOARD: displays performance data in various graphs.... to use it goto: 
+
+    - ALL > PERFORMANCE ANALYTICS > DASHBOARD or use ALL > SELF SERVICE > DASHBOARDS
+
+      - click all tab
+
+      - search form SERVICENOW PERFORMANCE 
+
+  - SYSTEM DIAGNOSTICS PAGE: is used by ADMIN to find ROOT CAUSE of performance issues.... to do that... goto 
+
+    - ALL > SYSTEM DIAGNOSTICS > DIAGNOSTICS PAGE 
+
+  - SYSTEM DIAGNOSTICS STAT TOOLS: used to see stastics of system ACTIVITIES.... to display it 
+
+    - ALL > SYSTEM DIAGNOSTICS > EXPRESSION CACHE STATS > STATS 
+
+      ** or simply search STATS in all menu 
+
+    - to display more stats.... search stats.do in ALL MENU 
+
+    - STATS tool helps to find 
+
+      - SLOW QUERIES (QUERY PATTERN RECORD)
+      - SLOW SCRIPTS/BUSINESS RULE (SCRIPT PATTERN RECORD)
+      - SLOW TRANSACTIONS/BACKGROUND PROCESS (TRANSACTION PATTERN RECORD)
+
+  - INSTANCE SCAN 
+  - HEALTH SCAN 
+  - EXTENDING VALUE 
+  - RELEASE NOTES 
+  - UPGRADE CENTER 

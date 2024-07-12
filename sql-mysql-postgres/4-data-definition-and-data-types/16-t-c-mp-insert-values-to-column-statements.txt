@@ -1,0 +1,13 @@
+...... to insert data VALUES into an already defined table 
+
+- mysql and postgresql command: 
+
+      :: INSERT INTO <table_name> (<column1>, <column2>,...) VALUES (<value1>, <value2>,....)
+
+          ** values should be inserted IN SAME ORDER of COLUMNS specified in the statement
+
+          ** number data values DON'T need QUOTES 
+
+          ** string data values WITH WHITE SPACES SHOULD be wrapped in QUOTES
+
+***** in POSTGRES always SINGLE QUOTES to WRAP else ERROR

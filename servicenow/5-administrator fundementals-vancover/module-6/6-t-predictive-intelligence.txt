@@ -1,0 +1,6 @@
+- PREDICTIVE INTELLIGENCE: uses MACHINE LEARNING ALGORITHM to SET FIELD VALUES automatically during RECORD CREATION 
+
+  ** roles required 
+
+    - admin 
+    - ml_admin 

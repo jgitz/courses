@@ -1,0 +1,22 @@
+.... if you have a form with a REFERENCE FIELD..... now you want to ADD A VALUE to the TABLE in the REFERENCE FIELD.... to do that 
+
+- open tha record form 
+
+- RIGHT CLICK on the REFERENCE FIELD LABEL 
+
+  - click SHOW - <reference field variable name>.. eg: Show - 'business service'
+
+  ** DICTIONARY INFO pop up window appears with REFERENCE TABLE NAME 
+
+   - copy the VALUE OF "REFERENCE"
+
+- paste the COPIED value in FILTER NAVIGATOR in ALL MENU and chain .list to it to load tha REFERENCE TABLE LIST 
+
+- now click new 
+
+- fill the fields 
+
+- submit 
+
+
+***** BE CAREFUL WHILE ADDING A RECORD TO A REFERENCE TABLE

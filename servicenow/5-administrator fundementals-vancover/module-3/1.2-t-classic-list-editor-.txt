@@ -1,0 +1,17 @@
+- LIST EDITOR (..adding values INLINE): is a functionality that enables to change FIELD VALUES WITHOUT OPENING the record
+
+  ** is the QUICKEST METHOD to update a field on multiple records
+
+  - to use list editor.... DOUBLE CLICK on fields you want to edit... enter the value.... click TICK ICON 
+  
+  - list editor allows CONTIGUOUS and NON-CONTIGUOUS editing (contiguous = editing multiple sequential fields at same time )
+
+  **** NOT all FIELDS and TABLES can be edited using list editor 
+
+
+- QUICK EDIT FUNCTION: is a method by which CERTAIN FIELD VALUES can be set from LIST FIELD CONTEXT MENU (right click on row)..... those field values where quick edit funcition can be used are 
+  
+  - ASSIGN TO ME 
+  - APPROVE 
+  - REJECT 
+  - ASSIGN TAG 

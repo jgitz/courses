@@ -1,0 +1,28 @@
+
+** DATA DEFINITION STATEMENTS (DDS): are commands/statements used to CREATE or UPDATE 
+
+    1) DATABASE 
+
+    2) TABLE 
+
+  **** dds are used less frequently, for initial creation of database and tables and configure its field datatypws
+
+
+- DDS to create DATABASE 
+
+    :: CREATE DATABASE;
+
+- DDS to create TABLE 
+
+    :: CREATE TABLE;
+
+- DDS to UPDATE database CONFIGURATION 
+
+    :: ALTER DATABASE;
+
+- DDS to UPDATE table CONFIGURATION 
+
+    :: ALTER TABLE;
+
+
+**** each of these dds statements has various options to use along it with to configure databases and tables

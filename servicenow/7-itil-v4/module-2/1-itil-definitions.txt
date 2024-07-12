@@ -1,0 +1,30 @@
+.... below is the key ITIL 4 TERMINOLOGY DEFINITIONS.... 
+
+- DEMAND: WANT for goods and services FROM INTERNAL and EXTERNAL CUSTOMERS 
+
+- OPPORTUNITY: ways to IMPROVE the organisation and ADD VALUE for the stakeholders 
+
+- ORGANIZATION: any type of organisation which are PUBLIC or PRIVATE 
+
+- SERVICE: creating VALUE by creating OUTCOMES that CUSTOMERS DESIRE.... WITHOUT CUSTOMER having to MANAGE COSTS and RISKS 
+
+- SERVICE MANAGEMENT: SET of ORGANIZATIONAL capabilities for enabling value for CUSTOMERS in the form of SERVICES 
+
+- SERVICE PROVIDER: a ROLE INSIDE the ORGANISATION that PROVIDE SERVICES to the CUSTOMER 
+
+- SERVICE VALUE CHAIN: an OPERATING MODEL for SERVICE PROVIDERS that gives all KEY ACTIVITIES to manage PRODUCT and SERVICES 
+
+- SERVICE VALUE SYSTEM (SVS): shows ALL the PARTS of an ORGANISATIONAL WORK to acheive VALUE CREATION 
+
+- STAKEHOLDER: a PERSON in the ORGANISATION with an INTEREST or STAKE to participate in an ORGANISATION/PRODUCT/SERVICE/PRACTICE?? 
+
+- VALUE: the PERCEIVED benefits/usefulness/importance of SOMETHING 
+
+- VALUE STREAMS and PROCESSES: is one of FOUR DIMESIONS of SERVICE MANAGEMENT that defines 
+
+  - ACTIVITIES
+  - WORKFLOWS
+  - CONTROLS
+  - PROCEDURES 
+
+  which are needed to acheive the agreed objectives 

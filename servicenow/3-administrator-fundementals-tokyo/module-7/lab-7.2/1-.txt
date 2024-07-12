@@ -1,0 +1,75 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see all the roles in your system 
+
+  - goto ALL > SYSTEM SECURITY > USERS & GROUPS > ROLES
+
+    - you can search for any role here... if you click any role record from the list..... you can see the APPLICATIONS and MODULES to which the role is attached under APPLICATIONS WITH ROLE and MODULES WITH ROLE TABS respectively
+
+  *** whenever a TABLE is created.... there will be a ROLE CREATED AUTOMATICALLY 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add a role to GROUP 
+
+  - goto ALL > SYSTEM SECURITY > USERS & GROUPS > GROUPS 
+
+  - select the group 
+
+    - scroll down to ROLES TAB.... 
+
+    - click edit 
+
+    - add the required role to the list 
+
+    - save 
+
+  ** the addition of role will take some time to get reflected.... reload the form if necessary by clicking the hamburger
+
+  **** when you are CREATING A GROUP FROM SCRATCH... and you want to ADD ROLE to the group.... ROLE TAG WONT appear UNTIL YOU SAVE THE GROUP..... so if you are creating a group.... save is after giving a name for the role tab to appear
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add a role to a specific APPLICATION (if it is added to all menu)
+
+  - in ALL MENU.... on the APPLICATION NAME click EDIT ICON....
+
+    - click EDIT BUTTON on ROLE
+      - ADD required ROLE from AVALIABLE BOX to the SELECTED BOX
+
+  - save
+
+  ***** alternate method 
+
+    - goto ALL > USER ADMINISTRATION > ROLES 
+
+    - click new 
+
+      - name: <name of the role>
+
+      - application: select the application 
+
+      - submit
+
+      ** add PREFIX u_ or x_ based on the SCOPE
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add a role to a MODULE under an APPLICATION
+
+  - in ALL MENU.... on the APPLICATION NAME click EDIT ICON....
+
+  - scroll down to module section and select the TARGET MODULE 
+
+    - scroll down to VISIBILITY TAB 
+  
+      - click EDIT BUTTON on ROLE 
+
+        - add required role from available box to selected box
+
+  - save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

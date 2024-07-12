@@ -1,0 +1,2 @@
+INSERT INTO conversations (user_name, employer_name, message, date_sent)
+VALUES ('Tom Jerry', 'Heaven Ltd', 'Hi, Any opportunities?', '2022-01-01'); /* will later change the conversations table with date_sent with default value */

@@ -1,0 +1,13 @@
+..... there are MANY COMPANIES in your instance.... but you can only manage ONE COMPANY at a time and change only ONE COMPANY'S LOGO and properties by going to ALL > SYSTEM PROPERTIES > MY COMPANY... 
+
+.... so to change existing company and make ANOTHER COMPANY as PRIMARY COMPANY 
+
+- goto companies list ALL > USER ADMINISTRATION > COMPANIES 
+
+- edit LIST LAYOUT to show PRIMARY COLUMN 
+
+- locate the COMPANY and change the value of PRIMARY to TRUE 
+
+  ** ONLY ONE company can be made PRIMARY COMPANY at a time 
+
+- now PROPERTIES of your NEW COMPANY will come up in ALL > SYSTEM PROPERTIES > MY COMPANY 

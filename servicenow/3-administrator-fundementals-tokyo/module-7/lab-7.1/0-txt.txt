@@ -1,0 +1,120 @@
+.... if we want to CREATE A TABLE.... 
+
+  ** STANDARD PRACTICE is to check if the TABLE you want is already there in the system.... or a SIMILAR TABLE with some missing fields.... in that case YOU ONLY NEED TO EXTEND THE TABLE.... RATHER THAN creating from scratch
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to SEARCH FOR A TABLE in the snow instance and check the FIELDS inside them 
+
+  - login as SYSTEM ADMINISTRATOR 
+
+  - goto ALL > SYSTEM DEFINITION > DICTIONARY 
+
+    ** this list TABLES with their NAME in TABLE FIELD(column).... and FIELDS belong to each table in COLUMN NAME FIELD (column)
+
+  - on table column.... SEARCH for the table name with * WILD CARD 
+
+  - now for better clarity GROUP YOUR TABLES by 
+
+    - click 3 DOTS on TABLE COLUMN (column options)
+
+    - select GROUP BY TABLE 
+
+    ** now all lists are grouped by table name 
+
+
+  ***** use this method before creating a new table... check if any table has all/many fields that you want in the new table... if you find any... just EXTEND the table instead of creating new one.... sometimes the fields you want is there in the form of ANOTHER FIELD NAME
+
+  ** cmdb_ci_hardware table consists of hardware tables 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create a new table 
+
+  - login as administrator 
+
+  - set scope to GLOBAL 
+
+  - goto ALL > SYSTEM DEFINITION > TABLES
+
+  - click NEW 
+
+    - fill LABEL FIELD to give table LABEL
+
+    - fill NAME field to fill table NAME 
+
+      ** if you want this table to be a CHILD TABLE (extension table) from another table.... the NAMING CONVENTION should be 
+
+        u_<parent table name>_<custom table name>
+
+        ** prefix would be x_ if the application is a SCOPED
+
+    - ENTENDS TABLE FIELD: select the PARENT TABLE by clicking magnifying glass icom... IF you want the table you are creating to be a CHILD from a parent table
+
+    - ADD MODULE TO MENU: allows you to add the TABLE to a MENU in ALL MENU.... select the MENU or CREATE NEW to create a new MENU
+
+      ** MODULE here refers to TABLE...
+
+      ** MENU refers to APPLICATIONS in the ALL MENU
+
+      ** the ALL menu contains APPLICATIONS (MENU).... the sub menu in applications (MENU) is called MODULE (tables)
+
+    - save
+
+    - you can add/view/EDIT fields in COLUMNS TAB on the TABLE 
+
+
+    ** now you can open the TABLE from the ALL MENU under the relevant sub menu
+
+      ** you can open the table from the all menu.... and PERSONALISE THE FIELDS in the LIST by selecting GEAR ICON 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... every table has records.... the view you see when you open a record is called FORM LAYOUT..... 
+
+... form consists of WHICH ALL FIELDS from the TABLE you want to display in RECORD/FORM....
+
+.... to select/ADD FIELDS to a RECORD/FORM in a table 
+
+- open the table 
+
+- click new or open a record/form 
+
+- click on hamburger (form context menu)
+
+- select CONFIGURE > FORM LAYOUT 
+
+  - add/remove fields.... you can also DOT WALK FIELDS if the fields are from another reference table 
+
+  - save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... your all menu has APPLICATION menu.... each application menu has MODULES..... each modules can be of many types... eg
+  - it can be a table 
+  - it can be a LINK such that.... when you click it... it routes to FORM VIEW of a table to create a NEW RECORD 
+
+.... if you want to create a MODULE under an APPLICATION such that.... you want to ROUTE TO NEW RECORD form of a TABLE....
+
+- click ALL 
+
+- search for the APPLICATION name 
+
+- CLICK EDIT ICON on the application name 
+
+  - on the MODULE TAB.... click NEW 
+
+    - FILL title field 
+    - fill the application menu: select application where you want to add the module in all menu 
+
+    - order field: usually 100??
+
+    - on LINK TYPE TAB 
+
+      - link type field: NEW RECORD 
+      - TABLE: select the table where you want to add the NEW RECORD 
+
+** now you can see the module on the application in all menu.... and when you click on it.... new record form opens 
+
+** USE EDIT ICON in the ALL MENU to edit APPLICATION and MODULE NAMES and properties

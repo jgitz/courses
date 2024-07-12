@@ -1,0 +1,81 @@
+... there are FIVE MAJOR COMPONENTS that forms a SERVICE CATALOG 
+
+  1) ITEM/CATALOG ITEM: are BUILDING BLOCK of SC... item can include 
+
+    - SOFTWARE 
+    - HARDWARE 
+    - SERVICES 
+
+    ** SC is used to ORDER ITEMS 
+
+  2) RECORD PRODUCER: is a FRONT END FORM INTERFACE through which a SEPARATE TASK RECORD (** records can be created in ANY TABLE) can be created in the instance by a CUSTOMER 
+
+    - eg incident management can use RECORD PRODUCER for users to OPEN an INCIDENT via WEB 
+
+    ** RECORD PROCUCES produces a TASK BASED RECORD and NOT a REQUEST ITEM 
+
+    ** you can create record producers for TABLES and DATABASE VIEWS?? 
+
+    **** DONOT CREATE a REQUESTED ITEM RECORD using RECORD PRODUCER... requested item record is created using CATALOG ITEMS 
+
+  3) VARIABLE: allows VARIANTS of an ITEM can be shown as QUESTIONS in the front end and customers can choose OPTIONS related to CATALOG ITEM.
+
+    - COMMONLY USED VARIABLE TYPES ARE: 
+
+      - REFERENCE
+      - MULTIPLE CHOICE (RADIO BUTTONS)
+      - SINGLE LINE TEXT 
+      - SELECT BOXES (DROP DOWN)
+      - CHECK BOXES 
+
+      
+
+    ** to view all VARIABLE RECORDS 
+
+      - ALL > SERVICE CATALOG > CATALOG VARIABLES > ALL VARIABLES
+
+
+    ** variables are GLOBAL by DEFAULT 
+
+    ** a single variable can be USED in MULTIPLE PLACES 
+
+  4) VARIABLE SET: is a COLLECTION OF VARIABLES that can be SHARED b/w CATALOG ITEMS.... so an admin DON'T REQUIRE to make VARIABLES separately for a SIMILAR CATALOG ITEMS 
+
+    - to view all VARIABLE SET of your SC 
+
+      - ALL > SERVICE CATALOG > CATALOG VARIABLES > VARIABLE SETS 
+
+  5) FLOWS: it is where the admin can define REQUEST FULFILLMENT PROCESS for a catalog item 
+
+    - flows allow you to SEND NOTIFICATIONSS to users and groups 
+
+    ** FLOW is made using FLOW DESIGNER 
+
+    - SIX DIFFERENT different FLOW STAGES are 
+
+      1) WAITING FOR APPROVAL (IN PROGRESS)
+      2) APPROVED 
+      3) PENDING (has not started)
+      4) FULFILLMENT (IN PROGRESS)
+      5) DEPLOYMENT/DELIVERY 
+      6) COMPLETED 
+
+      ** each flow stage can have MULTIPLE APPROVAL ACTIONS 
+
+      ** each stage can be grouped to STAGE SET if there are sub stages related to a stage 
+
+** SC ITEM VARIABLES are available to be used in FILTERS, LIST LAYOUTS and REPORTS 
+
+
+______________________________________________________
+
+** ORDER GUIDE: you can create an order guide by ADDING MULTIPLE CATALOG ITEMS into it such that ESSENTIAL ITEMS NEEDED of a SPECIFIC USAGE CAN BE GROUPED TOGETHER and CAN BE ORDERED TOGETHER 
+
+  - ORDER GUIDE enables to ORDER MULTIPLE RELATED ITEMS in ONE REQUEST 
+
+  - ORDER GUIDE also helps to ASSIST USERS in DETERMINING ITEMS they need 
+
+  - to view order guides... goto 
+
+    - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > ORDER GUIDES 
+

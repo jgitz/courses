@@ -1,0 +1,84 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view ci's in your instance's cmdb 
+
+  - in all search box type... cmdb.list
+
+  ** each record is a CI  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view SCHEMA MAP of tables (relationships between tables )
+
+  - goto ALL > SYSTEM DEFINITION > TABLES 
+
+    - open the REQUIRE TABLE RECORD 
+
+      - click SHOW SCHEMA MAP related link 
+
+      ** gui opens showing table relationship tree 
+
+        - each BOX is a table.... you can identify parent and child tables (entended and extending) etc
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view CLASS MANAGER to view/edit CMDB, CI'S and RELATIONSHIPS and heirarchy.... 
+
+  - goto ALL > CONFIGURATION > CI CLASS MANAGER (refer previous theory notes to get more insights )
+
+  - click OPEN HEIRARCHY BUTTON to view all ci classes on left pane 
+
+    ** you can search for ci classes and PIN IT for easy access using PIN ICON 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- to see gui view of DEPENDENCY MAP of CI ITEM..
+
+  - goto ALL > CONFIGURATION > CI CLASS MANAGER 
+
+    - click open heirarchy button 
+
+    - click your ci class from the LEFT PANE to open it 
+
+      - open CLASS INFO TAB to get CI ITEMS belongs to the CLASS
+
+      - open the required CI ITEM RECORD
+
+        - under RELATED ITEM SECTION... click DEPENDENCY VIEWS ICON (SHARE BUTTON like icon)
+
+        ** now you can view DEPENDENCY MAP in NEW TAB 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to define NEW RELATIONSHIP between CI TABLES....
+
+  - goto ALL > CONFIGURATION > CI CLASS MANAGER 
+
+  - click open heirarchy 
+
+  - select appropriate ci class from left pane... on which you want to ADD NEW RELATIONSHIP 
+
+    - on the left pane select SUGGESTED RELATIONSHIP ... now gui opens 
+
+    - click PURPLE NEW BUTTON... window appears
+
+      - RELATIONSHIP FIELD: to set relationship operator 
+
+      - TARGET: select target table on which relationship operator works 
+
+      - click save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- if you DONT SEE RELATED ITEMS TOOLBAR in CI ITEM FORM opened via CI CLASS MANAGER.... then do this 
+
+  - on the CI ITEM FORM..... click HAMBURGER > CONFIGURE > FORM DESIGN 
+
+    ** FORM opens in STUDION 
+
+      - from the left pane.... scroll down and select LEGACY CI RELATIONSHIPS field.... DRAG AND DROP it in the form 
+
+      - click BLUE SAVE BUTTON on top 
+
+      ** now you will see the related items toolbar in the ci item form on the ci class manager 
+  

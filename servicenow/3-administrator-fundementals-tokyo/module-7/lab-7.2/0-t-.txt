@@ -1,0 +1,145 @@
+..ACCESS CONTROL and SECURITY IN SERVICENOW..
+
+... snow provides THREE LEVELS of SECURITY 
+
+  1) USER AUTHENTICATION/LOGIN: enforced using 
+
+    - user 
+    - groups
+    - roles
+
+  2) APPLICATION and MODULE ACCESS: enforced using ROLES 
+
+  3) DATABASE ACCESS: snow allows to restrict access to TABLES, FIELDS and RECORDS 
+
+    - enforced using 
+
+      **?? GLOBAL SYSTEM PROPERTIES 
+
+      **?? ACCESS CONTROL RULES 
+
+      **** DEFAULT access status to database is DENY 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- the THREE SECURITY MODULES used for ACCESS CONTROL IS 
+
+  1) ALL > SYSTEM PROPERTIES > SECURITY 
+
+  2) ALL > SYSTEM SECURITY > ACCESS CONTROL (ACL)
+
+  3) ALL > SYSTEM SECURITY > HIGH SECURITY SETTINGS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+- SNOW INSTANCE OPERATIONS that can be given through access controls
+
+  - all CRUD operations to TABLES, RECORDS and FIELDS.... the permission includes operations below 
+
+    - create 
+    - delete
+    - read 
+    - write
+
+  - execute: user cannot execute scripts on a RECORD or UI PAGE 
+
+  - Edit_ci_relations: user cannot define relationship between CI'S  in CONFIGURATION ITEM CMDB TABLEs (cmdb_ci)
+
+  - Save_as_template: controls the FIELD that should be SAVED as TEMPLATE when created ??
+
+  - Report_on: user cannot create reports on objects 
+
+  - Personalize_choices: user cannot RIGHT CLICK and CONFIGURE choice field in forms
+
+  **** besides these there are many operations 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ADMINS in snow:
+
+  - SYSTEM ADMINISTRATOR is the top level admin 
+
+  - USERS can also be given ADMIN role 
+
+  - SECURITY_ADMIN is the SUPER ADMIN above SYSTEM ADMINISTRATOR 
+
+    ** ONLY SYSTEM ADMINISTRATOR can elevate to SECURITY ADMIN ROLE 
+
+    ** ONLY SECURITY_ADMIN can access to HIGH SECURITY SETTINGS and ACCESS CONTROLs
+
+    **** even a USER with ADMIN ROLE CANNOT elevate to SECUTITY ADMIN.... only SYSTEM ADMINISTRATOR can elevate to SECUTITY_ADMIN role??
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ACL (Access Control List): is a TABLE that consists of ACCESS CONTROL RULES for OBJECTS in the snow platform.... objects can be tables, fields etc 
+
+  - to access acl table goto: ALL > SYSTEM SECURITY > ACCESS CONTROL (ACL)
+
+    ** ACL table consists of access control rule RECORDS/FORMS which consists of following FIELDS: 
+
+      - type: the type of object
+
+      - operation: the CRUD operation you want to give access
+
+      - name: name of the OBJECT ()
+
+      - you can also set 
+
+        - roles
+        - conditional expression for access
+        - scripts 
+
+    ** when a CUSTOM TABLE is created.... by default CRUD access (create, delete, read write) is granted to the table BY DEFAULT.... also a ROLE is created?? 
+
+- to view ACCESS CONTROLS RULES associated with a TABLE...
+
+  - on the ALL menu... type 
+
+      <table name>.config 
+
+  - click ACCESS CONTROLS TAB
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- ACCESS CONTROL RULES for a TABLE and its FIELDS can be given to 3 components of a table 
+
+  1) NONE RULE:  to give access control to ENTIRE rows and fields TABLE.... give --None-- option (<table>.--None--)
+
+  2) FIELD RULE: to give access control to a field in the table.... give the FIELD NAME as the option (<table>.<field>)
+
+  3) * RULE:  to give access control to ALL THE OTHER FIELDS that are NOT GIVEN ACCESS CONTOL.... give the * option (<table>.*) 
+
+  ** the above 3 are called RULES.... when applying MIX of these rules to a table and its fields.... there can be CONFLICTS in rules.... to avoid this there is a PRECIDENCE to the 3 rules.... 
+
+     FIELD RULE > * RULE > NONE RULE 
+
+  ** BEST PRACTICES for setting rules for a table: 
+
+    - whenever you create a * RULE for a table.... CREATE a NONE RULE AS WELL
+
+    - whenever you want to give ACCESS ONLY... ONLY USE NONE RULE 
+
+    - whenever you want to give DENY RULE.... use NONE and STAR
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ACCESS CONTROL WORKING
+
+  ... when a user request access to a RECORD OBJECT... the following happens in the background 
+
+    - step1: the snow check for the TABLE matching related to the object and check for AC rules defined for the TABLE... in TABLE, PARENT TABLE and in *(ALL TABLE)....
+
+      - if table match is found... the next step is to check ACL FIELD RULE for the record
+
+      - if no table match is found... access is DENIED 
+
+    - step 2: if table acl rule is found.... the snow checks for FIELD ACL RULEs.... and if BOTH FIELD ACL AND TABLE ACL RULE is found... ACCESS is granted to the user
+    
+    - if there is NO matching AC RULE for TABLE and FIELD AC rules.... then the USER is given access
+
+    **** both TABLE ACL RULE and FIELD ACL rule should be SATISFIED by the user to get access..... absence of ANY ONE will DENY ACCESS 
+
+    

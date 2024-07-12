@@ -1,0 +1,19 @@
+..... in servicenow there are many inbuilt applications and we can add extra applications to your instance 
+
+.... APPLICATIONS and its FEATURES can be installed or activated from two sites 
+
+1) PLUGINS (ALL > SYSTEM DEFINITIONS > PLUGINS) 
+
+  or use ALL > SYSTEM APPLICATIONS > ALL AVAILABLE APPLICATIONS > ALL
+
+2) SERVICENOW STORE (use only if applications are not found on the PLUGIN)
+
+** each applications used individual APPLICATION SCOPES.... only administrator can grand access for data of one application by another application.
+
+ ** by DEFAULT.... an application can only work only on its TABLE and BUSINESS LOGIC
+
+** WHAT ARE PLUGINS?
+
+  plugins provide additional optional functionality within a snow instance, like APPLICATION, WORKSPACES and DEMO DATA
+
+** there are inbuilt plugins in the snow instance that you need to activate.... some inbuilt plugins need SERVICE CATALOG REQUEST for its activation..... if the plugin is NOT FOUND among the inbuilt applications.... you can search it in the SERVICENOW STORE

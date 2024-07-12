@@ -1,0 +1,23 @@
+.... there are many types of tables in snow.... 
+
+1) CUSTOM TABLE: is a table made by the USER
+
+  ** table name format 
+
+    - starts with x_ if the table belongs to APPLCATION SCOPE 
+
+    - starts with u_ if the table belongs to GLOBAL APPLICATION SCOPE 
+
+    - CUSTOM TABLES can interact with any other tables (base table, core table... etc)
+
+2) BASE TABLE: is a table which has NO PARENT 
+
+    ** A CUSTOM TABLE can also be a BASE TABLE if it has NO PARENT TABLE 
+
+    - eg: TASK TABLE, cmdb_rel_ci
+
+3) CORE TABLE: are tables that come with SERVICENOW BASE SYSTEM 
+
+  - eg: USER TABLE, TASK TABLE, INCIDENT TABLE, CHANGE TABLE 
+
+  - a core table can be BASE TABLE like TASK table.... can be CHILD TABLE like INCIDENT table.... 

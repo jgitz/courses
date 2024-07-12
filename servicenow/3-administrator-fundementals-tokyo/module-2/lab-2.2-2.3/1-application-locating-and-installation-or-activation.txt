@@ -1,0 +1,39 @@
+** inbuilt applications are ACTIVATED and applications found from the store is INSTALLED 
+
+.... inorder to ACTIVATE an inbuilt application.... we need to correctly find application name, it's features and THE ROLE of the USER required for activating and using the application....
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+....steps to find the right application you are looking
+
+- goto docs.servicenow.com 
+
+- on SEARCH field search for keywords 
+
+- find related link from the results 
+
+- now on the LEFT PANE find the PARENT NODE of the HEIRARCHY... and CLICK ON THE ORIGIN NODE 
+
+- on the origin node page.... on the right tab FIND THE REQUIRED PRODUCT.... CLICK on it 
+
+- again in the new page.... on the RIGHT PANE.... find the APPLICATION from the APPLICATION AND FEATURES tab 
+
+- on the application page.... click on the INSTALL/SETUP tab to see the ROLE REQUIRED and more info about the application
+
+  ** the description will have the APPLICATION NAME in first paragraph itself 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to install applications 
+
+- goto ALL > SYSTEM DEFINITIONS > PLUGINS 
+
+    ** will take some time to load 
+
+- search for the app on search bar
+
+- click on the install/activate button
+
+  ** some installed app will already have DEMO DATA....
+
+  **** DON'T load DEMO DATA in PRODUCTION INSTANCE.... it's DIFFICULT TO REMOVE

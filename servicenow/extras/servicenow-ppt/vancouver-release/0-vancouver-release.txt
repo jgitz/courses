@@ -1,0 +1,186 @@
+ "
+Financial Services Operations:
+    Equifax spoke release notes:
+
+      The ServiceNow® integration with the Equifax spoke enables you to access important information about the credit history for a customer, fraud alerts, digital identity verification, transaction screening, and other relevant data. The ServiceNow integration with the Equifax spoke is new in the Vancouver release.
+
+    Equifax spoke highlights for the Vancouver release
+
+        Access customer information such as the credit history for a customer, the credit score for a customer, and fraud alerts.
+        Evaluate a customer's creditworthiness to make lending decisions faster.
+        Verify customer identities to ensure that you have accurate information.
+
+    New in the Vancouver release
+
+      Equifax spoke actions:
+
+        Enable your users to query the Equifax OneView API and retrieve the associated credit report in JSON format and in PDF format. This spoke includes the following features:
+
+ Governance, Risk, and Compliance:
+
+  Compliance Case Management highlights for the Vancouver release
+
+    Report, investigate, and resolve a compliance case or event, such as a complaint or breach.
+    Raise a compliance request, such as a policy modification, clarification, or inquiry.
+    Gain operational insights into the current state of the compliance cases and requests from the Compliance Case Management landing page.
+    Elevate your compliance management with a highly customizable workflow that meets your organization's requirements.
+    Gain comprehensive insights into your compliance case by using the 360-degree compliance case view.
+
+
+Healthcare and Life Sciences:
+
+  
+Improved Healthcare and Life Sciences data model
+    The following enhancements have been made to the data model:
+
+        Service organization records are created and linked when a Healthcare location is created.
+        Internal or external business locations are created and linked when a corresponding Healthcare location is created.
+        Patient records are extended from consumer profiles.
+        Service definitions capability is provided at the foundation level, providing improved management of service offerings.
+        The Healthcare task [sn_hcls_task] table now extends the Customer Service task [sn_customerservice_task] table.
+
+IT Service Managemen:
+
+  Task Intelligence for ITSM highlights for the Vancouver release
+
+    Define an incident prediction model's purpose, set its prediction preferences and behavior, train it with your data, and deploy it to predict and recommend incident fields.
+    Track and monitor the performance of a deployed model.
+    Use incident field information to help you categorize incidents and reduce the handle time for agents.
+    Edit, train, and redeploy a model based on its performance results.
+    Supports Utah patch 5 and later releases.
+
+  Task Intelligence for ITSM features
+
+  Incident prediction model
+      Set up and deploy your incident prediction model to predict incident fields and help categorize incidents.
+  Monitoring and analytics
+      Track and view the impacts of your incident prediction models. Monitor and analyze a model's performance overtime. View the total number of predictions, as well as the number of predictions your agents did and didn't use.
+  Edit and redeploy the model
+      Based on the model's performance and impact, you can edit, retrain, and redeploy the model to enhance performance.
+
+Now Platform security:
+
+  Data Discovery highlights for the Vancouver release
+
+    Discover PII across your organization with the Data Discovery tool, enabling you to proactively protect critical information.
+    Configure workflows and data filters to match your organizational processes and preferences.
+    Navigate through your data on a user-friendly dashboard, offering a centralized hub for visualizing and exploring discovered datasets.
+
+    
+    Data Discovery features
+
+    Exploring Data Discovery
+        Data Discovery enables customers to identify sensitive data within a ServiceNow instance to classify, protect, and report. Data Discovery is customizable for your organizations needs with custom filters and workflows.
+
+Operational Technology:
+
+  - Operational Technology Change Management release notes
+
+    The ServiceNow® Operational Technology Change Management application enables engineers to implement changes to Operational Technology (OT) assets and production processes. Operational Technology Change Management is a new application in the Vancouver release.
+
+    Operational Technology Change Management highlights for the Vancouver release
+
+        Digitize the change workflow and connect all stakeholders.
+        Allow sites to have different change management workflows.
+        Choose to either separate or combine IT Change and OT Change.
+        Integrate the OT Change workflow with Operational Technology Incident Management and Operational Technology Vulnerability Response applications.
+        Align factory floor changes with downtime schedules for equipment model entities.
+
+    Select a change model to fulfill change requests
+        Select an OT Change model during the Operational Technology Change Management Guided Setup to apply the change workflow to the needs of your organization. Choose from the following change models:
+
+            Basic OT Change Model
+            Advanced OT Change Model
+
+    Create a change request from OT asset details
+        Create an OT Change request from an OT asset record to populate information automatically in your OT Change form.
+    Create a change request from a remediation task
+        Create an OT Change request from the related remediation task form to view the related change record in the remediation task record.
+    Create a change task to fulfill a change request
+        Create a set of OT Change request tasks to fulfill the change in steps and capture all the work needed to implement the change.
+    Change categories
+        Categorize OT Change requests to assign changes to the right team and shorten the time that it takes to implement a change to your OT asset.
+    Operational Technology change approval
+        Add approvers to your proposed change request, such as the Plant Head or Production Manager, to ensure all risks and decisions are properly evaluated.
+    Managing change requests across sites
+        Find improvements for your site with read-only visibility of OT changes across sites.
+    Managing change model records across sites
+        Update the visibility of change model records by combining OT Change roles with site user roles.
+
+    UI changes
+
+    OT Change Requests list view
+        The OT Change Requests list view was added to the Industrial Workspace with the following menu items:
+
+            Assigned to me
+            Belong to my site
+            All
+  
+  - Vulnerability Response Integration with Claroty CTD release notes
+
+    The ServiceNow® Vulnerability Response Integration with Claroty CTD application uses data imported from Claroty CTD to enable a risk-based action with the production process context. The Vulnerability Response Integration with Claroty CTD is a new application in the Vancouver release.
+
+    Vulnerability Response Integration with Claroty CTD highlights for the Vancouver release
+
+        Import common vulnerabilities and exposures (CVEs) associated with Operational Technology (OT) assets from Claroty CTD and create vulnerable items (VITs) to provide a single view of OT asset vulnerability data with a production process context.
+        Run imports of newly detected vulnerabilities automatically on your own schedule.
+        Use assignment rules to route VITs automatically for remediation to local site-based teams that can take a risk-based action.
+
+    Vulnerability Response Integration with Claroty CTD
+        Use the Vulnerability Response Integration with Claroty CTD application with the Operational Technology Vulnerability Response application to track, prioritize, and resolve vulnerabilities on assets that are used in the production process.
+
+
+- Strategic Portfolio Management
+
+  The ServiceNow® Data Separation application enables organizations to restrict access to sensitive data based on a lens hierarchy and its leaf node. Data Separation is a new application in the Vancouver release.
+
+  Data Separation highlights for the Vancouver release
+
+      Define hierarchy for data separation using a lens hierarchy and its leaf node to restrict data on Strategic Portfolio Management.
+      Enable data separation on select entities and related entities, as needed.
+      Map user groups to various levels of the lens hierarchy to provide access in a hierarchical manner.
+      Use the data separation privileged user role to access restricted data of any business function across the organization, even when data separation is enabled.
+
+
+  Data separation hierarchy
+      Use a lens hierarchy and its leaf node to define the hierarchy for data separation to restrict access for the sensitive data to the specific users of the organization.
+  Data separation on select entities
+      Enable data separation on select entities that are Demand, Project, Resource Plan, and Cost Plan, as needed. You can also enable data separation on select related entities that are Cost Plan Breakdown and Project Task.
+  Entity-group mapping
+      Map user groups to various levels of the lens hierarchy to provide access in a hierarchical manner.
+  Data separation privileged user role
+      Manage overall governance by using the sn_ds.ds_privileged_user role to access any record based on the existing access control rules (ACLs) that the user has, even though when data separation is enabled.
+  Support for data separation
+      Data Separation supports records, related items, planning consoles, workbenches, and reports.
+      Note: ACL and query business rules (BR) limitations apply even when data separation is enabled. For example, reports with aggregate numbers may not be data separated.
+
+
+- Telecommunications, Media, and Technology:
+
+  The ServiceNow® Account Lifecycle Events application provides a structured, onboarding experience for technology industry providers. Account Lifecycle Events is a new application in the Vancouver release.
+
+  Account Lifecycle Events highlights for the Vancouver release
+
+      Enable technology industry providers to offer a structured and repeatable onboarding experience to their customers while ensuring transparency for internal and external teams.
+      Facilitate collaborative data import, staging, and publishing processes for onboarding the enterprise accounts of your technology industry providers.
+      Provide a cost-effective and enhanced onboarding experience for enterprise customers.
+      Use the purpose-built playbook, playbook activities, case types, and case task structures to establish a repeatable framework for onboarding activities.
+
+  Account Lifecycle Events features
+
+  Account Lifecycle Events playbook
+      Use the Account Lifecycle Events playbook as a starting point to build a repeatable onboarding process that meets your organization's requirements.
+  Dedicated case type and tasks
+      Enable technology service providers to use a centralized record for their onboarding team, with dedicated tasks to streamline work assignments, capture data, and automate the onboarding process.
+  Data capture
+      Import, manage, and publish data as part of a case task.
+
+
+
+
+
+
+
+
+
+

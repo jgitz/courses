@@ -1,0 +1,29 @@
+- ITIL acronym: Infromation Technology Infrastructure Library. 
+
+- designed by UK GOVT in 1980's (1989) by CCTA (Computer and Telecommunications Agency)
+
+  - original ITIL was called GITIM (Government Information Technology Infrastructure Management)
+
+- ITIL V2 - released in 2000 
+
+  - core publications: 2 
+
+    - core publications are 
+
+      1) SERVICE SUPPORT 
+      2) SERVICE DELIVERY 
+      
+  - processes: 10
+
+- ITIL V3 - released in 2007 
+
+  - core publications: 5
+  - processes: 26
+
+- ITIL V3 UPDATE - 2011 
+
+- ITIL 4 - 2019 
+
+  - core publications: 6
+  - practices: 34  
+

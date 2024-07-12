@@ -1,0 +1,9 @@
+- CMDB WORKSPACE: is a workspace to work with CMDB with various CMDB DASHBOARDS and TOOLS
+
+  - CMDB DATA MANAGER can be accessed from MANAGEMENT TAB of CMDB WORKSPACE 
+
+  - the follwing PLUGINS should be ACTIVATED 
+
+    - com.snc.cmdb.csdm 
+
+    - com.snc.cmdb.csdm.activation 

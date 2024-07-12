@@ -1,0 +1,15 @@
+- BUTTONS and TABS in DASHBOARD LIST (.. all > self-service > dashboards)
+
+  - RECENT TAB: shows RECENT DASHBOARDS 
+
+  - OWNED BY ME: shows dashboards owned by current user  
+
+  - SHARED WITH ME: shows dashboards shared with the current user
+
+  - ALL: shows ALL DASHBOARDS 
+
+  - CREATE A DASHBOARD BUTTON: to create new dashboard 
+
+  - GROUP FILTER (choice field): to group DASHBOARDS 
+
+  - SEARCH FIELD: to search dashboard by name  

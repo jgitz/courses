@@ -1,0 +1,59 @@
+- What is INSTANCE?
+
+  Instance is a COPY of SNOW ENVIRONMENT to a SPECIFIC CUSTOMER
+
+  ** snow instances are hosted in snow datacenters.
+
+  ** for few customers instances are implemented ONSITE 
+
+  ** the INSTANCE ARCHITECTURE is MULTI INSTANCE.... SINGLE-TENANT ARCHITECTURE where instance has INDIVIDUALLY ISOLATED DATABASE containing DATA, APPLICATIONS and CUSTOMISATIONS 
+
+  ** every customer is given a UNIQUE INSTANCE URL of the format 
+
+    https://<instance name>.service-now.com 
+
+
+
+- What is BASELINE IMPLEMENTATION?
+
+  is a SET OF INSTALLED APPLICATIONS on a snow INSTANCE.... BEFORE any configuration or customisation is made 
+
+
+- What are the types of instances? 
+
+  .... There are mainy TWO CLASSIFICATION of INSTANCES
+
+    1) PRODUCTION INSTANCE: 
+
+      1.1) PROD INSTANCE: where employees do their work and support their organisation 
+
+    2) NON PRODUCTION INSTANCE: 
+
+      2.1) DEVELOPMENT INSTANCE: where IMPLEMENTRS and ADMINS configure and build application. 
+
+      2.2) TEST INSTANCE: where IMPLEMENTERS test ther changes before movinG to the production 
+
+    ** PDI (PERSONAL DEVELOPER INSTANCE): is an independent instance for developers to learn and configure
+
+- How many instances is given to a customer by servicenow 
+
+  - a total of TWO INSTANCES are given.... ONE for PRODUCTION and ONE FOR NON-PRODUCTION (SUB-PRODUCTION)
+
+  - customers can ask for extra NON PRODUCTION INSTANCESfor UAT (User Acceptance Testing), Review, Development, QA etc 
+
+
+- What are the FEATURES of SNOW INSTANCE? 
+
+  - independent 
+
+  - changeable
+
+  - highly configurable 
+
+  - SINGLE-TENANT architecture: data of one organisation is isolated from the other by giving SEPARATE DATABASES to others 
+
+  - CUSTOMER DATA of one instance can be MIGRATED to other instance (for eg from DEV to QA to STAGE to PRODUCTION instances )
+
+  - UPGRADES can be made on INDIVIDUAL INSTANCES
+
+

@@ -1,0 +1,20 @@
+- top level admin is SECURITY_ADMIN 
+
+- ADMIN CANNOT CHANGE PASSWORD of a user with ROLE of  APPLICATION ADMIN
+
+
+- use the FOLLOWING roles for specific use cases: 
+
+  - ADMIN: to do work 
+
+  - ITIL: to test as a PROCESS USER?? 
+
+  - ESS (Employee Self Service): to test as an END USER 
+
+
+- glide.sys.log_impersonation: is a sys_property that should be SET to TRUE to see IMPERSONATION in SYSTEM LOG.
+
+
+- to modify ACL (Access Control List) admin should be ELEVATED to SECURITY_ADMIN ROLE.
+
+  ** there are OTHER ROLES to which role can be elevated such as WORKSPACE_ADMIN role.

@@ -1,0 +1,12 @@
+- ARRAY UTILS: is a PREBUILT SCRIPT in snow that gives extra methods to apply on array.... 
+
+  ** to see array utils scipts 
+
+    all > search for "script include" > select scripts include under system definition > search for array utils
+
+
+- EXAMPLE USECASE of array utils: consider the scenario where we want to eliminate DUPLICATE ITEMS from an array.... for that we use UNIQUE method from array utils.... to do that 
+
+    var au = new ArrayUtil(); 
+
+    var new_array =au.unique(<array>) // now duplcate elements from array will be removed

@@ -1,0 +1,54 @@
+- SERVICE CATALOG REQUEST MANAGEMENT: 
+
+  .. SERVICE CATALOG allows a user to ORDER CATALOG items like a ordering items in an ECOMMERCE by adding items to a SHOPPING CART....
+
+  ... a user can ADD CATALOG ITEMS to cart and place ORDER 
+
+  .... when an ORDER is MADE.... REQUEST MANAGEMENT PROCESS BEGINS....
+
+  .... REQUEST MANAGEMENT helps a USER TO TRACK his ORDER 
+
+
+  .... REQUEST MANAGEMEN includes the following COMPONENTS
+
+    1) REQUEST RECORD (#REQ) : is a RECORD which consists of details of ALL CATALOG ITEMS ORDERED 
+
+      ** TABLE used is
+
+        - sc_request.list 
+
+      ** RECORD PREFIX: REQ 
+
+    2) REQUESTED ITEM RECORD (#RITM): is a RECORD which consists of details of EACH CATALOG ITEM 
+
+    ** it is used because.... different catalog items follow different FLOWS to FULFILL or DELIVER the REQUEST... eg ordering of a LAPTOP includes FLOW TASKS like CONFIGURING LAPTOP, INSTALLING SOFTWARE etc... flow TASKS will be different for DIFFERENT CATALOG ITEMS 
+
+    ** TABLE used is: 
+
+      - sc_req_item.list 
+
+
+
+    3) CATALOG TASK (#SCTASK): are multiple CATALOG TASK RECORDS of a single CATALOG ITEM.... the CI REQUEST only gets FULFILLED only after fulfilling these CATALOG TASKS 
+
+      ** TABLE USED is: 
+
+        - sc_task.list
+
+
+
+** an ORDER can consists of MULTIPLE CI'S 
+
+** a REQUEST will be followed by MULTIPLE REQUESTED ITEM RECORD 
+
+** a SINGLE REQUEST will be follwoed by multiple REQUESTED ITEM 
+
+** a SINGLE REQUESTED ITEM will be followed by MULTIPLE CATALOG TASKS 
+
+**** as an APPROVER/MANAGER USER.... inorder to see approval request to HIM/HIS GROUP... goto ALL > SERVICE DESK > MY GROUPS WORK
+
+  - assign the SCTASK to appropriate user 
+
+  - CLOSE the task using CLOSE BUTTON from TOP 
+
+  

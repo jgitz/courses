@@ -1,0 +1,243 @@
+- INCIDENT: an unplanned interruption or quality of an IT service.... or FAILURE of a CATALOG ITEM thet has NOT YET IMPACTED a technical service 
+
+- REQUEST: an ADDITION or MODIFICATION or REMOVAL of a product or service 
+
+- PROBLEM: a cause or POTENTIAL cause of ONE or MORE INCIDENTS 
+
+- WORKAROUND: TEMPORARY solution to RESTORE SERVICE FAILURE 
+
+- ROOT CAUSE: the cause behind a PROBLEM 
+
+- KNOWN ERROR: an identified UNRESOLVED PROBLEM 
+
+- SLA (Service Level Agreement): defines the AMOUNT OF TIME with which an INCIDENT should be resolved based on the PRIORITY of the incident
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+- STATES of incident lifecycles
+
+  - IN PROGRESS: incident is assigned and is investigated 
+
+  - ON HOLD: incident INVESTIGATION is paused to INVESTIGATE a RELATED PROBLEM, CHANGE or something related to the incident.... if sub investigation is finished.... the state is returned to IN PROGRESS 
+
+  - RESOLVED: incident is resolved and AWAITING user confirmation for service restoration 
+
+  - CLOSED: incident is CLOSED after feedback from the user (closing can be manual or automatic after some days after resolved state)
+
+  - CANCELLED: incident is found to be DUPLICATE/UNNECESSARY or NOT AN INCIDENT on PRIMILINARY EXAMINATION 
+
+  ** the incident IS ACTIVE on all states EXCEPT in CLOSED and CANCELLED STATE
+
+  ** snow allows you to  send email notification at each point of the life cycles 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- SLA CLOCK and INCIDENT RECORD:
+
+  - SLA CLOCK starts running as soon as the INCIDENT RECORD is saved 
+
+  - if PRIORITY of incident record is changed.... the PREVIOUS SLA is CANCELLED and a NEW SLA is created 
+
+    ***** but the SLA CLOCK DON'T RESTART 
+
+  - if ASSIGNMENT GROUP is changed.... the old sla is closed and NEW SLA will start with a RETROACTIVE START (started from the start of incident record creation) ??
+
+  - SLA ENDS as soon as ASSIGNED TO field is filled and STATE FIELD is set to IN PROGRESS
+
+    ** meanwhile RESOLVE SLA?? continues to run 
+
+  - ON HOLD STATE PAUSES the SLA CLOCK 
+
+    ** to UNPAUSE the SLA CLOCK.... change the state from the ON HOLD STATE to IN PROGRESS.... 
+
+  - RESOLVE SLA CLOCK ENDS when the stae is set to REOSLVED 
+
+
+- SHOW SLA TIMELINE related link: shows sla related details in TIMELINE using COLOR INDICATORS 
+
+  - GREEN: SLA duration is BLEOW 50% 
+
+  - YELLOW: between 50% and 75% OF SLA duration 
+
+  - ORANGE: between 75% and 100% of the sla duration 
+
+  - RED: SLA DURATION BREACHED 100% 
+
+  - GREY: implies SLA STAGE is PAUSED  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+- ROLES in INCIDENT MANAGEMENT 
+
+  - ITIL: 
+
+    - can CREATE, UPDATE and RESOLVE INCIDENTS
+    - can READ/WRITE to CMDB
+    - commonly given to SUPPORT GROUPS who resolve incidents 
+
+  - ITIL_ADMIN: 
+
+    - can CREATE, UPDATE, CLOSE, DELETE INCIDENTS and RELATED RECORDS 
+
+    - role typically given to TEAM LEADS 
+
+    ** DELETING OF RECORDS is restricted due to AUDITING PURPOSES 
+
+    - INCIDENT_MANAGER: can administer INCIDENT PROPERTIES?? and MAJOR INCIDENT TRIGGER RULES??
+
+    **** other additional roles that can be used 
+
+      - sn_incident_read 
+      - sn_incident_write
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- INCIDENT MANAGEMENT LIFECYCLE steps 
+
+  1) CREATION and CLASSIFICATION: create incident records or LOCATE INCIDENT RECORDS 
+
+    - state of newly created incident record is NEW.... 
+
+    - incidents can be created in snow in the following ways 
+
+      - service catalog record producer
+
+      - universal request record 
+
+      - CONNECT SUPPORT feature (chat feature)
+
+      - VIRTUAL AGENT (chat bot)
+
+      - using INBOUND EMAIL 
+
+      - from 3rd party systems using REST, SOAP  WEB SERVICES 
+
+  - INCIDENT RECORD FIELDS 
+
+    - caller: the user who reports the incident 
+
+    - service: service affected by the incident 
+
+    - configuration item: ci affected by the incident 
+
+    - description: issue and its impact 
+
+    - assignment: group that is assigned the incident for investigation 
+
+    - category : classify type of incident 
+
+    - sub category : classify sub type of incident 
+
+    - impact: measure of effect of the incident.... impact levels 
+
+      - LOW - SINGLE USER is impacted 
+
+      - MEDIUM - MULTIPLE USERS impacted
+
+      - HIGH - ALL USERS are impacted
+
+    - urgency: measure of duration needed for resolution without causing significant business impact.... urgency levels 
+
+      - LOW - minor issue with KNOWN WORKAROUND.... resolution done in NORMAL PACE
+
+      - MEDIUM - issues with NO KNOWN WORKAROUND or WORKAROUND is COSTLY.... resolution should be in FASTER PACE 
+
+      - HIGH - significant IMPACT on business with NO KNOWN WORKAROUND..... resolution should be in HIGHEST PACE 
+
+
+
+    ** PRIORITY of an incident is calculated using PRIORITY MATRIX (check the next image on the note).... priority matrix is calculated based on HIGH, MEDIUM and LOW level of IMPACT and URGENCY
+
+      - PRIORITY LEVELS: 
+
+        - PRIORITY 1 - CRITICAL 
+
+        - PRIORITY 2 - HIGH
+
+        - PRIORITY 3 - MODERATE 
+
+        - PRIORITY 4 - LOW 
+
+        - PRIORITY 5 - PLANNING 
+
+    ** MAJOR INCIDENT MANAGEMENT (MIM): some incidents go BEYOND THE PRIORITY MATRIX and are highest level of impact and urgency.... and SHUT DOWN ONE or MORE SERVICES.... these incidents are known as MAJOR INCIDENTS.... 
+
+      - major incidents MUST HAVE PRIORITY LEVEL 1 or 2 
+
+      ** MAJOR INCIDENT MANAGEMENT (MIM): is an APPLICATION to resolve MAJOR INCIDENTS 
+
+      ** INCIDENT COMMUNICATION MANAGEMENT: is a FRAMEWORK for managing communications to resolve MAJOR INCIDENTS with plan dashboards, reports, sms, voice mails, conference calls etc.... with all the USERS INVOLVED in resolution 
+
+    - INITIAL DIAGNOSIS: done by LEVEL 1 SUPPORT/SERVICE DESK to search for KNOWLEDGE ARTICLES to resolve the issue..... also there is feature to AUTOMATICALLY list related knowledge article for the issue when SHORT DESCRIPTION FIELD is filled..... if L1 SUPPORT can't solve the incident..... it is escalated to L2 SUBJECT MATTER EXPERTS
+
+  2) INVESTIGATION and DIAGNOSIS: incidents are further distributed to GROUPS/USERS for handling.. 
+
+    - the incident state might be IN PROGRESS or ON HOLD for most of the time 
+
+      - if ON HOLD is the state.... a list appears to set ON HOLD REASON..... if AWAITING CALLER is selected as the reason..... then ADDITIONAL COMMENTS becomes mandatory 
+
+      - incidents are ESCALATED from one SUPPORT LEVEL to HGHER SUPPORT LEVEL.....
+
+        ** when escalating the incidents should be ASSIGNED to GROUPS 
+
+        ** GROUP MANAGERS assign incidents to group users using any of the following ways 
+
+          - INCIDENT > OPEN - UNASSIGNED: displays ALL OPEN INCIDENTS where ASSIGNED TO field is BLANK regardless of the group assignment 
+
+          - SERVICE DESK > MY GROUPS WORK: displays ALL OPEN TASKS.... including INCIDENTS where ASSIGNMENT GROUP is one of your groups AND ASSIGNED TO field is BLANK 
+
+          - INCIDENT > OVERVIEW: displays multiple dashboards for incident management wheere you can see UNASSIGNED INCIDENT RECORD COUNT 
+
+        ** to see INCIDENTS assigned to you by the group manager?.... use any of the following 
+
+          - INCIDENT > ASSIGNED TO ME 
+
+          - SERVICE DESK < MY WORK : shows ALL WORKS assigned to you including incidents 
+
+          - click LOGO on top left OR goto SELF SERVICE > HOMEPAGE to view ITIL HOMEPAGE (if that is your DEFAULT HOMEPAGE).... here you can LOCATE  MY WORK dashboard widget.... it shows ALL WORKS assigned to user
+
+      - while SUPPORT TEAMS investigate the incident cause..... all major activity should be tracked in WORK NOTES field on the incident form 
+
+        **** WORK NOTES are only available to INTERNAL USERS
+
+      - ACTIVITY LOG on the NOTES TAB on the incident form shows all the activities 
+
+      - support team can UPDATE their work to the END USERS using ADDITIONAL COMMENTS  
+
+      - PARENT and CHILD INCIDENTS: there is option to make CHILD INCIDENTS from a PARENT INCIDENT. 
+
+        - child incident can be created using ANY of the 2 methods 
+
+          1) using CHILD INCIDENTS related list 
+
+          2) using CREATE CHILD INCIDENT additional action
+
+        - child incident inherits every property of parent incident like state, comments, work notes etc.... and automatically gets resolved when the parent incident is changed to resolved 
+
+      - APART from CHILD INCIDENTS..... we can created the FOLLOWING RELATED RECORDS which are related to the incident that you are working..... we use ADDITIONAL ACTIONS MENU for creating the following records from the INCIDENT RECORD 
+
+        i) CREATE OUTAGE: tracks DOWN TIME of the CI.... there are 3 TYPES of outage.... THEY ARE 
+
+          a) DEGRADATION 
+          b) OUTAGE 
+          c) PLANNED OUTAGE 
+
+        ii) CREATE PROBLEM: used to manage the following 
+
+          - incident ROOT CAUSE 
+          - WORKAROUND 
+          - PERMANENT SOLUTION 
+
+        iii) CREATE REQUEST: used to manage REQUESTS associated with INCIDENT RESOLUTION.... for eg to request for new hardware/software for incident resolution 
+
+        iv) CREATE CHANGE: NORMAL, STANDARD and EMERGENCY change requests can be created to manage the restoration of a service 
+
+  3) RESOLUTION and CLOSURE: when an incident is RESOLVED.... the state is changed to RESOLVED and updates details to the enduser
+
+    - the agent handling the incident changes the state to RESOLVED 
+
+    - RESOLUTION NOTIFICATION is sent to the END USER.... if he is satisfied.... the incident state is changed to CLOSED 
+
+      ** if end user DON'T RESPOND to the resolution notification.... then the state is AUTOMATICALLY changed to CLOSED in SEVEN 7 DAYS (this can be changed)
+
+** SURVEY MANAGEMENT APPLICATION : is used to ask FEEDBACK to the enduser about incident resolution 
+
+

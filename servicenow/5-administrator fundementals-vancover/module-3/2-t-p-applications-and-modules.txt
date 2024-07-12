@@ -1,0 +1,39 @@
+APPLICATION: every MAIN ITEM listed in ALL MENU is called APPLICATION
+
+MODULE: every SUB ITEM under APPLICATIONS in ALL MENU is known as MODULE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..to create a new APPLICATION in ALL MENU....
+
+  - goto ALL > SYSTEM DEFINITION > APPLICATION MENUS
+
+  - click new on top right 
+
+  - complete the form 
+
+  - click submit 
+
+  ** now your application will be displayed in the ALL MENU 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..to create a NEW MODULE inside an application... there are 2 WAYS.... 
+
+- METHOD 1 : use ALL > SYSTEM DEFINITION > MODULES
+
+- METHOD 2 : 
+
+  - open the APPLICATION MENU where you want to CREATE the module as sub item by going to ...
+
+    ALL > SYSTEM DEFINITION > APPLICATION MENUS 
+
+  - open the APPLICATION RECORD 
+
+  - scroll down to RELATED LINKS TAB named MODULES
+
+    - click new to ADD a MODULE 
+
+    - fill form 
+
+    - submit

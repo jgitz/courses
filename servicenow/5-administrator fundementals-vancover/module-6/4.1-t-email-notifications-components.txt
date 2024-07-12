@@ -1,0 +1,37 @@
+... the COMPONENTS REQUIRED to create EMAIL NOTIFICATIONS ARE 
+
+  1) WHEN TO SEND notfication: refers to TRIGGERS that SET OFF NOTIFICATIONS..
+
+    - trigger type OPITIONS are 
+
+      - TRIGGERED? 
+      - EVENT FIRING 
+      - RECORD INSERTED or UPDATED 
+      - SCRIPT (** in ADVANCED VIEW MODE)
+
+      ** you can also set CONDITIONS
+
+  2) WHO WILL RECEIVE: specify recipients who will receive the email notificaiton 
+
+    - recipient options are 
+
+      - USERS 
+      - GROUPS 
+      - USERS/GROUPS in FIELD
+
+  3) WHAT IT WILL CONTAIN: specifies the content of the email 
+
+    - the fields include 
+
+      - SUBJECT FIELD: to specify the subject of the mail 
+
+      -  MESSAGE HTML field: to specify email message... you can add attachments and style the message  
+
+      - TEMPLATE FIELD: is used to use any pre-defined TEMPLATE 
+
+      ** you can use VARIABLES from the SELECT VARIABLES BOX to DYNAMICALLY ADD DATA..
+
+
+**** OTHER FIELDS that can be added to EMAIL NOTIFICATION LIST and FORM 
+
+ - use MANDATORY?? and FORCE DELIVERY?? fields to ensure certain NOTIFICATIONS CANNOT be UNSUBSCRIBED

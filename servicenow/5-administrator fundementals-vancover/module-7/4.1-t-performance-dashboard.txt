@@ -1,0 +1,43 @@
+- PERFORMANCE DASHBOARD: provides DIFFERENT GRAPHS for MONITORING instance performance 
+
+  - it helps to TROUBLESHOOT PERFORMANCE ISSUES and TUNE your s/m for EFFICIENCY 
+
+  - SERVICENOW PERFORMANCE DASHBOARD is a RESPONSIVE DASHBOARD 
+
+  - it provide you with many PERFORMANCE MATRICS 
+
+  - it provide TIME SERIES GRAPH to analyze s/m behavior and PATTERN over CERTAIN PERIODS
+
+  - to use performance dashboard... goto 
+
+    - ALL > PERFORMANCE > DASHBOARD 
+
+      - click ALL TAB 
+
+      - search for SERVICENOW PERFORMANCE  
+
+- PERFORMANC DASHBOARD allows you to view SIX TYPES of GRAPH SETS 
+
+  1) AMB (Asynchronous Message Bus)
+
+  2) DATABASE 
+
+  3) MYSQL GLOBAL STATUS
+
+  4) INSTANCE VIEW 
+
+  5) SERVICENOW SERVLET 
+
+  6) SLOW PATTERN
+
+  ** you can also FILTER DATA on the graph on the basis of 
+
+    - MAXIMUM and MINIMUM VALUES 
+
+    - MEANS 
+
+    - MEDIANS 
+
+
+
+  

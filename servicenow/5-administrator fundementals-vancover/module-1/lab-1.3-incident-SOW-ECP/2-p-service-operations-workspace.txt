@@ -1,0 +1,76 @@
+.... to open SERVICE OPERATIONS WORKSPACE 
+
+- login as the service desk agent user 
+
+- goto ALL > WORKSPACE EXPERIENCE > SERVICE OPERATIONS WORKSPACE 
+
+  ** ANOTHER METHOD: on top click on WORKSPACES TAB.... click SERVICE OPERATIONS WORKSPACE
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to assign an incident using SERVICE OPERATIONS WORKSPACE to a SERVICE DESK AGENT USER
+
+- login as service desk agent user 
+
+- goto ALL > WORKSPACE EXPERIENCE > SERVICE OPERATIONS WORKSPACE (or select it from workspace tab on top)
+
+- on overview.... click on the GRAPH of unassigned incident 
+
+  - select the your target incident from the TILES
+
+    ** close the SPECIAL HANDLING NOTE pop up (which comes up if the incident is of critical p1).... DON'T click DISMISS BUTTON 
+
+  - if you want to ASSIGN THE INCIDENT to YOURSELF ..... you can click ASSIGN TO ME button on the top 
+
+    ** if you want to ASSIGN the incident to other users.... goto DETAILS TAB on the incident.....
+
+      - in to form field named ASSIGNED TO.... type in the USER to which you want to assign the incident 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to assign an ARTICLE for solution to an incident to the INCIDENT CALLER USER.... and to RESOLVE the INCIDENT  
+
+- login as service desk agent user 
+
+- goto > ALL > WORKSPACE EXPERIENCE > SERVICE OPERATIONS WORKSPACE 
+
+- click the graph of incidents 
+
+- select the target incident from the listed tiles 
+
+- on the rignt panel.... click AGENT ASSIST (graduation hat icon)....
+
+  ** AGENT ASSIST: is a GRADUATION HAT icon on the right side panel of an INCIDENT PAGE in the SERVICE OPERATIONS WORKSPACE 
+
+  - it gives KNOWLEDGE BASE ARTICLES related to the solution for the INCIDENT 
+
+  - click on the article..... click on the top ATTACH BUTTON to attach the article to the INCIDENT CALLER 
+
+    - type a message in the message box as ATTACH ARTICLE ADDITIONAL COMMENTS 
+
+    - click attach article button 
+
+    ** now the comments gets reflected in the ACTIVITY SESSION 
+
+    ** this is how a solution to an incident is given to the caller.... an EMAIL NOTIFICATION is also sent to the CALLER (later lab lesson about sending notifications).... if not satisfied with the resolution... the CALLER can reply to the agent.... and agent has to set the incident status to WORK IN PROGRESS
+
+- .... to now resolve the incident 
+
+  - goto DETAILS TAB 
+
+  - scroll down to RESOLUTION SECTION 
+
+      - SELECT CHOICE IN RESOLUTION CODE: <eg workaround provided, no resolution provided etc>
+
+      - in RESOLUTION NOTES FIELD: write a summary of the action of article sent via AGENT ASSIST 
+
+  - on TOP RIGHT... click RESOLVE BUTTON 
+
+  - on pop up.... review the resolution code and resolution notes field
+
+  - click resolve
+
+** this is how a solution to an incident is given to the caller.... an EMAIL NOTIFICATION is also sent to the CALLER (later lab lesson about sending notifications).... if not satisfied with the resolution... the CALLER can reply to the agent.... and agent has to set the incident status to WORK IN PROGRESS
+
+**** A CALLER CAN NOW see his resoultion and details of the incident created for him in the EMPLOYEE CENTER PORTAL (next lab)

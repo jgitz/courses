@@ -1,0 +1,11 @@
+.... to make a list of records as favourite 
+
+- open the list of RECORDS
+
+- click the LIST CONTROL ICON (HAMBURGER)
+
+- from the menu.... click CREATE FAVOURITE.... 
+
+- on the pop up.... click MORE to change icon, color and name of the favourite.... ensure you select the appropriate item from the favourite to edit in this step
+
+- click SAVE EDITS 

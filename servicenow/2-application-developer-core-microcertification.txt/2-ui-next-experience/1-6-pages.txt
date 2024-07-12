@@ -1,0 +1,8 @@
+- PAGE VARIANTS: each page created by UI BUILDER is a variant. We can make MAY VARIANTS for the same page....
+
+  - we can choose WHOM or WHEN can a page be displayed using two ways: 
+
+    1) By setting AUDIENCE 
+
+    2) By setting CONDITIONS
+

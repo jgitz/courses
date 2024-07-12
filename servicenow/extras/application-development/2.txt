@@ -1,0 +1,77 @@
+- sign in to developer instance 
+
+- click all 
+
+  - search for STUDIO 
+
+  - click on studio
+
+* app studio opened in new tab
+
+- click create application
+
+- click lets get started 
+
+- give name of application: <Leave Management System> 
+
+- give a description: <>
+
+- select scoped 
+
+- you can edit END PART of the scope name: <x_2629_<lms>>
+
+- add OPTIONAL LOGO FILE 
+
+* continue 
+
+
+- roles: admin (any roles can be given)
+
+* continue
+
+- select classic view
+
+* continue 
+
+- click create new table 
+
+- select create table from scratch 
+
+* continue
+
+- add COLUMNS/ FIELDS for the table... each with FIELD LABEL, FIELD NAME, FIELD TYPE (datatype), CHARACTER LIMIT (max character limit of the field inputs)
+
+** here my fields are 
+
+  1) field label: Leave Type, field name: leave_type , field type: Choice, choice Type: dropdown with none
+
+* continue 
+
+- Table label: Leave Request
+
+- Table name: generated automatically 
+
+- CHECK AUTO NUMBER 
+
+- Prefix: LEAVEREQ
+
+* continue 
+
+* continue
+
+* click done with app 
+
+* click start
+
+* click create
+
+* click done with the app 
+
+* click done
+
+* select your app from the list 
+
+
+
+
+

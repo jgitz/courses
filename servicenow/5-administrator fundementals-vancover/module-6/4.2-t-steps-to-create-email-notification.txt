@@ -1,0 +1,22 @@
+..... steps involved to make EMAIL NOTIFICATION from scratch 
+
+- STEP 1: create EMAIL LAYOUT.... email layout allows you to create HTML CONTENT of the EMAI BODY.... it can be created in TWO WAYS..
+
+  1) using an INLINE HTML EDITOR 
+
+  2) MANUALLY ENTERING HTML CODE 
+
+  ** to create EMAIL LAYOUT... goto
+
+    - ALL > SYSTEM POLICY > EMAIL > LAYOUTS 
+
+- STEP 2: create email TEMPLATE... to create templates... goto 
+
+  - ALL > SYSTEM NOTIFICATION > EMAIL > TEMPLATES
+
+  ** you APPLY EMAIL LAYOUT to TEMPLATES to FORMAT the BODY of the MESSAGES 
+
+
+- STEP 3: create EMAIL NOTIFICATION by gointg to 
+
+  - ALL > SYSTEM NOTIFICATION > EMAIL > NOTIFICATIONS 

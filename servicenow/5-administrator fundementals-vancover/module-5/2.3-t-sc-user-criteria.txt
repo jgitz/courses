@@ -1,0 +1,13 @@
+- USER CRITERIA for CATALOG ITEM: is used to regulate ACCESS to CATALOG ITEM on basis of USERS, GROUPS etc 
+
+  ** USER CRITERIA RECORDS for a SC can be SET by going to 
+
+    - ALL > SERVICE CATALOG > CATALOG DEFINITION > USER CRITERIA
+
+  ** to apply this user criteria to a CATALOG ITEM... 
+
+    - open CATALOG ITEM RECORD (.. all > service catalog > catalog definitions > maintain items)
+
+    - scroll down to RELATED LISTS... and specify USER CRITERIA RECORD inside AVAILABLE FOR TAB 
+
+**** USER CRITERIA is APPLIED to CATALOG ITEMS and NOT to SERVICE CATALOG

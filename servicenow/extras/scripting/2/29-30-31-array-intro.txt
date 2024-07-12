@@ -1,0 +1,76 @@
+- array initialisation in snow 
+
+  var <array_name> = [1, 2, 3]
+
+
+- using for loop to loop the array elements 
+
+  for(var i = 0; i < <array>.length; i++) {
+    gs.info(<array>[i]);
+  }
+
+- looping array using FOR EACH METHOD 
+
+  <array>.forEach(
+    function(item, i, array) {
+      gs.info(item + ',' + i + ',' + array);
+    }
+  )
+
+    ** we give in a CALLBACK FUNCTION as argument to .foreach method.... the callback function takes THREE arguments 
+
+      1) item: holds the ARRAY ITEM VALUE 
+
+      2) i : the INDEX NUMBER of the item 
+
+      3) array: the whole array
+
+
+- <array>.join() : used to add SEPERATORS to the array elements when the array is DISPLAYED using gs.info().... for eg if your array has elements [1, 2, 3]... then 
+
+  - <array>.join(', '): the gs.info output is 
+
+      1, 2, 3
+
+  - <array>.join('/n'): the gs.info output is 
+
+      1
+      2
+      3
+
+- <array>.push(<new item>): pushes new item to the END of the array
+
+
+- <arrya>.pop(<item>) : REMOVES the LAST ITEM from the array
+
+- <array>.shift(): REMOVES FIRST item from the array
+
+
+- <array>.unshift(): ADDS item to the START of the array
+
+- <array>.splice(): used to ADD OR REMOVE ITEMS from MIDDLE POSTITIONS of the array 
+
+  - to add items to array 
+
+      <array>.splice(3, 0, '<item 1>', '<item 2>')
+
+        ** 3- the POSITION AFTER WHICH items should be ADDED .... NOT INDEX NUMBER... 
+
+        ** 0 - means items are added 
+
+  - to remove items from the array :
+
+    <array>.splice(3, 2)
+
+      - remove 2 ITEMS that comes AFTER POSITION 3 (NOT INDEX NUMBER)
+
+  - to make new array from the existing array elements 
+
+    var new_array = <array>.slice(start, end) ?? 
+
+  - to reverse array elements.... do 
+
+    <array>.reverse()
+
+
+**** didn't check if the above methods MUTATES the original array 

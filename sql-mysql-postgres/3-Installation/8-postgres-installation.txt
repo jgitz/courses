@@ -1,0 +1,36 @@
+- download the windows installer from postgres download site
+
+- open the installer file 
+
+    - keep default path 
+
+    - keep default components
+
+    - keep default data directory
+
+    - set password for root user (postgres)
+
+        password: DATAbase@123
+
+    - use default port
+
+    - next next untill installation starts
+
+        ** click finish 
+
+    - close stack builder 
+
+- STEPS to START postgres SERVER 
+
+    - in start menu.... in postgres folder.... open PG admin tool (used to connect postgres server for administration.... you can manage your server using pgadmin)
+
+    - set another password for pg admin tool 
+
+        password: DATAbase@123
+
+
+    - close pgadmin
+
+    - search for sqlshell inside start menu to open postgres cli
+
+

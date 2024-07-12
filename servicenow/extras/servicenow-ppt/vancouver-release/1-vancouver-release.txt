@@ -1,0 +1,46 @@
+Title: New Features in ServiceNow Vancouver Release
+
+1. **Equifax Spoke Integration:**
+   - Access customer credit history, fraud alerts, and digital identity verification.
+   - Evaluate creditworthiness for faster lending decisions.
+
+2. **Compliance Case Management:**
+   - Report, investigate, and resolve compliance cases.
+   - Gain insights into compliance cases and requests.
+   - Customizable workflows for compliance management.
+
+3. **Healthcare Data Model Enhancements:**
+   - Improved healthcare data model with service organization records.
+   - Patient records extended from consumer profiles.
+   - Enhanced management of service offerings.
+
+4. **ITSM Task Intelligence:**
+   - Predict and recommend incident fields.
+   - Monitor model performance and categorize incidents.
+   - Edit and redeploy models for better performance.
+
+5. **Now Platform Data Discovery:**
+   - Discover sensitive data organization-wide.
+   - Configure workflows and data filters.
+   - Centralized dashboard for visualizing datasets.
+
+6. **Operational Technology Change Management:**
+   - Digitize change workflow and connect stakeholders.
+   - Align IT and OT change workflows.
+   - Factory floor changes aligned with downtime schedules.
+
+7. **Vulnerability Response Integration with Claroty CTD:**
+   - Import vulnerabilities from Claroty CTD.
+   - Automatic imports and risk-based actions.
+   - Track, prioritize, and resolve vulnerabilities.
+
+8. **Strategic Portfolio Management: Data Separation:**
+   - Define hierarchy for data separation.
+   - Restrict access based on lens hierarchy.
+   - Map user groups for hierarchical access.
+
+9. **Telecommunications Account Lifecycle Events:**
+   - Structured onboarding for technology providers.
+   - Collaborative data import and staging.
+   - Enhanced onboarding experience for customers.
+

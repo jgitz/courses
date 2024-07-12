@@ -1,0 +1,19 @@
+- VAR KEYWORD: VAR keyword is used to declare variables in snow 
+
+- NAMING CONVENTION
+
+  - use CAMEL CASE 
+
+  - variable name IDEALLY END with the DATATYPE related to the variable.... for eg...
+
+      var personObj = {}
+
+        - means person variable is an object 
+
+        - other useful variable name suffixes like "obj"
+
+          - Count : to indicate count/integer 
+
+          - List : to indicate list 
+
+          - Gr : to indicate glide record

@@ -1,0 +1,45 @@
+.... to create a UI POLICY in a FORM 
+
+- open the RECORD/FORM 
+
+- click ADDITIONAL ACTIONS (..HAMBURGER) > CONFIGURE > UI POLICIES 
+
+  * UI POLICIES LIST APPEARS 
+
+  - click NEW for UI POLICY FORM 
+
+    - fill TABLE FIELD 
+
+    - fill SHORT DESCRIPTION 
+
+    - fill WHEN TO APPLY 
+
+      - add conditions
+
+      - CHECK/UNCHECK REVERSE IF FALSE: <eg check>
+
+      - GLOBAL (..checkbox): <eg check>
+
+      - REVERSE IF TRUE (..checkbox): <eg selected>
+
+      - ON LOAD (..checkbox): <eg: selected>
+
+      - INHERIT (.. checkbox): <eg: selected>
+
+      - SAVE 
+
+______________________________________________________________
+
+- to create a UI POLICY ACTION (.. it is created on the same UI POLICY FORM) .... 
+
+  - if you are creating a NEW UI POLICY.... UI POLICY ACTIONS RELATED LIST TAB appears ONLY WHEN you SAVE the UI POLICY FORM 
+
+  - FIELD NAME: to specify field name to set ui policy actions 
+
+  - MANDATORY (..checkbox): to make the field mandatory 
+
+  - VISIBLE (..checkbox): to HIDE/DISPLAY FIELD 
+
+  - READ ONLY (..checkbox): to make the field READ-ONLY or EDITABLE 
+
+  

@@ -1,0 +1,114 @@
+- if a user wants to get impersonate option to impersonate 
+
+  - impersonator 
+
+ - to test HR APPLICATION.... users should be given the below TWO ROLES.... even to impersonate user to test the application... because HR data is EXTREMELY SENSITIVE..... the 2 roles are 
+
+  1) sn_hr_core.admin 
+
+  2) impersonator 
+
+** ONLY SYSTEM ADMIN can edit sys_properties.list (..i.e any system properties)
+
+- roles required to edit LIST LAYOUT 
+
+  - admin || personalize_list
+
+***** A PROCESS USER CANNOT dot walk while PERSONALIZING LIST 
+
+** to DISABLE personalize option for ITIL role user.... goto sys_properties.list > glide.ul.personalize_form.role ..... set it to ADMIN
+
+- to read schema map 
+
+  - admin 
+  - personalize_dictionary 
+
+- to LOAD DATA for IMPORT SETS 
+
+  - import_admin 
+  - import_transformer 
+  - import_set_loader
+
+- access CMDB TABLES 
+
+  - cmdb_read 
+  - asset
+  - itil
+  - itil_admin  
+
+- to manage multiple KNOWLEDGE BASES 
+
+  - admin 
+  - knowledge_admin
+
+- to APPROVE KNOWLEDGE ARTICLE PUBLISH REQUESTS ?? 
+
+  - approver_user 
+  - knowledge_manager 
+
+- roles to manage IMPORT SET 
+
+  - admin 
+  - import_admin 
+
+- roles to manage SCHEMA MAP 
+
+  - admin 
+  - personalize_dictionary
+
+- to manage service catalog 
+
+  - admin 
+  - catalog_admin 
+
+- flow designer roles 
+
+  - flow_designer 
+
+  - flow_operator 
+
+  - action_designer 
+
+- ROLES REQUIRED in BASIC INFO TAB in CI CLASS MANAGER 
+
+  - for READING 
+
+    - ITIL 
+
+  - FOR WRITING 
+
+    - ITIL_ADMIN && PERSONALIZE_DICTIONARY
+
+- ROLES REQUIRED in ATTRIBUTES TAB in CI CLASS MANAGER 
+
+- ROLES REQUIRED to EDIT ATTRIBUTE TAB 
+
+  - FOR READING 
+
+    - PERSONALIZE_DICTIONARY && ITIL 
+
+  - FOR WRITING 
+
+    - PERSONALIZE_DICTIONARY && ITIL_ADMIN
+
+
+
+- PREDICTIVE INTELLIGENCE ROLES 
+
+  - admin 
+  - ml_admin
+
+- CREATING REPORT using REPORT DESIGNER 
+
+  - report_admin (ALSO TO SAVE REPORT as DATA SOURCE using SAVE BUTTON)
+
+- for a user to set TAG VISIBILITY to EVERYONE in INLINE TAG CREATION.... the user should have roles 
+
+  - admin 
+  - tags_admin 
+
+  ** you can do all OPERATIONS on tags EVEN on TAGS CREATED BY OTHER USERS if you have ADMIN ROLE 
+
+- DOCKED CHAT WINDOW FEATURE is for FULFILLERS ROLE 
+
+- CUSTOMERS with NON-FULFILLER ROLES CANNOT ACCESS RECORD or CONVERSATIONS HAPPENING on SIDEBAR DISCUSSION TILE

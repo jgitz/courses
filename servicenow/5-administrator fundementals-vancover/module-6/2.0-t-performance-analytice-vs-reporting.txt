@@ -1,0 +1,34 @@
+- PERFORMANCE ANALYTICS (PA): allow users to create MANAGEMENT DASHBORDS with widgets to VISUALIZE data OVERTIME in order to identify areas of IMPROVEMENT. 
+
+  - to use PERFORMANCE ANALYTICS... goto APPLICATION
+
+    - ALL > PERFORMANCE ANALYTICS 
+
+  ** PA generates ACCURATE HISTORICAL TRENDS by capturing continuous SNAPSHOTS on a REGULAR SCHEDULE 
+
+  ** PA enables to identify METRICS to improve BUSINESS OBJECTIVES like.. eg PERFORMANCE INDICATORS, MONITOR METRICS , report on KPI'S
+
+  ** Performance ANALYTICS is an ITERATIVE PROCESS 
+
+- PERFORMANCE ANALYTICS ARCHITECTURE: PERFORMANCE ANALYTICS uses the following COMPONENTS in the ARCHITECTURE 
+
+  - DATA COLLECTOR: recurring jobs taking DATA SNAPSHOTS
+
+  - TABLES: INDICATOR SOURCE?? - CALCULATES SCORES 
+
+  - WIDGET: saved VIEW of INDICATOR or BREAKDOWN?? 
+
+  - DASHBOARD: custom ARRANGEMENT of WIDGETS 
+
+______________________________________________________________
+
+- REPORTING vs PERFORMANCE ANALYTICS:
+
+  ** REPORTING  gives info about CURRENT STATE of the platform data 
+
+    * PA gives info about OVERTIME DATA 
+
+  ** REPORTING answers to QUESTION: WHERE are we TODAY? 
+
+    * PA answers to QUESTIONS:  WHAT is happening OVERTIME?... WHERE are we BEFORE?... did we IMPROVE?... etc
+

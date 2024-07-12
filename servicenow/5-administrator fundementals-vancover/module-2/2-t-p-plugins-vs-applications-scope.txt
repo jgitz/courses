@@ -1,0 +1,59 @@
+.... servicenow allows you to install plugins and applications in your instance 
+
+- What is the difference between plugins and applications? 
+
+  ** PLUGINS are EXCLUSIVELY DEVELOPED BY SERVICENOW 
+
+    * APPLICATIONS ARE DEVELOPED BY SNOW PARTNERS as well as SERVICENOW 
+
+  ** PLUGINS can use EITHER CUSTOM APPLICATION SCOPE or GLOBAL SCOPE 
+
+    * APPLICATIONS are shipped with their CUSTOM APPLICATION SCOPE 
+
+  ** PLUGINS range from TINY to LARGE PLUGINS 
+
+    * APPLICATIONS are LARGER BUNDLES with LOTS OF FEATURES 
+
+
+- From where can we install applications and plugins in the instance? 
+
+  - BOTH APPLICATIONS and PLUGINS can be installed from APPLICATION MANAGER (via servicenow store??)
+
+  - APPLICATIONS can exclusively be installed from the servicenow store site (url: store.servicenow.com)
+
+  - to open application manager in the instance.... use either of the 2 below given paths: 
+
+    - ALL > SYSTEM APPLICATIONS > ALL AVAILABLE APPLICATIONS > ALL 
+
+    - ALL > SYSTEM DEFINITION > PLUGINS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+** BEST PRACTICE BEFORE INSTALLING AN APPLICATION 
+
+  - first look for the availability of the PLUGINS for the same in APPLICATION MANAGER 
+
+  - if you don't find it.... goto SERVICENOW STORE WEBSITE (store.servicenow.com)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is application scope? 
+
+  APPLICATOIN SCOPING allows RESTRICTED ACCESS to application files and data.... ADMINS can SET THE RESTRICTIONS to USERS and OTHER APPLICATIONS
+
+  ** APPLICATION SCOPES can be changed by clicking GLOBE ICON (..APPLICATION SCOPE PICKER) on the TOP RIGHT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- PLUGIN FEATURES 
+
+  ** SYSTEM ADMINISTRATOR CAN ACTIVATE the PLUGINS...
+
+  - some plugins require LICENSE 
+
+  - some plugin has DEMO DATA 
+
+  - most plugins are already PUBLISHED... admins only need to just activate 
+
+  - some plugins are only available via REQUESTS using service catalog to SERVICENOW TECHINCAL SUPPORT to get it activated

@@ -1,0 +1,49 @@
+ .... to modify the table declaration configuration..... we use 2 lines of statements 
+
+
+- TO ALTER the DATATYPE of COLUMN in MYSQL: 
+
+     :: ALTER TABLE <table_name>
+     :: MODIFY COLUMN <column_name> <NEW_DATA_TYPE>;
+
+          ** SEMI COLUMN ; is on the SECOND LINE 
+
+- TO RENAME a COLUMN in MYSQL:
+
+     ::ALTER TABLE <table_name>
+     ::RENAME COLUMN <old_column_name> TO <new_column_name>;
+
+          ** same in postgres
+
+- TO set NOT NULL constraint to column in MYSQL:
+
+     :: ALTER TABLE <table_name>
+     :: MODIFY COLUMN <column_name_1> <ORIGINAL_DATA_TYPE_OF_COLUMN> NOT NULL,
+     :: MODIFY COLUMN <column_name_2> <ORIGINAL_DATA_TYPE_OF_COLUMN> NOT NULL ;
+
+          ** multiple MODIFY statements in mysql inside the same table can be seperated by COMMA ,
+
+- to UPDATE a TABLE RECORD with DATA VALUES 
+
+     :: UPDATE <table_name>
+     :: SET <column_name_1> = <data values>
+     :: WHERE <column_name_2> = <data value>;
+
+          ** same in POSTGRES
+
+- to alter a table column with a CHECK CONSTRAINT in POSTGRES   
+
+     :: ALTER TABLE <table_name>
+     :: ADD CONSTRAINT <custom_constraint_name> CHECK (**eg condition** <column_name> > 0);
+
+          ** same for POSTGRES
+
+          ** here no COLUMN keyword is used as column name is used inside the CHECK condition
+
+          ***** before altering the table..... UPDATE the table RECORD DATA VALUES to OBEY this condition using UPDATE COMMAND.... only after that use this command.... else error
+
+
+**** visit official documentation site for more update statements
+
+     https://dev.mysql.com/doc/refman/8.0/en/alter-table.html
+

@@ -1,0 +1,53 @@
+- LIST: displays set of records within the CONTENT FRAME.
+
+  - each ROW is a RECORD 
+
+  - each COLUMN is a FIELD
+
+  - INTERSECTION of each ROW and COLUMN is the DATA VALUE
+
+- What are the number of ways through which you can INTERACT WITH LISTS?
+
+  - 2 ways.... 
+
+    1) CLASSIC ENVIRONMENT  
+
+    2) SERVICE OPERATIONS WORKSPACE 
+
+    ** but in both.... list interaction is done through same method 
+
+
+- What is LIST VIEWS option in LISTS? 
+
+  - Views provide SPECIFIC FIELDS/COLUMNS to support different work activities for DIFFERENT USERS.... 
+
+  - i.e s SYSTEM administrator can create DIFFERENT VIEWS of the SAME LIST for DIFFERENT USERS 
+
+  - the NUMBER OF RECORDS of a list in different views remains the SAME.... but the FIELDS will be CHANGED or will be in DIFFERENT order 
+
+- LIST and FORMS provides USER-FRIENDLY INTERFACE to manage TABLE, RECORDS and FIELDS
+
+- How are the RECORDS in a LIST SORTED when you view it for the FIRST TIME? 
+
+  - the records are sorted by ANY of the BELOW FIELDS 
+
+    - order 
+    - number 
+    - name 
+    - any field 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..... to open list views 
+
+- goto any record list 
+
+- click on LIST CONTROL (hamburger) on the top left 
+
+- click on VIEW
+
+- select the relevant view from the menu 
+
+
+
+

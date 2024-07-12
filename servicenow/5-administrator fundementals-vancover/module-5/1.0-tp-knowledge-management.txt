@@ -1,0 +1,70 @@
+- KNOWLEDGE MANAGEMENT: allows users to CREATE, CATEGORIZE, REVIEW, APPROVE and BROWSE important informations related to an organisation in a CENTRALISED LOCATION 
+
+  ** knowledge management in snow is emplemented using KNOWLEDGE BASES 
+
+
+- SNOW KNOWLEDGE ARCHITECTURE: 
+
+  - to view knowledge CONTENT in KNOWLEDGE HOMEPAGE... use the path 
+
+    - ALL > SELF SERVICE > KNOWLEDGE 
+
+  - KNOWLEDGE MODULE in SELF-SERVICE opens KNOWLEDGE HOMEPAGE 
+
+    - here users can
+
+      - view KNOWLEDGE BASES (.. SQUARE TILES) (..later): eg IT, HUMAN RESORUCE etc 
+
+      - search for knowledge ARTICLES 
+
+      - at bottom you can see sections which group articles by 
+
+        - featured content 
+        - most USEFUL
+        - most VIEWED etc 
+
+  - KNOWLEDGE BASE: is the PRIMARY SECTION where articles are grouped 
+
+    - there can be MULTIPLE KNOWLEDEGE BASES based on many topics 
+
+    - knowledge base is MANAGED by KNOWLEDGE MANAGER with ROLE 
+
+      - knowledge_admin 
+
+    - CATAGORIES: KNOWLEDGE BASE has MULTIPLE CATAGORIES to group articles WITHIN a knowledge base  
+
+    - KNOWLEDGE ARTICLES: inside CATAGORIES.... we create KNOWLEDGE ARTICLES with contents
+
+      - we can FLAG and COMMENT on articles 
+
+      ** KNOWLEDGE ARTICLES LIST CAN BE SEEN  by going to 
+
+        - ALL > KNOWLEDGE > ARTICLES > ALL 
+
+        ** knowledge ARTICLE RECORD NAME starts with PREFIX KB 
+
+      ** NEW ARTICLE can be created by going to 
+
+        - ALL > KNOWLEDGE > ARTICLES > CREATE NEW 
+
+
+
+        
+
+      **** AN ARTICLE can ONLY be ASSOCIATED with ONE KNOWLEDGE BASE 
+
+      **** ?? you can CHANGE KNOWLEDGE BASE of an article.... ONLY IF the KNOWLEDGE BASE has TEMPLATE available in the knowledge base 
+
+    - the AUDIENCE who can access knowledge base is controlled using USER CRITERIA (..later) settings 
+
+** you can import WORD DOCUMENTS and create articles using IMPORT ARTICLES functionality
+
+** LOCALIZATION: knowledge articles MAY BE PUBLISHED in MULTIPLE LANGUAGE.... and we can set to show only articles in the USER'S SELECTED LANGUAGE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to access all KNOWLEDGE BASES of your instance.... goto 
+
+  - ALL > KNOWLEDGE > ADMINISTRATION > KNOWLEDGE BASES
+
+

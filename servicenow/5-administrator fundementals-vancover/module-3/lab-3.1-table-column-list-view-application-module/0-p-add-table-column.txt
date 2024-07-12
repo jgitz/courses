@@ -1,0 +1,36 @@
+.... there are many TABLES in your instance.... to see the PROPERTIES of a table created in the system.... 
+
+  - goto ALL > SYSTEM DEFINITION > TABLES
+
+  - select your table from the list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to add a COLUMN/FIELD to an existing table 
+
+- goto ALL > SYSTEM DEFINITION > TABLES 
+
+- select your table eg: incident 
+
+- scroll down to COLUMN TAB 
+
+  - click new 
+
+    ** DICTIONARY ENTRY FORM appears 
+
+    - fill type (type of the field): <eg true/false for CHECK BOX>
+
+    - fill label (label of the field): <anything eg: pilot> 
+
+    - fill COLUMN NAME: *** is the VARIABLE NAME given.... in PROPER SCOPE NAMING FORMAT...i.e 
+
+      ** u_<variable name>: if the application is in GLOBAL SCOPE
+      ** x_<variable name>: if the application is SCOPED
+
+    - scroll down
+
+      - in CHOICE SPECIFICATION TAB.... select dropdown option if you want choice 
+
+      - in DEFAULT VALUE TAB.... type in the default value eg: <false> 
+
+- click submit 

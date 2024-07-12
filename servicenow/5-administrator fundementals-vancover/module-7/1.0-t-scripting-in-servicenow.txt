@@ -1,0 +1,34 @@
+- JAVASCRIPT is used in CLIENT (BROWSER) and SERVER (..server inside servicenow datacenters) side of SERVICENOW PLATFORM 
+
+  ** servicenow has over 30 PLACES where SCRIPTING CODE can be used to CONFIGURE PLATFORM 
+
+  ** some examples where scripting is used in platform are 
+
+    - ACL SCRIPTING 
+    - FLOW SCRIPT 
+    - TRANSFORM MAPS 
+    - SCRIPT INCLUDES 
+
+    - UI PAGES 
+    - UI PROPERTIES 
+    - UI MACROS 
+    - UI SCRIPTS 
+
+    - UI POLICY 
+    - UI POLICY ACTIONS 
+    - UI ACTIONS 
+
+    - DATA POLICIES 
+    - BUSINESS RULES 
+    - CLIENT SCRIPT 
+
+***** In this MODULE.... we only learn about SCRIPTING IN 
+
+  1) UI POLICY 
+  2) UI POLICY ACTIONS 
+  3) UI ACTIONS 
+  4) DATA POLICY 
+  5) BUSINESS RULE 
+  6) CLIENT SCRIPT 
+
+***** ONLY USE SCRIPTING if LOW-CODE solution is NOT AVAILABLE

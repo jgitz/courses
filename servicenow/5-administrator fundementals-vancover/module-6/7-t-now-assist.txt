@@ -1,0 +1,19 @@
+- NOW ASSIST: is an ADMIN CONSOLE that gives users the power of LLM (Large Language Model) GENERATIVE AI features like:
+
+  - generative AI SEARCH 
+
+  - case/incident SUMMARIZATION 
+
+  - CHAT SUMMARIZATION 
+
+  - RESOLUTION SUMMARISATION 
+
+  - NOW ASSIST powered VIRTUAL AGENT 
+
+  - FLOW GENERATION 
+
+  - WORKFLOW CUSTOMIZATION
+
+  ..etc 
+
+  ** you can leverage these features by INSTALLING appropriate PLUGINS and PRODUCTS

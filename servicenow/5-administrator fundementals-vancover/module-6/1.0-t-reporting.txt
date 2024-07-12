@@ -1,0 +1,40 @@
+- REPORTS: are prepared on ADHOC BASIS and allows users to VIEW and ANALYZE SERVICENOW DATA 
+
+  ** reports in snow is made using REPORT DESIGNER 
+
+  ** REPORT VISUALISATION TYPE includes BAR CHARTS, PIRE CHARTS, PIVOT TABLES, DIALS etc 
+
+  ** reports can be RUN MANUALLY or SCHEDULED 
+
+  ** you can SCHEDULE REPORTS to RUN and DISTRIBUTE on a REGULAR BASIS 
+
+  ** you can INTEGRATE REPORTS into DASHBOARDS and WIDGETS 
+
+  ** there are PREDEFINED REPORTS which are APPLICATION SPECIFIC like INCIDENT MANAGEMENTS and SERVICE CATALOG REQUESTS.... there is also KEY PERFORMANCE INDICATOR (KPI) REPORTS 
+
+  ** to VIEW reports or create new reports
+
+      - ALL > REPORTS > VIEW/RUN 
+
+      ** you can ALSO create report from a TABLE FIELD using COLUMN CONTEXT MENU in LIST VIEW 
+
+- REPORT TYPES: there are over 25 standard report types 
+
+  - some REPORT TYPES are 
+
+    - PARETO
+    - DONUT 
+    - HEATMAP 
+    - SPEEDOMETER 
+    - DIAL 
+    - SEMI-DONUT 
+    etc 
+
+** BEST PRACTICE 
+
+  - start with EXISTING REPORT or FILTERED LIST instead of creating reports from SCRATCH 
+
+    - existing reports helps with relevant TABLES to work with 
+
+    ** by using existing report you can LEVERAGE ITIL BEST PRACTICES using KEY PERFORMANCE INDICATOR REPORTS??
+

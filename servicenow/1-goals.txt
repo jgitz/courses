@@ -1,0 +1,21 @@
+learn about the following topics:
+
+    -Identify all the parts of the course in the Welcome to ServiceNow Course 
+
+    - Overview (You are here!)
+
+    - Discover the Next Experience, Navigation, and Access in the Platform
+
+    - Distinguish between Lists and Filters and how to use them
+
+    - Recognize parts of the Forms interface 
+
+    - Apply knowledge to complete your work through Tasks 
+
+    - Create and familiarize yourself with the Reporting interface
+
+    - Explore Knowledge Management in the ServiceNow Platform
+
+    - Use the Service Catalog to fulfill requests and discover services 
+
+    - Communicate with a friendly bot to learn more about the ServiceNow Platform through Virtual Agent

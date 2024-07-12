@@ -1,0 +1,98 @@
+- to create new user 
+
+  - goto ALL > SYSTEM SECURITY > USERS and GROUPS > USERS 
+
+  - click NEW 
+
+    - fill user_id 
+
+    - fill first name 
+
+    - fill last name 
+
+    - fill department 
+
+    - fill email 
+
+  - click save 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to make a record list as favourite 
+
+  - goto any list record 
+
+  - click on TOP LEFT HAMBURGER (LIST CONTROL)
+
+  - click on CREATE FAVOURITE 
+
+    - click on MORE to add color and icom 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add a member to the group 
+
+  - open the group record from (all > system security > users and groups > group )
+
+  - scroll down click on group members tab
+
+  - click edit 
+
+  - add users to group 
+
+  - save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... servicenow has many applications such as ITSM and HR application..... to test these applications with users.... we use impersonation 
+
+.... to test features of ITSM application.... we can simply impersonate any user WITHOUT GIVING HIM an ADMIN ROLE 
+
+****.... BUT to test HR APPLICATION.... users should be given the below TWO ROLES.... even to impersonate user to test the application... because HR data is EXTREMELY SENSITIVE..... the 2 roles are 
+
+  1) sn_hr_core.admin 
+
+  2) impersonator 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+... to add ROLES to a GROUP 
+
+- open the group record 
+
+- scroll down and click on ROLES TAB 
+
+- add roles 
+
+- click save 
+
+  ** now you can add USERS to the group whom you want to inherit these roles 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+.... HR CASE MANAGEMENT APP is an application that allows to make vaious HR CASES....
+
+.... to create an HR CASE.... 
+
+- login as user with sh_hr_core.admin role 
+
+- goto ALL > HR CASE MANAGEMENT > ALL HR CASES > ALL 
+
+  - SEARCH FOR EMPLOYEE OR CASE NUMBER to create a case 
+
+  - fill in the following CASE DETAILS 
+
+    - COE (Center of Excellence)
+
+    - WORK NOTES 
+
+    - HR SERVICE 
+
+  - click CREATE CASE 
+
+- CASE FORM APPEARS 
+
+  - fill in ASSIGN TO FIELD
+
+  - click update

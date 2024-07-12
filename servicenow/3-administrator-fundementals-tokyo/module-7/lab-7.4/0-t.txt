@@ -1,0 +1,80 @@
+- CONFIGURATION ITEM (CI): in servicenow instance.... every tangible and intangible HARDWAREs and SOFTWARES (firewall, email services, services) are stored as CONFIGURATION ITEMS in the instance .... some common CI'S 
+
+  - COMPUTERS 
+  - DEVICES ON NETWORK
+  - APPLICATIONS 
+  - SERVICES
+
+- CMDB(Configuration Management Database): is a DATABASE that holds MULTIPLE CI TABLES.... the cmdb provides a LOGICAL MODEL to CONTROL and MAINTAIN CI'S of your instance
+
+  - roles that has CMDB ACCESS 
+
+    - asset 
+    - itil 
+    - itil_admin 
+    - cmdb_read 
+
+  ** key CMDB TABLES 
+
+    - cmdb (BASE CONFIGURATION ITEM TABLE)
+    - cmdb_ci (CONFIGURATION ITEM TABLE)
+    - cmdb_rel_ci (CI RELATIONSHIP TABLE)
+
+  ** each CMDB TABLE is UNIQUE and has special position in the CMDB HEIRARCHY
+
+** as CI's are added in large number to a system.... you can use CMDB DATA MANAGER TOOL to CREATE, PUBLISH and MANAGE CI POLICIES
+
+** USE OF CMDB in ITSM PROCESS 
+
+  - INCIDENT MANAGEMENT: cmdb is used to detect BROKEN INFRA in your system 
+
+  - PROBLEM MANAGEMENT: cmdb is used to detect DEFECTIVE INFRA in your system 
+
+  - CHANGE MANAGEMENT: cmdb is used to predict FUTURE CHANGES in the system if a CHANGE is IMPLEMENTED 
+
+  - REQUEST MANAGEMENT: cmdb is used to REQUEST new RESOURCE (hardware/software) in you infra 
+
+- CMDB WORKSPACE: is a central platform to do various cmdb analysis using dashboards and tools... to use it.... goto 
+
+  - ALL > CMDB WORKSPACE > CMDB WORKSPACE 
+
+    **** to use cmdb workspace.... the following PLUGINS should be installed and activated 
+
+      1) CMDB CSDM SUPPORT (com.snc.cmdb.CSDM)
+
+      2) CSDM ACTIVATION (com.snc.cmdb.csdm.activation)
+
+- CI CLASSES: CI's have to be catagorized into VARIOUS CLASSES based on the tangible and intagible properties of CI.... these classes and their HEIRARCHY can be seen inside CI CLASS MANAGER (ALL > CONFIGURATION > CI CLASS MANAGER)
+
+
+- CI FORM: is used to define CI'S in CMDB TABLE (cmdb.list)
+
+  - the form consists of all fields where you can add data about your ci.... 
+
+  - scroll down to RELATED ITEMS TOOLBAR... to see the RELATIONSHIP of the CI WITH other CI'S by using CI CLASSES
+
+** you can DEFINE RELATIONSHIPS between CI'S at ALL > CONFIGURATION > RELATIONSHIPS > SUGGESTED RELATIONSHIPS
+
+- CI CLASS MANAGER (ALL > CONFIGURATION > CI CLASS MANAGER): is where you can add/edit/view all the CI CLASSES DEFINED in your instance
+
+  - click on HEIRARCHY BUTTON to see all CI CLASSES in the LEFT PANE 
+
+  - click on each CI CLASS to open its properties 
+
+    - BASIC INFO TAB on left pane: shows basic info along with the cmdb table to which the class belongs 
+
+    - ATTRIBUTE TAB on left pane: to see column/attribute for that ci class 
+
+      - on top 
+
+        - DERIVE TAB: shows attribute DERIVED FROM another PARENT CLASS 
+
+        - ADDED TAB: show attribute CREATED UNIQUELY for this CI CLASS
+
+        ** ROLES REQUIRED for READING CLASS ATTRIBUTES: itil + personalize_dictionary 
+
+        ** ROLES REQUIRED for EDITING CLASS ATTRIBUTES: itil_admin + personalize_dictionary 
+
+    - SUGGESTED RELATIONSHIP on left pane: allows you to build RELATIONSIP (CHILD, PARENT etc) with other CI CLASSSES
+
+

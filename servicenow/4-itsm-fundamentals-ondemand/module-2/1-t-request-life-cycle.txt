@@ -1,0 +1,91 @@
+.... a REQUEST in snow instance can be submitted through the following different ways 
+
+  - SERVICE DESK AGENT can be used to create request for the customer via CHAT or CALL 
+
+  - SELF SERVICE can be used by the CUSTOMER to create the request via SERVICE CATALOG or SELF SERVICE PORTAL 
+
+  - certain requests can be AUTOMATICALLY GENERATED through THIRD PARTY INTEGRATIONS (REST API integration) to applications like SLACK (using it's chat bot)
+
+  - requests can be directly created from VIRTUAL AGENT chat 
+
+  - WALKUP EXPERIENCE: using WALK UP INTERFACE.... request can be created by the user by VISITING THE ONLITE IT SUPPORT LOCATION 
+
+  - UNIVERSAL REQUEST: a ROUTING AGENT can create a request using UNIVERSAL REQUEST FORM and then ASSIGN it to proper ASSIGNMENT GROUP 
+
+    ** pluggins needed are 
+
+      - UNIVERSAL REQUEST PLUGIN (com.snc.universal_request)
+
+      - CUSTOMER SERVICE WITH REQUEST MANAGEMENT PLUGIN (com.sn_cs_sm_request)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... OUR FOCUS is to use SERVICE CATALOG to make requests and manage it 
+
+.... service catalog is used to REQUEST FOR CATALOG ITEMS.... any PRODUCTS or SERVICES can be REQUESTED using the following service catalog items: 
+
+  - RECORD PRODUCERS: make requests by filling questions or adding information from records such as incident record 
+
+  - ORDER GUIDES: group multiple catalog items in one request 
+
+  - CONTENT ITEMS : are catalog items that provide INFORMATION (KNOWLEDGE ARTICLES?? ) instead of goods or services 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- REQUEST MANAGEMENT LIFECYCLE: is the life cycle of a REQUEST which is made through SERVICE CATALOG..... there are 4 STAGES in this lifecycle 
+
+  1) SUBMITTAL: user selects ONE or MORE items from the SERVICE CATALOG and make the request (submit the order)
+
+    - states
+      - pending approval 
+      - approved
+
+  2) APPROVAL: some requests need APPROVAL for overall requests... or some requests need APPROVAL for individual ITEMS in the request.... some requests need NO APPROVAL 
+
+    - notify approvers about the request 
+
+    - APPROVE or REJECT request
+
+    - states 
+
+      - requested 
+      - approved 
+      - rejected
+
+    ** approval is triggered AUTOMATICALLY on REQUEST SUBMITTAL 
+
+    ** based on the organisational needs... APPROVAL can be set at 2 PLACES....   
+
+      1) GATING APPROVAL : when APPROVAL is set at the REQUEST (REQ) LEVEL.... i.e when a request is SUBMITTED.... it waits for an APPROVAL 
+
+        ** if gating approval is REJECTED.... then entire order is REJECTED/CANCELLED
+
+      2) PROCESS APPROVAL approval set for each item at RITM level such that the FULFILLER workflow process only starts after this approval 
+
+        ** if one of the RITM approval is rejected among order request of multiple items.... the REQ is NOT CANCELLED/REJECTED..... the order proceeds with the remaining requested item workflow 
+
+      ** when GATING APPROVAL and PROCESS approval is approved.... SCTASK record is created automatically by the workflow 
+
+  3) FULFILLMENT: once APPROVAL is got..... FULFILLER needs to complete PREDEFINED series of TASKS (defined by the workflow) to fulfill EACH ITEM in the order.... 
+
+    - view workflow and see ALL TASKs to be completed to fulfill the request
+
+    - locate the task and perform the task 
+
+    - UPDATE TASK RECORD 
+
+    
+
+  4) CLOSURE: the request is CLOSED when all requested itms within a request have been fulfilled and closed 
+
+
+  ** RECORDS created in REQUEST LIFE CYCLE 
+
+    - REQUEST RECORD (REQ): is a record created at SUBMITTAL STAGE.... it consists of the details of ONE or MORE REQUESTED ITEMS.... REQ is a unique number for each order
+
+    - REQUESTED ITEM RECORD (RITM) : consists details of each REQUESTED ITEM..... it MAY also consists of the information about FULFILLMENT STAGE or PRICE of the item.... RITM is a uniqe number to identify the individual requests
+
+    - CATALOG TASK RECORD (SCTASK) : refers to the TASKs that the FULFILLER need to complete to deliver the request.... these tasks should be ASSIGNED and COMPLETED inorder to deliver the requested itom 
+
+
+

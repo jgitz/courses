@@ -1,0 +1,36 @@
+- FILTER (.... in classic list): is used to set filter conditions on list.... a filter conditon has THREE PARTS 
+
+  1) FIELD
+
+  2) OPERATOR: changes wrt field value type.... below is operators for each field type 
+
+    - text value: is, is not, contains, is one of, starts with, ends with 
+
+    - numeric value: is, is not, greated than, less than, greater than OR IS, less than OR IS 
+
+    - date: on, before, after, between, IS MORE THAN, IS LESS THAN 
+
+
+  3) VALUE: DATA VALUE of the CORRESPONDING FIELD 
+
+  ** use FUNNEL ICON on top left to RUN and SAVE a FILTER 
+
+  ** SAVING FILTER allows you to give NAME to your filter conditions set.... and set VISIBILITY (me, group, everyone) using VISIBILE TO OPTION 
+
+  ** saved filter can be selected from 
+
+    - LIST CONTROL MENU > FILTERS option 
+
+  ** you can also add FILTERED LIST with FILTER CONDITIONS to FAVOURITES using 
+
+    - LIST CONTROL MENU > CREATE FAVOURITE
+
+  ** once a filter condition is run.... the SUMMARY of the condition is listed a BREAD CRUMBS.... we can manipulate filter conditions using BREAD CRUMBS in the following ways 
+
+    - click on ANY CONDITION in the BREAD CRUMB to REMOVE SUBSEQUENT CONDITIONS 
+
+    - click on > sign to REMOVE ONLY ONE CONDITION that FOLLOWS > sign 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+** the interface where we add filter condition is known as CONDITION BUILDER

@@ -1,0 +1,22 @@
+.... to assign who can make SERVICE CATALOG MANAGER and who can be SERVICE CATALOG EDITOR.... we need to set users for appropriate roles.... to do that 
+
+- set scope to GLOBAL
+
+- goto ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATALOGS 
+
+- select SERVICE CATALOG from the table 
+
+- on the MANGAGER FIELD give USER who you want to make manager of service catalog (usually system administrator) 
+
+- to add EDITORS.... 
+
+  - click LOCK BUTTON on EDITORS FIELD 
+
+  - search and select the USER NAME whom you want as the editor 
+
+  - again click lock button 
+
+- click update
+
+
+- goto USERS list and give the role of CATALOG_ADMIN to the editor user 

@@ -1,0 +1,48 @@
+.... apart from the classic environment.... there is WORKSPACE ENVIRONMENT where we can see configure LISTS and do operations on them.... 
+
+- PARTS of WORKSPACE ENVIRONMENT 
+
+  - LIST ICON (on left pane): shows the lists of the workspace 
+
+    - list icon has 2 TABS displayed when clicked 
+
+      1) LIST PANE: shows the system list 
+
+      2) MY LISTS PANE: shows list created by the USER 
+
+        ***** only the LOGGED IN USER can see the lists in MY LISTS TAB 
+
+
+  - LIST PANE: shows the LISTS as ITEMS and SUB ITEMS in each item.... these items corresponds to TABLES in the database 
+
+    ** the ITEMS of the LIST PANE are called LIST CATAGORIES
+
+      - list catagories are just headings and DON'T open any list when clicked.... it only shows sub items when it is clicked.... 
+
+    ** the SUB ITEMS under LIST CATAGORIES are called UX LIST (FILTERED  LIST)
+
+      ** UX LIST RETRIEVE RECORDS when clicked 
+
+
+    **** NO LIST CATAGORY gets displayed if it DOESNOT have any UX LIST under it
+
+  - LIST ACTIONS: the GEAR ICON on top right 
+
+  - COPY URL: share icon near the gear icon on top right 
+
+  - SHOW FILTER PANEL: FUNNEL ICON top right
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- CONTEXT MENUS in workspace 
+
+  - MORE OPTIONS MENU: click 3 DOTS on the column header 
+
+  - MORE UI ACTIONS MENU: click on 3 DOTS ON EACH CELL.... it allow you to 
+
+    - filter out 
+    - show matching
+
+  - GRAB ICON: the DOT GRID on the left of each column header.... it allows you to DRAG COLUMN POSITIONS 
+
+** you can change the WIDTH of the COLUMNS by draging the BORDERS

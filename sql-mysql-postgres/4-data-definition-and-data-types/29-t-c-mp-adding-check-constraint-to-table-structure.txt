@@ -1,0 +1,21 @@
+..... sometimes we need to CHECK whether the COLUMN data values follows certain conditions.... 
+
+  ** to check some conditions on column data values.... we use CHECK CONSTRAINT 
+
+  - MYSQL and POSTGRES codes:
+
+      :: CREATE TABLE users (
+        <column_name_1> <DATATYPE>
+
+        <column_name_2> <DATATYPE> CHECK (conditions with operator),
+
+        CHECK <column_name_1> > <column_name_2 > **** check can be used to compare condition based on two already declared column
+      );
+
+          ** eg conditions 
+
+**** refer file 25 for alter statements 
+
+                :: <column_name> > 0
+                :: <column_name> > 0 AND <column_name> < 10000
+                :: <column_name> > 0 OR <column_name> < 10000

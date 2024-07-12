@@ -1,0 +1,143 @@
+- ITSM OVERVIEW: the itsm has the following components 
+
+  - END-USERS 
+
+  - SERVICE-DESK 
+
+  - EMPLOYEE CENTER and PORTALS:  
+
+  - OPERATE
+
+    - SERVICE CATALOG 
+
+    - REQUEST MANAGEMENT 
+
+  - MAINTAIN 
+
+    - INCIDENT MANAGEMENT 
+
+    - PROBLEM MANAGEMENT 
+
+  - IMPROVE
+
+    - CHANGE MANAGEMENT 
+
+  - CONFIGURATION MANAGEMENT 
+
+  - KNOWLEDGE MANAGEMENT 
+
+  - SERVICE PORTFOLIO MANAGEMENT
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ITSM TERMINOLOGIES: 
+
+  - SERVICE CATALOG: contains collection of PRODUCTS and SERVICES 
+
+  - SERVICE PORTAL: provides MOBILE EXPERIENCE for SELF-SERVICE
+
+  - SERVICE CATALOG REQUEST: contains ONE or MORE REQUESTED ITEMs 
+
+  - REQUESTED ITEM: the catalog is made up of DISCREET ITEMS that can be requested?? 
+
+  - SERVICE CATALOG TASK: used to source items and fulfill requests 
+
+  - REQUEST MANAGEMENT: allows catalog items to be requested and fulfilled based on the pre defined flows 
+
+  - REQUEST FULFILLMENT: the fulfillment process involves... REQUEST APPROVAL, ASSIGN FULFILLMENT TASKS? and FULFILL REQUESTS 
+
+  - CONFIGURATION ITEM: hardware and services used in an organisation are stored in the instance as CONFIGURAITON ITEM 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- SERVICE CATALOG PERSONAS 
+
+  - PROCESS OWNER: MAINTAIN SERVICE CATALOG and REQUEST MANAGEMENT PROCESS.... usually this will be a SENIOR MANAGER who have authority over the process 
+
+  - SERVICE OWNER: responsible for the delivery of a SPECIFIC IT SERVICE.... responsible for maintainance and support of the service 
+
+  - CATALOG MANAGER: looks after SERVICE CATALOG ISSUES 
+
+  - CATALOG EDITOR: ADDS, MODIFIES and RETIRES CATALOG ITEMS based on the approvals from SERVICE OWNER and CATALOG MANAGER 
+
+  - REQUEST MANAGEMENT MANAGER: ensures that REQUESTS MEET SERVICE LEVEL TARGETS.... coofdinates interaction between request management and other service management process 
+
+  - REQUESTER: the person making the REQUEST
+
+  - APPROVER: other managers from other department who is responsible for REVIEWING REQUESTS and GRANDING/REJECTING REQUESTS.... usually LINE MANAGERS, SERVICE OWNERS, BUSINESS STAKEHOLDERS etc
+
+  - FULFILLER: the FINAL INDIVIDUAL who does the TASK to fulfill the REQUEST 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is a SERVICE CATALOG? 
+
+  - service catalog is a database listing of all IT SERVICES OFFERED to the business. It simulates ECOMMERCE SITES
+
+  - service catalog consists of many CATALOG ITEMS 
+
+  - CATALOG ITEMS can be PRODUCT/SERVICES and various options of that item (eg dell laptop is a catalog item.... ssd/hdd size can be options)
+
+  - SERVICE PORTALS: are WEB-INTERFACES that can be customised to display the details of the CATALOG ITEMS 
+
+  - to CREATE/EDIT/COPY CATALOG ITEMS.... goto SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS
+
+
+- FUNCTIONS OF SERVICE CATALOG 
+
+  - creates NEW CHANGES using STANDARD CHANGE ITEMS 
+
+  - creates NEW INCIDENTS using RECORD PRODUCERS 
+
+  - creates NEW CI RECORDS ot track new HARDWARES/SOFTWARES 
+
+  - presents KNOWLEDGE ARTICLES using CONTENT ITEMS 
+
+  - suscribe to a service 
+
+  - order new HARDWARE/SOFTWARES 
+
+  - submit tickets (eg incidents)
+
+- SERVICE CATALOG ROLES 
+
+  - catalog_admin: manages all aspects of SERVICE CATALOG APPLICATION of the instance 
+
+  - catalog_manager: edit and update SERVICE CATALOGS, CATEGORIES and CATALOG ITEMS 
+
+  - catalog_editor: can edit and update CATALOG ITEMS and CATAGORIES within a SPECIFIC SERVICE CATALOG 
+
+  - catalog_builder_editor: can create and maintain items in CATALOG BUILDER APPLICATION using PREDEFINED TEMPLATES
+
+  - approver_user: approves/rejects request 
+
+  - itil: can see SERVICE REQUEST RECORDS in the SERVICE CATALOG 
+
+
+  ** ITSM ROLES PLUGIN (com.snc.itsm.roles) gives additional roles for REQUEST MANAGEMENT 
+
+    - sn_request_read
+
+    - sn_request_write
+
+
+- CATALOG BUILDER: guided interface experience to CREATE/EDIT catalog items..... FUNCTIONS of catalog builder aer 
+
+  - create catalog item 
+
+  - create catalog item TEMPLATE 
+
+  - view catalog items 
+
+  - view catalog item templates 
+
+  - view recently updated catalog items 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+

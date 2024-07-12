@@ -1,0 +1,44 @@
+- NOTIFICATIONS: are used for ALERTING users about activities in snow.
+
+  ** NOTIFICATIONS can be TRIGGERED by EVENTS in the platform 
+
+  ** triggering notification DON'T NEED SCRIPTING KNOWLEDGE  
+
+  ** NOTIFICATION can be sent through FOLLOWING CHANNELS?? 
+
+    - MEETING INVITATION?? 
+
+    - SMS 
+
+    - EMAIL 
+
+  ** NOTIFICATION CHANNEL (..SMS, EMAIL etc) can be set by going to 
+
+    - USER MENU (..AVTAR) > PREFERENCES > NOTIFICATIONS > GENERAL TAB > SYSTEM NOTIFICATIONS 
+
+- to ACCESS EMAIL NOTIFICAITON RECORD... goto 
+
+  - ALL > SYSTEM NOTIFICATIONS > EMAIL > NOTIFICATION
+
+- to view NOTIFICATION EMAILS SENT FROM your INSTANCE 
+
+  - ALL > SYSTEM MAILBOXES > OUTBOUND > OUTBOX 
+
+  ** select PREVIEW EMAIL BUTTON (..icon with letter "i") to view email WITHOUT OPENING the record 
+
+- BEST PRACTICES for EMAIL NOTIFICATIONS 
+
+  - LIMIT RECIPIENT list of ANY NOTIFICATION (including EMAIL) to 1000 users 
+
+    ** by DEFAULT if a NOTIFICATION has MORE THAN 100 RECIPIENTS... the s/m creates MULTIPLE NOTIFICATION MESSAGES with upto 100 RECIPIENTS each 
+
+    ** to change RECIPIENT LIMIT from the default 100 to any other number... use SYSTEM PROPERTY to change the limit value  
+
+      - glide.email.smtp.max_recipients
+
+  - BASELINE SYSTEM PROVIDES several EMAIL NOTIFICATIONS.. so use that INSTEAD of CREATING NEW ONE 
+
+  - DON'T OVERDO email notifications 
+
+  - AVOID CONFUSION by NOT CREATING LARGE NUMBER of notification 
+

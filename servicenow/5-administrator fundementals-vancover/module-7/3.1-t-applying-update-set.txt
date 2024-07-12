@@ -1,0 +1,71 @@
+- APPLYING AN UPDATE SET: to apply an UPDATE SET in TARGET INSTANCE has 3 STEPS 
+
+  1) RETRIEVE: involves IMPORTING UPDATE SET and load CUSTOMER UPDATES 
+
+
+    ** you can RETRIEVE UPDATE SET in 2 WAYS 
+
+      1) using an XML FILE 
+
+      2) retrieve UPDATE SET directly from REMOTE INSTANCE (.. ALL > SYSTEM UPDATE SET > UPDATE SOURCES > NEW)
+
+    ** when XML FILE is UPLOADED.... the state value becomes LOADED
+
+
+
+  2) PREVIEW: compare UPDATE SET data RETRIEVED IN target instance with UPDATE SET of LOCAL INSTANCE to DETECT PROBLEMS 
+
+  3) COMMIT : apply the update set using COMMIT UPDATE SET BUTTON 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..... to apply an UPDATE SET in TARGET INSTANCE if there is an UPDATE SET XML file in the LOCAL DEVICE 
+
+  - goto ALL > SYSTEM UPDATE SETS > RETREIVED UPDATE SETS 
+
+  - scroll and click RELATED LINK named IMPORT UPDATE SET FROM XML 
+
+  - choose XML FILE from the local device 
+
+  - click UPLOAD 
+
+    ** state value becomes LOADED 
+
+  - REVIEW CUSTOMER UPDATE SET 
+
+  - click PREVIEW UPDATE SET 
+
+  - click COMMIT UPDATE SETS 
+
+    ** COMMITTING updateset applies changes to the instance... it creates a LOCAL COPY OF THE UPDATE SET... this COPY contains 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+...to RETRIEVE UPDATE SET directly from a REMOTE INSTANCE 
+
+- goto ALL > SYSTEM UPDATE SETS > UPDATE SOURCES > NEW 
+
+  - FILL NAME FIELD 
+
+  - fill TYPE FIELD : options: DEVELOPMENT/TEST/PRODUCTION
+
+    ** used to specify the type of the REMOTE INSTANCE 
+
+  - fill URL FIELD: instance url of the REMOTE INSTANCE 
+
+  - fill USERNAME of the remote instance
+
+  - fill PASSWORD of the remote instance 
+
+  - click TEST CONNECTION BUTTON... if success...message banner appears saying "Connection is OK"
+
+  - click SAVE 
+
+  - click on RETRIEVE COMPLETED UPDATE SETS 
+
+    ** all the UPDATE SETS in the REMOTE INSTANCE with STATE = COMPLETED is added to the TARGET INSTANCE 
+
+  - SELECT UPDATE SET you want to apply 
+
+  - click COMMMIT UPDATE SET BUTTON 
+

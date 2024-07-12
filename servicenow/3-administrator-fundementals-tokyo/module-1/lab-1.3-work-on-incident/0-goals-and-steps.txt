@@ -1,0 +1,92 @@
+.... once an incident is created by an AGENT USER.... you need to work in it.... we use the application named SERVICE OPERATINS WORKSPACE to manage and work in the incidents
+
+- SERVICE OPERATIONS WORKSPACE: is a WORKSPACE designed to meet the needs of SERVICE DESK AGENTS.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to open SERVICE OPERATIONS WORKSPACE:
+
+    - on the TOP NAVIGATION BAR....
+
+      - click on workspace 
+
+      - click on service operations workspace 
+
+    ** the workspace has various WIDGETS such as UNASSIGNED INCIDENTS to work on the incidents
+
+    ** these widgets has DONUT charts on stats of incidents 
+
+    ** you can click on various parts of the DONUT to route to that specific incidents TILES 
+
+    ** click on the tiles to open the INCIDENT DETAILS  
+
+
+
+    ***** click on the RIGHT arrow button displayed on the page to SCROLL through all the available widgets 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  
+- to open an UNASSIGNED INCIDENTS 
+
+  - open SERVICE OEPRATIONS WORKSPACE 
+
+  - scroll through widgets using ARROW BUTTON to find UNASSIGNED WIDGET 
+
+  - click on view all 
+
+  - the INCIDENTS opens up
+
+    ** on the top... individual incidents are shown in TABS 
+
+    ** on the right panel.... there are ADDITIONAL TOOLS to work on the incident
+
+      - agent assist tool (graduation cap icon): gives knowledge articles based on the incident
+
+  - on each incident tabs there are sub tabs such as 
+
+    - overview tab
+
+    - details tab : shows detailed info and fields of the incident
+
+    - related records tab: shows related lists connected to the instance 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... once an incident is created... we need to work on its solution.... so we need to assign it to somebody.... TO ASSIGN the INCIDENT to MYSELF.... 
+
+- click ASSIGN TO ME BUTTON on the top
+
+  ** now ASSIGNED TO field gets filled 
+
+- to read knowledge article on the incident issue... 
+
+  - press AGENT ASSIST BUTTON on the right pane 
+
+  - click on the KNOWLEDGE ARTICLE... click ATTACH on the agent assist to SHARE the KNOWLEDGE article with the CALLER....
+
+    - add any additional comments which is CUSTOMER VISIBLE
+
+    - verify the comment creation in the ACTIVITY STREAM
+
+  - you can also click FLAG BUTTON to flag the knowledge article in the agent assist
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... now for final resolution of the incident.... 
+
+- scroll down on the DETAILS TAB and FIND THE RESOLUTION SECTION 
+
+- select the RESOLUTION CODE (CHOICE)
+
+- click RESOLVE on top right 
+
+- click RESOLVE 
+
+- END IMPERSONATION
+
+** CALLER will receive an AUTOMATED EMAIL notification with the resolution details. If he has any continued issues, he can reply to the mail to have THE INCIDENT SET BACK TO WORK IN PROGRESS, and
+to automatically notify AGENT that additional help is needed.
+

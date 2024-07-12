@@ -1,0 +1,5 @@
+- you can use ternary operator on snow like this 
+
+  <condition> ? <value 1> : <value> ;
+
+** SYSTEM PROPERTIES are always STRING VALUES so we can use ternary operator to make a BOOLEAN FLAG based on their STRING value to make operations based on the presence of these system properties 

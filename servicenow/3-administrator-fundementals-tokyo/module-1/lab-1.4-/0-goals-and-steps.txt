@@ -1,0 +1,68 @@
+..... till now we have seen and worked as a USER AGENT to create and resolve incidents.... now in this lab we need to work as the CALLER who REQUESTS help to the USER AGENT 
+
+..... CALLER EMPLOYEE uses EMPLOYEE CENTER APPLICATION to send HELP REQUEST to USER AGENTS 
+
+- to use EMPLOYEE CENTER 
+
+  - impersonate as CALLER user 
+
+  - goto ALL > SELF SERVICE > EMPLOYEE CENTER
+
+    - here on the TOP RIGHT of the NAV BAR....
+
+      - MY TASKS: shows the actions to be done by the caller on tasks assigned to him 
+
+      - MY REQUESTS: shows the problem REQESTS send by the caller to the USER AGENT
+
+        - it lists the STATUS of the INCIDENT RESOLVED BY the USER AGENT 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... sometimes the incident resolved by the user agent don't work.... so to notify it to the user agent 
+
+- goto SELF SERVICE > EMPLOYEE CENTER 
+
+- click on MY REQUESTS on top right nav bar to open up the requests sent to the agent 
+
+- click on your resolved incident 
+
+- if the resolution don't work 
+
+  - type a new message to the AGENT on the TYPE YOUR MESSAGE HERE INPUT FIELD 
+
+  - click post
+
+  ** now user agent receives email notification.... and HIS INCIDENT STATUS in the SERVICE OPERATIONS WORKSPACE will be set back to STATUS: WORK IN PROGRESS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... if CALLER has problem with USER AGENT'S RESOLUTION.... he'll contact the agent.... then the incident status will turn to work in progress.... so user agent need to UPDATE the incident with new solution .... to do that 
+
+- impersonate as the USER AGENT 
+
+- open service operations workspace from the WORKSPACE tab in the nav bar 
+
+- now the incident is in the INCIDENT SLA WIDGET... click on view all 
+
+- click on the incident that needs updation 
+
+- under the COMPOSE TAB 
+
+  - write new work notes (private to the user agent)
+
+  - write new comment (seen by customer)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... a USER AGENT has also problems with the platform and need to send request to the TOP LEVEL USERS such as administrators.... to do that 
+
+
+- open SERVICE OPERATIONS WORKSPACE from the WORKSPACE TAB in the nav bar 
+
+- on the left tool pane.... click on the lists 
+
+  - click OPEN REQUESTS... 
+
+  ** all the requests can be seen here
+
+  ** new requests can be made here

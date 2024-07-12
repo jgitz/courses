@@ -1,0 +1,30 @@
+.... each KNOWLEDGE BASE in the snow instance uses WORKFLOWS to PUBLISH and RETIRE ARTICLES 
+
+.. there are FOUR main WORKFLOWS used to manage lifecycle of a kb ARTICLE... they are 
+
+  1) KNOWLEDGE-APPROVAL PUBLISH: can only publish article if it REQUEST is  APPROVED from the manager 
+
+  2) KNOWLEDEGE-APPROVAL RETIRE: REQUESTS MANAGER an approval to RETIRE the article 
+
+  3) KNOWLEDGE-INSTANT PUBLISH: instantly publishes article WITHOUT need of APPROVAL 
+
+  4) KNOWLEDGE-INSTANT RETIRE: instantly RETIRES article WITHOUT need of APPROVAL 
+
+  **** these WORKFOLWS are given inside TWO FIELDS in the KB RECORDS 
+
+    - PUBLISH WORKFLOW FIELD 
+    - RETIRE WORKFLOW FIELS 
+
+
+.... there are TWO SUBFLOWS for PUBLISHING and RETIRING ARTICLES 
+
+  1) KNOWLEDGE-PUBLISH KNOWLEDGE: moves knowledge article to PUBLISHED STATE 
+
+  2) KNOWLEDGE-RETIRE KNOWLEDGE: moves knowledge article to RETIRED STATE 
+
+** ROLES NEEDED to be a MANAGER to APPROVE KNOWLEDGE REQUESTS 
+
+  - approver_user 
+  - knowledge_manager 
+  
+** if the workflow selected is APPROVAL PUBLISH/RETIRE... then when you click PUBLISH on the ARTICLE RECORD.... it goes to REVIEW STATE..... 

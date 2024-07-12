@@ -1,0 +1,64 @@
+.... here we look into 2 types of fields in the form 
+
+  1) choice: we can choose options from dropdown 
+    ** identified by DOWN ARROW icon 
+
+  2) reference field: takes values from another table 
+
+    ** identified by MAGNIFYING GLASS icon
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add a choice option 
+
+- open a list
+
+- check if the view is default (HAMBURGER > VIEW > <DEFAULT>)
+
+- open a record
+
+- right click on a choice field 
+
+- select CONFIGURE CHOICE 
+
+  - add an item with name in the field provided 
+
+  - click add button 
+
+- click save 
+
+** now an item/option is added to the choice field in the form 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... similar to choic options.... a reference field can also be added a CHILD field
+
+- open a list
+
+- check if the view is default (HAMBURGER > VIEW > <DEFAULT>)
+
+- open a record
+
+- right click on a REFERENCE FIELD 
+
+  - click on SHOW - <reference field name>
+
+  - COPY the REFERENCE field value from the POPUP... eg  cmdb_ci_service.... this is the table name of the reference field 
+
+- goto ALL MENU and PASTE the table name and CHAIN IT WITH .list 
+
+  i.e <table name>.list .... eg cmdb_ci_service.list... and 
+
+  click enter
+
+- now you can see all the reference table records...
+
+- select a record / create a new record 
+
+- scroll down and click on OFFERINGS tab
+
+  - click new and fill 
+
+  - this will be the CHILD FIELD
+
+

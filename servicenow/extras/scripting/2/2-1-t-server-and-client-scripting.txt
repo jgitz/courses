@@ -1,0 +1,23 @@
+..... in snow.... we can run scripts on both SERVER as well as in CLIENT (browser)
+
+.... we run js in SERVER to do backend operations like operations on DB....
+
+.... we run js in CLIENT/BROWSER for more dynamic functionalities?? .... eg to use something from the UI FORM FIELDS 
+
+
+..... a server script and client script can interact to each other... i.e is one can be called from other....
+
+- to run SERVER SCRIPTS: we do it SCRIPT - BACKGROUND console
+
+- to run CLIENT SCRIPTS: follow the following steps in the instance: 
+
+  - click on all 
+
+  - search for "CLIENT SCRIPTS" (under system definitions)
+
+  - fill the required fields
+
+  - write the scripts in the space provided
+
+
+

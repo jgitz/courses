@@ -1,0 +1,15 @@
+..... to ONLY ALLOW a certain TEXT DATA in a column we use ENUM DATATYPE....
+
+- MYSQL ENUM syntax: 
+
+   :: <column_name> ENUM('<text_data_1>', 'text_data_2',...);
+
+- POSTGRES ENUM syntax step 
+
+    *- STEP 1: create a TYPE with CUSTOM TYPE NAME as ENUM with text data values like this 
+
+          :: CREATE TYPE <custom_type_name> AS ENUM('<text_data_1>', 'text_data_2',...);
+
+    *- STEP 2: ASSIGN the CUSTOM datetype to the COLUMN 
+
+          :: <column_name> <custom_type_name>

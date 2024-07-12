@@ -1,0 +1,37 @@
+..... not all users should be allowed access to the KB's.... for eg: HR related KB should ONLY be visible to HR users....
+
+- USER CRITERIA: is the MODULE used to set SECURITY to KB'S
+
+  - the user criteria allows you to give access to KB for a GROUP OF USERS, ROLES, users etc 
+
+  ** USER CRITERIA is applied at KNOWLEDGE BASE LEVEL 
+
+  - if a KB has NO USER in USER CRITERIA... the articles of that KB is accessible to ALL USERS 
+
+  - USER CRITERIA RECORD: is a record where we give the USERS/GROUPS/ROLES to access a KB.... it can be created in the path 
+
+    - ALL > KNOWLEDGE > ADMINISTRATION > USER CRITERIA 
+
+    ** KB SPECIFIC user criteria records can be opened from the CAN READ, CAN CONTRIBUTE RELATED LIST TABS in KB RECORD 
+
+    ***** MATCH ALL CHECKBOX: if checked.... all conditions (..fields??) of user criteria record SHOULD MATCH for access to kb.... if FALSE...matching only ONE CONDITION (..field??) of the record will grant access to KB  
+
+  ***** we must ADD USER CRITERIA RECORD to KNOWLEDGE BASE RECORD to give ACCESS a knowledge base 
+
+- KB ACCESS SETTINGS: there are FOUR access settings in a KNOWLEDGE BASE RECORD....to control user access to a KB 
+
+  1) CAN READ: users/groups that can READ knowledge articles
+
+  2) CAN CONTRIBUTE: users/groups can READ, CRAETE and MODIFY articles 
+
+  3) CANNOT READ: users/groups that is NOT GIVEN READ ACCESS to ARTICLES
+
+  4) CANNOT CONTRIBUTE: users/groups CAN READ.... BUT... CAN'T CREATE or MODIFY articles 
+
+  ***** these are FOUR RELATED LIST TABS in a KB RECORD(.. ALL > KNOWLEDGE > ADMINISTRATION > KNOWLEDGE BASES).... we add USER CRITERIA RECORDS to these tabs to control access to a KB 
+
+  ***** if there's NO USER CRITERIA RECORD given in CAN READ TAB.... then the article is PUBLIC (?? even to NON LOGGED IN USERS...)
+
+    ** to BLOCK NON LOGGED IN USERS access to KB... USE SYS PROPERTY 
+
+      - glide.knowman.block_access_with_no_user_criteria

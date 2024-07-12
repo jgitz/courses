@@ -1,0 +1,5 @@
+- CAN YOU STORE FILES IN A DATABASE ?
+
+    ** NO.... you CANNOT store files inside a database
+
+        ** instead the FILE PATH of the file is stored as VARCHAR datatype in the TABLE COLUMN

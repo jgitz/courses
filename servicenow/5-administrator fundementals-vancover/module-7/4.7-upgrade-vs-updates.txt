@@ -1,0 +1,23 @@
+- UPDATE: happens when the instance is APPLIED PATCHES/HOTFIX on the SAME RELEASE FAMILY 
+
+- UPGRADE: happens when the instance is CHANGED FROM ONE RELEASE FAMILY to another RELEASE FAMILY 
+
+  ** THE EVENT named "SYSTEM.UPGRADED" can be used to TRIGGER UPGRADED NOTIFICATION.
+
+    ** if the event has ERROR... the NOTIFICATION WON'T BE SENT... but UPGRADE MAY HAVE COMPLETED SUCCESSFULLY 
+
+- RUNNING RELEASE: is the release that is RUNNING on the system
+
+  ** do STATS.DO to see RUNNING RELEASE 
+
+    - locate BUILD NAME, BUILD DATE, BUILD TAG 
+
+    - MATCH BUILD NAME to the RELEASE NAME in RELEASE NOTE
+
+    - MATCH BUILD DATE and BUILD TAG to that of RELEASE NOTES 
+
+
+- SUPPORTED RELEASE: is ONE of the TWO MOST CURRENT RELEASES 
+
+  - supported versions are given 24x7 support for PATCHES and HOTFIXES 
+

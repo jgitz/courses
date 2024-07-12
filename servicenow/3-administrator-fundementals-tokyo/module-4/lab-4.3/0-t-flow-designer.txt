@@ -1,0 +1,58 @@
+- FLOW DESIGNER: is a non technical interface for building and enabling PROCESS AUTOMATION known as FLOWS 
+
+  ** flow designer can be accessed at ALL > PROCESS AUTOMATION > FLOW DESIGNER 
+
+  ** roles needed 
+
+    - FLOW_DESIGNER 
+    - FLOW_OPERATOR 
+    - ACTION_DESIGNER
+
+  ** a separate subscription with INTEGRATION HUB will expand flow designer capability to integrate flows to EXTERNAL INSTANCES and THIRD PARTY APPLICATIONS
+
+- FLOW: consists of A TRIGGER and ONE OR MORE ACTIONS 
+
+- FLOW TRIGGERS: there are 3 types of triggers 
+
+  1) RECORD BASED TRIGGER: triggers when a record is created, updated etc 
+
+  2) DATE BASED TRIGGER: triggers flow based on date 
+
+  3) APPLICATION BASED TRIGGER: triggers when APPLICATION SPOKE is activated
+
+    ** an APPLICATION SPOKE of an application consists of FLOW DESIGNER TRIGGERS and ACTIONS specific to a particular application.... eg ITSM SPOKE
+
+** we can also add CONDITIONS to a trigger 
+
+- ACTIONS: are operations executed by the system...
+
+  - TWO TYPES OF ACTIONS: 
+
+    1) CORE ACTIONS: snow basic actions such as create record, delete record etc 
+
+    2) APPLICATION SPECIFIC ACTION: actions based on the spoke of an application
+
+- DATA: data can be added to actions in 2 ways in FLOW DESIGNER 
+
+  1) DRAG AND DROP DATA PILL from RIGHT DATA PANE 
+
+  2) click on DOT WALK ICON on action field
+
+
+- FLOW DESIGNER VS WORKFLOW
+
+  ** FLOW DESIGNER is the latest feature 
+
+    * workflow is an old feature 
+
+  ** FLOW DESIGNER has REDUCED USAGE of SCRIPTS 
+
+    * WORKFLOW enables to use COMPLEX SCRIPTS 
+
+  **** WORKFLOW is PHASED OUT BY SERVICENOW
+
+- PROCESS AUTOMATION DESIGNER: 
+
+  - used to create CROSS-ENTERPRISE WORKFLOWS and web them into a SINGLE PROCESS 
+
+  - target users is CITIZEN DEVELOPERS

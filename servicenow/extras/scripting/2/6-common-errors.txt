@@ -1,0 +1,5 @@
+- not declaring the variable 
+
+- DON'T FORGET SEMI-COLON at end of EVERY LINE
+
+- always look the previous line where the error occured if you CAN'T find the error  

@@ -1,0 +1,52 @@
+- TAGS: provide easy way to CATEGORIZE, FLAG and LOCATE RECORDS 
+
+- to view all TAGS created by user 
+
+  - ALL > SELF-SERVICE > MY TAGS 
+
+  ** you can edit TAG PROPERTIES such as COLOR, NAME, ICON etc from here 
+
+- to view all DOCUMENTS in your instance that have TAGS 
+
+  - ALL > SELF-SERVICE > MY TAGGED DOCUMENTS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to add TAG to a RECORD in LIST VIEW 
+
+  - right click on the ROW (..RECORD) to open RECORD/FIELDS CONTEXT MENU....
+
+  - select ASSIGN TAG 
+
+  - select NEW TAG 
+
+  **** you can ALSO add tags INLINE if the list have TAGS COLUMN 
+
+    ** in INLINE TAG.... you can set VISIBILITY of tags to ME/EVERYONE/GROUPS-AND-USERS by.. clicking on the PEOPLE ICON on the TAG... you can also EDIT TAG NAME there
+
+    **** to set visibility to EVERYONE... the user should have ROLES 
+
+      - admin 
+      - tags_admin
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add TAG to a RECORD in FORM VIEW 
+
+  - open RECORD LIST 
+
+  - open FORM 
+
+  - click on MORE OPTIONS (THREE DOTS ICON)
+
+  - click ADD TAG 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add a TAG to a RECORD in a WORKSPACE VIEW 
+
+  - open the RECORD from the LIST in the WORKSPACE 
+
+  - click on TAG ICON on TOP to add new tag 
+
+  ** if a RECORD is TAGGED.... the TAG ICON WILL BE FILLED WITH COLOR.... ELSE only ICON with PURPLE OUTLINE 

@@ -1,0 +1,12 @@
+.... using primary key in mysql to generate id column 
+
+** only one column per table can be assgned primary key constraint
+
+** AUTO_INCREMENT attribute should be added in MYSQL for automatically increment id column value 
+
+
+- MYSQL codes 
+
+    :: CREATE TABLE <table_name> (
+      <id> INT PRIMARY KEY AUTO_INCREMENT
+    );

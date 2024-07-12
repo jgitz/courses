@@ -1,0 +1,42 @@
+.... every table data in snow is displayed as a LIST of records.... the LIST has COLUMNS (FIELDS) and ROWS (RECORDS)....
+
+.... we can configure and CUSTOMIZE any list with COLUMN FIELDS of our choices.... and even create a NEW FIELD
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to set fields of a LIST and SAVE IT with a CUSTOM name 
+
+  - goto any list.... eg: incident > all 
+
+  - RIGHT CLICK on any COLUMN HEADER 
+
+  - click CONFIGURE > LIST LAYOUT 
+
+    - LIST COLLECTOR APPEARS with 2 BOX....
+
+      1) box with ALL AVAILABLE FIELDS 
+
+      2) box with SELECTED FIELDS from the available fields box 
+
+      ** double click on fields in available list to add it to selected list 
+
+  - to give CUSTOM NAME to the list 
+
+    - under the LIST VIEW SECTION.... select NEW from the CHOICE DROPDOWN 
+
+    - give < CUSTOM LIST NAME>
+
+  - click SAVE on the top right 
+
+  **** now to add this custom list view to the LIST 
+
+    - goto the list 
+
+    - click on LIST CONTEXT MENU (HAMBURGER on the left)
+
+    - click on view 
+
+    - click on the < CUSTOM LIST NAME>
+
+ **** some fields WON'T be available on the current record... it should be taken from the other record.... in that case we use DOT WALKING method.... so click BUTTON with ICON SIMILAR TO SHARE BUTTON ICON to expand relevant fields where we get sub fields from other records
+

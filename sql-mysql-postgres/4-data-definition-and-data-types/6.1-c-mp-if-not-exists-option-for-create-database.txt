@@ -1,0 +1,11 @@
+*****in MYSQL....if we create a db with name of a already existing db.... there'll be ERROR MESSAGE .... solution to avoid creation of an existing database WITHOUT an ERROR MESSAGE....
+
+    ** use IF NOT EXISTS clause with database creation table in mysql like this 
+
+
+        :: CREATE DATABASE IF NOT EXISTS <database_name>;
+
+
+**** if not exists option DON'T work in POSTGRES for :: CREATE DATABASE :: statement 
+
+**** if not exists option WORKS in POSTGRESQL for :: CREATE TABLE :: statement

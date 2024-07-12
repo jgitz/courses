@@ -1,0 +1,135 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to load data from the local system to servicenow IMPORT SET TABLE (***** NOT TARGET TABLE)
+
+  - login as user with admin/import_admin/import_set_loader/import_transformer role
+
+  - goto ALL > SYSTEM IMPORT SETS > LOAD DATA 
+
+    - select CREATE TABLE OPTION to create a NEW IMPORT SET TABLE 
+
+      - select EXISTING TABLE OPTION to select existing import set table option
+
+      - LABEL FIELD: give label to the import set table in FORMAT <any><space><Imports>
+
+      - NAME FIELD: automatically updated
+
+      - source of import: UPLOAD FILE or DATASOURCE from local device 
+
+      - choose file from data source (if file option was selected on previous step)
+
+      - click submit 
+
+        ** data gets loaded from local excel file to the IMPORT TABLE 
+
+      - click LOADED DATA link to view the data imported to the IMPORT SET TABLE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create TRANSFORM MAP of the LOADED DATA which is insice the immport set (to draw relationship between the import set table fields and the target table fields).... and LOAD DATA TO TARGET TABLE 
+
+  - goto ALL > SYSTEM IMPORT SETS > CREATE TRANSFORM MAP 
+
+    - NAME FIELD: give the name in format <any><space><CIs>.... eg: HHD CIS....
+
+      ** CI'S because TRANSFORM MAP is a CONFIGURATION ITEM (CI) in CMDB (Configuration Management Database)
+
+      ** you can see the TRANSFOM MAP TABLE at ALL > SYSTEM IMPORTS > ADMINISTRATION > TRANSFORM MAP .... it's here the tranform map is STORED AS CI for FUTURE USE (to set COALESCE FIELD)
+
+    - source table: <IMPORT SET table>
+
+    - target table: <SNOW TARGET TABLE where you want to load the data>
+
+    - SAVE (so MAPPING TOOLS RELATED LINKS APPEAR)
+
+      **** DON'T CLICK SUBMIT.... it'll make you leave the form
+
+    - to use appropriate mapping tools 
+
+      - to use AUTO MAP TOOL...
+
+        - click on AUTO MAP MATCHING FIELDS related link to open automap tool
+
+        ** to verify.... scroll down to see mapped fields in FIELDS MAP TAB 
+
+    >>>>> OR or AND <<<<<<<
+
+      - to use MAPPING ASSIST TOOL 
+
+        - click on MAPPING ASSIST related link 
+
+          ** mapping assist GUI INTERFACE APPEARS 
+
+            - map the fields for SOURCE and TARGET TABLE by adding them to FIELD MAP BOX in the middle.... DRAG to match the  FIELDS on each sides 
+
+            - click save 
+
+      ***** MAPPING is NOT YET COMPLETED 
+
+    - in the TRANFORM MAP CI form..... click TRANSFORM RELATED LINK 
+
+      - select appropriate transform map on the right box
+
+      - click TRANSFORM GREEN BUTTON to APPLY FINAL TRANFORMATION 
+
+    ** goto TARGET to see the LOADED DATA 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to INCREMENTALLY LOAD UPDATED LOCAL DATA FILE.... (USING COALESCE)
+
+  - login with user wit APPROPRIATE ROLE 
+
+  - goto ALL > SYSTEM IMPORT SETS > LOAD DATA 
+
+  - select EXISTING TABLE 
+
+    - import set table field: select existing appropriate import set table 
+
+    - source of import field: FILE 
+
+    - choose updated excel file from the local device 
+
+    - click submit 
+
+  - now we need to add COALESCE FIELD to prevent DUPLICATION of data from UPDATED DATA SOURCE 
+
+    - goto ALL > SYSTEM IMPORTS > ADMINISTRATION > TRANSFORM MAP 
+
+    - open APPROPRIATE TRANSORM MAP CI RECORD from the list
+
+      ** check COPY EMPTY FIELD CHOICE... if and only if you have EMPTY FIELDS in the source file and YOU WANT that FIELD TO BE EMPTY in the TARGET TABLE
+
+      - goto FIELD MAPS TAB 
+
+      - set COALESCE COLUMN to true to a UNIQUE FIELD like SERIAL NUMBER, DEVICE NUMBER, etc 
+
+    - click TRANSFORM related link
+
+      - choose appropriate tranform map 
+
+      - click GREEN COLOR TRANFORM BUTTON 
+
+    ** now the target table gets updated with new records without duplication of the old record
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... once you load data in a target table..... you can delete IMPORT SET TABLE DATA (not the TABLE STRUCTURE.... ut there is option for that too).... to do that 
+
+- goto ALL > SYSTEM IMPORT SETS > IMPORTSET TABLES > CLEANUP 
+
+  - select the appropriate IMPORT SET TABLE to the right box 
+
+  - to cleanup only DATA in the table and NOT THE TABLE ITSELF.... check DELETE DATA ONLY CHOICE 
+
+  - click CLEAN UP
+
+  ** if you want to delete the IMPORT TABLE STRUCTURE and all the RELATED TRANSFORM MAP CI'S.... CHECK DELETE RELATED TRANSFORM MAP CHOICE 
+
+
+
+
+    
+
+
+

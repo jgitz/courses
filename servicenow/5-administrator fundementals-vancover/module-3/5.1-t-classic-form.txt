@@ -1,0 +1,80 @@
+- FORM: displays infO from ONE RECORD of a TABLE 
+
+** a form can be loaded by typing the RECORD NUMBER in the GLOBAL SEARCH.
+
+** FORMS are different in CLASSIC and WORKSPACE VIEWS 
+
+- PARTS of FORM 
+
+  1) FIELDS: place were we add data as VALUES in the FORM 
+
+    ** FIELD TYPES 
+
+      ** there are OVER 30 different field types in snow.... COMMONLY USED field types are 
+
+        1) STRING: 
+
+          ** 254 characters can be accomodated in single line.... anything above will be displayed in multiple lines 
+
+        2) DATA/TIME: day and time can be set through CALENDAR WIDGET (CALENDAR ICON)
+
+        3) CHOICE (DROP DOWN)
+
+        4) TRUE/FALSE (..CHECK BOX): BOOLEAN FIELD
+
+        5) REFERENCE: 
+
+
+  2) SECTIONS: oraganizing FIELDS into LOGICAL GROUPS 
+
+    ** in CLASSIC FORM view SECTIONS are the FIRST SET OF FIELDS where you input the data AND the SET OF TABS that comes after it. 
+
+  3) FORMATTER: is a form element used to display info that in NOT A FIELD of your form .... some EXAMPLES of FORMATTERS in BASE PLATFORM 
+
+    - ACTIVITY FORMATTER: diplays list of ACTIVITIES or HISTORY on a TASK FORM in form of JOURNAL FIELD (comments and worknotes)
+
+    - PROCESS FLOW FORMATTER: shows stages of a LINEAR PROCESS at the TOP of the RECORD 
+
+    - APPROVAL SUMMARIZED FORMATTER: display summary of an approved request 
+
+    - CI RELATIONS FORMATTER: shows relationship between CURRENT CI and RELATED CI on a CI FORM 
+
+    - PARENT BREADCRUMBS FORMATTER: provides BREADCRUMBS to show PARENT/PARENTS of current task 
+
+  4) UI ACTIONS: includes BUTTONS, LINKS and CONTEXT MENU ITEMS on your FORM/LISTS 
+
+  5) RELATED LISTS: OTHER RECORDS in OTHER TABLES that have relationship to the CURRENT RECORD 
+
+    ** in CLASSIC FORM, RELATED LISTS are the SET OF TABS at the END of the form 
+
+    ** gear icon in related list is for PERSONALISATION 
+
+    ** FUNNEL ICON in related list is for FILTER
+
+    **** RELATED LISTS WON'T APPEAR until you SAVE a RECORD 
+
+- to PERSONALIZE FORM view.... click on TUNING SWITCH ICON in the top right.... CHECK/UNCHECK checkboxes to add or remove fields 
+
+  ** MANDATORY FIELDS CANNOT BE REMOVED 
+
+  ** to DISABLE personalize option for ITIL role user.... goto sys_properties.list > glide.ul.personalize_form.role ..... set it to ADMIN 
+
+  ** the PERSONALIZED CHANGES PERSISTS on every login.... to return to default fields of form..... press RESET BUTTON 
+
+-  MORE OPTIONS: 3 DOTS on the TOP RIGHT of the form header.... it allows you to 
+
+  - set TEMPLATE 
+
+  - set ANNOTATION to ON/OFF 
+
+- ACTIVITY STREAM: PULSE button icon 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to create RELATED LIST in a form 
+
+ goto FORM > FORM CONTEXT MENU > CONFIGURE > RELATED LISTS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- 

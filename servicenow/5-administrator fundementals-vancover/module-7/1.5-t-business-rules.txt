@@ -1,0 +1,83 @@
+- BUSINESS RULE: is CONFIGURED to run when a RECORD is DISPLAYED, INSERTED, UPDATED, DELETED or when a TABLE is QUERIED
+
+  ** BUSINESS RULES are executed in SERVER SIDE
+
+  ** BUSINESS RULE gets executed when data comes through ANY INTERFACE eg FORMS, LIST, WEB SERVICES..etc 
+
+  ** BUSINESS RULE are NOT-REALTIME like UI POLICY & CLIENT SCRIPT.... i.e 
+
+    - they DON'T MONITOR FIELDS of FORM 
+    - they ONLY MONITOR when RECORDS are INSERTED or UPDATED  
+
+  ** MOST CUSTOMIZATOIN on the platform is done using BUSINESS RULE 
+
+  ** BUSINESS RULES are loaded and initialized at the BEGINNING of EACH INTERACTION b/w a USER and PLATFORM 
+
+  ** BUSINESS RULE includes TABLE on which it should be run and TIMING (.. WHEN it should be run... eg before, after insert etc)
+
+  ** BUSINESS RULES are assigned to EITHER APPLICATION SCOPE or GLOBAL ENVIRONMENT??  (.. application SCOPE that identifies applcations developed PRIOR to APPLICATION SCOPING....OR.... APPLICATIONS intended to be accessible to all OTHER GLOBAL APPLICATIONS)??
+
+  ** BUISINESS RULE can be set according to WHEN SETTING... which has the following options 
+
+    1) BEFORE: i.e it runs BEFORE record is SAVED 
+
+    2) AFTER: i.e it runs AFTER record is SAVED 
+
+    3) ASYNC/QUEUED: ?? 
+
+    4) DISPLAY: i.e it runs BEFORE the record is DISPLAYED 
+
+      - DISPLAY business rule is USED TO show a SHARED SCRATCH PAD OBJECT?? (..g_scratchpad)
+
+  ** to create business rule on a RECORD FORM 
+
+    - goto RECORD/FORM > ADDITIONAL ACTIONS (..HAMBURGER) CONFIGURE > BUSINESS RULE > new 
+
+    ** or another way ALL > SYSTEM DEFINITION > BUSINESS RULES > new 
+
+**** before scripting a business rule.... consider if it can be ACHIEVED using FLOW DESIGNER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+
+- BUSINESS RULE FORM icon and fields (..record form > additional actions > configure > business rule )
+
+  - NAME: 
+
+  - TABLE: 
+
+  - active
+
+  - ADVANCED: **** IF CHECKED then 
+
+    - ADVANCED TAB appears in RELATED LIST: helps to set CONDITION and WRITE SCRIPT in the CONSOLE 
+
+    - the following FIELDS appears inside WHEN TO RUN TAB (..related list)
+
+      - WHEN FIELD: options are before/after/async/display 
+
+      - ORDER: 
+
+      - DELETE (..checkbox) 
+
+      - QUERY (..checkbox)
+
+  - RELATED LISTS 
+
+    - WHEN TO RUN TAB 
+
+      - INSERT (..checkbox)
+
+      - UPDATE (..checkbox)
+
+      - GIVE CONDITIONS in FILTER CONDITIONS 
+
+      - GIVE ROLE CONDITIONS 
+
+    - ACTIONS TAB: to set what actions to do in form when the form meets conditions 
+
+      - SET FIELD and FIELD VALUES 
+
+      - CHECK ADD MESSAGE (..checkbox) to add message 
+
+      - CHECK ABORT ACTION (..checkbox) to PREVENT CARRYING OUT ACTIONS

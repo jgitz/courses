@@ -1,0 +1,26 @@
+..... to add a MODULE under an APPLICATION/MENU in ALL MENU 
+
+- goto ALL MENU .... on the APPLICATION/MENU under which you want to make the MODULE..... CLICK on the APPLICATION EDIT ICON (note and pencil icon) on the APPLICATION/MENU.... 
+
+  ** APPLICATION MENU RECORD APPEARS 
+
+  - scroll down to RELATED LISTS.... under MODULE TAB... click NEW 
+
+    - fill TITLE (..module title)
+
+    - fill APPICATION MENU (.. under which you want the module)
+
+    - fill order: eg 100 
+
+    - under RELATED LISTS TAB 
+
+      - VISIBILITY TAB: you can set ROLES if you want.... only users with this role can access the module 
+
+      - LINK TYPE TAB: .. to set the type of content when you click the module link on all menu 
+
+        - fill link type (choice): eg: <new record... to display new record>
+
+        ** fields hence forth depends on the FIELD TYPE SELECTED 
+
+      - click submit
+

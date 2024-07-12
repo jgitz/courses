@@ -1,0 +1,66 @@
+.... sometimes we need to import data from other data sources.... 
+
+** DATA of the following FORMATS can be acceptable DATA SOURCES for servicenow platform
+
+  ** Network sources 
+    - JDBC (Java DataBase Connectivity)
+    - LDAP (Lightweight Directory Access Protocol)
+    - HTTP/FTP
+
+  ** LOCAL SOURCES 
+  - EXCEL 
+  - CSV 
+  - XML 
+
+- IMPORT SET TABLE: is a STAGING TABLE to store the DATA IMPORTED from the DATA SOURCES 
+
+  ** existing import sets can be REUSED 
+
+  ** even if there is no fields in import set to accomodate fields from the data source.... new FIELDS will be AUTOMATICALLY ADDED
+
+  ** a SINGLE IMPORT SET FIELD can be MAPPED to MULTIPLE FIELDS (..while using transform maps)
+
+- TARGET TABLE: is an existing table in snow to which we want to add data from data sources
+
+- TRANSFORM MAP: is a guide form moving DATA from IMPORT SET TABLE... to a TARGET TABLE in snow
+
+  - it provides a set of FIELD MAPS to define RELATIONSHIP b/w the import table fields and target table field  
+
+  - TRANFORM MAP is FLEXIBLE... it has AUTO MAP FEATURE as well as ADVANCED LOGIC can be implemented using SCRIPTING 
+
+  ** a SINGLE IMPORT SET can be MAPPED to MULTIPLE FIELDS (..while using transform maps)
+
+  - fields can be mapped in transform map using TWO UTILITIES 
+
+    1) AUTOMATIC MAPPING UTILITY: using this will automatically map the fields of IMPORT SET TABLE and TARGET TABLE 
+
+    2) MAPPING ASSIST UTILITY: provides GUI to manually map the fields 
+
+      ** it allows to map a SINGLE SOURCE FIELD (from import set table) to  MULTIPLE DESTINATION FIELDS on the target table 
+
+- COALESCE FIELDS: is used to make A SINGLE FIELD or MULTIPLE FIELD as UNIQUE KEYS during imports (??..applied on IMPORT SET TABLE)
+
+  ** if A MATCH IS FOUND for coalesce field  f in both tables.... then field values on target table is UPDATED with the new data 
+
+  ** if a MATCH IS NOT FOUND for coalesce field in both tables.... then NEW RECORD is added to the TARGET TABLE 
+
+  ** THERE ARE 3 TYPES OF COALESCE in IMPORT SETS 
+
+    1) SINGLE FIELD COALSCE: use coalesce on a single field 
+
+    2) MULTIPLE FIELD COALESCE: multiple fields can be used as coalesce 
+
+    3) CONDITIONAL COALESCE: use SCRIPT to set condition whether a field in IMPORT SET TABLE should COALESCE to TARGET TABLE FIELD  
+
+
+** BEST PRACTICES 
+
+  1) UNDERSTAND and VERIFY what DATA you are importing 
+
+  2) DATA SHOULD NOT be in BIG CHUNKS 
+
+  3) DON'T CREATE a LARGE IMPORT SET...it causes DELAYS 
+
+  4) IMPORT SET TABLE NAME should be similar to the DATA SOURCE FILE NAME 
+
+  5) you can SCHEDULE IMPORTS 

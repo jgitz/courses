@@ -1,0 +1,24 @@
+- switch statement: can REPLACE multiple IF ELSE STATEMENTS.... 
+
+  - syntax:
+
+      switch (condition_variable) {
+        case <condition_variable_value_1>:
+          codes;
+          break;
+
+        case <condition_variable_value_2>:
+          codes;
+          break;
+
+        default: 
+
+          codes; 
+        
+      }
+
+
+      ** the condition_variable can take only STRINGS and INTEGERS 
+
+      ** if you DON'T know the TYPE of value of condition_variable..... use toString or parseInt() methods to make sure that the values are STRING or NUMBER.... because in switch statement.... ONLY STRING or NUMBER values are allowed....
+

@@ -1,0 +1,62 @@
+- SQL COMMAND/ STATEMENT: is a collection of multiple individual parts which is used to do spcific sql action 
+
+    ** every sql command/statement should END with SEMICOLON;
+
+    eg:
+
+        :: SELECT name, salary FROM employees WHERE salary > 8000;
+
+- TOKENS: individual parts of a statement is known as tokens...
+
+      ** tokens can be of many types... the prominent ones are 
+
+
+          **1) KEYWORDS: defines the ACTIONS to be done on the DATA 
+
+                  ** keywords are written in UPPERCASE
+
+                      ** but keywords are CASE INSENSITIVE
+
+                  ** eg: SELECT, FROM, WHERE..etc
+
+          **2) IDENTIFIERS: are names given to columns(fields) and tables of a database
+
+
+          **3) CLAUSES: a keyword with its connected idntifiers create a CLAUSE 
+
+                  ** a single sql statement will have multiple clause
+
+          **4) VALUE/EXPRESSION: is an INFORMATION that user defines inside the sql statement 
+
+          **5) OPERATOR: is symbols used to do operations on data inside the sql statement
+
+- SYNTAX EXAMPLE 
+
+      :: SELECT name, salary FROM employees WHERE salary > 8000;
+
+
+          ** SELECT, FROM and WHERE are KEYWORDS 
+
+          ** name, salary, employees are IDENTIFIERS 
+
+          ** > is OPERATOR 
+
+          ** 8000 is VALUE/EXPRESSION 
+
+          ** CLAUSES: there are 3 clauses in the above sql statement
+
+                - SELECT name, salary - is a clause 
+
+                - FROM employees - is a clause 
+
+                - WHERE salary > 8000 is another clause 
+
+          ***** SELECT keyword is followed by FIELD NAMES 
+
+          ***** FROM keyword is followed by TABLE NAMES 
+
+          ***** WHERE is a FILTER keyword
+
+
+
+  

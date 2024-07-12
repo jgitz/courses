@@ -1,0 +1,129 @@
+... to create a report based on a COLUMN/FIELD of a record 
+
+- login as adminstator 
+
+- set scope to GLOBAL 
+
+- goto any list from ALL MENU 
+
+- click on THREE DOT the COLUMN HEADER based on which you want the REPORT
+
+  - select the CHART TYPE eg pie chart... bar chart ETC
+
+- REPORT OPENS IN REPORT DESIGNER with the relevant chart 
+
+  - on DATA TAB: add NAME FIELD for the report 
+
+  - on TYPE TAB: select type of graphical chart 
+
+  - on CONFIGURE TAB: you can add more RECORD FIELDS based on which you want to display the chart by add the fields by clicking ADDITIONAL GROUP BY BUTTON 
+
+  - on STYLE TAB: you can style the chart like setting CHART SIZE to MEDIUM, LARGE ETC 
+
+  - click SAVE BUTTON on top right to save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to view your reports and edit them 
+
+- goto ALL > REPORTS > VIEW / RUN 
+
+  - search for your report on SEARCH 
+
+  - click on the report to open it in the REPORT DESIGNER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+..... to give access to USERS to view certain report 
+
+- login as administrator 
+
+- set scope to global 
+
+- open repot from ALL > REPORTS > VIEW / RUN 
+
+- click on the SHARE ICON on top middle 
+
+- click on SHARE  
+
+- add GROUPS or USERS on relevant fields 
+
+- click save 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to create a dashboard 
+
+- goto ALL > SELF SERVICE > DASHBOARDS 
+
+- click CREATE DASHBOARD on top right 
+
+- add name field 
+
+- add group? (may be the user group who can view the dashboard )
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add a REPORT to DASHBOARD 
+
+- goto ALL > REPORTS > VIEW / RUN 
+
+- open the report that you want to add to the dashboard 
+
+- click on SHARING ICON on top middle 
+
+- click ADD TO DASHBOARD 
+
+- select the dashboard 
+
+- click add 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to share dashboard to other users or groups 
+
+- goto ALL > SELF SERVICE > DASHBOARDS...
+
+- open a dashboard 
+
+- click share butto on top middle to open SHARE PANEL ON RIGHT 
+
+- click on USER/GROUP TAB to add user or group to view the dashboard 
+
+  - at TO FIELD.... add USER OR GROUP NAME 
+
+  - at message field add message for USER/GROUP  
+
+  - at RECEIPENTS FIELD... you need to specify whether the user/group can/cannot edit the dashboard
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+- INTERACTIVE ANALYSIS: in snow can run depth analysis with many types of graphs on FIELDS of a record 
+
+- to launch INTERACTIVE ANALYSIS on a LIST FIELD and SHARE the URL to other AUTHORIZED USERS.... do
+
+  - open any LIST 
+
+  - right click on the column header field on which you want to run interactive analysis 
+
+  - click LAUNCH INTERACTIVE ANALYSIS 
+
+  - to share the url... click on INFO ICON on top right 
+
+  - copy the url and give it to others
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to add tags to record on list 
+
+  - open a list 
+
+  - click on GEAR ICON to personalise list columns 
+
+    - add TAGS column 
+
+  - on tags column add tags to each record 
+
+  
+

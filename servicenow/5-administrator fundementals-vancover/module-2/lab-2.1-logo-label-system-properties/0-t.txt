@@ -1,0 +1,3 @@
+- to change company log the path is 
+
+  ALL > SYSTEM PROPERTIES > MY COMPANY 

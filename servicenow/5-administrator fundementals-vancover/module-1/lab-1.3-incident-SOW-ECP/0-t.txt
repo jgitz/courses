@@ -1,0 +1,67 @@
+.... important and commonly used THREE APPLICATIONS in snow are   
+
+  1) SERVICE OPERATIONS WORKSPACE 
+
+  2) EMPLOYEE CENTER PORTAL 
+
+  3) ITSM INCIDENT MANAGEMENT 
+
+
+
+1) SERVICE OPERATIONS WORKSPACE: is a workspace where a SERVICE DESK AGENT can see OVERVIEW of the following 
+
+  - assignments 
+  - outages
+  - service announcements
+  - prioritize assignments based on SLA, PRIORITY LEVEL and URGENCY 
+
+  - CREATE INCIDENT based on reported issue 
+
+  - collaborate with REQUESTER and PEERS 
+
+2) EMPLOYEE CENTER PORTAL: is a place wher INTERNAL EMPLOYEES can COMMUNICATE 
+
+  ** employee center portal is available to all customers from SERVICENOW STORE APPLICATION 
+
+  ** EMPLOYEE CENTER PRO needs additional licensing... but also comes with other offerings of servicenow like ENTERPRISES OFFERINGS
+
+3) ITSM APPLICATION: is an application used for 
+
+  - incident management 
+  - problem management 
+  - change management 
+  - service catalog
+
+** PORTAL USAGE STEPS to report an incident 
+
+  - a customer user/employee CALLS to service desk agent to report an ISSUE 
+
+  - the service desk user uses ITSM applcation to fill in INCIDENT form to register the incident and ASSIGN to another user/ himself to resolve the issue 
+
+  - the agent user to whom the incident is assigned now open SERVICE OPERATIONS WORKSPACE to work on the incident and resolve it using KB ARTICLES using AGENT ASSIST FEATURE of service operations workspace 
+
+  - the CALLER opens the EMPLOYEE CENTER PORTAL.... where he will recieve the details and resolution of the INCIDENT created for him....
+
+- FORM: to create a RECORD in a list.... we need to feed in data by filling fields in forms.... the form has the following feilds with symbols 
+
+  - MANDATORY FIELDS.... are fields with ASTERISK ICON 
+
+  - STRING FIELD: is an open text input field.... its length is defined in baseline application 
+
+  - CHOICE LIST: input field with DOWN ARROW ICON
+
+  - REFERENCE FIELDS: input field wih MAGNIFIER ICON.... it fetches data from ANOTHER TABLE 
+
+  - RELATED LINKS: are a type of UI ACTION which allows you to add links in the form which routes to other pages 
+
+  - RELATED LISTS: are tabs at the end of the form which contains info related to the records like for eg in INCIDENT FORM ... SLA, Impacted services, service offerings 
+
+- SPECIAL HANDLING NOTES: 
+
+  .... if you have incidents listed in the SERVICE OPERATIONS WORKSPACE which are CRITICAL or has P1 priority.... then a POP UP will come up when opening the incident in the workspace
+
+  .... this pop up is known as SPECIAL HANDLING NOTES.....
+
+  ** you can CLOSE THE POP UP by clicking close button 
+
+  **** DON'T click DISMISS button in the pop up.... it's only clicked when the INCIDENT/TASK with critical p1 priority is COMPLETED 

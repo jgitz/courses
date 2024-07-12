@@ -1,0 +1,28 @@
+... another method to design is to use FORM DESIGN (form context menu > configure > form design)
+
+- PARTS OF FORM DESIGN PAGE 
+
+  - PAGE HEADER: top most navbar where we can do ACTIONS like UNDO, SAVE etc 
+
+  - FIELD NAVIGATOR: left panel and has the FOLLOWING SUB PANELS 
+
+    - FIELDS TAB: lists all the AVAILABLE FIELDS for the SELECTED TABLE on which the form is made 
+
+    - FIELD TYPES: lists field types to NEW FIELDS to be added to form via FORM DESIGN STUDIO 
+
+      ** NEW FIELDS MADE in studio will be added to the SELECTED TABLE on which the form is made 
+
+    - FILTER TAB: to search FIELDS or FIELDS TYPE 
+
+    - FORMATTERS: is a type of FORM ELEMENT where we can display information which is not a FIELD in the record 
+
+  - FORM LAYOUT: is the big part where the FORM LAOUT is graphically represented with FIELDS, SECTIONS, and other elements 
+
+  - SECTION: allows to DIVIDE the form fields into separate logical groups 
+
+    ** if you NAME THE SECTIONS in the form studio.... it gets DISPLAYED AS TABS in the CLASSIC FORM 
+
+
+
+
+***** the FORM in FORM DESIGN STUDIO TURNS PINK if you are not in the CORRECT SCOPE.... in that case.... it won't allow working on the form 

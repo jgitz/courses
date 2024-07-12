@@ -1,0 +1,13 @@
+.... to add USER CRITERIA to give/deny KB ACCESS to USERS/GROUPS 
+
+- login as SYSTEM ADMIN 
+
+- open TARGET KB by going to ALL > KNOWLEDGE > ADMINISTRATION > KNOWLEDGE BASES 
+
+- select target KB 
+
+- scroll down to RELATED LISTS 
+
+  - you can create USER CRITERIA to your required access settings by clicking NEW BUTTON on TABS named CAN READ, CANNOT READ, CAN CONTRIBUTE, CANNOT CONTRIBUTE.... 
+
+  

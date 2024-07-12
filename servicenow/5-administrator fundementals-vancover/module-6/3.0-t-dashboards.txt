@@ -1,0 +1,40 @@
+- DASHBOARD: allows you to display MULTIPLE PERFORMANCE ANALYTICS, WIDGETS is a SINGLE SCREEN 
+
+  ** we use dashboard to create STORY with DATA 
+
+  ** to VIEW dashboards and CREATE DASHBOARDS.... goto 
+
+    - ALL > SELF-SERVICE > DASHBOARDS
+
+    ** click ALL BUTTON to view ALL DASHBOARDS
+
+- TYPES OF DASHBOARDS: there are TWO TYPES of DASHBOARDS 
+
+  1) RESPONSIVE DASHBOARD: has NO ACCESS limitations to USERS?
+
+    ** RESPONSIVE DASHBOARD is the DEFAULT DASHBOARD from NEW YORK RELEASE onwards
+
+  2) NON-RESPONSIVE DASHBOARDS: has limitations on WHO can CREATE, VIEW and EDIT the dashboard 
+
+    ** to activate NON-RESPONSIVE DASHBOARD.. follow the steps 
+
+      - ALL > SYSTEM PROPERTIES > DASHBOARD PROPERTIES
+
+        - UNCHECK the choice field ENABLE RESPONSIVE DASHBOARD?? (..didn't see the option) 
+
+- FEATURES of DASHBOARDS 
+
+  - set DASHBOARD as HOMEPAGE 
+
+  - SHARE PERFORMANCE ANALYTICS VISUALIZATIONS on both WORKSPACE and CLASSIC DASHBOARDS 
+
+  - SHARE REPORT VISUALIZATIONS on both WORKSPACE and CLASSIC DASHBOARDS
+
+  - CREATE PA reports and OTHER WIDGETS DIRECTLY from the DASHBOARDS 
+
+  - add WIDGETS 
+
+  - add WIDGET PANE to fnd and PREVIEW WIDGETS to add to dashboard 
+
+  
+

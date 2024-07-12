@@ -1,0 +1,11 @@
+..... statement to create tables.....
+
+- for both mysql and postgres 
+
+      :: CREATE TABLE <table_name> (
+        <column_name_1> <DATATYPE>,
+        <column_name_2> <DATATYPE>,
+        <column_name_3> <DATATYPE>,
+      )
+
+          ** DATATYPE should be in UPPERCASE

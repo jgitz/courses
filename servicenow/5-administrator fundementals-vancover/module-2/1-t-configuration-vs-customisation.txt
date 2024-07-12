@@ -1,0 +1,38 @@
+- what is meant by CONFIGURATION of INSTANCE? 
+
+  - most changes made is instance WITHOUT USE OF CODE is configuration 
+
+  - configuration is mostly DONE BY ADMINISTRATORS 
+
+  - examples 
+
+    - INSTALL APPLICATIONS and PLUGINS
+
+    - add fields to a form 
+
+    - configure list views 
+
+    - create service catalog and catalog items 
+
+    - EXTEND TABLE for a new hardware class 
+
+- What is meant by CUSTOMISATION of instance? 
+
+  - means addition of ADDITIONAL FUNCTIONALITIES and FEATURES to the platform that DON'T EXIST in th platform 
+
+  - EXAMPLES 
+
+    - ADD A TABLE 
+
+    - ADDITION of lists with COMPLEX ACCESS CONTROL 
+
+- What is UPDATE SETS? 
+
+  - it enables the changes of an instance to be packed for migration to other instance 
+
+- CAN CREATION of TABLES cause ADDITIONAL CHARGES? 
+
+  - ANY EXTENDED TABLE from CMDB is NOT CHARGED 
+
+  - but other TABLES may incur CHARGES depending on the cutsomer's contract 
+  

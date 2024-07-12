@@ -1,0 +1,9 @@
+.... the comparison operatios in snow are 
+
+ - > 
+ - <
+ - >=
+ - <=
+ - == 
+ - != 
+ - ===   

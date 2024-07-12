@@ -1,0 +1,47 @@
+.... when you click ALL in the instance.... you see APPLICATIONS listed.... and its sub catagory MODULES listed under applications 
+
+- to create an APPLICATION and MODULE in the ALL MENU 
+
+  - goto ALL > SYSTEM DEFINITION > APPLICATION MENUS 
+
+  - click new 
+
+  - add title 
+
+  - add role eg itil 
+
+  - add catagory eg custom applications 
+
+  - add hint <>
+
+  - save 
+
+  - to add module to the application 
+
+    - scroll down to the module session 
+
+    - click new 
+
+    - add title 
+
+    - add order eg 10 
+    
+    - add hint <>
+
+    -  goto VISIBILITY TAB 
+
+      - add role eg itil 
+
+    - goto LINK TYPE TAB 
+
+      - add link type eg LIST OF RECORDS 
+
+      - add table eg incident 
+
+      - add view name eg <HHD>
+
+      - add filter eg service offering | contains | HHD
+
+      - click submit 
+
+**** now a session of your custom application and module will be listed in the all menu

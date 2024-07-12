@@ -1,0 +1,63 @@
+.... to create a new role 
+
+- login as SYSTEM administrator
+
+- goto ALL > SYSTEM SECURITY > USERS AND GROUPS > ROLES 
+
+- click NEW 
+
+  - fill the form 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to make an APPLICATION and its MODULES in ALL MENU.... ACCESSIBLE ONLY to a certain USER ROLE....
+
+- goto all menu.... and locate application 
+
+- click on the EDIT APPLICATION ICON (..pencil and note icon)
+
+- click on EDIT USER ROLES ICON (.. pencil)
+
+  ** on list collector
+
+  - REMOVE any pre existing role eg itil 
+
+  - ADD REQUIRED ROLE....
+
+- click save 
+
+- on MODULES in RELATED LIST SECTION 
+
+  - click on MODULE where you want to add role 
+
+  - on MODULE RECORD 
+
+    - goto VISIBILITY TAB on RELATED LINKS SECTION 
+
+    - click on EDIT USER ROLES ICON 
+
+    - add/remove roles 
+
+    - save 
+
+**** ROLES added to an ALL MENU APPLICATION.... DON'T get INHERITED to the MODULES UNDER the application 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to find ALL MENU APPLICATIONS and MODULES which has a CERTAIN ROLE 
+
+- login as system administrator 
+
+- goto ALL > SYSTEM SECURITY > USERS AND GROUPS > ROLES 
+
+- open the ROLE RECORD 
+
+- on the RELATED LIST TAB.... you can see APPLICATIONS and MODULES with this role on the following tabs 
+
+  - APPLICATIONS WITH ROLE TAB 
+
+  - MODULES WITH ROLE TAB 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

@@ -1,0 +1,25 @@
+
+- APP SHELL: is like a BLUE PRINT page provided by servicenow to build components OVER them 
+
+  - app shell is a wrapper 
+
+  - app shell provides a general look and feel of experience 
+
+  - an app shell provides
+
+    - basic ui 
+
+    - session managment 
+
+    - roles 
+
+    - preferences
+
+    - user information 
+
+
+** UI BUILDER provides 2 TYPES OF APP SHELL 
+
+  1) AGENT WORKSPACE APP SHELL: for agents to put tools to handle user requests 
+
+  2) PORTAL APP SHELL: page where users can create requests, track tickets, search for knowledge base etc

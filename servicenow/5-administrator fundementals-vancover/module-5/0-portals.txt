@@ -1,0 +1,82 @@
+.... there are various SELF-SERVICE options in form of PORTALS in snow that SIMPLIFIES access to information
+
+
+- BASELINE PORTALS in snow: are basic portals that comes with a snow instance WITHOUT ADDITIONAL LICENSE 
+
+  1) EMPLOYEE CENTER (/esc): provide single portal for EMPLOYEES of an organisation to 
+
+    - get information 
+    - services
+    - view REQUESTS 
+    - complete TODO's 
+    - BROWSE CATALOGS 
+    - BROWSE KNOWLEDGE BASES 
+    - CHAT with LIVE AGENTS 
+
+  2) SERVICE PORTAL (/sp): allows you to do VARIOUS OPERATIONS LIKE: 
+
+    - make REQUESTS 
+    - browse multiple CATALOGS 
+    - create and view INCIDENTS 
+    - view APPROVALS 
+    - look at SYSTEM STATUS PAGE??
+    - SEARCH KNOWLEDGE BASES 
+
+  3) KNOWLEDGE PORTAL (/kb): enables USERS to view KNOWLEDGE BASES and search, sort and filter information and provide FEEDBACK to the aticle 
+
+    ** requires PLUGIN: com.snc.knowledge_serviceportal
+
+  4) CAB WORKBENCH (CHANGE ADVISORY BOARD) (/cab): enables CAB MANAGER to SCHEDULE, PLAN, and MANAGE CAB meetings.
+
+  5) ISC (INSTANCE SECURITY WORKBENCH) (/isc): used to protect the instance by monitoring and detecting security events and METRICS 
+
+  ** BASELINE PORTALS can be CUSTOMISED for ORGANISATIONAL NEEDS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- ADDITIONAL PORTALS WITH LICENSES: there are additional portals which require licnses 
+
+  1) COMMUNITY (/community): allows users to CONNECT, ENGAGE and COLLABORATE with EMPLOYEES, CUSTOMERS, PARTNERS and PROSPECTS... community allows to 
+
+    - post QUESTIONS
+    - review BLOGS/VIDEOS
+    - search DISCUSSIONS 
+
+  2) CUSTOMER SUPPORT PORTAL (/csm): 
+
+    ** B2B PORTAL used by CUSTOMERS to search information 
+
+    - get answers to their questions by other MEMBER
+
+    - request assistance from CUSTOMER SERVICE AGENT 
+
+  3) CUSTOMER/ SERVICE PORTAL (/csp): 
+
+    ** B2C PORTAL to provide INFORMATION and SUPPORT to CUSTOMERS 
+
+  4) EMPLOYEE CENTER PRO (/esc): extends the BASELINE portals by having features like 
+
+    - MACHINE LEARNING 
+    - CONTENT CAMPAIGN 
+    - FULL VIRTUAL AGENT functionality 
+    - EMPLOYEE COMMUNITIES
+
+    ** /esc pro comes along with the suites like HRS PRO (Human Resources Service Delivery), HRSD Enterprise  
+
+
+** UI BUILDER: is used to design
+
+  - CSM WORKSPACES 
+
+  - APP ENGINE STUDIO generated WORKSPACES 
+
+  - APP ENGINE STUDIO generated PORTALS 
+
+  - CUSTOM WEB EXPERIENCES 
+
+** SERVICE PORTAL DESIGNER: is used to design BASELINE PORTALS 
+  
+
+
+
+  

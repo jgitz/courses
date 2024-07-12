@@ -1,0 +1,27 @@
+- SQL (Structured Query Language): is a standardized language for handling structured relational data which are in TABULAR FORM. SQL can be used for 
+
+    ** doing operations like CRUD, query, filter operations on data
+
+    ** creating databases and tables 
+
+    ** for describing table 
+
+- RDBMS(Relational DataBase Management Systems): is a software that handles actual data management and storage. It uses SQL language internally to manipulate NORMALIZED data
+
+    ** database systems ORGANIZE data into multiple RELATED TABLES where the 
+
+          ** COLUMNS are called FIELDS 
+
+          ** ROWS are called RECORDS/ENTRIES
+
+          ** we have to DEFINE the DATATYPES of data that are expected by the COLUMNS/FIELDS
+
+    ** eg of popular RDBMS: MySQL, postgreSQL, microsoft SQL server, oracle database
+
+- what is NORMALIZED DATA?
+
+      ** normalized data is date stored in SINGLE table WITHOUT NESTING. Instead related datas are stored across MULTIPLE TABLES
+      
+      ** MULTIPLE TABLES are then connected via LOGICAL RELATION using RECORD IDs.
+
+**** SQL is also used by data science frameworks.... but the prominent use case is rdbms.

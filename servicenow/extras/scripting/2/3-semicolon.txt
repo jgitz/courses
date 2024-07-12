@@ -1,0 +1,13 @@
+....in snow instance console (scripts - background)..... we use SEMOCOLON ; to separate 2 statements 
+
+** SOME STATEMENTS use ; at the END and SOME DON'T 
+
+** STATEMENTS that DON'T need SEMI-COLON at the end 
+
+  - for loop 
+  - while loop
+  - if and else 
+
+** STATEMENTS THAT use SEMI-COLON at the end 
+
+  - do while loop 

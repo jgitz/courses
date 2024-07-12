@@ -1,0 +1,23 @@
+..... to view order request from service catalog 
+
+- log in as an employee user 
+
+- goto SELF SERVICE > MY REQUESTS 
+
+  ** all requests are listed here
+
+  - click on a REQUEST to see the detils of the ORDER 
+
+    - scroll down to the REQUESTED ITEM TAB to see the RITM records of the ordered items 
+
+    - scroll down to the APPROVERS TAB to see the APPROVER who has to approve the request
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to approve requests by approver 
+
+- log in as an APPROVER USER 
+
+- goto SELF SERVICE > MY APPROVALS 
+
+  ** every approval for requests are listed here

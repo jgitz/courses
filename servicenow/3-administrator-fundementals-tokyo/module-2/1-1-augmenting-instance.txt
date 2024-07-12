@@ -1,0 +1,9 @@
+.... your servicenow instance can be customized 
+
+- company logo can be added to instance nav bar
+
+- LABEL can be added to the instance browser tab
+
+- set themes 
+
+- install applications and plugins

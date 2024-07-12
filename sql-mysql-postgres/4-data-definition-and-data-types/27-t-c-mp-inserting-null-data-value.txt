@@ -1,0 +1,9 @@
+.... to insert NULL value to any column OMIT the column_name AS WELL AS the VALUE inside the :: INSERT INTO <table_name> () VALUES ():: statement
+
+**** NO null value can be added to columnS with DEFAULT values WHILE DECLARING STRUCTURE of TABLES....
+
+  ** null can be added while inserting data values to a table....
+
+  ** data value NULL can be added to TABLE RECORDS using UPDATE statements 
+
+        **** refer file 25 for update statements 

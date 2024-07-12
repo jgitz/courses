@@ -1,0 +1,16 @@
+..... other datatypes that can be stored in columns are 
+
+
+1) to store BOOLEAN true and false use:
+
+      - BOOLEAN 
+
+            ** mysql and postgres syntax
+
+                  :: <column_name> BOOLEAN 
+
+            
+
+2) to store JSON datatypes use 
+
+      - JSON

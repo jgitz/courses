@@ -1,0 +1,19 @@
+.... to add EDITORS and MANAGERS to service catalog 
+
+- login as system administrator 
+
+- open service catalog RECORD by going to ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATALOGS 
+
+- select SERVICE CATALOG RECORD 
+
+  - in MANAGER FIELD... ADD MANAGER USER *(admin||catalog_admin)
+
+  - in EDITOR FIELD.. add EDITOR USER (catalog_admin)
+
+- save
+
+** MANAGER: can EDIT/UPDATE/DELETE catalog/catagories/item 
+
+** EDITOR: can EDIT/UPDATE catalog/catagory/item 
+
+  **** EDITORS CANNOT DELETE catalog/catagory/item

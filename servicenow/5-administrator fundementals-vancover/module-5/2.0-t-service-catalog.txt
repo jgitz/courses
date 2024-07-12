@@ -1,0 +1,55 @@
+- SERVICE CATALOG: is an ORDERING SYSTEM from which users can order CATALOG ITEM.
+
+  - you can see SERVICE CATALOG HOMEPAGE by going to 
+
+    - ALL > SELF SERVICE > SERVICE CATALOG 
+
+    ** here you see many CATAGORIES TILES like IT, HARDWARE etc.... CATALOG ITEMS are listed INSIDE the CATAGORIES 
+
+    ** MULTIPLE SERVICE CATALOGS can be made in a snow instance 
+
+    ** a CATALOG ITEM can be added to MULTIPLE SERVICE CATALOGS
+
+    ** ROLES required to manage service catalogs 
+
+      - catalog_admin 
+      - admin
+
+    ** MANAGER USER: can EDIT/UPDATE/DELETE catalog/catagory/items 
+
+    ** EDITOR USER: can EDIT/UPDATE catalog/catagory/item.... BUT DON'T have DELETE permissions.
+
+
+- CATAGORY: is LOGICAL GROUP where CATALOG ITEMS are grouped 
+
+  ** what you see by opening SERVICE CATALOG homepage (ALL > SELF SERVICE > SERVICE CATALOG) is CATAGORIES 
+
+- CATALOG ITEM (CI): are any GOODS, SERVICES and INFORMATION that can be requested by a user. 
+
+  **** anything that is a PART of a LARGER WHOLE CANNOT be a CATALOG ITEM.... eg LAPTOP CAN BE A CATALOG ITEM.... BUT... CPU CANNOT be a catalog item because it is a PART of PC 
+
+  ** CATALOG BUILDER: is a VISUAL GUIDED EXPERIENCE to create and edit CATALOG ITEMS and RECORD PRODUCERS
+
+    - you can also create TEMPLATES for CATALOG ITEMS 
+
+    - to open catalog builder.... goto 
+
+      - ALL > SERVICE CATALOG > CATALOG BUILDER 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view SERVICE CATALOG HOMEPAGE (****NOT RECORDS): 
+
+  - ALL > SELF SERVICE > SERVICE CATALOG
+
+- to view ALL CATALOG RECORDS in your instance
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATALOGS
+
+- to view all CATAGORY RECORDS of your SC 
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN CATAGORIES
+
+- to view all CATALOG ITEM RECORDS of your SC 
+
+  - ALL > SERVICE CATALOG > CATALOG DEFINITIONS > MAINTAIN ITEMS 

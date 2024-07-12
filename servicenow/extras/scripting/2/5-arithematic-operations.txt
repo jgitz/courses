@@ -1,0 +1,1 @@
+- gs.info() : is equivalent to console.log() of javascript

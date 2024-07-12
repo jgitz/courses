@@ -1,0 +1,32 @@
+- What is the use of CMDB in ITSM PROCESS? 
+
+  .... cmdb helps to find ROOT CAUSE of any ITSM PROCESS... and give INSIGHTS for troubleshooting 
+
+    - INCIDENT MANAGEMENT: cmdb helps to find 
+
+      - the COMPONENT that BROKE the s/m 
+
+      - what BUSINESS PART is affected 
+
+    - PROBLEM MANAGEMENT: cmdb helps to find 
+
+      - DEFECT in the INFRA 
+
+      - what BUSINESS APPLICATION is affected 
+
+    - CHANGE MANAGEMENT: cmdb helps to know how A CHANGE made in the s/m will affect th business 
+
+    - REQUEST MANAGEMENT: cmdb allows to add new CI's to your s/m   
+
+    - CMDB gives you insights to EFFECTIVELY TROUBLESHOOT origin of ISSUES in the SYSTEM.... i.e it helps in ROOT CAUSE ANALYSIS
+
+
+** HIGH PERCENTAGE of INCIDENTS are caused by FAILED CHANGES...... CMDB HELPS to 
+
+  - LOCATE CHANGES associated to incidents 
+
+  - facilitates IMPACT ANALYSIS of the proposed CHANGES  
+
+  - assess PROBLEM TRENDS associated with a CI  
+
+  - efficiently MANAGE INCIDENTS affecting CI

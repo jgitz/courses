@@ -1,0 +1,23 @@
+.... these are the things you learn in the course
+
+- servicenow platform: allows you to interact with data and applications 
+
+- servicenow platform UI: the UI of servicenow is known as NEXT EXPERIENCE... the UI allows you to access INSTANCE and APPS for your tasks
+
+- LISTS and FILTERS: RECORDS are displayed in LIST FORMAT and FILTERS are used to set conditions according to which we can get data from the records
+
+- FORMS: used to display information through fields.. this is where AGENTS?? do their work
+
+- TASKS: the tasks or work that are needed to complete is listed here. 
+
+- REPORTING: CREATE and distribute reports about your instance
+
+- KNOWLEDGE MANAGEMENT: allows us to share written articles about the platform for troubleshooting and task resolution
+
+- SERVICE catalog: this is the place where you can REQUEST for SERVICES and PRODUCT OFFERINGS in the platform 
+
+- VIRTUAL AGENT: is an AI ASSISTANT that helps users in the platform
+
+- ADDITIONAL SERVICENOW RESOURCES: additional resources that helps you in servicenow journey?? 
+
+- WHAT NEXT: is an option in nowlearning depending on the ROLES YOU SPECIALIZE in the snow platform (sales expert, system admin, architect, developer, etc)

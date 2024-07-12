@@ -1,0 +1,82 @@
+..... the default logo in servicenow navbar can be changed following these steps 
+
+- login as SYSTEM_ADMINISTRATOR
+
+- goto ALL > SYSTEM PROPERTIES > MY COMPANY 
+
+- on default image... click UPDATE
+
+- choose the file
+
+- click ok 
+
+- press UPDATE BUTTON on the top right 
+
+**** takes some time for the logo to get updated 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... now you can add your company name to your instance....
+
+- log in as SYSTEM_ADMINISTRATOR
+
+- goto ALL > USER ADMINISTRATION > COMPANIES 
+
+  ** list of all companies related to the instance appears... it could be customers... vendors or subsidaries of the parent company to which the instance belongs 
+
+- select the record on which you want to add name 
+
+- in the NAME FIELD add the name of the company  eg <Cloud Dimensions>
+
+- click UPDATE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+.... to change BROWSER TAB LABEL of the instance and CONTEXTUAL APP PILL (the PILL in the middle of the NAV BAR?) 
+
+- login as SYSTEM_ADMINISTRATOR
+
+- goto ALL > SYSTEM PROPERTIES > SYSTEM 
+
+- scroll down to BROWSER LABEL TITLE INPUT FIELD 
+
+- add LABEL of your choice to distinguish the instance tab... eg <DEV> to denote DEVELOPMENT INSTANCE 
+
+- click save
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.. dark theme is NOT ACTIVATED on the baseline instance.... to activate it 
+
+- login as SYSTEM_ADMINISTRATOR
+
+- in ALL > sys_properties.list 
+
+- in the name column search for wildcard 
+
+  *polaris or *dark 
+
+  ** shows all the results with name polaris or dard 
+
+- on glide.ui.polaris.dark_themes_enabled
+
+  - change the value to true (double click on the value and type <true>)
+
+- RELOAD the instan
+
+** now dark theme is available FOR ALL USERS in the instance
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to enable dark theme 
+
+- click USER MENU (on the top right PROFILE PICTURE)
+
+- click on PREFERENCES 
+
+- click on THEME
+
+- select DARK 
+
+
+

@@ -1,0 +1,22 @@
+.... CRUD opertions means CREATE, READ, UPDATE and DELETE
+
+.... we employ crud operations in database to manipulate data 
+
+- CREATE: means create or insert data into a table in db
+
+  ** sql command used is INSERT INTO 
+
+- READ: means to GET/FILTER/SORT data 
+
+  ** sql command used is SELECT 
+
+- UPDATE: used to make changes in existing data 
+
+  ** sql command used is UPDATE 
+
+- DELETE: used to delete data 
+
+  ** sql command used is DELETE
+
+
+

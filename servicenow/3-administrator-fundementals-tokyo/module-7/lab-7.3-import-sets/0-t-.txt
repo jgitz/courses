@@ -1,0 +1,59 @@
+..... in our instance... we sometimes need to IMPORT DATA to table from excel files or any fiels from our LOCAL COMPUTER.... servicenow uses a TOOL called IMPORT SET to implement this 
+
+- IMPORT SET: is a tool used to import data from various data sources and MAP them to SERVICENOW TABLES 
+
+  ** admin roles needed 
+
+    - admin 
+    - import_admin
+
+- DATA SOURCES: refers to local data sources like xml, csv, excel files 
+
+- IMPORT SET TABLE: acts as a STAGING AREA for data imported from DATA SOURCE
+
+  ** fields on import set is AUTOMATICALLY based on the imported data
+
+- TARGET TABLE: is the DESTINATION TABLE where you want to add the IMPORTRED DATA
+
+- TRANSFORM MAP: once we import data from the data source to IMPORT SET TABLE.... the next thing to do is to MAP the FIELDS FROM the DATA SOURCE to appropriate FIELD in the TARGET TABLE in snow where we want to pass in the data.... 
+
+  in short: transform map is a set of FIELD MAPS that defines the RELATIONSHIP between IMPORT SET FIELDS and EXISTING SERVICENOW TABLE
+
+- AUTO MAP UTILITY: if the fields of imported data and the target table fields are same.... to match them... simply click AUTO MAP MATCHING FIELDS links in RELATED LINKS 
+
+- MAPPING ASSIST UTILITY: if the fields of imported data and the target table field is different.... use MAPPING ASSIST to map the fields 
+
+  ** a SINGLE FIELD of the IMPORTED DATA can be given to MULTIPLE FIELDS in the TARGET TABLE using mapping assist... 
+
+  ** you can also EDIT field ERRORS when you used AUTO MAP utility link
+
+- COALESCE FIELD: in real world.... we tend to import data to an import in small chunks at multiple times.... so there is a possibility of DUPLICATION of RECORDS..... to prevent this we have to set a UNIQUE FIELD as a REFERENCE FIELD....such that.... the it the value of REFERENCE FIELD is NOT CHANGED.... record WILL NOT BE DUPLICATED this is known as field COALASCING.... COALESCE of fields can be done in THREE WAYS.... 
+
+  1) SINGLE - FIELD COALESCE: make a SINGLE FIELD as reference field 
+
+  2) MULTIPLE - FIELD COALESCE: we can set MULTIPLE FIELDS as coalesce field 
+
+  3) CONDITIONAL COALESCE: we can use a SCRIPT to determine if a IMPORT SET RECORD should COALESCE to the TARGET RECORD
+
+    ** most scripts are fiven in SOURCE SCRIPT FIED of a field map for the SYS_ID field?... to update a taget record using the import table record value..... the script must return the SYS_ID  of the TARGET TABLE RECORD
+
+
+
+
+** BEST IMPORT PRACTICES 
+
+  - import data in SMALL CHUNKS using an EXISTING IMPORT SET.... else it'll take long time to create import set 
+  
+  - set the name of import set related to the FILE NAME OF THE IMPORTED DATA 
+
+  - you can SCHEDULE IMPORTS by going to ALL > INTEGRATION HUB > INTEGRATION HUB - IMPORTS 
+
+    ** link form more info: https://docs.servicenow.com/bundle/vancouver-integrate-applications/page/administer/integrationhub/tasks/run-schedule-data-imports.html
+
+
+** roles required to load data via ALL > SYSTEM IMPORT SETS > LOAD DATA 
+
+  - import_admin
+  - import_set_loader
+  - import_transformer
+

@@ -1,0 +1,156 @@
+- UPDATE SET: is a GROUP of CONFIGURATION CHANGES that can be moved from ONE INSTANCE to ANOTHER INSTANCE 
+
+  ** UPDATE SET is XML FILE 
+
+  ** an INSTANCE will always have a DEFAULT UPDATE SET 
+
+  ** we can CREATE NEW UPDATE SETS and its called NAMED UPDATE SETS 
+
+  ** We can CREATE MULTIPLE update sets and MERGE THEM 
+
+  ** BATCH UPDATE SETS: enable you to group UPDATESET together... PREVIEW them AND  COMMIT them in BULK 
+
+  ** if multiple changes happens to a configuration... the MOST RECENT CHANGE is added to UPDATE SET 
+
+  ** main USE CASE of update set: move config data from DEVELOPER INSTANCE... to TESTING INSTANCE and to PRODUCTION INSTANCE 
+
+  **** DATA is NOT CAPTURED in an UPDATE SET.... ONLY CONFIG RECORDS are captured in update set 
+
+  **** DON'T USE DEFAULT update set to TRANSFER CONFIG CHANGES.... always use NAMED UPDATE SETS to transfer config changes 
+
+- What all INSTANCE RECORDS can be TRACKED and ADDED TO UPDATE SETS? 
+
+  - UPDATE SET is used to TRACK and ADD the the following PROCESS RECORDS 
+
+    - roles 
+
+    - tables 
+    - list CONFIGURATION 
+    - form and form sections
+    - views 
+    - fields 
+
+    - flows/published-workflows 
+
+    - UI POLICIES 
+    - CLIENT SCRIPTS 
+    - BUSINESS RULES 
+
+    - REPORT DEFINITIONS  
+
+    **** even though DASHBOARDS are NOT TRACKED BY the UPDATE SET.... any PORTAL PAGES related to DASHBOARD can be ADDED to UPDATE SET by usint UNLOAD DASHBOARD FUNCTION 
+
+- WHAT all RECORDS are NOT CAPTURED BY UPDATE SETS? 
+
+  - update sets DON'T CAPTURE DATA RECORDS such as 
+
+    - NEW USERS/GROUPS 
+    - NEW DATA RECORDS 
+    - MODIFIED DATA RECORDS 
+    - TASKS 
+    - MODIFIED CI'S 
+
+    - DASHBOARDS 
+    - SCHEDULED JOBS 
+    - SCHEDULES
+
+- what are the STATES of UPDATE SET RECORD 
+
+  - there are THREE STATES 
+
+    1) IN PROGRESS :  choose this if you want the s/m to keep on adding config changes to this update set 
+
+    2) COMPLETED :  choose this if you want to STOP ADDING CHANGES to the update set... and PREPARE the UPDATE SET for MIGRATION/EXPORT 
+
+    3) IGNORE?? 
+
+    ***** once you set state to COMPLETED... DON'T change the STATE again to IN PROGRESS to ADD CONFIG CHANGES.... INSTEAD 
+
+        ** create a NEW UPDATE SET to add changes and COMMIT the UPDATE SETS in ORDER 
+
+- where can you see CONFIG CHANGES HAPPENING in the instance? 
+
+  - config record changes that are TRACKED by an UPDATE SET is stored in TABLE NAMED CUSTOMER UPDATE TABLE
+
+    - sys_update_xml
+
+  **** the CUSTOMER UPDATE TABLE records relevant to a an UPDATE SET can be VIEWED inside CUSTOMER UPDATES RELATED LIST TAB in UPDATE SET RECORD
+
+** BEST PRACTICES: 
+
+  - LIMIT UPDATE SET to MAX 100 RECORDS to REDUCE CONFLICTS 
+
+  - ENSURE all records have MATCHING SYS_ID in both instances involved in migration 
+
+  - ADDITIONAL TESTING should be done if update sets migration instances are of DIFFERENT RELEASES
+
+- UPDATE SET and SCOPE PICKER ICON (GLOBE ICON): 
+
+  - we use SCOPE PICKER ICON to view CURRENT UPDATE SET and we can use it to CHANGE UPDATE SET TOO 
+
+  - SCOPE PICKER > click UPDATE SET TAB 
+
+    - you can SEARCH BOX to search for an available update set 
+
+    - click on OPEN LIST ICON (..list icon) to open UPDATE SET LIST (..all > system update sets > local update sets)...
+
+    - click on OPEN RECORD ICON (..paper icon).. to open the UPDATE SET RECORD of CURRENT UPDATE SET 
+
+    - click on + ICON to create NEW UPDATE SET 
+
+    ** if the CURRENT UPDATE set is ANY OTHER UPDATE SET other than GLOBAL... there is RED OUTLINE around the APPLICATION SCOPE PICKER ICON 
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to see all UPDATE SETS in the instance... goto 
+
+  - ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SET 
+
+  ** to create new update set... click NEW BUTTON 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to MAKE an UPDATE SET and USE IT AS CURRENT UPDATE SET 
+
+  - goto update set list ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SET 
+
+  - click NEW 
+
+    - fill NAME: name of the update set 
+
+    - STATE: options 
+
+      - IN PROGRESS: choose this if you want the s/m to keep on adding config changes to this update set 
+
+      - COMPLETED: choose this if you want to STOP ADDING CHANGES to the update set... and PREPARE the UPDATE SET for MIGRATION/EXPORT 
+
+      - IGNORE:??
+
+      ***** once you set state to COMPLETED... DON'T change the STATE again to IN PROGRESS to ADD CONFIG CHANGES.... INSTEAD 
+
+        ** create a NEW UPDATE SET to add changes and COMMIT the UPDATE SETS in ORDER 
+
+    - to make the UPDATE SET as CURRENT.... click SUBMIT AND MAKE CURRET BUTTON 
+
+  **** you can click BACK OUT BUTTON from top to reverse changes made through an update set 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to use an UPDATE SET of and instance in another instance (TARGET INSTANCE)... first we need to DOWNLOAD THE XML file of update set.... to do that 
+
+- goto ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SETS 
+
+- select UPDATE SET RECORD 
+
+- set STATE to COMPLETE 
+
+- click EXPORT to XML RELATED LINK to download xml file 
+
+** see next section to know about using DOWNLOADED UPDATE set in another instance (target instance )
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

@@ -1,0 +1,57 @@
+** DON'T DELETE RECORDS of a LIST in snow.. it's not recommended.... instead MARK the RECORD as INACTIVE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to insert a new record by staying on a similar record and just changing required field.... goto FORM HEADER and click INSERT AND SAVE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- WILD CARDS 
+
+  - *<search_term> : is wildcard format used to find any record that CONTAINS the search term 
+
+  - =<search_term> : used to find the EXACT SEARCH TERM 
+
+  - %<search_term> : used to find the values which ENDS WITH search_term 
+
+  - <search_term>% : used to find the values which STARTS WITH search_term 
+
+  - !*<search_term> : used to display all values which DONOT CONTAIN search_term
+
+  - !=<search_term> : used to display all values which is NOT EXACT match of the search term 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+- BREAD CRUMB TRICKS 
+
+  - click on ANY CONDITION in the BREAD CRUMB to REMOVE SUBSEQUENT CONDITIONS 
+
+  - click on > sign to REMOVE ONLY ONE CONDTON that FOLLOWS > sign 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- list collector placing trick.
+
+  ... to place a field from available box to a SPECIFIC POSITION in SELECTED BOX 
+
+    - click select the PENULTIMATE position field where you want to place the new field 
+
+    - double click the field in the available box
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... to easily CREATE NEW RECORDS with ALMOST ALL fields with same value.... 
+
+- fill the FIRST RECORD .... and SAVE IT 
+
+- ON THE FIRST RECORD ITSELF.... make NECESSARY EDITS to field values 
+
+- double click FORM HEADER 
+
+- click INSERT AND STAY 
+
+** now both records are saved to the record list 
+
+
+
+  

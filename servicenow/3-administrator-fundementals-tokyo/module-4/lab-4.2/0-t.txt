@@ -1,0 +1,34 @@
+- SERVICE CATALOG: is an ORDERING SYSTEM to order SERVICES and PRODUCTS 
+
+  - CATALOG ITEMS are organized into logical groups called CATAGORIES
+
+  - snow instance can support MULTIPLE service catalogs
+
+  - users with ROLES of ADMIN or CATALOG_ADMIN can manage service catalogs 
+
+  - admin/catalog_admin creates SERVICE CATALOG TEMPLATE for customers and the customers can use it to create CATALOG ITEMS 
+
+  - once customer orders a catalog item.. then REQUEST MANAGEMENT PROCESS begins.. i.e depending on the catalog item... certain approval process starts and sometimes that have fullfillment tasks 
+
+- CATALOG BUILDER: enables admin/catalog_builder to create or edit CATALOG ITEM/RECORD PRODUCER
+
+- COMPONENTS OF SERVICE CATALOG 
+
+  - ITEMS: individual items that a customer can order.. it can be hardware, services etc....
+
+    ** if a device is a part of bigger device... it is NOT CONSIDERED as an item... for eg.. laptop is an item but CPU is not an item 
+
+  - RECORD PRODUCER: is a type of item which is a FORM which creates a RECORD once it is filled with details
+
+    ** record producers CAN BE USED anywhere in the servicenow platform 
+
+  - VARIABLES: when you order catalog items... customers are asked some questions about the item they need or its specificaiton.... these questions are stored in VARIABLES 
+
+    ** all variables are GLOBAL
+
+  - VARIABLE SET: if repetitive questions are used in multiple catalog items.... then these questions can be grouped in variable set 
+
+  - FLOW: we can set flow to catalog item such that if ordering an item need to accomplish complex process and notifications to users/groups... you can set it inside the flow
+
+
+- ORDER GUIDE: enables a customer to order MULTIPLE RELATED ITEMS in one go.... i.e like people who bought this has also bought these in amazon.... multiple items can be ordered by checking appropriate check boxes

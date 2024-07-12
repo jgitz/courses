@@ -1,0 +1,56 @@
+- NOTIFICATION: is a tool to alert users about the happenings in the snow platform through 
+
+  - email 
+  - sms 
+  - meeting invitation?
+
+- EMAIL NOTIFICATIONS: enables to send email as notifications 
+
+  - EMAIL LAYOUTS: refers to HTML CONTENT of the body of the EMAIL you want to insert in EMAIL TEMPLATES
+
+    - to do this use ALL > SYSTEM POLICY > EMAIL > LAYOUTS 
+
+  - EMAIL TEMPLATES: to see inbuilt email templates or to create new ones.... goto 
+
+    - ALL > SYSTEM NOTIFICATION > EMAIL > TEMPLATES 
+
+    - EMAIL LAYOUT of your choice can be applied to EMAIL TEMPLATES 
+
+  - NOTIFICATIONS: allows you to set the TRIGGER, RECIPIENT and BODY of the EMAIL/NOTIFICATIONS  
+
+    - to create notification goto 
+
+      - ALL > SYSTEM NOTIFICATION > EMAIL > NOTIFICATIONS
+
+    - notification has 3 components 
+
+      1) WHEN TO SEND 
+
+      2) WHO WILL RECEIVE 
+
+      3) WHAT IT WILL CONTAIN 
+
+    - you can use EMAIL TEMPLATE in NOTIFICATIONS 
+
+    - by default the system generates A WATERMARK for each NOTIFICATION.... water mark is a set of codes 
+
+      - we can also make custom watermark codes
+
+- BASIC 3 STEPS to create EMAIL NOTIFICATION  
+
+  1) create EMAIL LAYOUT 
+
+  2) create EMAIL TEMPLATE 
+
+  3) create NOTIFICATIONS 
+
+
+- SUBSCRIPTION: allow users to be informed about various activities happening in the platform... to see/set subscription notifications 
+
+  - click on PROFILE MENU 
+
+  - click PREFERENCES 
+
+  - click NOTIFICATIONS 
+
+** there is a default value for number of RECEIPIENT to which email can be set.... it's 1000.... to change it use glide.email.smtp.max_recipients

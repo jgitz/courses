@@ -1,0 +1,28 @@
+.... to add a FIELD in a form USING CLASSIC FORM LAYOUT METHOD 
+
+- open the list of records 
+
+- double check the LIST VIEW 
+
+- open the form 
+
+- goto FORM CONTEXT MENU > CONFIGURE > FORM LAYOUT 
+
+- LIST COLLECTOR APPEARS 
+
+  - on bottom left 
+
+    - set correct form view on VIEW NAME field (choice)
+
+    - SELECT section on the form where you add field on SECTION FIELD (choice)
+
+  - on BOTTOM RIGHT 
+
+    - under create new FIELD section 
+
+      - add name of the field on NAME FIELD 
+
+      - add type of the field on TYPE FIELD 
+
+      - click ADD BUTTON 
+

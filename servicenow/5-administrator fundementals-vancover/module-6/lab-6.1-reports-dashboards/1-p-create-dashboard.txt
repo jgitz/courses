@@ -1,0 +1,15 @@
+.. to create new dashboard 
+
+- login as ADMINISTRATOR 
+
+- goto ALL > SELF-SERVICE > DASHBOARD 
+
+- click CREATE A DASHBOARD BUTTON 
+
+  ** complete form 
+
+  -  NAME: <any name for dashboard>
+
+  - GROUP: group name 
+
+- click SAVE 

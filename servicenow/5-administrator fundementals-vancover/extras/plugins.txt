@@ -1,0 +1,9 @@
+- the follwing PLUGINS should be ACTIVATED to use CMDB WORKSPACE 
+
+    - com.snc.cmdb.csdm 
+
+    - com.snc.cmdb.csdm.activation 
+
+- to see KNOWLEDGE PORTAL... activate 
+
+  - com.snc.knowledge_serviceportal

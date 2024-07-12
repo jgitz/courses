@@ -1,0 +1,48 @@
+.... to CREATE an EMAIL NOTIFICATION 
+
+- login as SYSTEM ADMINISTRATOR 
+
+- got ALL > SYSTEM NOTIFICATIONS > EMAIL > NOTIFICATIONS 
+
+- click NEW BUTTON on top-right 
+
+  - fill NAME FIELD 
+
+  - fill TABLE FIELD?? 
+
+  - goto WHEN TO SEND TAB 
+
+    - fill SEND WHEN (TRIGGER): OPTIONS ARE...
+      - RECORD INSERTED or UPDATED (check/uncheck INSERTED AND UPDATED FIELD).... also add CONDITIONS IF ANY )
+    -  EVENT IS FIRED (..give EVENT NAME and CONDITIONS)
+    
+    - TRIGGERED (??)
+
+  - SAVE 
+
+  - goto WHO WILL RECEIVE TAB 
+
+    - use the following options 
+
+      - USERS 
+      - GROUPS 
+      - USERS or GROUPS in field 
+
+    - SAVE 
+
+  - goto WHAT IT WILL CONTAIN 
+
+    - if you have a TEMPLATE... fill EMAIL TEMPLATE FIELD 
+
+    - fill SUBJECT FIELD 
+
+    - fill MESSAGE HTML FIELD with message...
+
+    - you can ADD VARIABLES to SUBJECT FIELD and MESSAGE HTML field from SELECT VARIABLES MESSAGE BOX 
+
+    - SAVE 
+
+  - you can PREVIEW NOTIFICATION by clicking on PREVIEW NOTIFICATION on top 
+
+  - if satisfied.... click UPDATE
+

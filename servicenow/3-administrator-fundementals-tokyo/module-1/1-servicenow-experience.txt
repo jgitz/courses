@@ -1,0 +1,12 @@
+- There are 6 INTERFACES through which we can communicate in the platform 
+
+  1) DASHBOARD 
+  2) FORM 
+  3) KNOWLEDGE BASE
+  4) LIST 
+  5) SERVICE CATALOG
+  6) WORKSPACE
+
+  ** but every data that we represent in the above interface is a TABLE in the DATABASE 
+
+- top level admin in snow is SECURITY_ADMIN

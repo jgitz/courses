@@ -1,0 +1,14 @@
+.... using primary key in POSTGRES to generate id column 
+
+** only one column per table can be assgned primary key constraint
+
+** SERIAL datatype should be used along with PRIMARY_KEY constraint in POSTGRES
+
+
+- POSTGRES codes 
+
+      :: CREATE TABLE <table_name> (
+        <id> SERIAL PRIMARY KEY
+      );
+
+        ** THIS POSTGRES syntax IS ALSO supported in MYSQL.... but official docs shows other syntax.... recommends use of other syntaxx

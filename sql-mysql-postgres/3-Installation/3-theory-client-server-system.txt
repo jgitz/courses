@@ -1,0 +1,15 @@
+.... to practice doing database operations... we need two things 
+
+    1) DATABASE SERVER: are offered by the rdbms software like MYSQL and POSTGRESQL 
+
+    2) CLIENT SOFTWARE: used to send sql commands to practice db operations to manipulate data stored in DATABASE SERVER 
+
+       eg: mysql workbench(gui), mysql cli, psql cli and other 3rd party like 
+
+
+          ** if you are using a data from an app as client.... use packages that enables to send the sql commands to db server.   
+
+
+***** in this course.... we use MYSQL and POSTGRESQL as database servers 
+
+***** in this course.... we use VSCODE EXTENSION so we can SAVE our sql commands into a file

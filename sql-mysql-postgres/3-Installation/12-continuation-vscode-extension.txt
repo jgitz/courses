@@ -1,0 +1,27 @@
+- sqlTools tab has your connections 
+
+- under postgres connection you can see your created databases 
+
+    - under any database there is a schema folder which has your tables and other things
+
+- now under mysql connection.... we've no database named default.... to create one .... follow the steps 
+
+      - open workbench
+
+      - click on schema tab on the left pane 
+
+      - right click and click create schema 
+
+      - give schema name: <default>
+
+      - click apply 
+
+      - click apply
+
+      - click finish 
+
+    ** now in sqlTools....disconnect and reconnect your mysql connection.... now you can see a database named default under your mysql connection.... now you can also see tables under your default database
+
+- now we can make files of .sql extension.... and run it on either mysql or postgresql connection
+
+    

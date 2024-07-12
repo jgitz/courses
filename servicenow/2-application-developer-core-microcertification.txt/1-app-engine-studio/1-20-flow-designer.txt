@@ -1,0 +1,14 @@
+
+
+
+- FLOW DESIGNER: in app engine studio.... flow designer is used to set AUTOMATION by setting TRIGGER and ACTIONS to do after the trigger....
+
+  - you can also TEST your trigger and action in the flow designer 
+
+  - after creating a flow.... press activate
+
+  ** we create FLOW in LOGIC and AUTOMATION section of the app
+
+- NOTIFICATION: in app engine studio NOTIFICATION email can be send to a receipient based on TRIGGER.... 
+
+  ** this is also created under LOGIC and AUTOMATION section.... click email to add email notification 

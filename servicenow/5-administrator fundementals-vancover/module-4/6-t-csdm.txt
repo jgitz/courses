@@ -1,0 +1,53 @@
+- CSDM (Common Service Data Model): is a SET OF TERMS and DEFINITIONS that can be used with SNOW PRODUCTS on NOW PLATFORM 
+
+  ** CSDM gives PRESCRIPTIVE GUIDELINES FOR SERVICE MODELLING within CMDB. 
+
+  ** CSDM is used as a BLUEPRINT to MAP IT SERVICES to servicenow.
+
+  ** to see CSDM APPLICATION in the INSTANCE.. 
+
+    - goto ALL > CSDM 
+
+    ** CSDM is a part of NOW PLATFORM OUT OF THE BOX ??
+
+- FEATURES of CSDM 
+
+  - list IN SCOPE and OUT OF SCOPE ACTIVITIES 
+
+  - show HOW TO DO a specific ACTIVITY 
+
+  - details TABLES and CI'S associated with the USECASE 
+
+  - TRACK ASSETS through LIFE-CYCLE TRANSITIONS 
+
+  - it suggest BEST PRACTICE for CMDB DATA MODELLING and DATA MANAGEMENT 
+
+  - RECOMMEND MAPPINGS 
+
+  - HELPS to UNDERSTAND service cost 
+
+  - HELPS in ACCURATE REPORTINS (..but CSDM is NOT a REPORT)
+
+  - HELPS in CONSISTENT USE of APPLICATIONS 
+
+  - HELPS in REDUCTION of DUPLICATION and CONFUSION 
+
+  - HELPS to LESSEN OVERHEAD in MAINTAINING SERVICES 
+
+  - some PRODUCTS have DEPENDENCY ON CSDM TABLES.....so it helps with those PRODUCTS 
+
+** CSDM is NOT 
+
+  - not a PROCESS GIDE 
+
+  - not an IMPLEMENTATION GUIDE 
+
+  - not a SET of REPORTS 
+
+  - not CODE to INSTALL 
+
+  - not SKU 
+
+  - not a PRODUCT 
+
+  - not an AUTOMATIC FIX for PAST IMPLEMENTATIONS 

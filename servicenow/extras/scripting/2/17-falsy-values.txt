@@ -1,0 +1,5 @@
+- FALSY values in snow script: 
+
+    - 0 (number 0)
+    - undefined variable (i.e declared variable with NO VALUE)
+    - null

@@ -1,0 +1,60 @@
+- PORTALS: in snow is used to ACCESS different types of INFORMATION 
+
+- BASELINE PORTALS IN SNOW 
+
+  1) INSTANCE SECURITY CENTER (/isc): allows user to monitor and set instance security.
+
+
+  2) CAB (Change Advisory Board) WORKBENCH (/cab): enables a CAB MANAGER to 
+
+    - review and authorize change requests and recently implemented changes 
+
+    - plan and manage cab meetings
+
+
+  3) KNOWLEDGE PORTAL (/kb): enables users to 
+
+    - VIEW KNOWLEDGE BASES and ARTICLES 
+    - search and filter for INFORMATION 
+    - provide feedback 
+
+    ** The Knowledge Management - Service Portal plugin (com.snc.knowledge_serviceporfal) must be activated.
+      
+
+
+
+  4) SERVICE PORTAL (/sp): enables users to 
+
+    - SEARCH KNOWLEDGE BASES 
+    - BROWSE MULTIPLE CATALOG
+    - MAKE CATALOG REQUESTS
+    - CREATE AND VIEW INCIDENTS
+    - VIEW APPROVALS 
+    - look at SYSTEM STATUS  
+
+
+  5) EMPLOYEE CENTER (/esc): unified portal for all employees to access information, service and help needed
+
+-  UI BUILDER is used to build pages for 
+
+  - CSM WORKSPACES
+  - APP ENGINE STUDIO GENERATED WORKSPACES
+  - APP ENGINE STUDIO GENERATED PORTALS 
+  - CUSTOM WEB EXPERIENCES ? 
+
+- SERVICE PORTALS DESIGNER: is used to customize BASELINE PORTALS
+
+
+- OTHER PORTALS:
+
+  - Employee Center Pro (/esc): this is EXTENDED paid version of employee center portal. It is available with HRSD pro(HR Service Delivery) and HRSD eNTERPRISE PACKAGES 
+
+
+  - Community(/community): licensed product which enables USERS to collaborate with EMPLOYEES, CUSTOMERS, PARTNERS and PROSPECTS. Users can get responses in the form of questions, blogs and videos
+
+  - Customer Support (/csm) : licnesed B2B portal used by CUSTOMERS to post questions and get answered by REGISTERED MEMBERS or request assistance from a CUSTOMER SERVICE AGENT 
+
+  - Customer Service Portal (/csp): it is a B2C portal that can be used to provide information and support to CUSTOMERS 
+
+
+

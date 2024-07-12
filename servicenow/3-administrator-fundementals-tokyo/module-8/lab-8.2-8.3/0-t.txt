@@ -1,0 +1,77 @@
+- APPLICATION SCOPE: protects application from outside access on its data and resources...
+
+  ** APPLICATIONS build before the application scoping are in GLOBAL SCOPE
+
+  ** ALL CUSTOM APPLICATIONS has their own APPLICATION SCOPE
+
+  ** application scope prevents another application from accessing its TABLE and BUSINESS LOGIC 
+
+- UPDATE SET: is an XML FILE that records all the CONFIGURATION CHANGES that we've made in the instance so these configuration changes can be PACKAGED to other instance 
+
+  ** the changes are stored in the table CUSTOMER UPDATE (sys_update_xml)
+
+  ** several update sets can be made.... if two update set has made CHANGES to configuration of a specific object.... then the LATEST CHANGE will get applied when MERGING UPDATE SET
+
+  ** you can SET or CREATE NEW UPDATE set in ALL > SYSTEM UPDATE SETS > LOCAL UPDATE SETS
+
+  ** the main use of update set is to TRANSFER CONFIGURATION of DEVELOPER INSTANCE to TESTING INSTANCE and to PRODUCTION INSTANCE 
+
+  ** the DEFAULT UPDATE SET captures changes but WON'T ADD to and USER CREATED UPDATE SET (aka NAMED UPDATE SET)
+
+  ** BATCH UPDATE SET enable you to GROUP UPDATE SETS... PREVIEW them and COMMIT them in BULK
+
+  
+
+  ** UPDATE SET TRACK CHANGES OF: 
+
+    - tables
+    - fields 
+    - roles 
+    - views 
+    - published workflows
+    - report definitions 
+    - forms and form sections 
+    - business rules 
+    - client scripts
+
+  **** UPDATE SET DO NOT INCLUDE: 
+
+    - new users 
+    - new groups 
+    - new data records 
+    - modified data records 
+    - modifies CATALOG ITEMS 
+    - tasks 
+    - schedules 
+    - scheduled jobs 
+    - dashboards
+
+  ** EXPORT XML FUNCTION: if you want data to be transferred to another instance.... we use XPORT XML function 
+
+  ** UNLOAD DASHBOARD FUNCTION: if you want DASHBOARD to be .... we use UNLOAD DASHBOARD FUCNTION..
+
+  **** AVOID USING DEFAULT UPDATE SET to transfer config data to other instances
+
+  **** once you set UPDATE SET TO COMPLETE.... NEVER REVERT ITS STATE to IN PROGRESS.... INSTEAD 
+
+    ** make a NEW UPDATE SET.... and give proper NUMBER NAMING CONVENTION..... and COMMIT THEM IN ORDER 
+
+    - then we export it.. (read next note)
+
+- UPDATE SET RETRIEVAL IN OTHER INSTANCE 
+
+  .... update set can be transferred to another instance in 2 ways....
+
+    1) upload the update set xml file to the target instance 
+
+      - goto ALL > SYSTEM UPDATE SETS > RETRIEVED UPDATE SETS 
+
+      - IMPORT UPDATE SET FROM XML 
+      
+      - choose xml file and upload
+
+    2) retreive the update set from the source instance using REMOTE CONNECTION....
+
+      - goto ALL > SYSTEM UPDATE SETS > UPDATE SOURCES > NEW 
+
+        - complete the fields to set REMOTE CONNECTION to the source instance

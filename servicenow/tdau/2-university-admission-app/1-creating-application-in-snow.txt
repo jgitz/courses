@@ -1,0 +1,32 @@
+... we need an applicaition to automate university application to a university.. to do that we need to create an app in SNOW APP STUDIO 
+
+
+- sign in to developer instance 
+
+- click all 
+
+  - search for STUDIO 
+
+  - click on studio
+
+* app studio opened in new tab
+
+- click create application
+
+- click lets get started 
+
+- give name of application: <Leave Management System> 
+
+- give a description: <>
+
+- select scoped 
+
+  ** scoped means: we CANNOT MODIFY the app details from outside 
+
+  ** global means: we CAN MODIFY the app details from outside
+
+- you can edit END PART of the scope name: <x_2629_<lms>>
+
+- add OPTIONAL LOGO FILE 
+
+..... to be continued in <>

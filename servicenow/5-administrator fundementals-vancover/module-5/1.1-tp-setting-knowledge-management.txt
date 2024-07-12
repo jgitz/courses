@@ -1,0 +1,12 @@
+.... BEFORE creating KNOWLEDGE ARTICLES.... one should configure and SET UP KNOWLEDGE MANAGEMENT in your instance.... 
+
+... setting up knowledge management can be done in TWO WAYS 
+
+  1) USING KNOWLEDGE MANAGEMENT GUIDED SETUP:
+
+    - to view it... goto ALL > KNOWLEDGE > ADMINISTRATION > GUIDED SETUP  
+
+    - the setup has DESCRIPTIONS, TASKS and INFORMATION on PLUGINS needed to setup KNOWLEDGE BASES 
+
+
+  2) setting up KNOWLEDGE BASES WITHOUT GUIDED SETUP  

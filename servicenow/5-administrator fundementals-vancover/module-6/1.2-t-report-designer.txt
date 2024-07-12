@@ -1,0 +1,88 @@
+- REPORT DESIGNER: is the INTERFACE used to create REPORTS 
+
+  - to open report designer... goto 
+
+    - ALL > REPORTS > CREATE NEW
+
+  - FEATURES of REPORT DESIGNER 
+
+    - create/edit/SCHEDULE reports 
+
+    - work with REPORTING ROLES 
+
+    - use RELATED TABLES using DOT-WALKING and DATABASE VIEWS?? 
+
+    - use MULTI-LEVEL FILTERS, FILTER OPERATORS and SORT ORDER to REFINE REPORTS 
+
+- COMPONENTS/SECTIONS of REPORT DESIGNER 
+
+  - DATA SECTION: enables user to give 
+
+    - REPORT NAME 
+    - SOURCE TYPE: DATA-SOURCE?/TABLE
+    - REPORT TITLE 
+
+    ** DATA SOURCE is a PRE-DEFINED DATA SET used for creating report 
+
+    ** TABLE is ANY TABLE in your snow instance  
+
+    ***** SYSTEM TABLES is RESTRICTED FROM REPORTING MODULE....eg of SYSTEM TABLES 
+
+      - syslog
+      - syslog_transaction 
+      - sys_attachment 
+      - sys_email 
+
+  - TYPE: to set VISUALIZATION TYPE eg: donut, pareto, heatmap etc 
+
+  - CONFIGURE: do operations like GROUP DATA by SPECIFIC FIELDS and RUN CALCULATIONS against the DATA 
+
+  - STYLE: set COLOR, CHART SIZE (SMALL/MEDIUM/LARGE) and make adjustments to the REPORT LEGEND??
+
+- REPORT DESIGNER ICONS (ACTIONS and OPTIONS):
+
+  - REPORT INFO: ICON with letter "i" 
+
+  - SHARING MENU: ICON with BOX and ARROW: GIVES the FOLLOWING SHARING OPTIONS 
+
+    1) SHARE: allows to set VISIBILITY to the report through options 
+      
+      - ME (..current user)
+      - EVERYONE (..you can add ROLES TOOL)
+      - GROUPS and USERS 
+    
+    2) SCHEDULE: allows you to SCHEDULE and EMAIL with REPORT as an ATTACHMENT 
+
+    3) DASHBOARD: allows you to add report to DASHBOARD (..reports are added to TOP POSITION in the DASHBOARD)
+
+    4) EXPORT TO PDF: converts REPORT to PDF which you can DOWNLOAD 
+
+      ** you also have OPTION to send the PDF REPORT as EMAIL 
+
+    5) PUBLISH: used to create URL for the REPORT so it can be used by INTERNAL and EXTERNAL AUDIENCES to view the report 
+
+      ** the users may need to LOGIN to servicenow to view PUBLISHED REPORT.
+
+      ** PUBLISHED report can be UNPUBLISHED 
+
+      ***** by DEFAULT.... PUBLISH OPTION is INVISIBLE..to make it VISIBLE 
+
+        ** set true to sys property glide.report.published_reports.enabled 
+
+  - DELETE REPORT: TRASH BIN ICON
+
+  - RUN REPORT: RUN BUTTON to RUN the REPORT 
+
+    **** running report DON'T SAVE/UPDATE 
+
+  - SAVE REPORT: provides the FOLLOWING SAVING OPTOINS 
+
+    1) UPDATE: OVERWRITES and UPDATES the report and RETURN to REPORT LIST 
+
+    2) INSERT: save DUPLICATE COPY?? of the report and RETURN TO REPORT LIST 
+
+    3) INSERT and STAY: save DUPLICATE COPY of the report, but REMAINS ON THE REPORT 
+
+    4) SAVE AS DATA SOURCE: allows you to CREATE PRE-FILTERED DATA-SET that can be used for CREATING REPORTS (** requires ROLE: report_admin)
+
+** CONDITION BUILDER: is FUNNEL ICON on the MAIN CONTENT FRAME of the REPORT DESIGNER.... it is used to set CONDITIONS 

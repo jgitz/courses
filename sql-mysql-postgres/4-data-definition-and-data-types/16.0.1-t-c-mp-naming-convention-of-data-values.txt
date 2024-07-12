@@ -1,0 +1,5 @@
+** TEXT DATA VALUES should be WRAPPED in SINGLE QUOTES ''
+
+      **** in POSTGRES DON'T use DOUBLE QUOTES "" to wrap text DATA VALUES.... else ERROR
+
+** BOOLEAN DATA VALUES should be in UPPERCASE with NO QUOTES to wrap it.

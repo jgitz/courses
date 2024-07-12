@@ -1,0 +1,29 @@
+- APP ENGINE STUDIO (AES): is a LICENSED TOOL which is used for LOW-CODE DEVELOPMENT to AUTOMATE BUSINESS PROCESSES and SOLVE BUSINESS PROBLEMS 
+
+  - AES helps ADMINISTRATORS to do DEVELOPMENT WORKS with LITTLE TRAINING
+
+  - AES has the FOLLOWING FEATURES 
+
+    - VIEW and SEARCH CREATED APPLICATIONS 
+
+    - explore TUTORIALS and HELPFUL RESOURCES to get started 
+
+    - helps to configure our APP with....
+
+      - DATA
+
+      - EXPERIENCE 
+
+      - LOGIC 
+
+      - SECURITY 
+
+- USES of AES:  
+
+  - CREATE APPLICATION from SCRATCH
+
+  - shows LIST of APPLICATIONS you've created 
+
+  - access links to ADD OBJECTS to apps 
+
+  - access links to BROWSE TEMPLATES and use templates to CREATE APP 

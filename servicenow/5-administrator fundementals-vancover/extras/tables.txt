@@ -1,0 +1,92 @@
+- sys_properties.list: all sysem properties 
+
+- sys_user.list: users table 
+
+  **** no 's' in table name
+
+- sys_user_group.list : groups table
+
+  **** no 's' in table name 
+
+- sys_user_role: roles table
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- v_plugin.list: SYSTEM PLUGINS TABLE 
+
+- to view all system properties (all > system properties > system) : sys_properties.list 
+
+  **** there is 's' in the table name
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+- sys_db_object: to view list of individual TABLES (all > system definition > tables)
+
+- sys_documentation: to view list of FIELD LABELS (aka language file all > system definition > language file)
+
+- sys_dictionary: lists all fields of instance corresponding to each table (all > system definiton > dictionary)
+
+- <table name>.config : to view BUSINESS RULES, ACCESS CONTROL etc of a TABLE 
+
+  ** mainly used to VIEW ACCESS CONTROLS of a table
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- TABLES RELATED to SERVICE CATALOG 
+
+  - sc_request.list: to view all ORDER REQUEST records
+
+  - sc_req_item.list: to view all requested CI ITEM records 
+
+  - sc_task.list: to view all SC TASK RECORD to fulfill the CI ITEM REQUESTS 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- TABLE that store EMAIL LAYOUTS
+
+  - sys_email_layout 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+***** SYSTEM TABLES is RESTRICTED FROM REPORTING MODULE....eg of SYSTEM TABLES 
+
+  - syslog
+  - syslog_transaction 
+  - sys_attachment 
+  - sys_email 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to view SERVICE OFFERING LIST 
+
+  - service_offering.list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- config record changes that are TRACKED by an UPDATE SET is stored in TABLE NAMED 
+
+    - sys_update_xml (aka CUSTOMER UPDATE TABLE)
+
+- CUSTOMER UPDATE TABLE: to write CHANGES MADE to TRACKING TABLE to implement UPDATE SET FEATURE 
+
+  - sys_update_xml.list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+** STATS MODULE MONITORS the ACTIVITY PATTERN in the FOLLOWING 3 TABLES 
+
+  1) sys_query_pattern  (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW QUERIES)
+
+  2) sys_script_pattern (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW SCRIPTS)
+
+  3) sys_transaction_pattern (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW TRANSACITIONS)
+
+
+
+
+
+
+
+

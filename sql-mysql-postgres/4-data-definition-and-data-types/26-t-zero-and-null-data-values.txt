@@ -1,0 +1,3 @@
+** inserting 0 numerical DATA VALUE to a column would cause MATHEMATICAL problems in MATHEMATICAL operations such as AVERAGE 
+
+** so in to denote ABSENCE of a DATA VALUE in a COLUMN.... use NULL value

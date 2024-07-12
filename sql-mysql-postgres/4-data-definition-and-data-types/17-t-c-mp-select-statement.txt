@@ -1,0 +1,8 @@
+..... to see all the records of a table.... we use select command 
+
+- mysql and postgresql command :
+
+
+      :: SELECT * FROM <table_name>;
+
+          ** o/p: whole table data listed in terminal

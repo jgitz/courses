@@ -1,0 +1,36 @@
+- STEPS TO CONNECT TO POSTGRES SERVER
+
+      - STEP 1: open SQL SHELL from start menu
+
+      - STEP 2: enter server host 
+
+          ** enter ip if remote server 
+
+          ** leave it... if server is local machine 
+
+      - STEP 3:  enter database name 
+
+            ** leave it to use default database
+ 
+      - STEP 4: enter custom port (entered during installation)
+
+            ** leave it to use default port number 5432
+
+      - STEP 5: enter user name  
+
+            ** leave it to use default username (during installation)
+
+      - STEP 6: enter password 
+
+      - STEP 7: now you can use sql commands.... eg 
+
+            :: SELECT 'hello world';
+
+                o/p:
+
+                    -------------
+                    hello world
+                    (1 row)
+
+                ** single quotes '' wrapping only seem to work ??
+**** in this COURSE we use VSCODE EXTENSION SQLTools as client

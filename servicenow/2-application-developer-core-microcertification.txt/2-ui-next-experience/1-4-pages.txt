@@ -1,0 +1,21 @@
+.... a site consists of many pages.... 
+
+  - PORTALS must have pages related to REQUESTERS functionalities
+
+  - WORKSPACES must have pages related to FULFILLERS functionalities
+
+
+- STARTER EXPERIENCE: is a prebuilt baseline pages included when you create ui USING AES 
+
+  **** prebuilt pages are NOT INCLUDED if we built UI directly inside the UI BUILDER accessed from the instance
+
+- we can make new pages or pages from templates 
+
+- the page path will be of the format: https://[instance name].service-now.com/now/[experience name]/[path]
+
+** If you did not create your experience within App Engine Studio, you may need to edit the ux_route read ACL that was automatically created to ensure the appropriate users have access to see its pages.  The ACL should have the following values:
+
+    Type: ux_route
+    Operation: read
+    Name: now.[experience name].* 
+    Required roles (related list): Includes one or more roles that need access to the experience

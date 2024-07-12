@@ -1,0 +1,9 @@
+- the UI building in UI BUILDER supports 
+
+    - CSS FLEXBOX 
+    - CSS GRID
+
+    to create layout of the pages 
+
+- older versions of servicenow ui pages can be updated to include flexbox and grid 
+

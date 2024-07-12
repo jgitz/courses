@@ -1,0 +1,47 @@
+- PROCESS AUTOMATION DESIGNER (PAD): enables OWNERS to author CROSS-ENTERPRISE WORKFLOWS and create SINGLE UNIFIED PROCESS 
+
+  ** PAD is used to AUTOMATE existing SERVICENOW PLATFORM CAPABILITIES such as SEND NOTIFICATIONS, CREATE NEW RECORDS, SUBMIT APPROVALS etc 
+
+  ** it can be ALSO used to provide END-USERS with a SIMPLIFIED TASK-ORIENTED VIEW of your PROCESS
+
+  ** PAD is used by CITIZEN DEVELOPERS and PROCESS OWNERS 
+
+  ** to use PAD... goto ALL > PROCESS AUTOMATION > PROCESS DESIGNER 
+
+  - STEPS in PROCESS AUTOMATION 
+
+    1) CREATE PROCESS DEFINITION with TRIGGERS, LANES and ACTIVITIES 
+
+    2) ACTIVATE PROCESS DEFINITION: this step will TRIGGER multiple AREAS/COMPONENTS of your system 
+
+    3) PROCESS EXECUTION: your s/m will create PROCESS EXECUTION??
+
+  ** an IDEAL PROCESS CONTAINS the following things:
+
+    - trigger AUTOMATICALLY the RECORDS the END-USER wants  
+
+    - REUSE ACTIVITIES from EXISTING FLOW DESIGNER content 
+
+    - has WELL-DEFINED LANES that END USERS can FOLLOW for a RECORD 
+
+    - clearly show NEXT STEPS that END USERS must take to move through a RECORD LIFECYCLE 
+
+
+- BENEFITS of PAD 
+
+  - connect WORKFLOWS and ACTIONS into an END-TO-END WORKFLOW?? 
+
+  - REUSE existing FLOW DESIGNER FLOWS/ACTIONS/SUBFLOWS 
+
+  - provide TASKBOARD INTERFACE to organize PROCESS ACTIVITIES 
+
+  - GUIDE END-USERS to complete a process using interfaces such as PLAYBOOK (..task-oriented interface)
+
+  - define consistent RECORD LIFECYCLE 
+
+  - pass DATA b/w ACTIVITIES and STAGES?? 
+
+  - specify CONDITIONS and ORDER in which ACTIVITIES and STAGES RUN 
+
+
+

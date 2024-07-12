@@ -1,0 +1,46 @@
+.... to create ACCESS CONTROL RULE.... to control tables/table-fields 
+
+- login as SYSTEM ADMINISTRATOR 
+
+- ELEVATE as SECURITY ADMIN 
+
+- goto ALL > SYSTEM SECURITY > ACCESS CONTROL (ACL)
+
+- click NEW 
+
+  ** AC rule form appears 
+
+  *** eg to give READ access to a RECORD 
+
+  - fill TYPE (choice): eg RECORD 
+
+  - fill OPERATION (choice): eg read 
+
+  - CHECK ADMIN OVERRIDE (.. means users with ADMIN ROLE can override this ac rule)
+
+  - CHECK ACTIVE 
+
+  - to select OBJECT (TABLE/FIELD)
+
+    - fill FIRST INPUT of NAME FIELD and SELECT REQUIRED TABLE 
+
+    - fill SECOND TABLE INPUT of the NAME FIELD and SELECT FIELD of the table (..optional)
+
+    - fill description 
+
+    - GOTO CONDITIONS SECTION 
+
+      -  add any CONDITIONS of the TABLE FIELD in CONDITION BUILDER 
+
+      - locate REQUIRES ROLE section 
+
+        - double click to type role.... click the role from popup.... click TICK MARK 
+
+        - click CONTINUE on the VERIFY SECURITY RULES pop-up window
+
+        ** press + and repeat to add another roles if any 
+
+        **** if the user has ANY ONE of the ROLE... then he PASSES the ACL RULE 
+
+    - click SAVE/UPDATE
+

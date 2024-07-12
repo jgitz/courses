@@ -1,0 +1,123 @@
+..... in this course we use SQLTools client extension inside vscode to practice sql 
+
+- STEPS TO USE SQLTools extension in vscode 
+
+      - STEP 1: install SQLTools extension in vscode
+
+      - STEP 2: goto activity bar and select sqlTools button 
+
+      - STEP 3: click new connection
+
+      - STEP 4: since there is no database server to work on because of fresh install... click market place
+
+      - STEP 5: install MYSQL/MARIADB driver
+
+      - STEP 6: install postgres driver
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- CONFIGURING MYSQL IN SQLTools extension.
+
+      - STEP 1: goto sqlTools icon 
+
+      - STEP 2: click on new connection 
+
+      - STEP 3: click on MYSQL icon 
+
+      - STEP 4: on the new form.... change the following fields (leave the rest as default)
+
+            - connection name: <mysql1>
+
+                  ** your connection is known by this identifier
+
+            - database: <default>
+
+                  ** any database name you want to work on 
+
+            - username: <root>
+
+            - password: <option: ask on connect>
+
+            - click test connection
+
+            - if successful...click on save connection
+
+            - click on connect now
+
+            - enter password of your mysql server
+
+            - now run sql commands like 
+
+                  :: SELECT 'hello world';
+
+            - ** after writing sql commands on sql file....
+
+                  - click run on active button at the top 
+
+                  - *****at first an AUTHENTICATION ERROR is displayed due to strong authentication set at installation.... to rectify this 
+
+                        - open workbench from start
+
+                        - at bottom of the opening page.... click your localhost connection in MY CONNECTIONS
+
+                        - enter password
+
+                        - type this command in query cli 
+
+                              :: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<your mysql password>'
+
+                        - click thunder icon to execute
+
+
+                        **** now again run the sql commands on vs code and click run on active connection.... now the error changes to "default database not found" (this is expected as we've not created a database named default yet)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- CONFIGURING POSTGRES in SQLTools extension
+
+- CONFIGURING mysql in sqlTools extension
+
+      - STEP 1: goto sqlTools icon 
+
+      - STEP 2: click on new connection (database icon with + sign) 
+
+      - STEP 3: click on POSTGRES icon 
+
+      - STEP 4: on the new form.... change the following fields (leave the rest as default)
+
+            - connection name: <postgres1>
+
+            - database: <postgres>
+
+            - username: <postgres>
+
+            - click test connection
+
+            - if successful...click on save connection
+
+            - click on connect now
+
+            - enter password of your mysql server
+
+            - now run sql commands like 
+
+                  :: SELECT 'hello world'
+
+
+                  ** after writing sql commands on sql file....
+
+                  - click run on active button at the top 
+
+                        o/p: since there is a database named postgres was created.... output appears in new window in vscode
+
+***** to CONNECT/DISCONNECT your saved connections in sqlTools.... click on PLUG icon on each connection.
+
+
+
+            
+
+
+
+
+
+
+                        

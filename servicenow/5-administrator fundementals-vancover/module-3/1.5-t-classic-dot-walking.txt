@@ -1,0 +1,24 @@
+- DOT WALKING: allows you to access FIELDS form the RELATED TABLE in a LIST, FORM or SCRIPT 
+
+- INTERFACES WHERE WE CAN USE DOT WALKING 
+
+  - CONDITION BUILDER (.. where we put filter condition on list)
+
+  - LIST COLLECTOR 
+
+  - FORM LAYOUT (**** we CANNOT DOT WALK in FORM DESIGNER)
+
+  - BUSINESS RULE
+
+  - FLOW DESIGNER
+
+  - REPORT DESIGNER
+
+  - ADDING VARIABLES (in email notification )
+
+  ** link: https://nowlearning.servicenow.com/lxp/en/pages/learning-course?id=learning_course&course_id=b38b9b5d1b9c1dd4998555fa234bcbc5&child_id=1a531d8d4720d5585cbdaf44846d4379&spa=1
+
+
+**** A PROCESS USER CANNOT dot walk while PERSONALIZING LIST 
+
+**** FORM DESIGN (STUDIO) cannot use DOT WALKING 

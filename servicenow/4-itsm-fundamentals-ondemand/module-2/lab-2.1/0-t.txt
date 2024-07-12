@@ -1,0 +1,13 @@
+..... you can order PRODUCTS/SERVICES from 2 places 
+
+  1) SELF SERVICE > SERVICE CATALOG 
+
+  2) SELF SERVICE > EMPLOYEE CENTER
+
+   - you can see all the service catalog items here too... and you can select multiple items to cart and order it 
+
+** if there is a SERVICE DESK USER.... that user can also access the REQUESTS and REQUESTED ITEMS inside his SERVICE OPERATIONS WORKSPACE.... to view SERVICE OPERATIONS WORKSPACE 
+
+  - click WORKSPACES TAB on top 
+
+  - click SERVICE OPERATIONS WORKSPACE

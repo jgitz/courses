@@ -1,0 +1,19 @@
+.... to add PUBLISH/RETIRE WORKFLOW to a KNOWLEDGE BASE... and assign it to a MANAGER USER (approver_user/knowledge_manager)
+
+- login as SYSTEM ADMINISTRATOR 
+
+- to open TARGET KB... goto ALL > KNOWLEDGE > ADMINISTRATION > KNOWLEDGE BASES 
+
+- open KB RECORD 
+
+- add user to OWNER FIELD
+
+  ** the user should have any of below role to be a KB MANAGER 
+
+    - knowledge_manager 
+
+    - approver_user 
+
+- goto PUBLISH WORKFLOW FIELD and add workflow 
+
+- goto RETIRE WORKFLOW FIELD and add workflow 

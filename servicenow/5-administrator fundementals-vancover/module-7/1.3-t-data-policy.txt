@@ -1,0 +1,25 @@
+- DATA POLICY: is a RULE to make FIELDS of a FORM... MANDATORY or READ ONLY 
+
+  ** DATA POLICY is executed on SERVER SIDE BY DEFAULT 
+
+    **** DATA POLICY CAN be run on CLIENT SIDE by checking "USE as UI POLICY on CLIENT" checkbox 
+
+  ** DATA POLICY can only be added on FORMS and LISTS, FORMS, IMPORT SETS and WEB SERVICES?? 
+
+  ** you can set only TWO PROPERTIES on a FORM FIELD using DATA POLICY 
+
+    1) MANDATORY 
+
+    2) READ-ONLY 
+
+    **** HIDDEN property CANNOT be applied using data policy... to do that USE UI POLICY 
+
+  ** DATA POLICY is ENFORCED only when 
+
+    - when a RECORD is INSERTED into SERVICENOW 
+
+    - when DATA is IMPORTED using IMPORT  SET 
+
+    ** DATA policies can be OPTED OUT for IMPORT SETS and WEB SERVICES?? 
+
+  ***** DATA POLICY are NOT ABOUT SECURITY.... it is about INTEGRTY of INFO stored in DB 

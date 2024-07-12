@@ -1,0 +1,62 @@
+- download the mysql for windows (small sized one) from mysql community downloads
+
+- go for custom install 
+
+    - select latest version of mysql 
+
+    - select latest mysql workbench 
+
+    - select latest mysql shell
+
+    - click next next.... 
+
+    - leave the default product configuration 
+
+    - setting password for the ROOT USER 
+
+          password: DATAbase@123
+
+
+          ** click next 
+
+    - in windows service 
+
+          ** UNCHECK : start the mysql server at system startup
+
+
+          ** click execute
+
+    - click finish 
+
+    - click next next 
+
+    - UNCHECK:
+     
+        ** uncheck start mysql work bench 
+        ** uncheck mysql shell
+
+
+        ** click finish to exit setup 
+
+- STEPS TO START MYSQL SERVER 
+
+
+    ** search for mysql shell in start menu 
+
+- STEP to stop mysql server 
+
+    ** goto services.... select and stop mysql 
+
+
+**** always run mysql server if you want to use it to do sql query
+
+
+**** in this course... we use ROOT USER mysql server enables us to make different users to assign different databases for out different projects....
+
+
+
+    
+
+
+
+      

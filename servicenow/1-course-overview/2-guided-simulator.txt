@@ -1,0 +1,66 @@
+... a simulator instance is given to practice on the platform.... 
+
+.... take the following course to know how to use the instance properly.... link: https://nowlearning.servicenow.com/lxp?course_id=ab18eea7db498990454eb0a239961922&id=learning_content_prev
+
+.... instance course outcomes is given below...
+
+- each course module MAY or MAYNOT have hands on practice on the snow platform.... if the module requires handson practice.... THE COURSE will INCLUDE a REQUEST LAB INSTANCE BUTTON...
+
+  - instance will provide snow platform to work on it 
+
+- each lesson that include instance task should be done on instance....
+
+    - the tasks to be done on instance is given on the LEFT PANE.... 
+
+    - you need to correctly do the task and click VALIDATE BUTTON to finish the task and SAVE THE PROGRESS... 
+
+      ** some tasks are only informational/instructional.... so you can simply click validate button after reading the theory... BUT 
+
+      ***** some tasks require you to do CONFIGURATION IN INSTANCES..... in that case
+
+        - go to instance and correctly configure it 
+
+        - then click validate? option in the instance 
+
+        - then come back to lesson and AGAIN CLICK validate button 
+
+    ** instance is given for a period of 2 WEEKS... after which it EXPIRES 
+
+    ** you can request EXPIRY EXTENSION on the link besides the EXPIRY TIME.... this will extend instance life to further 7 days 
+
+    **** DONOT TERMINATE instance BEFORE doing all the tasks in the lesson.... else ALL PROGRESS will be LOST 
+
+    ** an instance will go into HIBERNATION/SLEEP if not used for LONG TIME.... in that case click WAKE UP button 
+
+- STEPS TO CREATE an INSTANCE:
+
+    - on the lesson.... click on REQUEST INSTANCE BUTTON 
+
+    - now you'll receive MID-SERVER URL and PASSWORD.... mid server means INSTANCE itself 
+
+    - you'll see instance running status and expiration time and simulator score and an OPEN INSTANCE BUTTON....
+
+    - CLICK OPEN INSTANCE BUTTON... your snow instance will open on NEW BROWSER TAB
+
+    ***** now learning platform will ONLY ALLOW 2 LESSON INSTANCES to RUN AT A GIVEN TIME
+
+    ** to run instance on mobile... you need username and passowrd... to obtain it do 
+
+      - RIGHT CLICK on OPEN MY INSTANCE BUTTON 
+
+      - copy the link address
+
+      - paste the url somewhere to get the username and password from the link 
+
+    ** to sort out instance issues.... you can use AI VIRTUAL AGENT from bottom right... or use HELP TAB on NAV BAR 
+
+** some lessons which has instance handson WON'T have simulation score or validate button.... these are handson lessons to play around with the instance....
+
+
+
+
+
+
+
+
+

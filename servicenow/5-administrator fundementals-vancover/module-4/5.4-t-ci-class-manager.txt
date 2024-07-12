@@ -1,0 +1,101 @@
+- CI CLASS MANAGER: is a CENTRAL LOCATION to explore
+
+  - CMDB CLASS HEIRARCHY 
+
+  - CI TABLE DEFINITIONS 
+
+  - class CI'S
+
+** here the CLASS means TABLES
+
+**** CLASS MANAGER DON'T WORK on NON-CMDB TABLES 
+
+** to see CLASS MANAGER.... goto 
+
+  - ALL > CONFIGURATION > CI CLASS MANAGER 
+
+  ** click HIERARCHY BUTTON on TOP-LEFT... OR on OPEN HIERARCHY BUTTON on MIDDLE to see HIERARCHY LIST with CLASSES/TABLES open up on the LEFT PANE 
+
+   ** on the LEFT CLASS PANE... you can PIN the classes and SEARCH FOR CLASSES in the SEARCH BOX 
+
+
+** CLASS MANAGER displays  ENTIRE CMDB CLASS HIERARCHY in a TREE-VIEW FORMAT 
+
+** CLASS MANAGER also show the following CLASS METADATA 
+
+  - RECONCILIATION RULES  
+  - MANDATORY FIELDS 
+  - RECOMMENDED FIELDS 
+  - AUDIT TEMPLATES  
+
+
+- Why should snow admins need to UNDERSTAND CLASS HIERARCHY of CI'S 
+
+  - in order to MANUALLY ADD a CI into our instance.... we need to know about the HIERARCHY to PREVENT CI to be ADDED to an INCORRECT CLASS/TABLE 
+
+- CLASS/TABLE LAYOUT in CI CLASS MANAGER 
+
+  .... when you click an item in the HIERARCHY LIST.... the page displays TABLE PROPERTIES... it has the following layout components 
+
+    - BREAD CRUMBS on the TOP: the first ITEM on the BREAD CRUMB is the CMDB_CI table..... the SUBSEQUENT ITEMS are EXTENDED TABLES from the CMDB_CI.... the LAST ITEM in the bread crumb is the TABLE whose properties are listed in the screen 
+
+    ** BASIC INFO TAB: displays 
+
+        - table name 
+
+        - class icon 
+
+        - description 
+
+        ** you CAN'T EDIT TABLE NAME 
+
+        - ROLES REQUIRED to edit ATTRIBUTES 
+
+          - for READING 
+
+            - ITIL 
+
+          - FOR WRITING 
+
+            - ITIL_ADMIN && PERSONALIZE_DICTIONARY
+
+    ** ATTRIBUTES TAB: lists FIELDS of the table 
+
+      - ALL TAB: shows ALL ATTRIBUTES/COLUMNS in the table 
+
+      - DERIVED TAB: shows ALL ATTRIBUTES/COLUMNS INHERITED from the PARENT TABLES 
+
+      - ADDED: TAB: shows all the ATTRIBUTES/COLUMNS that are UNIQUE to the SUBJECT TABLE 
+  
+      - ROLES REQUIRED to EDIT ATTRIBUTE TAB 
+
+        - FOR READING 
+
+          - PERSONALIZE_DICTIONARY && ITIL 
+
+        - FOR WRITING 
+
+          - PERSONALIZE_DICTIONARY && ITIL_ADMIN
+
+    ** SUGGESTED RELATIONSHIP TAB: shows CI RELATIONSHIP EDITOR 
+
+      ** CI RELATIONSHIP EDITOR: is a GRAPHICAL INTERFACE used to CREATE CONFIGURATION ITEM RELATIONSHIPS 
+
+      ** CI RELATIONSHIP EDITOR can also be viewed from RELATED ITEMS TOOLBAR in a CI ITEM RECORD 
+
+      ** you can define PARENT and CHILD CI relationships by setting RELATIONSHIP TYPE 
+
+      ** the CI RECORD from where the EDITOR is launched is designated as BASE CI/BASE CLASS?? 
+
+      ** the CHILD CI made FROM BASE CI is known as DEPENDENT CLASS 
+
+      **** you can CREATE A NEW RELATIONSHIP RULE FROM 
+
+        - ALL > CONFIGURATION > RELATIONSHIPS > SUGGESTED RELATIONSHIPS
+
+      ** HEALTH TAB: has options to MONITOR HEALTH of CMDB??
+
+      ** CI LIST TAB: shows EXTENDED/CHILD CI TABLES of the SUBJECT TABLE 
+
+        
+

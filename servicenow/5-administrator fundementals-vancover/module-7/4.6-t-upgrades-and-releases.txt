@@ -1,0 +1,28 @@
+- UPGRADING INSTANCE: upgrading your instance involves PLANNING, TESTING and VALIDATION
+
+  - USE the following sections of SERVICENOW DOCS to PREPARE FOR UPGRADE 
+
+    - servicenow upgrades 
+
+    - PRE- and POST UPGRADE TASKS for various production 
+
+    - upgrade planning CHECK LIST
+
+    - upgrade TOOLS and RESOURCES 
+
+    - UPGRADE and the SERVICENOW STORE 
+
+  - to VERIFY if an UPGRADE IS COMPLETE.... goto 
+
+    - ALL > SYSTEM DIAGNOSTICS > UPGRADE LOG 
+
+      ** look for record with MESSAGE: "Notifying HI that upgrade has been completed"
+
+  ** to CONFIRM that a PATCH HAS BEEN APPLIED.... find the EVENT system.patched event... AND CREATE a NOTIFICATION for this event
+
+
+
+
+- RELEASE NOTES: GUIDE you to complete the PHASES and TASKS for a SUCCESSFUL UPGRADE 
+
+  ** you can also build YOUR OWN RELEASE NOTES  

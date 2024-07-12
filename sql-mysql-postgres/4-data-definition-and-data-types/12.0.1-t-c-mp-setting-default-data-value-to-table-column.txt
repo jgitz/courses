@@ -1,0 +1,11 @@
+..... sometimes a table column should have a default data value at the creation time itself.... that default data value is set at the TABLE creation time itself like this 
+
+
+CREATE TABLE <table_name> (
+  column_name_1 VARCHAR(250) DEFAULT '<default_text>',
+  column_name_2 BOOLEAN DEFAULT FALSE,
+  column_name_3 TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+**** note CURRENT_TIMESTAMP is a default keyword in TIMESTAMP datatype which automatically sets the system time instead of hardcoding a time into the database 

@@ -1,0 +1,43 @@
+- to set BUSINESS RULE in a FORM RECORD 
+
+- goto RECORD FORM > ADDITIONAL ACTIONS (..hanburger) > CONFIGURE > BUSINESS RULES > new 
+
+  - NAME: 
+
+  - TABLE: 
+
+  - active
+
+  - ADVANCED: **** IF CHECKED then 
+
+    - ADVANCED TAB appears in RELATED LIST: helps to set CONDITION and WRITE SCRIPT in the CONSOLE 
+
+    - the following FIELDS appears inside WHEN TO RUN TAB (..related list)
+
+      - WHEN FIELD: options are before/after/async/display 
+
+      - ORDER: 
+
+      - DELETE (..checkbox) 
+
+      - QUERY (..checkbox)
+
+  - RELATED LISTS 
+
+    - WHEN TO RUN TAB 
+
+      - INSERT (..checkbox)
+
+      - UPDATE (..checkbox)
+
+      - GIVE CONDITIONS in FILTER CONDITIONS 
+
+      - GIVE ROLE CONDITIONS 
+
+    - ACTIONS TAB: to set what actions to do in form when the form meets conditions 
+
+      - SET FIELD and FIELD VALUES 
+
+      - CHECK ADD MESSAGE (..checkbox) to add message 
+
+      - CHECK ABORT ACTION (..checkbox) to PREVENT CARRYING OUT ACTIONS

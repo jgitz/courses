@@ -1,0 +1,41 @@
+.... to create a new tagle 
+
+- CHECK if you are on correct SCOPE 
+
+- goto ALL > SYSTEM DEFINITION > TABLES (or use ALL > SYSTEM DEFINITION > TABLES & COLUMNS)
+
+- click NEW 
+
+  - fill table LABEL 
+
+  - fill table name in CORRECT FORMAT 
+
+  - EXTENDS TABLE: <specify PARENT TABLE name if you want to inherit field>
+
+  - CHECK CREATE MODULE 
+
+  - CHECK CREATE MOBILE MODULE 
+
+  - ADD MODULE TO MENU (choice) (to add this table to ALL MENU APPLICATION... MENU = APPLICATION ): <select the APPLICATIO/MENU NAME>
+
+    ** or you can create new MENU/APPLICATION in the all menu using the same field 
+
+  - save 
+
+______________________________________________________
+
+.. to add FIELDS to the table
+
+- scroll down to the COLUMN TAB (RELATED LISTS)
+
+- click NEW 
+
+  - fill TYPE 
+
+  - fill column LABEL 
+
+  - fill column NAME 
+
+  - fill max length 
+
+  - submit 

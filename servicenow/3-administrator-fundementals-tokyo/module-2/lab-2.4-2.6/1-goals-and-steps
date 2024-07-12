@@ -1,0 +1,45 @@
+....in servicenow... you can create USERS... add multiple USERS to a GROUP.... and add ROLES to GROUPS as well as individual USERS  
+
+- USERS table can be found at ALL > SYSTEM SECURITY > USERS AND GROUPS > USERS
+  
+- GROUPS table can be found at ALL > SYSTEM SECURITY > USERS AND GROUPS > GROUPS
+- 
+- ROLES table can be found at ALL > SYSTEM SECURITY > USERS AND GROUPS > ROLES
+
+** using the above records WE can make NEW USERS... GROUPS.... and ROLES
+
+** when creating multiple recodrs with similar fields in the above tables.... you can SAVE TIME by RIGHT CLICKING on the HEADER of the form and use INSERT and STAY... so you only need to change DYNAMIC fields of multiple records while the other common field values remains the same
+
+** CLICK UPDATED COLUMN header to quickly sort NEWEST UPDATED record in a list  
+
+** you can also FILTER list using conditions... and FAVORITE the filtered list by..... RIGHT CLICKING on the list HEADER... and selecting CREATE FAVORITE
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+....to add a USER to GROUP....
+
+- find the group in the ALL > SYSTEM SECURITY > USER and GROUPS > GROUPS... list 
+
+ - click on GROUP MEMBERS TAB 
+
+ - click on EDIT (NOT NEW)
+
+ - search and add user to COLLECTIONS
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to install application from store 
+
+- goto ALL > SYSTEM DEFINITIONS > PLUGINS 
+
+    **** wait for plugins to load 
+
+- on top click on FIND IN STORE 
+
+- search for the required plugin/application 
+
+- click on the application card 
+
+- click on the DEPENDENCIES link and cross check if the dependencies are installed in the instance 
+
+- then click GET

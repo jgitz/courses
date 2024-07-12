@@ -1,0 +1,51 @@
+- Production of WEBSITES in internet requires SKILL, LABOUR, CONTENT and MONEY. Hence WEB DESIGN and its CONTENT has to be PROTECTED FROM INFINGEMENT 
+
+
+- WHAT is LINKS and HYPERLINKS: 
+
+    - LINKS: A link specifies LOCATION ADDRESS of a RESOURCE on INTERNET. EG: https://www.google.com takes you to GOOGLE SEARCH PAGE. 
+
+    - HYPERLINKS: can be any CLICKABLE IMAGE or TEXT created USING HTML which can be linked to another website LINK using HREF ATTRIBUTE and ANCHOR TAGS
+
+- what is linking and hyperlinking 
+
+  - LINKING: refers to act of CONNECTING and ELEMENT to another ELEMENT within the SAME WEBPAGE or DIFFERENT WEB PAGE. 
+
+  - HYPER LINKING: is a TYPE of LINKING where an ELEMENT of a PAGE in LINKED to RESOURCES on SAME WEBSITE or ANOTHER WEBSITE using HTML ANCHOR TAG and HREF ATTRIBUTE.
+
+- what are 2 TYPES of LINKING? 
+
+  There are 2 types of linking 
+
+    1) SURFACE LINKING: here the LINK/HYPERLINK directs the USER to HOME PAGE of another WEBSITE on clicking it
+
+    2) DEEP LINKING: here the LINK/HYPERLING directs the USERS to INTERNAL PAGES or RESOURCES of ANOTHER WEBSITE... BYPASSING the HOMEPAGE
+
+- WHAT are the LEGAL ISSUES of LINKING/DEEP LINKING?
+
+  1) COPYRIGHT INFRINGEMENT:
+
+    - if a site uses deep linking WITHOUT AUTHORITY of the REAL OWNER of contents... then this amounts to COPYRIGHT INFINGEMENT 
+
+      ** EG: BIXEE.COM used DEEPLINKING to show JOBs listed in NAUKARI.COM using DEEP LINKING. BIXEE.com was slapped with copyright infingement by indian court
+
+  2) CONTRIBUTORY COPYRIGHT INFRINGEMENT: 
+
+      - occurs when a link created by someont PROMOTE UNAUTHORIZED COPYING of COPYRIGHTED MATERIAL 
+
+  3) DEFAMATION: happens if a link and the content which comes after clicking the link INJURES REPUTATION of a PERSON or BUSINESS 
+
+    eg: a student creates a HYPERLINK named "ALCOHOLICS ON THE NET" and an IMAGE of SCHOOL PRINCIPAL is linked to it... then this would amount to DEFAMATION slapped against the STUDENT by the PRINCIPAL 
+
+  4) INVASION OF PRIVACY: happens if a LINK and its CONTENT VIOLATES a PERSON'S PRIVACY.
+
+- What is FRAMING? 
+
+  - FRAMING is a process of DISPLAYING contents of ANOTHER WEBSITE inside ONE'S WEBSITE using methods like i-FRAMES.
+
+  - framing allows website to show contents of another website WITHOUT REDIRECTING to the OTHER WEBSITE. 
+
+  - FRAMING without PERMISSION CAN TRIGGER COPYRIGHT and TRADEMARK VIOLATIONS
+
+  - eg: in 1997 TOTAL NEWS used FRAMING to DISPLAY NEWS in its site from other news outlets like CNN and USA TODAY. A lawsuit was filed by CNN and TOTAL NEWS had to stop framing 
+

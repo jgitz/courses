@@ -1,0 +1,14 @@
+.... statements to create a new database 
+
+- mysql :
+
+    :: CREATE DATABASE <database_name>
+
+        ** also use SCHEMA keyword instead of DATABASE 
+
+- postgres 
+
+    :: CREATE DATABASE <database_name>
+
+
+**** visit mysql and postgres documentation sites to get more OPTIONS to use with create database commands

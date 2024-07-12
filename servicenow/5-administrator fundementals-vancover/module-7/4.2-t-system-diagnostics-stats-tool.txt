@@ -1,0 +1,48 @@
+- STATS TOOL: helps in PERFORMANCE EVALUATION and SYSTEM DIAGNOSTICS 
+
+  - IT GIVES statistics FOR system activities SUCH AS execution of 
+
+    - QUERIES
+
+    - SCRIPTS 
+
+    - TRANSACTIONS
+
+  ** to use it... goto ALL > SYSTEM DIAGNOSTICS > STATS 
+
+  ** use stats.do to see ALL SYSTEM STATS DETAILS in CONTENT FRAME 
+
+  ** STATS TOOL plugin is ACTIVATED BY DEFAULT 
+
+** STATS MODULE MONITORS the ACTIVITY PATTERN in the FOLLOWING 3 TABLES 
+
+  1) sys_query_pattern  (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW QUERIES)
+
+  2) sys_script_pattern (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW SCRIPTS)
+
+  3) sys_transaction_pattern (.. ALL > SYSTEM DIAGNOSTICS > STATS > SLOW TRANSACITIONS)
+
+  ** each PATTERN TABLE represents COLLECTION OF UNIQUE ACTIVITIES 
+
+  ** each RECORD in PATTERN TABLE provide basic TIMING ANALYSIS 
+
+  ** for BETTER DEBUGGING... FILTER the logs by APPLICATION SCOPES 
+
+
+** ACTIVITY PATTERNS are IMMEDIATELY RECORDED to a CACHE.... and then FROM THE CACHE they ARE PERSISTED (STORED) to their PATTERN TABLE 
+
+  **** if you FLUSH SERVER CACHE.... the all the ACTIVITY PATTERNS which are NOT PERSISTED will be LOST FROM THE CACHE 
+
+** HOW ARE ACTIVITY PATTERNS RECOGNIZED... EXPLAIN using EXAMPLES 
+
+  - each time a QUERY is executed... if the query MEETS the RECORDING and PERSISTENCE THRESHOLD... it is STORED in QUERY PATTERN RECORD 
+
+  - each time a BUSINESS RULE is executed... it is STORED in SCRIPT PATTERN 
+
+  - each time a BACKGROUND JOB is run.... it gets stored in TRANSACTION PATTERN RECORD 
+
+  - each time you click a UI BUTTON (UI ACTION)...eg NEW BUTTON... it is stored as a LIST TYPE TRANSACTION PATTERN with SPECIFIC FORM ACTION ?? 
+
+
+
+

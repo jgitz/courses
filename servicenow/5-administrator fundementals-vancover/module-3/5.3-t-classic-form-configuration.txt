@@ -1,0 +1,27 @@
+... FORM CONFIGURATION means DESIGNING FORM LAYOUT.....
+
+... in snow CLASSIC FORM can be configured in TWO WAYS 
+
+  1) using FORM LAYOUT 
+
+    - goto FORM > FORM CONTEXT MENU (HAMBURGER) > CONFIGURE > FORM LAYOUT 
+
+      ** opens a LIST COLLECTOR where you can set 
+
+        - FORM VIEW (bottom left)
+
+        - FORM SECTION (bottom left)
+
+        - CREATE NEW FIELD (bottom right)
+
+
+  2) using FORM DESIGN (studio)
+
+    ** form design can be used to design forms in both CLASSIC and WORKSPACE 
+
+    **** you have to SELECT CORRECT APPLICATION SCOPE before designing form in studio 
+
+
+**** you CANNOT DOT WALD using FORM DESIGN (STUDIO)
+
+

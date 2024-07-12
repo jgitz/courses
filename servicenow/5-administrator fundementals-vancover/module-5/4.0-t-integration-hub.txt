@@ -1,0 +1,5 @@
+- INTEGRATION HUB: offeres PRE-BUILT SETS of INTGRATION ACTIONS to interact with common THIRD PARTY APPLICATION (eg google, salesforce, sap.. etc)
+
+  - SETS of INTEGRATION ACTIONS are known as SPOKES 
+
+  - INTEGRATION HUB is used to CREATE and STORE SPOKES

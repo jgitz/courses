@@ -1,0 +1,11 @@
+** use ESCAPE QUOTE BACKSLASH to print SPECIAL CHARACTERS 
+
+  - \n : for new line 
+
+  - \t : tab 
+
+  - \\ : backslash 
+
+  - \' : single quote 
+
+  - \" : double quote 

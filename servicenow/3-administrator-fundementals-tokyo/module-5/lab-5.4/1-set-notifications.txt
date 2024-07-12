@@ -1,0 +1,58 @@
+.... to set notifications 
+
+- login as system administrator 
+
+- goto ALL > SYSTEM NOTIFICATIONS > EMAIL > NOTIFICATIONS 
+
+- click NEW on TOP RIGHT 
+
+  - fill NAME FIELD 
+
+  - fill TABLE FIELD 
+
+  - on WHEN TO SEND tab.... set confitions 
+
+  - save 
+
+  - on WHO WILL RECEIVE TAB 
+
+    ** best practice: use USER/GROUPS IN FIELDS OPTION ... DO NOT HARDCODE users.... instead select FIELD which consists of users like OWNED BY 
+
+    ** set groups 
+
+    ***** ensure that LOCK ICON IS LOCKED after you set USER, GROUPS ETC 
+
+  - save 
+
+  - on WHAT IT WILL CONTAIN TAB:  
+
+    - add subject 
+    - add email message 
+    - you can also add VARIABLES to specify DYNAMIC VALUES form the RECORD YOU are working inside the subject as well as message
+
+    - click PREVIEW NOTIFICATION.... to see the preview 
+
+    - click update 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to see the created email notification 
+
+- goto ALL > SYSTEM NOTIFICATION > EMAIL > NOTIFICATION 
+
+  - filter for your notification in the list 
+
+  ** to make the notification MANDATORY.... set the fields 
+
+    - MANDATORY to true 
+    - FORCE DELIVERY to true
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to check if email is sent by snow upon the trigger
+
+- goto ALL > SYSTEM MAILBOXES > OUTBOUND > OUTBOX
+
+  - filter for your email notification 
+
+  ** right click on the CREATED DATE field value of the RECORD and click PREVIEW EMAIL.... to preview the email WITHOUT OPENING THE RECORD

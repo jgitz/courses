@@ -1,0 +1,159 @@
+... workspace is the space where AGENTS can work on various tasks 
+
+.... workspaces available in your snow instance can be viewed on WORKSPACE TABE at the top....
+
+.... a workspce has many lists in it.... you can view lists of a workspace if you click LIST ICON on the TOP LEFT PANE.... the lists listed under the icon is divided as 
+
+  - catagory (main heading) .... eg incidents 
+
+  - UX lists (sub headings under the catagories).... eg assigned to me, open etc
+
+.... the workspace also has a table list displayed in its LANDING PAGE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- to edit the columns (field) of a workspace list.... 
+
+  - goto ALL > < YOUR LIST you want to list in workspace eg incidents > open.. >
+
+  - click on LIST CONTROLS (HAMBURGER)
+
+  - click on view .....
+
+     ** select <WORKSPACE> LANDING PAGE to set list view of the list in the landing page of the workspace 
+
+     ** select <WORKSPACE NAME eg SERVICE OPERATIONS WORKSPACE> to set list view of the workspace lists listed under the LIST ICON 
+
+  - RIGHT CLICK on the column header
+
+  - select CONFIGURE 
+
+  - select LIST LAYOUT 
+
+  - on warning message SELECT APPLICATION SCOPE (NOT GLOBAL)
+
+  - add required fields from AVAILABLE BOX to SELECTED BOX 
+
+  - click save 
+
+  ** now the fields will be available in the RELEVANT WORKSPACE LIST 
+
+  ** to PERSONALIZE COLUMNS in the workspace list click on the GEAR BUTTON on the top of the listed workspace list
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... there are many scopes available for each application and modules on which we work....
+
+.... it is important that we select correct scope while configuring an application or module
+
+- how to set correct APPLICATION scope
+
+  - login as SYSTEM ADMINISTRATOR 
+
+  - on ALL MENU.... search for the APPLICATION OR MODULE on which you are working 
+
+  - now on the listed applications and modules in the all menu.... click on the EDIT BUTTON (PENCIL ICON) to open MODULE/APPLICATION RECORD 
+
+  - now under APPLICTION FIELD... you can find the REAL APPLICATION NAME 
+
+   ** COPY THE APPLICATION NAME 
+
+  - click on the SCOPE ICON (GLOBE) on top right 
+
+  - PASTE the COPIED APPLICATION NAME to find the correct scope... and set it as the scope by clicking it
+
+  ** now the scope is changed from GLOBAL to the desired application scope 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to add LIST CATAGORY and UX LISTS (main sections and sub sections) on the LIST ICON inside a WORKSPACE.... you need to use UI BUILDER MODULE 
+
+- login as system administrator 
+
+- SET APPROPRIATE APPLICATION SCOPE 
+
+- goto ALL > NOW EXPERIENCE FRAMEWORK > UI BUILDER
+
+- select required workspace from the list where you want to add list changes.... eg SERVICE OPERATIONS WORKSPACE
+
+    **ui builder for the SELECTED WORKSPACE OPENS
+
+- on the top left PAGE OPTION.... select LIST from the dropdown to edit the lists
+
+- on the left bottom CONTENT PANE.... select LIST NAV TAG 
+
+  ** now you can edit the header properties, styles etc ON THE RIGHT PANE
+
+- from the right pane.... at THE BOTTOM.... select CONFIGURATION LINK (NOT CONFIG TAB)...
+
+  ** this opens different UX LIST MENU CONFIGURATION records for VARIOUS WORKSPACES of your snow instance 
+
+  ** UX LIST MENU CONFIGURATION is where you can add CATAGORY and UX lists on workspace list icon 
+
+- select the relevant workspace 
+
+  ** now ux list menu configuration record of the workspace opens up 
+
+- to add NEW UX LIST CATAGORY... 
+
+  - click on UX LIST CATAGORY TAB 
+
+  - click new
+
+    - fill TITLE, ORDER, DESCRIPTION fields 
+
+  - click submit 
+
+- to add NEW UX LIST 
+
+  - click on the UX LIST
+
+  - fill 
+    - title 
+    - order 
+    - catagory 
+    - table 
+    - configuration (eg default)
+    - conditions eg service offering | contains | <HHD>
+    - columns (leave blank if needed)
+    - group by column (select column field)
+    - view (select the view)
+    - click submit 
+
+** now you can see the CATAGORY and UX LISTS in list icon of your EDITED WORKSPACE 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... now that we have made catagory and ux list in the workspace... we can SET which USERS can access the LIST....
+
+.... this is by establishing a COLLECTION OF USERS called AUDIENCE 
+
+.... LIST APPLICABILITY is the workspace functionality that LINKS A LIST TO AUDIENCE.... 
+
+.... AUDIENCE IS SET  for a list in workspace using UI BUILDER
+
+- to set audience for a list in workspace 
+
+  - goto ALL > NOW EXPERIENCE FRAMEWORK > UI BUILDER 
+
+  - select the required workspace 
+
+  - on the top left of the page.... select LIST at the PAGE FIELD DROPDOWN 
+
+  - select the catagory from the middle pane
+
+  - on the right pane.... from the BOTTOM.... select M2M APPLICABILITY LINK(NOT APPLCIABILITY)
+
+    - click new 
+
+    - fill LIST FIELD 
+
+    - fill applciability (here we selected a predefined AUDIENCE)
+
+    - save 
+
+    ** now only the audience of the applicability can see the workspace list 
+
+    **** we will learn how to set role and criteria for the applicability/audience later 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

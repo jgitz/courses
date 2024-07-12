@@ -1,0 +1,50 @@
+..... talently app has 3 tables 
+
+    1) users table 
+
+    2) employers table 
+
+    3) conversations table 
+
+
+..... now we need to plan what all fields will these table have.....
+
+  1) fields of USERS TABLE:
+
+        - name: FULL NAME of the user 
+
+        - yearly salary: yearly salary expected 
+
+        - current status: status (currently employed or not).... values are 
+
+              - employed 
+              - self-employed 
+              - unemployed
+
+        - employer: employer (employer to which the user is currently connected)
+
+            ** based on employer table
+
+  2) fields of EMPLOYERS TABLE:
+
+        - company name: name of the company
+
+        - address: address of the company 
+
+        - yearly revenue: yearly revenue of the company in acronyms (K for thousands, M for millions)
+
+        - is hiring: flag to know if the company is hiring or not  
+
+  3) fields of CONVERSATIONS TABLE: 
+
+        - user: user in conversation 
+
+        - emplouer: employer in conversation 
+
+        - message: message between user and employer 
+
+        - date sent: time stamp of the conversation 
+
+
+***** now we need to set DATA TYPES of the data expected by the fields
+
